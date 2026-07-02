@@ -104,6 +104,14 @@
       transform: translateY(0);
     }
 
+    button:disabled {
+      opacity: .46;
+      cursor: not-allowed;
+      transform: none;
+      filter: none;
+      box-shadow: none;
+    }
+
     button:focus-visible,
     input:focus-visible,
     textarea:focus-visible,
@@ -496,7 +504,7 @@
     }
 
     .series-grid {
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      grid-template-columns: 1fr;
       align-items: start;
     }
 
@@ -985,6 +993,23 @@
       line-height: 1.25;
     }
 
+    .season-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .season-actions button {
+      min-height: 28px;
+      padding: 4px 7px;
+      flex: 1 1 84px;
+      box-shadow: none;
+      font-size: 10px;
+    }
+
     .season-head {
       gap: 7px;
     }
@@ -1163,7 +1188,7 @@
       }
 
       .series-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
       }
 
       .bottom-bar {
@@ -1459,16 +1484,16 @@
         name: "Secret Story",
         emoji: "TV",
         status: "Temporada 14 en emisión",
-        description: "Reality francés · 14 temporadas · datos editables.",
+        description: "Reality francés · 14 temporadas · datos actualizados.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
           { season: 1, total: 81, watched: 0, note: "TF1+" },
           { season: 2, total: 82, watched: 0, note: "TF1+" },
-          { season: 3, total: 0, watched: 0, note: "Completar" },
+          { season: 3, total: 113, watched: 0, note: "TF1+" },
           { season: 4, total: 121, watched: 0, note: "TF1+" },
           { season: 5, total: 113, watched: 0, note: "TF1+" },
-          { season: 6, total: 0, watched: 0, note: "Completar" },
+          { season: 6, total: 106, watched: 0, note: "TF1+" },
           { season: 7, total: 112, watched: 0, note: "TF1+" },
           { season: 8, total: 72, watched: 0, note: "TF1+" },
           { season: 9, total: 84, watched: 0, note: "TF1+" },
@@ -1485,6 +1510,13 @@
     const ui = {
       search: "",
       filter: "all"
+    };
+
+    const knownSeasonTotals = {
+      "secret-story": {
+        3: 113,
+        6: 106
+      }
     };
 
     const palettes = [
@@ -1645,11 +1677,16 @@
       serie.minutesPerEpisode = Math.max(1, Number(serie.minutesPerEpisode) || 45);
       serie.episodesPerDay = Math.max(0.1, Number(serie.episodesPerDay) || 1);
       serie.seasons = Array.isArray(serie.seasons) && serie.seasons.length ? serie.seasons : [{ season: 1, total: 0, watched: 0, note: "" }];
-      serie.seasons.forEach(season => {
+      serie.seasons.forEach((season, index) => {
         season.season = Math.max(1, Math.floor(Number(season.season) || index + 1));
         season.total = Math.max(0, Math.floor(Number(season.total) || 0));
         season.watched = Math.max(0, Math.floor(Number(season.watched) || 0));
         season.note = String(season.note || "").trim();
+        const knownTotal = knownSeasonTotals[serie.id]?.[season.season];
+        if (knownTotal) {
+          season.total = knownTotal;
+          if (!season.note || season.note === "Completar") season.note = "TF1+";
+        }
         if (season.total > 0) season.watched = Math.min(season.watched, season.total);
       });
     }
@@ -1835,6 +1872,7 @@
           </div>
           <div class="card-actions">
             <button type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ${escapeHtml(serie.name)}">Abrir</button>
+            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Añadir el siguiente capítulo visto de ${escapeHtml(serie.name)}" ${totals.pendingEpisodes === 0 ? "disabled" : ""}>+1</button>
           </div>
         `;
         list.appendChild(card);
@@ -1915,6 +1953,11 @@
             <span><small>Progreso</small><b>${Math.round(progress)}%</b></span>
           </div>
           ${season.note ? `<p class="season-note">${escapeHtml(season.note)}</p>` : ""}
+          <div class="season-actions">
+            <button type="button" data-action="increment-season" data-index="${index}" ${season.total === 0 || season.watched >= season.total ? "disabled" : ""}>+1 visto</button>
+            <button class="secondary" type="button" data-action="complete-season" data-index="${index}" ${season.total === 0 || pending === 0 ? "disabled" : ""}>Completar</button>
+            <button class="secondary" type="button" data-action="decrement-season" data-index="${index}" ${season.watched === 0 ? "disabled" : ""}>-1 visto</button>
+          </div>
         `;
         container.appendChild(card);
       });
@@ -2027,8 +2070,15 @@
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      if (season.total === 0) season.total = 1;
-      if (season.watched < season.total) season.watched += 1;
+      if (season.total > 0 && season.watched < season.total) season.watched += 1;
+      render();
+    }
+
+    function decrementSeason(index) {
+      const serie = getSerie(activeSerieId);
+      const season = serie?.seasons[index];
+      if (!season) return;
+      if (season.watched > 0) season.watched -= 1;
       render();
     }
 
@@ -2136,6 +2186,7 @@
 
       const action = button.dataset.action;
       const id = button.dataset.id;
+      const index = Number(button.dataset.index);
 
       if (action === "show-screen") showScreen(button.dataset.screen);
       if (action === "set-filter") {
@@ -2144,6 +2195,14 @@
       }
       if (action === "add-serie") addSerie(id);
       if (action === "open-detail") openDetail(id);
+      if (action === "quick-watch") {
+        const serie = getSerie(id);
+        watchNextEpisode(serie);
+        render();
+      }
+      if (action === "increment-season") incrementSeason(index);
+      if (action === "complete-season") completeSeason(index);
+      if (action === "decrement-season") decrementSeason(index);
       if (action === "remove-serie") removeActiveSerie();
       if (action === "export-data") exportData();
       if (action === "import-data") document.getElementById("importFile").click();
