@@ -284,10 +284,10 @@
     .summary-panel {
       overflow: hidden;
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
-      gap: 14px;
-      min-height: 190px;
-      padding: 16px;
+      grid-template-columns: minmax(0, 1.12fr) minmax(280px, .88fr);
+      gap: 10px;
+      min-height: 142px;
+      padding: 12px;
       align-items: stretch;
       color: #fffefb;
       background:
@@ -321,7 +321,30 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 14px;
+      gap: 9px;
+    }
+
+    .summary-panel .kicker {
+      padding: 4px 7px;
+      font-size: 10px;
+    }
+
+    .summary-panel h2 {
+      margin: 8px 0 4px;
+      font-size: clamp(20px, 3.2vw, 28px);
+    }
+
+    .summary-panel p {
+      font-size: 12px;
+    }
+
+    .summary-panel .inline-head {
+      gap: 7px;
+    }
+
+    .summary-panel .pill {
+      padding: 5px 7px;
+      font-size: 10px;
     }
 
     .kicker,
@@ -374,6 +397,15 @@
       font-size: 13px;
     }
 
+    .summary-panel h2 {
+      margin: 8px 0 4px;
+      font-size: clamp(20px, 3.2vw, 28px);
+    }
+
+    .summary-panel p {
+      font-size: 12px;
+    }
+
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -393,6 +425,24 @@
       background: rgba(255, 255, 255, .10);
       border-color: rgba(255, 255, 255, .18);
       backdrop-filter: blur(8px);
+    }
+
+    .summary-panel .stats-grid {
+      gap: 6px;
+      align-content: start;
+    }
+
+    .summary-panel .stat {
+      padding: 7px;
+    }
+
+    .summary-panel .stat small {
+      margin-bottom: 3px;
+      font-size: 9.5px;
+    }
+
+    .summary-panel .stat strong {
+      font-size: clamp(15px, 2vw, 20px);
     }
 
     .stat small {
@@ -437,6 +487,10 @@
 
     .search-wrap {
       position: relative;
+    }
+
+    .catalog-search {
+      margin-bottom: 10px;
     }
 
     .search-wrap input {
@@ -511,6 +565,10 @@
     .catalog-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       align-items: start;
+    }
+
+    .catalog-grid .empty-card {
+      grid-column: 1 / -1;
     }
 
     .serie-card,
@@ -1162,7 +1220,11 @@
 
       .summary-panel {
         min-height: 0;
-        padding: 18px;
+        padding: 12px;
+      }
+
+      .summary-panel .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .toolbar {
@@ -1319,6 +1381,12 @@
 
       <section class="catalog-grid">
         <div>
+          <div class="search-wrap catalog-search">
+            <label for="searchCatalog">Buscar serie</label>
+            <span aria-hidden="true">⌕</span>
+            <input id="searchCatalog" type="search" placeholder="Nombre, plataforma o estado" autocomplete="off" />
+          </div>
+
           <div class="section-title">
             <h3>Catálogo</h3>
             <span id="catalogCount">3 disponibles</span>
@@ -1509,6 +1577,7 @@
 
     const ui = {
       search: "",
+      catalogSearch: "",
       filter: "all"
     };
 
@@ -1785,6 +1854,20 @@
       });
     }
 
+    function filteredCatalog() {
+      const query = ui.catalogSearch.trim().toLowerCase();
+      return catalog.filter(item => {
+        const haystack = [
+          item.name,
+          item.status,
+          item.description,
+          item.emoji,
+          ...item.seasons.map(season => season.note)
+        ].join(" ").toLowerCase();
+        return !query || haystack.includes(query);
+      });
+    }
+
     function showScreen(screen) {
       document.querySelectorAll(".screen").forEach(element => element.classList.remove("active"));
       const target = document.getElementById(`${screen}Screen`);
@@ -1880,11 +1963,27 @@
     }
 
     function renderCatalog() {
-      document.getElementById("catalogCount").textContent = `${catalog.length} disponible${catalog.length === 1 ? "" : "s"}`;
+      const visible = filteredCatalog();
+      const searchCatalog = document.getElementById("searchCatalog");
+      if (document.activeElement !== searchCatalog) searchCatalog.value = ui.catalogSearch;
+      document.getElementById("catalogCount").textContent = ui.catalogSearch
+        ? `${visible.length} de ${catalog.length}`
+        : `${catalog.length} disponible${catalog.length === 1 ? "" : "s"}`;
       const list = document.getElementById("catalogList");
       list.innerHTML = "";
 
-      catalog.forEach(item => {
+      if (visible.length === 0) {
+        list.innerHTML = `
+          <article class="empty-card">
+            <span class="kicker">Sin resultados</span>
+            <h2>No encuentro esa serie</h2>
+            <p>Prueba con otro nombre, plataforma o estado.</p>
+          </article>
+        `;
+        return;
+      }
+
+      visible.forEach(item => {
         const alreadyAdded = Boolean(getSerie(item.id));
         const card = document.createElement("article");
         card.className = "catalog-card";
@@ -2211,6 +2310,11 @@
     document.getElementById("searchSeries").addEventListener("input", event => {
       ui.search = event.target.value;
       renderHome();
+    });
+
+    document.getElementById("searchCatalog").addEventListener("input", event => {
+      ui.catalogSearch = event.target.value;
+      renderCatalog();
     });
 
     document.getElementById("customForm").addEventListener("submit", event => {
