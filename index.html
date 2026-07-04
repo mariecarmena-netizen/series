@@ -959,7 +959,7 @@
 
     .detail-hero {
       overflow: hidden;
-      padding: 12px;
+      padding: 10px;
       position: sticky;
       top: 14px;
       color: #fffefb;
@@ -978,30 +978,37 @@
     }
 
     .detail-hero h2 {
-      margin: 8px 0 4px;
+      margin: 6px 0 3px;
       color: #fffefb;
-      font-size: clamp(20px, 3vw, 28px);
+      font-size: clamp(18px, 2.6vw, 24px);
     }
 
     .detail-hero p {
-      font-size: 12px;
+      font-size: 11px;
+      line-height: 1.28;
     }
 
     .detail-hero .stats-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 6px;
     }
 
     .detail-hero .stat {
-      padding: 8px;
+      padding: 6px;
     }
 
     .detail-hero .stat small {
-      margin-bottom: 3px;
-      font-size: 10px;
+      margin-bottom: 2px;
+      font-size: 9px;
     }
 
     .detail-hero .stat strong {
-      font-size: clamp(15px, 2vw, 20px);
+      font-size: clamp(14px, 1.8vw, 18px);
+    }
+
+    .detail-hero .progress-wrap {
+      height: 5px;
+      margin: 8px 0 5px;
     }
 
     .detail-hero .card-actions {
@@ -1034,6 +1041,10 @@
       box-shadow: var(--shadow-soft);
     }
 
+    .season-card.compact {
+      padding: 7px;
+    }
+
     .season-card::before {
       height: 3px;
     }
@@ -1041,6 +1052,10 @@
     .season-card .progress-wrap {
       height: 4px;
       margin: 7px 0 6px;
+    }
+
+    .season-card.compact .progress-wrap {
+      margin: 5px 0;
     }
 
     .season-card .mini-stats {
@@ -1062,6 +1077,15 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: rgba(255, 254, 251, .62);
+    }
+
+    .season-card.compact .season-overview {
+      gap: 4px;
+      margin-top: 5px;
+    }
+
+    .season-card.compact .season-overview span {
+      padding: 5px;
     }
 
     .season-overview small {
@@ -1183,12 +1207,20 @@
       margin-top: 8px;
     }
 
+    .season-card.compact .season-actions {
+      margin-top: 6px;
+    }
+
     .season-actions button {
       min-height: 28px;
       padding: 4px 7px;
       flex: 1 1 84px;
       box-shadow: none;
       font-size: 10px;
+    }
+
+    .season-card.compact .season-actions button {
+      min-height: 26px;
     }
 
     .season-head {
@@ -1559,6 +1591,14 @@
         grid-template-columns: 1fr;
       }
 
+      .detail-hero .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .detail-hero {
+        padding: 9px;
+      }
+
       .mini-stats {
         grid-template-columns: 1fr 1fr;
       }
@@ -1780,7 +1820,7 @@
           <h2 id="detailTitle">Serie</h2>
           <p id="detailDescription">Progreso y temporadas.</p>
 
-          <div class="stats-grid" style="margin-top:12px;">
+          <div class="stats-grid" style="margin-top:8px;">
             <div class="stat">
               <small>Pendientes</small>
               <strong id="detailPendingEpisodes">0</strong>
@@ -2665,19 +2705,20 @@
           : pending === 0
             ? "Completa"
             : `${pending} pendientes`;
+        const isSeasonInProgress = season.watched > 0 && pending > 0;
         const nextEpisodeNumber = pending > 0 ? season.watched + 1 : 0;
         const nextEpisodeTitle = nextEpisodeNumber ? episodeTitleFor(season, nextEpisodeNumber) : "";
         const nextEpisodeText = nextEpisodeNumber
           ? `Capítulo ${nextEpisodeNumber}${nextEpisodeTitle ? `: ${nextEpisodeTitle}` : ""}`
           : "";
-        const nextEpisodeBlock = nextEpisodeText ? `
+        const nextEpisodeBlock = isSeasonInProgress && nextEpisodeText ? `
           <div class="season-next">
             <small>Siguiente +1</small>
             <b>${escapeHtml(nextEpisodeText)}</b>
           </div>
         ` : "";
         const episodes = normalizeEpisodeList(season.episodes);
-        const episodeList = episodes.length ? `
+        const episodeList = isSeasonInProgress && episodes.length ? `
           <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
             ${episodes.map(episode => {
               const episodeClass = [
@@ -2694,7 +2735,7 @@
           </ol>
         ` : "";
         const card = document.createElement("article");
-        card.className = "season-card";
+        card.className = `season-card${isSeasonInProgress ? "" : " compact"}`;
         applyPalette(card, `${serie.id}-${season.season}`);
         card.innerHTML = `
           <div class="season-head">
