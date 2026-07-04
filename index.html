@@ -29,7 +29,7 @@
       --shadow: 0 18px 50px rgba(23, 26, 24, .12);
       --shadow-soft: 0 10px 26px rgba(23, 26, 24, .08);
       --radius: 8px;
-      --bottom-bar: 0px;
+      --bottom-bar: 76px;
       --card-a: #0f8f83;
       --card-b: #e65353;
       --card-c: #f4b942;
@@ -198,7 +198,7 @@
     .app {
       width: min(1180px, 100%);
       margin: 0 auto;
-      padding: 22px 18px 34px;
+      padding: 22px 18px calc(34px + var(--bottom-bar));
     }
 
     .screen {
@@ -1020,7 +1020,7 @@
     }
 
     .season-grid {
-      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
     .season-card {
@@ -1082,6 +1082,90 @@
       color: var(--muted);
       font-size: 11px;
       line-height: 1.25;
+    }
+
+    .season-next {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 3px;
+      margin-top: 8px;
+      padding: 7px;
+      border: 1px solid rgba(15, 143, 131, .24);
+      border-radius: var(--radius);
+      background: #effbf7;
+    }
+
+    .season-next small {
+      color: var(--teal-dark);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .season-next b {
+      min-width: 0;
+      color: var(--ink);
+      font-size: 11px;
+      line-height: 1.22;
+      overflow-wrap: anywhere;
+    }
+
+    .episode-list {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 4px;
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .episode-list li {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 7px;
+      align-items: start;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 254, 251, .62);
+    }
+
+    .episode-list span {
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      background: rgba(23, 26, 24, .06);
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .episode-list b {
+      min-width: 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+      line-height: 1.22;
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .episode-list li.watched {
+      opacity: .62;
+    }
+
+    .episode-list li.watched span {
+      color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .episode-list li.next {
+      border-color: rgba(15, 143, 131, .34);
+      background: #effbf7;
     }
 
     .season-actions {
@@ -1169,6 +1253,190 @@
       font-size: 11px;
     }
 
+    .calendar-shell {
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, .72);
+      border-radius: var(--radius);
+      background: rgba(255, 254, 251, .78);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
+    }
+
+    .calendar-toolbar {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr) 44px;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .calendar-toolbar h2 {
+      margin: 6px 0 0;
+      color: var(--ink);
+      font-size: clamp(24px, 4vw, 36px);
+      line-height: 1;
+      text-align: center;
+    }
+
+    .calendar-toolbar .kicker {
+      display: table;
+      margin: 0 auto;
+    }
+
+    .calendar-weekdays,
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 5px;
+    }
+
+    .calendar-weekdays {
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .calendar-day {
+      position: relative;
+      display: inline-flex;
+      flex-direction: column;
+      min-width: 0;
+      min-height: 76px;
+      padding: 7px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: var(--ink);
+      background: rgba(255, 254, 251, .68);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .calendar-day:hover {
+      box-shadow: 0 10px 20px rgba(23, 26, 24, .08);
+    }
+
+    .calendar-day.muted {
+      opacity: .42;
+    }
+
+    .calendar-day.selected {
+      border-color: rgba(15, 143, 131, .42);
+      background: #effbf7;
+    }
+
+    .calendar-day.today b {
+      color: #fffefb;
+      background: var(--teal);
+    }
+
+    .calendar-day b {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .calendar-dot {
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--coral);
+      transform: translateX(-50%);
+      box-shadow: 0 0 0 4px rgba(230, 83, 83, .12);
+    }
+
+    .calendar-day-panel {
+      margin-top: 12px;
+    }
+
+    .calendar-events {
+      display: grid;
+      gap: 8px;
+    }
+
+    .calendar-event,
+    .calendar-empty {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 254, 251, .78);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .calendar-event {
+      display: grid;
+      gap: 6px;
+      border-left: 4px solid var(--card-a);
+    }
+
+    .calendar-event small {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .calendar-event b {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.18;
+    }
+
+    .calendar-event span,
+    .calendar-empty {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .tab-bar {
+      position: fixed;
+      left: 50%;
+      bottom: 12px;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      width: min(460px, calc(100% - 24px));
+      padding: 7px;
+      border: 1px solid rgba(255, 255, 255, .72);
+      border-radius: var(--radius);
+      background: rgba(255, 254, 251, .86);
+      box-shadow: 0 18px 48px rgba(23, 26, 24, .18);
+      transform: translateX(-50%);
+      backdrop-filter: blur(18px);
+    }
+
+    .tab-bar button {
+      min-height: 54px;
+      flex-direction: column;
+      gap: 3px;
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid transparent;
+      box-shadow: none;
+      font-size: 11px;
+    }
+
+    .tab-bar button.active {
+      color: #fffefb;
+      background: linear-gradient(135deg, var(--teal), #1d5f79);
+      border-color: transparent;
+      box-shadow: 0 10px 20px rgba(15, 143, 131, .18);
+    }
+
+    .tab-icon {
+      font-size: 19px;
+      line-height: 1;
+    }
+
     .bottom-bar {
       display: flex;
       justify-content: space-between;
@@ -1218,7 +1486,7 @@
 
     @media (max-width: 660px) {
       :root {
-        --bottom-bar: 0px;
+        --bottom-bar: 82px;
       }
 
       body {
@@ -1297,6 +1565,17 @@
       .bottom-bar .right,
       .bottom-bar button {
         width: 100%;
+      }
+
+      .calendar-day {
+        min-height: 58px;
+        padding: 5px;
+      }
+
+      .calendar-day b {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
       }
     }
 
@@ -1522,12 +1801,202 @@
       </div>
     </section>
 
+    <section id="calendarScreen" class="screen" aria-labelledby="calendarHeading">
+      <header class="app-header">
+        <div class="header-main">
+          <div class="mark" aria-hidden="true">CAL</div>
+          <div class="title">
+            <h1 id="calendarHeading">Calendario</h1>
+            <p>Estrenos de capítulos por día.</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="calendar-shell" aria-label="Calendario mensual">
+        <div class="calendar-toolbar">
+          <button class="secondary icon-button" type="button" data-action="change-month" data-direction="-1" aria-label="Mes anterior">←</button>
+          <div>
+            <span class="kicker">Mes</span>
+            <h2 id="calendarMonthTitle">Mes</h2>
+          </div>
+          <button class="secondary icon-button" type="button" data-action="change-month" data-direction="1" aria-label="Mes siguiente">→</button>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>L</span>
+          <span>M</span>
+          <span>X</span>
+          <span>J</span>
+          <span>V</span>
+          <span>S</span>
+          <span>D</span>
+        </div>
+        <section id="calendarGrid" class="calendar-grid" aria-label="Días del mes"></section>
+      </section>
+
+      <section class="calendar-day-panel" aria-live="polite">
+        <div class="section-title">
+          <h3 id="calendarDayTitle">Selecciona un día</h3>
+          <span id="calendarDayCount">0 estrenos</span>
+        </div>
+        <div id="calendarEvents" class="calendar-events"></div>
+      </section>
+    </section>
+
     <input id="importFile" type="file" accept="application/json" hidden />
   </main>
+
+  <nav class="tab-bar" aria-label="Páginas principales">
+    <button class="active" type="button" data-action="show-screen" data-screen="home" data-tab="home" aria-label="Página principal">
+      <span class="tab-icon" aria-hidden="true">📺</span>
+      <span>Series</span>
+    </button>
+    <button type="button" data-action="show-screen" data-screen="calendar" data-tab="calendar" aria-label="Calendario">
+      <span class="tab-icon" aria-hidden="true">📅</span>
+      <span>Calendario</span>
+    </button>
+  </nav>
 
   <script>
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
+
+    const machosAlfaEpisodeTitles = [
+      [
+        "En deconstrucción",
+        "Lo que te absorbe es la vida",
+        "Masculinidad tóxica",
+        "Hierbas ibicencas",
+        "Heteroflexibles sensibles",
+        "La que has liado",
+        "¿Cuándo lloraste por última vez?",
+        "Con lo bien que estábamos",
+        "El Moisés de los machirulos",
+        "O falla el temario o fallamos nosotros"
+      ],
+      [
+        "Me siento como... deconstruido",
+        "¿Tú tienes sueños?",
+        "Dale la vuelta",
+        "Pregunta antes de entrar",
+        "No te putopilles",
+        "¿Un lunes?",
+        "Los chicos de la hermandad",
+        "Soy hetero",
+        "¿Qué es ser mujer?",
+        "Para una vez que nos juntamos..."
+      ],
+      [
+        "Hombres evolucionantes",
+        "Bollera fijo",
+        "El que se pilla pierde",
+        "Dos más dos...",
+        "Amiga, date cuenta",
+        "Machos beta",
+        "Pacto patriarcal",
+        "Equivocarse adrede",
+        "Contacto cero",
+        "La gente se sigue casando"
+      ],
+      [
+        "Al final hay que meterla",
+        "Marca España",
+        "Ecos de una herida",
+        "Siempre se puede ser un poco más hetero",
+        "Rezaré por ti",
+        "Caribe mágico"
+      ],
+      [
+        "¿Pero qué más queréis?",
+        "¿Cómo ha llegado la humanidad hasta aquí?",
+        "Pacto Patriarcal S.L.",
+        "Energía pegajosa",
+        "El putero fiel",
+        "El amor es el amor"
+      ]
+    ];
+
+    const maximumPleasureGuaranteedEpisodeTitles = [
+      "Magnets",
+      "YABA",
+      "Chunnel",
+      "Raisins",
+      "Scamboy",
+      "Rosebuds",
+      "Flighting",
+      "Hallidays",
+      "Erroneous",
+      "Queens"
+    ];
+
+    const machosAlfaSeasonReleaseDates = [
+      "2022-12-30",
+      "2024-02-09",
+      "2025-01-10",
+      "2026-01-09",
+      "2026-04-17"
+    ];
+
+    const maximumPleasureGuaranteedReleaseDates = [
+      "2026-05-20",
+      "2026-05-20",
+      "2026-05-27",
+      "2026-06-03",
+      "2026-06-10",
+      "2026-06-17",
+      "2026-06-24",
+      "2026-07-01",
+      "2026-07-08",
+      "2026-07-15"
+    ];
+
+    const secretStorySeason14ReleaseDates = [
+      "2026-07-06",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-09",
+      "2026-07-10",
+      "2026-07-13",
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23"
+    ];
+
+    const releaseEvents = [
+      ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
+        episodes.map((title, episodeIndex) => ({
+          date: machosAlfaSeasonReleaseDates[seasonIndex],
+          serieId: "machos-alfa",
+          serie: "Machos Alfa",
+          platform: "Netflix",
+          season: seasonIndex + 1,
+          episode: episodeIndex + 1,
+          title
+        }))
+      ),
+      ...maximumPleasureGuaranteedEpisodeTitles.map((title, index) => ({
+        date: maximumPleasureGuaranteedReleaseDates[index],
+        serieId: "maximum-pleasure-guaranteed",
+        serie: "Maximum Pleasure Guaranteed",
+        platform: "Apple TV",
+        season: 1,
+        episode: index + 1,
+        title
+      })),
+      ...secretStorySeason14ReleaseDates.map((date, index) => ({
+        date,
+        serieId: "secret-story",
+        serie: "Secret Story",
+        platform: "TF1+",
+        season: 14,
+        episode: index + 1,
+        title: `Quotidienne ${index + 1}`
+      }))
+    ].sort((a, b) => a.date.localeCompare(b.date) || a.serie.localeCompare(b.serie) || a.episode - b.episode);
 
     const seriesCatalog = [
       {
@@ -1537,11 +2006,11 @@
         status: "En emisión / temporada final confirmada",
         genre: "Comedia",
         seasons: [
-          { season: 1, episodes: 10, released: true },
-          { season: 2, episodes: 10, released: true },
-          { season: 3, episodes: 10, released: true },
-          { season: 4, episodes: 6, released: true },
-          { season: 5, episodes: 6, released: true },
+          ...machosAlfaEpisodeTitles.map((episodes, index) => ({
+            season: index + 1,
+            episodes,
+            released: true
+          })),
           { season: 6, episodes: 10, released: false }
         ],
         releasedEpisodes: 42,
@@ -1562,7 +2031,7 @@
         status: "En emisión",
         genre: "Thriller / comedia negra / crimen",
         seasons: [
-          { season: 1, episodes: 10, released: false }
+          { season: 1, episodes: maximumPleasureGuaranteedEpisodeTitles, released: false }
         ],
         releasedEpisodes: 8,
         totalEpisodesPlanned: 10,
@@ -1614,6 +2083,9 @@
       filter: "all"
     };
 
+    let selectedCalendarDate = initialCalendarDate();
+    let calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate));
+
     const knownSeasonTotals = {
       "secret-story": {
         3: 113,
@@ -1636,6 +2108,39 @@
 
     function clone(obj) {
       return JSON.parse(JSON.stringify(obj));
+    }
+
+    function normalizeEpisodeList(value) {
+      if (!Array.isArray(value)) return [];
+      return value
+        .map((episode, index) => {
+          if (typeof episode === "string") {
+            return { number: index + 1, title: episode.trim() };
+          }
+          return {
+            number: Math.max(1, Math.floor(Number(episode?.number ?? episode?.numero) || index + 1)),
+            title: String(episode?.title ?? episode?.titulo ?? "").trim()
+          };
+        })
+        .filter(episode => episode.title)
+        .sort((a, b) => a.number - b.number);
+    }
+
+    function seasonTotalFromSource(season) {
+      const sourceEpisodes = season?.episodes ?? season?.episodios;
+      const source = Array.isArray(sourceEpisodes) ? sourceEpisodes.length : sourceEpisodes;
+      return Math.max(0, Math.floor(Number(season?.total ?? source) || 0));
+    }
+
+    function episodeTitleFor(season, episodeNumber) {
+      const episode = normalizeEpisodeList(season?.episodes).find(item => item.number === episodeNumber);
+      return episode?.title || "";
+    }
+
+    function episodeLabel(season, episodeNumber) {
+      const base = `T${season.season} · capítulo ${episodeNumber}`;
+      const title = episodeTitleFor(season, episodeNumber);
+      return title ? `${base}: ${title}` : base;
     }
 
     function escapeHtml(value) {
@@ -1679,11 +2184,12 @@
         episodesPerDay: 2,
         seasons: item.seasons.map(season => ({
           season: season.season,
-          total: season.episodes,
+          total: seasonTotalFromSource(season),
           watched: 0,
           note: season.released
             ? item.platform
-            : (item.releasedEpisodes && item.seasons.length === 1 ? `${item.releasedEpisodes} emitidos` : "Pendiente")
+            : (item.releasedEpisodes && item.seasons.length === 1 ? `${item.releasedEpisodes} emitidos` : "Pendiente"),
+          episodes: normalizeEpisodeList(season.episodes ?? season.episodios)
         }))
       };
     }
@@ -1779,11 +2285,17 @@
       serie.minutesPerEpisode = Math.max(1, Number(serie.minutesPerEpisode) || 45);
       serie.episodesPerDay = Math.max(0.1, Number(serie.episodesPerDay) || 1);
       serie.seasons = Array.isArray(serie.seasons) && serie.seasons.length ? serie.seasons : [{ season: 1, total: 0, watched: 0, note: "" }];
+      const catalogSerie = getCatalogSerie(serie.id);
       serie.seasons.forEach((season, index) => {
         season.season = Math.max(1, Math.floor(Number(season.season) || index + 1));
         season.total = Math.max(0, Math.floor(Number(season.total) || 0));
         season.watched = Math.max(0, Math.floor(Number(season.watched) || 0));
         season.note = String(season.note || "").trim();
+        const catalogSeason = catalogSerie?.seasons.find(item => Number(item.season) === season.season);
+        const ownEpisodes = normalizeEpisodeList(season.episodes ?? season.episodios);
+        const catalogEpisodes = normalizeEpisodeList(catalogSeason?.episodes);
+        season.episodes = ownEpisodes.length ? ownEpisodes : catalogEpisodes;
+        if (season.episodes.length > season.total) season.total = season.episodes.length;
         const knownTotal = knownSeasonTotals[serie.id]?.[season.season];
         if (knownTotal) {
           season.total = knownTotal;
@@ -1840,6 +2352,57 @@
       return date.toLocaleDateString("es-ES", { day: "2-digit", month: "short" });
     }
 
+    function dateFromKey(key) {
+      const [year, month, day] = String(key).split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    function dateKeyFromDate(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    function monthStartFromDate(date) {
+      return new Date(date.getFullYear(), date.getMonth(), 1);
+    }
+
+    function monthKeyFromDate(date) {
+      return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+    }
+
+    function calendarEventsForDate(dateKey) {
+      return releaseEvents.filter(event => event.date === dateKey);
+    }
+
+    function calendarEventsForMonth(date) {
+      const monthKey = monthKeyFromDate(date);
+      return releaseEvents.filter(event => event.date.startsWith(monthKey));
+    }
+
+    function initialCalendarDate() {
+      const todayKey = dateKeyFromDate(new Date());
+      const upcoming = releaseEvents.find(event => event.date >= todayKey);
+      return upcoming?.date || releaseEvents[releaseEvents.length - 1]?.date || todayKey;
+    }
+
+    function formatCalendarMonth(date) {
+      return date.toLocaleDateString("es-ES", { month: "long", year: "numeric" });
+    }
+
+    function formatCalendarDay(dateKey) {
+      return dateFromKey(dateKey).toLocaleDateString("es-ES", {
+        weekday: "long",
+        day: "numeric",
+        month: "long"
+      });
+    }
+
+    function releaseEpisodeLabel(event) {
+      return `T${event.season} · capítulo ${event.episode}`;
+    }
+
     function statusKind(serie) {
       const totals = serieTotals(serie);
       if (totals.missingData) return "missing";
@@ -1859,7 +2422,7 @@
     function nextEpisodeInfo(serie) {
       const next = serie.seasons.find(season => season.total > 0 && season.watched < season.total);
       if (next) {
-        return `${serie.name}: T${next.season} · capítulo ${next.watched + 1}`;
+        return `${serie.name}: ${episodeLabel(next, next.watched + 1)}`;
       }
       if (serie.seasons.some(season => season.total === 0)) {
         return `${serie.name}: faltan datos`;
@@ -1869,7 +2432,7 @@
 
     function nextEpisodeLabel(serie) {
       const next = serie.seasons.find(season => season.total > 0 && season.watched < season.total);
-      if (next) return `T${next.season} · capítulo ${next.watched + 1}`;
+      if (next) return episodeLabel(next, next.watched + 1);
       if (serie.seasons.some(season => season.total === 0)) return "Faltan datos";
       return "Completada";
     }
@@ -1888,7 +2451,10 @@
           serie.name,
           serie.status,
           serie.description,
-          ...serie.seasons.map(season => season.note)
+          ...serie.seasons.flatMap(season => [
+            season.note,
+            ...normalizeEpisodeList(season.episodes).map(episode => episode.title)
+          ])
         ].join(" ").toLowerCase();
         return matchesFilter && (!query || haystack.includes(query));
       });
@@ -1902,7 +2468,10 @@
           item.status,
           item.description,
           item.emoji,
-          ...item.seasons.map(season => season.note)
+          ...item.seasons.flatMap(season => [
+            season.note,
+            ...normalizeEpisodeList(season.episodes).map(episode => episode.title)
+          ])
         ].join(" ").toLowerCase();
         return !query || haystack.includes(query);
       });
@@ -1912,6 +2481,10 @@
       document.querySelectorAll(".screen").forEach(element => element.classList.remove("active"));
       const target = document.getElementById(`${screen}Screen`);
       if (target) target.classList.add("active");
+      const activeTab = screen === "calendar" ? "calendar" : "home";
+      document.querySelectorAll("[data-tab]").forEach(button => {
+        button.classList.toggle("active", button.dataset.tab === activeTab);
+      });
       window.scrollTo({ top: 0, behavior: "smooth" });
       render();
     }
@@ -2079,6 +2652,34 @@
           : pending === 0
             ? "Completa"
             : `${pending} pendientes`;
+        const nextEpisodeNumber = pending > 0 ? season.watched + 1 : 0;
+        const nextEpisodeTitle = nextEpisodeNumber ? episodeTitleFor(season, nextEpisodeNumber) : "";
+        const nextEpisodeText = nextEpisodeNumber
+          ? `Capítulo ${nextEpisodeNumber}${nextEpisodeTitle ? `: ${nextEpisodeTitle}` : ""}`
+          : "";
+        const nextEpisodeBlock = nextEpisodeText ? `
+          <div class="season-next">
+            <small>Siguiente +1</small>
+            <b>${escapeHtml(nextEpisodeText)}</b>
+          </div>
+        ` : "";
+        const episodes = normalizeEpisodeList(season.episodes);
+        const episodeList = episodes.length ? `
+          <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
+            ${episodes.map(episode => {
+              const episodeClass = [
+                episode.number <= season.watched ? "watched" : "",
+                episode.number === season.watched + 1 && season.watched < season.total ? "next" : ""
+              ].filter(Boolean).join(" ");
+              return `
+                <li class="${episodeClass}">
+                  <span>${episode.number}</span>
+                  <b>${escapeHtml(episode.title)}</b>
+                </li>
+              `;
+            }).join("")}
+          </ol>
+        ` : "";
         const card = document.createElement("article");
         card.className = "season-card";
         applyPalette(card, `${serie.id}-${season.season}`);
@@ -2097,6 +2698,8 @@
             <span><small>Progreso</small><b>${Math.round(progress)}%</b></span>
           </div>
           ${season.note ? `<p class="season-note">${escapeHtml(season.note)}</p>` : ""}
+          ${nextEpisodeBlock}
+          ${episodeList}
           <div class="season-actions">
             <button type="button" data-action="increment-season" data-index="${index}" ${season.total === 0 || season.watched >= season.total ? "disabled" : ""}>+1 visto</button>
             <button class="secondary" type="button" data-action="complete-season" data-index="${index}" ${season.total === 0 || pending === 0 ? "disabled" : ""}>Completar</button>
@@ -2107,12 +2710,92 @@
       });
     }
 
+    function renderCalendar() {
+      const title = document.getElementById("calendarMonthTitle");
+      const grid = document.getElementById("calendarGrid");
+      const dayTitle = document.getElementById("calendarDayTitle");
+      const dayCount = document.getElementById("calendarDayCount");
+      const eventsContainer = document.getElementById("calendarEvents");
+      if (!title || !grid || !dayTitle || !dayCount || !eventsContainer) return;
+
+      const monthKey = monthKeyFromDate(calendarCursor);
+      const monthEvents = calendarEventsForMonth(calendarCursor);
+      if (!selectedCalendarDate.startsWith(monthKey)) {
+        selectedCalendarDate = monthEvents[0]?.date || dateKeyFromDate(calendarCursor);
+      }
+
+      title.textContent = formatCalendarMonth(calendarCursor);
+      grid.innerHTML = "";
+
+      const year = calendarCursor.getFullYear();
+      const month = calendarCursor.getMonth();
+      const firstDay = new Date(year, month, 1);
+      const firstWeekday = (firstDay.getDay() + 6) % 7;
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const todayKey = dateKeyFromDate(new Date());
+
+      for (let index = 0; index < firstWeekday; index += 1) {
+        const spacer = document.createElement("div");
+        spacer.className = "calendar-day muted";
+        spacer.setAttribute("aria-hidden", "true");
+        grid.appendChild(spacer);
+      }
+
+      for (let day = 1; day <= daysInMonth; day += 1) {
+        const date = new Date(year, month, day);
+        const dateKey = dateKeyFromDate(date);
+        const events = calendarEventsForDate(dateKey);
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = [
+          "calendar-day",
+          events.length ? "has-events" : "",
+          dateKey === selectedCalendarDate ? "selected" : "",
+          dateKey === todayKey ? "today" : ""
+        ].filter(Boolean).join(" ");
+        button.dataset.action = "select-calendar-day";
+        button.dataset.date = dateKey;
+        button.setAttribute(
+          "aria-label",
+          `${formatCalendarDay(dateKey)}${events.length ? `, ${events.length} estreno${events.length === 1 ? "" : "s"}` : ""}`
+        );
+        button.innerHTML = `
+          <b>${day}</b>
+          ${events.length ? `<span class="calendar-dot" aria-hidden="true"></span>` : ""}
+        `;
+        grid.appendChild(button);
+      }
+
+      const selectedEvents = calendarEventsForDate(selectedCalendarDate);
+      dayTitle.textContent = formatCalendarDay(selectedCalendarDate);
+      dayCount.textContent = `${selectedEvents.length} estreno${selectedEvents.length === 1 ? "" : "s"}`;
+      eventsContainer.innerHTML = "";
+
+      if (!selectedEvents.length) {
+        eventsContainer.innerHTML = `<div class="calendar-empty">No hay capítulos nuevos este día.</div>`;
+        return;
+      }
+
+      selectedEvents.forEach(event => {
+        const article = document.createElement("article");
+        article.className = "calendar-event";
+        applyPalette(article, event.serieId);
+        article.innerHTML = `
+          <small>${escapeHtml(event.platform)} · ${escapeHtml(releaseEpisodeLabel(event))}</small>
+          <b>${escapeHtml(event.serie)}</b>
+          <span>${escapeHtml(event.title)}</span>
+        `;
+        eventsContainer.appendChild(article);
+      });
+    }
+
     function render() {
       state.mySeries.forEach(clampSerie);
       saveState();
       renderHome();
       renderCatalog();
       renderDetail();
+      renderCalendar();
     }
 
     function addSerie(id) {
@@ -2347,6 +3030,15 @@
       if (action === "increment-season") incrementSeason(index);
       if (action === "complete-season") completeSeason(index);
       if (action === "decrement-season") decrementSeason(index);
+      if (action === "change-month") {
+        calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + Number(button.dataset.direction || 0), 1);
+        selectedCalendarDate = calendarEventsForMonth(calendarCursor)[0]?.date || dateKeyFromDate(calendarCursor);
+        renderCalendar();
+      }
+      if (action === "select-calendar-day") {
+        selectedCalendarDate = button.dataset.date;
+        renderCalendar();
+      }
       if (action === "remove-serie") removeActiveSerie();
       if (action === "export-data") exportData();
       if (action === "import-data") document.getElementById("importFile").click();
