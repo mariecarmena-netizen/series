@@ -275,6 +275,49 @@
       gap: 8px;
     }
 
+    .home-header {
+      align-items: flex-start;
+    }
+
+    .home-header .header-main {
+      flex: 1 1 auto;
+    }
+
+    .header-menu {
+      position: relative;
+      z-index: 8;
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
+
+    .menu-popover {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      display: none;
+      min-width: 168px;
+      padding: 7px;
+      border: 1px solid rgba(255, 255, 255, .72);
+      border-radius: var(--radius);
+      background: rgba(255, 254, 251, .94);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(16px);
+    }
+
+    .header-menu.open .menu-popover {
+      display: grid;
+      gap: 6px;
+    }
+
+    .menu-popover button {
+      width: 100%;
+      justify-content: flex-start;
+      color: var(--ink);
+      background: rgba(255, 254, 251, .86);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
     .summary-panel,
     .tool-panel,
     .detail-hero,
@@ -741,11 +784,38 @@
       height: 96px;
     }
 
+    .avatar.with-image,
+    .poster.with-image {
+      background: var(--paper-soft);
+      font-size: 0;
+      text-shadow: none;
+    }
+
+    .avatar.with-image::before,
+    .avatar.with-image::after,
+    .poster.with-image::before,
+    .poster.with-image::after {
+      display: none;
+    }
+
+    .avatar img,
+    .poster img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
     .serie-card .avatar {
       width: 30px;
       height: 30px;
       font-size: 10px;
       box-shadow: 0 6px 12px rgba(23, 26, 24, .10);
+    }
+
+    .serie-card .avatar.with-image {
+      width: 48px;
+      height: 62px;
     }
 
     .serie-card .avatar::before,
@@ -1551,6 +1621,14 @@
         padding-bottom: 16px;
       }
 
+      .home-header {
+        flex-direction: row;
+      }
+
+      .home-header .header-main {
+        min-width: 0;
+      }
+
       .header-actions {
         width: 100%;
         justify-content: stretch;
@@ -1656,12 +1734,18 @@
 <body>
   <main class="app">
     <section id="homeScreen" class="screen active" aria-labelledby="homeHeading">
-      <header class="app-header">
+      <header class="app-header home-header">
         <div class="header-main">
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
             <p>Controla lo que ves, lo que falta y cuándo terminarías.</p>
+          </div>
+        </div>
+        <div class="header-menu" id="homeMenu">
+          <button class="secondary icon-button" type="button" data-action="toggle-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="homeMenuPopover">&#9776;</button>
+          <div class="menu-popover" id="homeMenuPopover">
+            <button class="secondary" type="button" data-action="show-screen" data-screen="watched">Mis series</button>
           </div>
         </div>
       </header>
@@ -1709,7 +1793,6 @@
         <div class="filter-tabs" role="group" aria-label="Filtrar series">
           <button type="button" data-action="set-filter" data-filter="all" class="active">Todas</button>
           <button type="button" data-action="set-filter" data-filter="watching">En curso</button>
-          <button type="button" data-action="set-filter" data-filter="completed">Completadas</button>
           <button type="button" data-action="set-filter" data-filter="missing">Faltan datos</button>
         </div>
       </section>
@@ -1725,6 +1808,28 @@
         <span id="watchedSummary">0 vistos</span>
       </div>
       <section id="mySeriesList" class="series-grid" aria-live="polite"></section>
+    </section>
+
+    <section id="watchedScreen" class="screen" aria-labelledby="watchedHeading">
+      <div class="screen-nav">
+        <button class="secondary icon-button" type="button" data-action="show-screen" data-screen="home" aria-label="Volver">←</button>
+      </div>
+
+      <header class="app-header">
+        <div class="header-main">
+          <div class="mark" aria-hidden="true">OK</div>
+          <div class="title">
+            <h1 id="watchedHeading">Mis series</h1>
+            <p>Series vistas enteras.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="section-title">
+        <h3>Vistas enteras</h3>
+        <span id="watchedSeriesCount">0 series</span>
+      </div>
+      <section id="watchedSeriesList" class="series-grid" aria-live="polite"></section>
     </section>
 
     <section id="catalogScreen" class="screen" aria-labelledby="catalogHeading">
@@ -2564,7 +2669,7 @@ Last Forever
         releasedWatchTimeText: "21 h",
         totalPlannedWatchTimeMinutes: 1560,
         totalPlannedWatchTimeText: "26 h",
-        image: "",
+        image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80",
         description:
           "Cuatro amigos intentan adaptarse a la sociedad actual y a las nuevas formas de entender la masculinidad."
       },
@@ -2586,7 +2691,7 @@ Last Forever
         totalPlannedWatchTimeText: "5 h",
         nextEpisodeDate: "2026-07-08",
         finaleDate: "2026-07-15",
-        image: "",
+        image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80",
         description:
           "Una madre recién divorciada cae en una peligrosa historia de chantaje, asesinato y fútbol infantil."
       },
@@ -2608,7 +2713,7 @@ Last Forever
         releasedWatchTimeText: "91 h 40 min",
         totalPlannedWatchTimeMinutes: 5500,
         totalPlannedWatchTimeText: "91 h 40 min",
-        image: "",
+        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
         description:
           "La familia Pritchett-Dunphy-Tucker en una comedia de falso documental sobre el caos cotidiano familiar."
       },
@@ -2630,7 +2735,7 @@ Last Forever
         releasedWatchTimeText: "76 h 16 min",
         totalPlannedWatchTimeMinutes: 4576,
         totalPlannedWatchTimeText: "76 h 16 min",
-        image: "",
+        image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80",
         description:
           "Ted Mosby cuenta a sus hijos la larga historia de cómo conoció a su madre, con sus amigos de Nueva York de por medio."
       }
@@ -2641,6 +2746,7 @@ Last Forever
         id: "koh-lanta",
         name: "Koh-Lanta",
         emoji: "TF1",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
         status: "Temporadas regulares · hasta Les Reliques du destin (2026)",
         description: "Telerrealidad francesa de aventura · TF1 · temporadas regulares emitidas; no incluye ediciones especiales ni temporadas canceladas.",
         minutesPerEpisode: 110,
@@ -2678,6 +2784,7 @@ Last Forever
         id: "secret-story",
         name: "Secret Story",
         emoji: "TV",
+        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
         status: "Temporada 2026 confirmada, fechas pendientes",
         description: "Reality francés · TF1+ · próxima temporada confirmada, sin calendario público.",
         minutesPerEpisode: 45,
@@ -2777,6 +2884,11 @@ Last Forever
         .replace(/'/g, "&#039;");
     }
 
+    function serieImageContent(serie) {
+      if (!serie.image) return escapeHtml(serie.emoji);
+      return `<img src="${escapeHtml(serie.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`;
+    }
+
     function formatCatalogDate(value) {
       if (!value) return "";
       const [year, month, day] = value.split("-");
@@ -2805,6 +2917,7 @@ Last Forever
           dateText,
           item.description
         ].filter(Boolean).join(" · "),
+        image: item.image || "",
         minutesPerEpisode: item.averageEpisodeMinutes || 45,
         episodesPerDay: 2,
         seasons: item.seasons.map(season => {
@@ -2867,6 +2980,7 @@ Last Forever
             id: item.id || makeImportId(item.name, index),
             name: item.name || `Serie ${index + 1}`,
             emoji: item.emoji || "TV",
+            image: item.image || "",
             status: item.status || "Pendiente",
             description: item.description || "",
             minutesPerEpisode: Number(item.minutesPerEpisode) || 45,
@@ -2892,6 +3006,7 @@ Last Forever
           ...serie,
           name: catalogSerie.name,
           emoji: catalogSerie.emoji,
+          image: catalogSerie.image || serie.image || "",
           status: catalogSerie.status,
           description: catalogSerie.description,
           minutesPerEpisode: catalogSerie.minutesPerEpisode,
@@ -2948,6 +3063,7 @@ Last Forever
     function clampSerie(serie) {
       serie.name = String(serie.name || "Serie sin nombre").trim() || "Serie sin nombre";
       serie.emoji = String(serie.emoji || "TV").trim().slice(0, 4) || "TV";
+      serie.image = String(serie.image || "").trim();
       serie.status = String(serie.status || "Pendiente").trim() || "Pendiente";
       serie.description = String(serie.description || "").trim();
       serie.minutesPerEpisode = Math.max(1, Number(serie.minutesPerEpisode) || 45);
@@ -3014,17 +3130,17 @@ Last Forever
       return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, progress, missingData };
     }
 
-    function globalTotals() {
-      const totals = state.mySeries.map(serieTotals);
+    function globalTotals(series = state.mySeries) {
+      const totals = series.map(serieTotals);
       const pendingEpisodes = totals.reduce((sum, total) => sum + total.pendingEpisodes, 0);
       const watchedEpisodes = totals.reduce((sum, total) => sum + total.watchedEpisodes, 0);
       const totalEpisodes = totals.reduce((sum, total) => sum + total.totalEpisodes, 0);
       const pendingMinutes = totals.reduce((sum, total) => sum + total.pendingMinutes, 0);
-      const daysLeft = state.mySeries.length
-        ? Math.max(...state.mySeries.map(serie => serieTotals(serie).daysLeft || 0))
+      const daysLeft = series.length
+        ? Math.max(...series.map(serie => serieTotals(serie).daysLeft || 0))
         : 0;
-      const averagePace = state.mySeries.length
-        ? state.mySeries.reduce((sum, serie) => sum + Number(serie.episodesPerDay || 0), 0) / state.mySeries.length
+      const averagePace = series.length
+        ? series.reduce((sum, serie) => sum + Number(serie.episodesPerDay || 0), 0) / series.length
         : 0;
       return { pendingEpisodes, watchedEpisodes, totalEpisodes, pendingMinutes, daysLeft, averagePace };
     }
@@ -3147,15 +3263,34 @@ Last Forever
       return "Completada";
     }
 
+    function shouldShowOnHome(serie) {
+      const totals = serieTotals(serie);
+      return totals.pendingEpisodes > 0 || totals.missingData || totals.availableEpisodes === 0;
+    }
+
+    function homeSeries() {
+      return state.mySeries.filter(shouldShowOnHome);
+    }
+
+    function watchedSeries() {
+      return state.mySeries.filter(serie => {
+        const totals = serieTotals(serie);
+        return totals.totalEpisodes > 0 &&
+          totals.availableEpisodes > 0 &&
+          totals.watchedEpisodes >= totals.availableEpisodes &&
+          !totals.missingData &&
+          totals.pendingEpisodes === 0;
+      });
+    }
+
     function filteredSeries() {
       const query = ui.search.trim().toLowerCase();
-      return state.mySeries.filter(serie => {
+      return homeSeries().filter(serie => {
         const totals = serieTotals(serie);
         const kind = statusKind(serie);
         const matchesFilter =
           ui.filter === "all" ||
           (ui.filter === "watching" && (kind === "watching" || kind === "pending")) ||
-          (ui.filter === "completed" && kind === "completed") ||
           (ui.filter === "missing" && totals.missingData);
         const haystack = [
           serie.name,
@@ -3173,6 +3308,7 @@ Last Forever
     function filteredCatalog() {
       const query = ui.catalogSearch.trim().toLowerCase();
       return catalog.filter(item => {
+        if (getSerie(item.id)) return false;
         const haystack = [
           item.name,
           item.status,
@@ -3187,7 +3323,24 @@ Last Forever
       });
     }
 
+    function closeHomeMenu() {
+      const menu = document.getElementById("homeMenu");
+      const toggle = menu?.querySelector("[data-action='toggle-menu']");
+      if (!menu || !toggle) return;
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
+    function toggleHomeMenu() {
+      const menu = document.getElementById("homeMenu");
+      const toggle = menu?.querySelector("[data-action='toggle-menu']");
+      if (!menu || !toggle) return;
+      const isOpen = menu.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    }
+
     function showScreen(screen) {
+      closeHomeMenu();
       document.querySelectorAll(".screen").forEach(element => element.classList.remove("active"));
       const target = document.getElementById(`${screen}Screen`);
       if (target) target.classList.add("active");
@@ -3199,13 +3352,56 @@ Last Forever
       render();
     }
 
+    function createSerieCard(serie, options = {}) {
+      const totals = serieTotals(serie);
+      const status = statusLabel(serie);
+      const nextLabel = nextEpisodeLabel(serie);
+      const showQuickWatch = options.showQuickWatch !== false;
+      const nextCaption = options.nextCaption || "Por ver";
+      const card = document.createElement("article");
+      card.className = "serie-card";
+      applyPalette(card, serie.id);
+      card.innerHTML = `
+        <div class="serie-head">
+          <div class="serie-meta">
+            <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
+            <h2>${escapeHtml(serie.name)}</h2>
+            <p>${escapeHtml(serie.description || serie.status)}</p>
+          </div>
+          <div class="avatar${serie.image ? " with-image" : ""}" aria-hidden="true">${serieImageContent(serie)}</div>
+        </div>
+        <div class="progress-wrap"><div class="progress" style="width:${Math.min(100, totals.progress)}%"></div></div>
+        <p>${Math.round(totals.progress)}% · ${totals.watchedEpisodes}/${totals.totalEpisodes} capítulos</p>
+        <div class="mini-stats">
+          <span>Pend. <b>${totals.pendingEpisodes}</b></span>
+          <span>Tiempo <b>${formatHours(totals.pendingMinutes)}</b></span>
+          <span>Final <b>${formatFinishDate(totals.daysLeft)}</b></span>
+        </div>
+        <div class="next-watch">
+          <small>${escapeHtml(nextCaption)}</small>
+          <b>${escapeHtml(nextLabel)}</b>
+        </div>
+        <div class="card-actions">
+          <button type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ${escapeHtml(serie.name)}">Abrir</button>
+          ${showQuickWatch ? `
+            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${totals.pendingEpisodes === 0 ? "disabled" : ""}>+1</button>
+          ` : ""}
+        </div>
+      `;
+      return card;
+    }
+
     function renderHome() {
-      const totals = globalTotals();
-      document.getElementById("seriesCount").textContent = state.mySeries.length;
+      const visibleOnHome = homeSeries();
+      const completed = watchedSeries();
+      const totals = globalTotals(visibleOnHome);
+      document.getElementById("seriesCount").textContent = visibleOnHome.length;
       document.getElementById("pendingEpisodes").textContent = totals.pendingEpisodes;
       document.getElementById("pendingTime").textContent = formatHours(totals.pendingMinutes);
       document.getElementById("finishDate").textContent = formatFinishDate(totals.daysLeft);
-      document.getElementById("watchedSummary").textContent = `${totals.watchedEpisodes} vistos de ${totals.totalEpisodes}`;
+      document.getElementById("watchedSummary").textContent = completed.length
+        ? `${visibleOnHome.length} en portada · ${completed.length} en Mis series`
+        : `${visibleOnHome.length} en portada`;
       document.getElementById("watchPace").textContent = `${formatNumber(totals.averagePace)} al día`;
       document.getElementById("nextRelease").textContent = upcomingReleaseText();
       document.getElementById("dataUpdated").textContent = `Datos ${formatCatalogDate(DATA_LAST_UPDATED)}`;
@@ -3222,10 +3418,16 @@ Last Forever
         homeTitle.textContent = "Todavía no has añadido series";
         homeSubtitle.textContent = "Añade una serie del catálogo o crea una personalizada.";
         nextEpisode.textContent = "Sin siguiente capítulo";
+      } else if (visibleOnHome.length === 0) {
+        homeTitle.textContent = "Todo al día";
+        homeSubtitle.textContent = completed.length
+          ? `${completed.length} serie${completed.length === 1 ? "" : "s"} en Mis series.`
+          : "No quedan capítulos pendientes.";
+        nextEpisode.textContent = "Sin capítulos pendientes";
       } else {
-        homeTitle.textContent = `${state.mySeries.length} serie${state.mySeries.length > 1 ? "s" : ""} en seguimiento`;
+        homeTitle.textContent = `${visibleOnHome.length} serie${visibleOnHome.length > 1 ? "s" : ""} en portada`;
         homeSubtitle.textContent = `Quedan ${totals.pendingEpisodes} capítulos, aproximadamente ${formatHours(totals.pendingMinutes)}.`;
-        const next = state.mySeries.find(serie => serieTotals(serie).pendingEpisodes > 0) || state.mySeries[0];
+        const next = visibleOnHome.find(serie => serieTotals(serie).pendingEpisodes > 0) || visibleOnHome[0];
         nextEpisode.textContent = nextEpisodeInfo(next);
       }
 
@@ -3244,6 +3446,20 @@ Last Forever
         return;
       }
 
+      if (visibleOnHome.length === 0) {
+        list.innerHTML = `
+          <article class="empty-card">
+            <span class="kicker">Al día</span>
+            <h2>Todo visto</h2>
+            <p>Las series completas volverán a portada cuando haya capítulos nuevos por ver.</p>
+            <div class="card-actions">
+              <button type="button" data-action="show-screen" data-screen="watched">Mis series</button>
+            </div>
+          </article>
+        `;
+        return;
+      }
+
       const visible = filteredSeries();
       if (visible.length === 0) {
         list.innerHTML = `
@@ -3257,48 +3473,43 @@ Last Forever
       }
 
       visible.forEach(serie => {
-        const totals = serieTotals(serie);
-        const status = statusLabel(serie);
-        const nextLabel = nextEpisodeLabel(serie);
-        const card = document.createElement("article");
-        card.className = "serie-card";
-        applyPalette(card, serie.id);
-        card.innerHTML = `
-          <div class="serie-head">
-            <div class="serie-meta">
-              <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
-              <h2>${escapeHtml(serie.name)}</h2>
-              <p>${escapeHtml(serie.description || serie.status)}</p>
-            </div>
-            <div class="avatar" aria-hidden="true">${escapeHtml(serie.emoji)}</div>
-          </div>
-          <div class="progress-wrap"><div class="progress" style="width:${Math.min(100, totals.progress)}%"></div></div>
-          <p>${Math.round(totals.progress)}% · ${totals.watchedEpisodes}/${totals.totalEpisodes} capítulos</p>
-          <div class="mini-stats">
-            <span>Pend. <b>${totals.pendingEpisodes}</b></span>
-            <span>Tiempo <b>${formatHours(totals.pendingMinutes)}</b></span>
-            <span>Final <b>${formatFinishDate(totals.daysLeft)}</b></span>
-          </div>
-          <div class="next-watch">
-            <small>Por ver</small>
-            <b>${escapeHtml(nextLabel)}</b>
-          </div>
-          <div class="card-actions">
-            <button type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ${escapeHtml(serie.name)}">Abrir</button>
-            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${totals.pendingEpisodes === 0 ? "disabled" : ""}>+1</button>
-          </div>
+        list.appendChild(createSerieCard(serie));
+      });
+    }
+
+    function renderWatchedSeries() {
+      const list = document.getElementById("watchedSeriesList");
+      const count = document.getElementById("watchedSeriesCount");
+      if (!list || !count) return;
+
+      const completed = watchedSeries();
+      count.textContent = `${completed.length} serie${completed.length === 1 ? "" : "s"}`;
+      list.innerHTML = "";
+
+      if (completed.length === 0) {
+        list.innerHTML = `
+          <article class="empty-card">
+            <span class="kicker">Vacío</span>
+            <h2>Aún no hay series completas</h2>
+            <p>Cuando termines todos los capítulos disponibles, aparecerán aquí.</p>
+          </article>
         `;
-        list.appendChild(card);
+        return;
+      }
+
+      completed.forEach(serie => {
+        list.appendChild(createSerieCard(serie, { showQuickWatch: false, nextCaption: "Estado" }));
       });
     }
 
     function renderCatalog() {
       const visible = filteredCatalog();
+      const available = catalog.filter(item => !getSerie(item.id));
       const searchCatalog = document.getElementById("searchCatalog");
       if (document.activeElement !== searchCatalog) searchCatalog.value = ui.catalogSearch;
       document.getElementById("catalogCount").textContent = ui.catalogSearch
-        ? `${visible.length} de ${catalog.length}`
-        : `${catalog.length} disponible${catalog.length === 1 ? "" : "s"}`;
+        ? `${visible.length} de ${available.length}`
+        : `${available.length} disponible${available.length === 1 ? "" : "s"}`;
       const list = document.getElementById("catalogList");
       list.innerHTML = "";
 
@@ -3314,7 +3525,6 @@ Last Forever
       }
 
       visible.forEach(item => {
-        const alreadyAdded = Boolean(getSerie(item.id));
         const card = document.createElement("article");
         card.className = "catalog-card";
         applyPalette(card, item.id);
@@ -3324,12 +3534,10 @@ Last Forever
               <h3>${escapeHtml(item.name)}</h3>
               <p>${escapeHtml(item.description)}<br>${escapeHtml(item.status)}</p>
             </div>
-            <div class="poster" aria-hidden="true">${escapeHtml(item.emoji)}</div>
+            <div class="poster${item.image ? " with-image" : ""}" aria-hidden="true">${serieImageContent(item)}</div>
           </div>
           <div class="card-actions">
-            <button class="${alreadyAdded ? "secondary" : ""}" type="button" data-action="${alreadyAdded ? "open-detail" : "add-serie"}" data-id="${escapeHtml(item.id)}">
-              ${alreadyAdded ? "Ya añadida" : "Añadir"}
-            </button>
+            <button type="button" data-action="add-serie" data-id="${escapeHtml(item.id)}">Añadir</button>
           </div>
         `;
         list.appendChild(card);
@@ -3529,6 +3737,7 @@ Last Forever
       state.mySeries.forEach(clampSerie);
       saveState();
       renderHome();
+      renderWatchedSeries();
       renderCatalog();
       renderDetail();
       renderCalendar();
@@ -3744,6 +3953,8 @@ Last Forever
     }
 
     document.addEventListener("click", event => {
+      if (!event.target.closest("#homeMenu")) closeHomeMenu();
+
       const button = event.target.closest("[data-action]");
       if (!button) return;
 
@@ -3751,6 +3962,10 @@ Last Forever
       const id = button.dataset.id;
       const index = Number(button.dataset.index);
 
+      if (action === "toggle-menu") {
+        toggleHomeMenu();
+        return;
+      }
       if (action === "show-screen") showScreen(button.dataset.screen);
       if (action === "set-filter") {
         ui.filter = button.dataset.filter;
@@ -3778,6 +3993,10 @@ Last Forever
       if (action === "remove-serie") removeActiveSerie();
       if (action === "export-data") exportData();
       if (action === "import-data") document.getElementById("importFile").click();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeHomeMenu();
     });
 
     document.getElementById("searchSeries").addEventListener("input", event => {
