@@ -1664,10 +1664,6 @@
             <p>Controla lo que ves, lo que falta y cuándo terminarías.</p>
           </div>
         </div>
-        <div class="header-actions">
-          <button class="secondary" type="button" data-action="import-data">↥ Importar</button>
-          <button class="secondary" type="button" data-action="export-data">↧ Exportar</button>
-        </div>
       </header>
 
       <section class="summary-panel" aria-label="Resumen">
@@ -1679,7 +1675,9 @@
           </div>
           <div class="inline-head">
             <span class="pill" id="nextEpisode">Sin siguiente capítulo</span>
+            <span class="pill amber" id="nextRelease">Sin estrenos próximos</span>
             <span class="pill amber" id="watchPace">0 al día</span>
+            <span class="pill green" id="dataUpdated">Datos 05/07/2026</span>
           </div>
         </div>
         <div class="stats-grid">
@@ -1912,6 +1910,514 @@
   <script>
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
+    const DATA_LAST_UPDATED = "2026-07-05";
+
+
+    const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
+
+    const modernFamilyEpisodeTitles = [
+      episodeTitles(`
+Pilot
+The Bicycle Thief
+Come Fly with Me
+The Incident
+Coal Digger
+Run for Your Wife
+En Garde
+Great Expectations
+Fizbo
+Undeck the Halls
+Up All Night
+Not in My House
+Fifteen Percent
+Moon Landing
+My Funky Valentine
+Fears
+Truth Be Told
+Starry Night
+Game Changer
+Benched
+Travels with Scout
+Airport 2010
+Hawaii
+Family Portrait
+      `),
+      episodeTitles(`
+The Old Wagon
+The Kiss
+Earthquake
+Strangers on a Treadmill
+Unplugged
+Halloween
+Chirp
+Manny Get Your Gun
+Mother Tucker
+Dance Dance Revelation
+Slow Down Your Neighbors
+Our Children, Ourselves
+Caught in the Act
+Bixby's Back
+Princess Party
+Regrets Only
+Two Monkeys and a Panda
+Boys' Night
+The Musical Man
+Someone to Watch Over Lily
+Mother's Day
+Good Cop Bad Dog
+See You Next Fall
+The One That Got Away
+      `),
+      episodeTitles(`
+Dude Ranch
+When Good Kids Go Bad
+Phil on Wire
+Door to Door
+Hit and Run
+Go Bullfrogs!
+Treehouse
+After the Fire
+Punkin Chunkin
+Express Christmas
+Lifetime Supply
+Egg Drop
+Little Bo Bleep
+Me? Jealous?
+Aunt Mommy
+Virgin Territory
+Leap Day
+Send Out the Clowns
+Election Day
+The Last Walt
+Planes, Trains and Cars
+Disneyland
+Tableau Vivant
+Baby on Board
+      `),
+      episodeTitles(`
+Bringing Up Baby
+Schooled
+Snip
+The Butler's Escape
+Open House of Horrors
+Yard Sale
+Arrested
+Mistery Date
+When a Tree Falls
+Diamond in the Rough
+New Year's Eve
+Party Crasher
+Fulgencio
+A Slight at the Opera
+Heart Broken
+Bad Hair Day
+Best Men
+The Wow Factor
+The Future Dunphys
+Flip Flop
+Career Day
+My Hero
+Games People Play
+Goodnight Gracie
+      `),
+      episodeTitles(`
+Suddenly, Last Summer
+First Days
+Larry's Wife
+Farm Strong
+The Late Show
+The Help
+A Fair to Remember
+ClosetCon '13
+The Big Game
+The Old Man & the Tree
+And One to Grow On
+Under Pressure
+Three Dinners
+iSpy
+The Feud
+Spring-a-Ding-Fling
+Other People's Children
+Las Vegas
+A Hard Jay's Night
+Australia
+Sleeper
+Message Received
+The Wedding (Part 1)
+The Wedding (Part 2)
+      `),
+      episodeTitles(`
+The Long Honeymoon
+Do Not Push
+The Cold
+Marco Polo
+Won't You Be Our Neighbor
+Halloween 3: AwesomeLand
+Queer Eyes, Full Hearts
+Three Turkeys
+Strangers in the Night
+Haley's 21st Birthday
+The Day We Almost Died
+The Big Guns
+Rash Decisions
+Valentine's Day 4: Twisted Sister
+Fight or Flight
+Connection Lost
+Closet? You'll Love It!
+Spring Break
+Grill, Interrupted
+Knock 'Em Down
+Integrity
+Patriot Games
+Crying Out Loud
+American Skyper
+      `),
+      episodeTitles(`
+Summer Lovin'
+The Day Alex Left for College
+The Closet Case
+She Crazy
+The Verdict
+The More You Ignore Me
+Phil's Sexy, Sexy House
+Clean Out Your Junk Drawer
+White Christmas
+Playdates
+Spread Your Wings
+Clean for a Day
+Thunk in the Trunk
+The Storm
+I Don't Know How She Does It
+The Cover-Up
+Express Yourself
+The Party
+Man Shouldn't Lie
+Promposal
+Crazy Train
+Double Click
+      `),
+      episodeTitles(`
+A Tale of Three Cities
+A Stereotypical Day
+Blindsided
+Weathering Heights
+Halloween IV: Revenge of Rod Skyhook
+Grab It
+Thanksgiving Jamboree
+The Alliance
+Snow Ball
+Ringmaster Keifth
+Sarge & Pea
+Do You Believe in Magic
+Do It Yourself
+Heavy is the Head
+Finding Fizbo
+Basketball
+Pig Moon Rising
+Five Minutes
+Frank's Wedding
+All Things Being Equal
+Alone Time
+The Graduates
+      `),
+      episodeTitles(`
+Lake Life
+The Long Goodbye
+Catch of the Day
+Sex, Lies and Kickball
+It's the Great Pumpkin, Phil Dunphy
+Ten Years Later
+Winner Winner Turkey Dinner
+Brushes with Celebrity
+Tough Love
+No Small Feet
+He Said, She Shed
+Dear Beloved Family
+In Your Head
+Written in the Stars
+Spanks for the Memories
+Wine Weekend
+Royal Visit
+Daddy Issues
+CHiPs and Salsa
+Mother!
+The Escape
+Clash of Swords
+      `),
+      episodeTitles(`
+I Love a Parade
+Kiss and Tell
+A Sketchy Area
+Torn Between Two Lovers
+Good Grief
+On the Same Paige
+Did the Chicken Cross the Road?
+Kids These Days
+Putting Down Roots
+Stuck in a Moment
+A Moving Day
+Blasts from the Past
+Whanex?
+We Need to Talk About Lily
+SuperShowerBabyBowl
+Red Alert
+The Wild
+Stand by Your Man
+Yes-Woman
+Can't Elope
+Commencement
+A Year of Birthdays
+      `),
+      episodeTitles(`
+New Kids on the Block
+Snapped
+Perfect Pairs
+Pool Party
+The Last Halloween
+A Game of Chicken
+The Last Thanksgiving
+Tree's a Crowd
+The Last Christmas
+The Prescott
+Legacy
+Dead on a Rival
+Paris
+Spuds
+Baby Steps
+I'm Going to Miss This
+Finale
+Finale
+      `)
+    ];
+
+    const howIMetYourMotherEpisodeTitles = [
+      episodeTitles(`
+Pilot
+Purple Giraffe
+Sweet Taste of Liberty
+Return of the Shirt
+Okay Awesome
+Slutty Pumpkin
+Matchmaker
+The Duel
+Belly Full of Turkey
+The Pineapple Incident
+The Limo
+The Wedding
+Drumroll, Please
+Zip, Zip, Zip
+Game Night
+Cupcake
+Life Among the Gorillas
+Nothing Good Happens After 2 A.M.
+Mary the Paralegal
+Best Prom Ever
+Milk
+Come On
+      `),
+      episodeTitles(`
+Where Were We?
+The Scorpion and the Toad
+Brunch
+Ted Mosby, Architect
+World's Greatest Couple
+Aldrin Justice
+Swarley
+Atlantic City
+Slap Bet
+Single Stamina
+How Lily Stole Christmas
+First Time in New York
+Columns
+Monday Night Football
+Lucky Penny
+Stuff
+Arrivederci, Fiero
+Moving Day
+Bachelor Party
+Showdown
+Something Borrowed
+Something Blue
+      `),
+      episodeTitles(`
+Wait for It
+We're Not from Here
+Third Wheel
+Little Boys
+How I Met Everyone Else
+I'm Not That Guy
+Dowisetrepla
+Spoiler Alert
+Slapsgiving
+The Yips
+The Platinum Rule
+No Tomorrow
+Ten Sessions
+The Bracket
+The Chain of Screaming
+Sandcastles in the Sand
+The Goat
+Rebound Bro
+Everything Must Go
+Miracles
+      `),
+      episodeTitles(`
+Do I Know You?
+The Best Burger in New York
+I Heart NJ
+Intervention
+Shelter Island
+Happily Ever After
+Not a Father's Day
+Woooo!
+The Naked Man
+The Fight
+Little Minnesota
+Benefits
+Three Days of Snow
+The Possimpible
+The Stinsons
+Sorry, Bro
+The Front Porch
+Old King Clancy
+Murtaugh
+Mosbius Designs
+The Three Days Rule
+Right Place, Right Time
+As Fast as She Can
+The Leap
+      `),
+      episodeTitles(`
+Definitions
+Double Date
+Robin 101
+The Sexless Innkeeper
+Duel Citizenship
+Bagpipes
+The Rough Patch
+The Playbook
+Slapsgiving 2: Revenge of the Slap
+The Window
+Last Cigarette Ever
+Girls vs. Suits
+Jenkins
+Perfect Week
+Rabbit or Duck
+Hooked
+Of Course
+Say Cheese
+Zoo or False
+Home Wreckers
+Twin Beds
+Robots vs. Wrestlers
+The Wedding Bride
+Doppelgangers
+      `),
+      episodeTitles(`
+Big Days
+Cleaning House
+Unfinished
+Subway Wars
+Architect of Destruction
+Baby Talk
+Canning Randy
+Natural History
+Glitter
+Blitzgiving
+The Mermaid Theory
+False Positive
+Bad News
+Last Words
+Oh Honey
+Desperation Day
+Garbage Island
+A Change of Heart
+Legendaddy
+The Exploding Meatball Sub
+Hopeless
+The Perfect Cocktail
+Landmarks
+Challenge Accepted
+      `),
+      episodeTitles(`
+The Best Man
+The Naked Truth
+Ducky Tie
+The Stinson Missile Crisis
+Field Trip
+Mystery vs. History
+Noretta
+The Slutty Pumpkin Returns
+Disaster Averted
+Tick, Tick, Tick
+The Rebound Girl
+Symphony of Illumination
+Tailgate
+46 Minutes
+The Burning Beekeeper
+The Drunk Train
+No Pressure
+Karma
+The Broath
+Trilogy Time
+Now We're Even
+Good Crazy
+The Magician's Code
+The Magician's Code
+      `),
+      episodeTitles(`
+Farhampton
+The Pre-Nup
+Nannies
+Who Wants to Be a Godparent?
+The Autumn of Break-Ups
+Splitsville
+The Stamp Tramp
+Twelve Horny Women
+Lobster Crawl
+The Over-Correction
+The Final Page
+The Final Page
+Band or DJ?
+Ring Up!
+P.S. I Love You
+Bad Crazy
+The Ashtray
+Weekend at Barney's
+The Fortress
+The Time Travelers
+Romeward Bound
+The Bro Mitzvah
+Something Old
+Something New
+      `),
+      episodeTitles(`
+The Locket
+Coming Back
+Last Time in New York
+The Broken Code
+The Poker Game
+Knight Vision
+No Questions Asked
+The Lighthouse
+Platonish
+Mom and Dad
+Bedtime Stories
+The Rehearsal Dinner
+Bass Player Wanted
+Slapsgiving 3: Slappointment in Slapmarra
+Unpause
+How Your Mother Met Me
+Sunrise
+Rally
+Vesuvius
+Daisy
+Gary Blauman
+The End of the Aisle
+Last Forever
+Last Forever
+      `)
+    ];
 
     const machosAlfaEpisodeTitles = [
       [
@@ -2002,22 +2508,7 @@
       "2026-07-15"
     ];
 
-    const secretStorySeason14ReleaseDates = [
-      "2026-07-06",
-      "2026-07-07",
-      "2026-07-08",
-      "2026-07-09",
-      "2026-07-10",
-      "2026-07-13",
-      "2026-07-14",
-      "2026-07-15",
-      "2026-07-16",
-      "2026-07-17",
-      "2026-07-20",
-      "2026-07-21",
-      "2026-07-22",
-      "2026-07-23"
-    ];
+    const secretStorySeason14ReleaseDates = [];
 
     const releaseEvents = [
       ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
@@ -2056,7 +2547,7 @@
         id: "machos-alfa",
         title: "Machos Alfa",
         platform: "Netflix",
-        status: "En emisión / temporada final confirmada",
+        status: "Temporada 6 final confirmada, en rodaje",
         genre: "Comedia",
         seasons: [
           ...machosAlfaEpisodeTitles.map((episodes, index) => ({
@@ -2081,33 +2572,114 @@
         id: "maximum-pleasure-guaranteed",
         title: "Maximum Pleasure Guaranteed",
         platform: "Apple TV",
-        status: "En emisión",
+        status: "En emisión · final el 15/07/2026",
         genre: "Thriller / comedia negra / crimen",
         seasons: [
           { season: 1, episodes: maximumPleasureGuaranteedEpisodeTitles, released: false }
         ],
         releasedEpisodes: 8,
         totalEpisodesPlanned: 10,
-        averageEpisodeMinutes: 35,
-        releasedWatchTimeMinutes: 280,
-        releasedWatchTimeText: "4 h 40 min",
-        totalPlannedWatchTimeMinutes: 350,
-        totalPlannedWatchTimeText: "5 h 50 min",
+        averageEpisodeMinutes: 30,
+        releasedWatchTimeMinutes: 240,
+        releasedWatchTimeText: "4 h",
+        totalPlannedWatchTimeMinutes: 300,
+        totalPlannedWatchTimeText: "5 h",
         nextEpisodeDate: "2026-07-08",
         finaleDate: "2026-07-15",
         image: "",
         description:
           "Una madre recién divorciada cae en una peligrosa historia de chantaje, asesinato y fútbol infantil."
+      },
+      {
+        id: "modern-family",
+        title: "Modern Family",
+        platform: "ABC",
+        status: "Finalizada · 11 temporadas",
+        genre: "Comedia / falso documental",
+        seasons: modernFamilyEpisodeTitles.map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 250,
+        totalEpisodesPlanned: 250,
+        averageEpisodeMinutes: 22,
+        releasedWatchTimeMinutes: 5500,
+        releasedWatchTimeText: "91 h 40 min",
+        totalPlannedWatchTimeMinutes: 5500,
+        totalPlannedWatchTimeText: "91 h 40 min",
+        image: "",
+        description:
+          "La familia Pritchett-Dunphy-Tucker en una comedia de falso documental sobre el caos cotidiano familiar."
+      },
+      {
+        id: "como-conoci-a-vuestra-madre",
+        title: "Cómo conocí a vuestra madre",
+        platform: "CBS",
+        status: "Finalizada · 9 temporadas",
+        genre: "Comedia / sitcom",
+        seasons: howIMetYourMotherEpisodeTitles.map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 208,
+        totalEpisodesPlanned: 208,
+        averageEpisodeMinutes: 22,
+        releasedWatchTimeMinutes: 4576,
+        releasedWatchTimeText: "76 h 16 min",
+        totalPlannedWatchTimeMinutes: 4576,
+        totalPlannedWatchTimeText: "76 h 16 min",
+        image: "",
+        description:
+          "Ted Mosby cuenta a sus hijos la larga historia de cómo conoció a su madre, con sus amigos de Nueva York de por medio."
       }
     ];
 
     const catalog = [
       {
+        id: "koh-lanta",
+        name: "Koh-Lanta",
+        emoji: "TF1",
+        status: "Temporadas regulares · hasta Les Reliques du destin (2026)",
+        description: "Telerrealidad francesa de aventura · TF1 · temporadas regulares emitidas; no incluye ediciones especiales ni temporadas canceladas.",
+        minutesPerEpisode: 110,
+        episodesPerDay: 1,
+        seasons: [
+          { season: 1, total: 13, watched: 0, note: "Les Aventuriers de Koh-Lanta" },
+          { season: 2, total: 13, watched: 0, note: "Nicoya" },
+          { season: 3, total: 13, watched: 0, note: "Bocas del Toro" },
+          { season: 4, total: 13, watched: 0, note: "Panama" },
+          { season: 5, total: 13, watched: 0, note: "Pacifique" },
+          { season: 6, total: 13, watched: 0, note: "Vanuatu" },
+          { season: 7, total: 13, watched: 0, note: "Palawan" },
+          { season: 8, total: 13, watched: 0, note: "Caramoan" },
+          { season: 9, total: 13, watched: 0, note: "Palau" },
+          { season: 10, total: 14, watched: 0, note: "Viêtnam" },
+          { season: 11, total: 14, watched: 0, note: "Raja Ampat" },
+          { season: 12, total: 14, watched: 0, note: "Malaisie" },
+          { season: 14, total: 14, watched: 0, note: "Johor" },
+          { season: 15, total: 14, watched: 0, note: "Thaïlande" },
+          { season: 16, total: 14, watched: 0, note: "L'Île au trésor" },
+          { season: 17, total: 14, watched: 0, note: "Cambodge" },
+          { season: 18, total: 14, watched: 0, note: "Fidji" },
+          { season: 20, total: 14, watched: 0, note: "La Guerre des chefs" },
+          { season: 21, total: 15, watched: 0, note: "Les 4 Terres" },
+          { season: 22, total: 13, watched: 0, note: "Les Armes secrètes" },
+          { season: 23, total: 17, watched: 0, note: "Le Totem maudit" },
+          { season: 24, total: 17, watched: 0, note: "Le Feu sacré" },
+          { season: 25, total: 16, watched: 0, note: "Les Chasseurs d'immunité" },
+          { season: 26, total: 16, watched: 0, note: "La Tribu maudite" },
+          { season: 27, total: 17, watched: 0, note: "La Revanche des 4 Terres" },
+          { season: 28, total: 16, watched: 0, note: "Les Reliques du destin" }
+        ]
+      },
+      {
         id: "secret-story",
         name: "Secret Story",
         emoji: "TV",
-        status: "Temporada 14 en emisión",
-        description: "Reality francés · 14 temporadas · datos actualizados.",
+        status: "Temporada 2026 confirmada, fechas pendientes",
+        description: "Reality francés · TF1+ · próxima temporada confirmada, sin calendario público.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -2124,7 +2696,7 @@
           { season: 11, total: 231, watched: 0, note: "TF1+" },
           { season: 12, total: 59, watched: 0, note: "TF1+" },
           { season: 13, total: 60, watched: 0, note: "TF1+" },
-          { season: 14, total: 14, watched: 0, note: "En emisión" }
+          { season: 14, total: 0, watched: 0, note: "2026 confirmada, fechas pendientes" }
         ]
       },
       ...seriesCatalog.map(catalogItemFromSeries)
@@ -2156,7 +2728,7 @@
       ["#355070", "#e56b6f", "#b7e4c7"]
     ];
 
-    let state = loadState();
+    let state = syncKnownCatalogData(loadState());
     let activeSerieId = state.mySeries[0]?.id || null;
 
     function clone(obj) {
@@ -2235,15 +2807,23 @@
         ].filter(Boolean).join(" · "),
         minutesPerEpisode: item.averageEpisodeMinutes || 45,
         episodesPerDay: 2,
-        seasons: item.seasons.map(season => ({
-          season: season.season,
-          total: seasonTotalFromSource(season),
-          watched: 0,
-          note: season.released
-            ? item.platform
-            : (item.releasedEpisodes && item.seasons.length === 1 ? `${item.releasedEpisodes} emitidos` : "Pendiente"),
-          episodes: normalizeEpisodeList(season.episodes ?? season.episodios)
-        }))
+        seasons: item.seasons.map(season => {
+          const total = seasonTotalFromSource(season);
+          const releasedEpisodes = season.released
+            ? total
+            : (item.releasedEpisodes && item.seasons.length === 1 ? Math.min(total, item.releasedEpisodes) : 0);
+          return {
+            season: season.season,
+            total,
+            watched: 0,
+            available: releasedEpisodes > 0 || season.released !== false,
+            releasedEpisodes,
+            note: releasedEpisodes >= total
+              ? item.platform
+              : (releasedEpisodes > 0 ? `${releasedEpisodes} emitidos` : "Pendiente de estreno"),
+            episodes: normalizeEpisodeList(season.episodes ?? season.episodios)
+          };
+        })
       };
     }
 
@@ -2299,6 +2879,41 @@
       };
     }
 
+    function syncKnownCatalogData(nextState) {
+      nextState.mySeries = nextState.mySeries.map(serie => {
+        const catalogSerie = getCatalogSerie(serie.id);
+        if (!catalogSerie) return serie;
+
+        const savedSeasons = new Map(
+          serie.seasons.map(season => [Number(season.season), season])
+        );
+
+        return {
+          ...serie,
+          name: catalogSerie.name,
+          emoji: catalogSerie.emoji,
+          status: catalogSerie.status,
+          description: catalogSerie.description,
+          minutesPerEpisode: catalogSerie.minutesPerEpisode,
+          episodesPerDay: Number(serie.episodesPerDay) || catalogSerie.episodesPerDay,
+          seasons: catalogSerie.seasons.map(catalogSeason => {
+            const savedSeason = savedSeasons.get(Number(catalogSeason.season));
+            const total = seasonTotalFromSource(catalogSeason);
+            return {
+              season: catalogSeason.season,
+              total,
+              watched: Math.min(Math.max(0, Math.floor(Number(savedSeason?.watched) || 0)), total),
+              available: catalogSeason.available !== false,
+              releasedEpisodes: Math.max(0, Math.floor(Number(catalogSeason.releasedEpisodes) || 0)),
+              note: catalogSeason.note,
+              episodes: normalizeEpisodeList(catalogSeason.episodes)
+            };
+          })
+        };
+      });
+      return nextState;
+    }
+
     function makeImportId(name, index) {
       return `${String(name || "serie")
         .normalize("NFD")
@@ -2343,6 +2958,8 @@
         season.season = Math.max(1, Math.floor(Number(season.season) || index + 1));
         season.total = Math.max(0, Math.floor(Number(season.total) || 0));
         season.watched = Math.max(0, Math.floor(Number(season.watched) || 0));
+        season.available = season.available !== false;
+        season.releasedEpisodes = Math.max(0, Math.floor(Number(season.releasedEpisodes) || 0));
         season.note = String(season.note || "").trim();
         const catalogSeason = catalogSerie?.seasons.find(item => Number(item.season) === season.season);
         const ownEpisodes = normalizeEpisodeList(season.episodes ?? season.episodios);
@@ -2354,20 +2971,47 @@
           season.total = knownTotal;
           if (!season.note || season.note === "Completar") season.note = "TF1+";
         }
-        if (season.total > 0) season.watched = Math.min(season.watched, season.total);
+        if (season.total > 0) season.watched = Math.min(season.watched, availableEpisodeLimit(serie, season));
       });
+    }
+
+    function availableEpisodeLimit(serie, season) {
+      const total = Math.max(0, Math.floor(Number(season?.total) || 0));
+      if (!total) return 0;
+
+      const todayKey = dateKeyFromDate(new Date());
+      const datedReleased = releaseEvents.filter(event =>
+        event.serieId === serie.id &&
+        Number(event.season) === Number(season.season) &&
+        event.date <= todayKey
+      ).length;
+
+      if (datedReleased > 0) return Math.min(total, datedReleased);
+      if (season.releasedEpisodes > 0) return Math.min(total, season.releasedEpisodes);
+      if (season.available === false) return 0;
+      return total;
+    }
+
+    function nextWatchableSeason(serie) {
+      return serie.seasons.find(season => availableEpisodeLimit(serie, season) > season.watched);
     }
 
     function serieTotals(serie) {
       clampSerie(serie);
       const totalEpisodes = serie.seasons.reduce((sum, season) => sum + season.total, 0);
       const watchedEpisodes = serie.seasons.reduce((sum, season) => sum + season.watched, 0);
-      const pendingEpisodes = Math.max(0, totalEpisodes - watchedEpisodes);
+      const availableEpisodes = serie.seasons.reduce((sum, season) => sum + availableEpisodeLimit(serie, season), 0);
+      const pendingEpisodes = serie.seasons.reduce((sum, season) => {
+        return sum + Math.max(0, availableEpisodeLimit(serie, season) - season.watched);
+      }, 0);
+      const futureEpisodes = serie.seasons.reduce((sum, season) => {
+        return sum + Math.max(0, season.total - availableEpisodeLimit(serie, season));
+      }, 0);
       const pendingMinutes = pendingEpisodes * serie.minutesPerEpisode;
       const daysLeft = pendingEpisodes / serie.episodesPerDay;
       const progress = totalEpisodes ? (watchedEpisodes / totalEpisodes) * 100 : 0;
       const missingData = serie.seasons.some(season => season.total === 0);
-      return { totalEpisodes, watchedEpisodes, pendingEpisodes, pendingMinutes, daysLeft, progress, missingData };
+      return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, progress, missingData };
     }
 
     function globalTotals() {
@@ -2452,6 +3096,13 @@
       });
     }
 
+    function upcomingReleaseText() {
+      const todayKey = dateKeyFromDate(new Date());
+      const upcoming = releaseEvents.find(event => event.date >= todayKey);
+      if (!upcoming) return "Sin estrenos próximos";
+      return `${upcoming.serie}: ${releaseEpisodeLabel(upcoming)} · ${formatCatalogDate(upcoming.date)}`;
+    }
+
     function releaseEpisodeLabel(event) {
       return `T${event.season} · capítulo ${event.episode}`;
     }
@@ -2459,6 +3110,7 @@
     function statusKind(serie) {
       const totals = serieTotals(serie);
       if (totals.missingData) return "missing";
+      if (totals.futureEpisodes > 0 && totals.pendingEpisodes === 0) return "upcoming";
       if (totals.totalEpisodes > 0 && totals.pendingEpisodes === 0) return "completed";
       if (totals.watchedEpisodes > 0) return "watching";
       return "pending";
@@ -2467,15 +3119,19 @@
     function statusLabel(serie) {
       const kind = statusKind(serie);
       if (kind === "completed") return { text: "Completada", className: "green" };
+      if (kind === "upcoming") return { text: "Pendiente de estreno", className: "amber" };
       if (kind === "watching") return { text: "En curso", className: "amber" };
       if (kind === "missing") return { text: "Faltan datos", className: "rose" };
       return { text: "Pendiente", className: "" };
     }
 
     function nextEpisodeInfo(serie) {
-      const next = serie.seasons.find(season => season.total > 0 && season.watched < season.total);
+      const next = nextWatchableSeason(serie);
       if (next) {
         return `${serie.name}: ${episodeLabel(next, next.watched + 1)}`;
+      }
+      if (serieTotals(serie).futureEpisodes > 0) {
+        return `${serie.name}: pendiente de estreno`;
       }
       if (serie.seasons.some(season => season.total === 0)) {
         return `${serie.name}: faltan datos`;
@@ -2484,8 +3140,9 @@
     }
 
     function nextEpisodeLabel(serie) {
-      const next = serie.seasons.find(season => season.total > 0 && season.watched < season.total);
+      const next = nextWatchableSeason(serie);
       if (next) return episodeLabel(next, next.watched + 1);
+      if (serieTotals(serie).futureEpisodes > 0) return "Pendiente de estreno";
       if (serie.seasons.some(season => season.total === 0)) return "Faltan datos";
       return "Completada";
     }
@@ -2550,6 +3207,8 @@
       document.getElementById("finishDate").textContent = formatFinishDate(totals.daysLeft);
       document.getElementById("watchedSummary").textContent = `${totals.watchedEpisodes} vistos de ${totals.totalEpisodes}`;
       document.getElementById("watchPace").textContent = `${formatNumber(totals.averagePace)} al día`;
+      document.getElementById("nextRelease").textContent = upcomingReleaseText();
+      document.getElementById("dataUpdated").textContent = `Datos ${formatCatalogDate(DATA_LAST_UPDATED)}`;
       document.getElementById("searchSeries").value = ui.search;
 
       document.querySelectorAll("[data-action='set-filter']").forEach(button => {
@@ -2698,13 +3357,20 @@
       const container = document.getElementById("seasons");
       container.innerHTML = "";
       serie.seasons.forEach((season, index) => {
-        const pending = Math.max(0, season.total - season.watched);
+        const availableLimit = availableEpisodeLimit(serie, season);
+        const pending = Math.max(0, availableLimit - season.watched);
+        const future = Math.max(0, season.total - availableLimit);
+        const locked = season.total > 0 && availableLimit === 0;
         const progress = season.total ? (season.watched / season.total) * 100 : 0;
         const statusText = season.total === 0
           ? "Sin datos"
-          : pending === 0
+          : locked
+            ? "Pendiente de estreno"
+            : pending === 0 && future > 0
+              ? "Al día"
+              : pending === 0
             ? "Completa"
-            : `${pending} pendientes`;
+            : `${pending} por ver`;
         const isSeasonInProgress = season.watched > 0 && pending > 0;
         const nextEpisodeNumber = pending > 0 ? season.watched + 1 : 0;
         const nextEpisodeTitle = nextEpisodeNumber ? episodeTitleFor(season, nextEpisodeNumber) : "";
@@ -2741,7 +3407,15 @@
           <div class="season-head">
             <div>
               <h4>Temporada ${season.season}</h4>
-              <p>${season.total === 0 ? "Datos no disponibles" : `${season.watched}/${season.total} capítulos vistos`}</p>
+              <p>${
+                season.total === 0
+                  ? "Datos no disponibles"
+                  : locked
+                    ? `${season.total} capítulos previstos · todavía no estrenada`
+                    : future > 0
+                      ? `${season.watched}/${season.total} vistos · ${future} por estrenar`
+                      : `${season.watched}/${season.total} capítulos vistos`
+              }</p>
             </div>
             <span class="chip">${escapeHtml(statusText)}</span>
           </div>
@@ -2755,8 +3429,8 @@
           ${nextEpisodeBlock}
           ${episodeList}
           <div class="season-actions">
-            <button type="button" data-action="increment-season" data-index="${index}" ${season.total === 0 || season.watched >= season.total ? "disabled" : ""}>+1 visto</button>
-            <button class="secondary" type="button" data-action="complete-season" data-index="${index}" ${season.total === 0 || pending === 0 ? "disabled" : ""}>Completar</button>
+            <button type="button" data-action="increment-season" data-index="${index}" ${pending === 0 ? "disabled" : ""}>+1 visto</button>
+            <button class="secondary" type="button" data-action="complete-season" data-index="${index}" ${pending === 0 ? "disabled" : ""}>Completar</button>
             <button class="secondary" type="button" data-action="decrement-season" data-index="${index}" ${season.watched === 0 ? "disabled" : ""}>-1 visto</button>
           </div>
         `;
@@ -2908,7 +3582,7 @@
 
     function watchNextEpisode(serie = getSerie(activeSerieId)) {
       if (!serie) return false;
-      const next = serie.seasons.find(season => season.total > 0 && season.watched < season.total);
+      const next = nextWatchableSeason(serie);
       if (!next) return false;
       next.watched += 1;
       return true;
@@ -2959,7 +3633,7 @@
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      if (season.total > 0 && season.watched < season.total) season.watched += 1;
+      if (availableEpisodeLimit(serie, season) > season.watched) season.watched += 1;
       render();
     }
 
@@ -2975,7 +3649,7 @@
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      season.watched = season.total;
+      season.watched = availableEpisodeLimit(serie, season);
       render();
     }
 
@@ -3020,7 +3694,7 @@
       const serie = getSerie(activeSerieId);
       if (!serie) return;
       serie.seasons.forEach(season => {
-        season.watched = season.total;
+        season.watched = availableEpisodeLimit(serie, season);
       });
       render();
     }
@@ -3060,7 +3734,7 @@
         const text = await file.text();
         const payload = JSON.parse(text);
         const importedState = payload.state || payload;
-        state = normalizeState(importedState);
+        state = syncKnownCatalogData(normalizeState(importedState));
         activeSerieId = state.mySeries[0]?.id || null;
         saveState();
         showScreen("home");
