@@ -26,6 +26,14 @@
       --green-soft: #dff8ea;
       --amber: #9b6300;
       --amber-soft: #fff0c7;
+      --orange: #b85a00;
+      --orange-soft: #ffe6c7;
+      --yellow: #8a6d00;
+      --yellow-soft: #fff4ad;
+      --blue: #1f5fbf;
+      --blue-soft: #e4efff;
+      --gray: #5d6660;
+      --gray-soft: #ecefec;
       --shadow: 0 22px 54px rgba(23, 26, 24, .10);
       --shadow-soft: 0 12px 28px rgba(23, 26, 24, .07);
       --radius: 8px;
@@ -523,9 +531,9 @@
 
     .toolbar {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) auto;
+      grid-template-columns: 1fr;
       gap: 10px;
-      align-items: end;
+      align-items: center;
       margin-top: 14px;
       padding: 10px;
       border: 1px solid rgba(255, 255, 255, .72);
@@ -559,7 +567,7 @@
     .filter-tabs {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: flex-start;
       gap: 7px;
     }
 
@@ -890,19 +898,50 @@
       border-color: rgba(255, 255, 255, .18);
     }
 
-    .pill.green {
+    .pill.green,
+    .chip.green {
       color: var(--green);
       background: var(--green-soft);
       border-color: rgba(22, 114, 78, .18);
     }
 
-    .pill.amber {
+    .pill.amber,
+    .chip.amber {
       color: var(--amber);
       background: var(--amber-soft);
       border-color: rgba(155, 99, 0, .18);
     }
 
-    .pill.rose {
+    .pill.orange,
+    .chip.orange {
+      color: var(--orange);
+      background: var(--orange-soft);
+      border-color: rgba(184, 90, 0, .18);
+    }
+
+    .pill.yellow,
+    .chip.yellow {
+      color: var(--yellow);
+      background: var(--yellow-soft);
+      border-color: rgba(138, 109, 0, .2);
+    }
+
+    .pill.blue,
+    .chip.blue {
+      color: var(--blue);
+      background: var(--blue-soft);
+      border-color: rgba(31, 95, 191, .18);
+    }
+
+    .pill.gray,
+    .chip.gray {
+      color: var(--gray);
+      background: var(--gray-soft);
+      border-color: rgba(93, 102, 96, .18);
+    }
+
+    .pill.rose,
+    .chip.rose {
       color: var(--rose);
       background: var(--rose-soft);
       border-color: rgba(180, 35, 78, .18);
@@ -973,6 +1012,23 @@
       font-size: 12px;
       text-align: right;
       word-break: break-word;
+    }
+
+    .serie-card .next-copy {
+      min-width: 0;
+      display: grid;
+      gap: 3px;
+      text-align: right;
+    }
+
+    .serie-card .next-watch em,
+    .season-next em,
+    .episode-list em {
+      color: var(--yellow);
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 1.15;
     }
 
     .mini-stats {
@@ -1330,6 +1386,17 @@
     .episode-list li.next {
       border-color: rgba(15, 143, 131, .34);
       background: #effbf7;
+    }
+
+    .episode-list li.future {
+      border-color: rgba(138, 109, 0, .24);
+      background: #fffbea;
+    }
+
+    .episode-main {
+      min-width: 0;
+      display: grid;
+      gap: 3px;
     }
 
     .season-actions {
@@ -1843,15 +1910,10 @@
       </section>
 
       <section class="toolbar" aria-label="Controles de lista">
-        <div class="search-wrap">
-          <label for="searchSeries">Buscar</label>
-          <span aria-hidden="true">⌕</span>
-          <input id="searchSeries" type="search" placeholder="Nombre, estado o nota" autocomplete="off" />
-        </div>
         <div class="filter-tabs" role="group" aria-label="Filtrar series">
           <button type="button" data-action="set-filter" data-filter="all" class="active">Todas</button>
           <button type="button" data-action="set-filter" data-filter="watching">En curso</button>
-          <button type="button" data-action="set-filter" data-filter="missing">Faltan datos</button>
+          <button type="button" data-action="set-filter" data-filter="missing">Sin datos</button>
         </div>
       </section>
 
@@ -3448,7 +3510,6 @@ Last Forever
     ];
 
     const ui = {
-      search: "",
       catalogSearch: "",
       filter: "all"
     };
@@ -3741,14 +3802,19 @@ Last Forever
       if (!total) return 0;
 
       const todayKey = dateKeyFromDate(new Date());
-      const datedReleased = releaseEvents.filter(event =>
+      const datedEvents = releaseEvents.filter(event =>
         event.serieId === serie.id &&
-        Number(event.season) === Number(season.season) &&
+        Number(event.season) === Number(season.season)
+      );
+      const datedReleased = datedEvents.filter(event =>
         event.date <= todayKey
       ).length;
 
-      if (datedReleased > 0 || season.releasedEpisodes > 0) {
-        return Math.min(total, Math.max(datedReleased, season.releasedEpisodes));
+      if (datedEvents.length > 0) {
+        return Math.min(total, datedReleased);
+      }
+      if (season.releasedEpisodes > 0) {
+        return Math.min(total, season.releasedEpisodes);
       }
       if (season.available === false) return 0;
       return total;
@@ -3917,6 +3983,81 @@ Last Forever
       return `T${event.season} · capítulo ${event.episode}`;
     }
 
+    function releaseEpisodeFullLabel(event) {
+      if (!event) return "";
+      const title = String(event.title || "").trim();
+      return title ? `${releaseEpisodeLabel(event)}: ${title}` : releaseEpisodeLabel(event);
+    }
+
+    function releaseAvailabilityText(event) {
+      return event?.date ? `Disponible ${formatCatalogDate(event.date)}` : "";
+    }
+
+    function releaseEventForEpisode(serie, season, episodeNumber) {
+      if (!serie || !season || !episodeNumber) return null;
+      return releaseEvents.find(event =>
+        event.serieId === serie.id &&
+        Number(event.season) === Number(season.season) &&
+        Number(event.episode) === Number(episodeNumber)
+      ) || null;
+    }
+
+    function nextFutureReleaseForSeason(serie, season) {
+      const total = Math.max(0, Math.floor(Number(season?.total) || 0));
+      if (!serie || !season || !total) return null;
+      const nextEpisodeNumber = Math.max(
+        Math.max(0, Math.floor(Number(season.watched) || 0)),
+        availableEpisodeLimit(serie, season)
+      ) + 1;
+      if (nextEpisodeNumber > total) return null;
+      const event = releaseEventForEpisode(serie, season, nextEpisodeNumber);
+      const todayKey = dateKeyFromDate(new Date());
+      return event?.date > todayKey ? event : null;
+    }
+
+    function nextFutureRelease(serie) {
+      if (!serie) return null;
+      return serie.seasons
+        .map(season => nextFutureReleaseForSeason(serie, season))
+        .filter(Boolean)
+        .sort((a, b) => a.date.localeCompare(b.date) || Number(a.season) - Number(b.season) || Number(a.episode) - Number(b.episode))[0] || null;
+    }
+
+    function nextEpisodeDetails(serie) {
+      const next = nextWatchableSeason(serie);
+      if (next) {
+        return {
+          label: episodeLabel(next, next.watched + 1),
+          releaseText: "",
+          canWatch: true
+        };
+      }
+
+      const upcoming = nextFutureRelease(serie);
+      if (upcoming) {
+        return {
+          label: releaseEpisodeFullLabel(upcoming),
+          releaseText: releaseAvailabilityText(upcoming),
+          canWatch: false
+        };
+      }
+
+      const totals = serieTotals(serie);
+      if (totals.futureEpisodes > 0) return { label: "Pendiente de estreno", releaseText: "", canWatch: false };
+      if (serie.seasons.some(season => season.total === 0)) return { label: "Sin datos", releaseText: "", canWatch: false };
+      return { label: "Completa", releaseText: "", canWatch: false };
+    }
+
+    function statusClassForText(text) {
+      const normalized = String(text || "").toLowerCase();
+      if (normalized.includes("sin datos") || normalized.includes("faltan datos")) return "gray";
+      if (normalized.includes("pendiente de estreno")) return "yellow";
+      if (normalized.includes("completa") || normalized.includes("completada")) return "green";
+      if (normalized.includes("en curso") || normalized.includes("al día")) return "blue";
+      if (normalized.includes("por ver") || normalized.includes("pendiente")) return "orange";
+      return "";
+    }
+
     function statusKind(serie) {
       const totals = serieTotals(serie);
       if (totals.missingData) return "missing";
@@ -3928,33 +4069,20 @@ Last Forever
 
     function statusLabel(serie) {
       const kind = statusKind(serie);
-      if (kind === "completed") return { text: "Completada", className: "green" };
-      if (kind === "upcoming") return { text: "Pendiente de estreno", className: "amber" };
-      if (kind === "watching") return { text: "En curso", className: "amber" };
-      if (kind === "missing") return { text: "Faltan datos", className: "rose" };
-      return { text: "Pendiente", className: "" };
+      if (kind === "completed") return { text: "Completa", className: "green" };
+      if (kind === "upcoming") return { text: "Pendiente de estreno", className: "yellow" };
+      if (kind === "watching") return { text: "En curso", className: "blue" };
+      if (kind === "missing") return { text: "Sin datos", className: "gray" };
+      return { text: "Por ver", className: "orange" };
     }
 
     function nextEpisodeInfo(serie) {
-      const next = nextWatchableSeason(serie);
-      if (next) {
-        return `${serie.name}: ${episodeLabel(next, next.watched + 1)}`;
-      }
-      if (serieTotals(serie).futureEpisodes > 0) {
-        return `${serie.name}: pendiente de estreno`;
-      }
-      if (serie.seasons.some(season => season.total === 0)) {
-        return `${serie.name}: faltan datos`;
-      }
-      return `${serie.name}: completada`;
+      const details = nextEpisodeDetails(serie);
+      return `${serie.name}: ${details.releaseText ? `${details.label} · ${details.releaseText}` : details.label}`;
     }
 
     function nextEpisodeLabel(serie) {
-      const next = nextWatchableSeason(serie);
-      if (next) return episodeLabel(next, next.watched + 1);
-      if (serieTotals(serie).futureEpisodes > 0) return "Pendiente de estreno";
-      if (serie.seasons.some(season => season.total === 0)) return "Faltan datos";
-      return "Completada";
+      return nextEpisodeDetails(serie).label;
     }
 
     function shouldShowOnHome(serie) {
@@ -4025,24 +4153,12 @@ Last Forever
     }
 
     function filteredSeries() {
-      const query = ui.search.trim().toLowerCase();
       return homeSeries().filter(serie => {
         const totals = serieTotals(serie);
         const kind = statusKind(serie);
-        const matchesFilter =
-          ui.filter === "all" ||
+        return ui.filter === "all" ||
           (ui.filter === "watching" && (kind === "watching" || kind === "pending")) ||
           (ui.filter === "missing" && totals.missingData);
-        const haystack = [
-          serie.name,
-          serie.status,
-          serie.description,
-          ...serie.seasons.flatMap(season => [
-            season.note,
-            ...normalizeEpisodeList(season.episodes).map(episode => episode.title)
-          ])
-        ].join(" ").toLowerCase();
-        return matchesFilter && (!query || haystack.includes(query));
       });
     }
 
@@ -4096,9 +4212,11 @@ Last Forever
     function createSerieCard(serie, options = {}) {
       const totals = serieTotals(serie);
       const status = statusLabel(serie);
-      const nextLabel = nextEpisodeLabel(serie);
+      const nextDetails = nextEpisodeDetails(serie);
+      const nextLabel = nextDetails.label;
       const showQuickWatch = options.showQuickWatch !== false;
       const nextCaption = options.nextCaption || "Por ver";
+      const quickWatchDisabled = !nextDetails.canWatch || totals.pendingEpisodes === 0;
       const card = document.createElement("article");
       card.className = "serie-card";
       applyPalette(card, serie.id);
@@ -4120,12 +4238,15 @@ Last Forever
         </div>
         <div class="next-watch">
           <small>${escapeHtml(nextCaption)}</small>
-          <b>${escapeHtml(nextLabel)}</b>
+          <span class="next-copy">
+            <b>${escapeHtml(nextLabel)}</b>
+            ${nextDetails.releaseText ? `<em>${escapeHtml(nextDetails.releaseText)}</em>` : ""}
+          </span>
         </div>
         <div class="card-actions">
           <button type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ${escapeHtml(serie.name)}">Abrir</button>
           ${showQuickWatch ? `
-            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${totals.pendingEpisodes === 0 ? "disabled" : ""}>+1</button>
+            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${quickWatchDisabled ? "disabled" : ""}>+1</button>
           ` : ""}
         </div>
       `;
@@ -4143,7 +4264,6 @@ Last Forever
       document.getElementById("watchedSummary").textContent = completed.length
         ? `${visibleOnHome.length} en portada · ${completed.length} en Mis series`
         : `${visibleOnHome.length} en portada`;
-      document.getElementById("searchSeries").value = ui.search;
 
       document.querySelectorAll("[data-action='set-filter']").forEach(button => {
         button.classList.toggle("active", button.dataset.filter === ui.filter);
@@ -4199,7 +4319,7 @@ Last Forever
           <article class="empty-card">
             <span class="kicker">Sin resultados</span>
             <h2>No hay series con ese filtro</h2>
-            <p>Prueba con otro texto o cambia el filtro de la lista.</p>
+            <p>Cambia el filtro de la lista.</p>
           </article>
         `;
         return;
@@ -4325,13 +4445,14 @@ Last Forever
         const pending = Math.max(0, availableLimit - season.watched);
         const future = Math.max(0, season.total - availableLimit);
         const locked = season.total > 0 && availableLimit === 0;
+        const nextFutureRelease = nextFutureReleaseForSeason(serie, season);
         const progress = season.total ? (season.watched / season.total) * 100 : 0;
         const statusText = season.total === 0
           ? "Sin datos"
           : locked
             ? "Pendiente de estreno"
             : pending === 0 && future > 0
-              ? "Al día"
+              ? "Pendiente de estreno"
               : pending === 0
             ? "Completa"
             : `${pending} por ver`;
@@ -4341,31 +4462,45 @@ Last Forever
         const nextEpisodeText = nextEpisodeNumber
           ? `Capítulo ${nextEpisodeNumber}${nextEpisodeTitle ? `: ${nextEpisodeTitle}` : ""}`
           : "";
-        const nextEpisodeBlock = isSeasonInProgress && nextEpisodeText ? `
+        const nextEpisodeBlock = nextEpisodeText ? `
           <div class="season-next">
             <small>Siguiente +1</small>
             <b>${escapeHtml(nextEpisodeText)}</b>
           </div>
+        ` : nextFutureRelease ? `
+          <div class="season-next">
+            <small>Próximo estreno</small>
+            <b>${escapeHtml(releaseEpisodeFullLabel(nextFutureRelease))}</b>
+            <em>${escapeHtml(releaseAvailabilityText(nextFutureRelease))}</em>
+          </div>
         ` : "";
         const episodes = normalizeEpisodeList(season.episodes);
-        const episodeList = isSeasonInProgress && episodes.length ? `
+        const showEpisodeList = episodes.length && (isSeasonInProgress || nextFutureRelease);
+        const todayKey = dateKeyFromDate(new Date());
+        const episodeList = showEpisodeList ? `
           <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
             ${episodes.map(episode => {
+              const episodeRelease = releaseEventForEpisode(serie, season, episode.number);
+              const releaseText = episodeRelease?.date > todayKey ? releaseAvailabilityText(episodeRelease) : "";
               const episodeClass = [
                 episode.number <= season.watched ? "watched" : "",
-                episode.number === season.watched + 1 && season.watched < season.total ? "next" : ""
+                episode.number === season.watched + 1 && season.watched < season.total ? "next" : "",
+                releaseText ? "future" : ""
               ].filter(Boolean).join(" ");
               return `
                 <li class="${episodeClass}">
                   <span>${episode.number}</span>
-                  <b>${escapeHtml(episode.title)}</b>
+                  <div class="episode-main">
+                    <b>${escapeHtml(episode.title)}</b>
+                    ${releaseText ? `<em>${escapeHtml(releaseText)}</em>` : ""}
+                  </div>
                 </li>
               `;
             }).join("")}
           </ol>
         ` : "";
         const card = document.createElement("article");
-        card.className = `season-card${isSeasonInProgress ? "" : " compact"}`;
+        card.className = `season-card${isSeasonInProgress || nextFutureRelease ? "" : " compact"}`;
         applyPalette(card, `${serie.id}-${season.season}`);
         card.innerHTML = `
           <div class="season-head">
@@ -4381,7 +4516,7 @@ Last Forever
                       : `${season.watched}/${season.total} capítulos vistos`
               }</p>
             </div>
-            <span class="chip">${escapeHtml(statusText)}</span>
+            <span class="chip ${statusClassForText(statusText)}">${escapeHtml(statusText)}</span>
           </div>
           <div class="progress-wrap"><div class="progress" style="width:${Math.min(100, progress)}%"></div></div>
           <div class="season-overview">
@@ -4770,11 +4905,6 @@ Last Forever
 
     document.addEventListener("keydown", event => {
       if (event.key === "Escape") closeHomeMenu();
-    });
-
-    document.getElementById("searchSeries").addEventListener("input", event => {
-      ui.search = event.target.value;
-      renderHome();
     });
 
     document.getElementById("searchCatalog").addEventListener("input", event => {
