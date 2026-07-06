@@ -622,39 +622,68 @@
 
     .series-groups {
       display: grid;
-      gap: 18px;
+      gap: 22px;
     }
 
     .series-subgroup {
       display: grid;
-      gap: 10px;
+      gap: 12px;
     }
 
     .series-subgroup-head {
+      position: relative;
+      overflow: hidden;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
       gap: 12px;
-      margin: 2px 2px 0;
+      margin: 0;
+      padding: 16px 18px;
+      color: #fffefb;
+      background: linear-gradient(135deg, #087f79, #1f5f88);
+      border: 1px solid rgba(255, 255, 255, .58);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 34px rgba(23, 26, 24, .12);
+    }
+
+    .series-subgroup[data-group="quiet"] .series-subgroup-head {
+      background: linear-gradient(135deg, #314f45, #a25b46);
+    }
+
+    .series-subgroup[data-group="not-started"] .series-subgroup-head {
+      background: linear-gradient(135deg, #5f4fb4, #c75c68);
+    }
+
+    .series-subgroup-head > div {
+      position: relative;
+      z-index: 1;
+      min-width: 0;
     }
 
     .series-subgroup-head h4 {
       margin: 0;
-      color: var(--ink);
-      font-size: 14px;
+      color: inherit;
+      font-size: 20px;
+      font-weight: 950;
       line-height: 1.2;
     }
 
     .series-subgroup-head p {
       margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 12px;
+      color: rgba(255, 254, 251, .78);
+      font-size: 13px;
       line-height: 1.35;
     }
 
     .series-subgroup-head span {
+      position: relative;
+      z-index: 1;
       flex: 0 0 auto;
-      color: var(--muted);
+      padding: 8px 10px;
+      color: #fffefb;
+      background: rgba(255, 254, 251, .16);
+      border: 1px solid rgba(255, 254, 251, .34);
+      border-radius: var(--radius);
       font-size: 12px;
       font-weight: 900;
       white-space: nowrap;
@@ -1712,7 +1741,8 @@
       min-height: 42px;
     }
 
-    .bottom-bar + .section-title {
+    .bottom-bar + .series-grid,
+    .bottom-bar + .series-groups {
       margin-top: 22px;
     }
 
@@ -1821,6 +1851,12 @@
         grid-template-columns: 1fr;
       }
 
+      .series-subgroup-head {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px;
+      }
+
       .bottom-bar {
         align-items: stretch;
         flex-direction: column;
@@ -1923,10 +1959,6 @@
         </div>
       </div>
 
-      <div class="section-title">
-        <h3>Mi lista</h3>
-        <span id="watchedSummary">0 vistos</span>
-      </div>
       <section id="mySeriesList" class="series-grid" aria-live="polite"></section>
     </section>
 
@@ -4109,14 +4141,14 @@ Last Forever
         },
         {
           id: "quiet",
-          title: "Sin actividad reciente",
+          title: "Series empezadas",
           description: "Empezadas, pero sin capítulos marcados este último mes.",
           series: []
         },
         {
           id: "not-started",
-          title: "Sin iniciar",
-          description: "Añadidas a tu lista, todavía con 0 capítulos vistos.",
+          title: "Series no empezadas",
+          description: "Añadidas a tu lista, todavía sin capítulos vistos.",
           series: []
         }
       ];
@@ -4255,15 +4287,11 @@ Last Forever
 
     function renderHome() {
       const visibleOnHome = homeSeries();
-      const completed = watchedSeries();
       const totals = globalTotals(visibleOnHome);
       document.getElementById("seriesCount").textContent = visibleOnHome.length;
       document.getElementById("pendingEpisodes").textContent = totals.pendingEpisodes;
       document.getElementById("pendingTime").textContent = formatHours(totals.pendingMinutes);
       document.getElementById("finishDate").textContent = formatFinishDate(totals.daysLeft);
-      document.getElementById("watchedSummary").textContent = completed.length
-        ? `${visibleOnHome.length} en portada · ${completed.length} en Mis series`
-        : `${visibleOnHome.length} en portada`;
 
       document.querySelectorAll("[data-action='set-filter']").forEach(button => {
         button.classList.toggle("active", button.dataset.filter === ui.filter);
@@ -4332,6 +4360,7 @@ Last Forever
           const section = document.createElement("section");
           const headingId = `seriesGroup-${group.id}`;
           section.className = "series-subgroup";
+          section.dataset.group = group.id;
           section.setAttribute("aria-labelledby", headingId);
           section.innerHTML = `
             <div class="series-subgroup-head">
