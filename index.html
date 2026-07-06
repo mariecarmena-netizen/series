@@ -612,6 +612,46 @@
       align-items: start;
     }
 
+    .series-groups {
+      display: grid;
+      gap: 18px;
+    }
+
+    .series-subgroup {
+      display: grid;
+      gap: 10px;
+    }
+
+    .series-subgroup-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 2px 2px 0;
+    }
+
+    .series-subgroup-head h4 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .series-subgroup-head p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .series-subgroup-head span {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
     .catalog-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       align-items: start;
@@ -2033,6 +2073,7 @@
   <script>
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
+    const RECENT_WATCH_WINDOW_DAYS = 30;
     const DATA_LAST_UPDATED = "2026-07-06";
 
 
@@ -3517,6 +3558,7 @@ Last Forever
         image: item.image || "",
         minutesPerEpisode: item.averageEpisodeMinutes || 45,
         episodesPerDay: 2,
+        lastWatchedAt: "",
         seasons: item.seasons.map(season => {
           const total = seasonTotalFromSource(season);
           const explicitReleasedEpisodes = Math.max(0, Math.floor(Number(season.releasedEpisodes) || 0));
@@ -3585,6 +3627,7 @@ Last Forever
             description: item.description || "",
             minutesPerEpisode: Number(item.minutesPerEpisode) || 45,
             episodesPerDay: Number(item.episodesPerDay) || 2,
+            lastWatchedAt: normalizeWatchTimestamp(item.lastWatchedAt),
             seasons: Array.isArray(item.seasons) && item.seasons.length ? item.seasons : [{ season: 1, total: 0, watched: 0, note: "" }]
           };
           clampSerie(serie);
@@ -3668,6 +3711,7 @@ Last Forever
       serie.description = String(serie.description || "").trim();
       serie.minutesPerEpisode = Math.max(1, Number(serie.minutesPerEpisode) || 45);
       serie.episodesPerDay = Math.max(0.1, Number(serie.episodesPerDay) || 1);
+      serie.lastWatchedAt = normalizeWatchTimestamp(serie.lastWatchedAt);
       serie.seasons = Array.isArray(serie.seasons) && serie.seasons.length ? serie.seasons : [{ season: 1, total: 0, watched: 0, note: "" }];
       const catalogSerie = getCatalogSerie(serie.id);
       serie.seasons.forEach((season, index) => {
@@ -3689,6 +3733,7 @@ Last Forever
         }
         if (season.total > 0) season.watched = Math.min(season.watched, availableEpisodeLimit(serie, season));
       });
+      clearWatchDateIfNotStarted(serie);
     }
 
     function availableEpisodeLimit(serie, season) {
@@ -3776,6 +3821,54 @@ Last Forever
       const month = String(date.getMonth() + 1).padStart(2, "0");
       const day = String(date.getDate()).padStart(2, "0");
       return `${year}-${month}-${day}`;
+    }
+
+    function timestampKeyFromDate(date) {
+      const hours = String(date.getHours()).padStart(2, "0");
+      const minutes = String(date.getMinutes()).padStart(2, "0");
+      const seconds = String(date.getSeconds()).padStart(2, "0");
+      const milliseconds = String(date.getMilliseconds()).padStart(3, "0");
+      return `${dateKeyFromDate(date)}T${hours}:${minutes}:${seconds}.${milliseconds}`;
+    }
+
+    function normalizeWatchDate(value) {
+      const key = String(value || "").slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(key)) return "";
+      const date = dateFromKey(key);
+      if (Number.isNaN(date.getTime())) return "";
+      return dateKeyFromDate(date) === key ? key : "";
+    }
+
+    function normalizeWatchTimestamp(value) {
+      const raw = String(value || "").trim();
+      const dateKey = normalizeWatchDate(raw);
+      if (!dateKey) return "";
+
+      const match = raw.match(/^\d{4}-\d{2}-\d{2}T(\d{2}):(\d{2})(?::(\d{2})(?:\.(\d{1,3}))?)?/);
+      if (!match) return `${dateKey}T00:00:00.000`;
+
+      const hours = Math.min(23, Math.max(0, Number(match[1]) || 0));
+      const minutes = Math.min(59, Math.max(0, Number(match[2]) || 0));
+      const seconds = Math.min(59, Math.max(0, Number(match[3]) || 0));
+      const milliseconds = String(match[4] || "0").padEnd(3, "0").slice(0, 3);
+      return `${dateKey}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${milliseconds}`;
+    }
+
+    function recentWatchThresholdKey() {
+      const threshold = new Date();
+      threshold.setDate(threshold.getDate() - RECENT_WATCH_WINDOW_DAYS);
+      return dateKeyFromDate(threshold);
+    }
+
+    function markSerieWatched(serie) {
+      if (!serie) return;
+      serie.lastWatchedAt = timestampKeyFromDate(new Date());
+    }
+
+    function clearWatchDateIfNotStarted(serie) {
+      if (!serie) return;
+      const watchedEpisodes = serie.seasons.reduce((sum, season) => sum + Math.max(0, Math.floor(Number(season.watched) || 0)), 0);
+      if (watchedEpisodes === 0) serie.lastWatchedAt = "";
     }
 
     function monthStartFromDate(date) {
@@ -3867,6 +3960,53 @@ Last Forever
     function shouldShowOnHome(serie) {
       const totals = serieTotals(serie);
       return totals.pendingEpisodes > 0 || totals.missingData || totals.availableEpisodes === 0;
+    }
+
+    function hasRecentWatch(serie) {
+      const lastWatchedAt = normalizeWatchTimestamp(serie.lastWatchedAt).slice(0, 10);
+      return Boolean(lastWatchedAt && lastWatchedAt >= recentWatchThresholdKey());
+    }
+
+    function compareLastWatched(a, b) {
+      return normalizeWatchTimestamp(b.lastWatchedAt).localeCompare(normalizeWatchTimestamp(a.lastWatchedAt));
+    }
+
+    function groupedSeries(series) {
+      const groups = [
+        {
+          id: "watching-now",
+          title: "Viendo ahora",
+          description: "Con al menos un capítulo marcado en el último mes.",
+          series: []
+        },
+        {
+          id: "quiet",
+          title: "Sin actividad reciente",
+          description: "Empezadas, pero sin capítulos marcados este último mes.",
+          series: []
+        },
+        {
+          id: "not-started",
+          title: "Sin iniciar",
+          description: "Añadidas a tu lista, todavía con 0 capítulos vistos.",
+          series: []
+        }
+      ];
+
+      series.forEach(serie => {
+        const totals = serieTotals(serie);
+        if (totals.watchedEpisodes === 0) {
+          groups[2].series.push(serie);
+        } else if (hasRecentWatch(serie)) {
+          groups[0].series.push(serie);
+        } else {
+          groups[1].series.push(serie);
+        }
+      });
+
+      groups[0].series.sort(compareLastWatched);
+
+      return groups;
     }
 
     function homeSeries() {
@@ -4026,9 +4166,9 @@ Last Forever
 
       const list = document.getElementById("mySeriesList");
       list.innerHTML = "";
+      list.className = "series-grid";
 
       if (state.mySeries.length === 0) {
-        list.className = "series-grid";
         list.innerHTML = `
           <article class="empty-card">
             <span class="kicker">Vacío</span>
@@ -4065,9 +4205,32 @@ Last Forever
         return;
       }
 
-      visible.forEach(serie => {
-        list.appendChild(createSerieCard(serie));
-      });
+      list.className = "series-groups";
+      groupedSeries(visible)
+        .filter(group => group.series.length > 0)
+        .forEach(group => {
+          const section = document.createElement("section");
+          const headingId = `seriesGroup-${group.id}`;
+          section.className = "series-subgroup";
+          section.setAttribute("aria-labelledby", headingId);
+          section.innerHTML = `
+            <div class="series-subgroup-head">
+              <div>
+                <h4 id="${headingId}">${escapeHtml(group.title)}</h4>
+                <p>${escapeHtml(group.description)}</p>
+              </div>
+              <span>${group.series.length} serie${group.series.length === 1 ? "" : "s"}</span>
+            </div>
+          `;
+
+          const grid = document.createElement("div");
+          grid.className = "series-grid";
+          group.series.forEach(serie => {
+            grid.appendChild(createSerieCard(serie));
+          });
+          section.appendChild(grid);
+          list.appendChild(section);
+        });
     }
 
     function renderWatchedSeries() {
@@ -4358,6 +4521,7 @@ Last Forever
         description: String(data.get("description") || "").trim(),
         minutesPerEpisode: Math.max(1, Number(data.get("minutes")) || 45),
         episodesPerDay: Math.max(0.1, Number(data.get("pace")) || 2),
+        lastWatchedAt: "",
         seasons: Array.from({ length: seasonCount }, (_, index) => ({
           season: index + 1,
           total: episodes,
@@ -4387,6 +4551,7 @@ Last Forever
       const next = nextWatchableSeason(serie);
       if (!next) return false;
       next.watched += 1;
+      markSerieWatched(serie);
       return true;
     }
 
@@ -4396,6 +4561,7 @@ Last Forever
       const last = reversed.find(season => season.watched > 0);
       if (!last) return false;
       last.watched -= 1;
+      clearWatchDateIfNotStarted(serie);
       return true;
     }
 
@@ -4423,11 +4589,14 @@ Last Forever
     function updateSeason(index, field, value) {
       const serie = getSerie(activeSerieId);
       if (!serie || !serie.seasons[index]) return;
+      const previousWatched = Math.max(0, Math.floor(Number(serie.seasons[index].watched) || 0));
       if (field === "note") {
         serie.seasons[index][field] = value;
       } else {
         serie.seasons[index][field] = Number(value);
       }
+      if (field === "watched" && serie.seasons[index][field] > previousWatched) markSerieWatched(serie);
+      clearWatchDateIfNotStarted(serie);
       render();
     }
 
@@ -4435,7 +4604,10 @@ Last Forever
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      if (availableEpisodeLimit(serie, season) > season.watched) season.watched += 1;
+      if (availableEpisodeLimit(serie, season) > season.watched) {
+        season.watched += 1;
+        markSerieWatched(serie);
+      }
       render();
     }
 
@@ -4444,6 +4616,7 @@ Last Forever
       const season = serie?.seasons[index];
       if (!season) return;
       if (season.watched > 0) season.watched -= 1;
+      clearWatchDateIfNotStarted(serie);
       render();
     }
 
@@ -4451,7 +4624,9 @@ Last Forever
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      season.watched = availableEpisodeLimit(serie, season);
+      const target = availableEpisodeLimit(serie, season);
+      if (target > season.watched) markSerieWatched(serie);
+      season.watched = target;
       render();
     }
 
@@ -4460,6 +4635,7 @@ Last Forever
       const season = serie?.seasons[index];
       if (!season) return;
       season.watched = 0;
+      clearWatchDateIfNotStarted(serie);
       render();
     }
 
@@ -4495,9 +4671,13 @@ Last Forever
     function completeSerie() {
       const serie = getSerie(activeSerieId);
       if (!serie) return;
+      let watchedMore = false;
       serie.seasons.forEach(season => {
-        season.watched = availableEpisodeLimit(serie, season);
+        const target = availableEpisodeLimit(serie, season);
+        if (target > season.watched) watchedMore = true;
+        season.watched = target;
       });
+      if (watchedMore) markSerieWatched(serie);
       render();
     }
 
