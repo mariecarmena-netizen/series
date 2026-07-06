@@ -2033,7 +2033,7 @@
   <script>
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
-    const DATA_LAST_UPDATED = "2026-07-05";
+    const DATA_LAST_UPDATED = "2026-07-06";
 
 
     const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
@@ -2610,6 +2610,42 @@ Last Forever
       "Queens"
     ];
 
+    const lethallyBlondeSeason2EpisodeTitles = [
+      "Killing King Cobra",
+      "Fatal Escort",
+      "Dressed to Kill",
+      "Death of a Raiderette",
+      "Bad Medicine",
+      "Hooters Girl Gone",
+      "Burlesque and Blood"
+    ];
+
+    const deadlyInfluenceSeason2EpisodeTitles = [
+      "Waiting for the Darkness",
+      "Rags to Riches To Rage",
+      "It Could Be You Tomorrow",
+      "Enter the Ghost World",
+      "Devil in Disguise",
+      "Cruel Intentions",
+      "Death Is In Your Stars",
+      "TBA"
+    ];
+
+    const onTheCaseSeason29EpisodeTitles = [
+      "Edge of the Abyss",
+      "Layers of Betrayal",
+      "Caught in a Trap",
+      "Unseen Danger",
+      "Through the Smoke",
+      "Who Killed Katelyn?",
+      "Unmasking the Truth",
+      "Two Fires, One Match",
+      "Elusive Justice",
+      "Moving Target",
+      "Irreparable Loss",
+      "A Personal Mission"
+    ];
+
     const machosAlfaSeasonReleaseDates = [
       "2022-12-30",
       "2024-02-09",
@@ -2631,7 +2667,77 @@ Last Forever
       "2026-07-15"
     ];
 
+    const lethallyBlondeSeason2ReleaseDates = [
+      "2026-06-01",
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22",
+      "2026-06-29",
+      "2026-07-06",
+      "2026-07-13"
+    ];
+
+    const deadlyInfluenceSeason2ReleaseDates = [
+      "2026-06-01",
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22",
+      "2026-06-29",
+      "2026-07-06",
+      "2026-07-13",
+      "2026-07-20"
+    ];
+
+    const onTheCaseSeason29ReleaseDates = [
+      "2026-04-15",
+      "2026-04-22",
+      "2026-04-29",
+      "2026-05-06",
+      "2026-05-13",
+      "2026-05-20",
+      "2026-05-27",
+      "2026-06-03",
+      "2026-06-17",
+      "2026-06-24",
+      "2026-07-01",
+      "2026-07-08"
+    ];
+
     const secretStorySeason14ReleaseDates = [];
+    const bigBrotherSeason28ReleaseDates = [
+      "2026-07-09",
+      "2026-07-12",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-19",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-26",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-08-02",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-09",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-16",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-23",
+      "2026-08-23",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-30",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-06",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-13",
+      "2026-09-16",
+      "2026-09-17"
+    ];
 
     const releaseEvents = [
       ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
@@ -2654,6 +2760,33 @@ Last Forever
         episode: index + 1,
         title
       })),
+      ...lethallyBlondeSeason2EpisodeTitles.map((title, index) => ({
+        date: lethallyBlondeSeason2ReleaseDates[index],
+        serieId: "lethally-blonde",
+        serie: "Lethally Blonde",
+        platform: "Investigation Discovery",
+        season: 2,
+        episode: index + 1,
+        title
+      })),
+      ...deadlyInfluenceSeason2EpisodeTitles.map((title, index) => ({
+        date: deadlyInfluenceSeason2ReleaseDates[index],
+        serieId: "deadly-influence",
+        serie: "Deadly Influence",
+        platform: "Investigation Discovery",
+        season: 2,
+        episode: index + 1,
+        title
+      })),
+      ...onTheCaseSeason29EpisodeTitles.map((title, index) => ({
+        date: onTheCaseSeason29ReleaseDates[index],
+        serieId: "on-the-case-with-paula-zahn",
+        serie: "On the Case with Paula Zahn",
+        platform: "Investigation Discovery",
+        season: 29,
+        episode: index + 1,
+        title
+      })),
       ...secretStorySeason14ReleaseDates.map((date, index) => ({
         date,
         serieId: "secret-story",
@@ -2662,6 +2795,15 @@ Last Forever
         season: 14,
         episode: index + 1,
         title: `Quotidienne ${index + 1}`
+      })),
+      ...bigBrotherSeason28ReleaseDates.map((date, index) => ({
+        date,
+        serieId: "big-brother-us",
+        serie: "Big Brother (US)",
+        platform: "CBS / Paramount+",
+        season: 28,
+        episode: index + 1,
+        title: index === 0 ? "Estreno de temporada" : `Episodio ${index + 1}`
       }))
     ].sort((a, b) => a.date.localeCompare(b.date) || a.serie.localeCompare(b.serie) || a.episode - b.episode);
 
@@ -2712,6 +2854,443 @@ Last Forever
         image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80",
         description:
           "Una madre recién divorciada cae en una peligrosa historia de chantaje, asesinato y fútbol infantil."
+      },
+      {
+        id: "lethally-blonde",
+        title: "Lethally Blonde",
+        platform: "Investigation Discovery",
+        status: "En emisión · temporada 2 · próximo 13/07/2026",
+        genre: "True crime / documental",
+        seasons: [
+          { season: 1, episodes: 6, released: true },
+          { season: 2, episodes: lethallyBlondeSeason2EpisodeTitles, released: false, releasedEpisodes: 6 }
+        ],
+        releasedEpisodes: 12,
+        totalEpisodesPlanned: 13,
+        averageEpisodeMinutes: 60,
+        releasedWatchTimeMinutes: 720,
+        releasedWatchTimeText: "12 h",
+        totalPlannedWatchTimeMinutes: 780,
+        totalPlannedWatchTimeText: "13 h",
+        nextEpisodeDate: "2026-07-13",
+        image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Holly Madison presenta historias reales sobre fama, deseo y explotación dentro de mundos marcados por la imagen."
+      },
+      {
+        id: "deadly-influence",
+        title: "Deadly Influence: The Social Media Murders",
+        platform: "Investigation Discovery",
+        status: "En emisión · temporada 2 · final previsto 20/07/2026",
+        genre: "True crime / documental",
+        seasons: [
+          { season: 1, episodes: 6, released: true },
+          { season: 2, episodes: deadlyInfluenceSeason2EpisodeTitles, released: false, releasedEpisodes: 6 }
+        ],
+        releasedEpisodes: 12,
+        totalEpisodesPlanned: 14,
+        averageEpisodeMinutes: 60,
+        releasedWatchTimeMinutes: 720,
+        releasedWatchTimeText: "12 h",
+        totalPlannedWatchTimeMinutes: 840,
+        totalPlannedWatchTimeText: "14 h",
+        nextEpisodeDate: "2026-07-13",
+        finaleDate: "2026-07-20",
+        image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Docuserie sobre crímenes reales relacionados con influencers, fama digital y vidas expuestas en redes sociales."
+      },
+      {
+        id: "a-good-girls-guide-to-murder",
+        title: "A Good Girl's Guide to Murder",
+        platform: "Netflix",
+        status: "Temporada 3 final confirmada · 2027",
+        genre: "Misterio / thriller juvenil",
+        seasons: [
+          { season: 1, episodes: 6, released: true },
+          { season: 2, episodes: 6, released: true },
+          { season: 3, episodes: 4, released: false }
+        ],
+        releasedEpisodes: 12,
+        totalEpisodesPlanned: 16,
+        averageEpisodeMinutes: 45,
+        releasedWatchTimeMinutes: 540,
+        releasedWatchTimeText: "9 h",
+        totalPlannedWatchTimeMinutes: 720,
+        totalPlannedWatchTimeText: "12 h",
+        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Pip Fitz-Amobi investiga casos en Little Kilton; la tercera temporada cerrará la trilogía con As Good As Dead."
+      },
+      {
+        id: "dynasty-2017",
+        title: "Dynasty (2017)",
+        platform: "Netflix",
+        status: "Finalizada · 5 temporadas",
+        genre: "Drama / soap opera",
+        seasons: [
+          { season: 1, episodes: 22, released: true },
+          { season: 2, episodes: 22, released: true },
+          { season: 3, episodes: 20, released: true },
+          { season: 4, episodes: 22, released: true },
+          { season: 5, episodes: 22, released: true }
+        ],
+        releasedEpisodes: 108,
+        totalEpisodesPlanned: 108,
+        averageEpisodeMinutes: 42,
+        releasedWatchTimeMinutes: 4536,
+        releasedWatchTimeText: "75 h 36 min",
+        totalPlannedWatchTimeMinutes: 4536,
+        totalPlannedWatchTimeText: "75 h 36 min",
+        image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
+        description:
+          "El reboot sigue a los Carrington y los Colby entre ambición, secretos familiares, romances y guerras empresariales."
+      },
+      {
+        id: "hacks",
+        title: "Hacks",
+        platform: "HBO Max",
+        status: "Finalizada · 5 temporadas",
+        genre: "Comedia dramática",
+        seasons: [
+          { season: 1, episodes: 10, released: true },
+          { season: 2, episodes: 8, released: true },
+          { season: 3, episodes: 9, released: true },
+          { season: 4, episodes: 10, released: true },
+          { season: 5, episodes: 7, released: true }
+        ],
+        releasedEpisodes: 44,
+        totalEpisodesPlanned: 44,
+        averageEpisodeMinutes: 32,
+        releasedWatchTimeMinutes: 1408,
+        releasedWatchTimeText: "23 h 28 min",
+        totalPlannedWatchTimeMinutes: 1408,
+        totalPlannedWatchTimeText: "23 h 28 min",
+        image: "https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Deborah Vance y Ava Daniels convierten su choque generacional en una alianza tan afilada como imprevisible."
+      },
+      {
+        id: "stranger-things",
+        title: "Stranger Things",
+        platform: "Netflix",
+        status: "Finalizada · 5 temporadas",
+        genre: "Ciencia ficción / terror",
+        seasons: [8, 9, 8, 9, 8].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 42,
+        totalEpisodesPlanned: 42,
+        averageEpisodeMinutes: 65,
+        releasedWatchTimeMinutes: 2730,
+        releasedWatchTimeText: "45 h 30 min",
+        totalPlannedWatchTimeMinutes: 2730,
+        totalPlannedWatchTimeText: "45 h 30 min",
+        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Un grupo de amigos de Hawkins se enfrenta a desapariciones, experimentos secretos y criaturas del Upside Down."
+      },
+      {
+        id: "brain-games",
+        title: "Brain Games",
+        platform: "National Geographic",
+        status: "Finalizada · 9 temporadas",
+        genre: "Ciencia / divulgación",
+        seasons: [3, 13, 10, 16, 11, 7, 6, 9, 8].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 83,
+        totalEpisodesPlanned: 83,
+        averageEpisodeMinutes: 30,
+        releasedWatchTimeMinutes: 2490,
+        releasedWatchTimeText: "41 h 30 min",
+        totalPlannedWatchTimeMinutes: 2490,
+        totalPlannedWatchTimeText: "41 h 30 min",
+        image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Experimentos, ilusiones y juegos interactivos para explorar cómo percibe, recuerda y decide el cerebro."
+      },
+      {
+        id: "section-de-recherches",
+        title: "Section de recherches",
+        platform: "TF1",
+        status: "Finalizada · 18 temporadas",
+        genre: "Policiaca / crimen",
+        seasons: [4, 8, 10, 14, 14, 10, 16, 12, 12, 13, 14, 14, 14, 8, 2, 2, 2, 2].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 171,
+        totalEpisodesPlanned: 171,
+        averageEpisodeMinutes: 52,
+        releasedWatchTimeMinutes: 8892,
+        releasedWatchTimeText: "148 h 12 min",
+        totalPlannedWatchTimeMinutes: 8892,
+        totalPlannedWatchTimeText: "148 h 12 min",
+        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80",
+        description:
+          "La unidad especial de la Gendarmería investiga desapariciones, secuestros y crímenes complejos en Francia."
+      },
+      {
+        id: "lucifer",
+        title: "Lucifer",
+        platform: "Netflix",
+        status: "Finalizada · 6 temporadas",
+        genre: "Fantasía urbana / policiaca",
+        seasons: [13, 18, 26, 10, 16, 10].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 93,
+        totalEpisodesPlanned: 93,
+        averageEpisodeMinutes: 58,
+        releasedWatchTimeMinutes: 5394,
+        releasedWatchTimeText: "89 h 54 min",
+        totalPlannedWatchTimeMinutes: 5394,
+        totalPlannedWatchTimeText: "89 h 54 min",
+        image: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Lucifer Morningstar abandona el infierno por Los Ángeles y acaba colaborando con la policía entre casos y tentaciones."
+      },
+      {
+        id: "see-no-evil",
+        title: "See No Evil",
+        platform: "Investigation Discovery",
+        status: "En emisión · 14 temporadas",
+        genre: "True crime / documental",
+        seasons: [6, 13, 13, 16, 16, 20, 10, 10, 10, 10, 10, 10, 10, 10].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 164,
+        totalEpisodesPlanned: 164,
+        averageEpisodeMinutes: 60,
+        releasedWatchTimeMinutes: 9840,
+        releasedWatchTimeText: "164 h",
+        totalPlannedWatchTimeMinutes: 9840,
+        totalPlannedWatchTimeText: "164 h",
+        image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Casos reales reconstruidos a partir de grabaciones de cámaras de seguridad que ayudan a resolver asesinatos."
+      },
+      {
+        id: "on-the-case-with-paula-zahn",
+        title: "On the Case with Paula Zahn",
+        platform: "Investigation Discovery",
+        status: "En emisión · temporada 29 · próximo 08/07/2026",
+        genre: "True crime / documental",
+        seasons: [
+          ...[13, 13, 13, 13, 14, 12, 14, 16, 16, 16, 15, 17, 12, 20, 13, 16, 19, 16, 15, 15, 9, 8, 16, 16, 15, 12, 8, 12].map((episodes, index) => ({
+            season: index + 1,
+            episodes,
+            released: true
+          })),
+          { season: 29, episodes: onTheCaseSeason29EpisodeTitles, released: false, releasedEpisodes: 11 }
+        ],
+        releasedEpisodes: 405,
+        totalEpisodesPlanned: 406,
+        averageEpisodeMinutes: 60,
+        releasedWatchTimeMinutes: 24300,
+        releasedWatchTimeText: "405 h",
+        totalPlannedWatchTimeMinutes: 24360,
+        totalPlannedWatchTimeText: "406 h",
+        nextEpisodeDate: "2026-07-08",
+        image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Paula Zahn repasa investigaciones criminales con entrevistas, contexto periodístico y testimonios cercanos a los casos."
+      },
+      {
+        id: "homicide-hunter-american-detective",
+        title: "Homicide Hunter: American Detective",
+        platform: "Investigation Discovery",
+        status: "En emisión · 6 temporadas",
+        genre: "True crime / documental",
+        seasons: [10, 6, 6, 10, 8, 8].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 48,
+        totalEpisodesPlanned: 48,
+        averageEpisodeMinutes: 57,
+        releasedWatchTimeMinutes: 2736,
+        releasedWatchTimeText: "45 h 36 min",
+        totalPlannedWatchTimeMinutes: 2736,
+        totalPlannedWatchTimeText: "45 h 36 min",
+        image: "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Joe Kenda presenta investigaciones de detectives de homicidios de todo Estados Unidos con giros y pistas clave."
+      },
+      {
+        id: "loot",
+        title: "Loot",
+        platform: "Apple TV",
+        status: "3 temporadas · renovación pendiente",
+        genre: "Comedia",
+        seasons: [10, 10, 10].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 30,
+        totalEpisodesPlanned: 30,
+        averageEpisodeMinutes: 27,
+        releasedWatchTimeMinutes: 810,
+        releasedWatchTimeText: "13 h 30 min",
+        totalPlannedWatchTimeMinutes: 810,
+        totalPlannedWatchTimeText: "13 h 30 min",
+        image: "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Molly Wells intenta reinventarse tras un divorcio multimillonario implicándose en la fundación que casi había olvidado."
+      },
+      {
+        id: "people-magazine-investigates",
+        title: "People Magazine Investigates",
+        platform: "Investigation Discovery",
+        status: "En emisión · 9 temporadas",
+        genre: "True crime / documental",
+        seasons: [11, 12, 15, 12, 12, 13, 14, 12, 13].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 114,
+        totalEpisodesPlanned: 114,
+        averageEpisodeMinutes: 63,
+        releasedWatchTimeMinutes: 7182,
+        releasedWatchTimeText: "119 h 42 min",
+        totalPlannedWatchTimeMinutes: 7182,
+        totalPlannedWatchTimeText: "119 h 42 min",
+        image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Investigaciones de crímenes reales basadas en reportajes de People, con entrevistas y nuevos detalles de cada caso."
+      },
+      {
+        id: "a-man-on-the-inside",
+        title: "A Man on the Inside",
+        platform: "Netflix",
+        status: "Temporada 3 renovada, fecha pendiente",
+        genre: "Comedia / misterio",
+        seasons: [
+          ...[8, 8].map((episodes, index) => ({
+            season: index + 1,
+            episodes,
+            released: true
+          })),
+          { season: 3, episodes: 0, released: false }
+        ],
+        releasedEpisodes: 16,
+        totalEpisodesPlanned: 16,
+        averageEpisodeMinutes: 31,
+        releasedWatchTimeMinutes: 496,
+        releasedWatchTimeText: "8 h 16 min",
+        totalPlannedWatchTimeMinutes: 496,
+        totalPlannedWatchTimeText: "8 h 16 min",
+        image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Un profesor jubilado se convierte en investigador aficionado y se infiltra en nuevos entornos para resolver misterios."
+      },
+      {
+        id: "big-brother-us",
+        title: "Big Brother (US)",
+        platform: "CBS / Paramount+",
+        status: "Temporada 28 en calendario · estreno 09/07/2026 · 32 episodios fechados",
+        genre: "Reality / competición",
+        seasons: [
+          ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
+            season: index + 1,
+            episodes,
+            released: true
+          })),
+          { season: 28, episodes: 32, released: false }
+        ],
+        releasedEpisodes: 970,
+        totalEpisodesPlanned: 1002,
+        averageEpisodeMinutes: 62,
+        releasedWatchTimeMinutes: 60140,
+        releasedWatchTimeText: "1002 h 20 min",
+        totalPlannedWatchTimeMinutes: 62124,
+        totalPlannedWatchTimeText: "1035 h 24 min",
+        nextEpisodeDate: "2026-07-09",
+        image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 arranca con estreno especial en CBS y sigue con entregas dominicales, miércoles y jueves."
+      },
+      {
+        id: "poker-face-2023",
+        title: "Poker Face (2023)",
+        platform: "Peacock",
+        status: "Cancelada · 2 temporadas",
+        genre: "Misterio / comedia negra",
+        seasons: [10, 12].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 22,
+        totalEpisodesPlanned: 22,
+        averageEpisodeMinutes: 51,
+        releasedWatchTimeMinutes: 1122,
+        releasedWatchTimeText: "18 h 42 min",
+        totalPlannedWatchTimeMinutes: 1122,
+        totalPlannedWatchTimeText: "18 h 42 min",
+        image: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Charlie Cale detecta mentiras de forma casi infalible y resuelve asesinatos mientras viaja por Estados Unidos."
+      },
+      {
+        id: "upload",
+        title: "Upload",
+        platform: "Amazon Prime Video",
+        status: "Finalizada · 4 temporadas",
+        genre: "Ciencia ficción / comedia",
+        seasons: [10, 7, 8, 4].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 29,
+        totalEpisodesPlanned: 29,
+        averageEpisodeMinutes: 33,
+        releasedWatchTimeMinutes: 957,
+        releasedWatchTimeText: "15 h 57 min",
+        totalPlannedWatchTimeMinutes: 957,
+        totalPlannedWatchTimeText: "15 h 57 min",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+        description:
+          "En un futuro cercano, las personas pueden subir su conciencia a una vida digital tras la muerte."
+      },
+      {
+        id: "wednesday",
+        title: "Wednesday",
+        platform: "Netflix",
+        status: "Temporada 3 en producción, fecha pendiente",
+        genre: "Fantasía / misterio",
+        seasons: [
+          ...[8, 8].map((episodes, index) => ({
+            season: index + 1,
+            episodes,
+            released: true
+          })),
+          { season: 3, episodes: 0, released: false }
+        ],
+        releasedEpisodes: 16,
+        totalEpisodesPlanned: 16,
+        averageEpisodeMinutes: 54,
+        releasedWatchTimeMinutes: 864,
+        releasedWatchTimeText: "14 h 24 min",
+        totalPlannedWatchTimeMinutes: 864,
+        totalPlannedWatchTimeText: "14 h 24 min",
+        image: "https://images.unsplash.com/photo-1505635552518-3448ff116af3?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Wednesday Addams llega a Nevermore y se ve envuelta en asesinatos, secretos familiares y misterios sobrenaturales."
       },
       {
         id: "modern-family",
@@ -2765,8 +3344,8 @@ Last Forever
         name: "Koh-Lanta",
         emoji: "TF1",
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-        status: "Temporadas regulares · hasta Les Reliques du destin (2026)",
-        description: "Telerrealidad francesa de aventura · TF1 · temporadas regulares emitidas; no incluye ediciones especiales ni temporadas canceladas.",
+        status: "Temporadas regulares · Les Reliques du destin en emisión (11 emitidos)",
+        description: "Telerrealidad francesa de aventura · TF1 · temporadas regulares; no incluye ediciones especiales ni temporadas canceladas.",
         minutesPerEpisode: 110,
         episodesPerDay: 1,
         seasons: [
@@ -2795,7 +3374,7 @@ Last Forever
           { season: 25, total: 16, watched: 0, note: "Les Chasseurs d'immunité" },
           { season: 26, total: 16, watched: 0, note: "La Tribu maudite" },
           { season: 27, total: 17, watched: 0, note: "La Revanche des 4 Terres" },
-          { season: 28, total: 16, watched: 0, note: "Les Reliques du destin" }
+          { season: 28, total: 16, watched: 0, note: "Les Reliques du destin · 11 emitidos; final pendiente", releasedEpisodes: 11 }
         ]
       },
       {
@@ -2803,8 +3382,8 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "Temporada 2026 confirmada, fechas pendientes",
-        description: "Reality francés · TF1+ · próxima temporada confirmada, sin calendario público.",
+        status: "Temporada 14 en producción, fechas pendientes",
+        description: "Reality francés · TF1+ · temporada 14 en producción, sin calendario público.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -2821,7 +3400,7 @@ Last Forever
           { season: 11, total: 231, watched: 0, note: "TF1+" },
           { season: 12, total: 59, watched: 0, note: "TF1+" },
           { season: 13, total: 60, watched: 0, note: "TF1+" },
-          { season: 14, total: 0, watched: 0, note: "2026 confirmada, fechas pendientes" }
+          { season: 14, total: 0, watched: 0, note: "2026 en producción; casting abierto, fechas pendientes", available: false }
         ]
       },
       ...seriesCatalog.map(catalogItemFromSeries)
@@ -2940,9 +3519,12 @@ Last Forever
         episodesPerDay: 2,
         seasons: item.seasons.map(season => {
           const total = seasonTotalFromSource(season);
-          const releasedEpisodes = season.released
-            ? total
-            : (item.releasedEpisodes && item.seasons.length === 1 ? Math.min(total, item.releasedEpisodes) : 0);
+          const explicitReleasedEpisodes = Math.max(0, Math.floor(Number(season.releasedEpisodes) || 0));
+          const singleSeasonReleasedEpisodes = item.releasedEpisodes && item.seasons.length === 1 ? item.releasedEpisodes : 0;
+          const releasedEpisodes = Math.min(
+            total,
+            season.released ? total : Math.max(explicitReleasedEpisodes, singleSeasonReleasedEpisodes)
+          );
           return {
             season: season.season,
             total,
@@ -3120,8 +3702,9 @@ Last Forever
         event.date <= todayKey
       ).length;
 
-      if (datedReleased > 0) return Math.min(total, datedReleased);
-      if (season.releasedEpisodes > 0) return Math.min(total, season.releasedEpisodes);
+      if (datedReleased > 0 || season.releasedEpisodes > 0) {
+        return Math.min(total, Math.max(datedReleased, season.releasedEpisodes));
+      }
       if (season.available === false) return 0;
       return total;
     }
