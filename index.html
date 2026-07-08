@@ -609,6 +609,7 @@
     }
 
     .series-grid,
+    .catalog-layout,
     .catalog-grid,
     .season-grid {
       display: grid;
@@ -668,23 +669,16 @@
       line-height: 1.2;
     }
 
-    .series-subgroup-head p {
-      margin: 4px 0 0;
-      color: rgba(255, 254, 251, .78);
-      font-size: 13px;
-      line-height: 1.35;
-    }
-
     .series-subgroup-head span {
       position: relative;
       z-index: 1;
       flex: 0 0 auto;
-      padding: 8px 10px;
-      color: #fffefb;
-      background: rgba(255, 254, 251, .16);
-      border: 1px solid rgba(255, 254, 251, .34);
-      border-radius: var(--radius);
-      font-size: 12px;
+      padding: 0;
+      color: rgba(255, 254, 251, .82);
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      font-size: 13px;
       font-weight: 900;
       white-space: nowrap;
     }
@@ -716,7 +710,6 @@
       box-shadow: var(--shadow-soft);
     }
 
-    .serie-card::before,
     .catalog-card::before,
     .season-card::before,
     .empty-card::before,
@@ -743,10 +736,6 @@
         repeating-linear-gradient(0deg, rgba(23, 26, 24, .55) 0 8px, transparent 8px 16px);
       transform: rotate(-9deg);
       border-radius: var(--radius);
-    }
-
-    .serie-card::before {
-      height: 3px;
     }
 
     .serie-card::after,
@@ -1740,43 +1729,79 @@
 
     .tab-bar {
       position: fixed;
-      left: 50%;
-      bottom: 14px;
+      left: 0;
+      right: 0;
+      bottom: 0;
       z-index: 20;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 6px;
-      width: min(360px, calc(100% - 28px));
-      padding: 6px;
-      border: 1px solid rgba(255, 255, 255, .72);
-      border-radius: var(--radius);
-      background: rgba(255, 254, 251, .9);
-      box-shadow: 0 16px 42px rgba(23, 26, 24, .14);
-      transform: translateX(-50%);
-      backdrop-filter: blur(18px);
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      width: 100%;
+      padding: 12px max(18px, calc((100vw - 1120px) / 2 + 20px)) calc(12px + env(safe-area-inset-bottom, 0px));
+      overflow: hidden;
+      border: 0;
+      border-top: 1px solid rgba(23, 26, 24, .08);
+      border-radius: 0;
+      background:
+        linear-gradient(180deg, rgba(245, 247, 243, 0), rgba(245, 247, 243, .78) 28%, rgba(255, 254, 251, .94)),
+        linear-gradient(90deg, rgba(15, 143, 131, .06), rgba(230, 83, 83, .04), rgba(244, 185, 66, .06));
+      box-shadow: none;
+      transform: none;
+      backdrop-filter: blur(14px) saturate(1.05);
     }
 
     .tab-bar button {
-      min-height: 48px;
-      flex-direction: column;
-      gap: 3px;
+      position: relative;
+      width: min(160px, 42vw);
+      min-height: 46px;
+      padding: 10px 8px 13px;
+      flex-direction: row;
+      gap: 0;
       color: var(--muted);
       background: transparent;
-      border: 1px solid transparent;
+      border: 0;
+      border-radius: 0;
       box-shadow: none;
-      font-size: 11px;
+      font-size: 13px;
+      font-weight: 900;
+      transform: none;
+    }
+
+    .tab-bar button::after {
+      content: "";
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 4px;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--teal), var(--coral), var(--gold));
+      opacity: 0;
+      transform: scaleX(.34);
+      transition: opacity .18s ease, transform .18s ease;
+    }
+
+    .tab-bar button:hover {
+      color: var(--ink);
+      background: rgba(255, 254, 251, .28);
+      box-shadow: none;
+      transform: none;
+      filter: none;
     }
 
     .tab-bar button.active {
-      color: #fffefb;
-      background: linear-gradient(135deg, var(--teal), #1d5f79);
-      border-color: transparent;
-      box-shadow: 0 10px 20px rgba(15, 143, 131, .18);
+      color: var(--ink);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .tab-bar button.active::after {
+      opacity: 1;
+      transform: scaleX(1);
     }
 
     .tab-icon {
-      font-size: 18px;
-      line-height: 1;
+      display: none;
     }
 
     .bottom-bar {
@@ -1989,7 +2014,7 @@
           <div>
             <span class="kicker">Resumen</span>
             <h2 id="homeTitle">Todavía no has añadido series</h2>
-            <p id="homeSubtitle">Añade una serie del catálogo o crea una personalizada.</p>
+            <p id="homeSubtitle">Añade una serie del catálogo para empezar a seguirla.</p>
           </div>
         </div>
         <div class="stats-grid">
@@ -2053,12 +2078,12 @@
           <div class="mark" aria-hidden="true">+</div>
           <div class="title">
             <h1 id="catalogHeading">Añadir serie</h1>
-            <p>Parte de una plantilla o crea tu propia serie desde cero.</p>
+            <p>Elige una serie del catálogo para seguirla en tu lista y en el calendario.</p>
           </div>
         </div>
       </header>
 
-      <section class="catalog-grid">
+      <section class="catalog-layout">
         <div>
           <div class="search-wrap catalog-search">
             <label for="searchCatalog">Buscar serie</label>
@@ -2072,53 +2097,6 @@
           </div>
           <section id="catalogList" class="catalog-grid"></section>
         </div>
-
-        <section class="tool-panel" aria-labelledby="customHeading">
-          <div class="inline-head">
-            <div>
-              <h3 id="customHeading" style="margin:0 0 6px;">Serie personalizada</h3>
-              <p class="notice" style="margin:0;">Crea una entrada básica con temporadas fijas.</p>
-            </div>
-          </div>
-
-          <form id="customForm" class="form-grid" autocomplete="off">
-            <div class="wide">
-              <label for="customName">Nombre</label>
-              <input id="customName" name="name" required placeholder="Nombre de la serie" />
-            </div>
-            <div>
-              <label for="customEmoji">Icono</label>
-              <input id="customEmoji" name="emoji" maxlength="4" value="TV" />
-            </div>
-            <div>
-              <label for="customStatus">Estado</label>
-              <input id="customStatus" name="status" value="Pendiente" />
-            </div>
-            <div>
-              <label for="customSeasons">Temporadas</label>
-              <input id="customSeasons" name="seasons" type="number" min="1" value="1" />
-            </div>
-            <div>
-              <label for="customEpisodes">Capítulos por temporada</label>
-              <input id="customEpisodes" name="episodes" type="number" min="0" value="0" />
-            </div>
-            <div>
-              <label for="customMinutes">Minutos por capítulo</label>
-              <input id="customMinutes" name="minutes" type="number" min="1" value="45" />
-            </div>
-            <div>
-              <label for="customPace">Capítulos al día</label>
-              <input id="customPace" name="pace" type="number" min="0.1" step="0.1" value="2" />
-            </div>
-            <div class="wide">
-              <label for="customDescription">Descripción</label>
-              <textarea id="customDescription" name="description" placeholder="Plataforma, notas o contexto"></textarea>
-            </div>
-            <div class="wide form-actions">
-              <button type="submit">Crear serie</button>
-            </div>
-          </form>
-        </section>
       </section>
     </section>
 
@@ -2897,7 +2875,35 @@ Last Forever
       "2026-07-08"
     ];
 
-    const secretStorySeason14ReleaseDates = [];
+    const secretStorySeason14Episodes = [
+      { date: "2026-06-23", title: "Prime 1 - Kick off (Partie 1)" },
+      { date: "2026-06-24", title: "Prime 1 - Kick off (Partie 2)" },
+      { date: "2026-06-24", title: "Quotidienne 1 du 24 juin 2026" },
+      { date: "2026-06-25", title: "Quotidienne 2 du 25 juin 2026" },
+      { date: "2026-06-25", title: "Secret Uncut 1 du 25/06" },
+      { date: "2026-06-26", title: "Quotidienne 3 du 26 juin 2026" },
+      { date: "2026-06-26", title: "Secret Uncut 2 du 26/06" },
+      { date: "2026-06-28", title: "Quotidienne 4 du 28 juin 2026" },
+      { date: "2026-06-29", title: "Secret Uncut 3 du 29/06" },
+      { date: "2026-06-29", title: "Quotidienne 5 du 29 juin 2026" },
+      { date: "2026-06-30", title: "Quotidienne 6 du 30 juin 2026" },
+      { date: "2026-06-30", title: "Secret Uncut 4 du 30/06" },
+      { date: "2026-07-01", title: "Quotidienne 7 du 1 juillet 2026" },
+      { date: "2026-07-01", title: "Secret Uncut 5 du 01/07" },
+      { date: "2026-07-01", title: "Prime 2 (Partie 1) du 1 juillet 2026" },
+      { date: "2026-07-01", title: "Prime 2 (Partie 2) du 1 juillet 2026" },
+      { date: "2026-07-02", title: "Quotidienne 8 du 2 juillet 2026" },
+      { date: "2026-07-02", title: "Secret Uncut 6 du 02/07" },
+      { date: "2026-07-03", title: "Zone Secrète de Lou du 03/07" },
+      { date: "2026-07-03", title: "Quotidienne 9 du 3 juillet 2026" },
+      { date: "2026-07-03", title: "Secret Uncut 7 du 03/07" },
+      { date: "2026-07-05", title: "Quotidienne 10 du 5 juillet 2026" },
+      { date: "2026-07-05", title: "Secret Uncut 8 du 05/07" },
+      { date: "2026-07-06", title: "Quotidienne 11 du 6 juillet 2026" },
+      { date: "2026-07-06", title: "Secret Uncut 9 du 06/07" },
+      { date: "2026-07-07", title: "Quotidienne 12 du 7 juillet 2026" },
+      { date: "2026-07-07", title: "Secret Uncut 10 du 07/07" }
+    ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
       "2026-07-12",
@@ -3041,14 +3047,14 @@ Last Forever
         episode: index + 1,
         title
       })),
-      ...secretStorySeason14ReleaseDates.map((date, index) => ({
-        date,
+      ...secretStorySeason14Episodes.map((episode, index) => ({
+        date: episode.date,
         serieId: "secret-story",
         serie: "Secret Story",
         platform: "TF1+",
         season: 14,
         episode: index + 1,
-        title: `Quotidienne ${index + 1}`
+        title: episode.title
       })),
       ...bigBrotherSeason28ReleaseDates.map((date, index) => ({
         date,
@@ -3811,8 +3817,8 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "Temporada 14 en producción, fechas pendientes",
-        description: "Reality francés · TF1+ · temporada 14 en producción, sin calendario público.",
+        status: "En emisión · temporada 14 · 27 vídeos disponibles",
+        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -3829,7 +3835,14 @@ Last Forever
           { season: 11, total: 231, watched: 0, note: "TF1+" },
           { season: 12, total: 59, watched: 0, note: "TF1+" },
           { season: 13, total: 60, watched: 0, note: "TF1+" },
-          { season: 14, total: 0, watched: 0, note: "2026 en producción; casting abierto, fechas pendientes", available: false }
+          {
+            season: 14,
+            total: secretStorySeason14Episodes.length,
+            watched: 0,
+            releasedEpisodes: secretStorySeason14Episodes.length,
+            note: "TF1+ · 27 vídeos disponibles desde el 23/06/2026",
+            episodes: secretStorySeason14Episodes.map(episode => episode.title)
+          }
         ]
       },
       ...seriesCatalog.map(catalogItemFromSeries)
@@ -3843,9 +3856,6 @@ Last Forever
       catalogSearch: "",
       filter: "all"
     };
-
-    let selectedCalendarDate = initialCalendarDate();
-    let calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate));
 
     const knownSeasonTotals = {
       "secret-story": {
@@ -3866,6 +3876,8 @@ Last Forever
 
     let state = syncKnownCatalogData(loadState());
     let activeSerieId = state.mySeries[0]?.id || null;
+    let selectedCalendarDate = initialCalendarDate();
+    let calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate));
 
     function clone(obj) {
       return JSON.parse(JSON.stringify(obj));
@@ -3985,23 +3997,6 @@ Last Forever
       element.style.setProperty("--card-a", palette.a);
       element.style.setProperty("--card-b", palette.b);
       element.style.setProperty("--card-c", palette.c);
-    }
-
-    function makeId(name) {
-      const base = String(name || "serie")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "")
-        .slice(0, 42) || "serie";
-      let id = base;
-      let counter = 2;
-      while (state.mySeries.some(serie => serie.id === id) || catalog.some(serie => serie.id === id)) {
-        id = `${base}-${counter}`;
-        counter += 1;
-      }
-      return id;
     }
 
     function normalizeState(value) {
@@ -4275,19 +4270,26 @@ Last Forever
       return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
     }
 
+    function followedReleaseEvents() {
+      const followedIds = new Set(state.mySeries.map(serie => serie.id));
+      if (!followedIds.size) return [];
+      return releaseEvents.filter(event => followedIds.has(event.serieId));
+    }
+
     function calendarEventsForDate(dateKey) {
-      return releaseEvents.filter(event => event.date === dateKey);
+      return followedReleaseEvents().filter(event => event.date === dateKey);
     }
 
     function calendarEventsForMonth(date) {
       const monthKey = monthKeyFromDate(date);
-      return releaseEvents.filter(event => event.date.startsWith(monthKey));
+      return followedReleaseEvents().filter(event => event.date.startsWith(monthKey));
     }
 
     function initialCalendarDate() {
       const todayKey = dateKeyFromDate(new Date());
-      const upcoming = releaseEvents.find(event => event.date >= todayKey);
-      return upcoming?.date || releaseEvents[releaseEvents.length - 1]?.date || todayKey;
+      const events = followedReleaseEvents();
+      const upcoming = events.find(event => event.date >= todayKey);
+      return upcoming?.date || events[events.length - 1]?.date || todayKey;
     }
 
     function formatCalendarMonth(date) {
@@ -4304,7 +4306,7 @@ Last Forever
 
     function upcomingReleaseText() {
       const todayKey = dateKeyFromDate(new Date());
-      const upcoming = releaseEvents.find(event => event.date >= todayKey);
+      const upcoming = followedReleaseEvents().find(event => event.date >= todayKey);
       if (!upcoming) return "Sin estrenos próximos";
       return `${upcoming.serie}: ${releaseEpisodeLabel(upcoming)} · ${formatCatalogDate(upcoming.date)}`;
     }
@@ -4434,19 +4436,16 @@ Last Forever
         {
           id: "watching-now",
           title: "Viendo ahora",
-          description: "Con al menos un capítulo marcado en el último mes.",
           series: []
         },
         {
           id: "quiet",
           title: "Series empezadas",
-          description: "Empezadas, pero sin capítulos marcados este último mes.",
           series: []
         },
         {
           id: "not-started",
           title: "Series no empezadas",
-          description: "Añadidas a tu lista, todavía sin capítulos vistos.",
           series: []
         }
       ];
@@ -4568,16 +4567,16 @@ Last Forever
             <button class="secondary serie-quick-watch" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${quickWatchDisabled ? "disabled" : ""}>+1</button>
           ` : ""}
         </div>
-        <div class="mini-stats">
-          <span>Pend. <b>${totals.pendingEpisodes}</b></span>
-          <span>Tiempo <b>${formatHours(totals.pendingMinutes)}</b></span>
-        </div>
         <div class="next-watch">
           <small>${escapeHtml(nextCaption)}</small>
           <span class="next-copy">
             <b>${escapeHtml(nextLabel)}</b>
             ${nextDetails.releaseText ? `<em>${escapeHtml(nextDetails.releaseText)}</em>` : ""}
           </span>
+        </div>
+        <div class="mini-stats">
+          <span>Pend. <b>${totals.pendingEpisodes}</b></span>
+          <span>Tiempo <b>${formatHours(totals.pendingMinutes)}</b></span>
         </div>
       `;
       return card;
@@ -4586,6 +4585,7 @@ Last Forever
     function renderHome() {
       const visibleOnHome = homeSeries();
       const totals = globalTotals(visibleOnHome);
+      const completed = watchedSeries();
       document.getElementById("seriesCount").textContent = visibleOnHome.length;
       document.getElementById("pendingEpisodes").textContent = totals.pendingEpisodes;
       document.getElementById("pendingTime").textContent = formatHours(totals.pendingMinutes);
@@ -4599,7 +4599,7 @@ Last Forever
       const homeSubtitle = document.getElementById("homeSubtitle");
       if (state.mySeries.length === 0) {
         homeTitle.textContent = "Todavía no has añadido series";
-        homeSubtitle.textContent = "Añade una serie del catálogo o crea una personalizada.";
+        homeSubtitle.textContent = "Añade una serie del catálogo para empezar a seguirla.";
       } else if (visibleOnHome.length === 0) {
         homeTitle.textContent = "Todo al día";
         homeSubtitle.textContent = completed.length
@@ -4664,7 +4664,6 @@ Last Forever
             <div class="series-subgroup-head">
               <div>
                 <h4 id="${headingId}">${escapeHtml(group.title)}</h4>
-                <p>${escapeHtml(group.description)}</p>
               </div>
               <span>${group.series.length} serie${group.series.length === 1 ? "" : "s"}</span>
             </div>
@@ -4970,39 +4969,6 @@ Last Forever
       showScreen("detail");
     }
 
-    function addCustomSerie(form) {
-      const data = new FormData(form);
-      const seasonCount = Math.max(1, Math.floor(Number(data.get("seasons")) || 1));
-      const episodes = Math.max(0, Math.floor(Number(data.get("episodes")) || 0));
-      const name = String(data.get("name") || "").trim();
-      const serie = {
-        id: makeId(name),
-        name,
-        emoji: String(data.get("emoji") || "TV").trim() || "TV",
-        status: String(data.get("status") || "Pendiente").trim() || "Pendiente",
-        description: String(data.get("description") || "").trim(),
-        minutesPerEpisode: Math.max(1, Number(data.get("minutes")) || 45),
-        episodesPerDay: Math.max(0.1, Number(data.get("pace")) || 2),
-        lastWatchedAt: "",
-        seasons: Array.from({ length: seasonCount }, (_, index) => ({
-          season: index + 1,
-          total: episodes,
-          watched: 0,
-          note: ""
-        }))
-      };
-      state.mySeries.push(serie);
-      activeSerieId = serie.id;
-      form.reset();
-      document.getElementById("customEmoji").value = "TV";
-      document.getElementById("customStatus").value = "Pendiente";
-      document.getElementById("customSeasons").value = 1;
-      document.getElementById("customEpisodes").value = 0;
-      document.getElementById("customMinutes").value = 45;
-      document.getElementById("customPace").value = 2;
-      showScreen("detail");
-    }
-
     function openDetail(id) {
       activeSerieId = id;
       showScreen("detail");
@@ -5237,11 +5203,6 @@ Last Forever
     document.getElementById("searchCatalog").addEventListener("input", event => {
       ui.catalogSearch = event.target.value;
       renderCatalog();
-    });
-
-    document.getElementById("customForm").addEventListener("submit", event => {
-      event.preventDefault();
-      addCustomSerie(event.currentTarget);
     });
 
     document.getElementById("importFile").addEventListener("change", event => {
