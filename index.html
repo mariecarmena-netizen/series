@@ -759,19 +759,13 @@
       transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
 
-    .serie-card:hover,
     .catalog-card:hover {
       transform: translateY(-2px);
       border-color: rgba(23, 26, 24, .16);
       box-shadow: 0 24px 56px rgba(23, 26, 24, .14);
     }
 
-    .serie-card:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 16px 34px rgba(23, 26, 24, .10);
-    }
-
-    .serie-head,
+    .serie-row,
     .catalog-top,
     .season-head,
     .inline-head {
@@ -783,9 +777,26 @@
       gap: 14px;
     }
 
-    .serie-head,
     .catalog-top {
       justify-content: flex-start;
+    }
+
+    .serie-row {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      align-items: center;
+      justify-content: stretch;
+      gap: 10px;
+    }
+
+    .serie-card.has-quick-watch .serie-row {
+      grid-template-columns: auto minmax(0, 1fr) 58px;
+    }
+
+    .serie-main {
+      min-width: 0;
+      display: grid;
+      gap: 5px;
     }
 
     .serie-meta,
@@ -793,9 +804,10 @@
       min-width: 0;
     }
 
-    .serie-card .serie-head {
-      align-items: center;
-      gap: 10px;
+    .serie-card .serie-meta {
+      display: grid;
+      gap: 3px;
+      align-content: center;
     }
 
     .serie-card h2,
@@ -814,13 +826,40 @@
     }
 
     .serie-card h2 {
-      margin: 7px 0 0;
+      margin: 2px 0 0;
       font-size: 17px;
       line-height: 1.12;
     }
 
     .serie-card p {
       display: none;
+    }
+
+    .serie-title-button {
+      width: auto;
+      min-height: 0;
+      padding: 0;
+      display: inline;
+      justify-content: flex-start;
+      color: var(--ink);
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      font: inherit;
+      font-weight: 950;
+      line-height: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .serie-title-button:hover {
+      color: var(--teal-dark);
+      background: transparent;
+      box-shadow: none;
+      filter: none;
+      transform: none;
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     .avatar,
@@ -1001,12 +1040,40 @@
 
     .serie-card .progress-wrap {
       height: 6px;
-      margin: 12px 0 5px;
+      margin: 2px 0 0;
     }
 
     .serie-card .progress-wrap + p {
       display: block;
       font-size: 11px;
+    }
+
+    .serie-card .progress-text {
+      display: block;
+      margin: 0;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      line-height: 1.2;
+    }
+
+    .serie-card .serie-quick-watch {
+      width: 58px;
+      min-width: 58px;
+      min-height: 72px;
+      padding: 0;
+      align-self: stretch;
+      color: var(--ink);
+      background: rgba(255, 254, 251, .82);
+      border: 1px solid var(--line);
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: 950;
+    }
+
+    .serie-card .serie-quick-watch:hover {
+      background: rgba(255, 254, 251, .94);
+      box-shadow: 0 10px 20px rgba(23, 26, 24, .08);
     }
 
     .serie-card .next-watch {
@@ -1088,9 +1155,9 @@
 
     .serie-card .mini-stats {
       display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 6px;
       margin-top: 10px;
-      max-width: 760px;
     }
 
     .serie-card .mini-stats span {
@@ -1945,14 +2012,6 @@
         </div>
       </section>
 
-      <section class="toolbar" aria-label="Controles de lista">
-        <div class="filter-tabs" role="group" aria-label="Filtrar series">
-          <button type="button" data-action="set-filter" data-filter="all" class="active">Todas</button>
-          <button type="button" data-action="set-filter" data-filter="watching">En curso</button>
-          <button type="button" data-action="set-filter" data-filter="missing">Sin datos</button>
-        </div>
-      </section>
-
       <div class="bottom-bar">
         <div class="left">
           <button type="button" data-action="show-screen" data-screen="catalog">+ Añadir serie</button>
@@ -2168,7 +2227,7 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-06";
+    const DATA_LAST_UPDATED = "2026-07-08";
 
 
     const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
@@ -2874,6 +2933,66 @@ Last Forever
       "2026-09-17"
     ];
 
+    const loveIsBlindUkAfterTheAltarEpisodeTitles = [
+      "After the Altar 1",
+      "After the Altar 2",
+      "After the Altar 3"
+    ];
+
+    const loveIsBlindUkAfterTheAltarReleaseDates = [
+      "2026-07-12",
+      "2026-07-12",
+      "2026-07-12"
+    ];
+
+    const perfectMatchSeason4EpisodeTitles = [
+      "Episodio 1",
+      "Episodio 2",
+      "Episodio 3",
+      "Episodio 4",
+      "Episodio 5",
+      "Episodio 6",
+      "Episodio 7",
+      "Final"
+    ];
+
+    const perfectMatchSeason4ReleaseDates = [
+      "2026-05-13",
+      "2026-05-13",
+      "2026-05-13",
+      "2026-05-13",
+      "2026-05-13",
+      "2026-05-20",
+      "2026-05-20",
+      "2026-05-27"
+    ];
+
+    const ultimatumMarryOrMoveOnSeason4EpisodeTitles = [
+      "Episodio 1",
+      "Episodio 2",
+      "Episodio 3",
+      "Episodio 4",
+      "Episodio 5",
+      "Episodio 6",
+      "Episodio 7",
+      "Episodio 8",
+      "Final",
+      "Reunion"
+    ];
+
+    const ultimatumMarryOrMoveOnSeason4ReleaseDates = [
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-15",
+      "2026-07-22",
+      "2026-07-22"
+    ];
+
     const releaseEvents = [
       ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
         episodes.map((title, episodeIndex) => ({
@@ -2939,6 +3058,33 @@ Last Forever
         season: 28,
         episode: index + 1,
         title: index === 0 ? "Estreno de temporada" : `Episodio ${index + 1}`
+      })),
+      ...loveIsBlindUkAfterTheAltarEpisodeTitles.map((title, index) => ({
+        date: loveIsBlindUkAfterTheAltarReleaseDates[index],
+        serieId: "love-is-blind-uk",
+        serie: "Love Is Blind: UK",
+        platform: "Netflix",
+        season: 3,
+        episode: index + 1,
+        title
+      })),
+      ...perfectMatchSeason4EpisodeTitles.map((title, index) => ({
+        date: perfectMatchSeason4ReleaseDates[index],
+        serieId: "perfect-match",
+        serie: "Perfect Match",
+        platform: "Netflix",
+        season: 4,
+        episode: index + 1,
+        title
+      })),
+      ...ultimatumMarryOrMoveOnSeason4EpisodeTitles.map((title, index) => ({
+        date: ultimatumMarryOrMoveOnSeason4ReleaseDates[index],
+        serieId: "the-ultimatum-marry-or-move-on-us",
+        serie: "The Ultimatum: Marry or Move On (USA)",
+        platform: "Netflix",
+        season: 4,
+        episode: index + 1,
+        title
       }))
     ].sort((a, b) => a.date.localeCompare(b.date) || a.serie.localeCompare(b.serie) || a.episode - b.episode);
 
@@ -3470,6 +3616,154 @@ Last Forever
         image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80",
         description:
           "Ted Mosby cuenta a sus hijos la larga historia de cómo conoció a su madre, con sus amigos de Nueva York de por medio."
+      },
+      {
+        id: "love-is-blind-us",
+        title: "Love Is Blind (USA)",
+        platform: "Netflix",
+        status: "10 temporadas · última temporada completa",
+        genre: "Reality / citas",
+        seasons: [14, 14, 15, 16, 11, 13, 13, 14, 13, 13].map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 136,
+        totalEpisodesPlanned: 136,
+        averageEpisodeMinutes: 60,
+        releasedWatchTimeMinutes: 8160,
+        releasedWatchTimeText: "136 h",
+        totalPlannedWatchTimeMinutes: 8160,
+        totalPlannedWatchTimeText: "136 h",
+        image: "https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Solteros estadounidenses se conocen sin verse, se comprometen en las cabinas y ponen a prueba la relación antes de decidir si se casan."
+      },
+      {
+        id: "love-is-blind-uk",
+        title: "Love Is Blind: UK",
+        platform: "Netflix",
+        status: "2 temporadas · After the Altar el 12/07/2026 · temporada 3 anunciada",
+        genre: "Reality / citas",
+        seasons: [
+          { season: 1, episodes: 11, released: true },
+          { season: 2, episodes: 11, released: true },
+          {
+            season: 3,
+            episodes: loveIsBlindUkAfterTheAltarEpisodeTitles,
+            released: false,
+            note: "After the Altar · 12/07/2026"
+          }
+        ],
+        releasedEpisodes: 22,
+        totalEpisodesPlanned: 25,
+        averageEpisodeMinutes: 55,
+        releasedWatchTimeMinutes: 1210,
+        releasedWatchTimeText: "20 h 10 min",
+        totalPlannedWatchTimeMinutes: 1375,
+        totalPlannedWatchTimeText: "22 h 55 min",
+        nextEpisodeDate: "2026-07-12",
+        image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80",
+        description:
+          "La versión británica del experimento, presentada por Emma y Matt Willis, con solteros que se comprometen antes de verse cara a cara."
+      },
+      {
+        id: "love-is-blind-france",
+        title: "Love Is Blind: France",
+        platform: "Netflix",
+        status: "1 temporada · sin fecha nueva confirmada",
+        genre: "Reality / citas",
+        seasons: [
+          { season: 1, episodes: 10, released: true }
+        ],
+        releasedEpisodes: 10,
+        totalEpisodesPlanned: 10,
+        averageEpisodeMinutes: 55,
+        releasedWatchTimeMinutes: 550,
+        releasedWatchTimeText: "9 h 10 min",
+        totalPlannedWatchTimeMinutes: 550,
+        totalPlannedWatchTimeText: "9 h 10 min",
+        image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Adaptación francesa del formato Love Is Blind, presentada por Teddy Riner y Luthna Plocus."
+      },
+      {
+        id: "the-ultimatum-marry-or-move-on-us",
+        title: "The Ultimatum: Marry or Move On (USA)",
+        platform: "Netflix",
+        status: "Temporada 4 en calendario · estreno 15/07/2026 · final 22/07/2026",
+        genre: "Reality / citas",
+        seasons: [
+          { season: 1, episodes: 10, released: true },
+          { season: 2, episodes: 10, released: true },
+          { season: 3, episodes: 10, released: true },
+          {
+            season: 4,
+            episodes: ultimatumMarryOrMoveOnSeason4EpisodeTitles,
+            released: false,
+            note: "Las Vegas · estreno 15/07/2026"
+          }
+        ],
+        releasedEpisodes: 30,
+        totalEpisodesPlanned: 40,
+        averageEpisodeMinutes: 50,
+        releasedWatchTimeMinutes: 1500,
+        releasedWatchTimeText: "25 h",
+        totalPlannedWatchTimeMinutes: 2000,
+        totalPlannedWatchTimeText: "33 h 20 min",
+        nextEpisodeDate: "2026-07-15",
+        finaleDate: "2026-07-22",
+        image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Parejas al borde del matrimonio intercambian compañeros en matrimonios de prueba antes de decidir si se comprometen o rompen."
+      },
+      {
+        id: "the-ultimatum-france",
+        title: "The Ultimatum: France",
+        platform: "Netflix",
+        status: "Finalizada · 1 temporada",
+        genre: "Reality / citas",
+        seasons: [
+          { season: 1, episodes: 10, released: true }
+        ],
+        releasedEpisodes: 10,
+        totalEpisodesPlanned: 10,
+        averageEpisodeMinutes: 45,
+        releasedWatchTimeMinutes: 450,
+        releasedWatchTimeText: "7 h 30 min",
+        totalPlannedWatchTimeMinutes: 450,
+        totalPlannedWatchTimeText: "7 h 30 min",
+        image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Versión francesa del experimento de parejas que deben elegir entre casarse o poner fin a la relación."
+      },
+      {
+        id: "perfect-match",
+        title: "Perfect Match",
+        platform: "Netflix",
+        status: "4 temporadas · temporada 4 completa",
+        genre: "Reality / citas / competición",
+        seasons: [
+          { season: 1, episodes: 12, released: true },
+          { season: 2, episodes: 10, released: true },
+          { season: 3, episodes: 10, released: true },
+          {
+            season: 4,
+            episodes: perfectMatchSeason4EpisodeTitles,
+            released: false,
+            note: "Temporada 4 completa"
+          }
+        ],
+        releasedEpisodes: 40,
+        totalEpisodesPlanned: 40,
+        averageEpisodeMinutes: 55,
+        releasedWatchTimeMinutes: 2200,
+        releasedWatchTimeText: "36 h 40 min",
+        totalPlannedWatchTimeMinutes: 2200,
+        totalPlannedWatchTimeText: "36 h 40 min",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+        description:
+          "Participantes de realities compiten y forman parejas para encontrar la combinación más compatible en una villa tropical."
       }
     ];
 
@@ -3539,6 +3833,10 @@ Last Forever
         ]
       },
       ...seriesCatalog.map(catalogItemFromSeries)
+    ];
+
+    const REMOVED_SERIES_IDS = [
+      "the-ultimatum-marry-or-move-on-uk"
     ];
 
     const ui = {
@@ -3666,9 +3964,9 @@ Last Forever
             watched: 0,
             available: releasedEpisodes > 0 || season.released !== false,
             releasedEpisodes,
-            note: releasedEpisodes >= total
+            note: season.note || (releasedEpisodes >= total
               ? item.platform
-              : (releasedEpisodes > 0 ? `${releasedEpisodes} emitidos` : "Pendiente de estreno"),
+              : (releasedEpisodes > 0 ? `${releasedEpisodes} emitidos` : "Pendiente de estreno")),
             episodes: normalizeEpisodeList(season.episodes ?? season.episodios)
           };
         })
@@ -3710,7 +4008,7 @@ Last Forever
       const next = value && typeof value === "object" ? value : {};
       const mySeries = Array.isArray(next.mySeries) ? next.mySeries : [];
       return {
-        mySeries: mySeries.map((item, index) => {
+        mySeries: mySeries.filter(item => !REMOVED_SERIES_IDS.includes(item?.id)).map((item, index) => {
           const serie = {
             id: item.id || makeImportId(item.name, index),
             name: item.name || `Serie ${index + 1}`,
@@ -4250,23 +4548,29 @@ Last Forever
       const nextCaption = options.nextCaption || "Por ver";
       const quickWatchDisabled = !nextDetails.canWatch || totals.pendingEpisodes === 0;
       const card = document.createElement("article");
-      card.className = "serie-card";
+      card.className = showQuickWatch ? "serie-card has-quick-watch" : "serie-card";
       applyPalette(card, serie.id);
       card.innerHTML = `
-        <div class="serie-head">
+        <div class="serie-row">
           <div class="avatar${serie.image ? " with-image" : ""}" aria-hidden="true">${serieImageContent(serie)}</div>
-          <div class="serie-meta">
-            <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
-            <h2>${escapeHtml(serie.name)}</h2>
-            <p>${escapeHtml(serie.description || serie.status)}</p>
+          <div class="serie-main">
+            <div class="serie-meta">
+              <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
+              <h2>
+                <button class="serie-title-button" type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ficha de ${escapeHtml(serie.name)}">${escapeHtml(serie.name)}</button>
+              </h2>
+              <p>${escapeHtml(serie.description || serie.status)}</p>
+            </div>
+            <div class="progress-wrap"><div class="progress" style="width:${Math.min(100, totals.progress)}%"></div></div>
+            <p class="progress-text">${Math.round(totals.progress)}% · ${totals.watchedEpisodes}/${totals.totalEpisodes} capítulos</p>
           </div>
+          ${showQuickWatch ? `
+            <button class="secondary serie-quick-watch" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${quickWatchDisabled ? "disabled" : ""}>+1</button>
+          ` : ""}
         </div>
-        <div class="progress-wrap"><div class="progress" style="width:${Math.min(100, totals.progress)}%"></div></div>
-        <p>${Math.round(totals.progress)}% · ${totals.watchedEpisodes}/${totals.totalEpisodes} capítulos</p>
         <div class="mini-stats">
           <span>Pend. <b>${totals.pendingEpisodes}</b></span>
           <span>Tiempo <b>${formatHours(totals.pendingMinutes)}</b></span>
-          <span>Final <b>${formatFinishDate(totals.daysLeft)}</b></span>
         </div>
         <div class="next-watch">
           <small>${escapeHtml(nextCaption)}</small>
@@ -4274,12 +4578,6 @@ Last Forever
             <b>${escapeHtml(nextLabel)}</b>
             ${nextDetails.releaseText ? `<em>${escapeHtml(nextDetails.releaseText)}</em>` : ""}
           </span>
-        </div>
-        <div class="card-actions">
-          <button type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ${escapeHtml(serie.name)}">Abrir</button>
-          ${showQuickWatch ? `
-            <button class="secondary" type="button" data-action="quick-watch" data-id="${escapeHtml(serie.id)}" aria-label="Marcar como visto ${escapeHtml(nextLabel)} de ${escapeHtml(serie.name)}" ${quickWatchDisabled ? "disabled" : ""}>+1</button>
-          ` : ""}
         </div>
       `;
       return card;
