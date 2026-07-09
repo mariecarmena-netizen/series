@@ -711,7 +711,6 @@
     }
 
     .catalog-card::before,
-    .season-card::before,
     .empty-card::before,
     .tool-panel::before {
       content: "";
@@ -1318,10 +1317,6 @@
 
     .season-card.compact {
       padding: 11px;
-    }
-
-    .season-card::before {
-      height: 3px;
     }
 
     .season-card .progress-wrap {
@@ -2205,7 +2200,7 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-08";
+    const DATA_LAST_UPDATED = "2026-07-09";
 
 
     const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
@@ -2789,7 +2784,8 @@ Last Forever
       "Death of a Raiderette",
       "Bad Medicine",
       "Hooters Girl Gone",
-      "Burlesque and Blood"
+      "Burlesque and Blood",
+      "To Live and Die in Hotlanta"
     ];
 
     const deadlyInfluenceSeason2EpisodeTitles = [
@@ -2846,7 +2842,8 @@ Last Forever
       "2026-06-22",
       "2026-06-29",
       "2026-07-06",
-      "2026-07-13"
+      "2026-07-13",
+      "2026-07-20"
     ];
 
     const deadlyInfluenceSeason2ReleaseDates = [
@@ -2952,14 +2949,14 @@ Last Forever
     ];
 
     const perfectMatchSeason4EpisodeTitles = [
-      "Episodio 1",
-      "Episodio 2",
-      "Episodio 3",
-      "Episodio 4",
-      "Episodio 5",
-      "Episodio 6",
-      "Episodio 7",
-      "Final"
+      "Bombshells & Love Bombs",
+      "A Tale of Two Jimmys",
+      "Wet and Wild",
+      "Baddies Come In Threes",
+      "Ex’s and Woe’s",
+      "Loose Lips Sink Relationships",
+      "Split Decision",
+      "Rough Patches, Perfect Matches"
     ];
 
     const perfectMatchSeason4ReleaseDates = [
@@ -2998,6 +2995,1957 @@ Last Forever
       "2026-07-22",
       "2026-07-22"
     ];
+
+    const seriesEpisodeTitleOverrides = {
+      "lethally-blonde": {
+        1: [
+          "Too Fast Too Furious",
+          "The Porn Identity",
+          "Dirty Dancing",
+          "The Fall of Aubrey Gold",
+          "Hollywood Thriller",
+          "A Model Murder"
+        ]
+      },
+      "deadly-influence": {
+        1: [
+          "Sin City Clickbait",
+          "TikTok Terror",
+          "RIP Bianca",
+          "Killer Content",
+          "Hashtag Halloween Horror",
+          "Control, Alt, Delete"
+        ]
+      },
+      "dynasty-2017": {
+        1: [
+          "I Hardly Recognized You",
+          "Spit It Out",
+          "Guilt Is for Insecure People",
+          "Private as a Circus",
+          "Company Slut",
+          "I Exist Only for Me",
+          "A Taste of Your Own Medicine",
+          "The Best Things in Life",
+          "Rotten Things",
+          "A Well-Dressed Tarantula",
+          "I Answer to No Man",
+          "Promises You Can't Keep",
+          "Nothing But Trouble",
+          "The Gospel According to Blake Carrington",
+          "Our Turn Now",
+          "Poor Little Rich Girl",
+          "Enter Alexis",
+          "Don't Con a Con Artist",
+          "Use or Be Used",
+          "A Line From the Past",
+          "Trashy Little Tramp",
+          "Dead Scratch"
+        ],
+        2: [
+          "Twenty-Three Skidoo",
+          "Ship of Vipers",
+          "The Butler Did It",
+          "Snowflakes in Hell",
+          "Queen of Cups",
+          "That Witch",
+          "A Temporary Infestation",
+          "A Real Instinct for the Jugular",
+          "Crazy Lady",
+          "A Champagne Mood",
+          "The Sight of You",
+          "Filthy Games",
+          "Even Worms Can Procreate",
+          "Parisian Legend Has It…",
+          "Motherly Overprotectiveness",
+          "Miserably Ungrateful Men",
+          "How Two-Faced Can You Get?",
+          "Life Is a Masquerade Party",
+          "This Illness of Mine",
+          "New Lady in Town",
+          "Thicker Than Money",
+          "Deception, Jealousy, and Lies"
+        ],
+        3: [
+          "Guilt Trip to Alaska",
+          "Caution Never Won a War",
+          "Wild Ghost Chase",
+          "Something Desperate",
+          "Mother? I'm at La Mirage",
+          "A Used Up Memory",
+          "Shoot From the Hip",
+          "The Sensational Blake Carrington Trial",
+          "The Caviar, I Trust, Is Not Burned",
+          "What Sorrows Are You Drowning?",
+          "A Wound That May Never Heal",
+          "Battle Lines",
+          "You See Most Things in Terms of Black & White",
+          "That Wicked Stepmother",
+          "Up a Tree",
+          "Is the Next Surgery on the House?",
+          "She Cancelled...",
+          "You Make Being a Priest Sound Like Something Bad",
+          "Robin Hood Rescues",
+          "My Hangover's Arrived"
+        ],
+        4: [
+          "That Unfortunate Dinner",
+          "Vows Are Still Sacred",
+          "The Aftermath",
+          "Everybody Loves the Carringtons",
+          "New Hopes, New Beginnings",
+          "A Little Father-Daughter Chat",
+          "The Birthday Party",
+          "Your Sick and Self-Serving Vendetta",
+          "Equal Justice For The Rich",
+          "I Hate to Spoil Your Memories",
+          "A Public Forum for Her Lies",
+          "Everything But Facing Reality",
+          "Go Rescue Someone Else",
+          "But I Don't Need Therapy",
+          "She Lives in a Showplace Penthouse",
+          "The British Are Coming",
+          "Stars Make You Smile",
+          "A Good Marriage in Every Sense",
+          "Everything Looks Wonderful, Joseph",
+          "You Vicious, Miserable Liar",
+          "Affairs of State and Affairs of the Heart",
+          "Filled With Manipulations and Deceptions"
+        ],
+        5: [
+          "Let's Start Over Again",
+          "That Holiday Spirit",
+          "How Did The Board Meeting Go?",
+          "Go Catch Your Horse",
+          "A Little Fun Wouldn't Hurt",
+          "Devoting All of Her Energy to Hate",
+          "A Real Actress Could Do It",
+          "The Only Thing That Counts Is Winning",
+          "A Friendly Kiss Between Friends",
+          "Mind Your Own Business",
+          "I'll Settle for a Prayer",
+          "There's No Need to Panic",
+          "Do You Always Talk to Turtles",
+          "Vicious Vendetta",
+          "Ben",
+          "My Family, My Blood",
+          "There's No One Around to Watch You Drown",
+          "A Writer of Dubious Talent",
+          "But a Drug Scandal?",
+          "First Kidnapping and Now Theft",
+          "More Power to Her",
+          "Catch 22"
+        ]
+      },
+      "hacks": {
+        1: [
+          "There Is No Line",
+          "Primm",
+          "A Gig's a Gig",
+          "D'Jewelry",
+          "Falling",
+          "New Eyes",
+          "Tunnel of Love",
+          "1.69 Million",
+          "Interview",
+          "I Think She Will"
+        ],
+        2: [
+          "There Will Be Blood",
+          "Quid Pro Quo",
+          "Trust the Process",
+          "The Captain's Wife",
+          "Retired",
+          "The Click",
+          "On the Market",
+          "The One, The Only"
+        ],
+        3: [
+          "Just for Laughs",
+          "Better Late",
+          "The Roast of Deborah Vance",
+          "Join the Club",
+          "One Day",
+          "Par for the Course",
+          "The Deborah Vance Christmas Spectacular",
+          "Yes, And",
+          "Bulletproof"
+        ],
+        4: [
+          "Big, Brave Girl",
+          "Cover Girls",
+          "What Happens in Vegas",
+          "I Love LA",
+          "Clickable Face",
+          "Mrs. Table",
+          "D'christening",
+          "Witch of the Week",
+          "A Slippery Slope",
+          "Heaven"
+        ],
+        5: [
+          "EGOT",
+          "Number One Fan",
+          "No New Tricks",
+          "Who's Making Dinner?",
+          "D'Amazing Race",
+          "QuikScribbl",
+          "Montecito",
+          "The Cube",
+          "The Garden",
+          "Hacks"
+        ]
+      },
+      "stranger-things": {
+        1: [
+          "Chapter One: The Vanishing of Will Byers",
+          "Chapter Two: The Weirdo on Maple Street",
+          "Chapter Three: Holly, Jolly",
+          "Chapter Four: The Body",
+          "Chapter Five: The Flea and the Acrobat",
+          "Chapter Six: The Monster",
+          "Chapter Seven: The Bathtub",
+          "Chapter Eight: The Upside Down"
+        ],
+        2: [
+          "Chapter One: MADMAX",
+          "Chapter Two: Trick or Treat, Freak",
+          "Chapter Three: The Pollywog",
+          "Chapter Four: Will the Wise",
+          "Chapter Five: Dig Dug",
+          "Chapter Six: The Spy",
+          "Chapter Seven: The Lost Sister",
+          "Chapter Eight: The Mind Flayer",
+          "Chapter Nine: The Gate"
+        ],
+        3: [
+          "Chapter One: Suzie, Do You Copy?",
+          "Chapter Two: The Mall Rats",
+          "Chapter Three: The Case of the Missing Lifeguard",
+          "Chapter Four: The Sauna Test",
+          "Chapter Five: The Flayed",
+          "Chapter Six: E Pluribus Unum",
+          "Chapter Seven: The Bite",
+          "Chapter Eight: The Battle of Starcourt"
+        ],
+        4: [
+          "Chapter One: The Hellfire Club",
+          "Chapter Two: Vecna's Curse",
+          "Chapter Three: The Monster and the Superhero",
+          "Chapter Four: Dear Billy",
+          "Chapter Five: The Nina Project",
+          "Chapter Six: The Dive",
+          "Chapter Seven: The Massacre at Hawkins Lab",
+          "Chapter Eight: Papa",
+          "Chapter Nine: The Piggyback"
+        ],
+        5: [
+          "Chapter One: The Crawl",
+          "Chapter Two: The Vanishing of Holly Wheeler",
+          "Chapter Three: The Turnbow Trap",
+          "Chapter Four: Sorcerer",
+          "Chapter Five: Shock Jock",
+          "Chapter Six: Escape from Camazotz",
+          "Chapter Seven: The Bridge",
+          "Chapter Eight: The Rightside Up"
+        ]
+      },
+      "brain-games": {
+        1: [
+          "Watch This!",
+          "Pay Attention!",
+          "Remember This!"
+        ],
+        2: [
+          "Focus Pocus",
+          "It's About Time",
+          "Motion Commotion",
+          "Don't Be Afraid",
+          "Power of Persuasion",
+          "What You Don't Know",
+          "Battle of the Sexes",
+          "Seeing is Believing",
+          "You Decide",
+          "Use It or Lose It",
+          "Illusion Confusion",
+          "Liar, Liar"
+        ],
+        3: [
+          "Battle of the Ages",
+          "In Living Color",
+          "Laws of Attraction",
+          "Trust Me",
+          "Stress Test",
+          "What's Going On?",
+          "Retrain Your Brain",
+          "Mind Your Body",
+          "In It to Win It",
+          "Follow the Leader"
+        ],
+        4: [
+          "Compassion",
+          "Addiction",
+          "Language",
+          "Risk",
+          "Battle of the Sexes 2",
+          "Superstitions",
+          "Food",
+          "Anger",
+          "Patterns",
+          "Intuition"
+        ],
+        5: [
+          "Common Sense",
+          "Left vs. Right",
+          "Morality",
+          "Money",
+          "Paranormal",
+          "Memory",
+          "Misconceptions",
+          "Peer Pressure",
+          "Logic",
+          "Faces"
+        ],
+        6: [
+          "Positive Thinking",
+          "Scams",
+          "Sleep",
+          "Perspective",
+          "Animal vs. Man",
+          "Imagination",
+          "Try This at Home"
+        ],
+        7: [
+          "Meet the Brain",
+          "The God Brain",
+          "Brains Behaving Badly",
+          "Life of the Brain",
+          "Super Senses",
+          "The Survivor Brain"
+        ],
+        8: [
+          "Male Brain vs. Female Brain",
+          "Ted Danson: Fact Or Fiction?",
+          "Drew Brees: Performance",
+          "Kids vs. Adults",
+          "Jack Black: Music",
+          "Mark Cuban: Power and Money",
+          "Rebel Wilson: Love and Attraction",
+          "Tiffany Haddish: Movie Magic"
+        ]
+      },
+      "section-de-recherches": {
+        1: [
+          "Arrêt d'urgence",
+          "Disparition",
+          "Dérapages",
+          "Handicap"
+        ],
+        2: [
+          "Apparences",
+          "Camping",
+          "L'inconnu du pont d'Aquitaine",
+          "Ante Mortem",
+          "Connexion dangereuse",
+          "L'étoile filante",
+          "Vents contraires",
+          "Corps à corps"
+        ],
+        3: [
+          "Pour le meilleur et pour le pire",
+          "Gendarme",
+          "Forêt noire",
+          "Une femme comme les autres",
+          "La bonne fée",
+          "En plein coeur",
+          "Baby-sitter",
+          "Chute libre",
+          "Surf",
+          "Le droit chemin"
+        ],
+        4: [
+          "Tourner la page",
+          "Mea Culpa",
+          "Bain de minuit",
+          "Ennemis intimes",
+          "L'enfance de l'art",
+          "Les liens du sang",
+          "Morsures secrètes",
+          "Ciel de plomb",
+          "Le haras",
+          "Randonnée mortelle",
+          "Prise d'otages",
+          "Millésime meurtrier",
+          "Les chasseurs",
+          "Le substitut"
+        ],
+        5: [
+          "Roman noir (1/2)",
+          "Roman noir (2/2)",
+          "Dernier Acte",
+          "Mauvaise rencontre",
+          "Sauveteurs",
+          "Pas de deux",
+          "Hors-jeu",
+          "Crève-cœur",
+          "Rescapé",
+          "Sortie de piste",
+          "Cœur de pierre",
+          "Accident de parcours",
+          "Une place au soleil (1/2)",
+          "Une place au soleil (2/2)"
+        ],
+        6: [
+          "Vacances mortelles",
+          "À la dérive",
+          "Rien ne va plus",
+          "L'homme aux deux visages",
+          "Les mailles du filet",
+          "La rançon du succès",
+          "À corps perdu",
+          "Dernier tango",
+          "Entre toi et moi",
+          "Matador"
+        ],
+        7: [
+          "In Memoriam",
+          "Attraction fatale",
+          "Noces de sang",
+          "La mort en héritage",
+          "Le procès",
+          "Compte à rebours",
+          "Serment d'Hippocrate",
+          "Coup de théâtre",
+          "Tarif de nuit",
+          "Amnésie",
+          "Belle à mourir",
+          "Far Ouest",
+          "Partie de campagne",
+          "Ecart de conduite",
+          "Mauvais présage",
+          "Trahison"
+        ],
+        8: [
+          "L'arrivée",
+          "Jeu de dupes",
+          "L'emmerdeuse",
+          "Barbe Bleue",
+          "Sous pression",
+          "Extraterrestre",
+          "Revers de fortune",
+          "La cavale",
+          "Cyrano",
+          "Balles à blanc",
+          "Haute tension",
+          "Le prix du palace"
+        ],
+        9: [
+          "Copycat",
+          "Sexy à mort",
+          "Une femme de trop",
+          "Ultime recours",
+          "Prise au piège",
+          "Leslie en danger",
+          "Chasse au trésor",
+          "Innocence sacrifiée",
+          "Les Loups",
+          "La Règle Du Jeu",
+          "La Nuit Des Étoiles",
+          "Secrets et mensonges"
+        ],
+        10: [
+          "Noces Rouges",
+          "Disparu",
+          "Escalade",
+          "Diva",
+          "Saut de l'ange",
+          "Nuit d'ivresse",
+          "Dérives",
+          "Corbeau blanc",
+          "Cocoon",
+          "L'Absente",
+          "Le Roi du carnaval",
+          "Sous influence",
+          "Jusqu'au dernier"
+        ],
+        11: [
+          "Dans son monde",
+          "Mauvaise blague",
+          "Famille décomposée",
+          "Grande redistribution",
+          "En plein ciel",
+          "White party",
+          "Manipulations",
+          "Sacrifices",
+          "Mortels rivages",
+          "L'impasse",
+          "Origine",
+          "Mauvais genre",
+          "Mon ange",
+          "Prêt à tout"
+        ],
+        12: [
+          "Avis de tempête",
+          "Grand froid",
+          "L'enfant chéri",
+          "Secret défense",
+          "Mauvaise fréquentation",
+          "Instinct de survie",
+          "Les hauts fonds",
+          "La machine",
+          "Traquée",
+          "Amour de jeunesse",
+          "Plus tard, tu oublieras",
+          "Meurtre XXL",
+          "Retour de flammes",
+          "Spirale"
+        ],
+        13: [
+          "Mauvais sort (1/2)",
+          "Mauvais sort (2/2)",
+          "Miraculée",
+          "Double Jeu",
+          "Mort sur mesure",
+          "Tiens ta garde",
+          "Les Proies",
+          "In utero",
+          "Les apparences",
+          "Naufrage",
+          "Petite sœur",
+          "Ligne rouge",
+          "Dernière chance",
+          "Justice aveugle"
+        ],
+        14: [
+          "Mémoire trouble",
+          "Jeux mortels",
+          "Comportement à risque",
+          "Réalités virtuelles",
+          "Expérience interdite",
+          "Double faute",
+          "Par amour (1/2)",
+          "Par amour (2/2)"
+        ],
+        15: [
+          "Nouveau départ (1)",
+          "Nouveau départ (2)"
+        ],
+        16: [
+          "Mortelle randonnée (1)",
+          "Mortelle randonnée (2)"
+        ],
+        17: [
+          "Le 12ème passager (1)",
+          "Le 12ème passager (2)"
+        ]
+      },
+      "lucifer": {
+        1: [
+          "Pilot",
+          "Lucifer, Stay. Good Devil.",
+          "The Would-Be Prince of Darkness",
+          "Manly Whatnots",
+          "Sweet Kicks",
+          "Favorite Son",
+          "Wingman",
+          "Et Tu, Doctor?",
+          "A Priest Walks Into a Bar",
+          "Pops",
+          "St. Lucifer",
+          "#TeamLucifer",
+          "Take Me Back to Hell"
+        ],
+        2: [
+          "Everything's Coming Up Lucifer",
+          "Liar, Liar, Slutty Dress on Fire",
+          "Sin-Eater",
+          "Lady Parts",
+          "Weaponizer",
+          "Monster",
+          "My Little Monkey",
+          "Trip to Stabby Town",
+          "Homewrecker",
+          "Quid Pro Ho",
+          "Stewardess Interruptus",
+          "Love Handles",
+          "A Good Day to Die",
+          "Candy Morningstar",
+          "Deceptive Little Parasite",
+          "God Johnson",
+          "Sympathy for the Goddess",
+          "The Good, the Bad and the Crispy"
+        ],
+        3: [
+          "They're Back, Aren't They?",
+          "The One with the Baby Carrot",
+          "Mr. and Mrs. Mazikeen Smith",
+          "What Would Lucifer Do?",
+          "Welcome Back, Charlotte Richards",
+          "Vegas with Some Radish",
+          "Off the Record",
+          "Chloe Does Lucifer",
+          "The Sinnerman",
+          "The Sin Bin",
+          "City of Angels?",
+          "All About Her",
+          "Til Death Do Us Part",
+          "My Brother's Keeper",
+          "High School Poppycock",
+          "Infernal Guinea Pig",
+          "Let Pinhead Sing!",
+          "The Last Heartbreak",
+          "Orange Is the New Maze",
+          "The Angel of San Bernardino",
+          "Anything Pierce Can Do I Can Do Better",
+          "All Hands on Decker",
+          "Quintessential Deckerstar",
+          "A Devil of My Word",
+          "Boo Normal",
+          "Once Upon a Time"
+        ],
+        4: [
+          "Everything's Okay",
+          "Somebody's Been Reading Dante's Inferno",
+          "O, Ye of Little Faith, Father",
+          "All About Eve",
+          "Expire Erect",
+          "Orgy Pants to Work",
+          "Devil Is as Devil Does",
+          "Super Bad Boyfriend",
+          "Save Lucifer",
+          "Who's da New King of Hell?",
+          "The Lucifer Reunion Show"
+        ],
+        5: [
+          "Really Sad Devil Guy",
+          "Lucifer! Lucifer! Lucifer!",
+          "¡Diablo!",
+          "It Never Ends Well for the Chicken",
+          "Detective Amenadiel",
+          "BluBallz",
+          "Our Mojo",
+          "Spoiler Alert",
+          "Family Dinner",
+          "Bloody Celestial Karaoke Jam",
+          "Resting Devil Face",
+          "Daniel Espinoza: Naked and Afraid",
+          "A Little Harmless Stalking",
+          "Nothing Lasts Forever",
+          "Is This Really How It's Going to End?!",
+          "A Chance at a Happy Ending"
+        ],
+        6: [
+          "Nothing Ever Changes Around Here",
+          "Buckets of Baggage",
+          "Yabba Dabba Do Me",
+          "Pin the Tail on the Daddy",
+          "The Murder of Lucifer Morningstar",
+          "A Lot Dirtier Than That",
+          "My Best Fiend's Wedding",
+          "Save the Devil, Save the World",
+          "Goodbye, Lucifer",
+          "Partners 'Til the End"
+        ]
+      },
+      "see-no-evil": {
+        1: [
+          "We See You, Kelsey",
+          "View to a Rampage",
+          "Neighborhood Watch",
+          "Silent Witness",
+          "Mansion Murder Cam",
+          "What Happened to Skylar Neese?"
+        ],
+        2: [
+          "Watching Amy Lord",
+          "Good Samaritan",
+          "Must Find Mickey",
+          "The Vanishing Nurse",
+          "Watching Dru",
+          "Vanished from Campus",
+          "Driven to the Edge",
+          "The Vanishing Babysitter",
+          "Snatched on Camera",
+          "Mr. Reed Will See You",
+          "One Chance, One Look",
+          "Someone to Watch Over Her",
+          "Blood Bath"
+        ],
+        3: [
+          "Captured on Camera",
+          "All Eyes on Megan",
+          "Vanished at Noon",
+          "Murder at Sunrise",
+          "On Her Watch",
+          "Last Look of Summer",
+          "Dead on Reflection",
+          "The Doctor Will See You",
+          "Eye in the Sky",
+          "Breakdown at Daylight",
+          "The Long Walk Home",
+          "Watch Me Disappear",
+          "Random Sighting"
+        ],
+        4: [
+          "All Eyes on Jordie",
+          "Seen at Susan's",
+          "Stalking Cynthia",
+          "At Michelle's Door",
+          "Dead Man Walking",
+          "Beth's Last Party",
+          "Maurice's Last Visitor",
+          "A Date with Dalene",
+          "Loretta's Last Valentine",
+          "No Good Deed",
+          "Right Man, Wrong Man",
+          "Don't Get in the Truck",
+          "Shadow of Hope",
+          "Rhonda's Gone",
+          "Captain Freddy",
+          "Seeking Out Maple"
+        ],
+        5: [
+          "The Last Shop",
+          "Run from the Scene",
+          "The Lady Vanishes",
+          "The Man in the Black Hat",
+          "I'd Kill to Be You",
+          "Call Me Back, Chris",
+          "Goodnight Jessika",
+          "Stalking Carl",
+          "Michigan City Murder",
+          "The Blood Trail",
+          "Gentle Giant",
+          "Life After Midnight",
+          "Happy Birthday to Drew",
+          "The Boy in Blue",
+          "The Graveyard Shift",
+          "The Man in the Red Jacket"
+        ],
+        6: [
+          "Blue Blood",
+          "No Place Like Home",
+          "Run for the Door",
+          "All That It Seems",
+          "Far from Home",
+          "Where's Mom?",
+          "We Never Fight",
+          "Hell on Wheels",
+          "Fire Angel",
+          "It Came Back",
+          "Can I Help You?",
+          "It Looks Like You",
+          "A Candy Run",
+          "Cold Feet",
+          "Night Shift",
+          "The Girl on the Bus",
+          "Come Home Sierra",
+          "Manhunt",
+          "Lock Up",
+          "The Landlady"
+        ],
+        7: [
+          "Come Home Carlie",
+          "One Last Shot",
+          "His Father's Footsteps",
+          "Headlights and Fire",
+          "Come Quickly, I'm Afraid",
+          "Meet Me at Midnight",
+          "Gold Pontiac",
+          "Back to Reality",
+          "Last Night Apart",
+          "Four and a Half Minutes"
+        ],
+        8: [
+          "Seeing Red",
+          "The Rent Check",
+          "He's Dead, That's How I Feel",
+          "Hustle Mart Murders",
+          "Cruel Love",
+          "The Three of Us",
+          "I Loved My Daughter",
+          "Silent Screams",
+          "The White Cellphone",
+          "The Cookie Lady"
+        ],
+        9: [
+          "The Tragedy On Tennessee 14",
+          "In My Heart, I Knew",
+          "Making A Killing",
+          "Driven to Murder",
+          "One Last Ride",
+          "Shaken and Disturbed",
+          "Final Offer",
+          "Savage by Name",
+          "Rideshare Nightmare",
+          "Smoke Shop Fugitive"
+        ],
+        10: [
+          "Ticket to Murder",
+          "I Will Follow",
+          "Someone You Trust",
+          "Black Widow",
+          "Double Identity",
+          "Murder on VHS",
+          "Don't Open the Door",
+          "Comply or Die",
+          "Angel of Death",
+          "The Other Man"
+        ],
+        11: [
+          "Prison Break",
+          "Tapes Don't Lie",
+          "Alaska Serial Killer",
+          "The Devil's Bathtub",
+          "A Crash, Not an Accident",
+          "Mr. Big",
+          "Toying With Us",
+          "The Hand-Off",
+          "Night Caller",
+          "The Man in the Cowboy Hat"
+        ],
+        12: [
+          "Fallen Star",
+          "Nowhere Girl",
+          "Room 48",
+          "Body in a Barrel",
+          "Body Heat",
+          "Austin Serial Bomber",
+          "The Big Guy",
+          "Too Much Video",
+          "Not a Social Person",
+          "The Wrong Woman"
+        ],
+        13: [
+          "She's Fake",
+          "The Wrong Look",
+          "The Missing Cameras",
+          "The Girl in the Silver Truck",
+          "Three Masked Males",
+          "Like a Brother to Me",
+          "Shattered Dreams",
+          "The Painted Truck",
+          "The Missing Box",
+          "Not in Life, Not in Sleep"
+        ],
+        14: [
+          "The Skateboarder",
+          "Cul-De-Sac",
+          "Remember Me?",
+          "The Dog Knows",
+          "The Gold Sedan",
+          "One Hour in Omaha",
+          "The Trophy Collector",
+          "The Bloody Shoes",
+          "The Green Carpet",
+          "The Kansas Pawnshop"
+        ]
+      },
+      "on-the-case-with-paula-zahn": {
+        1: [
+          "Deadly Lessons",
+          "A Murder in Pleasant Valley",
+          "Honeymoon Hit",
+          "Hit or Miss",
+          "Date with Death",
+          "A Death in the Desert",
+          "Love You to Death",
+          "The Millionaire Murder",
+          "Last Stop Murder",
+          "Out of the Ashes",
+          "A Murder at Echo Lake",
+          "Newlywed Murders",
+          "The Boy Next Door"
+        ],
+        2: [
+          "Beauty and the Beast",
+          "Murder in the Heartland",
+          "Twin Killing",
+          "A Lamb Amongst Wolves",
+          "The Long Road Home",
+          "A Killing in Canova Beach",
+          "She Never Came Home",
+          "Deadly Delivery",
+          "Web of Lies",
+          "Daddy's Girl",
+          "Beyond Redemption",
+          "Twisted Triangle",
+          "Aim to Kill"
+        ],
+        3: [
+          "Beauty Queen Killer",
+          "Gallaudet Murders",
+          "Voices in the Dark",
+          "Murder She Wrote",
+          "A Cry in the Night",
+          "Cheating Death",
+          "Internal Affairs",
+          "Run Bambi Run",
+          "Sins of the Father",
+          "Blood Betrayal",
+          "Shadow of Doubt",
+          "Evil Twin",
+          "Dark Side of a Dream"
+        ],
+        4: [
+          "Silenced",
+          "Message in Blood",
+          "Race to Judgement",
+          "A Tangled Past",
+          "Campus Killer",
+          "Murder by Numbers",
+          "Under Suspicion",
+          "A Mother's Nightmare",
+          "A Murder at Loose Chippings",
+          "Betrayal at Charisma Farms",
+          "Mystery in the Mountains",
+          "A Slip of Fate",
+          "Murder Ordained?"
+        ],
+        5: [
+          "In Broad Daylight",
+          "Death and the Doctor",
+          "Severed Ties",
+          "No One to Trust",
+          "A Stranger's Knock",
+          "Twice Is No Accident",
+          "Lost in the Fire",
+          "Last Rites",
+          "Secrets from the Grave",
+          "Murder at Sunset, Part 1",
+          "Murder at Sunset, Part 2",
+          "Left in the Dark",
+          "The Art of Murder",
+          "Unmasking a Killer"
+        ],
+        6: [
+          "Mystery in the Desert",
+          "Innocent Witness",
+          "Dirty Secrets",
+          "Over the Edge",
+          "Hanging by a Thread",
+          "The River's Edge",
+          "A Deadly Betrayal",
+          "No Exit",
+          "Fatal Footage",
+          "Vanished in the Night",
+          "Taken",
+          "Murder at Bird Key"
+        ],
+        7: [
+          "A Tale Tell Call",
+          "Painful Memories",
+          "Profile of a Killer",
+          "Final Words",
+          "A Knock on the Door",
+          "Snapshot to Murder",
+          "A Deadly Secret",
+          "Murder at Sunrise",
+          "The Day After Christmas",
+          "One Month of Terror",
+          "Driven to Kill",
+          "A Long Journey to Justice",
+          "The Ultimate Sin",
+          "Signed in Blood"
+        ],
+        8: [
+          "Tangled Web",
+          "Bound by the Truth",
+          "Smoke and Ashes",
+          "Veil of Suspicion",
+          "At Death's Door",
+          "Hidden in Plain Sight",
+          "The Killer Rang Twice",
+          "Justice Never Quits",
+          "Tip 1960",
+          "Nine Days of Terror",
+          "Lying in Wait",
+          "A Fateful Decision",
+          "A Thin Disguise",
+          "Ring of Truth",
+          "A Call for Justice",
+          "Twisted Obsession"
+        ],
+        9: [
+          "Stabbed in the Heart",
+          "This Is for Her",
+          "Deadly Predator",
+          "Kidnapped on the 4th of July",
+          "An Uninvited Guest",
+          "Trail of Carnage",
+          "Cry on My Shoulder",
+          "Footprints and Whispers",
+          "Heartbreak in the Heartland",
+          "Evidence of Deception",
+          "Fatal Turn",
+          "Footsteps in the Dark",
+          "A Killer in Disguise",
+          "She Wasn't Alone",
+          "Almost Home",
+          "The Long Path to Justice"
+        ],
+        10: [
+          "Snake in the Grass",
+          "For Love and Duty",
+          "Solemn Vows",
+          "Trail of Tears",
+          "A Murder in Pelham",
+          "A Father's Quest",
+          "Pattern of Violence",
+          "Field of Nightmares",
+          "Path of Destruction",
+          "A Drop of Blood",
+          "The Green Dragon",
+          "Murder in Room 205",
+          "Betrayal and Regret",
+          "A Ray of Darkness",
+          "Unmistakable Truth",
+          "Trapped by Lies"
+        ],
+        11: [
+          "In Plain Sight",
+          "Hidden by Fire",
+          "A Nightmare in Memphis",
+          "Deadly Warning",
+          "Where Evil Lives",
+          "Blurred Truth",
+          "Blood Money",
+          "A Window to Murder",
+          "A Terrible Secret",
+          "Last Call",
+          "A Mystery on Cherry Hill",
+          "Fatal Errand",
+          "Scent of a Killer",
+          "Evil Repeats Itself",
+          "Screams for Justice"
+        ],
+        12: [
+          "A Harvest of Grief",
+          "Eyes of a Killer",
+          "Shortcut to Murder",
+          "A Wave Goodbye",
+          "Hidden by Lies",
+          "A Killer in Town",
+          "Desperate Cry",
+          "A Killer in the Sun",
+          "Shattered Hope",
+          "A Hole in Their Hearts",
+          "Golden Promises Broken",
+          "Darkness After Dawn",
+          "Same Crime Next Year",
+          "River of Sadness",
+          "Crossed by Evil",
+          "Deadly Silence",
+          "The Pastor's Wife"
+        ],
+        13: [
+          "Deep Wounds",
+          "Gone in an Instant",
+          "Betrayal in Big Cottonwood Canyon",
+          "Tracks of a Killer",
+          "Racing to Justice",
+          "A Last Dance",
+          "A Promise Kept",
+          "Deadly Offer",
+          "Mixed Signals",
+          "Courage and Conviction",
+          "Half Way Home",
+          "The Doorbell Rang"
+        ],
+        14: [
+          "22 Hours of Terror",
+          "Broken Trust",
+          "Deceiving Appearances",
+          "The Answer Was No",
+          "A Nightmare in Laurel",
+          "Followed Home",
+          "Path of Tears",
+          "Predator on the Loose",
+          "Blood and Betrayal",
+          "A Killer Among Friends",
+          "From Dusk to Darkness",
+          "Deadly Paper Trail",
+          "Dreams and Nightmares",
+          "Blood, Sweat and Tears",
+          "Unfinished Journey",
+          "Identical Evidence",
+          "Mystery, Heartbreak and Justice",
+          "A Betrayal Concealed",
+          "A Hidden Clue",
+          "A Face with No Name"
+        ],
+        15: [
+          "Deadly Deception",
+          "Darkness in the Desert",
+          "The East Area Rapist",
+          "The Haunting Memories",
+          "Murder in Store",
+          "A Stranger Among Us",
+          "Greed, Lies and Murder",
+          "Deadly Riddle",
+          "Trail of Betrayal",
+          "A Deadly Omen",
+          "Unanswered Questions",
+          "Sirens in the Night",
+          "River of Tears"
+        ],
+        16: [
+          "A Nightmare in Idaho Falls",
+          "Stolen Dreams",
+          "Twisted Lies",
+          "Deadly Hymn",
+          "That's Him!",
+          "Stacy's Story",
+          "A Murder in Coralville",
+          "A Predator in Deerfield",
+          "In the Blink of an Eye",
+          "In the Shadows of Home",
+          "Scattered Clues, Shattered Lives",
+          "As She Lay Dying",
+          "River Of Sorrow",
+          "A Lifetime Of Questions",
+          "Last Night Before Murder",
+          "A Daughter's Quest"
+        ],
+        17: [
+          "Notes From A Killer",
+          "Long Sought Truth",
+          "A Different Time",
+          "Where's Crystal",
+          "Terror In Waupaca",
+          "Taken From Her Bed",
+          "A Bridge Too Far",
+          "Shifting Stories",
+          "Terrifying Clues",
+          "Buried Dreams",
+          "In The Dead Of Night",
+          "Lethal Offer",
+          "The Depths Of Evil",
+          "Unchecked Violence",
+          "No Goodbyes",
+          "History Repeats Itself",
+          "A Face And A Voice",
+          "Alone With Evil",
+          "Blood Secrets"
+        ],
+        18: [
+          "A Hero Betrayed",
+          "She's Gone",
+          "While Her Children Slept",
+          "Rumors Lies And Murder",
+          "Good Morning, Goodnight And Goodbye",
+          "Smoke And Lies",
+          "A Handful Of Coins",
+          "Before Her Eyes",
+          "Never The Same",
+          "The Truth Never Dies",
+          "Cloud Of Darkness",
+          "Rocky Mountain Mystery",
+          "Nowhere to Run",
+          "Capitol Murder",
+          "Connected By Murder",
+          "A Life Halted"
+        ],
+        19: [
+          "Driven To Murder",
+          "In Defiance Of Evil",
+          "The Disappearance of Sarah Stern",
+          "Twisted Justice",
+          "A Dream Shattered",
+          "Classified Murder",
+          "A Mystery in Indio",
+          "A Secret To Kill For",
+          "Officer Down",
+          "Seven Minutes Of Terror",
+          "Betrayal in the Mountains",
+          "Terrifying Calls",
+          "One Of Their Own",
+          "The Hero Who Wasn't",
+          "No Body Two Crimes"
+        ],
+        20: [
+          "Shadow Of Suspicion",
+          "One Of Us",
+          "Salt in the Wound",
+          "Wedding Day Nightmare",
+          "Little Lamb",
+          "Terror in Bedford Park",
+          "Evidence Never Lies",
+          "Long Walk, Cold Night",
+          "Texts, Lies, and Videotape",
+          "A Predator In The Woods",
+          "In The Wind",
+          "Lying in the Darkness",
+          "Spreadsheet of Terror",
+          "A Test of Patience",
+          "A Heartbreaking Discovery"
+        ],
+        21: [
+          "Crime And Injustice",
+          "A Murder In Thunderbolt",
+          "A Jewel Stolen",
+          "When, Where And Who?",
+          "Follow The Footprints",
+          "Christina's Story",
+          "A Brand New Dress",
+          "Gone In Less Than 3 Minutes",
+          "A Storm Of Rage"
+        ],
+        22: [
+          "A Wolf In Sheep's Clothing",
+          "A Complicated Relationship",
+          "A Blue Raincoat",
+          "It Won't End Well",
+          "Clearing The Docket",
+          "Follow That Car",
+          "Cali-Doe",
+          "Evidence Lost, Justice Found"
+        ],
+        23: [
+          "Devil in a Cowboy Hat",
+          "Trail of a Monster",
+          "Circled by Vultures",
+          "Terrifying Connections",
+          "What Happened to Sarah",
+          "Terror in Terre Haute",
+          "Justice for Angie",
+          "The Smallest of Clues",
+          "No Escape",
+          "Web of Torment",
+          "Unthinkable Harm",
+          "Gone in a Blink",
+          "Alarm and Betrayal",
+          "A Cracked Alibi",
+          "A Secret Meeting",
+          "\"Precious\" Jane Doe"
+        ],
+        24: [
+          "A Mother Knows",
+          "Hauntingly Familiar",
+          "Capable of Murder",
+          "Dark Clouds Lead to a Storm",
+          "FLRT 12",
+          "Blood Reveals the Sword",
+          "Hammer and Dust",
+          "Dance to Doom",
+          "Don't Open The Door",
+          "Eyes in the Darkness",
+          "Shadowy Figures",
+          "Where Is Miya?",
+          "The Smallest Clue",
+          "A Spider Web of Tragedy",
+          "A Needle in the Mud",
+          "Lost Life, Evidence Found"
+        ],
+        25: [
+          "From Zero to Murder",
+          "Jenny's Story",
+          "Graduation to Murder",
+          "Room 106",
+          "Changing Stories",
+          "A Fairy Tale Ruined",
+          "The Mother She Never Knew",
+          "Unthinkable Betrayal",
+          "A Call for Answers",
+          "A Bad Man Hurt Mommy",
+          "Blood-Stained Reputation",
+          "New Year's Eve Nightmare",
+          "Disconnected Story",
+          "Confessions and Lies",
+          "Pretty Pink Bicycle",
+          "Mystery in Coachella Valley",
+          "The Year of Fear"
+        ],
+        26: [
+          "Follow the Blood",
+          "Faith and Duty",
+          "Justice Frozen",
+          "A Lifetime of Grief",
+          "Voice for the Nameless",
+          "Tragedy in Visalia",
+          "A Quest for Justice",
+          "Text, Lies and Video",
+          "Where is Jonelle?",
+          "A Murder in Red Cliff",
+          "Righting a Wrong",
+          "Love Lost, Justice Found"
+        ],
+        27: [
+          "Wrong Place, Wrong Time",
+          "Where He Belongs",
+          "Dissecting a Triangle",
+          "An American Tragedy",
+          "When the Music's Over",
+          "A Murder at Paradise Ranch",
+          "The Bitter Truth",
+          "Where is Alexis?"
+        ],
+        28: [
+          "A Nightmare at Dawn",
+          "A Picture Worth a 1000 Words",
+          "Trail of Terror",
+          "Why Would Someone Shoot Amanda?",
+          "A Mystery in Lakeland",
+          "Lost, but Not Forgotten",
+          "A Bridge to Disaster",
+          "Justice for Christine",
+          "Vanished Into Darkness",
+          "A Deadly Message",
+          "Footsteps in the Night",
+          "Evil at Its Highest Point"
+        ]
+      },
+      "homicide-hunter-american-detective": {
+        1: [
+          "Hazard Lights",
+          "\"Murder, Murder, Murder\"",
+          "Fourteen Stories Down",
+          "From the Deep",
+          "Tale of Two Knives",
+          "Goodbye Horses",
+          "A Face with No Name",
+          "What She Saw",
+          "Black Water",
+          "Lights Out"
+        ],
+        2: [
+          "Prodigal Son",
+          "The Creek",
+          "Run the Wickets",
+          "Radio Silence",
+          "Drugstore Cowboy",
+          "Death Roll"
+        ],
+        3: [
+          "Body Parts",
+          "Lothario",
+          "Mr. X",
+          "Murder Capitol",
+          "Blood Bath",
+          "One Drop"
+        ],
+        4: [
+          "It Begins With One",
+          "Mr. Innocent",
+          "Crimson Snow",
+          "Candy",
+          "The Rose Tattoo",
+          "Torso",
+          "Six Pounds of Pressure",
+          "The Barrel",
+          "The Highway Hunter",
+          "Wayward Son"
+        ],
+        5: [
+          "The Colonial Parkway Murders",
+          "Mr. Nobody",
+          "Barn of Horrors",
+          "A Letter From Hell",
+          "Valentine's Day Murder",
+          "The Line Goes Dead",
+          ".44 Magnum",
+          "Twelve Hours of Terror"
+        ],
+        6: [
+          "Man's Best Friend",
+          "The Desert City Murders",
+          "To Kidnap a Prince",
+          "First To Die",
+          "The Curse",
+          "Puppet Master",
+          "Catfished To Kill",
+          "Wolf in the Shadows"
+        ]
+      },
+      "loot": {
+        1: [
+          "Pilot",
+          "Bienvenidos a Miami",
+          "Hot Seat",
+          "Excitement Park",
+          "Halsa",
+          "The Philanthropic Humanitarian Awards",
+          "French Connection",
+          "Spades Night",
+          "Cahoga Lake",
+          "The Silver Moon Summit"
+        ],
+        2: [
+          "Space for Everyone",
+          "Clueless",
+          "Vengeance Falls",
+          "Mr. Congeniality",
+          "Mally's",
+          "Women Who Rule",
+          "Camp Wells",
+          "Grace",
+          "Mood Vibrations",
+          "We Shouldn't Exist"
+        ],
+        3: [
+          "Bye-Bye Mode",
+          "Would Hit",
+          "Lady Molly",
+          "Buona Sera",
+          "Joyride",
+          "What's Up With Us",
+          "Billionaire, Beautiful and True",
+          "Mr. Maro Gold",
+          "Slide",
+          "Hail Mary Time"
+        ]
+      },
+      "people-magazine-investigates": {
+        1: [
+          "The Long Island Serial Killer: The Lost Girls",
+          "The Long Island Serial Killer: New Revelations",
+          "What Happened to Baby Lisa?",
+          "Stranger Than Fiction",
+          "Cabin 28: Horror in the Woods",
+          "Hollywood Horror Story",
+          "In the Name of Love",
+          "JonBenet: The Untold Truth",
+          "The Grim Sleeper",
+          "The Darkest of Nights",
+          "Jeffrey MacDonald: The Accused"
+        ],
+        2: [
+          "Golden State Killer",
+          "Where is Baby DeOrr?",
+          "Shallow Grave",
+          "Connecticut Horror Story",
+          "Once Bitten",
+          "Murder at Sea",
+          "Marked for Murder",
+          "Killing Field",
+          "Blood in the Sand",
+          "My Father, the Serial Killer",
+          "Alaskan Temptress",
+          "Death Before Dawn",
+          "The Golden State Killer Caught"
+        ],
+        3: [
+          "Somebody's Watching",
+          "Terror in Philadelphia",
+          "Gone in 90 Seconds",
+          "Fallen Angels",
+          "Mystery in the Swamp",
+          "Murder Among Friends",
+          "Gone Girls",
+          "Fatal Family Secrets",
+          "Murder on Newberry St.",
+          "The Unicorn Killer",
+          "Children of Thunder",
+          "Monster in the Desert",
+          "The Sound of Silence",
+          "Burned Alive",
+          "Who Killed Jane Doe 59?"
+        ],
+        4: [
+          "The Springfield Three",
+          "Vanished",
+          "Without a Trace",
+          "The Freeway Phantom",
+          "A Killing in Chinatown",
+          "Memphis Blues",
+          "Law & Murder",
+          "Nine Years in the Shadows",
+          "The Cheerleader and The Hitman",
+          "Oklahoma Horror Story",
+          "Suburban Secrets",
+          "Motor City Murder"
+        ],
+        5: [
+          "Highway of Horrors",
+          "Jenner Beach Murders",
+          "Flight Risk",
+          "The Delphi Killer",
+          "Blood Ties",
+          "The Hollywood Ripper",
+          "Little Girl Gone",
+          "The Price of Fame",
+          "A Crimson End",
+          "Is Rodney Reed Innocent?",
+          "Red Christmas",
+          "Bible Belt Massacre"
+        ],
+        6: [
+          "Groene Family Massacre",
+          "Mother's Orders",
+          "Alibi",
+          "Valley of Death",
+          "The Colorado Hammer Killer",
+          "Evil Comes to Jasper",
+          "American Nightmare",
+          "The Grudge",
+          "Gone in the Night",
+          "Darkness in the Desert",
+          "Natural Born Killers",
+          "Infamous Pam Hupp",
+          "Candy and Betty"
+        ],
+        7: [
+          "Girl Scout Murders",
+          "The I-70 Killer",
+          "Where is Mark Himebaugh?",
+          "Final Rodeo",
+          "The Strange Disappearance of Karlie Gusé",
+          "Brighton Ax Murder",
+          "The Yogurt Shop Murders",
+          "Held Captive: The Disappearance of Tanya Kach",
+          "Dead in Bed",
+          "Star Crossed Killers",
+          "The Times Square Killer",
+          "Manhunt",
+          "Long Island Serial Killer: Mystery at Oak Beach",
+          "Long Island Serial Killer: Caught"
+        ],
+        8: [
+          "The Boogeyman",
+          "A Story To Die For",
+          "Sex. Clowns. Murder.",
+          "The Soccer Mom Murder",
+          "Where is Kristin Smart?",
+          "The Serial Killer's Playbook",
+          "The Aloha Murder",
+          "Teenage Assassins",
+          "Knives Out",
+          "My Father Was a Mass Murderer",
+          "Inferno of Lies",
+          "The Indiana Slasher"
+        ],
+        9: [
+          "Vanished in the Heartland",
+          "Death in Hell's Kitchen",
+          "Sex House Homicide",
+          "Playing With Fire",
+          "The Serial Killer Who Only Killed Once",
+          "Looking for Angela",
+          "The Girl on the Bike",
+          "The Final Cut",
+          "The Secrets Of The Twelve Tribes Cult",
+          "Love, Lies, and Lust",
+          "Deadly Ride",
+          "The Truth Is in the Dirt",
+          "Where is Judith?",
+          "Celebrating Champions of Culture"
+        ]
+      },
+      "a-man-on-the-inside": {
+        1: [
+          "Tinker Tailor Older Spy",
+          "The Man Who Knew Too Much About Bridges",
+          "The Emily Always Rings Twice",
+          "The Curious Incident of the Dog in the Painting Class",
+          "Presents and Clear Danger",
+          "Our Man in Sacramento",
+          "From Russian Hill with Love",
+          "The Spy Who Came in from the Cold"
+        ],
+        2: [
+          "Orientation",
+          "Major Declaration",
+          "Family Weekend",
+          "Spirit Week",
+          "Thanksgiving Break",
+          "Extracurriculars",
+          "Group Project",
+          "Final Exams"
+        ]
+      },
+      "poker-face-2023": {
+        1: [
+          "Dead Man's Hand",
+          "The Night Shift",
+          "The Stall",
+          "Rest in Metal",
+          "Time of the Monkey",
+          "Exit Stage Death",
+          "The Future of the Sport",
+          "The Orpheus Syndrome",
+          "Escape from Shit Mountain",
+          "The Hook"
+        ],
+        2: [
+          "The Game Is a Foot",
+          "Last Looks",
+          "Whack-A-Mole",
+          "The Taste of Human Blood",
+          "Hometown Hero",
+          "Sloppy Joseph",
+          "One Last Job",
+          "The Sleazy Georgian",
+          "A New Lease On Death",
+          "The Big Pump",
+          "Day of the Iguana",
+          "The End of the Road"
+        ]
+      },
+      "upload": {
+        1: [
+          "Welcome to Upload",
+          "Five Stars",
+          "The Funeral",
+          "The Sex Suit",
+          "The Grey Market",
+          "The Sleepover",
+          "Bring Your Dad to Work Day",
+          "Shopping Other Digital After-Lives",
+          "Update Eve",
+          "Freeyond"
+        ],
+        2: [
+          "Welcome Back, Mr. Brown",
+          "Dinner Party",
+          "Robin Hood",
+          "Family Day",
+          "Mind Frisk",
+          "The Outing",
+          "Download"
+        ],
+        3: [
+          "Ticking Clock",
+          "Strawberry",
+          "CyberDiscountDay",
+          "Download Doctor",
+          "Rescue Mission",
+          "Memory Crackers",
+          "Upload Day",
+          "Flesh and Blood"
+        ],
+        4: [
+          "Wedding Weekend",
+          "Workload",
+          "Spa Day",
+          "Mile End"
+        ]
+      },
+      "wednesday": {
+        1: [
+          "Chapter I: Wednesday's Child Is Full of Woe",
+          "Chapter II: Woe Is the Loneliest Number",
+          "Chapter III: Friend or Woe",
+          "Chapter IV: Woe What a Night",
+          "Chapter V: You Reap What You Woe",
+          "Chapter VI: Quid Pro Woe",
+          "Chapter VII: If You Don't Woe Me by Now",
+          "Chapter VIII: A Murder of Woes"
+        ],
+        2: [
+          "Chapter I: Here We Woe Again",
+          "Chapter II: The Devil You Woe",
+          "Chapter III: Call of the Woe",
+          "Chapter IV: If These Woes Could Talk",
+          "Chapter V: Hyde and Woe Seek",
+          "Chapter VI: Woe Thyself",
+          "Chapter VII: Woe Me the Money",
+          "Chapter VIII: This Means Woe"
+        ]
+      },
+      "love-is-blind-us": {
+        1: [
+          "Is Love Blind?",
+          "Will You Marry Me?",
+          "First Night Together",
+          "Couples Retreat",
+          "Last Night in Paradise",
+          "Moving in Together",
+          "Meet the Parents",
+          "Countdown to I Do's",
+          "Bachelor & Bachelorette Parties",
+          "The Weddings",
+          "The Reunion",
+          "After the Altar: Two Years Later",
+          "After the Altar: Married, Single, and It's Complicated",
+          "After the Altar: Celebrations and Confrontations"
+        ],
+        2: [
+          "The Pods Are Open!",
+          "Love Triangles",
+          "Love in Paradise",
+          "Meet the Other Couples",
+          "Leaving Paradise",
+          "Back to Reality",
+          "A Family Affair",
+          "Final Adjustments",
+          "Bachelor & Bachelorette Parties",
+          "The Weddings",
+          "The Reunion",
+          "After the Altar: Friends Who Adventure Together, Stay Together",
+          "After the Altar: It's My Party and I'll Gossip If I Want to",
+          "After the Altar: The Future Looks Bright"
+        ],
+        3: [
+          "Welcome to Love Is Blind!",
+          "Love Triangles and Love Triumphs",
+          "The First Night Together",
+          "Meet Your Exes",
+          "Trouble in Paradise",
+          "Return to Reality",
+          "Impress the Parents",
+          "The Perfect Fit",
+          "The Last Supper",
+          "Approaching the Altar",
+          "Weddings",
+          "Reunion",
+          "After the Altar: Soulmates and Blank Slates",
+          "After the Altar: The Party is Just Getting Started",
+          "After the Altar: A Second Shot at Love?"
+        ],
+        4: [
+          "Welcome to the Pods!",
+          "Birthday Wishes",
+          "Is Love Really Blind?",
+          "Playing with Fire",
+          "Paradise Lost",
+          "I Made a Mistake",
+          "Second Time's the Charm?",
+          "Pick Me",
+          "Romeo and Juliet Didn't Work Out",
+          "Thank You, Next",
+          "You Are Overpriced",
+          "Eternal Bliss?",
+          "The Reunion",
+          "After the Altar: The One Year Anniversary",
+          "After the Altar: Moving On and Moving In",
+          "After the Altar: Settling Scores"
+        ],
+        5: [
+          "So, You’re a Recent Cheater?",
+          "Can I Talk to You for Real?",
+          "Blindsided",
+          "She’s Gone…?",
+          "Don’t Give Up on Me",
+          "Going Home",
+          "First Class Love",
+          "Love is a Battlefield",
+          "Love on the Rocks",
+          "Big, Big Love",
+          "The Reunion"
+        ],
+        6: [
+          "Higher Love",
+          "The Hunger Games of Love",
+          "Operation Get My Girl Back",
+          "The Hardest Decision of My Life",
+          "She Lied to Me",
+          "Feeling Uncomfy",
+          "Silence Speaks Volumes",
+          "Clinging to Love",
+          "Secret Rendezvous",
+          "What Could Have Been",
+          "Roller Coaster of Love",
+          "Meet Me at the Altar",
+          "The Reunion"
+        ],
+        7: [
+          "No More Situationships",
+          "Perfect Husband, but…",
+          "Is It Too Late?",
+          "The Tables Have Turned",
+          "What the Duck?",
+          "6 Things I Hate About You",
+          "Truth Bombs",
+          "Dirty Laundry",
+          "Is Love Enough?",
+          "The Text from an Ex",
+          "The Risk of Falling in Love",
+          "Leap of Faith",
+          "The Reunion"
+        ],
+        8: [
+          "I Have a Husband",
+          "Open Hearts, Open Minds, Can’t Lose",
+          "Hunger Games of Love",
+          "So Your Girlfriend Has a Boyfriend",
+          "Breaking Up Is Hard to Do",
+          "Do I Know You?",
+          "Bueller?",
+          "A Family Affair",
+          "The EX-Files",
+          "Oh Spare Me",
+          "Sliding Down Slopes and Into DMs",
+          "Brides' Last Ride",
+          "The Weddings",
+          "The Reunion"
+        ],
+        9: [
+          "A Love That Sparkles",
+          "Love Me When I'm Blind?",
+          "Ghost Town",
+          "The Dangerous Games We Play",
+          "I Want You To Want Me",
+          "Coming In Hot",
+          "Unknown Factors",
+          "Stripping the Veil",
+          "Ghosts of Pods Past",
+          "Runaway Groom",
+          "Don’t Go Breaking My Heart",
+          "Vow or Never",
+          "The Reunion"
+        ],
+        10: [
+          "Honey, I'm Home",
+          "A Sticky Situation",
+          "Um, Redo!",
+          "Stage Five Clinger",
+          "Where the Hell is My Husband?",
+          "Never Have I Ever",
+          "Moving In and Unpacking Baggage",
+          "A Snake in the Grass",
+          "I’m Just Being Honest",
+          "Vanishing Mode",
+          "See Where the Chips Fall",
+          "Head vs. Heart",
+          "Reunion"
+        ]
+      },
+      "love-is-blind-uk": {
+        1: [
+          "The Pods Are Open",
+          "Two's A Couple, Three's a Love Triangle",
+          "He's Here for Fame",
+          "We Had Sex... Twice!",
+          "I Made a Mistake",
+          "Once a Cheat, Always a Cheat",
+          "Is She Good Enough for You?",
+          "Guess Who's Back",
+          "He Wants a Prenup",
+          "See You at The Altar",
+          "We're Not Ready",
+          "The Reunion"
+        ],
+        2: [
+          "Eat, Sleep, Date, Repeat",
+          "This Is How Triangles Are Formed",
+          "Trust My Spleen",
+          "She Changed Her Mind Overnight",
+          "I Don’t Want to Be a Villain",
+          "Good Guys Finish Last",
+          "You’re Trying to Get Me in Trouble",
+          "Walking Away",
+          "Don’t Let Anyone Dim your Sparkle",
+          "A Risk Worth Taking?",
+          "The Reunion"
+        ]
+      },
+      "love-is-blind-france": {
+        1: [
+          "Les capsules sont ouvertes",
+          "C'est elle ou moi",
+          "Trahisons",
+          "Différence de taille",
+          "Relation toxique",
+          "Retour à Paris : Les ex de la discorde",
+          "La reine mère",
+          "Je t'aime… Moi non plus",
+          "Jour J",
+          "Les retrouvailles"
+        ]
+      },
+      "the-ultimatum-marry-or-move-on-us": {
+        1: [
+          "The Split",
+          "The Choice",
+          "New Bed, New Partner",
+          "Girls & Guys Night Out",
+          "Pushing Boundaries",
+          "The Changeover",
+          "Back to Reality",
+          "Time to Answer the Ultimatum",
+          "Ultimatum Day",
+          "The Reunion"
+        ],
+        2: [
+          "The Split",
+          "Unexpected Revelations",
+          "The Choice",
+          "Catching Feelings",
+          "Are You The One?",
+          "The Changeover",
+          "Change of Heart",
+          "Time to Answer the Ultimatum",
+          "Ultimatum Day",
+          "The Reunion"
+        ],
+        3: [
+          "The Split",
+          "The Choice",
+          "Sealed with a Kiss",
+          "Ghosted",
+          "Just Here for a Hall Pass?",
+          "Fortune Favors The Bold",
+          "The Changeover",
+          "You’re Playing With Fire",
+          "Ultimatum Day",
+          "The Reunion"
+        ]
+      },
+      "the-ultimatum-france": {
+        1: [
+          "La séparation",
+          "Le choix",
+          "Nouveau lit, nouveau partenaire",
+          "Le premier débrief",
+          "La remise en question",
+          "Les retrouvailles",
+          "Le retour à la réalité",
+          "La dernière chance",
+          "L'ultimatum",
+          "Deux mois plus tard"
+        ]
+      },
+      "perfect-match": {
+        1: [
+          "Love is the End Game",
+          "It's About the Chase",
+          "Strike a Match",
+          "Unfinished Business",
+          "Blind-Sided",
+          "Love is Savage",
+          "Circling Back",
+          "Mixes and Matches",
+          "Love It or Leave It",
+          "Making Waves",
+          "Back in the Mix",
+          "Game, Set, Perfect Match"
+        ],
+        2: [
+          "Ready, Set, Match",
+          "Kiss and Tell",
+          "Chaos Theory",
+          "Truth Bombs",
+          "Shakeups & Breakups",
+          "Seeing Eye to Eye",
+          "Love Is Blindfolded",
+          "He Said, She Said",
+          "To Tell the Truth",
+          "Perfectly Ever After"
+        ],
+        3: [
+          "Let's Puck",
+          "Good Vibrations",
+          "Lip Service",
+          "Ultimate Temptation",
+          "The Ex-Factor",
+          "Double Trouble",
+          "Thighs and Lies",
+          "Forgive Him or Forget Him",
+          "Split it or Quit it",
+          "Perfectly Matched"
+        ],
+        4: [
+          "Bombshells & Love Bombs",
+          "A Tale of Two Jimmys",
+          "Wet and Wild",
+          "Baddies Come In Threes",
+          "Ex’s and Woe’s",
+          "Loose Lips Sink Relationships",
+          "Split Decision",
+          "Rough Patches, Perfect Matches"
+        ]
+      }
+    };
 
     const releaseEvents = [
       ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
@@ -3129,14 +5077,14 @@ Last Forever
         seasons: [
           { season: 1, episodes: maximumPleasureGuaranteedEpisodeTitles, released: false }
         ],
-        releasedEpisodes: 8,
+        releasedEpisodes: 9,
         totalEpisodesPlanned: 10,
         averageEpisodeMinutes: 30,
-        releasedWatchTimeMinutes: 240,
-        releasedWatchTimeText: "4 h",
+        releasedWatchTimeMinutes: 270,
+        releasedWatchTimeText: "4 h 30 min",
         totalPlannedWatchTimeMinutes: 300,
         totalPlannedWatchTimeText: "5 h",
-        nextEpisodeDate: "2026-07-08",
+        nextEpisodeDate: "2026-07-15",
         finaleDate: "2026-07-15",
         image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80",
         description:
@@ -3146,20 +5094,21 @@ Last Forever
         id: "lethally-blonde",
         title: "Lethally Blonde",
         platform: "Investigation Discovery",
-        status: "En emisión · temporada 2 · próximo 13/07/2026",
+        status: "En emisión · temporada 2 · próximo 13/07/2026 · final previsto 20/07/2026",
         genre: "True crime / documental",
         seasons: [
           { season: 1, episodes: 6, released: true },
           { season: 2, episodes: lethallyBlondeSeason2EpisodeTitles, released: false, releasedEpisodes: 6 }
         ],
         releasedEpisodes: 12,
-        totalEpisodesPlanned: 13,
+        totalEpisodesPlanned: 14,
         averageEpisodeMinutes: 60,
         releasedWatchTimeMinutes: 720,
         releasedWatchTimeText: "12 h",
-        totalPlannedWatchTimeMinutes: 780,
-        totalPlannedWatchTimeText: "13 h",
+        totalPlannedWatchTimeMinutes: 840,
+        totalPlannedWatchTimeText: "14 h",
         nextEpisodeDate: "2026-07-13",
+        finaleDate: "2026-07-20",
         image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80",
         description:
           "Holly Madison presenta historias reales sobre fama, deseo y explotación dentro de mundos marcados por la imagen."
@@ -3244,15 +5193,15 @@ Last Forever
           { season: 2, episodes: 8, released: true },
           { season: 3, episodes: 9, released: true },
           { season: 4, episodes: 10, released: true },
-          { season: 5, episodes: 7, released: true }
+          { season: 5, episodes: 10, released: true }
         ],
-        releasedEpisodes: 44,
-        totalEpisodesPlanned: 44,
+        releasedEpisodes: 47,
+        totalEpisodesPlanned: 47,
         averageEpisodeMinutes: 32,
-        releasedWatchTimeMinutes: 1408,
-        releasedWatchTimeText: "23 h 28 min",
-        totalPlannedWatchTimeMinutes: 1408,
-        totalPlannedWatchTimeText: "23 h 28 min",
+        releasedWatchTimeMinutes: 1504,
+        releasedWatchTimeText: "25 h 4 min",
+        totalPlannedWatchTimeMinutes: 1504,
+        totalPlannedWatchTimeText: "25 h 4 min",
         image: "https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=600&q=80",
         description:
           "Deborah Vance y Ava Daniels convierten su choque generacional en una alianza tan afilada como imprevisible."
@@ -3371,7 +5320,7 @@ Last Forever
         id: "on-the-case-with-paula-zahn",
         title: "On the Case with Paula Zahn",
         platform: "Investigation Discovery",
-        status: "En emisión · temporada 29 · próximo 08/07/2026",
+        status: "En emisión · temporada 29 completa · último 08/07/2026",
         genre: "True crime / documental",
         seasons: [
           ...[13, 13, 13, 13, 14, 12, 14, 16, 16, 16, 15, 17, 12, 20, 13, 16, 19, 16, 15, 15, 9, 8, 16, 16, 15, 12, 8, 12].map((episodes, index) => ({
@@ -3379,16 +5328,15 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 29, episodes: onTheCaseSeason29EpisodeTitles, released: false, releasedEpisodes: 11 }
+          { season: 29, episodes: onTheCaseSeason29EpisodeTitles, released: true }
         ],
-        releasedEpisodes: 405,
+        releasedEpisodes: 406,
         totalEpisodesPlanned: 406,
         averageEpisodeMinutes: 60,
-        releasedWatchTimeMinutes: 24300,
-        releasedWatchTimeText: "405 h",
+        releasedWatchTimeMinutes: 24360,
+        releasedWatchTimeText: "406 h",
         totalPlannedWatchTimeMinutes: 24360,
         totalPlannedWatchTimeText: "406 h",
-        nextEpisodeDate: "2026-07-08",
         image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80",
         description:
           "Paula Zahn repasa investigaciones criminales con entrevistas, contexto periodístico y testimonios cercanos a los casos."
@@ -3652,7 +5600,7 @@ Last Forever
         status: "2 temporadas · After the Altar el 12/07/2026 · temporada 3 anunciada",
         genre: "Reality / citas",
         seasons: [
-          { season: 1, episodes: 11, released: true },
+          { season: 1, episodes: 12, released: true },
           { season: 2, episodes: 11, released: true },
           {
             season: 3,
@@ -3661,13 +5609,13 @@ Last Forever
             note: "After the Altar · 12/07/2026"
           }
         ],
-        releasedEpisodes: 22,
-        totalEpisodesPlanned: 25,
+        releasedEpisodes: 23,
+        totalEpisodesPlanned: 26,
         averageEpisodeMinutes: 55,
-        releasedWatchTimeMinutes: 1210,
-        releasedWatchTimeText: "20 h 10 min",
-        totalPlannedWatchTimeMinutes: 1375,
-        totalPlannedWatchTimeText: "22 h 55 min",
+        releasedWatchTimeMinutes: 1265,
+        releasedWatchTimeText: "21 h 5 min",
+        totalPlannedWatchTimeMinutes: 1430,
+        totalPlannedWatchTimeText: "23 h 50 min",
         nextEpisodeDate: "2026-07-12",
         image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80",
         description:
@@ -3905,6 +5853,11 @@ Last Forever
       return Math.max(0, Math.floor(Number(season?.total ?? source) || 0));
     }
 
+    function catalogSeasonEpisodes(seriesId, season) {
+      const sourceEpisodes = season?.episodes ?? season?.episodios;
+      return seriesEpisodeTitleOverrides[seriesId]?.[season?.season] || sourceEpisodes;
+    }
+
     function episodeTitleFor(season, episodeNumber) {
       const episode = normalizeEpisodeList(season?.episodes).find(item => item.number === episodeNumber);
       return episode?.title || "";
@@ -3964,6 +5917,7 @@ Last Forever
         lastWatchedAt: "",
         seasons: item.seasons.map(season => {
           const total = seasonTotalFromSource(season);
+          const seasonEpisodes = catalogSeasonEpisodes(item.id, season);
           const explicitReleasedEpisodes = Math.max(0, Math.floor(Number(season.releasedEpisodes) || 0));
           const singleSeasonReleasedEpisodes = item.releasedEpisodes && item.seasons.length === 1 ? item.releasedEpisodes : 0;
           const releasedEpisodes = Math.min(
@@ -3979,7 +5933,7 @@ Last Forever
             note: season.note || (releasedEpisodes >= total
               ? item.platform
               : (releasedEpisodes > 0 ? `${releasedEpisodes} emitidos` : "Pendiente de estreno")),
-            episodes: normalizeEpisodeList(season.episodes ?? season.episodios)
+            episodes: normalizeEpisodeList(seasonEpisodes)
           };
         })
       };
