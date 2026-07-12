@@ -2200,7 +2200,22 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-09";
+    const DATA_LAST_UPDATED = "2026-07-12";
+
+    const malcolmInTheMiddleEpisodeTitles = [
+      ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
+      ["Traffic Jam","Halloween Approximately","Lois's Birthday","Dinner Out","Casino","Convention","Robbery","Therapy","High School Play","The Bully","Old Mrs. Old","Krelboyne Girl","New Neighbors","Hal Quits","The Grandparents","Traffic Ticket","Surgery","Reese Cooks","Tutoring Reese","Bowling","Malcolm vs. Reese","Mini-Bike","Carnival","Evacuation","Flashback"],
+      ["Houseboat","Emancipation","Book Club","Malcolm's Girlfriend","Charity","Health Scare","Christmas","Poker","Reese's Job","Lois's Makeover","Company Picnic (Part 1)","Company Picnic (Part 2)","Reese Drives","Cynthia's Back","Hal's Birthday","Hal Coaches","Dewey's Dog","Poker #2","Clip Show","Jury Duty","Cliques","Monkey"],
+      ["Zoo","Humilithon","Family Reunion","Stupid Girl","Forwards Backwards","Forbidden Girlfriend","Malcolm Holds His Tongue","Boys at Ranch","Grandma Sues","If Boys Were Girls","Long Drive","Kicked Out","Stereo Store","Hal's Friend","Garage Sale","Academic Octathalon","Clip Show #2","Reese's Party","Future Malcolm","Baby (Part 1)","Baby (Part 2)","Day Care"]
+    ];
+    malcolmInTheMiddleEpisodeTitles.push([], [], []);
+    malcolmInTheMiddleEpisodeTitles[4].push("Vegas","Watching the Baby","Goodbye Kitty","Thanksgiving","Malcolm Films Reese","Malcolm's Job","Christmas Trees","Block Party","Dirty Magazine","Hot Tub","Ida's Boyfriend");
+    malcolmInTheMiddleEpisodeTitles[4].push("Softball","Lois's Sister","Malcolm Dates a Family","Reese's Apartment","Malcolm Visits College","Polly in the Middle","Dewey's Special Class","Experiment","Victor's Other Family","Reese Joins The Army (Part 1)","Reese Joins The Army (Part 2)");
+    malcolmInTheMiddleEpisodeTitles[5].push("Reese Comes Home","Busey's Run Away","Standee","Pearl Harbor","Kitty's Back","Hal's Christmas Gift","Hal Sleepwalks","Lois Battles Jamie","Malcolm's Car","Billboard","Dewey's Opera");
+    malcolmInTheMiddleEpisodeTitles[5].push("Living Will","Tiki Lounge","Ida Loses a Leg","Chad's Sleepover","No Motorcycles","Butterflies","Ida's Dance","Motivational Seminar","Stilts","Buseys Take a Hostage","Mrs. Tri-County");
+    malcolmInTheMiddleEpisodeTitles[6].push("Burning Man","Health Insurance","Reese vs. Stevie","Halloween","Jessica Stays Over","Secret Boyfriend","Blackout","Army Buddy","Malcolm Defends Reese","Malcolm's Money","Bride of Ida");
+    malcolmInTheMiddleEpisodeTitles[6].push("College Recruiters","Mono","Hal Grieves","A.A.","Lois Strikes Back","Hal's Dentist","Bomb Shelter","Stevie in the Hospital","Cattle Court","Morp","Graduation");
+    const malcolmLifeStillUnfairEpisodeTitles = ["Episode One", "Episode Two", "Episode Three", "Episode Four"];
 
 
     const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
@@ -2899,7 +2914,16 @@ Last Forever
       { date: "2026-07-06", title: "Quotidienne 11 du 6 juillet 2026" },
       { date: "2026-07-06", title: "Secret Uncut 9 du 06/07" },
       { date: "2026-07-07", title: "Quotidienne 12 du 7 juillet 2026" },
-      { date: "2026-07-07", title: "Secret Uncut 10 du 07/07" }
+      { date: "2026-07-07", title: "Secret Uncut 10 du 07/07" },
+      { date: "2026-07-08", title: "Quotidienne 13 du 8 juillet 2026" },
+      { date: "2026-07-08", title: "Secret Uncut 11 du 08/07" },
+      { date: "2026-07-08", title: "Prime 3 (Partie 1) du 8 juillet 2026" },
+      { date: "2026-07-08", title: "Prime 3 (Partie 2) du 8 juillet 2026" },
+      { date: "2026-07-09", title: "Quotidienne 14 du 9 juillet 2026" },
+      { date: "2026-07-09", title: "Secret Uncut 12 du 09/07" },
+      { date: "2026-07-10", title: "Quotidienne 15 du 10 juillet 2026" },
+      { date: "2026-07-10", title: "Secret Uncut 13 du 10/07" },
+      { date: "2026-07-10", title: "Zone Secrète de Willy du 10/07" }
     ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
@@ -5436,7 +5460,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en calendario · estreno 09/07/2026 · 32 episodios fechados",
+        status: "Temporada 28 en emisión · 2 episodios disponibles · próximo 15/07/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -5453,7 +5477,7 @@ Last Forever
         releasedWatchTimeText: "1002 h 20 min",
         totalPlannedWatchTimeMinutes: 62124,
         totalPlannedWatchTimeText: "1035 h 24 min",
-        nextEpisodeDate: "2026-07-09",
+        nextEpisodeDate: "2026-07-15",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
           "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 arranca con estreno especial en CBS y sigue con entregas dominicales, miércoles y jueves."
@@ -5528,6 +5552,40 @@ Last Forever
           "Wednesday Addams llega a Nevermore y se ve envuelta en asesinatos, secretos familiares y misterios sobrenaturales."
       },
       {
+        id: "malcolm-in-the-middle",
+        title: "Malcolm in the Middle",
+        platform: "Disney+ / Hulu",
+        status: "Finalizada · 7 temporadas",
+        genre: "Comedia / sitcom familiar",
+        seasons: malcolmInTheMiddleEpisodeTitles.map((episodes, index) => ({ season: index + 1, episodes, released: true })),
+        releasedEpisodes: 151,
+        totalEpisodesPlanned: 151,
+        averageEpisodeMinutes: 22,
+        releasedWatchTimeMinutes: 3322,
+        releasedWatchTimeText: "55 h 22 min",
+        totalPlannedWatchTimeMinutes: 3322,
+        totalPlannedWatchTimeText: "55 h 22 min",
+        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
+        description: "Malcolm intenta sobrevivir a su inteligencia excepcional y al caos cotidiano de su familia. Incluye los 151 títulos originales de capítulo."
+      },
+      {
+        id: "malcolm-lifes-still-unfair",
+        title: "Malcolm in the Middle: Life's Still Unfair",
+        platform: "Disney+ / Hulu",
+        status: "Miniserie completa · estrenada el 10/04/2026",
+        genre: "Comedia / revival",
+        seasons: [{ season: 1, episodes: malcolmLifeStillUnfairEpisodeTitles, released: true }],
+        releasedEpisodes: 4,
+        totalEpisodesPlanned: 4,
+        averageEpisodeMinutes: 30,
+        releasedWatchTimeMinutes: 120,
+        releasedWatchTimeText: "2 h",
+        totalPlannedWatchTimeMinutes: 120,
+        totalPlannedWatchTimeText: "2 h",
+        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80",
+        description: "Malcolm regresa con su hija a la órbita de su familia para el 40.º aniversario de Hal y Lois. Evento especial de cuatro capítulos."
+      },
+      {
         id: "modern-family",
         title: "Modern Family",
         platform: "ABC",
@@ -5597,7 +5655,7 @@ Last Forever
         id: "love-is-blind-uk",
         title: "Love Is Blind: UK",
         platform: "Netflix",
-        status: "2 temporadas · After the Altar el 12/07/2026 · temporada 3 anunciada",
+        status: "2 temporadas · After the Altar disponible · temporada 3 anunciada",
         genre: "Reality / citas",
         seasons: [
           { season: 1, episodes: 12, released: true },
@@ -5605,15 +5663,15 @@ Last Forever
           {
             season: 3,
             episodes: loveIsBlindUkAfterTheAltarEpisodeTitles,
-            released: false,
+            released: true,
             note: "After the Altar · 12/07/2026"
           }
         ],
-        releasedEpisodes: 23,
+        releasedEpisodes: 26,
         totalEpisodesPlanned: 26,
         averageEpisodeMinutes: 55,
-        releasedWatchTimeMinutes: 1265,
-        releasedWatchTimeText: "21 h 5 min",
+        releasedWatchTimeMinutes: 1430,
+        releasedWatchTimeText: "23 h 50 min",
         totalPlannedWatchTimeMinutes: 1430,
         totalPlannedWatchTimeText: "23 h 50 min",
         nextEpisodeDate: "2026-07-12",
@@ -5765,7 +5823,7 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 27 vídeos disponibles",
+        status: "En emisión · temporada 14 · 36 vídeos disponibles",
         description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
@@ -5788,7 +5846,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.length,
-            note: "TF1+ · 27 vídeos disponibles desde el 23/06/2026",
+            note: "TF1+ · 36 vídeos disponibles desde el 23/06/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
