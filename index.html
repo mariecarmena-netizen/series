@@ -1411,6 +1411,27 @@
       overflow-wrap: anywhere;
     }
 
+    .episode-disclosure {
+      position: relative;
+      z-index: 1;
+      margin-top: 8px;
+      border-top: 1px solid var(--line);
+      padding-top: 7px;
+    }
+
+    .episode-disclosure summary {
+      color: var(--teal-dark);
+      cursor: pointer;
+      font-size: 10px;
+      font-weight: 900;
+      list-style-position: inside;
+      user-select: none;
+    }
+
+    .episode-disclosure[open] summary {
+      margin-bottom: 2px;
+    }
+
     .episode-list {
       position: relative;
       z-index: 1;
@@ -2180,6 +2201,14 @@
         </div>
         <div id="calendarEvents" class="calendar-events"></div>
       </section>
+
+      <section class="calendar-day-panel" aria-live="polite">
+        <div class="section-title">
+          <h3>Sin fecha confirmada</h3>
+          <span id="calendarUndatedCount">0 pendientes</span>
+        </div>
+        <div id="calendarUndatedEvents" class="calendar-events"></div>
+      </section>
     </section>
 
     <input id="importFile" type="file" accept="application/json" hidden />
@@ -2200,7 +2229,7 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-12";
+    const DATA_LAST_UPDATED = "2026-07-13";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -2219,6 +2248,1085 @@
 
 
     const episodeTitles = text => text.trim().split("\n").map(line => line.trim()).filter(Boolean);
+
+    const requestedSeriesCatalog = [
+  {
+    "id": "mean-girl-murders",
+    "title": "Chicas malas… y asesinas",
+    "platform": "Investigation Discovery / HBO Max",
+    "status": "3 temporadas completas · sin próximo estreno confirmado",
+    "genre": "Documental / crimen real",
+    "description": "Mean Girl Murders reconstruye rivalidades, rumores y luchas de poder entre mujeres que terminaron en asesinato.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Battle of the Besties",
+          "Bad Bar Babes",
+          "Goth Girl Gone",
+          "Desperate Texas Housewives",
+          "Mean Rodeo Queen",
+          "Clash of the Coeds",
+          "Minnesota Vicious",
+          "Vegas Dance Queens"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "In Deadly Harmony",
+          "Church Camp Killer",
+          "Girls in the Hoods",
+          "Queen vs. Princess",
+          "Straight-A Killer",
+          "Battle of the Beach Bodies",
+          "Under the Influence",
+          "Hot Yoga & Cold Blood",
+          "She-Devil",
+          "Built for Murder"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": [
+          "Full Throttle Murder",
+          "Bad News Bobbies",
+          "Tough Cookies",
+          "Little Miss Murder",
+          "Wicked Witches",
+          "Running for Her Life",
+          "Tears of a Clown",
+          "Fit to Kill",
+          "Cold as Ice",
+          "She-Devils"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/452/1130505.jpg"
+  },
+  {
+    "id": "american-monster",
+    "title": "American Monster",
+    "platform": "Investigation Discovery / HBO Max",
+    "status": "13 temporadas completas · sin próximo estreno confirmado",
+    "genre": "Documental / crimen real",
+    "description": "Vídeos domésticos y testimonios revelan la vida cotidiana que ocultaba a un asesino dentro de cada familia.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Home Video Hit",
+          "Appalachian Horror Film",
+          "Wave to Daddy",
+          "Sing for the Camera",
+          "Shooting Phoenix",
+          "Right Before Your Eyes"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "The Green Monster",
+          "Family Snapshot",
+          "Alabama Murder Mystery",
+          "Anything for You",
+          "The Last Broadcast",
+          "Push Record",
+          "Stand by Your Men",
+          "Live by the Sword",
+          "The Craigslist Killer",
+          "The Wrong Man"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": [
+          "Stages of Grief",
+          "Remote Control",
+          "Backyard Daddy",
+          "A Mother's Work",
+          "Band of Brothers",
+          "Watch Your Back",
+          "The Last Valentine",
+          "Into the Swamp",
+          "Don't Forget Me",
+          "Off-Camera",
+          "Take Me to the River",
+          "Just Out of Frame"
+        ],
+        "released": true
+      },
+      {
+        "season": 4,
+        "episodes": [
+          "Falling Down",
+          "Two Families",
+          "Twice Shy",
+          "Life of the Party",
+          "Looks Can Kill",
+          "In Sickness and in Health",
+          "Smoke Gets in Your Eyes",
+          "An Open Relationship",
+          "Edge of Reason",
+          "Double Cross",
+          "Momma's Girl",
+          "Too Good to Be True"
+        ],
+        "released": true
+      },
+      {
+        "season": 5,
+        "episodes": [
+          "Brothers in Arms",
+          "Flesh and Blood",
+          "Once a Princess",
+          "Body Type",
+          "Staten Island Love Story",
+          "My Body",
+          "Have You Seen This Woman?",
+          "Who Am I?",
+          "By God, That's Enough",
+          "Stay with Me"
+        ],
+        "released": true
+      },
+      {
+        "season": 6,
+        "episodes": [
+          "Everyone's Favorite Uncle",
+          "Second Chance",
+          "Out of His Shell",
+          "Plus-One",
+          "It Was All of Them",
+          "Hoop Dreams",
+          "Unmasked",
+          "Life in Florida",
+          "Nothing Can Stop Us",
+          "Ghost From the Past"
+        ],
+        "released": true
+      },
+      {
+        "season": 7,
+        "episodes": [
+          "Unlucky in Love",
+          "He Was Her Everything",
+          "With Honors",
+          "By Design",
+          "What the Heart Wants",
+          "Stage Fright",
+          "Once a Killer",
+          "Say Your Prayers",
+          "It Could Be Me",
+          "About to Break"
+        ],
+        "released": true
+      },
+      {
+        "season": 8,
+        "episodes": [
+          "Tell Me You Love Me",
+          "Life On The Lake",
+          "Dance With Me",
+          "An Uncomfortable Day",
+          "It Was All Of Them",
+          "Broken Heart in Broken Arrow",
+          "Safe At Home",
+          "Put Yourself Out There",
+          "When's Mom Coming Home",
+          "The Man Who Got Away"
+        ],
+        "released": true
+      },
+      {
+        "season": 9,
+        "episodes": [
+          "Rescue Me",
+          "I Had No Choice",
+          "It's Over. Move On.",
+          "Brothers and Sisters",
+          "Only She Knows",
+          "The Only Way Out",
+          "The Whole Building is Full of Snakes!",
+          "Two Anniversaries",
+          "You Got Me Mean",
+          "Gone Hunting"
+        ],
+        "released": true
+      },
+      {
+        "season": 10,
+        "episodes": [
+          "Friends Outside of Work",
+          "Day Three After Murder",
+          "The Hidden Room",
+          "Lake Placid",
+          "Enjoy the Moment While It Lasts",
+          "I Took Her Somewhere Peaceful",
+          "He Wasn't Supposed To Be Here",
+          "Keep It Hush",
+          "Say Daddy's the Best",
+          "Cabin Fever"
+        ],
+        "released": true
+      },
+      {
+        "season": 11,
+        "episodes": [
+          "Spoiled to Death",
+          "Screaming Bloody Murder",
+          "Breathe for Me Mom",
+          "A Wedding and Four Funerals",
+          "The Punisher",
+          "If Only He Had a Heart",
+          "Success at Any Cost",
+          "We're Looking at You Barbara",
+          "Why You Recording Me?",
+          "Angels and Demons"
+        ],
+        "released": true
+      },
+      {
+        "season": 12,
+        "episodes": [
+          "I Saw Dad Kill Mom",
+          "We Were Fooled",
+          "I Love My Wife",
+          "Broken People",
+          "The Biker & His Bride",
+          "Love Is Deaf",
+          "Til Death Do Us Part",
+          "Lovely Rida",
+          "Something About Him",
+          "Tempest"
+        ],
+        "released": true
+      },
+      {
+        "season": 13,
+        "episodes": [
+          "Control Freak",
+          "Drip, Drip!",
+          "Weight Control",
+          "Mom is Always Right",
+          "Momma's Boy",
+          "The Power Couple",
+          "The Last Dance",
+          "My Brother's Keeper",
+          "Draw a Picture",
+          "Double Take"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/595/1489984.jpg"
+  },
+  {
+    "id": "criminal-confessions",
+    "title": "Criminal Confessions",
+    "platform": "Oxygen True Crime",
+    "status": "Finalizada · 3 temporadas · 38 capítulos",
+    "genre": "Documental / crimen real",
+    "description": "Interrogatorios reales muestran las estrategias de los investigadores para conseguir confesiones decisivas.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Carlsbad",
+          "Waterloo",
+          "Baton Rouge",
+          "Edmonton",
+          "Martin County",
+          "Placentia",
+          "Gainesville",
+          "Eunice",
+          "Boone County",
+          "Houston",
+          "Seneca Falls",
+          "Ascension"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "Mountain City, TN",
+          "Largo, FL",
+          "Belmont County, OH",
+          "Marion County, FL",
+          "Jackson County, WI",
+          "Midland, TX",
+          "Palestine, TX",
+          "King County, WA",
+          "Renton, WA",
+          "Tazewell, VA",
+          "Canton, PA",
+          "Grove City, OH"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": [
+          "Chris Watts: Confession Untold",
+          "Vanished in the Night",
+          "A Killer App",
+          "She Never Came Home",
+          "The Kill Club",
+          "Killer Friends",
+          "Who Killed Little Mama?",
+          "The Worst Betrayal",
+          "His Final Fight",
+          "Not My DNA",
+          "Professional Suspect",
+          "Two Fires, One Victim",
+          "A Helpful Witness",
+          "Cold Justice Confessions"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/421/1054611.jpg"
+  },
+  {
+    "id": "severance",
+    "title": "Severance",
+    "platform": "Apple TV",
+    "status": "Temporada 3 confirmada · fecha y capítulos pendientes",
+    "genre": "Drama / ciencia ficción / misterio",
+    "description": "Los empleados de Lumon separan quirúrgicamente sus recuerdos laborales y personales, con consecuencias inquietantes.",
+    "averageEpisodeMinutes": 49,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Good News About Hell",
+          "Half Loop",
+          "In Perpetuity",
+          "The You You Are",
+          "The Grim Barbarity of Optics and Design",
+          "Hide and Seek",
+          "Defiant Jazz",
+          "What's for Dinner?",
+          "The We We Are"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "Hello, Ms. Cobel",
+          "Goodbye, Mrs. Selvig",
+          "Who Is Alive?",
+          "Woe's Hollow",
+          "Trojan's Horse",
+          "Attila",
+          "Chikhai Bardo",
+          "Sweet Vitriol",
+          "The After Hours",
+          "Cold Harbor"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": 0,
+        "released": false,
+        "note": "Renovada · estreno y número de capítulos sin confirmar"
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/548/1371406.jpg"
+  },
+  {
+    "id": "big-little-lies",
+    "title": "Big Little Lies",
+    "platform": "HBO Max",
+    "status": "Temporada 3 en desarrollo · fecha y capítulos pendientes",
+    "genre": "Drama / misterio",
+    "description": "Las vidas aparentemente perfectas de varias madres de Monterey se deshacen entre secretos, violencia y asesinato.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Somebody's Dead",
+          "Serious Mothering",
+          "Living the Dream",
+          "Push Comes to Shove",
+          "Once Bitten",
+          "Burning Love",
+          "You Get What You Need"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "What Have They Done?",
+          "Tell-Tale Hearts",
+          "The End of the World",
+          "She Knows",
+          "Kill Me",
+          "The Bad Mother",
+          "I Want to Know"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": 0,
+        "released": false,
+        "note": "En desarrollo · estreno y número de capítulos sin confirmar"
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/196/490640.jpg"
+  },
+  {
+    "id": "josephine-ange-gardien",
+    "title": "Joséphine, ange gardien",
+    "platform": "TF1 / TF1+",
+    "status": "En emisión · T22: 2/6 emitidos · 4 anunciados sin fecha",
+    "genre": "Comedia dramática / fantasía",
+    "description": "El ángel guardián Joséphine aparece cuando una persona necesita ayuda y usa sus poderes para encauzar su vida.",
+    "averageEpisodeMinutes": 90,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Le miroir aux enfants"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "L'enfant oublié",
+          "Le tableau noir"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": [
+          "La part du doute",
+          "Une mauvaise passe",
+          "Une nouvelle vie",
+          "Une santé d'enfer"
+        ],
+        "released": true
+      },
+      {
+        "season": 4,
+        "episodes": [
+          "Une famille pour Noël",
+          "Le combat de l'ange",
+          "Des cultures différentes",
+          "Pour l'amour d'un ange"
+        ],
+        "released": true
+      },
+      {
+        "season": 5,
+        "episodes": [
+          "Romain et Jamila",
+          "La tête dans les étoiles",
+          "La fautive",
+          "La comédie du bonheur"
+        ],
+        "released": true
+      },
+      {
+        "season": 6,
+        "episodes": [
+          "La vérité en face",
+          "Paillettes, claquettes et champagne",
+          "La plus haute marche",
+          "Nadia"
+        ],
+        "released": true
+      },
+      {
+        "season": 7,
+        "episodes": [
+          "Le stagiaire",
+          "Le compteur à zéro",
+          "Belle à tout prix",
+          "Sens dessus dessous"
+        ],
+        "released": true
+      },
+      {
+        "season": 8,
+        "episodes": [
+          "Un frère pour Ben",
+          "Tous en chœur",
+          "Enfin des vacances !...",
+          "Sauver princesse"
+        ],
+        "released": true
+      },
+      {
+        "season": 9,
+        "episodes": [
+          "Robe noire pour un ange",
+          "Trouvez-moi le prince charmant !",
+          "Le secret de Julien",
+          "Noble cause"
+        ],
+        "released": true
+      },
+      {
+        "season": 10,
+        "episodes": [
+          "La couleur de l'amour",
+          "De toute urgence !",
+          "Un passé pour l'avenir",
+          "Coupée du monde",
+          "Remue-ménage",
+          "L'ange des casernes"
+        ],
+        "released": true
+      },
+      {
+        "season": 11,
+        "episodes": [
+          "Ticket gagnant",
+          "Profession menteur",
+          "Paris-Broadway",
+          "Les deux font la paire",
+          "Le secret des Templiers",
+          "Sur les traces de Yen"
+        ],
+        "released": true
+      },
+      {
+        "season": 12,
+        "episodes": [
+          "Le festin d'Alain",
+          "Au feu la famille !",
+          "Police blues",
+          "Les braves",
+          "Les majorettes",
+          "Le frère que je n'ai pas eu",
+          "Joséphine fait de la résistance",
+          "Ennemis jurés",
+          "L'homme invisible",
+          "Marie-Antoinette",
+          "Chasse aux fantômes",
+          "Un bébé tombé du ciel",
+          "Tout pour la musique"
+        ],
+        "released": true
+      },
+      {
+        "season": 13,
+        "episodes": [
+          "Un petit coin de paradis",
+          "Liouba",
+          "Suivez le guide",
+          "Une prof",
+          "Un monde de douceur",
+          "Yasmina"
+        ],
+        "released": true
+      },
+      {
+        "season": 14,
+        "episodes": [
+          "Le cirque Borelli",
+          "En roue libre",
+          "Pour la vie",
+          "De père en fille",
+          "Les anges",
+          "Restons zen",
+          "Double foyer",
+          "Tango"
+        ],
+        "released": true
+      },
+      {
+        "season": 15,
+        "episodes": [
+          "Le sourire de la momie",
+          "Les boloss",
+          "Légendes d'Armor",
+          "Tous au zoo"
+        ],
+        "released": true
+      },
+      {
+        "season": 16,
+        "episodes": [
+          "Belle-mère, belle-fille",
+          "Papa est un chippendale",
+          "Dans la tête d'Antoine",
+          "Carpe diem",
+          "Je ne vous oublierai jamais"
+        ],
+        "released": true
+      },
+      {
+        "season": 17,
+        "episodes": [
+          "Le secret de Gabrielle",
+          "Enfants, mode d'emploi",
+          "La parenthèse enchantée",
+          "Sur le cœur",
+          "T'es ki toi ?"
+        ],
+        "released": true
+      },
+      {
+        "season": 18,
+        "episodes": [
+          "La femme aux gardénias",
+          "Le mystère des pierres qui chantent",
+          "Un pour tous",
+          "Trois campeurs et un mariage"
+        ],
+        "released": true
+      },
+      {
+        "season": 19,
+        "episodes": [
+          "Graines de chef",
+          "1998-2018 Retour vers le futur",
+          "Un Noël recomposé",
+          "L'incroyable destin de Rose Clifton",
+          "Enfin libres !"
+        ],
+        "released": true
+      },
+      {
+        "season": 20,
+        "episodes": [
+          "L'esprit d'Halloween",
+          "Disparition au lycée",
+          "Trois anges valent mieux qu'un !",
+          "Mon fils de la lune",
+          "Haute couture"
+        ],
+        "released": true
+      },
+      {
+        "season": 21,
+        "episodes": [
+          "Les perchés",
+          "Ma petite-fille, ma bataille",
+          "Les patins de l'espoir",
+          "S'aimer de toute urgence",
+          "À toute épreuve"
+        ],
+        "released": true
+      },
+      {
+        "season": 22,
+        "episodes": [
+          "Chanter sa vie",
+          "Les sirènes",
+          "La guerre des papas",
+          "Magique !",
+          "La cerise sur le gâteau",
+          "Le Livre de Joséphine"
+        ],
+        "released": false,
+        "releasedEpisodes": 2,
+        "note": "2 emitidos · 4 capítulos anunciados sin fecha"
+      }
+    ],
+    "releasedEpisodes": 105,
+    "totalEpisodesPlanned": 109,
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/296/741228.jpg"
+  },
+  {
+    "id": "csi-miami",
+    "title": "CSI: Miami",
+    "platform": "CBS",
+    "status": "Finalizada · 10 temporadas · 232 capítulos",
+    "genre": "Crimen / drama / misterio",
+    "description": "Horatio Caine dirige a un equipo de investigadores forenses que resuelve crímenes en Miami.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Golden Parachute",
+          "Losing Face",
+          "Wet Foot/Dry Foot",
+          "Just One Kiss",
+          "Ashes to Ashes",
+          "Broken",
+          "Breathless",
+          "Slaughterhouse",
+          "Kill Zone",
+          "A Horrible Mind",
+          "Camp Fear",
+          "Entrance Wound",
+          "Bunk",
+          "Forced Entry",
+          "Dead Woman Walking",
+          "Evidence of Things Unseen",
+          "Simple Man",
+          "Dispo Day",
+          "Double Cap",
+          "Grave Young Men",
+          "Spring Break",
+          "Tinder Box",
+          "Freaks and Tweaks",
+          "Body Count"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "Blood Brothers",
+          "Dead Zone",
+          "Hard Time",
+          "Death Grip",
+          "The Best Defense",
+          "Hurricane Anthony",
+          "Grand Prix",
+          "Big Brother",
+          "Bait",
+          "Extreme",
+          "Complications",
+          "Witness to Murder",
+          "Blood Moon",
+          "Slow Burn",
+          "Stalkerazzi",
+          "Invasion",
+          "Money for Nothing",
+          "Wannabe",
+          "Deadline",
+          "The Oath",
+          "Not Landing",
+          "Rap Sheet",
+          "MIA/NYC - NonStop",
+          "Innocent"
+        ],
+        "released": true
+      },
+      {
+        "season": 3,
+        "episodes": [
+          "Lost Son",
+          "Pro Per",
+          "Under the Influence",
+          "Murder in a Flash",
+          "Legal",
+          "Hell Night",
+          "Crime Wave",
+          "Speed Kills",
+          "Pirated",
+          "After the Fall",
+          "Addiction",
+          "Shootout",
+          "Cop Killer",
+          "One Night Stand",
+          "Identity",
+          "Nothing to Lose",
+          "Money Plane",
+          "Game Over",
+          "Sex & Taxes",
+          "Killer Date",
+          "Recoil",
+          "Vengeance",
+          "Whacked",
+          "10-7"
+        ],
+        "released": true
+      },
+      {
+        "season": 4,
+        "episodes": [
+          "From the Grave",
+          "Blood in the Water",
+          "Prey",
+          "48 Hours to Life",
+          "Three-Way",
+          "Under Suspicion",
+          "Felony Flight",
+          "Nailed",
+          "Urban Hellraisers",
+          "Shattered",
+          "Payback",
+          "The Score",
+          "Silencer",
+          "Fade Out",
+          "Skeletons",
+          "Deviant",
+          "Collision",
+          "Double Jeopardy",
+          "Driven",
+          "Free Fall",
+          "Dead Air",
+          "Open Water",
+          "Shock (1)",
+          "Rampage (2)",
+          "One of Our Own (3)"
+        ],
+        "released": true
+      },
+      {
+        "season": 5,
+        "episodes": [
+          "Rio (4)",
+          "Going Under",
+          "Death Pool 100",
+          "If Looks Could Kill",
+          "Death Eminent",
+          "Curse of the Coffin",
+          "High Octane",
+          "Darkroom",
+          "Going, Going, Gone",
+          "Come As You Are",
+          "Backstabbers",
+          "Internal Affairs",
+          "Throwing Heat",
+          "No Man's Land (1)",
+          "Man Down (2)",
+          "Broken Home",
+          "A Grizzly Murder",
+          "Triple Threat",
+          "Bloodline",
+          "Rush",
+          "Just Murdered",
+          "Burned",
+          "Kill Switch",
+          "Born to Kill"
+        ],
+        "released": true
+      },
+      {
+        "season": 6,
+        "episodes": [
+          "Dangerous Son",
+          "Cyber-lebrity",
+          "Inside Out",
+          "Bang, Bang, Your Debt",
+          "Deep Freeze",
+          "Sunblock",
+          "Chain Reaction",
+          "Permanent Vacation",
+          "Stand Your Ground",
+          "CSI: My Nanny",
+          "Guerillas in the Mist",
+          "Miami Confidential",
+          "Raising Caine",
+          "You May Now Kill The Bride",
+          "Ambush (1)",
+          "All In (2)",
+          "To Kill a Predator",
+          "Tunnel Vision",
+          "Rock and a Hard Place",
+          "Down to the Wire",
+          "Going Ballistic (1)"
+        ],
+        "released": true
+      },
+      {
+        "season": 7,
+        "episodes": [
+          "Resurrection (2)",
+          "Won't Get Fueled Again",
+          "And How Does That Make You Kill?",
+          "Raging Cannibal",
+          "Bombshell",
+          "Wrecking Crew",
+          "Cheating Death",
+          "Gone Baby Gone",
+          "Power Trip",
+          "The DeLuca Motel",
+          "Tipping Point",
+          "Head Case",
+          "And They're Offed",
+          "Smoke Gets in Your CSI's",
+          "Presumed Guilty",
+          "Sink or Swim",
+          "Divorce Party",
+          "Flight Risk",
+          "Target Specific (1)",
+          "Wolfe in Sheep's Clothing (2)",
+          "Chip/Tuck",
+          "Dead on Arrival",
+          "Collateral Damage",
+          "Dissolved",
+          "Seeing Red (1)"
+        ],
+        "released": true
+      },
+      {
+        "season": 8,
+        "episodes": [
+          "Out of Time (2)",
+          "Hostile Takeover",
+          "Bolt Action",
+          "In Plane Sight",
+          "Bad Seed",
+          "Dude, Where's My Groom?",
+          "Bone Voyage",
+          "Point of Impact",
+          "Kill Clause",
+          "Count Me Out",
+          "Delko for the Defense",
+          "Show Stopper",
+          "Die By The Sword",
+          "In The Wind",
+          "Miami, We Have A Problem",
+          "L.A.",
+          "Getting Axed",
+          "Dishonor",
+          "Spring Breakdown",
+          "Backfire",
+          "Meltdown",
+          "Mommie Deadest",
+          "Time Bomb",
+          "All Fall Down (1)"
+        ],
+        "released": true
+      },
+      {
+        "season": 9,
+        "episodes": [
+          "Fallen (2)",
+          "Sudden Death",
+          "See No Evil",
+          "Manhunt",
+          "Sleepless in Miami",
+          "Reality Kills",
+          "On the Hook",
+          "Happy Birthday",
+          "Blood Sugar",
+          "Match Made in Hell",
+          "F-T-F",
+          "Wheels Up",
+          "Last Stand",
+          "Stoned Cold",
+          "Blood Lust",
+          "Hunting Ground",
+          "Special Delivery",
+          "About Face",
+          "Caged",
+          "Paint It Black",
+          "G.O.",
+          "Mayday (1)"
+        ],
+        "released": true
+      },
+      {
+        "season": 10,
+        "episodes": [
+          "Countermeasures (2)",
+          "Stiff",
+          "Blown Away",
+          "Look Who's Taunting",
+          "Killer Regrets",
+          "By The Book",
+          "Sinner Takes All",
+          "Dead Ringer",
+          "A Few Dead Men",
+          "Long Gone",
+          "Crowned",
+          "Friendly Fire",
+          "Terminal Velocity",
+          "Last Straw",
+          "No Good Deed",
+          "Rest In Pieces",
+          "At Risk",
+          "Law and Disorder (1)",
+          "Habeas Corpse (2)"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/501/1254953.jpg"
+  },
+  {
+    "id": "the-green-glove-gang",
+    "title": "The Green Glove Gang",
+    "platform": "Netflix",
+    "status": "2 temporadas completas · sin próximo estreno confirmado",
+    "genre": "Comedia / crimen",
+    "description": "Tres ladronas veteranas se esconden en una residencia y descubren una red criminal mientras rehacen su banda.",
+    "averageEpisodeMinutes": 34,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Episode 1",
+          "Episode 2",
+          "Episode 3",
+          "Episode 4",
+          "Episode 5",
+          "Episode 6",
+          "Episode 7",
+          "Episode 8"
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "Episode 1",
+          "Episode 2",
+          "Episode 3",
+          "Episode 4",
+          "Episode 5",
+          "Episode 6",
+          "Episode 7",
+          "Episode 8"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/427/1067866.jpg"
+  },
+  {
+    "id": "loki",
+    "title": "Loki",
+    "platform": "Disney+",
+    "status": "Finalizada · 2 temporadas · 12 capítulos",
+    "genre": "Acción / aventura / ciencia ficción",
+    "description": "El Dios del Engaño queda atrapado en una trama temporal junto a la Autoridad de Variación Temporal.",
+    "averageEpisodeMinutes": 50,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          "Glorious Purpose",
+          "The Variant",
+          "Lamentis",
+          "The Nexus Event",
+          "Journey Into Mystery",
+          "For All Time. Always."
+        ],
+        "released": true
+      },
+      {
+        "season": 2,
+        "episodes": [
+          "Ouroboros",
+          "Breaking Brad",
+          "1893",
+          "Heart of the TVA",
+          "Science/Fiction",
+          "Glorious Purpose"
+        ],
+        "released": true
+      }
+    ],
+    "image": "https://static.tvmaze.com/uploads/images/medium_portrait/478/1195717.jpg"
+  }
+];
 
     const modernFamilyEpisodeTitles = [
       episodeTitles(`
@@ -2887,6 +3995,131 @@ Last Forever
       "2026-07-08"
     ];
 
+    const secretStorySeason12Episodes = [
+      { date: "2024-04-23", title: "Que le jeu commence" },
+      { date: "2024-04-24", title: "Première soirée dans la maison" },
+      { date: "2024-04-24", title: "Quotidienne 1" },
+      { date: "2024-04-25", title: "Quotidienne 2" },
+      { date: "2024-04-26", title: "Quotidienne 3" },
+      { date: "2024-04-27", title: "Quotidienne 4" },
+      { date: "2024-04-27", title: "Quotidienne 4 - L'after" },
+      { date: "2024-04-29", title: "Quotidienne 5" },
+      { date: "2024-04-30", title: "Quotidienne 6" },
+      { date: "2024-05-01", title: "Quotidienne 7" },
+      { date: "2024-05-02", title: "Quotidienne 8" },
+      { date: "2024-05-03", title: "Quotidienne 9" },
+      { date: "2024-05-03", title: "Quotidienne 9 - L'after" },
+      { date: "2024-05-04", title: "Quotidienne 10" },
+      { date: "2024-05-06", title: "Quotidienne 11" },
+      { date: "2024-05-07", title: "Quotidienne 12" },
+      { date: "2024-05-09", title: "Quotidienne 13" },
+      { date: "2024-05-09", title: "Quotidienne 14" },
+      { date: "2024-05-10", title: "Quotidienne 15" },
+      { date: "2024-05-10", title: "Quotidienne 15 - L'after" },
+      { date: "2024-05-11", title: "Quotidienne 16" },
+      { date: "2024-05-13", title: "Quotidienne 17" },
+      { date: "2024-05-14", title: "Quotidienne 18" },
+      { date: "2024-05-15", title: "Quotidienne 19" },
+      { date: "2024-05-16", title: "Quotidienne 20" },
+      { date: "2024-05-17", title: "Quotidienne 21" },
+      { date: "2024-05-17", title: "Quotidienne 21 - L'after" },
+      { date: "2024-05-18", title: "Quotidienne 22" },
+      { date: "2024-05-20", title: "Quotidienne 23" },
+      { date: "2024-05-21", title: "Quotidienne 24" },
+      { date: "2024-05-22", title: "Quotidienne 25" },
+      { date: "2024-05-23", title: "Quotidienne 26" },
+      { date: "2024-05-24", title: "Quotidienne 27" },
+      { date: "2024-05-24", title: "Quotidienne 27 - L'after" },
+      { date: "2024-05-25", title: "Quotidienne 28" },
+      { date: "2024-05-27", title: "Quotidienne 29" },
+      { date: "2024-05-28", title: "Quotidienne 30" },
+      { date: "2024-05-29", title: "Quotidienne 31" },
+      { date: "2024-05-30", title: "Quotidienne 32" },
+      { date: "2024-05-31", title: "Quotidienne 33" },
+      { date: "2024-05-31", title: "Quotidienne 33 - L'after" },
+      { date: "2024-06-01", title: "Quotidienne 34" },
+      { date: "2024-06-03", title: "Quotidienne 35" },
+      { date: "2024-06-04", title: "Quotidienne 36" },
+      { date: "2024-06-05", title: "Quotidienne 37" },
+      { date: "2024-06-07", title: "Quotidienne 38" },
+      { date: "2024-06-07", title: "Quotidienne 39" },
+      { date: "2024-06-07", title: "Quotidienne 39 - L'after" },
+      { date: "2024-06-08", title: "Quotidienne 40" },
+      { date: "2024-06-10", title: "Quotidienne 41" },
+      { date: "2024-06-11", title: "Quotidienne 42" },
+      { date: "2024-06-12", title: "Quotidienne 43" },
+      { date: "2024-06-13", title: "Quotidienne 44" },
+      { date: "2024-06-14", title: "Quotidienne 45" },
+      { date: "2024-06-14", title: "Quotidienne 45 - L'after" },
+      { date: "2024-06-15", title: "Quotidienne 46" },
+      { date: "2024-06-17", title: "Quotidienne 47" },
+      { date: "2024-06-18", title: "Quotidienne 48" },
+      { date: "2024-06-18", title: "La finale" }
+    ];
+
+    const secretStorySeason13Episodes = [
+      { date: "2025-06-10", title: "Prime 1 (Partie 1)" },
+      { date: "2025-06-11", title: "Prime 1 (Partie 2)" },
+      { date: "2025-06-11", title: "Quotidienne 1" },
+      { date: "2025-06-12", title: "Quotidienne 2" },
+      { date: "2025-06-13", title: "Quotidienne 3" },
+      { date: "2025-06-16", title: "Quotidienne 4" },
+      { date: "2025-06-17", title: "Quotidienne 5" },
+      { date: "2025-06-18", title: "Quotidienne 6" },
+      { date: "2025-06-19", title: "Quotidienne 7" },
+      { date: "2025-06-19", title: "Prime 2 (Partie 1)" },
+      { date: "2025-06-19", title: "Prime 2 (Partie 2)" },
+      { date: "2025-06-20", title: "Quotidienne 8" },
+      { date: "2025-06-23", title: "Quotidienne 9" },
+      { date: "2025-06-24", title: "Quotidienne 10" },
+      { date: "2025-06-25", title: "Quotidienne 11" },
+      { date: "2025-06-26", title: "Quotidienne 12" },
+      { date: "2025-06-26", title: "Prime 3 (Partie 1)" },
+      { date: "2025-06-26", title: "Prime 3 (Partie 2)" },
+      { date: "2025-06-27", title: "Quotidienne 13" },
+      { date: "2025-06-30", title: "Quotidienne 14" },
+      { date: "2025-07-01", title: "Quotidienne 15" },
+      { date: "2025-07-02", title: "Quotidienne 16" },
+      { date: "2025-07-03", title: "Quotidienne 17" },
+      { date: "2025-07-03", title: "Prime 4 (Partie 1)" },
+      { date: "2025-07-03", title: "Prime 4 (Partie 2)" },
+      { date: "2025-07-04", title: "Quotidienne 18" },
+      { date: "2025-07-07", title: "Quotidienne 19" },
+      { date: "2025-07-08", title: "Quotidienne 20" },
+      { date: "2025-07-09", title: "Quotidienne 21" },
+      { date: "2025-07-10", title: "Quotidienne 22" },
+      { date: "2025-07-10", title: "Prime 5 (Partie 1)" },
+      { date: "2025-07-10", title: "Prime 5 (Partie 2)" },
+      { date: "2025-07-11", title: "Quotidienne 23" },
+      { date: "2025-07-14", title: "Quotidienne 24" },
+      { date: "2025-07-15", title: "Quotidienne 25" },
+      { date: "2025-07-16", title: "Quotidienne 26" },
+      { date: "2025-07-17", title: "Quotidienne 27" },
+      { date: "2025-07-17", title: "Prime 6 (Partie 1)" },
+      { date: "2025-07-17", title: "Prime 6 (Partie 2)" },
+      { date: "2025-07-18", title: "Quotidienne 28" },
+      { date: "2025-07-21", title: "Quotidienne 29" },
+      { date: "2025-07-22", title: "Quotidienne 30" },
+      { date: "2025-07-23", title: "Quotidienne 31" },
+      { date: "2025-07-24", title: "Quotidienne 32" },
+      { date: "2025-07-24", title: "Prime 7 (Partie 1)" },
+      { date: "2025-07-24", title: "Prime 7 (Partie 2)" },
+      { date: "2025-07-25", title: "Quotidienne 33" },
+      { date: "2025-07-28", title: "Quotidienne 34" },
+      { date: "2025-07-29", title: "Quotidienne 35" },
+      { date: "2025-07-30", title: "Quotidienne 36" },
+      { date: "2025-07-31", title: "Quotidienne 37" },
+      { date: "2025-07-31", title: "Prime 8 (Partie 1)" },
+      { date: "2025-07-31", title: "Prime 8 (Partie 2)" },
+      { date: "2025-08-01", title: "Quotidienne 38" },
+      { date: "2025-08-04", title: "Quotidienne 39" },
+      { date: "2025-08-05", title: "Quotidienne 40" },
+      { date: "2025-08-06", title: "Quotidienne 41" },
+      { date: "2025-08-07", title: "Quotidienne 42" },
+      { date: "2025-08-07", title: "La finale (Partie 1)" },
+      { date: "2025-08-07", title: "La finale (Partie 2)" }
+    ];
+
     const secretStorySeason14Episodes = [
       { date: "2026-06-23", title: "Prime 1 - Kick off (Partie 1)" },
       { date: "2026-06-24", title: "Prime 1 - Kick off (Partie 2)" },
@@ -2896,8 +4129,8 @@ Last Forever
       { date: "2026-06-26", title: "Quotidienne 3 du 26 juin 2026" },
       { date: "2026-06-26", title: "Secret Uncut 2 du 26/06" },
       { date: "2026-06-28", title: "Quotidienne 4 du 28 juin 2026" },
-      { date: "2026-06-29", title: "Secret Uncut 3 du 29/06" },
       { date: "2026-06-29", title: "Quotidienne 5 du 29 juin 2026" },
+      { date: "2026-06-29", title: "Secret Uncut 3 du 29/06" },
       { date: "2026-06-30", title: "Quotidienne 6 du 30 juin 2026" },
       { date: "2026-06-30", title: "Secret Uncut 4 du 30/06" },
       { date: "2026-07-01", title: "Quotidienne 7 du 1 juillet 2026" },
@@ -2906,8 +4139,8 @@ Last Forever
       { date: "2026-07-01", title: "Prime 2 (Partie 2) du 1 juillet 2026" },
       { date: "2026-07-02", title: "Quotidienne 8 du 2 juillet 2026" },
       { date: "2026-07-02", title: "Secret Uncut 6 du 02/07" },
-      { date: "2026-07-03", title: "Zone Secrète de Lou du 03/07" },
       { date: "2026-07-03", title: "Quotidienne 9 du 3 juillet 2026" },
+      { date: "2026-07-03", title: "Zone Secrète de Lou du 03/07" },
       { date: "2026-07-03", title: "Secret Uncut 7 du 03/07" },
       { date: "2026-07-05", title: "Quotidienne 10 du 5 juillet 2026" },
       { date: "2026-07-05", title: "Secret Uncut 8 du 05/07" },
@@ -2922,8 +4155,10 @@ Last Forever
       { date: "2026-07-09", title: "Quotidienne 14 du 9 juillet 2026" },
       { date: "2026-07-09", title: "Secret Uncut 12 du 09/07" },
       { date: "2026-07-10", title: "Quotidienne 15 du 10 juillet 2026" },
+      { date: "2026-07-10", title: "Zone Secrète de Willy du 10/07" },
       { date: "2026-07-10", title: "Secret Uncut 13 du 10/07" },
-      { date: "2026-07-10", title: "Zone Secrète de Willy du 10/07" }
+      { date: "2026-07-12", title: "Quotidienne 16 du 12 juillet 2026" },
+      { date: "2026-07-12", title: "Secret Uncut 14 du 12/07" }
     ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
@@ -5019,6 +6254,24 @@ Last Forever
         episode: index + 1,
         title
       })),
+      ...secretStorySeason12Episodes.map((episode, index) => ({
+        date: episode.date,
+        serieId: "secret-story",
+        serie: "Secret Story",
+        platform: "TF1+",
+        season: 12,
+        episode: index + 1,
+        title: episode.title
+      })),
+      ...secretStorySeason13Episodes.map((episode, index) => ({
+        date: episode.date,
+        serieId: "secret-story",
+        serie: "Secret Story",
+        platform: "TF1+",
+        season: 13,
+        episode: index + 1,
+        title: episode.title
+      })),
       ...secretStorySeason14Episodes.map((episode, index) => ({
         date: episode.date,
         serieId: "secret-story",
@@ -5776,7 +7029,8 @@ Last Forever
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
         description:
           "Participantes de realities compiten y forman parejas para encontrar la combinación más compatible en una villa tropical."
-      }
+      },
+      ...requestedSeriesCatalog
     ];
 
     const catalog = [
@@ -5823,7 +7077,7 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 36 vídeos disponibles",
+        status: "En emisión · temporada 14 · 38 vídeos disponibles",
         description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
@@ -5839,14 +7093,28 @@ Last Forever
           { season: 9, total: 84, watched: 0, note: "TF1+" },
           { season: 10, total: 103, watched: 0, note: "TF1+" },
           { season: 11, total: 231, watched: 0, note: "TF1+" },
-          { season: 12, total: 59, watched: 0, note: "TF1+" },
-          { season: 13, total: 60, watched: 0, note: "TF1+" },
+          {
+            season: 12,
+            total: secretStorySeason12Episodes.length,
+            watched: 0,
+            releasedEpisodes: secretStorySeason12Episodes.length,
+            note: "TF1+ · 59 vídeos emitidos entre el 23/04/2024 y el 18/06/2024",
+            episodes: secretStorySeason12Episodes.map(episode => episode.title)
+          },
+          {
+            season: 13,
+            total: secretStorySeason13Episodes.length,
+            watched: 0,
+            releasedEpisodes: secretStorySeason13Episodes.length,
+            note: "TF1+ · 60 vídeos emitidos entre el 10/06/2025 y el 07/08/2025",
+            episodes: secretStorySeason13Episodes.map(episode => episode.title)
+          },
           {
             season: 14,
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.length,
-            note: "TF1+ · 36 vídeos disponibles desde el 23/06/2026",
+            note: "TF1+ · 38 vídeos disponibles desde el 23/06/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
@@ -6295,6 +7563,38 @@ Last Forever
     function calendarEventsForMonth(date) {
       const monthKey = monthKeyFromDate(date);
       return followedReleaseEvents().filter(event => event.date.startsWith(monthKey));
+    }
+
+    function undatedUpcomingForFollowedSeries() {
+      const todayKey = dateKeyFromDate(new Date());
+      return state.mySeries.flatMap(serie => serie.seasons.flatMap(season => {
+        const total = Math.max(0, Math.floor(Number(season.total) || 0));
+        const datedFutureCount = releaseEvents.filter(event =>
+          event.serieId === serie.id &&
+          Number(event.season) === Number(season.season) &&
+          event.date > todayKey
+        ).length;
+
+        if (total === 0 && season.available === false) {
+          return [{
+            serieId: serie.id,
+            serie: serie.name,
+            season: season.season,
+            label: "Temporada confirmada",
+            note: season.note || "Estreno y número de capítulos sin confirmar"
+          }];
+        }
+
+        const undatedCount = Math.max(0, total - availableEpisodeLimit(serie, season) - datedFutureCount);
+        if (!undatedCount) return [];
+        return [{
+          serieId: serie.id,
+          serie: serie.name,
+          season: season.season,
+          label: `${undatedCount} capítulo${undatedCount === 1 ? "" : "s"} anunciado${undatedCount === 1 ? "" : "s"}`,
+          note: season.note || "Fecha pendiente"
+        }];
+      })).sort((a, b) => a.serie.localeCompare(b.serie) || Number(a.season) - Number(b.season));
     }
 
     function initialCalendarDate() {
@@ -6813,29 +8113,31 @@ Last Forever
           </div>
         ` : "";
         const episodes = normalizeEpisodeList(season.episodes);
-        const showEpisodeList = episodes.length && (isSeasonInProgress || nextFutureRelease);
         const todayKey = dateKeyFromDate(new Date());
-        const episodeList = showEpisodeList ? `
-          <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
-            ${episodes.map(episode => {
-              const episodeRelease = releaseEventForEpisode(serie, season, episode.number);
-              const releaseText = episodeRelease?.date > todayKey ? releaseAvailabilityText(episodeRelease) : "";
-              const episodeClass = [
-                episode.number <= season.watched ? "watched" : "",
-                episode.number === season.watched + 1 && season.watched < season.total ? "next" : "",
-                releaseText ? "future" : ""
-              ].filter(Boolean).join(" ");
-              return `
-                <li class="${episodeClass}">
-                  <span>${episode.number}</span>
-                  <div class="episode-main">
-                    <b>${escapeHtml(episode.title)}</b>
-                    ${releaseText ? `<em>${escapeHtml(releaseText)}</em>` : ""}
-                  </div>
-                </li>
-              `;
-            }).join("")}
-          </ol>
+        const episodeList = episodes.length ? `
+          <details class="episode-disclosure" ${isSeasonInProgress || nextFutureRelease ? "open" : ""}>
+            <summary>${isSeasonInProgress || nextFutureRelease ? "Capítulos" : `Ver nombres de los ${episodes.length} capítulos`}</summary>
+            <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
+              ${episodes.map(episode => {
+                const episodeRelease = releaseEventForEpisode(serie, season, episode.number);
+                const releaseText = episodeRelease?.date > todayKey ? releaseAvailabilityText(episodeRelease) : "";
+                const episodeClass = [
+                  episode.number <= season.watched ? "watched" : "",
+                  episode.number === season.watched + 1 && season.watched < season.total ? "next" : "",
+                  releaseText ? "future" : ""
+                ].filter(Boolean).join(" ");
+                return `
+                  <li class="${episodeClass}">
+                    <span>${episode.number}</span>
+                    <div class="episode-main">
+                      <b>${escapeHtml(episode.title)}</b>
+                      ${releaseText ? `<em>${escapeHtml(releaseText)}</em>` : ""}
+                    </div>
+                  </li>
+                `;
+              }).join("")}
+            </ol>
+          </details>
         ` : "";
         const card = document.createElement("article");
         card.className = `season-card${isSeasonInProgress || nextFutureRelease ? "" : " compact"}`;
@@ -6881,7 +8183,9 @@ Last Forever
       const dayTitle = document.getElementById("calendarDayTitle");
       const dayCount = document.getElementById("calendarDayCount");
       const eventsContainer = document.getElementById("calendarEvents");
-      if (!title || !grid || !dayTitle || !dayCount || !eventsContainer) return;
+      const undatedCount = document.getElementById("calendarUndatedCount");
+      const undatedContainer = document.getElementById("calendarUndatedEvents");
+      if (!title || !grid || !dayTitle || !dayCount || !eventsContainer || !undatedCount || !undatedContainer) return;
 
       const monthKey = monthKeyFromDate(calendarCursor);
       const monthEvents = calendarEventsForMonth(calendarCursor);
@@ -6943,6 +8247,18 @@ Last Forever
       dayTitle.textContent = formatCalendarDay(selectedCalendarDate);
       dayCount.textContent = `${selectedEvents.length} estreno${selectedEvents.length === 1 ? "" : "s"}`;
       eventsContainer.innerHTML = "";
+
+      const undatedItems = undatedUpcomingForFollowedSeries();
+      undatedCount.textContent = `${undatedItems.length} pendiente${undatedItems.length === 1 ? "" : "s"}`;
+      undatedContainer.innerHTML = undatedItems.length
+        ? undatedItems.map(item => `
+          <article class="calendar-event" style="--card-a:${paletteFor(item.serieId).a}">
+            <small>Temporada ${item.season} · fecha pendiente</small>
+            <b>${escapeHtml(item.serie)}</b>
+            <span>${escapeHtml(item.label)} · ${escapeHtml(item.note)}</span>
+          </article>
+        `).join("")
+        : `<div class="calendar-empty">No hay estrenos pendientes sin fecha.</div>`;
 
       if (!selectedEvents.length) {
         eventsContainer.innerHTML = `<div class="calendar-empty">No hay capítulos nuevos este día.</div>`;
