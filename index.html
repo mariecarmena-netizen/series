@@ -2014,7 +2014,7 @@
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
-            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 15/07/2026.</p>
+            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 18/07/2026.</p>
           </div>
         </div>
         <div class="header-menu" id="homeMenu">
@@ -2168,7 +2168,7 @@
           <div class="mark" aria-hidden="true">CAL</div>
           <div class="title">
             <h1 id="calendarHeading">Calendario</h1>
-            <p>Estrenos de capítulos por día. Datos revisados el 15/07/2026.</p>
+            <p>Estrenos de capítulos por día. Datos revisados el 18/07/2026.</p>
           </div>
         </div>
       </header>
@@ -2229,7 +2229,7 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-15";
+    const DATA_LAST_UPDATED = "2026-07-18";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -4200,9 +4200,21 @@ Last Forever
       { date: "2026-07-14", title: "Quotidienne 18 du 14 juillet 2026" },
       { date: "2026-07-14", title: "Secret Uncut 16 du 14/07" },
       { date: "2026-07-15", title: "Quotidienne 19 du 15 juillet 2026" },
+      { date: "2026-07-15", title: "Secret Uncut 17 du 15/07" },
       { date: "2026-07-16", title: "Quotidienne 20 du 16 juillet 2026" },
-      { date: "2026-07-16", title: "Prime 4 du 16 juillet 2026" },
-      { date: "2026-07-17", title: "Quotidienne 21 du 17 juillet 2026" }
+      { date: "2026-07-16", title: "Secret Uncut 18 du 16/07" },
+      { date: "2026-07-16", title: "Prime 4 (Partie 1) du 16 juillet 2026" },
+      { date: "2026-07-16", title: "Prime 4 (Partie 2) du 16 juillet 2026" },
+      { date: "2026-07-17", title: "Quotidienne 21 du 17 juillet 2026" },
+      { date: "2026-07-17", title: "Secret Uncut 19 du 17/07" },
+      { date: "2026-07-19", title: "Quotidienne 22 du 19 juillet 2026" },
+      { date: "2026-07-20", title: "Quotidienne 23 du 20 juillet 2026" },
+      { date: "2026-07-21", title: "Quotidienne 24 du 21 juillet 2026" },
+      { date: "2026-07-22", title: "Quotidienne 25 du 22 juillet 2026" },
+      { date: "2026-07-23", title: "Quotidienne 26 du 23 juillet 2026" },
+      { date: "2026-07-23", title: "Prime 5 (Partie 1) du 23 juillet 2026" },
+      { date: "2026-07-23", title: "Prime 5 (Partie 2) du 23 juillet 2026" },
+      { date: "2026-07-24", title: "Quotidienne 27 du 24 juillet 2026" }
     ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
@@ -6776,7 +6788,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en emisión · 3 episodios principales disponibles · próximo 16/07/2026",
+        status: "Temporada 28 en emisión · 4 episodios principales disponibles · próximo 19/07/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -6784,16 +6796,16 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 28, episodes: 32, released: false }
+          { season: 28, episodes: 32, released: false, releasedEpisodes: 4 }
         ],
-        releasedEpisodes: 973,
+        releasedEpisodes: 974,
         totalEpisodesPlanned: 1002,
         averageEpisodeMinutes: 62,
-        releasedWatchTimeMinutes: 60326,
-        releasedWatchTimeText: "1005 h 26 min",
+        releasedWatchTimeMinutes: 60388,
+        releasedWatchTimeText: "1006 h 28 min",
         totalPlannedWatchTimeMinutes: 62124,
         totalPlannedWatchTimeText: "1035 h 24 min",
-        nextEpisodeDate: "2026-07-16",
+        nextEpisodeDate: "2026-07-19",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
           "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 arranca con estreno especial en CBS y sigue con entregas dominicales, miércoles y jueves."
@@ -7140,8 +7152,8 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 43 vídeos disponibles · próximo 16/07/2026",
-        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. El prime 4 pasa al jueves 16/07.",
+        status: "En emisión · temporada 14 · 50 vídeos disponibles · próximo 19/07/2026",
+        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Hay próximos programas confirmados hasta el 24/07.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -7177,7 +7189,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.filter(episode => episode.date <= DATA_LAST_UPDATED).length,
-            note: "TF1+ · 43 vídeos disponibles y 3 programados hasta el 17/07/2026",
+            note: "TF1+ · 50 vídeos disponibles y 8 programados del 19 al 24/07/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
