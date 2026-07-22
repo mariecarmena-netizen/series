@@ -3887,6 +3887,48 @@ Last Forever
       ]
     ];
 
+    const muertosSLEpisodeTitles = [
+      Array.from({ length: 8 }, (_, index) => `Episodio ${index + 1}`),
+      Array.from({ length: 6 }, (_, index) => `Episodio ${index + 1}`),
+      Array.from({ length: 6 }, (_, index) => `Episodio ${index + 1}`),
+      Array.from({ length: 6 }, (_, index) => `Episodio ${index + 1}`)
+    ];
+
+    const atascoEpisodeTitles = [
+      [
+        "Maletero",
+        "Guantera",
+        "Luz de freno",
+        "Volante",
+        "Cinturón de seguridad",
+        "Cierre centralizado"
+      ],
+      [
+        "Parachoques",
+        "Taxímetro",
+        "Neumáticos",
+        "Triángulos",
+        "Park assist",
+        "Antena"
+      ],
+      [
+        "Tilde",
+        "Contenedor de obra",
+        "Pegatina de ITV",
+        "Batería",
+        "Alas de gaviota",
+        "Capota"
+      ],
+      [
+        "Kübelwagen",
+        "Claxon",
+        "Airbag",
+        "Cuba",
+        "Matrículas",
+        "Papamóvil"
+      ]
+    ];
+
     const maximumPleasureGuaranteedEpisodeTitles = [
       "Magnets",
       "YABA",
@@ -3953,6 +3995,22 @@ Last Forever
       "Where is Judith?",
       "The University of Cosmic Intelligence Cult",
       "The Cult of the Soulful Journey"
+    ];
+
+    const peopleMagazineInvestigatesSeason2ReleaseDates = [
+      "2017-11-06",
+      "2017-11-13",
+      "2017-11-20",
+      "2017-11-27",
+      "2017-12-04",
+      "2017-12-11",
+      "2017-12-18",
+      "2018-01-01",
+      "2018-01-08",
+      "2018-01-15",
+      "2018-01-22",
+      "2018-01-29",
+      "2018-04-27"
     ];
 
     const peopleMagazineInvestigatesSeason9ReleaseDates = [
@@ -6263,6 +6321,15 @@ Last Forever
     };
 
     const releaseEvents = [
+      ...muertosSLEpisodeTitles[3].map((title, index) => ({
+        date: "2026-08-07",
+        serieId: "muertos-sl",
+        serie: "Muertos S.L.",
+        platform: "Netflix",
+        season: 4,
+        episode: index + 1,
+        title
+      })),
       ...machosAlfaEpisodeTitles.flatMap((episodes, seasonIndex) =>
         episodes.map((title, episodeIndex) => ({
           date: machosAlfaSeasonReleaseDates[seasonIndex],
@@ -6307,6 +6374,15 @@ Last Forever
         serie: "On the Case with Paula Zahn",
         platform: "Investigation Discovery",
         season: 29,
+        episode: index + 1,
+        title
+      })),
+      ...seriesEpisodeTitleOverrides["people-magazine-investigates"][2].map((title, index) => ({
+        date: peopleMagazineInvestigatesSeason2ReleaseDates[index],
+        serieId: "people-magazine-investigates",
+        serie: "People Magazine Investigates",
+        platform: "Investigation Discovery / HBO Max",
+        season: 2,
         episode: index + 1,
         title
       })),
@@ -6385,6 +6461,52 @@ Last Forever
     ].sort((a, b) => a.date.localeCompare(b.date) || a.serie.localeCompare(b.serie) || a.episode - b.episode);
 
     const seriesCatalog = [
+      {
+        id: "atasco",
+        title: "Atasco",
+        platform: "Prime Video",
+        status: "4 temporadas completas · sin quinta temporada confirmada",
+        genre: "Comedia / antología",
+        seasons: atascoEpisodeTitles.map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: true
+        })),
+        releasedEpisodes: 24,
+        totalEpisodesPlanned: 24,
+        averageEpisodeMinutes: 25,
+        releasedWatchTimeMinutes: 600,
+        releasedWatchTimeText: "10 h",
+        totalPlannedWatchTimeMinutes: 600,
+        totalPlannedWatchTimeText: "10 h",
+        image: "https://m.media-amazon.com/images/S/pv-target-images/b7a50520fc4b6fb0cc35901301478ea3b43110c5b74f4014df162e213adb10de._SX1080_FMjpg_.jpg",
+        description:
+          "Un monumental embotellamiento en las afueras de Madrid conecta historias breves, sorprendentes, cómicas y emotivas dentro de coches atrapados."
+      },
+      {
+        id: "muertos-sl",
+        title: "Muertos S.L.",
+        platform: "Netflix / Movistar Plus+",
+        status: "Temporada 4 final · estreno completo 07/08/2026",
+        genre: "Comedia / humor negro",
+        seasons: muertosSLEpisodeTitles.map((episodes, index) => ({
+          season: index + 1,
+          episodes,
+          released: index < 3
+        })),
+        releasedEpisodes: 20,
+        totalEpisodesPlanned: 26,
+        averageEpisodeMinutes: 30,
+        releasedWatchTimeMinutes: 600,
+        releasedWatchTimeText: "10 h",
+        totalPlannedWatchTimeMinutes: 780,
+        totalPlannedWatchTimeText: "13 h",
+        nextEpisodeDate: "2026-08-07",
+        finaleDate: "2026-08-07",
+        image: "https://occ-0-7977-114.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABaveK8MuboEzCwhU9hjjwHBzjducieKMGohpvwkLy19UQ8FAstBxPiRg2BLmEt8-yBN8fsd7c2kWJVhxaqrqoea6vKVl729zVGiK.jpg?r=aef",
+        description:
+          "Tras la muerte del dueño de la funeraria Torregrosa, Dámaso intenta hacerse con el negocio, pero termina bajo las órdenes de la viuda y de su desastroso yerno Chemi."
+      },
       {
         id: "machos-alfa",
         title: "Machos Alfa",
@@ -6730,10 +6852,10 @@ Last Forever
         id: "people-magazine-investigates",
         title: "People Magazine Investigates",
         platform: "Investigation Discovery / HBO Max",
-        status: "En emisión · T9: 14/15 disponibles · próximo especial 21/07/2026",
+        status: "T9 completa · 15/15 disponibles · renovación pendiente",
         genre: "True crime / documental",
         seasons: [
-          ...[11, 12, 15, 12, 12, 13, 14, 12].map((episodes, index) => ({
+          ...[11, 13, 15, 12, 12, 13, 14, 12].map((episodes, index) => ({
             season: index + 1,
             episodes,
             released: true
@@ -6741,19 +6863,18 @@ Last Forever
           {
             season: 9,
             episodes: peopleMagazineInvestigatesSeason9EpisodeTitles,
-            released: false,
-            releasedEpisodes: 14,
-            note: "13 episodios regulares y 2 especiales de 2026 · 14 disponibles"
+            released: true,
+            releasedEpisodes: 15,
+            note: "13 episodios regulares y 2 especiales de 2026 · 15 disponibles"
           }
         ],
-        releasedEpisodes: 115,
-        totalEpisodesPlanned: 116,
+        releasedEpisodes: 117,
+        totalEpisodesPlanned: 117,
         averageEpisodeMinutes: 63,
-        releasedWatchTimeMinutes: 7245,
-        releasedWatchTimeText: "120 h 45 min",
-        totalPlannedWatchTimeMinutes: 7308,
-        totalPlannedWatchTimeText: "121 h 48 min",
-        nextEpisodeDate: "2026-07-21",
+        releasedWatchTimeMinutes: 7371,
+        releasedWatchTimeText: "122 h 51 min",
+        totalPlannedWatchTimeMinutes: 7371,
+        totalPlannedWatchTimeText: "122 h 51 min",
         finaleDate: "2026-07-21",
         image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=600&q=80",
         description:
