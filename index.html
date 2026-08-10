@@ -2021,7 +2021,7 @@
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
-            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 27/07/2026.</p>
+            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 08/08/2026.</p>
           </div>
         </div>
         <div class="header-menu" id="homeMenu">
@@ -2175,7 +2175,7 @@
           <div class="mark" aria-hidden="true">CAL</div>
           <div class="title">
             <h1 id="calendarHeading">Calendario</h1>
-            <p>Estrenos de capítulos por día. Datos revisados el 27/07/2026.</p>
+            <p>Estrenos de capítulos por día. Datos revisados el 08/08/2026.</p>
           </div>
         </div>
       </header>
@@ -2236,8 +2236,8 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-07-27";
-    const CONTENT_AVAILABLE_THROUGH = "2026-07-26";
+    const DATA_LAST_UPDATED = "2026-08-08";
+    const CONTENT_AVAILABLE_THROUGH = "2026-08-08";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -4299,7 +4299,20 @@ Last Forever
       { date: "2026-07-31", title: "Quotidienne 33 du 31 juillet 2026" },
       { date: "2026-08-02", title: "Quotidienne 34 du 2 août 2026" },
       { date: "2026-08-03", title: "Quotidienne 35 du 3 août 2026" },
-      { date: "2026-08-04", title: "Quotidienne 36 du 4 août 2026" }
+      { date: "2026-08-04", title: "Quotidienne 36 du 4 août 2026" },
+      { date: "2026-08-05", title: "Quotidienne 37 du 5 août 2026" },
+      { date: "2026-08-06", title: "Quotidienne 38 du 6 août 2026" },
+      { date: "2026-08-06", title: "Prime 7 (Partie 1) du 6 août 2026" },
+      { date: "2026-08-06", title: "Prime 7 (Partie 2) du 6 août 2026" },
+      { date: "2026-08-07", title: "Quotidienne 39 du 7 août 2026" },
+      { date: "2026-08-09", title: "Quotidienne 40 du 9 août 2026" },
+      { date: "2026-08-10", title: "Quotidienne 41 du 10 août 2026" },
+      { date: "2026-08-11", title: "Quotidienne 42 du 11 août 2026" },
+      { date: "2026-08-12", title: "Quotidienne 43 du 12 août 2026" },
+      { date: "2026-08-13", title: "Quotidienne 44 du 13 août 2026" },
+      { date: "2026-08-13", title: "Prime 8 (Partie 1) du 13 août 2026" },
+      { date: "2026-08-13", title: "Prime 8 (Partie 2) du 13 août 2026" },
+      { date: "2026-08-14", title: "Quotidienne 45 du 14 août 2026" }
     ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
@@ -4318,7 +4331,12 @@ Last Forever
       "2026-08-05",
       "2026-08-06",
       "2026-08-07",
-      "2026-08-09"
+      "2026-08-09",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-16",
+      "2026-08-19",
+      "2026-08-20"
     ];
 
     const bigBrotherSeason28EpisodeTitles = [
@@ -4338,7 +4356,12 @@ Last Forever
       "Episode 14",
       "Episode 15 - Live Eviction",
       "Episode 16 - Big Brother Unlocked 8/7/26",
-      "Episode 17"
+      "Episode 17",
+      "Episode 18",
+      "Episode 19 - Live Eviction",
+      "Episode 20",
+      "Episode 21",
+      "Episode 22 - Live Eviction"
     ];
 
     const loveIsBlindUkAfterTheAltarEpisodeTitles = [
@@ -4351,6 +4374,17 @@ Last Forever
       "2026-07-12",
       "2026-07-12",
       "2026-07-12"
+    ];
+
+    const loveIsBlindUkSeason3EpisodeTitles = Array.from(
+      { length: 11 },
+      (_, index) => `Episodio ${index + 1}`
+    );
+
+    const loveIsBlindUkSeason3ReleaseDates = [
+      ...Array(8).fill("2026-08-19"),
+      ...Array(2).fill("2026-08-26"),
+      "2026-08-30"
     ];
 
     const perfectMatchSeason4EpisodeTitles = [
@@ -6231,7 +6265,8 @@ Last Forever
           "Walking Away",
           "Don’t Let Anyone Dim your Sparkle",
           "A Risk Worth Taking?",
-          "The Reunion"
+          "The Reunion",
+          ...loveIsBlindUkAfterTheAltarEpisodeTitles
         ]
       },
       "love-is-blind-france": {
@@ -6468,6 +6503,15 @@ Last Forever
         serieId: "love-is-blind-uk",
         serie: "Love Is Blind: UK",
         platform: "Netflix",
+        season: 2,
+        episode: index + 12,
+        title
+      })),
+      ...loveIsBlindUkSeason3EpisodeTitles.map((title, index) => ({
+        date: loveIsBlindUkSeason3ReleaseDates[index],
+        serieId: "love-is-blind-uk",
+        serie: "Love Is Blind: UK",
+        platform: "Netflix",
         season: 3,
         episode: index + 1,
         title
@@ -6519,21 +6563,20 @@ Last Forever
         id: "muertos-sl",
         title: "Muertos S.L.",
         platform: "Netflix / Movistar Plus+",
-        status: "Temporada 4 final · estreno completo 07/08/2026",
+        status: "Finalizada · 4 temporadas · 26 capítulos · final 07/08/2026",
         genre: "Comedia / humor negro",
         seasons: muertosSLEpisodeTitles.map((episodes, index) => ({
           season: index + 1,
           episodes,
-          released: index < 3
+          released: true
         })),
-        releasedEpisodes: 20,
+        releasedEpisodes: 26,
         totalEpisodesPlanned: 26,
         averageEpisodeMinutes: 30,
-        releasedWatchTimeMinutes: 600,
-        releasedWatchTimeText: "10 h",
+        releasedWatchTimeMinutes: 780,
+        releasedWatchTimeText: "13 h",
         totalPlannedWatchTimeMinutes: 780,
         totalPlannedWatchTimeText: "13 h",
-        nextEpisodeDate: "2026-08-07",
         finaleDate: "2026-08-07",
         image: "https://occ-0-7977-114.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABaveK8MuboEzCwhU9hjjwHBzjducieKMGohpvwkLy19UQ8FAstBxPiRg2BLmEt8-yBN8fsd7c2kWJVhxaqrqoea6vKVl729zVGiK.jpg?r=aef",
         description:
@@ -6939,7 +6982,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en emisión · 10/17 emisiones confirmadas disponibles · próximo 29/07/2026",
+        status: "Temporada 28 en emisión · 16/22 emisiones confirmadas disponibles · próximo 09/08/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -6947,19 +6990,19 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 10 }
+          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 16 }
         ],
-        releasedEpisodes: 980,
-        totalEpisodesPlanned: 987,
+        releasedEpisodes: 986,
+        totalEpisodesPlanned: 992,
         averageEpisodeMinutes: 62,
-        releasedWatchTimeMinutes: 60760,
-        releasedWatchTimeText: "1012 h 40 min",
-        totalPlannedWatchTimeMinutes: 61194,
-        totalPlannedWatchTimeText: "1019 h 54 min",
-        nextEpisodeDate: "2026-07-29",
+        releasedWatchTimeMinutes: 61132,
+        releasedWatchTimeText: "1018 h 52 min",
+        totalPlannedWatchTimeMinutes: 61504,
+        totalPlannedWatchTimeText: "1025 h 4 min",
+        nextEpisodeDate: "2026-08-09",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
-          "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 tiene 17 emisiones confirmadas hasta el 09/08, incluidos los especiales Big Brother: Unlocked."
+          "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 tiene 22 emisiones confirmadas hasta el 20/08, incluidos los especiales Big Brother: Unlocked."
       },
       {
         id: "poker-face-2023",
@@ -7134,28 +7177,37 @@ Last Forever
         id: "love-is-blind-uk",
         title: "Love Is Blind: UK",
         platform: "Netflix",
-        status: "2 temporadas · After the Altar disponible · temporada 3 en verano de 2026",
+        status: "Temporada 3 · estreno 19/08/2026 · 11 capítulos · temporada 4 renovada",
         genre: "Reality / citas",
         seasons: [
           { season: 1, episodes: 12, released: true },
-          { season: 2, episodes: 11, released: true },
+          {
+            season: 2,
+            episodes: 14,
+            released: true,
+            note: "11 capítulos y 3 especiales After the Altar · 12/07/2026"
+          },
           {
             season: 3,
-            episodes: loveIsBlindUkAfterTheAltarEpisodeTitles,
-            released: true,
-            note: "Especial After the Altar · 12/07/2026"
-          }
+            episodes: loveIsBlindUkSeason3EpisodeTitles,
+            released: false,
+            releasedEpisodes: 0,
+            note: "8 capítulos el 19/08, 2 el 26/08 y reunión el 30/08/2026"
+          },
+          { season: 4, episodes: 0, released: false, note: "Renovada · fecha y capítulos pendientes" }
         ],
         releasedEpisodes: 26,
-        totalEpisodesPlanned: 26,
+        totalEpisodesPlanned: 37,
         averageEpisodeMinutes: 55,
         releasedWatchTimeMinutes: 1430,
         releasedWatchTimeText: "23 h 50 min",
-        totalPlannedWatchTimeMinutes: 1430,
-        totalPlannedWatchTimeText: "23 h 50 min",
+        totalPlannedWatchTimeMinutes: 2035,
+        totalPlannedWatchTimeText: "33 h 55 min",
+        nextEpisodeDate: "2026-08-19",
+        finaleDate: "2026-08-30",
         image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80",
         description:
-          "La versión británica del experimento, presentada por Emma y Matt Willis, con solteros que se comprometen antes de verse cara a cara."
+          "La versión británica del experimento, presentada por Emma y Matt Willis, estrena su tercera temporada en tres tandas y ya tiene una cuarta edición confirmada."
       },
       {
         id: "love-is-blind-france",
@@ -7301,8 +7353,8 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 69 vídeos disponibles · próximo 27/07/2026",
-        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Hay emisiones confirmadas hasta el 04/08.",
+        status: "En emisión · temporada 14 · 84 emisiones disponibles · próximo 09/08/2026",
+        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Hay emisiones programadas hasta el 14/08.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -7338,7 +7390,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.filter(episode => episode.date <= CONTENT_AVAILABLE_THROUGH).length,
-            note: "TF1+ · 69 vídeos disponibles y 10 emisiones confirmadas del 27/07 al 04/08/2026",
+            note: "TF1+ · 84 emisiones disponibles y programación confirmada hasta el 14/08/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
@@ -7534,6 +7586,7 @@ Last Forever
         const savedSeasons = new Map(
           serie.seasons.map(season => [Number(season.season), season])
         );
+        const migrateLoveIsBlindUkSpecials = serie.id === "love-is-blind-uk" && !savedSeasons.has(4);
 
         return {
           ...serie,
@@ -7547,10 +7600,16 @@ Last Forever
           seasons: catalogSerie.seasons.map(catalogSeason => {
             const savedSeason = savedSeasons.get(Number(catalogSeason.season));
             const total = seasonTotalFromSource(catalogSeason);
+            const migratedSpecialsWatched = migrateLoveIsBlindUkSpecials && Number(catalogSeason.season) === 2
+              ? Math.max(0, Math.floor(Number(savedSeasons.get(3)?.watched) || 0))
+              : 0;
+            const watched = migrateLoveIsBlindUkSpecials && Number(catalogSeason.season) === 3
+              ? 0
+              : Math.max(0, Math.floor(Number(savedSeason?.watched) || 0)) + migratedSpecialsWatched;
             return {
               season: catalogSeason.season,
               total,
-              watched: Math.min(Math.max(0, Math.floor(Number(savedSeason?.watched) || 0)), total),
+              watched: Math.min(watched, total),
               available: catalogSeason.available !== false,
               releasedEpisodes: Math.max(0, Math.floor(Number(catalogSeason.releasedEpisodes) || 0)),
               note: catalogSeason.note,
@@ -7621,7 +7680,7 @@ Last Forever
           season.total = knownTotal;
           if (!season.note || season.note === "Completar") season.note = "TF1+";
         }
-        if (season.total > 0) season.watched = Math.min(season.watched, availableEpisodeLimit(serie, season));
+        if (season.total > 0) season.watched = Math.min(season.watched, season.total);
       });
       clearWatchDateIfNotStarted(serie);
     }
@@ -7640,7 +7699,7 @@ Last Forever
       ).length;
 
       if (datedEvents.length > 0) {
-        return Math.min(total, datedReleased);
+        return Math.min(total, Math.max(datedReleased, season.releasedEpisodes));
       }
       if (season.releasedEpisodes > 0) {
         return Math.min(total, season.releasedEpisodes);
