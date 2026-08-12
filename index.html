@@ -7765,8 +7765,9 @@ Last Forever
       const pendingMinutes = pendingEpisodes * serie.minutesPerEpisode;
       const daysLeft = pendingEpisodes / serie.episodesPerDay;
       const progress = totalEpisodes ? (watchedEpisodes / totalEpisodes) * 100 : 0;
-      const missingData = serie.seasons.some(season => season.total === 0);
-      return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, progress, missingData };
+      const missingData = serie.seasons.some(season => season.total === 0 && season.available !== false);
+      const upcomingUnknownSeason = serie.seasons.some(season => season.total === 0 && season.available === false);
+      return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, progress, missingData, upcomingUnknownSeason };
     }
 
     function globalTotals(series = state.mySeries) {
@@ -7988,7 +7989,16 @@ Last Forever
     function nextFutureRelease(serie) {
       if (!serie) return null;
       return serie.seasons
-        .map(season => nextFutureReleaseForSeason(serie, season))
+        .flatMap(season => {
+          const nextKnownEpisode = nextFutureReleaseForSeason(serie, season);
+          if (nextKnownEpisode) return [nextKnownEpisode];
+          if (Number(season.total) !== 0 || season.available !== false) return [];
+          return releaseEvents.filter(event =>
+            event.serieId === serie.id &&
+            Number(event.season) === Number(season.season) &&
+            event.date > CONTENT_AVAILABLE_THROUGH
+          );
+        })
         .filter(Boolean)
         .sort((a, b) => a.date.localeCompare(b.date) || Number(a.season) - Number(b.season) || Number(a.episode) - Number(b.episode))[0] || null;
     }
@@ -8031,7 +8041,7 @@ Last Forever
     function statusKind(serie) {
       const totals = serieTotals(serie);
       if (totals.missingData) return "missing";
-      if (totals.futureEpisodes > 0 && totals.pendingEpisodes === 0) return "upcoming";
+      if ((totals.futureEpisodes > 0 || totals.upcomingUnknownSeason) && totals.pendingEpisodes === 0) return "upcoming";
       if (totals.totalEpisodes > 0 && totals.pendingEpisodes === 0) return "completed";
       if (totals.watchedEpisodes > 0) return "watching";
       return "pending";
