@@ -2021,7 +2021,7 @@
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
-            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 08/08/2026.</p>
+            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 12/08/2026.</p>
           </div>
         </div>
         <div class="header-menu" id="homeMenu">
@@ -2175,7 +2175,7 @@
           <div class="mark" aria-hidden="true">CAL</div>
           <div class="title">
             <h1 id="calendarHeading">Calendario</h1>
-            <p>Estrenos de capítulos por día. Datos revisados el 08/08/2026.</p>
+            <p>Estrenos de capítulos por día. Datos revisados el 12/08/2026.</p>
           </div>
         </div>
       </header>
@@ -2211,7 +2211,7 @@
 
       <section class="calendar-day-panel" aria-live="polite">
         <div class="section-title">
-          <h3>Sin fecha confirmada</h3>
+          <h3>Datos pendientes de confirmar</h3>
           <span id="calendarUndatedCount">0 pendientes</span>
         </div>
         <div id="calendarUndatedEvents" class="calendar-events"></div>
@@ -2236,8 +2236,8 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-08-08";
-    const CONTENT_AVAILABLE_THROUGH = "2026-08-08";
+    const DATA_LAST_UPDATED = "2026-08-12";
+    const CONTENT_AVAILABLE_THROUGH = "2026-08-11";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -4312,7 +4312,14 @@ Last Forever
       { date: "2026-08-13", title: "Quotidienne 44 du 13 août 2026" },
       { date: "2026-08-13", title: "Prime 8 (Partie 1) du 13 août 2026" },
       { date: "2026-08-13", title: "Prime 8 (Partie 2) du 13 août 2026" },
-      { date: "2026-08-14", title: "Quotidienne 45 du 14 août 2026" }
+      { date: "2026-08-14", title: "Quotidienne 45 du 14 août 2026" },
+      { date: "2026-08-16", title: "Quotidienne 46 du 16 août 2026" },
+      { date: "2026-08-17", title: "Quotidienne 47 du 17 août 2026" },
+      { date: "2026-08-18", title: "Quotidienne 48 du 18 août 2026" },
+      { date: "2026-08-19", title: "Quotidienne 49 du 19 août 2026" },
+      { date: "2026-08-20", title: "Quotidienne 50 du 20 août 2026" },
+      { date: "2026-08-20", title: "La finale (Partie 1)" },
+      { date: "2026-08-20", title: "La finale (Partie 2)" }
     ];
     const bigBrotherSeason28ReleaseDates = [
       "2026-07-09",
@@ -6388,6 +6395,15 @@ Last Forever
     };
 
     const releaseEvents = [
+      {
+        date: "2026-08-25",
+        serieId: "koh-lanta",
+        serie: "Koh-Lanta",
+        platform: "TF1 / TF1+",
+        season: 34,
+        episode: 1,
+        title: "Estreno de Koh-Lanta All Stars"
+      },
       ...muertosSLEpisodeTitles[3].map((title, index) => ({
         date: "2026-08-07",
         serieId: "muertos-sl",
@@ -6982,7 +6998,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en emisión · 16/22 emisiones confirmadas disponibles · próximo 09/08/2026",
+        status: "Temporada 28 en emisión · 17/22 emisiones confirmadas disponibles · próximo 12/08/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -6990,16 +7006,16 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 16 }
+          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 17 }
         ],
-        releasedEpisodes: 986,
+        releasedEpisodes: 987,
         totalEpisodesPlanned: 992,
         averageEpisodeMinutes: 62,
-        releasedWatchTimeMinutes: 61132,
-        releasedWatchTimeText: "1018 h 52 min",
+        releasedWatchTimeMinutes: 61194,
+        releasedWatchTimeText: "1019 h 54 min",
         totalPlannedWatchTimeMinutes: 61504,
         totalPlannedWatchTimeText: "1025 h 4 min",
-        nextEpisodeDate: "2026-08-09",
+        nextEpisodeDate: "2026-08-12",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
           "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 tiene 22 emisiones confirmadas hasta el 20/08, incluidos los especiales Big Brother: Unlocked."
@@ -7291,7 +7307,7 @@ Last Forever
           {
             season: 4,
             episodes: perfectMatchSeason4EpisodeTitles,
-            released: false,
+            released: true,
             note: "Temporada 4 completa"
           }
         ],
@@ -7315,8 +7331,8 @@ Last Forever
         name: "Koh-Lanta",
         emoji: "TF1",
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-        status: "Les Reliques du destin completa · 16 episodios · final 23/06/2026",
-        description: "Telerrealidad francesa de aventura · TF1 · temporadas regulares; no incluye ediciones especiales ni temporadas canceladas.",
+        status: "33 temporadas emitidas · T34 All Stars se estrena el 25/08/2026 · episodios pendientes",
+        description: "Telerrealidad francesa de aventura · TF1 · cronología oficial completa con las siete ediciones especiales emitidas (All Stars, crossover e híbrida). La T34 All Stars se estrena el 25/08/2026; no se cuentan las producciones canceladas.",
         minutesPerEpisode: 110,
         episodesPerDay: 1,
         seasons: [
@@ -7328,24 +7344,32 @@ Last Forever
           { season: 6, total: 13, watched: 0, note: "Vanuatu" },
           { season: 7, total: 13, watched: 0, note: "Palawan" },
           { season: 8, total: 13, watched: 0, note: "Caramoan" },
-          { season: 9, total: 13, watched: 0, note: "Palau" },
-          { season: 10, total: 14, watched: 0, note: "Viêtnam" },
-          { season: 11, total: 14, watched: 0, note: "Raja Ampat" },
-          { season: 12, total: 14, watched: 0, note: "Malaisie" },
-          { season: 14, total: 14, watched: 0, note: "Johor" },
-          { season: 15, total: 14, watched: 0, note: "Thaïlande" },
-          { season: 16, total: 14, watched: 0, note: "L'Île au trésor" },
-          { season: 17, total: 14, watched: 0, note: "Cambodge" },
-          { season: 18, total: 14, watched: 0, note: "Fidji" },
-          { season: 20, total: 14, watched: 0, note: "La Guerre des chefs" },
-          { season: 21, total: 15, watched: 0, note: "Les 4 Terres" },
-          { season: 22, total: 13, watched: 0, note: "Les Armes secrètes" },
-          { season: 23, total: 17, watched: 0, note: "Le Totem maudit" },
-          { season: 24, total: 17, watched: 0, note: "Le Feu sacré" },
-          { season: 25, total: 16, watched: 0, note: "Les Chasseurs d'immunité" },
-          { season: 26, total: 16, watched: 0, note: "La Tribu maudite" },
-          { season: 27, total: 17, watched: 0, note: "La Revanche des 4 Terres" },
-          { season: 28, total: 16, watched: 0, note: "Les Reliques du destin · temporada completa; final 23/06/2026", releasedEpisodes: 16 }
+          { season: 9, total: 9, watched: 0, note: "Le Retour des héros · All Stars (1.ª edición especial)" },
+          { season: 10, total: 13, watched: 0, note: "Palau" },
+          { season: 11, total: 9, watched: 0, note: "Le Choc des héros · edición especial (exconcursantes contra deportistas)" },
+          { season: 12, total: 14, watched: 0, note: "Viêtnam" },
+          { season: 13, total: 14, watched: 0, note: "Raja Ampat" },
+          { season: 14, total: 9, watched: 0, note: "La Revanche des héros · All Stars (3.ª edición especial)" },
+          { season: 15, total: 14, watched: 0, note: "Malaisie" },
+          { season: 16, total: 9, watched: 0, note: "La Nouvelle Édition · All Stars (4.ª edición especial)" },
+          { season: 17, total: 14, watched: 0, note: "Johor" },
+          { season: 18, total: 14, watched: 0, note: "Thaïlande" },
+          { season: 19, total: 14, watched: 0, note: "L'Île au trésor" },
+          { season: 20, total: 14, watched: 0, note: "Cambodge" },
+          { season: 21, total: 14, watched: 0, note: "Fidji" },
+          { season: 22, total: 11, watched: 0, note: "Le Combat des héros · All Stars (5.ª edición especial)" },
+          { season: 23, total: 14, watched: 0, note: "La Guerre des chefs" },
+          { season: 24, total: 15, watched: 0, note: "L'Île des Héros · edición especial híbrida (veteranos y nuevos)" },
+          { season: 25, total: 15, watched: 0, note: "Les 4 Terres" },
+          { season: 26, total: 13, watched: 0, note: "Les Armes secrètes" },
+          { season: 27, total: 15, watched: 0, note: "La Légende · All Stars (7.ª edición especial)" },
+          { season: 28, total: 17, watched: 0, note: "Le Totem maudit" },
+          { season: 29, total: 17, watched: 0, note: "Le Feu sacré" },
+          { season: 30, total: 16, watched: 0, note: "Les Chasseurs d'immunité" },
+          { season: 31, total: 16, watched: 0, note: "La Tribu maudite" },
+          { season: 32, total: 17, watched: 0, note: "La Revanche des 4 Terres" },
+          { season: 33, total: 16, watched: 0, note: "Les Reliques du destin · temporada completa; final 23/06/2026", releasedEpisodes: 16 },
+          { season: 34, total: 0, watched: 0, note: "Koh-Lanta All Stars · estreno 25/08/2026 a las 21:10; número de capítulos pendiente", available: false }
         ]
       },
       {
@@ -7353,8 +7377,8 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 84 emisiones disponibles · próximo 09/08/2026",
-        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Hay emisiones programadas hasta el 14/08.",
+        status: "En emisión · temporada 14 · 87/99 emisiones disponibles · próximo 12/08/2026 · final 20/08/2026",
+        description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Programación confirmada hasta la final del 20/08.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
         seasons: [
@@ -7390,7 +7414,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.filter(episode => episode.date <= CONTENT_AVAILABLE_THROUGH).length,
-            note: "TF1+ · 84 emisiones disponibles y programación confirmada hasta el 14/08/2026",
+            note: "TF1+ · 87 emisiones disponibles y programación confirmada hasta la final del 20/08/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
@@ -7586,6 +7610,9 @@ Last Forever
         const savedSeasons = new Map(
           serie.seasons.map(season => [Number(season.season), season])
         );
+        const savedKohLantaSeasonsByTitle = serie.id === "koh-lanta"
+          ? new Map(serie.seasons.map(season => [seasonTitleKey(season.note), season]).filter(([key]) => key))
+          : null;
         const migrateLoveIsBlindUkSpecials = serie.id === "love-is-blind-uk" && !savedSeasons.has(4);
 
         return {
@@ -7598,7 +7625,10 @@ Last Forever
           minutesPerEpisode: catalogSerie.minutesPerEpisode,
           episodesPerDay: Number(serie.episodesPerDay) || catalogSerie.episodesPerDay,
           seasons: catalogSerie.seasons.map(catalogSeason => {
-            const savedSeason = savedSeasons.get(Number(catalogSeason.season));
+            const savedSeason = savedKohLantaSeasonsByTitle
+              ? savedKohLantaSeasonsByTitle.get(seasonTitleKey(catalogSeason.note))
+                || (Number(catalogSeason.season) <= 8 ? savedSeasons.get(Number(catalogSeason.season)) : undefined)
+              : savedSeasons.get(Number(catalogSeason.season));
             const total = seasonTotalFromSource(catalogSeason);
             const migratedSpecialsWatched = migrateLoveIsBlindUkSpecials && Number(catalogSeason.season) === 2
               ? Math.max(0, Math.floor(Number(savedSeasons.get(3)?.watched) || 0))
@@ -7619,6 +7649,16 @@ Last Forever
         };
       });
       return nextState;
+    }
+
+    function seasonTitleKey(note) {
+      return String(note || "")
+        .split("·")[0]
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
     }
 
     function makeImportId(name, index) {
@@ -7689,13 +7729,12 @@ Last Forever
       const total = Math.max(0, Math.floor(Number(season?.total) || 0));
       if (!total) return 0;
 
-      const todayKey = dateKeyFromDate(new Date());
       const datedEvents = releaseEvents.filter(event =>
         event.serieId === serie.id &&
         Number(event.season) === Number(season.season)
       );
       const datedReleased = datedEvents.filter(event =>
-        event.date <= todayKey
+        event.date <= CONTENT_AVAILABLE_THROUGH
       ).length;
 
       if (datedEvents.length > 0) {
@@ -7762,7 +7801,11 @@ Last Forever
       if (!isFinite(days) || days <= 0) return "Hoy";
       const date = new Date();
       date.setDate(date.getDate() + Math.ceil(days));
-      return date.toLocaleDateString("es-ES", { day: "2-digit", month: "short" });
+      return date.toLocaleDateString("es-ES", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric"
+      });
     }
 
     function dateFromKey(key) {
@@ -7849,13 +7892,12 @@ Last Forever
     }
 
     function undatedUpcomingForFollowedSeries() {
-      const todayKey = dateKeyFromDate(new Date());
       return state.mySeries.flatMap(serie => serie.seasons.flatMap(season => {
         const total = Math.max(0, Math.floor(Number(season.total) || 0));
         const datedFutureCount = releaseEvents.filter(event =>
           event.serieId === serie.id &&
           Number(event.season) === Number(season.season) &&
-          event.date > todayKey
+          event.date > CONTENT_AVAILABLE_THROUGH
         ).length;
 
         if (total === 0 && season.available === false) {
@@ -7863,7 +7905,8 @@ Last Forever
             serieId: serie.id,
             serie: serie.name,
             season: season.season,
-            label: "Temporada confirmada",
+            pendingKind: datedFutureCount ? "capítulos pendientes" : "fecha pendiente",
+            label: datedFutureCount ? "Número de capítulos pendiente" : "Temporada confirmada",
             note: season.note || "Estreno y número de capítulos sin confirmar"
           }];
         }
@@ -7874,6 +7917,7 @@ Last Forever
           serieId: serie.id,
           serie: serie.name,
           season: season.season,
+          pendingKind: "fecha pendiente",
           label: `${undatedCount} capítulo${undatedCount === 1 ? "" : "s"} anunciado${undatedCount === 1 ? "" : "s"}`,
           note: season.note || "Fecha pendiente"
         }];
@@ -7938,8 +7982,7 @@ Last Forever
       ) + 1;
       if (nextEpisodeNumber > total) return null;
       const event = releaseEventForEpisode(serie, season, nextEpisodeNumber);
-      const todayKey = dateKeyFromDate(new Date());
-      return event?.date > todayKey ? event : null;
+      return event?.date > CONTENT_AVAILABLE_THROUGH ? event : null;
     }
 
     function nextFutureRelease(serie) {
@@ -8396,14 +8439,13 @@ Last Forever
           </div>
         ` : "";
         const episodes = normalizeEpisodeList(season.episodes);
-        const todayKey = dateKeyFromDate(new Date());
         const episodeList = episodes.length ? `
           <details class="episode-disclosure" ${isSeasonInProgress || nextFutureRelease ? "open" : ""}>
             <summary>${isSeasonInProgress || nextFutureRelease ? "Capítulos" : `Ver nombres de los ${episodes.length} capítulos`}</summary>
             <ol class="episode-list" aria-label="Capítulos de la temporada ${season.season}">
               ${episodes.map(episode => {
                 const episodeRelease = releaseEventForEpisode(serie, season, episode.number);
-                const releaseText = episodeRelease?.date > todayKey ? releaseAvailabilityText(episodeRelease) : "";
+                const releaseText = episodeRelease?.date > CONTENT_AVAILABLE_THROUGH ? releaseAvailabilityText(episodeRelease) : "";
                 const episodeClass = [
                   episode.number <= season.watched ? "watched" : "",
                   episode.number === season.watched + 1 && season.watched < season.total ? "next" : "",
@@ -8536,12 +8578,12 @@ Last Forever
       undatedContainer.innerHTML = undatedItems.length
         ? undatedItems.map(item => `
           <article class="calendar-event" style="--card-a:${paletteFor(item.serieId).a}">
-            <small>Temporada ${item.season} · fecha pendiente</small>
+            <small>Temporada ${item.season} · ${escapeHtml(item.pendingKind || "fecha pendiente")}</small>
             <b>${escapeHtml(item.serie)}</b>
             <span>${escapeHtml(item.label)} · ${escapeHtml(item.note)}</span>
           </article>
         `).join("")
-        : `<div class="calendar-empty">No hay estrenos pendientes sin fecha.</div>`;
+        : `<div class="calendar-empty">No hay datos pendientes de confirmar.</div>`;
 
       if (!selectedEvents.length) {
         eventsContainer.innerHTML = `<div class="calendar-empty">No hay capítulos nuevos este día.</div>`;
