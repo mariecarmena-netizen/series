@@ -805,6 +805,61 @@
       align-content: center;
     }
 
+    .serie-labels {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .platform-icons {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .platform-icon {
+      min-width: 27px;
+      height: 24px;
+      padding: 0 6px;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(23, 26, 24, .12);
+      border-radius: 7px;
+      box-shadow: 0 3px 9px rgba(23, 26, 24, .12);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -.03em;
+      white-space: nowrap;
+    }
+
+    .platform-netflix { color: #fff; background: #e50914; font-size: 16px; }
+    .platform-prime-video { color: #00a8e1; background: #101820; font-size: 9px; }
+    .platform-apple-tv { color: #fff; background: #050505; font-size: 12px; }
+    .platform-max { color: #fff; background: #002be7; font-size: 12px; }
+    .platform-hbo { color: #fff; background: #111; font-size: 9px; }
+    .platform-disney-plus { color: #fff; background: #113ccf; font-size: 11px; }
+    .platform-hulu { color: #0b301f; background: #1ce783; font-size: 9px; }
+    .platform-fx { color: #fff; background: #171717; font-size: 12px; }
+    .platform-paramount-plus { color: #fff; background: #0064ff; font-size: 10px; }
+    .platform-skyshowtime { color: #fff; background: linear-gradient(135deg, #ff4fa8, #6a32f5 58%, #1539b8); font-size: 8px; }
+    .platform-showtime { color: #fff; background: #e51937; font-size: 8px; }
+    .platform-tf1 { color: #fff; background: linear-gradient(90deg, #21479b 0 34%, #fff 34% 66%, #e72530 66%); text-shadow: 0 1px 2px rgba(0, 0, 0, .8); font-size: 9px; }
+    .platform-tf1-plus { color: #fff; background: linear-gradient(135deg, #1d41c7, #9b37d7); font-size: 9px; }
+    .platform-id { color: #fff; background: #1c1c1c; border-bottom-color: #e3272e; font-size: 11px; }
+    .platform-peacock { color: #fff; background: #050505; font-size: 9px; }
+    .platform-movistar-plus { color: #fff; background: #0797a5; font-size: 11px; }
+    .platform-natgeo { color: #111; background: #ffd500; font-size: 8px; }
+    .platform-cbs { color: #fff; background: #183a86; font-size: 8px; }
+    .platform-abc { color: #fff; background: #111; border-radius: 50%; font-size: 9px; }
+    .platform-unknown { color: #42504a; background: #eef1ef; font-size: 12px; }
+
     .serie-card h2,
     .catalog-card h3,
     .season-head h4 {
@@ -2021,7 +2076,7 @@
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
-            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 12/08/2026.</p>
+            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 17/08/2026.</p>
           </div>
         </div>
         <div class="header-menu" id="homeMenu">
@@ -2175,7 +2230,7 @@
           <div class="mark" aria-hidden="true">CAL</div>
           <div class="title">
             <h1 id="calendarHeading">Calendario</h1>
-            <p>Estrenos de capítulos por día. Datos revisados el 12/08/2026.</p>
+            <p>Estrenos de capítulos por día. Datos revisados el 17/08/2026.</p>
           </div>
         </div>
       </header>
@@ -2236,8 +2291,8 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-08-12";
-    const CONTENT_AVAILABLE_THROUGH = "2026-08-11";
+    const DATA_LAST_UPDATED = "2026-08-17";
+    const CONTENT_AVAILABLE_THROUGH = "2026-08-17";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -3333,6 +3388,302 @@
       }
     ],
     "image": "https://static.tvmaze.com/uploads/images/medium_portrait/478/1195717.jpg"
+  },
+  {
+    "id": "the-beauty",
+    "title": "The Beauty",
+    "platform": "Disney+ / Hulu / FX",
+    "status": "Temporada 1 completa · 11 capítulos · renovación pendiente",
+    "genre": "Terror corporal / ciencia ficción / thriller",
+    "description": "Dos agentes del FBI investigan una epidemia que promete belleza perfecta, pero provoca consecuencias letales y destapa una conspiración mundial.",
+    "averageEpisodeMinutes": 50,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": 11,
+        "released": true
+      }
+    ],
+    "releasedEpisodes": 11,
+    "totalEpisodesPlanned": 11,
+    "releasedWatchTimeMinutes": 550,
+    "releasedWatchTimeText": "9 h 10 min",
+    "totalPlannedWatchTimeMinutes": 550,
+    "totalPlannedWatchTimeText": "9 h 10 min",
+    "image": "https://www.tvinsider.com/wp-content/uploads/2025/11/The-Beauty-Key-Art-scaled.jpg"
+  },
+  {
+    "id": "grotesquerie",
+    "title": "Grotesquerie",
+    "platform": "Disney+ / Hulu / FX",
+    "status": "Temporada 1 completa · 10 capítulos · sin segunda temporada confirmada",
+    "genre": "Terror / drama / misterio",
+    "description": "Una detective y una monja periodista investigan una cadena de crímenes rituales cada vez más inquietantes y personales.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": 10,
+        "released": true
+      }
+    ],
+    "releasedEpisodes": 10,
+    "totalEpisodesPlanned": 10,
+    "releasedWatchTimeMinutes": 450,
+    "releasedWatchTimeText": "7 h 30 min",
+    "totalPlannedWatchTimeMinutes": 450,
+    "totalPlannedWatchTimeText": "7 h 30 min",
+    "image": "https://whatsondisneyplus.b-cdn.net/wp-content/uploads/2024/08/grot-2.jpg"
+  },
+  {
+    "id": "squid-game",
+    "title": "Squid Game",
+    "platform": "Netflix",
+    "status": "Finalizada · 3 temporadas · 22 capítulos",
+    "genre": "Thriller / supervivencia / drama",
+    "description": "Personas endeudadas compiten en juegos infantiles mortales por un premio millonario mientras Seong Gi-hun intenta acabar con el sistema.",
+    "averageEpisodeMinutes": 55,
+    "seasons": [
+      { "season": 1, "episodes": 9, "released": true },
+      { "season": 2, "episodes": 7, "released": true },
+      { "season": 3, "episodes": 6, "released": true }
+    ],
+    "releasedEpisodes": 22,
+    "totalEpisodesPlanned": 22,
+    "releasedWatchTimeMinutes": 1210,
+    "releasedWatchTimeText": "20 h 10 min",
+    "totalPlannedWatchTimeMinutes": 1210,
+    "totalPlannedWatchTimeText": "20 h 10 min",
+    "image": "https://resurse.liternet.net/imagini/agenda/imagini05/squidgame0.jpg"
+  },
+  {
+    "id": "squid-game-the-challenge",
+    "title": "Squid Game: The Challenge",
+    "platform": "Netflix",
+    "status": "2 temporadas completas · temporada 3 confirmada como The VIP Challenge",
+    "genre": "Reality / competición",
+    "description": "Cientos de concursantes afrontan pruebas inspiradas en Squid Game para ganar un premio de 4,56 millones de dólares.",
+    "averageEpisodeMinutes": 55,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true },
+      { "season": 2, "episodes": 9, "released": true },
+      {
+        "season": 3,
+        "episodes": 0,
+        "released": false,
+        "note": "The VIP Challenge · fecha y capítulos pendientes"
+      }
+    ],
+    "releasedEpisodes": 19,
+    "totalEpisodesPlanned": 19,
+    "releasedWatchTimeMinutes": 1045,
+    "releasedWatchTimeText": "17 h 25 min",
+    "totalPlannedWatchTimeMinutes": 1045,
+    "totalPlannedWatchTimeText": "17 h 25 min",
+    "image": "https://image.tmdb.org/t/p/original/wcSMuiCY95YCB4Cb9DO2agpKD57.jpg"
+  },
+  {
+    "id": "lupin",
+    "title": "Lupin",
+    "platform": "Netflix",
+    "status": "Parte 4 confirmada · 8 capítulos · estreno 23/10/2026",
+    "genre": "Misterio / crimen / aventuras",
+    "description": "Assane Diop usa su ingenio y el legado de Arsène Lupin para ejecutar golpes imposibles, proteger a su familia y ajustar cuentas.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [
+      { "season": 1, "episodes": 5, "released": true },
+      { "season": 2, "episodes": 5, "released": true },
+      { "season": 3, "episodes": 7, "released": true },
+      {
+        "season": 4,
+        "episodes": 8,
+        "released": false,
+        "note": "Parte 4 · estreno completo el 23/10/2026"
+      }
+    ],
+    "releasedEpisodes": 17,
+    "totalEpisodesPlanned": 25,
+    "releasedWatchTimeMinutes": 765,
+    "releasedWatchTimeText": "12 h 45 min",
+    "totalPlannedWatchTimeMinutes": 1125,
+    "totalPlannedWatchTimeText": "18 h 45 min",
+    "nextEpisodeDate": "2026-10-23",
+    "finaleDate": "2026-10-23",
+    "image": "https://m.media-amazon.com/images/M/MV5BNjk5OWM1NGItYTQzNi00ZjU1LTk1MTEtZmFmZjNhYWYyMTA2XkEyXkFqcGc%40._V1_.jpg"
+  },
+  {
+    "id": "black-mirror",
+    "title": "Black Mirror",
+    "platform": "Netflix",
+    "status": "7 temporadas completas · temporada 8 confirmada",
+    "genre": "Ciencia ficción / antología / thriller",
+    "description": "Historias independientes exploran cómo la tecnología amplifica los deseos, miedos y contradicciones de la sociedad contemporánea.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      { "season": 1, "episodes": 3, "released": true },
+      { "season": 2, "episodes": 3, "released": true },
+      { "season": 3, "episodes": 6, "released": true },
+      { "season": 4, "episodes": 6, "released": true },
+      { "season": 5, "episodes": 3, "released": true },
+      { "season": 6, "episodes": 5, "released": true },
+      { "season": 7, "episodes": 6, "released": true },
+      {
+        "season": 8,
+        "episodes": 0,
+        "released": false,
+        "note": "Confirmada · estreno y capítulos pendientes"
+      }
+    ],
+    "releasedEpisodes": 32,
+    "totalEpisodesPlanned": 32,
+    "releasedWatchTimeMinutes": 1920,
+    "releasedWatchTimeText": "32 h",
+    "totalPlannedWatchTimeMinutes": 1920,
+    "totalPlannedWatchTimeText": "32 h",
+    "image": "https://static.tvmaze.com/uploads/images/original_untouched/200/500433.jpg"
+  },
+  {
+    "id": "westworld",
+    "title": "Westworld",
+    "platform": "HBO",
+    "status": "Cancelada · 4 temporadas · 36 capítulos",
+    "genre": "Ciencia ficción / western / drama",
+    "description": "Anfitriones androides de un parque temático adquieren conciencia y desafían a quienes diseñaron y controlaron sus vidas.",
+    "averageEpisodeMinutes": 62,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true },
+      { "season": 2, "episodes": 10, "released": true },
+      { "season": 3, "episodes": 8, "released": true },
+      { "season": 4, "episodes": 8, "released": true }
+    ],
+    "releasedEpisodes": 36,
+    "totalEpisodesPlanned": 36,
+    "releasedWatchTimeMinutes": 2232,
+    "releasedWatchTimeText": "37 h 12 min",
+    "totalPlannedWatchTimeMinutes": 2232,
+    "totalPlannedWatchTimeText": "37 h 12 min",
+    "image": "https://de.web.img2.acsta.net/pictures/16/09/01/14/52/298580.jpg"
+  },
+  {
+    "id": "the-white-lotus",
+    "title": "The White Lotus",
+    "platform": "HBO Max",
+    "status": "3 temporadas completas · temporada 4 confirmada",
+    "genre": "Comedia dramática / sátira / misterio",
+    "description": "Huéspedes y trabajadores de resorts de lujo atraviesan vacaciones marcadas por privilegio, tensión social y muertes inesperadas.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      { "season": 1, "episodes": 6, "released": true },
+      { "season": 2, "episodes": 7, "released": true },
+      { "season": 3, "episodes": 8, "released": true },
+      {
+        "season": 4,
+        "episodes": 0,
+        "released": false,
+        "note": "Confirmada · estreno y capítulos pendientes"
+      }
+    ],
+    "releasedEpisodes": 21,
+    "totalEpisodesPlanned": 21,
+    "releasedWatchTimeMinutes": 1260,
+    "releasedWatchTimeText": "21 h",
+    "totalPlannedWatchTimeMinutes": 1260,
+    "totalPlannedWatchTimeText": "21 h",
+    "image": "https://cdn-0.tvprofil.com/img/covers/img356473-13406094.jpg"
+  },
+  {
+    "id": "only-murders-in-the-building",
+    "title": "Only Murders in the Building",
+    "platform": "Disney+ / Hulu",
+    "status": "5 temporadas completas · temporada 6 confirmada",
+    "genre": "Comedia / misterio / crimen",
+    "description": "Tres vecinos aficionados al true crime investigan asesinatos relacionados con su edificio mientras producen un pódcast sobre cada caso.",
+    "averageEpisodeMinutes": 34,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true },
+      { "season": 2, "episodes": 10, "released": true },
+      { "season": 3, "episodes": 10, "released": true },
+      { "season": 4, "episodes": 10, "released": true },
+      { "season": 5, "episodes": 10, "released": true },
+      {
+        "season": 6,
+        "episodes": 0,
+        "released": false,
+        "note": "Renovada · ambientada en Londres · estreno y capítulos pendientes"
+      }
+    ],
+    "releasedEpisodes": 50,
+    "totalEpisodesPlanned": 50,
+    "releasedWatchTimeMinutes": 1700,
+    "releasedWatchTimeText": "28 h 20 min",
+    "totalPlannedWatchTimeMinutes": 1700,
+    "totalPlannedWatchTimeText": "28 h 20 min",
+    "image": "https://vader-prod.s3.amazonaws.com/1631646915-201-omitb-keyart-rgb-fin-digital-1631646495.jpg"
+  },
+  {
+    "id": "dexter",
+    "title": "Dexter",
+    "platform": "SkyShowtime / Showtime",
+    "status": "Finalizada · 8 temporadas · 96 capítulos",
+    "genre": "Crimen / drama / thriller",
+    "description": "Un analista forense de Miami lleva una doble vida como asesino en serie que dirige sus impulsos contra criminales impunes.",
+    "averageEpisodeMinutes": 53,
+    "seasons": [12, 12, 12, 12, 12, 12, 12, 12].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 96,
+    "totalEpisodesPlanned": 96,
+    "releasedWatchTimeMinutes": 5088,
+    "releasedWatchTimeText": "84 h 48 min",
+    "totalPlannedWatchTimeMinutes": 5088,
+    "totalPlannedWatchTimeText": "84 h 48 min",
+    "image": "https://image.tmdb.org/t/p/w500/uNvK9huYnShhVrYhSNMxfdGddPL.jpg"
+  },
+  {
+    "id": "dexter-new-blood",
+    "title": "Dexter: New Blood",
+    "platform": "SkyShowtime / Showtime",
+    "status": "Finalizada · 1 temporada · 10 capítulos",
+    "genre": "Crimen / drama / thriller",
+    "description": "Diez años después de desaparecer, Dexter vive con otra identidad en Iron Lake hasta que nuevos crímenes reavivan su oscuro impulso.",
+    "averageEpisodeMinutes": 55,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true }
+    ],
+    "releasedEpisodes": 10,
+    "totalEpisodesPlanned": 10,
+    "releasedWatchTimeMinutes": 550,
+    "releasedWatchTimeText": "9 h 10 min",
+    "totalPlannedWatchTimeMinutes": 550,
+    "totalPlannedWatchTimeText": "9 h 10 min",
+    "image": "https://images.squarespace-cdn.com/content/v1/53da9b93e4b093eed4b6b5fd/fced683f-2444-4fb0-8040-399a2b8c108a/Dexter-Nothing-To-See-Here.jpg"
+  },
+  {
+    "id": "dexter-resurrection",
+    "title": "Dexter: Resurrection",
+    "platform": "SkyShowtime / Paramount+",
+    "status": "Temporada 1 completa · temporada 2 en producción",
+    "genre": "Crimen / drama / thriller",
+    "description": "Dexter despierta tras los hechos de New Blood y viaja a Nueva York para encontrar a Harrison mientras su pasado vuelve a perseguirlo.",
+    "averageEpisodeMinutes": 50,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true },
+      {
+        "season": 2,
+        "episodes": 0,
+        "released": false,
+        "note": "En producción · estreno y capítulos pendientes"
+      }
+    ],
+    "releasedEpisodes": 10,
+    "totalEpisodesPlanned": 10,
+    "releasedWatchTimeMinutes": 500,
+    "releasedWatchTimeText": "8 h 20 min",
+    "totalPlannedWatchTimeMinutes": 500,
+    "totalPlannedWatchTimeText": "8 h 20 min",
+    "image": "https://image.tmdb.org/t/p/w500/hRD9kvYLbySRvtt9Nh7QK6XECZX.jpg"
   }
 ];
 
@@ -6532,6 +6883,15 @@ Last Forever
         episode: index + 1,
         title
       })),
+      ...Array.from({ length: 8 }, (_, index) => ({
+        date: "2026-10-23",
+        serieId: "lupin",
+        serie: "Lupin",
+        platform: "Netflix",
+        season: 4,
+        episode: index + 1,
+        title: `Episodio ${index + 1}`
+      })),
       ...perfectMatchSeason4EpisodeTitles.map((title, index) => ({
         date: perfectMatchSeason4ReleaseDates[index],
         serieId: "perfect-match",
@@ -6998,7 +7358,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en emisión · 17/22 emisiones confirmadas disponibles · próximo 12/08/2026",
+        status: "Temporada 28 en emisión · 20/22 emisiones confirmadas disponibles · próximo 19/08/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -7006,16 +7366,16 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 17 }
+          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 20 }
         ],
-        releasedEpisodes: 987,
+        releasedEpisodes: 990,
         totalEpisodesPlanned: 992,
         averageEpisodeMinutes: 62,
-        releasedWatchTimeMinutes: 61194,
-        releasedWatchTimeText: "1019 h 54 min",
+        releasedWatchTimeMinutes: 61380,
+        releasedWatchTimeText: "1023 h",
         totalPlannedWatchTimeMinutes: 61504,
         totalPlannedWatchTimeText: "1025 h 4 min",
-        nextEpisodeDate: "2026-08-12",
+        nextEpisodeDate: "2026-08-19",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
           "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 tiene 22 emisiones confirmadas hasta el 20/08, incluidos los especiales Big Brother: Unlocked."
@@ -7330,6 +7690,7 @@ Last Forever
         id: "koh-lanta",
         name: "Koh-Lanta",
         emoji: "TF1",
+        platform: "TF1 / TF1+",
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
         status: "33 temporadas emitidas · T34 All Stars se estrena el 25/08/2026 · episodios pendientes",
         description: "Telerrealidad francesa de aventura · TF1 · cronología oficial completa con las siete ediciones especiales emitidas (All Stars, crossover e híbrida). La T34 All Stars se estrena el 25/08/2026; no se cuentan las producciones canceladas.",
@@ -7376,8 +7737,9 @@ Last Forever
         id: "secret-story",
         name: "Secret Story",
         emoji: "TV",
+        platform: "TF1+",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 87/99 emisiones disponibles · próximo 12/08/2026 · final 20/08/2026",
+        status: "En emisión · temporada 14 · 94/99 emisiones disponibles · próximo 18/08/2026 · final 20/08/2026",
         description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Programación confirmada hasta la final del 20/08.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
@@ -7414,7 +7776,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.filter(episode => episode.date <= CONTENT_AVAILABLE_THROUGH).length,
-            note: "TF1+ · 87 emisiones disponibles y programación confirmada hasta la final del 20/08/2026",
+            note: "TF1+ · 94 emisiones disponibles y programación confirmada hasta la final del 20/08/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
@@ -7509,6 +7871,75 @@ Last Forever
       return `<img src="${escapeHtml(serie.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`;
     }
 
+    const platformBadges = [
+      { key: "skyshowtime", name: "SkyShowtime", mark: "Sky", aliases: ["skyshowtime"] },
+      { key: "prime-video", name: "Prime Video", mark: "prime", aliases: ["amazon prime video", "prime video"] },
+      { key: "apple-tv", name: "Apple TV", mark: "tv", aliases: ["apple tv+", "apple tv"] },
+      { key: "paramount-plus", name: "Paramount+", mark: "P+", aliases: ["paramount+"] },
+      { key: "disney-plus", name: "Disney+", mark: "D+", aliases: ["disney+"] },
+      { key: "movistar-plus", name: "Movistar Plus+", mark: "M+", aliases: ["movistar plus+"] },
+      { key: "tf1-plus", name: "TF1+", mark: "TF1+", aliases: ["tf1+"] },
+      { key: "max", name: "HBO Max", mark: "max", aliases: ["hbo max", "max"] },
+      { key: "id", name: "Investigation Discovery", mark: "ID", aliases: ["investigation discovery"] },
+      { key: "natgeo", name: "National Geographic", mark: "NG", aliases: ["national geographic"] },
+      { key: "showtime", name: "Showtime", mark: "SHO", aliases: ["showtime"] },
+      { key: "netflix", name: "Netflix", mark: "N", aliases: ["netflix"] },
+      { key: "peacock", name: "Peacock", mark: "P•", aliases: ["peacock"] },
+      { key: "hulu", name: "Hulu", mark: "hulu", aliases: ["hulu"] },
+      { key: "tf1", name: "TF1", mark: "TF1", aliases: ["tf1"] },
+      { key: "hbo", name: "HBO", mark: "HBO", aliases: ["hbo"] },
+      { key: "cbs", name: "CBS", mark: "CBS", aliases: ["cbs"] },
+      { key: "abc", name: "ABC", mark: "abc", aliases: ["abc"] },
+      { key: "fx", name: "FX", mark: "FX", aliases: ["fx"] }
+    ];
+
+    function platformBadgeForText(value) {
+      const normalized = String(value || "").trim().toLowerCase();
+      if (!normalized) return null;
+      return platformBadges.find(platform => platform.aliases.some(alias => normalized.includes(alias))) || null;
+    }
+
+    function platformsForSerie(serie) {
+      const explicitPlatforms = Array.isArray(serie.platforms)
+        ? serie.platforms
+        : String(serie.platform || "").split(/\s*\/\s*|\s*,\s*/);
+      const inferredSegments = [
+        serie.description,
+        serie.status,
+        ...(Array.isArray(serie.seasons) ? serie.seasons.map(season => season.note) : [])
+      ].flatMap(value => String(value || "").split(/\s*·\s*|\s*\/\s*|\s*,\s*/));
+      const segments = explicitPlatforms.some(value => String(value || "").trim())
+        ? explicitPlatforms
+        : inferredSegments;
+      const matches = [];
+      const seen = new Set();
+
+      segments.forEach(segment => {
+        const platform = platformBadgeForText(segment);
+        if (!platform || seen.has(platform.key)) return;
+        seen.add(platform.key);
+        matches.push(platform);
+      });
+
+      if (!matches.length && String(serie.name || "").trim().toLowerCase() === "the bear") {
+        matches.push(platformBadges.find(platform => platform.key === "disney-plus"));
+      }
+      return matches.filter(Boolean);
+    }
+
+    function platformIconsHtml(serie) {
+      const platforms = platformsForSerie(serie);
+      if (!platforms.length) {
+        return `<span class="platform-icon platform-unknown" role="img" aria-label="Plataforma por indicar" title="Plataforma por indicar">?</span>`;
+      }
+      const names = platforms.map(platform => platform.name).join(", ");
+      return `
+        <span class="platform-icons" aria-label="Disponible en ${escapeHtml(names)}">
+          ${platforms.map(platform => `<span class="platform-icon platform-${escapeHtml(platform.key)}" aria-hidden="true" title="${escapeHtml(platform.name)}">${escapeHtml(platform.mark)}</span>`).join("")}
+        </span>
+      `;
+    }
+
     function formatCatalogDate(value) {
       if (!value) return "";
       const [year, month, day] = value.split("-");
@@ -7528,6 +7959,7 @@ Last Forever
         id: item.id,
         name: item.title,
         emoji: item.platform === "Netflix" ? "N" : item.platform === "Apple TV" ? "ATV" : "TV",
+        platform: item.platform || "",
         status: item.status,
         description: [
           item.platform,
@@ -7589,6 +8021,7 @@ Last Forever
             name: item.name || `Serie ${index + 1}`,
             emoji: item.emoji || "TV",
             image: item.image || "",
+            platform: Array.isArray(item.platforms) ? item.platforms.join(" / ") : String(item.platform || ""),
             status: item.status || "Pendiente",
             description: item.description || "",
             minutesPerEpisode: Number(item.minutesPerEpisode) || 45,
@@ -7620,6 +8053,7 @@ Last Forever
           name: catalogSerie.name,
           emoji: catalogSerie.emoji,
           image: catalogSerie.image || serie.image || "",
+          platform: catalogSerie.platform || serie.platform || "",
           status: catalogSerie.status,
           description: catalogSerie.description,
           minutesPerEpisode: catalogSerie.minutesPerEpisode,
@@ -7696,6 +8130,7 @@ Last Forever
       serie.name = String(serie.name || "Serie sin nombre").trim() || "Serie sin nombre";
       serie.emoji = String(serie.emoji || "TV").trim().slice(0, 4) || "TV";
       serie.image = String(serie.image || "").trim();
+      serie.platform = String(serie.platform || "").trim();
       serie.status = String(serie.status || "Pendiente").trim() || "Pendiente";
       serie.description = String(serie.description || "").trim();
       serie.minutesPerEpisode = Math.max(1, Number(serie.minutesPerEpisode) || 45);
@@ -8202,7 +8637,10 @@ Last Forever
           <div class="avatar${serie.image ? " with-image" : ""}" aria-hidden="true">${serieImageContent(serie)}</div>
           <div class="serie-main">
             <div class="serie-meta">
-              <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
+              <div class="serie-labels">
+                <span class="pill ${status.className}">${escapeHtml(status.text)}</span>
+                ${platformIconsHtml(serie)}
+              </div>
               <h2>
                 <button class="serie-title-button" type="button" data-action="open-detail" data-id="${escapeHtml(serie.id)}" aria-label="Abrir ficha de ${escapeHtml(serie.name)}">${escapeHtml(serie.name)}</button>
               </h2>
