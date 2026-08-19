@@ -8075,13 +8075,71 @@ Last Forever
       ...requestedSeriesCatalog
     ];
 
+    // Portadas verificadas de cada producción. Este mapa sustituye las fotos
+    // genéricas y completa las fichas que no traían imagen en el catálogo.
+    const seriesCoverImages = Object.freeze({
+      "fleabag": "https://static.tvmaze.com/uploads/images/medium_portrait/192/482341.jpg",
+      "scream-queens": "https://static.tvmaze.com/uploads/images/medium_portrait/85/213832.jpg",
+      "loups-garous-canal-plus": "https://static.tvmaze.com/uploads/images/medium_portrait/539/1347705.jpg",
+      "celebrity-hunted-france": "https://static.tvmaze.com/uploads/images/medium_portrait/409/1023855.jpg",
+      "les-traitres-m6": "https://image.tmdb.org/t/p/w500/1K6sEdIRfLMYXqBX9ql72M1FP9f.jpg",
+      "fargo": "https://static.tvmaze.com/uploads/images/medium_portrait/487/1219631.jpg",
+      "ghosts-us": "https://static.tvmaze.com/uploads/images/medium_portrait/590/1475093.jpg",
+      "travelers-2016": "https://static.tvmaze.com/uploads/images/medium_portrait/176/441314.jpg",
+      "space-force": "https://static.tvmaze.com/uploads/images/medium_portrait/387/969535.jpg",
+      "en-place": "https://static.tvmaze.com/uploads/images/medium_portrait/442/1106991.jpg",
+      "your-friends-and-neighbors": "https://static.tvmaze.com/uploads/images/medium_portrait/620/1550778.jpg",
+      "perfil-falso": "https://static.tvmaze.com/uploads/images/medium_portrait/461/1153096.jpg",
+      "l-agence-immobilier-de-luxe-en-famille": "https://static.tvmaze.com/uploads/images/medium_portrait/333/832792.jpg",
+      "schitts-creek": "https://static.tvmaze.com/uploads/images/medium_portrait/279/697623.jpg",
+      "the-circle-us": "https://static.tvmaze.com/uploads/images/medium_portrait/512/1282231.jpg",
+      "summertime": "https://static.tvmaze.com/uploads/images/medium_portrait/403/1008455.jpg",
+      "margos-got-money-troubles": "https://static.tvmaze.com/uploads/images/medium_portrait/621/1554071.jpg",
+      "what-we-do-in-the-shadows": "https://static.tvmaze.com/uploads/images/medium_portrait/535/1337833.jpg",
+      "rooster": "https://static.tvmaze.com/uploads/images/medium_portrait/616/1540316.jpg",
+      "machos-alfa": "https://static.tvmaze.com/uploads/images/medium_portrait/622/1555526.jpg",
+      "maximum-pleasure-guaranteed": "https://static.tvmaze.com/uploads/images/medium_portrait/629/1573004.jpg",
+      "lethally-blonde": "https://static.tvmaze.com/uploads/images/medium_portrait/510/1275611.jpg",
+      "deadly-influence": "https://static.tvmaze.com/uploads/images/medium_portrait/522/1305667.jpg",
+      "a-good-girls-guide-to-murder": "https://static.tvmaze.com/uploads/images/medium_portrait/626/1566763.jpg",
+      "dynasty-2017": "https://static.tvmaze.com/uploads/images/medium_portrait/401/1003369.jpg",
+      "hacks": "https://static.tvmaze.com/uploads/images/medium_portrait/621/1552621.jpg",
+      "stranger-things": "https://static.tvmaze.com/uploads/images/medium_portrait/595/1489169.jpg",
+      "brain-games": "https://static.tvmaze.com/uploads/images/medium_portrait/236/591512.jpg",
+      "section-de-recherches": "https://static.tvmaze.com/uploads/images/medium_portrait/23/59935.jpg",
+      "lucifer": "https://static.tvmaze.com/uploads/images/medium_portrait/346/865655.jpg",
+      "see-no-evil": "https://static.tvmaze.com/uploads/images/medium_portrait/499/1248505.jpg",
+      "on-the-case-with-paula-zahn": "https://static.tvmaze.com/uploads/images/medium_portrait/562/1406698.jpg",
+      "homicide-hunter-american-detective": "https://static.tvmaze.com/uploads/images/medium_portrait/562/1406712.jpg",
+      "loot": "https://static.tvmaze.com/uploads/images/medium_portrait/594/1485065.jpg",
+      "people-magazine-investigates": "https://static.tvmaze.com/uploads/images/medium_portrait/608/1520425.jpg",
+      "a-man-on-the-inside": "https://static.tvmaze.com/uploads/images/medium_portrait/599/1499138.jpg",
+      "big-brother-us": "https://static.tvmaze.com/uploads/images/medium_portrait/631/1578029.jpg",
+      "poker-face-2023": "https://static.tvmaze.com/uploads/images/medium_portrait/567/1419482.jpg",
+      "upload": "https://static.tvmaze.com/uploads/images/medium_portrait/586/1466414.jpg",
+      "wednesday": "https://static.tvmaze.com/uploads/images/medium_portrait/586/1466410.jpg",
+      "malcolm-in-the-middle": "https://static.tvmaze.com/uploads/images/medium_portrait/549/1373492.jpg",
+      "malcolm-lifes-still-unfair": "https://static.tvmaze.com/uploads/images/medium_portrait/621/1552907.jpg",
+      "modern-family": "https://static.tvmaze.com/uploads/images/medium_portrait/359/898320.jpg",
+      "como-conoci-a-vuestra-madre": "https://static.tvmaze.com/uploads/images/medium_portrait/0/2451.jpg",
+      "love-is-blind-us": "https://static.tvmaze.com/uploads/images/medium_portrait/613/1533160.jpg",
+      "love-is-blind-uk": "https://static.tvmaze.com/uploads/images/medium_portrait/582/1456501.jpg",
+      "love-is-blind-france": "https://static.tvmaze.com/uploads/images/medium_portrait/586/1467303.jpg",
+      "the-ultimatum-marry-or-move-on-us": "https://static.tvmaze.com/uploads/images/medium_portrait/403/1007874.jpg",
+      "the-ultimatum-france": "https://static.tvmaze.com/uploads/images/medium_portrait/439/1099794.jpg",
+      "perfect-match": "https://static.tvmaze.com/uploads/images/medium_portrait/520/1301037.jpg",
+      "koh-lanta": "https://static.tvmaze.com/uploads/images/medium_portrait/60/151518.jpg",
+      "secret-story": "https://static.tvmaze.com/uploads/images/medium_portrait/124/312254.jpg",
+      "the-bear": "https://static.tvmaze.com/uploads/images/medium_portrait/629/1574642.jpg"
+    });
+
     const catalog = [
       {
         id: "koh-lanta",
         name: "Koh-Lanta",
         emoji: "TF1",
         platform: "TF1 / TF1+",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
+        image: seriesCoverImages["koh-lanta"],
         status: "33 temporadas emitidas · T34 All Stars se estrena el 25/08/2026 · episodios pendientes",
         description: "Telerrealidad francesa de aventura · TF1 · cronología oficial completa con las siete ediciones especiales emitidas (All Stars, crossover e híbrida). La T34 All Stars se estrena el 25/08/2026; no se cuentan las producciones canceladas.",
         minutesPerEpisode: 110,
@@ -8128,7 +8186,7 @@ Last Forever
         name: "Secret Story",
         emoji: "TV",
         platform: "TF1+",
-        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
+        image: seriesCoverImages["secret-story"],
         status: "En emisión · temporada 14 · 96/99 emisiones disponibles · final 20/08/2026",
         description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Programación confirmada hasta la final del 20/08.",
         minutesPerEpisode: 45,
@@ -8258,7 +8316,7 @@ Last Forever
 
     function serieImageContent(serie) {
       if (!serie.image) return escapeHtml(serie.emoji);
-      return `<img src="${escapeHtml(serie.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`;
+      return `<img src="${escapeHtml(serie.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-cover-fallback="${escapeHtml(serie.emoji || "TV")}" />`;
     }
 
     const platformBadges = [
@@ -8362,7 +8420,7 @@ Last Forever
           dateText,
           item.description
         ].filter(Boolean).join(" · "),
-        image: item.image || "",
+        image: seriesCoverImages[item.id] || item.image || "",
         minutesPerEpisode: item.averageEpisodeMinutes || 45,
         episodesPerDay: 2,
         lastWatchedAt: "",
@@ -8412,7 +8470,7 @@ Last Forever
           id: item.id || makeImportId(item.name, index),
           name: item.name || `Serie ${index + 1}`,
           emoji: item.emoji || "TV",
-          image: item.image || "",
+          image: seriesCoverImages[item.id] || item.image || "",
           platform: Array.isArray(item.platforms) ? item.platforms.join(" / ") : String(item.platform || ""),
           status: item.status || "Pendiente",
           description: item.description || "",
@@ -9720,6 +9778,15 @@ Last Forever
         alert("No he podido importar ese archivo. Revisa que sea un JSON exportado desde esta app.");
       }
     }
+
+    document.addEventListener("error", event => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement) || !image.matches(".avatar img, .poster img")) return;
+      const cover = image.parentElement;
+      if (!cover) return;
+      cover.classList.remove("with-image");
+      cover.textContent = image.dataset.coverFallback || "TV";
+    }, true);
 
     document.addEventListener("click", event => {
       if (!event.target.closest("#homeMenu")) closeHomeMenu();
