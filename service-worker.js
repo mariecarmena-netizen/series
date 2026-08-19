@@ -1,4 +1,4 @@
-const CACHE_NAME = "tus-series-v2";
+const CACHE_NAME = "tus-series-v3";
 const APP_SHELL = [
   "./index.html",
   "./manifest.webmanifest",

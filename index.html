@@ -2076,7 +2076,7 @@
           <div class="mark" aria-hidden="true">TS</div>
           <div class="title">
             <h1 id="homeHeading">Tus series</h1>
-            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 17/08/2026.</p>
+            <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 19/08/2026.</p>
           </div>
         </div>
         <div class="header-menu" id="homeMenu">
@@ -2230,7 +2230,7 @@
           <div class="mark" aria-hidden="true">CAL</div>
           <div class="title">
             <h1 id="calendarHeading">Calendario</h1>
-            <p>Estrenos de capítulos por día. Datos revisados el 17/08/2026.</p>
+            <p>Estrenos de capítulos por día. Datos revisados el 19/08/2026.</p>
           </div>
         </div>
       </header>
@@ -2291,8 +2291,10 @@
     const STORAGE_KEY = "series-tracker-v3";
     const LEGACY_STORAGE_KEY = "series-tracker-v2";
     const RECENT_WATCH_WINDOW_DAYS = 30;
-    const DATA_LAST_UPDATED = "2026-08-17";
-    const CONTENT_AVAILABLE_THROUGH = "2026-08-17";
+    const PACE_WINDOW_DAYS = 14;
+    const PACE_BASELINE_WEIGHT_DAYS = 2;
+    const DATA_LAST_UPDATED = "2026-08-19";
+    const CONTENT_AVAILABLE_THROUGH = "2026-08-19";
 
     const malcolmInTheMiddleEpisodeTitles = [
       ["Pilot","Red Dress","Home Alone 4","Shame","Malcolm Babysits","Sleepover","Francis Escapes","Krelboyne Picnic","Lois vs. Evil","Stock Car Races","Funeral","Cheerleader","Rollerskates","The Bots and the Bees","Smunday","Water Park"],
@@ -3684,6 +3686,394 @@
     "totalPlannedWatchTimeMinutes": 500,
     "totalPlannedWatchTimeText": "8 h 20 min",
     "image": "https://image.tmdb.org/t/p/w500/hRD9kvYLbySRvtt9Nh7QK6XECZX.jpg"
+  },
+  {
+    "id": "fleabag",
+    "title": "Fleabag",
+    "platform": "Prime Video / BBC",
+    "status": "Finalizada · 2 temporadas · 12 capítulos",
+    "genre": "Comedia dramática",
+    "description": "Una joven londinense afronta el duelo, la familia y sus relaciones con un humor feroz mientras rompe constantemente la cuarta pared.",
+    "averageEpisodeMinutes": 26,
+    "seasons": [6, 6].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 12,
+    "totalEpisodesPlanned": 12,
+    "releasedWatchTimeMinutes": 312,
+    "releasedWatchTimeText": "5 h 12 min",
+    "totalPlannedWatchTimeMinutes": 312,
+    "totalPlannedWatchTimeText": "5 h 12 min"
+  },
+  {
+    "id": "scream-queens",
+    "title": "Scream Queens",
+    "platform": "Disney+ / Hulu / FOX",
+    "status": "Cancelada · 2 temporadas · 23 capítulos",
+    "genre": "Comedia de terror / misterio",
+    "description": "Una cadena de asesinatos sacude primero una hermandad universitaria y después un hospital dirigido por las mismas supervivientes.",
+    "averageEpisodeMinutes": 43,
+    "seasons": [13, 10].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 23,
+    "totalEpisodesPlanned": 23,
+    "releasedWatchTimeMinutes": 989,
+    "releasedWatchTimeText": "16 h 29 min",
+    "totalPlannedWatchTimeMinutes": 989,
+    "totalPlannedWatchTimeText": "16 h 29 min"
+  },
+  {
+    "id": "loups-garous-canal-plus",
+    "title": "Loups Garous (Canal+)",
+    "platform": "Canal+",
+    "status": "2 temporadas completas · 18 capítulos · temporada 3 encargada",
+    "genre": "Reality / estrategia / deducción social",
+    "description": "Jugadores expertos en estrategia y disimulo viven una partida a tamaño real de Los hombres lobo de Castronegro en el bosque de Thiercelieux.",
+    "averageEpisodeMinutes": 48,
+    "seasons": [
+      { "season": 1, "episodes": 8, "released": true },
+      { "season": 2, "episodes": 10, "released": true },
+      { "season": 3, "episodes": 0, "released": false, "note": "Encargada · fecha y capítulos pendientes" }
+    ],
+    "releasedEpisodes": 18,
+    "totalEpisodesPlanned": 18,
+    "releasedWatchTimeMinutes": 864,
+    "releasedWatchTimeText": "14 h 24 min",
+    "totalPlannedWatchTimeMinutes": 864,
+    "totalPlannedWatchTimeText": "14 h 24 min"
+  },
+  {
+    "id": "celebrity-hunted-france",
+    "title": "Celebrity Hunted: Chasse à l'homme (France)",
+    "platform": "Prime Video",
+    "status": "Finalizada · 3 temporadas · 18 capítulos",
+    "genre": "Reality / aventura / competición",
+    "description": "Varias parejas de celebridades intentan desaparecer durante diez días mientras especialistas en investigación las persiguen por toda Francia.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [6, 6, 6].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 18,
+    "totalEpisodesPlanned": 18,
+    "releasedWatchTimeMinutes": 810,
+    "releasedWatchTimeText": "13 h 30 min",
+    "totalPlannedWatchTimeMinutes": 810,
+    "totalPlannedWatchTimeText": "13 h 30 min"
+  },
+  {
+    "id": "les-traitres-m6",
+    "title": "Les Traîtres (M6)",
+    "platform": "M6 / M6+",
+    "status": "6 temporadas completas · temporada 7 rodada y pendiente de estreno",
+    "genre": "Reality / estrategia / deducción social",
+    "description": "Personalidades francesas conviven en un castillo donde los Leales deben identificar a los Traidores antes de que estos los eliminen.",
+    "averageEpisodeMinutes": 82,
+    "seasons": [
+      ...[6, 10, 7, 7, 8, 8].map((episodes, index) => ({
+        "season": index + 1,
+        "episodes": episodes,
+        "released": true
+      })),
+      { "season": 7, "episodes": 0, "released": false, "note": "Rodada · fecha y capítulos pendientes" }
+    ],
+    "releasedEpisodes": 46,
+    "totalEpisodesPlanned": 46,
+    "releasedWatchTimeMinutes": 3772,
+    "releasedWatchTimeText": "62 h 52 min",
+    "totalPlannedWatchTimeMinutes": 3772,
+    "totalPlannedWatchTimeText": "62 h 52 min"
+  },
+  {
+    "id": "fargo",
+    "title": "Fargo",
+    "platform": "HBO Max / Hulu / FX",
+    "status": "5 temporadas completas · 51 capítulos · sin próximo estreno confirmado",
+    "genre": "Crimen / drama / comedia negra / antología",
+    "description": "Cada entrega cuenta un nuevo crimen en el Medio Oeste estadounidense, donde la violencia absurda altera la vida de personas aparentemente corrientes.",
+    "averageEpisodeMinutes": 52,
+    "seasons": [10, 10, 10, 11, 10].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 51,
+    "totalEpisodesPlanned": 51,
+    "releasedWatchTimeMinutes": 2652,
+    "releasedWatchTimeText": "44 h 12 min",
+    "totalPlannedWatchTimeMinutes": 2652,
+    "totalPlannedWatchTimeText": "44 h 12 min"
+  },
+  {
+    "id": "ghosts-us",
+    "title": "Ghosts (US)",
+    "platform": "CBS / Paramount+",
+    "status": "5 temporadas completas · 94 capítulos · temporada 6 el 29/10/2026",
+    "genre": "Comedia / fantasía / sitcom",
+    "description": "Sam y Jay heredan una mansión habitada por fantasmas de distintas épocas a los que solo ella puede ver y escuchar.",
+    "averageEpisodeMinutes": 22,
+    "seasons": [
+      ...[18, 22, 10, 22, 22].map((episodes, index) => ({
+        "season": index + 1,
+        "episodes": episodes,
+        "released": true
+      })),
+      { "season": 6, "episodes": 0, "released": false, "note": "Estreno 29/10/2026 · capítulos pendientes" }
+    ],
+    "releasedEpisodes": 94,
+    "totalEpisodesPlanned": 94,
+    "releasedWatchTimeMinutes": 2068,
+    "releasedWatchTimeText": "34 h 28 min",
+    "totalPlannedWatchTimeMinutes": 2068,
+    "totalPlannedWatchTimeText": "34 h 28 min",
+    "nextEpisodeDate": "2026-10-29"
+  },
+  {
+    "id": "travelers-2016",
+    "title": "Travelers (2016)",
+    "platform": "Netflix",
+    "status": "Finalizada · 3 temporadas · 34 capítulos",
+    "genre": "Ciencia ficción / drama / thriller",
+    "description": "Agentes del futuro envían su conciencia al presente y ocupan cuerpos destinados a morir para intentar evitar el colapso de la humanidad.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [12, 12, 10].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 34,
+    "totalEpisodesPlanned": 34,
+    "releasedWatchTimeMinutes": 1530,
+    "releasedWatchTimeText": "25 h 30 min",
+    "totalPlannedWatchTimeMinutes": 1530,
+    "totalPlannedWatchTimeText": "25 h 30 min"
+  },
+  {
+    "id": "space-force",
+    "title": "Space Force",
+    "platform": "Netflix",
+    "status": "Cancelada · 2 temporadas · 17 capítulos",
+    "genre": "Comedia / sátira laboral",
+    "description": "Un general y un científico excéntrico intentan poner en marcha la nueva Fuerza Espacial estadounidense entre burocracia, egos y misiones imposibles.",
+    "averageEpisodeMinutes": 32,
+    "seasons": [10, 7].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 17,
+    "totalEpisodesPlanned": 17,
+    "releasedWatchTimeMinutes": 544,
+    "releasedWatchTimeText": "9 h 4 min",
+    "totalPlannedWatchTimeMinutes": 544,
+    "totalPlannedWatchTimeText": "9 h 4 min"
+  },
+  {
+    "id": "en-place",
+    "title": "En place",
+    "platform": "Netflix",
+    "status": "2 temporadas completas · 12 capítulos · sin próxima temporada confirmada",
+    "genre": "Comedia / sátira política",
+    "description": "Un educador de un suburbio parisino entra por accidente en la carrera presidencial y termina enfrentándose a las contradicciones del poder.",
+    "averageEpisodeMinutes": 31,
+    "seasons": [6, 6].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 12,
+    "totalEpisodesPlanned": 12,
+    "releasedWatchTimeMinutes": 372,
+    "releasedWatchTimeText": "6 h 12 min",
+    "totalPlannedWatchTimeMinutes": 372,
+    "totalPlannedWatchTimeText": "6 h 12 min"
+  },
+  {
+    "id": "your-friends-and-neighbors",
+    "title": "Your Friends & Neighbors (Vicios ocultos)",
+    "platform": "Apple TV",
+    "status": "2 temporadas completas · 19 capítulos · temporada 3 renovada",
+    "genre": "Drama / crimen / comedia negra",
+    "description": "Un gestor de fondos caído en desgracia empieza a robar a sus vecinos ricos y descubre que sus vidas perfectas esconden secretos peligrosos.",
+    "averageEpisodeMinutes": 51,
+    "seasons": [
+      { "season": 1, "episodes": 9, "released": true },
+      { "season": 2, "episodes": 10, "released": true },
+      { "season": 3, "episodes": 0, "released": false, "note": "Renovada · fecha y capítulos pendientes" }
+    ],
+    "releasedEpisodes": 19,
+    "totalEpisodesPlanned": 19,
+    "releasedWatchTimeMinutes": 969,
+    "releasedWatchTimeText": "16 h 9 min",
+    "totalPlannedWatchTimeMinutes": 969,
+    "totalPlannedWatchTimeText": "16 h 9 min"
+  },
+  {
+    "id": "perfil-falso",
+    "title": "Perfil falso",
+    "platform": "Netflix",
+    "status": "Finalizada · 3 temporadas · 30 capítulos",
+    "genre": "Thriller / drama / misterio",
+    "description": "Una bailarina descubre que el hombre al que conoció en una aplicación de citas vive bajo una identidad falsa y arrastra una red de engaños y crímenes.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [10, 10, 10].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 30,
+    "totalEpisodesPlanned": 30,
+    "releasedWatchTimeMinutes": 1350,
+    "releasedWatchTimeText": "22 h 30 min",
+    "totalPlannedWatchTimeMinutes": 1350,
+    "totalPlannedWatchTimeText": "22 h 30 min"
+  },
+  {
+    "id": "l-agence-immobilier-de-luxe-en-famille",
+    "title": "L'Agence: L'immobilier de luxe en famille",
+    "platform": "TMC / TF1+ / Netflix",
+    "status": "6 temporadas completas · 46 capítulos · renovación pendiente",
+    "genre": "Reality / inmobiliaria / familia",
+    "description": "La familia Kretz gestiona propiedades de lujo en Francia y otros países mientras equilibra el crecimiento de la agencia con su vida familiar.",
+    "averageEpisodeMinutes": 52,
+    "seasons": [5, 6, 8, 10, 8, 9].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 46,
+    "totalEpisodesPlanned": 46,
+    "releasedWatchTimeMinutes": 2392,
+    "releasedWatchTimeText": "39 h 52 min",
+    "totalPlannedWatchTimeMinutes": 2392,
+    "totalPlannedWatchTimeText": "39 h 52 min"
+  },
+  {
+    "id": "schitts-creek",
+    "title": "Schitt's Creek",
+    "platform": "CBC / Netflix",
+    "status": "Finalizada · 6 temporadas · 80 capítulos",
+    "genre": "Comedia / sitcom",
+    "description": "Una familia adinerada pierde su fortuna y debe empezar de nuevo en el pequeño pueblo que compró años atrás como una broma.",
+    "averageEpisodeMinutes": 22,
+    "seasons": [13, 13, 13, 13, 14, 14].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 80,
+    "totalEpisodesPlanned": 80,
+    "releasedWatchTimeMinutes": 1760,
+    "releasedWatchTimeText": "29 h 20 min",
+    "totalPlannedWatchTimeMinutes": 1760,
+    "totalPlannedWatchTimeText": "29 h 20 min"
+  },
+  {
+    "id": "the-circle-us",
+    "title": "The Circle (US)",
+    "platform": "Netflix / Hulu",
+    "status": "7 temporadas en Netflix · 90 capítulos · nueva etapa anunciada en Hulu",
+    "genre": "Reality / competición / estrategia social",
+    "description": "Concursantes aislados se relacionan únicamente mediante una red social, donde pueden ser ellos mismos o competir con una identidad falsa.",
+    "averageEpisodeMinutes": 60,
+    "seasons": [
+      ...[12, 13, 13, 13, 13, 13, 13].map((episodes, index) => ({
+        "season": index + 1,
+        "episodes": episodes,
+        "released": true
+      })),
+      { "season": 8, "episodes": 0, "released": false, "note": "Nueva etapa en Hulu · fecha y capítulos pendientes" }
+    ],
+    "releasedEpisodes": 90,
+    "totalEpisodesPlanned": 90,
+    "releasedWatchTimeMinutes": 5400,
+    "releasedWatchTimeText": "90 h",
+    "totalPlannedWatchTimeMinutes": 5400,
+    "totalPlannedWatchTimeText": "90 h"
+  },
+  {
+    "id": "summertime",
+    "title": "Summertime",
+    "platform": "Netflix",
+    "status": "Finalizada · 3 temporadas · 24 capítulos",
+    "genre": "Drama romántico / juvenil",
+    "description": "Summer y Ale viven una relación marcada por los veranos de la costa adriática italiana, sus amistades y los cambios de la vida adulta.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [8, 8, 8].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 24,
+    "totalEpisodesPlanned": 24,
+    "releasedWatchTimeMinutes": 1080,
+    "releasedWatchTimeText": "18 h",
+    "totalPlannedWatchTimeMinutes": 1080,
+    "totalPlannedWatchTimeText": "18 h"
+  },
+  {
+    "id": "margos-got-money-troubles",
+    "title": "Margo's Got Money Troubles",
+    "platform": "Apple TV",
+    "status": "Temporada 1 completa · 8 capítulos · temporada 2 renovada",
+    "genre": "Comedia dramática",
+    "description": "Una joven escritora y madre reciente busca una forma inesperada de pagar sus facturas mientras reconstruye su relación con una familia complicada.",
+    "averageEpisodeMinutes": 45,
+    "seasons": [
+      { "season": 1, "episodes": 8, "released": true },
+      { "season": 2, "episodes": 0, "released": false, "note": "Renovada · fecha y capítulos pendientes" }
+    ],
+    "releasedEpisodes": 8,
+    "totalEpisodesPlanned": 8,
+    "releasedWatchTimeMinutes": 360,
+    "releasedWatchTimeText": "6 h",
+    "totalPlannedWatchTimeMinutes": 360,
+    "totalPlannedWatchTimeText": "6 h"
+  },
+  {
+    "id": "what-we-do-in-the-shadows",
+    "title": "What We Do in the Shadows",
+    "platform": "Disney+ / Hulu / FX",
+    "status": "Finalizada · 6 temporadas · 61 capítulos",
+    "genre": "Comedia / terror / falso documental",
+    "description": "Un equipo documental sigue la desastrosa vida cotidiana de varios vampiros que comparten casa en Staten Island desde hace siglos.",
+    "averageEpisodeMinutes": 24,
+    "seasons": [10, 10, 10, 10, 10, 11].map((episodes, index) => ({
+      "season": index + 1,
+      "episodes": episodes,
+      "released": true
+    })),
+    "releasedEpisodes": 61,
+    "totalEpisodesPlanned": 61,
+    "releasedWatchTimeMinutes": 1464,
+    "releasedWatchTimeText": "24 h 24 min",
+    "totalPlannedWatchTimeMinutes": 1464,
+    "totalPlannedWatchTimeText": "24 h 24 min"
+  },
+  {
+    "id": "rooster",
+    "title": "Rooster",
+    "platform": "HBO Max / HBO",
+    "status": "Temporada 1 completa · 10 capítulos · temporada 2 renovada",
+    "genre": "Comedia dramática",
+    "description": "Un novelista interpretado por Steve Carell llega a una universidad de Nueva Inglaterra y reabre una relación familiar cargada de reproches y afecto.",
+    "averageEpisodeMinutes": 35,
+    "seasons": [
+      { "season": 1, "episodes": 10, "released": true },
+      { "season": 2, "episodes": 10, "released": false, "note": "Renovada · 10 capítulos previstos · fecha pendiente" }
+    ],
+    "releasedEpisodes": 10,
+    "totalEpisodesPlanned": 20,
+    "releasedWatchTimeMinutes": 350,
+    "releasedWatchTimeText": "5 h 50 min",
+    "totalPlannedWatchTimeMinutes": 700,
+    "totalPlannedWatchTimeText": "11 h 40 min"
   }
 ];
 
@@ -4734,10 +5124,10 @@ Last Forever
       "2026-07-12"
     ];
 
-    const loveIsBlindUkSeason3EpisodeTitles = Array.from(
-      { length: 11 },
-      (_, index) => `Episodio ${index + 1}`
-    );
+    const loveIsBlindUkSeason3EpisodeTitles = [
+      ...Array.from({ length: 10 }, (_, index) => `Episodio ${index + 1}`),
+      "Reunión"
+    ];
 
     const loveIsBlindUkSeason3ReleaseDates = [
       ...Array(8).fill("2026-08-19"),
@@ -7358,7 +7748,7 @@ Last Forever
         id: "big-brother-us",
         title: "Big Brother (US)",
         platform: "CBS / Paramount+",
-        status: "Temporada 28 en emisión · 20/22 emisiones confirmadas disponibles · próximo 19/08/2026",
+        status: "Temporada 28 en emisión · 21/22 emisiones confirmadas disponibles · próximo 20/08/2026",
         genre: "Reality / competición",
         seasons: [
           ...[70, 30, 33, 33, 31, 30, 28, 33, 33, 29, 30, 30, 29, 30, 36, 40, 40, 42, 39, 40, 40, 37, 37, 34, 42, 39, 35].map((episodes, index) => ({
@@ -7366,16 +7756,16 @@ Last Forever
             episodes,
             released: true
           })),
-          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 20 }
+          { season: 28, episodes: bigBrotherSeason28EpisodeTitles, released: false, releasedEpisodes: 21 }
         ],
-        releasedEpisodes: 990,
+        releasedEpisodes: 991,
         totalEpisodesPlanned: 992,
         averageEpisodeMinutes: 62,
-        releasedWatchTimeMinutes: 61380,
-        releasedWatchTimeText: "1023 h",
+        releasedWatchTimeMinutes: 61442,
+        releasedWatchTimeText: "1024 h 2 min",
         totalPlannedWatchTimeMinutes: 61504,
         totalPlannedWatchTimeText: "1025 h 4 min",
-        nextEpisodeDate: "2026-08-19",
+        nextEpisodeDate: "2026-08-20",
         image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
         description:
           "Concursantes aislados conviven bajo vigilancia constante; la temporada 28 tiene 22 emisiones confirmadas hasta el 20/08, incluidos los especiales Big Brother: Unlocked."
@@ -7553,7 +7943,7 @@ Last Forever
         id: "love-is-blind-uk",
         title: "Love Is Blind: UK",
         platform: "Netflix",
-        status: "Temporada 3 · estreno 19/08/2026 · 11 capítulos · temporada 4 renovada",
+        status: "Temporada 3 en emisión · 8/11 capítulos disponibles · próximos 26/08/2026",
         genre: "Reality / citas",
         seasons: [
           { season: 1, episodes: 12, released: true },
@@ -7567,19 +7957,19 @@ Last Forever
             season: 3,
             episodes: loveIsBlindUkSeason3EpisodeTitles,
             released: false,
-            releasedEpisodes: 0,
-            note: "8 capítulos el 19/08, 2 el 26/08 y reunión el 30/08/2026"
+            releasedEpisodes: 8,
+            note: "8 capítulos disponibles · 2 el 26/08 y reunión el 30/08/2026"
           },
           { season: 4, episodes: 0, released: false, note: "Renovada · fecha y capítulos pendientes" }
         ],
-        releasedEpisodes: 26,
+        releasedEpisodes: 34,
         totalEpisodesPlanned: 37,
         averageEpisodeMinutes: 55,
-        releasedWatchTimeMinutes: 1430,
-        releasedWatchTimeText: "23 h 50 min",
+        releasedWatchTimeMinutes: 1870,
+        releasedWatchTimeText: "31 h 10 min",
         totalPlannedWatchTimeMinutes: 2035,
         totalPlannedWatchTimeText: "33 h 55 min",
-        nextEpisodeDate: "2026-08-19",
+        nextEpisodeDate: "2026-08-26",
         finaleDate: "2026-08-30",
         image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80",
         description:
@@ -7739,7 +8129,7 @@ Last Forever
         emoji: "TV",
         platform: "TF1+",
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-        status: "En emisión · temporada 14 · 94/99 emisiones disponibles · próximo 18/08/2026 · final 20/08/2026",
+        status: "En emisión · temporada 14 · 96/99 emisiones disponibles · final 20/08/2026",
         description: "Reality francés · TF1+ · temporada 14 estrenada el 23/06/2026; incluye primes, quotidiennes, Secret Uncut y Zone Secrète. Programación confirmada hasta la final del 20/08.",
         minutesPerEpisode: 45,
         episodesPerDay: 2,
@@ -7776,7 +8166,7 @@ Last Forever
             total: secretStorySeason14Episodes.length,
             watched: 0,
             releasedEpisodes: secretStorySeason14Episodes.filter(episode => episode.date <= CONTENT_AVAILABLE_THROUGH).length,
-            note: "TF1+ · 94 emisiones disponibles y programación confirmada hasta la final del 20/08/2026",
+            note: "TF1+ · 96 emisiones disponibles y programación confirmada hasta la final del 20/08/2026",
             episodes: secretStorySeason14Episodes.map(episode => episode.title)
           }
         ]
@@ -7872,6 +8262,9 @@ Last Forever
     }
 
     const platformBadges = [
+      { key: "canal-plus", name: "Canal+", mark: "C+", aliases: ["canal+"] },
+      { key: "m6-plus", name: "M6+", mark: "M6+", aliases: ["m6+"] },
+      { key: "tmc", name: "TMC", mark: "TMC", aliases: ["tmc"] },
       { key: "skyshowtime", name: "SkyShowtime", mark: "Sky", aliases: ["skyshowtime"] },
       { key: "prime-video", name: "Prime Video", mark: "prime", aliases: ["amazon prime video", "prime video"] },
       { key: "apple-tv", name: "Apple TV", mark: "tv", aliases: ["apple tv+", "apple tv"] },
@@ -8014,24 +8407,33 @@ Last Forever
     function normalizeState(value) {
       const next = value && typeof value === "object" ? value : {};
       const mySeries = Array.isArray(next.mySeries) ? next.mySeries : [];
+      const normalizedSeries = mySeries.filter(item => !REMOVED_SERIES_IDS.includes(item?.id)).map((item, index) => {
+        const serie = {
+          id: item.id || makeImportId(item.name, index),
+          name: item.name || `Serie ${index + 1}`,
+          emoji: item.emoji || "TV",
+          image: item.image || "",
+          platform: Array.isArray(item.platforms) ? item.platforms.join(" / ") : String(item.platform || ""),
+          status: item.status || "Pendiente",
+          description: item.description || "",
+          minutesPerEpisode: Number(item.minutesPerEpisode) || 45,
+          episodesPerDay: Number(item.episodesPerDay) || 2,
+          lastWatchedAt: normalizeWatchTimestamp(item.lastWatchedAt),
+          seasons: Array.isArray(item.seasons) && item.seasons.length ? item.seasons : [{ season: 1, total: 0, watched: 0, note: "" }]
+        };
+        clampSerie(serie);
+        return serie;
+      });
+      const seriesIds = new Set(normalizedSeries.map(serie => serie.id));
       return {
-        mySeries: mySeries.filter(item => !REMOVED_SERIES_IDS.includes(item?.id)).map((item, index) => {
-          const serie = {
-            id: item.id || makeImportId(item.name, index),
-            name: item.name || `Serie ${index + 1}`,
-            emoji: item.emoji || "TV",
-            image: item.image || "",
-            platform: Array.isArray(item.platforms) ? item.platforms.join(" / ") : String(item.platform || ""),
-            status: item.status || "Pendiente",
-            description: item.description || "",
-            minutesPerEpisode: Number(item.minutesPerEpisode) || 45,
-            episodesPerDay: Number(item.episodesPerDay) || 2,
-            lastWatchedAt: normalizeWatchTimestamp(item.lastWatchedAt),
-            seasons: Array.isArray(item.seasons) && item.seasons.length ? item.seasons : [{ season: 1, total: 0, watched: 0, note: "" }]
-          };
-          clampSerie(serie);
-          return serie;
-        })
+        mySeries: normalizedSeries,
+        watchHistory: (Array.isArray(next.watchHistory) ? next.watchHistory : [])
+          .map(event => ({
+            serieId: String(event?.serieId || ""),
+            season: Math.max(0, Math.floor(Number(event?.season) || 0)),
+            watchedAt: normalizeWatchTimestamp(event?.watchedAt)
+          }))
+          .filter(event => seriesIds.has(event.serieId) && event.watchedAt)
       };
     }
 
@@ -8198,11 +8600,12 @@ Last Forever
         return sum + Math.max(0, season.total - availableEpisodeLimit(serie, season));
       }, 0);
       const pendingMinutes = pendingEpisodes * serie.minutesPerEpisode;
-      const daysLeft = pendingEpisodes / serie.episodesPerDay;
+      const pace = adaptiveEpisodePace(serie.episodesPerDay, new Set([serie.id]));
+      const daysLeft = pendingEpisodes / pace;
       const progress = totalEpisodes ? (watchedEpisodes / totalEpisodes) * 100 : 0;
       const missingData = serie.seasons.some(season => season.total === 0 && season.available !== false);
       const upcomingUnknownSeason = serie.seasons.some(season => season.total === 0 && season.available === false);
-      return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, progress, missingData, upcomingUnknownSeason };
+      return { totalEpisodes, watchedEpisodes, availableEpisodes, pendingEpisodes, futureEpisodes, pendingMinutes, daysLeft, pace, progress, missingData, upcomingUnknownSeason };
     }
 
     function globalTotals(series = state.mySeries) {
@@ -8211,13 +8614,12 @@ Last Forever
       const watchedEpisodes = totals.reduce((sum, total) => sum + total.watchedEpisodes, 0);
       const totalEpisodes = totals.reduce((sum, total) => sum + total.totalEpisodes, 0);
       const pendingMinutes = totals.reduce((sum, total) => sum + total.pendingMinutes, 0);
-      const daysLeft = series.length
-        ? Math.max(...series.map(serie => serieTotals(serie).daysLeft || 0))
-        : 0;
       const averagePace = series.length
         ? series.reduce((sum, serie) => sum + Number(serie.episodesPerDay || 0), 0) / series.length
         : 0;
-      return { pendingEpisodes, watchedEpisodes, totalEpisodes, pendingMinutes, daysLeft, averagePace };
+      const pace = adaptiveEpisodePace(averagePace || 1);
+      const daysLeft = pendingEpisodes / pace;
+      return { pendingEpisodes, watchedEpisodes, totalEpisodes, pendingMinutes, daysLeft, averagePace, pace };
     }
 
     function formatHours(minutes) {
@@ -8296,6 +8698,59 @@ Last Forever
     function markSerieWatched(serie) {
       if (!serie) return;
       serie.lastWatchedAt = timestampKeyFromDate(new Date());
+    }
+
+    function recordWatchActivity(serie, season, count = 1) {
+      if (!serie || count <= 0) return;
+      if (!Array.isArray(state.watchHistory)) state.watchHistory = [];
+      const watchedAt = timestampKeyFromDate(new Date());
+      for (let index = 0; index < Math.floor(count); index += 1) {
+        state.watchHistory.push({
+          serieId: serie.id,
+          season: Math.max(0, Math.floor(Number(season) || 0)),
+          watchedAt
+        });
+      }
+    }
+
+    function removeLatestWatchActivity(serie, season, count = 1) {
+      if (!serie || !Array.isArray(state.watchHistory) || count <= 0) return;
+      let remaining = Math.floor(count);
+      for (let index = state.watchHistory.length - 1; index >= 0 && remaining > 0; index -= 1) {
+        const event = state.watchHistory[index];
+        const sameSeason = !season || !event.season || Number(event.season) === Number(season);
+        if (event.serieId !== serie.id || !sameSeason) continue;
+        state.watchHistory.splice(index, 1);
+        remaining -= 1;
+      }
+    }
+
+    function adaptiveEpisodePace(fallbackPace, seriesIds = null) {
+      const baseline = Math.max(0.1, Number(fallbackPace) || 1);
+      const history = Array.isArray(state?.watchHistory) ? state.watchHistory : [];
+      const today = dateFromKey(dateKeyFromDate(new Date()));
+      const windowStart = new Date(today);
+      windowStart.setDate(windowStart.getDate() - (PACE_WINDOW_DAYS - 1));
+
+      const recentDates = history
+        .filter(event => !seriesIds || seriesIds.has(event.serieId))
+        .map(event => normalizeWatchTimestamp(event.watchedAt).slice(0, 10))
+        .filter(Boolean)
+        .map(dateFromKey)
+        .filter(date => date >= windowStart && date <= today);
+
+      if (!recentDates.length) return baseline;
+
+      const firstActivity = recentDates.reduce((earliest, date) => date < earliest ? date : earliest, recentDates[0]);
+      const elapsedDays = Math.max(1, Math.round((today - firstActivity) / 86400000) + 1);
+      const blendedPace = (
+        recentDates.length + baseline * PACE_BASELINE_WEIGHT_DAYS
+      ) / (elapsedDays + PACE_BASELINE_WEIGHT_DAYS);
+
+      // Un día que todavía está en curso no debe parecer más lento solo porque
+      // aún no se haya alcanzado el ritmo habitual. Sí puede adelantar la fecha
+      // en cuanto la actividad de hoy lo supere.
+      return Math.max(0.1, elapsedDays === 1 ? Math.max(baseline, blendedPace) : blendedPace);
     }
 
     function clearWatchDateIfNotStarted(serie) {
@@ -9081,6 +9536,7 @@ Last Forever
       if (!next) return false;
       next.watched += 1;
       markSerieWatched(serie);
+      recordWatchActivity(serie, next.season);
       return true;
     }
 
@@ -9090,6 +9546,7 @@ Last Forever
       const last = reversed.find(season => season.watched > 0);
       if (!last) return false;
       last.watched -= 1;
+      removeLatestWatchActivity(serie, last.season);
       clearWatchDateIfNotStarted(serie);
       return true;
     }
@@ -9125,6 +9582,12 @@ Last Forever
         serie.seasons[index][field] = Number(value);
       }
       if (field === "watched" && serie.seasons[index][field] > previousWatched) markSerieWatched(serie);
+      if (field === "watched" && serie.seasons[index][field] === previousWatched + 1) {
+        recordWatchActivity(serie, serie.seasons[index].season);
+      }
+      if (field === "watched" && serie.seasons[index][field] < previousWatched) {
+        removeLatestWatchActivity(serie, serie.seasons[index].season, previousWatched - serie.seasons[index][field]);
+      }
       clearWatchDateIfNotStarted(serie);
       render();
     }
@@ -9136,6 +9599,7 @@ Last Forever
       if (availableEpisodeLimit(serie, season) > season.watched) {
         season.watched += 1;
         markSerieWatched(serie);
+        recordWatchActivity(serie, season.season);
       }
       render();
     }
@@ -9144,7 +9608,10 @@ Last Forever
       const serie = getSerie(activeSerieId);
       const season = serie?.seasons[index];
       if (!season) return;
-      if (season.watched > 0) season.watched -= 1;
+      if (season.watched > 0) {
+        season.watched -= 1;
+        removeLatestWatchActivity(serie, season.season);
+      }
       clearWatchDateIfNotStarted(serie);
       render();
     }
@@ -9223,7 +9690,7 @@ Last Forever
     function exportData() {
       const payload = {
         app: "Tus series",
-        version: 3,
+        version: 4,
         exportedAt: new Date().toISOString(),
         state
       };
