@@ -1876,10 +1876,29 @@
       margin: 0 0 14px;
     }
 
+    .activity-scroll {
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      overscroll-behavior-inline: contain;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(23, 26, 24, .28) transparent;
+    }
+
+    .activity-scroll:focus-visible {
+      outline: 2px solid rgba(15, 143, 131, .42);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
     .activity-chart {
       height: 220px;
+      width: 100%;
+      min-width: var(--activity-chart-min-width, 660px);
       display: grid;
-      grid-template-columns: repeat(30, minmax(5px, 1fr));
+      grid-template-columns: repeat(30, minmax(var(--activity-column-min-width, 18px), 1fr));
       gap: 4px;
       align-items: stretch;
       padding: 8px 2px 0;
@@ -1889,28 +1908,40 @@
     }
 
     .activity-day {
+      width: 100%;
       min-width: 0;
       display: grid;
       grid-template-rows: 20px minmax(0, 1fr);
       gap: 4px;
+      overflow: hidden;
     }
 
     .activity-value {
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
       color: var(--muted);
       font-size: 9px;
       font-weight: 900;
+      font-variant-numeric: tabular-nums;
       line-height: 20px;
       text-align: center;
+      white-space: nowrap;
     }
 
     .activity-bar-track {
+      width: 100%;
       min-height: 0;
+      min-width: 0;
       display: flex;
       align-items: flex-end;
+      justify-content: center;
     }
 
     .activity-bar {
       width: 100%;
+      max-width: 16px;
+      flex: 0 1 16px;
       min-height: 3px;
       border-radius: 5px 5px 2px 2px;
       background: rgba(23, 26, 24, .09);
@@ -1922,6 +1953,8 @@
     }
 
     .activity-axis {
+      width: 100%;
+      min-width: var(--activity-chart-min-width, 660px);
       display: flex;
       justify-content: space-between;
       gap: 10px;
@@ -2240,7 +2273,6 @@
 
       .activity-chart {
         height: 190px;
-        gap: 2px;
       }
 
       .toolbar {
@@ -2451,11 +2483,13 @@
             <h3 id="activityChartHeading">Actividad diaria</h3>
             <span id="statisticsTrend">Últimos 7 días: 0</span>
           </div>
-          <div id="statisticsChart" class="activity-chart" role="img" aria-label="Actividad diaria de los últimos 30 días"></div>
-          <div class="activity-axis" aria-hidden="true">
-            <span id="statisticsChartStart">Inicio</span>
-            <span id="statisticsChartMiddle">Mitad</span>
-            <span id="statisticsChartEnd">Hoy</span>
+          <div class="activity-scroll" role="region" aria-label="Gráfico desplazable de actividad diaria" tabindex="0">
+            <div id="statisticsChart" class="activity-chart" role="img" aria-label="Actividad diaria de los últimos 30 días"></div>
+            <div class="activity-axis" aria-hidden="true">
+              <span id="statisticsChartStart">Inicio</span>
+              <span id="statisticsChartMiddle">Mitad</span>
+              <span id="statisticsChartEnd">Hoy</span>
+            </div>
           </div>
         </section>
 
@@ -9943,6 +9977,12 @@ Last Forever
 
       const chart = document.getElementById("statisticsChart");
       const maxDayCount = Math.max(1, ...activity.days.map(day => day.count));
+      const activityScroll = chart.closest(".activity-scroll");
+      const maxCountDigits = String(maxDayCount).length;
+      const activityColumnMinWidth = Math.max(18, maxCountDigits * 6 + 6);
+      const activityChartMinWidth = activity.days.length * activityColumnMinWidth + (activity.days.length - 1) * 4 + 4;
+      activityScroll.style.setProperty("--activity-column-min-width", `${activityColumnMinWidth}px`);
+      activityScroll.style.setProperty("--activity-chart-min-width", `${activityChartMinWidth}px`);
       chart.setAttribute(
         "aria-label",
         `${totalEpisodes} capítulo${totalEpisodes === 1 ? "" : "s"} visto${totalEpisodes === 1 ? "" : "s"} en ${activeDays} día${activeDays === 1 ? "" : "s"} activo${activeDays === 1 ? "" : "s"} durante los últimos 30 días.`
@@ -9957,6 +9997,9 @@ Last Forever
           </div>
         `;
       }).join("");
+      requestAnimationFrame(() => {
+        activityScroll.scrollLeft = activityScroll.scrollWidth;
+      });
 
       const rankingBySerie = new Map();
       activity.events.forEach(event => {
