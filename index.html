@@ -3354,25 +3354,6 @@
       nextEpisodeDate: "2026-10-30",
       image: "https://image.tmdb.org/t/p/w500/hRD9kvYLbySRvtt9Nh7QK6XECZX.jpg"
     }, {
-      id: "fleabag",
-      title: "Fleabag",
-      platform: "Prime Video / BBC",
-      status: "Finalizada · 2 temporadas · 12 capítulos",
-      genre: "Comedia dramática",
-      description: "Una joven londinense afronta el duelo, la familia y sus relaciones con un humor feroz mientras rompe constantemente la cuarta pared.",
-      averageEpisodeMinutes: 26,
-      seasons: [6, 6].map((e, a) => ({
-        season: a + 1,
-        episodes: e,
-        released: !0
-      })),
-      releasedEpisodes: 12,
-      totalEpisodesPlanned: 12,
-      releasedWatchTimeMinutes: 312,
-      releasedWatchTimeText: "5 h 12 min",
-      totalPlannedWatchTimeMinutes: 312,
-      totalPlannedWatchTimeText: "5 h 12 min"
-    }, {
       id: "scream-queens",
       title: "Scream Queens",
       platform: "Disney+ / Hulu / FOX",
@@ -3591,25 +3572,6 @@
       releasedWatchTimeText: "16 h 9 min",
       totalPlannedWatchTimeMinutes: 969,
       totalPlannedWatchTimeText: "16 h 9 min"
-    }, {
-      id: "perfil-falso",
-      title: "Perfil falso",
-      platform: "Netflix",
-      status: "Finalizada · 3 temporadas · 30 capítulos",
-      genre: "Thriller / drama / misterio",
-      description: "Una bailarina descubre que el hombre al que conoció en una aplicación de citas vive bajo una identidad falsa y arrastra una red de engaños y crímenes.",
-      averageEpisodeMinutes: 45,
-      seasons: [10, 10, 10].map((e, a) => ({
-        season: a + 1,
-        episodes: e,
-        released: !0
-      })),
-      releasedEpisodes: 30,
-      totalEpisodesPlanned: 30,
-      releasedWatchTimeMinutes: 1350,
-      releasedWatchTimeText: "22 h 30 min",
-      totalPlannedWatchTimeMinutes: 1350,
-      totalPlannedWatchTimeText: "22 h 30 min"
     }, {
       id: "l-agence-immobilier-de-luxe-en-famille",
       title: "L'Agence: L'immobilier de luxe en famille",
@@ -5858,7 +5820,6 @@
       description: "Participantes de realities compiten y forman parejas para encontrar la combinación más compatible en una villa tropical."
     }, ...requestedSeriesCatalog],
     seriesCoverImages = Object.freeze({
-      fleabag: "https://static.tvmaze.com/uploads/images/medium_portrait/192/482341.jpg",
       "scream-queens": "https://static.tvmaze.com/uploads/images/medium_portrait/85/213832.jpg",
       "loups-garous-canal-plus": "https://static.tvmaze.com/uploads/images/medium_portrait/539/1347705.jpg",
       "celebrity-hunted-france": "https://static.tvmaze.com/uploads/images/medium_portrait/409/1023855.jpg",
@@ -5869,7 +5830,6 @@
       "space-force": "https://static.tvmaze.com/uploads/images/medium_portrait/387/969535.jpg",
       "en-place": "https://static.tvmaze.com/uploads/images/medium_portrait/442/1106991.jpg",
       "your-friends-and-neighbors": "https://static.tvmaze.com/uploads/images/medium_portrait/620/1550778.jpg",
-      "perfil-falso": "https://static.tvmaze.com/uploads/images/medium_portrait/461/1153096.jpg",
       "l-agence-immobilier-de-luxe-en-famille": "https://static.tvmaze.com/uploads/images/medium_portrait/333/832792.jpg",
       "schitts-creek": "https://static.tvmaze.com/uploads/images/medium_portrait/279/697623.jpg",
       "the-circle-us": "https://static.tvmaze.com/uploads/images/medium_portrait/512/1282231.jpg",
@@ -6185,7 +6145,7 @@
         episodes: secretStorySeason14Episodes.map(e => e.title)
       }]
     }, ...seriesCatalog.map(catalogItemFromSeries)],
-    REMOVED_SERIES_IDS = ["the-ultimatum-marry-or-move-on-uk", "the-bear"],
+    REMOVED_SERIES_IDS = ["the-ultimatum-marry-or-move-on-uk", "the-bear", "fleabag", "perfil-falso"],
     ui = {
       catalogSearch: "",
       catalogFilter: "all",
