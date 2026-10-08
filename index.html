@@ -7015,7 +7015,9 @@
     return state.mySeries.filter(e => {
       const a = serieTotals(e);
       return a.totalEpisodes > 0 && a.availableEpisodes > 0 && a.watchedEpisodes >= a.availableEpisodes && !a.missingData && 0 === a.pendingEpisodes
-    })
+    }).sort((e, a) => e.name.localeCompare(a.name, "es", {
+      sensitivity: "base"
+    }))
   }
 
   function filteredCatalog() {
