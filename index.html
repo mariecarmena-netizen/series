@@ -2438,7 +2438,7 @@
         <div class=mark aria-hidden=true>TS</div>
         <div class=title>
           <h1 id=homeHeading>Tus series</h1>
-          <p>Controla lo que ves, lo que falta y cuándo terminarías. Datos revisados el 29/09/2026.
+          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>Datos revisados el 08/10/2026.</span>
         </div>
       </div>
       <div class=header-menu id=homeMenu><button data-action=toggle-menu type=button class="secondary icon-button" aria-label="Abrir menu" aria-controls=homeMenuPopover aria-expanded=false>&#9776;</button>
@@ -2471,12 +2471,12 @@
         <div class=mark aria-hidden=true>OK</div>
         <div class=title>
           <h1 id=watchedHeading>Mis series</h1>
-          <p>Series vistas enteras.
+          <p>Series con todos los capítulos disponibles vistos. Sus próximas temporadas siguen en el calendario.
         </div>
       </div>
     </header>
     <div class=section-title>
-      <h3>Vistas enteras</h3><span id=watchedSeriesCount>0 series</span>
+      <h3>Al día</h3><span id=watchedSeriesCount>0 series</span>
     </div>
     <section class=series-grid id=watchedSeriesList aria-live=polite></section>
   </section>
@@ -2574,6 +2574,7 @@
         <p id=detailPercent>0% completado
       </aside>
       <div>
+        <div id=detailSources></div>
         <div class=section-title>
           <h3>Temporadas</h3><span id=seasonCount>0 temporadas</span>
         </div>
@@ -2587,7 +2588,7 @@
         <div class=mark aria-hidden=true>CAL</div>
         <div class=title>
           <h1 id=calendarHeading>Calendario</h1>
-          <p>Estrenos, próximos capítulos y fechas pendientes. Datos revisados el 29/09/2026.
+          <p>Estrenos, próximos capítulos y fechas pendientes. Revisado el 08/10/2026. Horarios de Madrid; se indica la plataforma y el país de emisión.
         </div>
       </div>
     </header>
@@ -2638,13 +2639,14 @@
   </section>
 </main>
 <nav aria-label="Páginas principales" class=tab-bar><button data-action=show-screen type=button class=active aria-label="Página principal" data-screen=home data-tab=home><span class=tab-icon aria-hidden=true>📺</span> <span>Series</span></button> <button data-action=show-screen type=button aria-label=Calendario data-screen=calendar data-tab=calendar><span class=tab-icon aria-hidden=true>📅</span> <span>Calendario</span></button></nav>
+<script src="./release-data.js"></script>
 <script>
   const STORAGE_KEY = "series-tracker-v3",
     LEGACY_STORAGE_KEY = "series-tracker-v2",
     RECENT_WATCH_WINDOW_DAYS = 30,
     PACE_WINDOW_DAYS = 14,
     PACE_BASELINE_WEIGHT_DAYS = 2,
-    CONTENT_AVAILABLE_THROUGH = "2026-09-29",
+    DATA_REVIEWED_ON = RELEASE_REVIEW.reviewedOn,
     malcolmInTheMiddleEpisodeTitles = [
       ["Pilot", "Red Dress", "Home Alone 4", "Shame", "Malcolm Babysits", "Sleepover", "Francis Escapes", "Krelboyne Picnic", "Lois vs. Evil", "Stock Car Races", "Funeral", "Cheerleader", "Rollerskates", "The Bots and the Bees", "Smunday", "Water Park"],
       ["Traffic Jam", "Halloween Approximately", "Lois's Birthday", "Dinner Out", "Casino", "Convention", "Robbery", "Therapy", "High School Play", "The Bully", "Old Mrs. Old", "Krelboyne Girl", "New Neighbors", "Hal Quits", "The Grandparents", "Traffic Ticket", "Surgery", "Reese Cooks", "Tutoring Reese", "Bowling", "Malcolm vs. Reese", "Mini-Bike", "Carnival", "Evacuation", "Flashback"],
@@ -4618,7 +4620,7 @@
         4: ["Bombshells & Love Bombs", "A Tale of Two Jimmys", "Wet and Wild", "Baddies Come In Threes", "Ex’s and Woe’s", "Loose Lips Sink Relationships", "Split Decision", "Rough Patches, Perfect Matches"]
       }
     },
-    releaseEvents = [...[{
+    releaseEvents = reviewedReleaseEvents([...[{
       date: "2024-02-22",
       episode: 1,
       title: "Chanter sa vie (Partie 1)"
@@ -4986,7 +4988,7 @@
       season: 4,
       episode: a + 1,
       title: e
-    }))].sort((e, a) => e.date.localeCompare(a.date) || e.serie.localeCompare(a.serie) || e.episode - a.episode),
+    }))]),
     seriesCatalog = [{
       id: "atasco",
       title: "Atasco",
@@ -6140,11 +6142,11 @@
         season: 14,
         total: secretStorySeason14Episodes.length,
         watched: 0,
-        releasedEpisodes: secretStorySeason14Episodes.filter(e => e.date <= CONTENT_AVAILABLE_THROUGH).length,
+        releasedEpisodes: secretStorySeason14Episodes.length,
         note: "TF1+ · 99 emisiones disponibles · temporada completa; final 20/08/2026",
         episodes: secretStorySeason14Episodes.map(e => e.title)
       }]
-    }, ...seriesCatalog.map(catalogItemFromSeries)],
+    }, ...seriesCatalog.map(catalogItemFromSeries)].map(applyReviewedCatalogData),
     REMOVED_SERIES_IDS = ["the-ultimatum-marry-or-move-on-uk", "the-bear", "fleabag", "perfil-falso"],
     ui = {
       catalogSearch: "",
@@ -6173,6 +6175,67 @@
 
   function clone(e) {
     return JSON.parse(JSON.stringify(e))
+  }
+
+  function currentReleaseDateKey(date = new Date()) {
+    return new Intl.DateTimeFormat("en-CA", {timeZone: RELEASE_REVIEW.timeZone, year: "numeric", month: "2-digit", day: "2-digit"}).format(date);
+  }
+
+  function compareReleaseEvents(a, b) {
+    return a.date.localeCompare(b.date) || new Date(a.releaseAt || `${a.date}T23:59:59Z`) - new Date(b.releaseAt || `${b.date}T23:59:59Z`) || a.serie.localeCompare(b.serie, "es") || a.episode - b.episode;
+  }
+
+  function reviewedReleaseEvents(events) {
+    const byEpisode = new Map(events.map(event => [`${event.serieId}:${event.season}:${event.episode}`, event]));
+    RELEASE_REVIEW.events.forEach(event => {
+      const key = `${event.serieId}:${event.season}:${event.episode}`;
+      byEpisode.set(key, {...byEpisode.get(key), ...event});
+    });
+    return [...byEpisode.values()].map(event => ({
+      ...event,
+      date: event.releaseAt ? currentReleaseDateKey(new Date(event.releaseAt)) : event.date,
+      serie: event.serie || event.serieId
+    })).sort(compareReleaseEvents);
+  }
+
+  function applyReviewedCatalogData(serie) {
+    const review = RELEASE_REVIEW.series[serie.id] || {};
+    (review.seasons || []).forEach(patch => {
+      const season = serie.seasons.find(season => Number(season.season) === patch.season);
+      if (season) Object.assign(season, patch);
+      else serie.seasons.push({watched: 0, episodes: [], ...patch});
+    });
+    if (review.status) serie.status = review.status;
+    if (review.description) serie.description = review.description;
+    else if (review.trackingSeason) {
+      const source = seriesCatalog.find(source => source.id === serie.id);
+      if (source) serie.description = [source.platform, source.genre, source.description].filter(Boolean).join(" · ");
+    }
+    serie.seasons.forEach(season => {season.episodes = normalizeEpisodeList(season.episodes);});
+    return serie;
+  }
+
+  function releaseHasOccurred(event, now = new Date()) {
+    if (!event) return false;
+    // Sin una hora anunciada, se espera a que termine el día de estreno.
+    return event.releaseAt ? new Date(event.releaseAt).getTime() <= now.getTime() : event.date < currentReleaseDateKey(now);
+  }
+
+  function releaseStatusText(serie) {
+    const review = RELEASE_REVIEW.series[serie.id];
+    if (!review?.trackingSeason) return serie.status;
+    const season = serie.seasons.find(season => Number(season.season) === review.trackingSeason);
+    if (!season) return serie.status;
+    const available = availableEpisodeLimit(serie, season),
+      next = releaseEvents.find(event => event.serieId === serie.id && event.season === season.season && !releaseHasOccurred(event)),
+      count = season.totalKnown === false ? `${available} capítulos disponibles · total pendiente` : `${available}/${season.total} capítulos disponibles`,
+      stage = !available ? "pendiente de estreno" : available >= season.total && season.totalKnown !== false ? "completa" : "en emisión";
+    return [`Temporada ${season.season} ${stage}`, count, next ? `${available ? "Próximo" : "Estreno"} ${formatCatalogDate(next.date)}` : season.totalKnown === false ? "Próximas fechas pendientes" : "", review.renewalNote || ""].filter(Boolean).join(" · ");
+  }
+
+  function releaseSourcesHtml(serie) {
+    const sources = [...(RELEASE_REVIEW.series[serie.id]?.sources || []), ...(RELEASE_REVIEW.providerSources?.[serie.id] || [])];
+    return sources.length ? `<p class="calendar-source-note">Revisado el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join(" · ")}</p>` : "";
   }
 
   function normalizeEpisodeList(e) {
@@ -6477,6 +6540,7 @@
           return {
             season: e.season,
             total: o,
+            totalKnown: e.totalKnown !== false,
             watched: Math.min(l, o),
             available: !1 !== e.available,
             releasedEpisodes: Math.max(0, Math.floor(Number(e.releasedEpisodes) || 0)),
@@ -6541,11 +6605,16 @@
   }
 
   function availableEpisodeLimit(e, a) {
-    const t = Math.max(0, Math.floor(Number(a?.total) || 0));
-    if (!t) return 0;
-    const s = releaseEvents.filter(t => t.serieId === e.id && Number(t.season) === Number(a.season)),
-      i = s.filter(e => e.date <= CONTENT_AVAILABLE_THROUGH).length;
-    return s.length > 0 ? Math.min(t, Math.max(i, a.releasedEpisodes)) : a.releasedEpisodes > 0 ? Math.min(t, a.releasedEpisodes) : !1 === a.available ? 0 : t
+    const total = Math.max(0, Math.floor(Number(a?.total) || 0));
+    if (!total) return 0;
+    const events = new Map(releaseEvents.filter(event => event.serieId === e.id && Number(event.season) === Number(a.season)).map(event => [Number(event.episode), event])),
+      verified = Math.min(total, Math.max(0, Number(a.releasedEpisodes) || 0));
+    if (!events.size) return verified || (a.available === false ? 0 : total);
+    // Un calendario completo permite contar por fecha; uno parcial mantiene
+    // los capítulos ya verificados y sólo amplía un tramo consecutivo.
+    let available = Array.from({length: verified}, (_, i) => i + 1).every(number => events.has(number)) ? 0 : verified;
+    while (available < total && releaseHasOccurred(events.get(available + 1))) available += 1;
+    return available;
   }
 
   function nextWatchableSeason(e) {
@@ -6572,7 +6641,7 @@
       pace: r,
       progress: a ? t / a * 100 : 0,
       missingData: e.seasons.some(e => 0 === e.total && !1 !== e.available),
-      upcomingUnknownSeason: e.seasons.some(e => 0 === e.total && !1 === e.available)
+      upcomingUnknownSeason: e.seasons.some(e => e.totalKnown === false || 0 === e.total && !1 === e.available)
     }
   }
 
@@ -6804,14 +6873,14 @@
   }
 
   function calendarUpcomingEvents(e = 8) {
-    const a = dateKeyFromDate(new Date);
-    return calendarSourceEvents().filter(e => e.date >= a).sort((e, a) => e.date.localeCompare(a.date) || e.serie.localeCompare(a.serie, "es") || Number(e.episode) - Number(a.episode)).slice(0, e)
+    return calendarSourceEvents().filter(event => !releaseHasOccurred(event)).sort(compareReleaseEvents).slice(0, e)
   }
 
   function undatedUpcomingForFollowedSeries() {
     return calendarSeriesForScope().flatMap(e => e.seasons.flatMap(a => {
       const t = Math.max(0, Math.floor(Number(a.total) || 0)),
-        s = releaseEvents.filter(t => t.serieId === e.id && Number(t.season) === Number(a.season) && t.date > CONTENT_AVAILABLE_THROUGH).length;
+        s = releaseEvents.filter(t => t.serieId === e.id && Number(t.season) === Number(a.season) && !releaseHasOccurred(t)).length;
+      if (a.totalKnown === false) return [{serieId: e.id, serie: e.name, season: a.season, pendingKind: "total pendiente", label: "Número total de capítulos pendiente", note: a.note || "Calendario parcial; más capítulos pendientes de anunciar"}];
       if (0 === t && !1 === a.available) return [{
         serieId: e.id,
         serie: e.name,
@@ -6833,10 +6902,10 @@
   }
 
   function initialCalendarDate() {
-    const e = dateKeyFromDate(new Date),
+    const e = currentReleaseDateKey(),
       a = calendarSourceEvents(),
-      t = a.find(a => a.date >= e);
-    return t?.date || a[a.length - 1]?.date || e
+      t = a.find(event => !releaseHasOccurred(event));
+    return t?.date || e
   }
 
   function formatCalendarMonth(e) {
@@ -6878,6 +6947,8 @@
         </div>
         <b>${escapeHtml(e.serie)}</b>
         <span>${escapeHtml(e.title)}</span>
+        <span>${escapeHtml(releaseHasOccurred(e) ? "Ya estrenado" : releaseAvailabilityText(e))}</span>
+        ${e.note ? `<span>${escapeHtml(e.note)}</span>` : ""}
         <div class="calendar-event-actions">${calendarEventActionHtml(e)}</div>
       </article>
     `
@@ -6894,7 +6965,9 @@
   }
 
   function releaseAvailabilityText(e) {
-    return e?.date ? `Disponible ${formatCatalogDate(e.date)}` : ""
+    if (!e?.date) return "";
+    const time = e.releaseAt ? new Intl.DateTimeFormat("es-ES", {timeZone: RELEASE_REVIEW.timeZone, hour: "2-digit", minute: "2-digit"}).format(new Date(e.releaseAt)) : "";
+    return `${releaseHasOccurred(e) ? "Estrenado" : "Estreno previsto"} ${formatCatalogDate(e.date)}${time ? ` a las ${time} (Madrid)` : " · hora sin confirmar"}`;
   }
 
   function releaseEventForEpisode(e, a, t) {
@@ -6907,13 +6980,13 @@
     const s = Math.max(Math.max(0, Math.floor(Number(a.watched) || 0)), availableEpisodeLimit(e, a)) + 1;
     if (s > t) return null;
     const i = releaseEventForEpisode(e, a, s);
-    return i?.date > CONTENT_AVAILABLE_THROUGH ? i : null
+    return i && !releaseHasOccurred(i) ? i : null
   }
 
   function nextFutureRelease(e) {
     return e && e.seasons.flatMap(a => {
       const t = nextFutureReleaseForSeason(e, a);
-      return t ? [t] : 0 !== Number(a.total) || !1 !== a.available ? [] : releaseEvents.filter(t => t.serieId === e.id && Number(t.season) === Number(a.season) && t.date > CONTENT_AVAILABLE_THROUGH)
+      return t ? [t] : 0 !== Number(a.total) || !1 !== a.available ? [] : releaseEvents.filter(t => t.serieId === e.id && Number(t.season) === Number(a.season) && !releaseHasOccurred(t))
     }).filter(Boolean).sort((e, a) => e.date.localeCompare(a.date) || Number(e.season) - Number(a.season) || Number(e.episode) - Number(a.episode))[0] || null
   }
 
@@ -7037,10 +7110,14 @@
   }
 
   function nextCatalogRelease(e) {
-    return releaseEvents.filter(a => a.serieId === e.id && a.date > CONTENT_AVAILABLE_THROUGH).sort((e, a) => e.date.localeCompare(a.date))[0] || null
+    return releaseEvents.find(event => event.serieId === e.id && !releaseHasOccurred(event)) || null
   }
 
   function catalogFilterKind(e) {
+    const review = RELEASE_REVIEW.series[e.id], season = e.seasons.find(season => season.season === review?.trackingSeason);
+    if (season && availableEpisodeLimit(e, season) > 0 && (season.totalKnown === false || availableEpisodeLimit(e, season) < season.total)) return "airing";
+    if (nextCatalogRelease(e) || e.seasons.some(season => season.available === false && season.total === 0)) return "upcoming";
+    if (season && availableEpisodeLimit(e, season) >= season.total && season.totalKnown !== false) return "complete";
     const a = `${e.status} ${e.description}`.toLowerCase(),
       t = nextCatalogRelease(e),
       s = /en emisión|en emision|en curso|capítulo disponible|capitulos disponibles/.test(a),
@@ -7098,7 +7175,7 @@
     0 === state.mySeries.length ? (s.textContent = "Todavía no has añadido series", i.textContent = "Añade una serie del catálogo para empezar a seguirla.") : 0 === e.length ? (s.textContent = "Todo al día", i.textContent = t.length ? `${t.length} serie${1===t.length?"":"s"} en Mis series.` : "No quedan capítulos pendientes.") : (s.textContent = `${e.length} serie${e.length>1?"s":""} en portada`, i.textContent = `Quedan ${a.pendingEpisodes} capítulos, aproximadamente ${formatHours(a.pendingMinutes)}.`);
     const n = document.getElementById("mySeriesList");
     if (n.innerHTML = "", n.className = "series-grid", 0 === state.mySeries.length) return void(n.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Vacío</span>\n            <h2>Añade tu primera serie</h2>\n            <p>El progreso, el tiempo pendiente y las temporadas aparecerán aquí.</p>\n          </article>\n        ');
-    if (0 === e.length) return void(n.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Al día</span>\n            <h2>Todo visto</h2>\n            <p>Las series completas volverán a portada cuando haya capítulos nuevos por ver.</p>\n            <div class="card-actions">\n              <button type="button" data-action="show-screen" data-screen="watched">Mis series</button>\n            </div>\n          </article>\n        ');
+    if (0 === e.length) return void(n.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Al día</span>\n            <h2>Todo visto</h2>\n            <p>Las series al día volverán a portada cuando haya capítulos nuevos por ver.</p>\n            <div class="card-actions">\n              <button type="button" data-action="show-screen" data-screen="watched">Mis series</button>\n            </div>\n          </article>\n        ');
     const o = e;
     0 !== o.length ? (n.className = "series-groups", groupedSeries(o).filter(e => e.series.length > 0).forEach(e => {
       const a = document.createElement("section"),
@@ -7121,7 +7198,7 @@
         showQuickWatch: !1,
         nextCaption: "Estado"
       }))
-    }) : e.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Vacío</span>\n            <h2>Aún no hay series completas</h2>\n            <p>Cuando termines todos los capítulos disponibles, aparecerán aquí.</p>\n          </article>\n        '
+    }) : e.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Vacío</span>\n            <h2>Aún no hay series al día</h2>\n            <p>Cuando termines todos los capítulos disponibles, aparecerán aquí.</p>\n          </article>\n        '
   }
 
   function renderCatalog() {
@@ -7144,7 +7221,8 @@
     const e = getSerie(activeSerieId);
     if (!e) return;
     const a = serieTotals(e);
-    applyPalette(document.querySelector(".detail-hero"), e.id), document.getElementById("detailBadge").textContent = e.status, document.getElementById("detailTitle").textContent = e.name, document.getElementById("detailDescription").textContent = e.description || "Progreso y temporadas.", document.getElementById("detailPendingEpisodes").textContent = a.pendingEpisodes, document.getElementById("detailPendingTime").textContent = formatHours(a.pendingMinutes), document.getElementById("detailDaysLeft").textContent = Math.ceil(a.daysLeft || 0), document.getElementById("detailFinishDate").textContent = formatFinishDate(a.daysLeft), document.getElementById("detailProgress").style.width = `${Math.min(100,a.progress)}%`, document.getElementById("detailPercent").textContent = `${Math.round(a.progress)}% · ${a.watchedEpisodes}/${a.totalEpisodes} capítulos`, document.getElementById("seasonCount").textContent = `${e.seasons.length} temporada${1===e.seasons.length?"":"s"}`;
+    document.getElementById("detailSources").innerHTML = releaseSourcesHtml(e);
+    applyPalette(document.querySelector(".detail-hero"), e.id), document.getElementById("detailBadge").textContent = releaseStatusText(e), document.getElementById("detailTitle").textContent = e.name, document.getElementById("detailDescription").textContent = e.description || "Progreso y temporadas.", document.getElementById("detailPendingEpisodes").textContent = a.pendingEpisodes, document.getElementById("detailPendingTime").textContent = formatHours(a.pendingMinutes), document.getElementById("detailDaysLeft").textContent = Math.ceil(a.daysLeft || 0), document.getElementById("detailFinishDate").textContent = formatFinishDate(a.daysLeft), document.getElementById("detailProgress").style.width = `${Math.min(100,a.progress)}%`, document.getElementById("detailPercent").textContent = `${Math.round(a.progress)}% · ${a.watchedEpisodes}/${a.totalEpisodes} capítulos`, document.getElementById("seasonCount").textContent = `${e.seasons.length} temporada${1===e.seasons.length?"":"s"}`;
     const t = document.getElementById("seasons");
     t.innerHTML = "", e.seasons.forEach((a, s) => {
       const i = availableEpisodeLimit(e, a),
@@ -7153,16 +7231,16 @@
         r = a.total > 0 && 0 === i,
         l = nextFutureReleaseForSeason(e, a),
         d = a.total ? a.watched / a.total * 100 : 0,
-        c = 0 === a.total ? "Sin datos" : r || 0 === n && o > 0 ? "Pendiente de estreno" : 0 === n ? "Completa" : `${n} por ver`,
+        c = 0 === a.total ? (a.available === false ? "Pendiente de estreno" : "Sin datos") : r || 0 === n && o > 0 ? "Pendiente de estreno" : 0 === n ? (a.totalKnown === false ? "Al día · total pendiente" : "Completa") : `${n} por ver`,
         m = a.watched > 0 && n > 0,
         u = n > 0 ? a.watched + 1 : 0,
         p = u ? episodeTitleFor(a, u) : "",
         h = u ? `Capítulo ${u}${p?`: ${p}`:""}` : "",
         g = h ? `\n          <div class="season-next">\n            <small>Siguiente +1</small>\n            <b>${escapeHtml(h)}</b>\n          </div>\n        ` : l ? `\n          <div class="season-next">\n            <small>Próximo estreno</small>\n            <b>${escapeHtml(releaseEpisodeFullLabel(l))}</b>\n            <em>${escapeHtml(releaseAvailabilityText(l))}</em>\n          </div>\n        ` : "",
         T = normalizeEpisodeList(a.episodes),
-        f = T.length ? `\n          <details class="episode-disclosure" ${m||l?"open":""}>\n            <summary>${m||l?"Capítulos":`Ver nombres de los ${T.length} capítulos`}</summary>\n            <ol class="episode-list" aria-label="Capítulos de la temporada ${a.season}">\n              ${T.map(t=>{const s=releaseEventForEpisode(e,a,t.number),i=s?.date>CONTENT_AVAILABLE_THROUGH?releaseAvailabilityText(s):"";return`\n                  <li class="${[t.number<=a.watched?"watched":"",t.number===a.watched+1&&a.watched<a.total?"next":"",i?"future":""].filter(Boolean).join(" ")}">\n                    <span>${t.number}</span>\n                    <div class="episode-main">\n                      <b>${escapeHtml(t.title)}</b>\n                      ${i?`<em>${escapeHtml(i)}</em>`:""}\n                    </div>\n                  </li>\n                `}).join("")}\n            </ol>\n          </details>\n        ` : "",
+        f = T.length ? `\n          <details class="episode-disclosure" ${m||l?"open":""}>\n            <summary>${m||l?"Capítulos":`Ver nombres de los ${T.length} capítulos`}</summary>\n            <ol class="episode-list" aria-label="Capítulos de la temporada ${a.season}">\n              ${T.map(t=>{const s=releaseEventForEpisode(e,a,t.number),i=s&&!releaseHasOccurred(s)?releaseAvailabilityText(s):"";return`\n                  <li class="${[t.number<=a.watched?"watched":"",t.number===a.watched+1&&a.watched<a.total?"next":"",i?"future":""].filter(Boolean).join(" ")}">\n                    <span>${t.number}</span>\n                    <div class="episode-main">\n                      <b>${escapeHtml(t.title)}</b>\n                      ${i?`<em>${escapeHtml(i)}</em>`:""}\n                    </div>\n                  </li>\n                `}).join("")}\n            </ol>\n          </details>\n        ` : "",
         y = document.createElement("article");
-      y.className = "season-card" + (m || l ? "" : " compact"), applyPalette(y, `${e.id}-${a.season}`), y.innerHTML = `\n          <div class="season-head">\n            <div>\n              <h4>Temporada ${a.season}</h4>\n              <p>${0===a.total?"Datos no disponibles":r?`${a.total} capítulos previstos · todavía no estrenada`:o>0?`${a.watched}/${a.total} vistos · ${o} por estrenar`:`${a.watched}/${a.total} capítulos vistos`}</p>\n            </div>\n            <span class="chip ${statusClassForText(c)}">${escapeHtml(c)}</span>\n          </div>\n          <div class="progress-wrap"><div class="progress" style="width:${Math.min(100,d)}%"></div></div>\n          <div class="season-overview">\n            <span><small>Total</small><b>${a.total||"?"}</b></span>\n            <span><small>Vistos</small><b>${a.watched}</b></span>\n            <span><small>Progreso</small><b>${Math.round(d)}%</b></span>\n          </div>\n          ${a.note?`<p class="season-note">${escapeHtml(a.note)}</p>`:""}\n          ${g}\n          ${f}\n          <div class="season-actions">\n            <button type="button" data-action="increment-season" data-index="${s}" ${0===n?"disabled":""}>+1 visto</button>\n            <button class="secondary" type="button" data-action="complete-season" data-index="${s}" ${0===n?"disabled":""}>Completar</button>\n            <button class="secondary" type="button" data-action="decrement-season" data-index="${s}" ${0===a.watched?"disabled":""}>-1 visto</button>\n          </div>\n        `, t.appendChild(y)
+      y.className = "season-card" + (m || l ? "" : " compact"), applyPalette(y, `${e.id}-${a.season}`), y.innerHTML = `\n          <div class="season-head">\n            <div>\n              <h4>Temporada ${a.season}</h4>\n              <p>${0===a.total?(a.available===false?"Estreno y capítulos pendientes de anunciar":"Datos no disponibles"):a.totalKnown===false?`${a.watched}/${a.total} capítulos conocidos vistos · total de temporada pendiente`:r?`${a.total} capítulos previstos · todavía no estrenada`:o>0?`${a.watched}/${a.total} vistos · ${o} por estrenar`:`${a.watched}/${a.total} capítulos vistos`}</p>\n            </div>\n            <span class="chip ${statusClassForText(c)}">${escapeHtml(c)}</span>\n          </div>\n          <div class="progress-wrap"><div class="progress" style="width:${Math.min(100,d)}%"></div></div>\n          <div class="season-overview">\n            <span><small>Total</small><b>${a.totalKnown===false?`≥ ${a.total}`:a.total||"?"}</b></span>\n            <span><small>Vistos</small><b>${a.watched}</b></span>\n            <span><small>Progreso</small><b>${Math.round(d)}%</b></span>\n          </div>\n          ${a.note?`<p class="season-note">${escapeHtml(a.note)}</p>`:""}\n          ${g}\n          ${f}\n          <div class="season-actions">\n            <button type="button" data-action="increment-season" data-index="${s}" ${0===n?"disabled":""}>+1 visto</button>\n            <button class="secondary" type="button" data-action="complete-season" data-index="${s}" ${0===n?"disabled":""}>Completar</button>\n            <button class="secondary" type="button" data-action="decrement-season" data-index="${s}" ${0===a.watched?"disabled":""}>-1 visto</button>\n          </div>\n        `, t.appendChild(y)
     })
   }
 
@@ -7236,13 +7314,13 @@
     const monthKey = monthKeyFromDate(calendarCursor),
       monthEvents = calendarEventsForMonth(calendarCursor),
       sourceEvents = calendarSourceEvents(),
-      todayKey = dateKeyFromDate(new Date),
-      nextEvent = [...sourceEvents].filter(e => e.date >= todayKey).sort((e, a) => e.date.localeCompare(a.date))[0] || null;
+      todayKey = currentReleaseDateKey(),
+      nextEvent = [...sourceEvents].filter(e => !releaseHasOccurred(e)).sort((e, a) => e.date.localeCompare(a.date))[0] || null;
     selectedCalendarDate.startsWith(monthKey) || (selectedCalendarDate = monthEvents[0]?.date || dateKeyFromDate(calendarCursor)), monthTitle.textContent = formatCalendarMonth(calendarCursor), grid.innerHTML = "";
     document.querySelectorAll("[data-action='set-calendar-scope']").forEach(e => {
       const a = e.dataset.scope === ui.calendarScope;
       e.classList.toggle("active", a), e.setAttribute("aria-pressed", String(a))
-    }), monthCount.textContent = `${monthEvents.length} estreno${1===monthEvents.length?"":"s"}`, nextRelease.textContent = nextEvent ? `${formatCalendarEventDate(nextEvent.date)} · ${nextEvent.serie}` : "Sin próximos estrenos", seriesCount.textContent = `${new Set(sourceEvents.map(e=>e.serieId)).size} serie${1===new Set(sourceEvents.map(e=>e.serieId)).size?"":"s"}`, sourceNote.textContent = "all" === ui.calendarScope ? "Mostrando todos los estrenos fechados del catálogo." : "Mostrando únicamente las series que sigues.";
+    }), monthCount.textContent = `${monthEvents.length} estreno${1===monthEvents.length?"":"s"}`, nextRelease.textContent = nextEvent ? `${formatCalendarEventDate(nextEvent.date)} · ${nextEvent.serie}` : "Sin próximos estrenos", seriesCount.textContent = `${new Set(sourceEvents.map(e=>e.serieId)).size} serie${1===new Set(sourceEvents.map(e=>e.serieId)).size?"":"s"}`, sourceNote.textContent = ("all" === ui.calendarScope ? "Mostrando todos los estrenos fechados del catálogo." : "Mostrando únicamente las series que sigues.") + " Fechas y horas de Madrid. Los estrenos de Estados Unidos o Francia no confirman disponibilidad en España.";
     const year = calendarCursor.getFullYear(),
       month = calendarCursor.getMonth(),
       leadingDays = (new Date(year, month, 1).getDay() + 6) % 7,
@@ -7283,7 +7361,7 @@
   }
 
   function render() {
-    state.mySeries.forEach(clampSerie), saveState(), renderHome(), renderWatchedSeries(), renderStatistics(), renderCatalog(), renderDetail(), renderCalendar()
+    catalog.forEach(serie => { serie.status = releaseStatusText(serie); }), state.mySeries.forEach(serie => { clampSerie(serie); serie.status = releaseStatusText(serie); }), saveState(), renderHome(), renderWatchedSeries(), renderStatistics(), renderCatalog(), renderDetail(), renderCalendar()
   }
 
   function addSerie(e) {
@@ -7346,7 +7424,24 @@
     "Escape" === e.key && closeHomeMenu()
   }), document.getElementById("searchCatalog").addEventListener("input", e => {
     ui.catalogSearch = e.target.value, renderCatalog()
-  }), render(), "serviceWorker" in navigator && "file:" !== location.protocol && window.addEventListener("load", () => {
+  }), render();
+
+  function releaseDisplaySignature() {
+    return `${currentReleaseDateKey()}:${releaseEvents.filter(event => releaseHasOccurred(event)).length}`;
+  }
+  let lastReleaseDisplay = releaseDisplaySignature();
+  function refreshReleaseDisplay() {
+    const signature = releaseDisplaySignature();
+    if (signature !== lastReleaseDisplay) {
+      lastReleaseDisplay = signature;
+      render();
+    }
+  }
+  setInterval(refreshReleaseDisplay, 60000);
+  document.addEventListener("visibilitychange", () => {if (!document.hidden) refreshReleaseDisplay();});
+  window.addEventListener("focus", refreshReleaseDisplay);
+
+  "serviceWorker" in navigator && "file:" !== location.protocol && window.addEventListener("load", () => {
     navigator.serviceWorker.register("./service-worker.js").catch(() => {})
   })
 </script>
