@@ -5,7 +5,7 @@ const vm = require('node:vm');
 
 const root = path.join(__dirname, '..');
 const listeners = {};
-const storage = new Map([['tus-series-v20', new Map()], ['another-app', new Map()]]);
+const storage = new Map([['tus-series-v23-2026-10-11', new Map()], ['another-app', new Map()]]);
 let active = false;
 const caches = {
   open: async name => {
@@ -51,12 +51,13 @@ async function offlineRequest(url, mode = 'same-origin') {
   await lifecycle('install');
   await lifecycle('activate');
   assert.ok(active);
-  assert.ok(!storage.has('tus-series-v20'));
+  assert.ok(!storage.has('tus-series-v23-2026-10-11'));
   assert.ok(storage.has('another-app'));
   const offlineHtml = await offlineRequest('/series/', 'navigate');
   assert.ok(offlineHtml.toString().includes('./release-data.js'));
   const releaseData = await offlineRequest('./release-data.js');
-  assert.ok(releaseData.toString().includes('2026-10-08'));
+  assert.ok(releaseData.toString().includes('2026-10-11'));
+  assert.ok(releaseData.toString().includes('2027-02-09'));
   assert.ok(await offlineRequest('./manifest.webmanifest'));
   console.log('OK: app y calendario en caché sin conexión; otras aplicaciones conservan su caché.');
 })().catch(error => {console.error(error); process.exitCode = 1;});

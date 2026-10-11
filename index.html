@@ -1584,6 +1584,18 @@
     margin: 0 auto
   }
 
+  #calendarMonthPicker {
+    width: auto;
+    max-width: 100%;
+    margin: 6px 0 14px 8px;
+    padding: 8px;
+    font: inherit
+  }
+
+  #calendarUpcomingToggle {
+    margin-top: 12px
+  }
+
   .calendar-grid,
   .calendar-weekdays {
     display: grid;
@@ -2438,7 +2450,7 @@
         <div class=mark aria-hidden=true>TS</div>
         <div class=title>
           <h1 id=homeHeading>Tus series</h1>
-          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>Datos revisados el 08/10/2026.</span>
+          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>Datos revisados el 11/10/2026 · 89 series.</span>
         </div>
       </div>
       <div class=header-menu id=homeMenu><button data-action=toggle-menu type=button class="secondary icon-button" aria-label="Abrir menu" aria-controls=homeMenuPopover aria-expanded=false>&#9776;</button>
@@ -2588,7 +2600,7 @@
         <div class=mark aria-hidden=true>CAL</div>
         <div class=title>
           <h1 id=calendarHeading>Calendario</h1>
-          <p>Estrenos, próximos capítulos y fechas pendientes. Revisado el 08/10/2026. Horarios de Madrid; se indica la plataforma y el país de emisión.
+          <p>Estrenos, próximos capítulos y fechas pendientes. Revisado el 11/10/2026: 89 series. Horarios de Madrid; se indica la plataforma y el país de emisión.
         </div>
       </div>
     </header>
@@ -2614,6 +2626,7 @@
             <h2 id=calendarMonthTitle>Mes</h2>
           </div><button data-action=change-month type=button class="secondary icon-button" aria-label="Mes siguiente" data-direction=1>→</button>
         </div>
+        <label class=calendar-source-note for=calendarMonthPicker>Ir al mes <input type=month id=calendarMonthPicker aria-label="Ir al mes"></label>
         <div class=calendar-weekdays aria-hidden=true><span>L</span> <span>M</span> <span>X</span> <span>J</span> <span>V</span> <span>S</span> <span>D</span></div>
         <section class=calendar-grid id=calendarGrid aria-label="Días del mes"></section>
       </section>
@@ -2629,6 +2642,7 @@
         <h3>Próximos estrenos</h3><span id=calendarUpcomingCount>0 próximos</span>
       </div>
       <div class=calendar-events id=calendarUpcomingEvents></div>
+      <button class=secondary type=button data-action=toggle-calendar-upcoming id=calendarUpcomingToggle hidden>Ver todos los próximos estrenos</button>
     </section>
     <section class=calendar-day-panel aria-live=polite>
       <div class=section-title>
@@ -2647,6 +2661,7 @@
     PACE_WINDOW_DAYS = 14,
     PACE_BASELINE_WEIGHT_DAYS = 2,
     DATA_REVIEWED_ON = RELEASE_REVIEW.reviewedOn,
+    releaseDateFormatter = new Intl.DateTimeFormat("en-CA", {timeZone: RELEASE_REVIEW.timeZone, year: "numeric", month: "2-digit", day: "2-digit"}),
     malcolmInTheMiddleEpisodeTitles = [
       ["Pilot", "Red Dress", "Home Alone 4", "Shame", "Malcolm Babysits", "Sleepover", "Francis Escapes", "Krelboyne Picnic", "Lois vs. Evil", "Stock Car Races", "Funeral", "Cheerleader", "Rollerskates", "The Bots and the Bees", "Smunday", "Water Park"],
       ["Traffic Jam", "Halloween Approximately", "Lois's Birthday", "Dinner Out", "Casino", "Convention", "Robbery", "Therapy", "High School Play", "The Bully", "Old Mrs. Old", "Krelboyne Girl", "New Neighbors", "Hal Quits", "The Grandparents", "Traffic Ticket", "Surgery", "Reese Cooks", "Tutoring Reese", "Bowling", "Malcolm vs. Reese", "Mini-Bike", "Carnival", "Evacuation", "Flashback"],
@@ -6061,6 +6076,12 @@
       "koh-lanta": "https://static.tvmaze.com/uploads/images/medium_portrait/60/151518.jpg",
       "secret-story": "https://static.tvmaze.com/uploads/images/medium_portrait/124/312254.jpg"
     }),
+    releaseEventsBySeason = releaseEvents.reduce((index, event) => {
+      const key = `${event.serieId}:${event.season}`;
+      if (!index.has(key)) index.set(key, new Map());
+      index.get(key).set(Number(event.episode), event);
+      return index;
+    }, new Map()),
     catalog = [{
       id: "koh-lanta",
       name: "Koh-Lanta",
@@ -6338,7 +6359,8 @@
     ui = {
       catalogSearch: "",
       catalogFilter: "all",
-      calendarScope: "all"
+      calendarScope: "all",
+      calendarShowAllUpcoming: false
     },
     knownSeasonTotals = {
       "secret-story": {
@@ -6365,7 +6387,7 @@
   }
 
   function currentReleaseDateKey(date = new Date()) {
-    return new Intl.DateTimeFormat("en-CA", {timeZone: RELEASE_REVIEW.timeZone, year: "numeric", month: "2-digit", day: "2-digit"}).format(date);
+    return releaseDateFormatter.format(date);
   }
 
   function compareReleaseEvents(a, b) {
@@ -6373,7 +6395,7 @@
   }
 
   function reviewedReleaseEvents(events) {
-    const byEpisode = new Map(events.map(event => [`${event.serieId}:${event.season}:${event.episode}`, event]));
+    const byEpisode = new Map((RELEASE_REVIEW.calendarComplete ? [] : events).map(event => [`${event.serieId}:${event.season}:${event.episode}`, event]));
     RELEASE_REVIEW.events.forEach(event => {
       const key = `${event.serieId}:${event.season}:${event.episode}`;
       byEpisode.set(key, {...byEpisode.get(key), ...event});
@@ -6394,7 +6416,7 @@
     });
     if (review.status) serie.status = review.status;
     if (review.description) serie.description = review.description;
-    else if (review.trackingSeason) {
+    else if (review.reviewedOn) {
       const source = seriesCatalog.find(source => source.id === serie.id);
       if (source) serie.description = [source.platform, source.genre, source.description].filter(Boolean).join(" · ");
     }
@@ -6422,7 +6444,8 @@
 
   function releaseSourcesHtml(serie) {
     const sources = [...(RELEASE_REVIEW.series[serie.id]?.sources || []), ...(RELEASE_REVIEW.providerSources?.[serie.id] || [])];
-    return sources.length ? `<p class="calendar-source-note">Revisado el ${formatCatalogDate(RELEASE_REVIEW.series[serie.id]?.reviewedOn || DATA_REVIEWED_ON)} · ${sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join(" · ")}</p>` : "";
+    const dataNote = RELEASE_REVIEW.series[serie.id]?.dataNote;
+    return sources.length ? `<p class="calendar-source-note">Revisado el ${formatCatalogDate(RELEASE_REVIEW.series[serie.id]?.reviewedOn || DATA_REVIEWED_ON)} · ${sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join(" · ")}${dataNote ? `<br>${escapeHtml(dataNote)}` : ""}</p>` : "";
   }
 
   function normalizeEpisodeList(e) {
@@ -6794,7 +6817,7 @@
   function availableEpisodeLimit(e, a) {
     const total = Math.max(0, Math.floor(Number(a?.total) || 0));
     if (!total) return 0;
-    const events = new Map(releaseEvents.filter(event => event.serieId === e.id && Number(event.season) === Number(a.season)).map(event => [Number(event.episode), event])),
+    const events = releaseEventsBySeason.get(`${e.id}:${a.season}`) || new Map(),
       verified = Math.min(total, Math.max(0, Number(a.releasedEpisodes) || 0));
     if (!events.size) return verified || (a.available === false ? 0 : total);
     // Un calendario completo permite contar por fecha; uno parcial mantiene
@@ -7082,7 +7105,7 @@
         serie: e.name,
         season: a.season,
         pendingKind: "fecha pendiente",
-        label: `${i} capítulo${1===i?"":"s"} anunciado${1===i?"":"s"}`,
+        label: `${i} capítulo${1===i?"":"s"} sin fecha`,
         note: a.note || "Fecha pendiente"
       }] : []
     })).sort((e, a) => e.serie.localeCompare(a.serie) || Number(e.season) - Number(a.season))
@@ -7111,9 +7134,10 @@
   }
 
   function formatCalendarEventDate(e) {
-    const a = dateKeyFromDate(new Date),
-      t = dateOffsetFromToday(1),
-      s = dateKeyFromDate(t);
+    const a = currentReleaseDateKey(),
+      t = dateFromKey(a);
+    t.setDate(t.getDate() + 1);
+    const s = dateKeyFromDate(t);
     return e === a ? "Hoy" : e === s ? "Mañana" : dateFromKey(e).toLocaleDateString("es-ES", {
       day: "numeric",
       month: "short"
@@ -7136,6 +7160,7 @@
         <span>${escapeHtml(e.title)}</span>
         <span>${escapeHtml(releaseHasOccurred(e) ? "Ya estrenado" : releaseAvailabilityText(e))}</span>
         ${e.note ? `<span>${escapeHtml(e.note)}</span>` : ""}
+        ${e.sourceUrl ? `<span><a href="${escapeHtml(e.sourceUrl)}" target="_blank" rel="noopener noreferrer">${e.sourceKind === "official" ? "Anuncio de la plataforma" : "Registro de episodios"}</a></span>` : ""}
         <div class="calendar-event-actions">${calendarEventActionHtml(e)}</div>
       </article>
     `
@@ -7158,7 +7183,7 @@
   }
 
   function releaseEventForEpisode(e, a, t) {
-    return e && a && t && releaseEvents.find(s => s.serieId === e.id && Number(s.season) === Number(a.season) && Number(s.episode) === Number(t)) || null
+    return e && a && t && releaseEventsBySeason.get(`${e.id}:${a.season}`)?.get(Number(t)) || null
   }
 
   function nextFutureReleaseForSeason(e, a) {
@@ -7532,10 +7557,19 @@
       `, grid.appendChild(button)
     }
     const selectedEvents = calendarEventsForDate(selectedCalendarDate),
-      upcoming = calendarUpcomingEvents(10),
+      allUpcoming = calendarUpcomingEvents(Infinity),
+      upcoming = ui.calendarShowAllUpcoming ? allUpcoming : allUpcoming.slice(0, 10),
       undated = undatedUpcomingForFollowedSeries(),
-      visibleUndated = undated.slice(0, 24);
-    dayTitle.textContent = formatCalendarDay(selectedCalendarDate), dayCount.textContent = `${selectedEvents.length} estreno${1===selectedEvents.length?"":"s"}`, dayEvents.innerHTML = selectedEvents.length ? selectedEvents.map(e => calendarEventHtml(e)).join("") : '<div class="calendar-empty">No hay capítulos nuevos este día.</div>', upcomingCount.textContent = `${upcoming.length} próximo${1===upcoming.length?"":"s"}`, upcomingEvents.innerHTML = upcoming.length ? upcoming.map(e => calendarEventHtml(e, {
+      visibleUndated = undated;
+    const picker = document.getElementById("calendarMonthPicker"), toggle = document.getElementById("calendarUpcomingToggle");
+    if (picker) picker.value = monthKey;
+    if (toggle) {
+      toggle.hidden = allUpcoming.length <= 10;
+      toggle.textContent = ui.calendarShowAllUpcoming ? "Ver sólo los 10 siguientes" : `Ver los ${allUpcoming.length} próximos estrenos`;
+      toggle.setAttribute("aria-expanded", String(ui.calendarShowAllUpcoming));
+    }
+    sourceNote.textContent += ` Revisado el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series. Las fechas registradas sólo en TVmaze se indican en cada estreno.`;
+    dayTitle.textContent = formatCalendarDay(selectedCalendarDate), dayCount.textContent = `${selectedEvents.length} estreno${1===selectedEvents.length?"":"s"}`, dayEvents.innerHTML = selectedEvents.length ? selectedEvents.map(e => calendarEventHtml(e)).join("") : '<div class="calendar-empty">No hay capítulos nuevos este día.</div>', upcomingCount.textContent = `${allUpcoming.length} próximo${1===allUpcoming.length?"":"s"}`, upcomingEvents.innerHTML = upcoming.length ? upcoming.map(e => calendarEventHtml(e, {
       showDate: !0
     })).join("") : '<div class="calendar-empty">No hay próximos estrenos con fecha.</div>', undatedCount.textContent = `${undated.length} pendiente${1===undated.length?"":"s"}`, undatedEvents.innerHTML = visibleUndated.length ? visibleUndated.map(e => `
       <article class="calendar-event" style="--card-a:${paletteFor(e.serieId).a}">
@@ -7548,6 +7582,7 @@
   }
 
   function render() {
+    document.getElementById("dataReviewNote").textContent = `Datos revisados el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series.`;
     catalog.forEach(serie => { serie.status = releaseStatusText(serie); }), state.mySeries.forEach(serie => { clampSerie(serie); serie.status = releaseStatusText(serie); }), saveState(), renderHome(), renderWatchedSeries(), renderStatistics(), renderCatalog(), renderDetail(), renderCalendar()
   }
 
@@ -7606,12 +7641,30 @@
     const t = a.dataset.action,
       s = a.dataset.id,
       i = Number(a.dataset.index);
+    if (t === "toggle-calendar-upcoming") {
+      ui.calendarShowAllUpcoming = !ui.calendarShowAllUpcoming;
+      renderCalendar();
+      return;
+    }
+    if (t === "go-calendar-today") {
+      selectedCalendarDate = currentReleaseDateKey();
+      calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate));
+      renderCalendar();
+      return;
+    }
     "toggle-menu" !== t ? ("show-screen" === t && showScreen(a.dataset.screen), "add-serie" === t && addSerie(s), "open-detail" === t && openDetail(s), "quick-watch" === t && (watchNextEpisode(getSerie(s)), render()), "increment-season" === t && incrementSeason(i), "complete-season" === t && completeSeason(i), "decrement-season" === t && decrementSeason(i), "set-catalog-filter" === t && (ui.catalogFilter = a.dataset.filter || "all", renderCatalog()), "set-calendar-scope" === t && (ui.calendarScope = a.dataset.scope || "followed", selectedCalendarDate = initialCalendarDate(), calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate)), renderCalendar()), "go-calendar-today" === t && (selectedCalendarDate = dateKeyFromDate(new Date), calendarCursor = monthStartFromDate(new Date), renderCalendar()), "change-month" === t && (calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + Number(a.dataset.direction || 0), 1), selectedCalendarDate = calendarEventsForMonth(calendarCursor)[0]?.date || dateKeyFromDate(calendarCursor), renderCalendar()), "select-calendar-day" === t && (selectedCalendarDate = a.dataset.date, renderCalendar()), "remove-serie" === t && removeActiveSerie()) : toggleHomeMenu()
   }), document.addEventListener("keydown", e => {
     "Escape" === e.key && closeHomeMenu()
   }), document.getElementById("searchCatalog").addEventListener("input", e => {
     ui.catalogSearch = e.target.value, renderCatalog()
   }), render();
+
+  document.getElementById("calendarMonthPicker").addEventListener("change", e => {
+    if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(e.target.value)) return;
+    calendarCursor = dateFromKey(`${e.target.value}-01`);
+    selectedCalendarDate = calendarEventsForMonth(calendarCursor)[0]?.date || dateKeyFromDate(calendarCursor);
+    renderCalendar();
+  });
 
   function releaseDisplaySignature() {
     return `${currentReleaseDateKey()}:${releaseEvents.filter(event => releaseHasOccurred(event)).length}`;
@@ -7629,6 +7682,12 @@
   window.addEventListener("focus", refreshReleaseDisplay);
 
   "serviceWorker" in navigator && "file:" !== location.protocol && window.addEventListener("load", () => {
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (reloading) return;
+      reloading = true;
+      window.location.reload();
+    });
     navigator.serviceWorker.register("./service-worker.js").catch(() => {})
   })
 </script>

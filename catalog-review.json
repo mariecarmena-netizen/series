@@ -1,8 +1,8 @@
 {
-  "reviewedOn": "2026-10-08",
+  "reviewedOn": "2026-10-11",
   "timeZone": "Europe/Madrid",
   "catalogSize": 89,
-  "scope": "Identidad, estado y calendario de 76 series revisadas el 08/10/2026 y 13 series añadidas el 11/10/2026. No constituye una verificación independiente de todos los títulos históricos ni de su disponibilidad regional. Las fechas registradas sólo en TVmaze se distinguen de los anuncios oficiales.",
+  "scope": "Revisión de identidad, estado del proveedor, temporadas, capítulos y calendario de las 89 series el 11/10/2026. Incluye todo registro fechado que se puede asociar de forma inequívoca a la numeración de la app y los anuncios oficiales contrastados. Se distinguen las fechas del proveedor, los anuncios oficiales y los datos pendientes. La revisión no confirma disponibilidad regional de todo el catálogo ni asigna fechas a recopilatorios o vídeos sin correspondencia verificable.",
   "series": [
     {
       "id": "entrepreneurs",
@@ -17,7 +17,7 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Serie española de Pantomima Full. Primera temporada de diez capítulos contrastada con Disney+ España; estreno completo el 23/10/2025. Duración orientativa de 27 minutos según Apple TV. No se encontró anuncio oficial de segunda temporada; el estado Ended de TVmaze no se presenta como cancelación confirmada.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "1 temporada completa · 10 capítulos · sin segunda temporada confirmada",
       "sources": [
         {
@@ -29,11 +29,17 @@
           "url": "https://tv.apple.com/es/show/entrepreneurs/umc.cmc.3b15uum6wqj1l30wmnzj8jp1s"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/86886/entrepreneurs"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "furia",
@@ -51,27 +57,67 @@
         {
           "season": 2,
           "episode": 2,
-          "date": "2026-10-16"
+          "date": "2026-10-16",
+          "title": "Episode 2"
         },
         {
           "season": 2,
           "episode": 3,
-          "date": "2026-10-23"
+          "date": "2026-10-23",
+          "title": "Episode 3"
         }
       ],
-      "note": "Identidad española y total de ocho capítulos de la temporada 2 contrastados con HBO Max. Fechas del 16 y 23 de octubre registradas en TVmaze; el resto queda pendiente.",
-      "catalogStatus": "Temporada 2 en emisión · 1/8 capítulos disponibles · resto del calendario pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 2 en emisión · 1/8 capítulos disponibles · Próximo 16/10/2026",
       "sources": [
         {
           "label": "HBO Max · segunda temporada: estreno y ocho capítulos",
           "url": "https://press-spain.max.com/post/la-nueva-temporada-de-furia-se-estrena-el-9-de-octubre-en-hbo-ma"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/85376/furia"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [
+        {
+          "serieId": "furia",
+          "serie": "Furia",
+          "season": 2,
+          "episode": 2,
+          "date": "2026-10-16",
+          "title": "Episodio 2 · título pendiente",
+          "platform": "HBO Max",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3784648/furia-2x02-episode-2",
+          "note": "Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"
+        },
+        {
+          "serieId": "furia",
+          "serie": "Furia",
+          "season": 2,
+          "episode": 3,
+          "date": "2026-10-23",
+          "title": "Episodio 3 · título pendiente",
+          "platform": "HBO Max",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3784649/furia-2x03-episode-3",
+          "note": "Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"
+        }
+      ],
+      "calendarCoverage": {
+        "datedEpisodes": 11,
+        "unresolvedSeasons": [
+          {
+            "season": 2,
+            "catalogEpisodes": 8,
+            "datedEpisodes": 3,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 9
     },
     {
       "id": "wonkas-the-golden-ticket",
@@ -86,7 +132,7 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "1 temporada completa · 9 capítulos · sin segunda temporada confirmada",
       "sources": [
         {
@@ -94,11 +140,17 @@
           "url": "https://www.netflix.com/tudum/articles/the-golden-ticket-season-1-release-date-news"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/92870/wonkas-the-golden-ticket"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 9,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 9
     },
     {
       "id": "friends",
@@ -113,7 +165,7 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 10 temporadas · 236 capítulos",
       "sources": [
         {
@@ -121,11 +173,17 @@
           "url": "https://www.justwatch.com/es/serie/friends"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/431/friends"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 236,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 236
     },
     {
       "id": "el-problema-final",
@@ -140,7 +198,7 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Miniserie completa · 4 capítulos",
       "sources": [
         {
@@ -148,11 +206,17 @@
           "url": "https://about.netflix.com/es_es/news/netflix-reveals-the-trailer-for-the-final-problem"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/92984/el-problema-final"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 4,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 4
     },
     {
       "id": "perdiendo-el-juicio",
@@ -167,7 +231,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · 10 capítulos · temporada 2 confirmada, sin fecha",
       "sources": [
         {
@@ -179,11 +243,17 @@
           "url": "https://www.grupoboomerangtv.com/es/noticias/perdiendo-el-juicio-triunfa-en-netflix-y-se-mantiene-en-el-top-10-global"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/84403/perdiendo-el-juicio"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "oasis",
@@ -198,7 +268,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "1 temporada completa · 8 capítulos · sin segunda temporada confirmada",
       "sources": [
         {
@@ -206,11 +276,17 @@
           "url": "https://www.netflix.com/title/81734907"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/92001/oasis"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 8,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 8
     },
     {
       "id": "nobody-wants-this",
@@ -228,138 +304,214 @@
         {
           "season": 3,
           "episode": 1,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 1"
         },
         {
           "season": 3,
           "episode": 2,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 2"
         },
         {
           "season": 3,
           "episode": 3,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 3"
         },
         {
           "season": 3,
           "episode": 4,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 4"
         },
         {
           "season": 3,
           "episode": 5,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 5"
         },
         {
           "season": 3,
           "episode": 6,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 6"
         },
         {
           "season": 3,
           "episode": 7,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 7"
         },
         {
           "season": 3,
           "episode": 8,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 8"
         },
         {
           "season": 3,
           "episode": 9,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 9"
         },
         {
           "season": 3,
           "episode": 10,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "Episode 10"
         }
       ],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
-      "catalogStatus": "2 temporadas completas · temporada 3: 10 capítulos el 22/10/2026",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 3 pendiente de estreno · 0/10 capítulos disponibles · Estreno 22/10/2026",
       "sources": [
         {
           "label": "Netflix · diez capítulos de la temporada 3 el 22 de octubre",
           "url": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/77060/nobody-wants-this"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 1,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 1 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 2,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 2 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 3,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 3 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 4,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 4 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 5,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 5 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 6,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 6 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 7,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 7 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 8,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 8 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 9,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 9 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         },
         {
+          "serieId": "nobody-wants-this",
+          "serie": "Nadie quiere esto",
           "season": 3,
           "episode": 10,
           "date": "2026-10-22",
-          "releaseAt": "2026-10-22T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 10 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-22T07:00:00Z"
         }
-      ]
+      ],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 30,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 20
     },
     {
       "id": "the-four-seasons",
@@ -374,7 +526,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · 16 capítulos · temporada 3 en rodaje, sin fecha",
       "sources": [
         {
@@ -382,11 +534,17 @@
           "url": "https://www.netflix.com/tudum/articles/the-four-seasons-renewed-season-3"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/73889/the-four-seasons"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 16,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 16
     },
     {
       "id": "big-mistakes",
@@ -401,7 +559,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · 8 capítulos · temporada 2 en rodaje, sin fecha",
       "sources": [
         {
@@ -409,11 +567,17 @@
           "url": "https://www.netflix.com/tudum/articles/big-mistakes-season-2-news-release-date-cast"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/86488/big-mistakes"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 8,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 8
     },
     {
       "id": "black-doves",
@@ -431,30 +595,43 @@
         {
           "season": 2,
           "episode": 1,
-          "date": "2026-11-05"
+          "date": "2026-11-05",
+          "title": "TBA"
         }
       ],
-      "note": "Fecha de estreno contrastada con Netflix. El total de capítulos de la temporada 2 permanece pendiente; sólo se cuenta el estreno conocido.",
-      "catalogStatus": "Temporada 1 completa · temporada 2: estreno el 05/11/2026 · total de capítulos pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 2 pendiente de estreno · 0 capítulos disponibles · total pendiente · Estreno 05/11/2026",
       "sources": [
         {
           "label": "Netflix · estreno de la temporada 2 el 5 de noviembre",
           "url": "https://www.netflix.com/tudum/articles/black-doves-season-2"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/68407/black-doves"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "black-doves",
+          "serie": "Palomas negras",
           "season": 2,
           "episode": 1,
           "date": "2026-11-05",
-          "releaseAt": "2026-11-05T08:00:00Z",
-          "platform": "Netflix"
+          "title": "Estreno de la temporada 2 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/black-doves-season-2",
+          "note": "Total de capítulos pendiente; sólo se cuenta el estreno conocido",
+          "releaseAt": "2026-11-05T08:00:00Z"
         }
-      ]
+      ],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 7,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 6
     },
     {
       "id": "obliterated",
@@ -469,7 +646,7 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 1 temporada · 8 capítulos",
       "sources": [
         {
@@ -477,11 +654,17 @@
           "url": "https://www.netflix.com/title/81413928"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/61892/obliterated"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 8,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 8
     },
     {
       "id": "worst-roommate-ever",
@@ -496,7 +679,7 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · 9 capítulos",
       "sources": [
         {
@@ -504,16 +687,22 @@
           "url": "https://www.netflix.com/title/81031682"
         },
         {
-          "label": "TVmaze · ficha y capítulos registrados",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/60061/worst-roommate-ever"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 9,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 9
     },
     {
       "id": "koh-lanta",
       "name": "Koh-Lanta",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 17936,
         "name": "Koh-Lanta",
@@ -526,35 +715,41 @@
         {
           "season": 34,
           "episode": 8,
-          "date": "2026-10-13"
+          "date": "2026-10-13",
+          "title": "All Stars - Épisode 8"
         },
         {
           "season": 34,
           "episode": 9,
-          "date": "2026-10-20"
+          "date": "2026-10-20",
+          "title": "All Stars - Épisode 9"
         },
         {
           "season": 34,
           "episode": 10,
-          "date": "2026-10-27"
+          "date": "2026-10-27",
+          "title": "All Stars - Épisode 10"
         },
         {
           "season": 34,
           "episode": 11,
-          "date": "2026-11-03"
+          "date": "2026-11-03",
+          "title": "All Stars - Épisode 11"
         },
         {
           "season": 34,
           "episode": 12,
-          "date": "2026-11-10"
+          "date": "2026-11-10",
+          "title": "All Stars - Épisode 12"
         },
         {
           "season": 34,
           "episode": 13,
-          "date": "2026-11-17"
+          "date": "2026-11-17",
+          "title": "All Stars - Épisode 13 : La finale"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 34 en emisión · 7 capítulos disponibles · total pendiente · Próximo 13/10/2026",
       "sources": [
         {
@@ -566,31 +761,98 @@
           "url": "https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/17936/koh-lanta"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
           "season": 34,
           "episode": 8,
           "date": "2026-10-13",
+          "title": "Émission 8",
+          "platform": "TF1 / TF1+",
+          "sourceKind": "official",
+          "sourceUrl": "https://tf1pro.com/programmes/diffusion/2026-10-13-2110-koh-lanta-alls-stars-emission-8-partie-1",
           "releaseAt": "2026-10-13T21:10:00+02:00",
-          "platform": "TF1 / TF1+"
+          "note": "Fecha y hora anunciadas por TF1 (Francia)"
         },
         {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
           "season": 34,
           "episode": 9,
           "date": "2026-10-20",
+          "title": "Émission 9",
+          "platform": "TF1 / TF1+",
+          "sourceKind": "official",
+          "sourceUrl": "https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1",
           "releaseAt": "2026-10-20T21:10:00+02:00",
-          "platform": "TF1 / TF1+"
+          "note": "Fecha y hora anunciadas por TF1 (Francia)"
         }
-      ]
+      ],
+      "registeredUpcoming": [
+        {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
+          "season": 34,
+          "episode": 10,
+          "date": "2026-10-27",
+          "title": "Émission 10",
+          "platform": "TF1 (Francia)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3737761/koh-lanta-34x10-all-stars-episode-10",
+          "note": "Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"
+        },
+        {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
+          "season": 34,
+          "episode": 11,
+          "date": "2026-11-03",
+          "title": "Émission 11",
+          "platform": "TF1 (Francia)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3737762/koh-lanta-34x11-all-stars-episode-11",
+          "note": "Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"
+        },
+        {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
+          "season": 34,
+          "episode": 12,
+          "date": "2026-11-10",
+          "title": "Émission 12",
+          "platform": "TF1 (Francia)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3737763/koh-lanta-34x12-all-stars-episode-12",
+          "note": "Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"
+        },
+        {
+          "serieId": "koh-lanta",
+          "serie": "Koh-Lanta",
+          "season": 34,
+          "episode": 13,
+          "date": "2026-11-17",
+          "title": "Émission 13",
+          "platform": "TF1 (Francia)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3737764/koh-lanta-34x13-all-stars-episode-13-la-finale",
+          "note": "Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"
+        }
+      ],
+      "calendarCoverage": {
+        "datedEpisodes": 460,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 454
     },
     {
       "id": "secret-story",
       "name": "Secret Story",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 31287,
         "name": "Secret Story",
@@ -600,20 +862,93 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 14 completa · 99/99 emisiones · sin temporada 15 confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/31287/secret-story"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 218,
+        "unresolvedSeasons": [
+          {
+            "season": 1,
+            "catalogEpisodes": 81,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 2,
+            "catalogEpisodes": 82,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 3,
+            "catalogEpisodes": 113,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 4,
+            "catalogEpisodes": 121,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 5,
+            "catalogEpisodes": 113,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 6,
+            "catalogEpisodes": 106,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 7,
+            "catalogEpisodes": 112,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 8,
+            "catalogEpisodes": 72,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 9,
+            "catalogEpisodes": 84,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 10,
+            "catalogEpisodes": 103,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 11,
+            "catalogEpisodes": 231,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 1436
     },
     {
       "id": "atasco",
       "name": "Atasco",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 78649,
         "name": "Atasco",
@@ -623,7 +958,7 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "4 temporadas completas · temporada 5 confirmada · fecha pendiente",
       "sources": [
         {
@@ -631,16 +966,22 @@
           "url": "https://www.aboutamazon.es/noticias/entretenimiento/prime-video-presenta-nuevas-producciones-originales-y-licenciadas"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/78649/atasco"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 24,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 24
     },
     {
       "id": "muertos-sl",
       "name": "Muertos S.L.",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 75909,
         "name": "Muertos S.L.",
@@ -650,20 +991,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 4 temporadas · 26 capítulos · final 07/08/2026",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/75909/muertos-sl"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 26,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 26
     },
     {
       "id": "machos-alfa",
       "name": "Machos Alfa",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 65679,
         "name": "Machos Alfa",
@@ -673,7 +1020,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 6 final en rodaje · fecha pendiente",
       "sources": [
         {
@@ -681,16 +1028,29 @@
           "url": "https://about.netflix.com/es_es/news/alpha-males-films-its-sixth-and-final-season"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/65679/machos-alfa"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 42,
+        "unresolvedSeasons": [
+          {
+            "season": 6,
+            "catalogEpisodes": 10,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 42
     },
     {
       "id": "maximum-pleasure-guaranteed",
       "name": "Maximum Pleasure Guaranteed",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 82915,
         "name": "Maximum Pleasure Guaranteed",
@@ -700,20 +1060,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · final 15/07/2026 · sin segunda temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/82915/maximum-pleasure-guaranteed"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "lethally-blonde",
       "name": "Lethally Blonde",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 75592,
         "name": "Lethally Blonde",
@@ -723,20 +1089,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 2 completa · 8/8 episodios · final 20/07/2026 · sin tercera temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/75592/lethally-blonde"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 14,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 14
     },
     {
       "id": "deadly-influence",
       "name": "Deadly Influence: The Social Media Murders",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 77552,
         "name": "Deadly Influence: The Social Media Murders",
@@ -746,20 +1118,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 2 completa · 7/7 episodios · final 13/07/2026 · sin tercera temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/77552/deadly-influence-the-social-media-murders"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 13,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 13
     },
     {
       "id": "a-good-girls-guide-to-murder",
       "name": "A Good Girl's Guide to Murder",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 63949,
         "name": "A Good Girl's Guide to Murder",
@@ -769,24 +1147,37 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Temporada 3 final confirmada · estreno en 2027 · fecha exacta pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 3 final rodada · 4 capítulos confirmados · estreno en 2027 · fecha exacta pendiente",
       "sources": [
         {
           "label": "Netflix · tercera y última temporada en 2027",
           "url": "https://www.netflix.com/tudum/articles/a-good-girls-guide-to-murder-season-3-cast-release-date-news"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/63949/a-good-girls-guide-to-murder"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 12,
+        "unresolvedSeasons": [
+          {
+            "season": 3,
+            "catalogEpisodes": 4,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 12
     },
     {
       "id": "dynasty-2017",
       "name": "Dynasty (2017)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 21656,
         "name": "Dynasty",
@@ -796,20 +1187,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 5 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/21656/dynasty"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 108,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 108
     },
     {
       "id": "hacks",
       "name": "Hacks",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 54914,
         "name": "Hacks",
@@ -819,20 +1216,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 5 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/54914/hacks"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 47,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 47
     },
     {
       "id": "stranger-things",
       "name": "Stranger Things",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 2993,
         "name": "Stranger Things",
@@ -842,20 +1245,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 5 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/2993/stranger-things"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 42,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 42
     },
     {
       "id": "brain-games",
       "name": "Brain Games",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 3209,
         "name": "Brain Games",
@@ -865,20 +1274,63 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Finalizada · 9 temporadas",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "8 temporadas originales y On the Road (T9 en la app) · sin nuevos estrenos anunciados",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "National Geographic · On the Road, 20 capítulos",
+          "url": "https://www.natgeotv.com/me/listings/weekly/ngc/180219/3"
+        },
+        {
+          "label": "Apple TV · ficha de On the Road",
+          "url": "https://tv.apple.com/us/show/brain-games-on-the-road/umc.cmc.363s02mz4e4mholz6oa195aqd"
+        },
+        {
+          "label": "TVmaze · episodios de On the Road",
+          "url": "https://www.tvmaze.com/shows/55456/brain-games-on-the-road"
+        },
+        {
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/3209/brain-games"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 86,
+        "unresolvedSeasons": [
+          {
+            "season": 2,
+            "catalogEpisodes": 13,
+            "datedEpisodes": 12,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 4,
+            "catalogEpisodes": 16,
+            "datedEpisodes": 10,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 5,
+            "catalogEpisodes": 11,
+            "datedEpisodes": 10,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 8,
+            "catalogEpisodes": 9,
+            "datedEpisodes": 8,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 95
     },
     {
       "id": "section-de-recherches",
       "name": "Section de recherches",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 6214,
         "name": "Section De Recherches",
@@ -888,20 +1340,33 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 18 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/6214/section-de-recherches"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 169,
+        "unresolvedSeasons": [
+          {
+            "season": 18,
+            "catalogEpisodes": 2,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 171
     },
     {
       "id": "lucifer",
       "name": "Lucifer",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1859,
         "name": "Lucifer",
@@ -911,20 +1376,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 6 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1859/lucifer"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 93,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 93
     },
     {
       "id": "see-no-evil",
       "name": "See No Evil",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1559,
         "name": "See No Evil",
@@ -934,20 +1405,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "14 temporadas completas · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1559/see-no-evil"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 164,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 164
     },
     {
       "id": "on-the-case-with-paula-zahn",
       "name": "On the Case with Paula Zahn",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 4438,
         "name": "On the Case with Paula Zahn",
@@ -957,20 +1434,33 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 29 completa · último 08/07/2026 · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/4438/on-the-case-with-paula-zahn"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 404,
+        "unresolvedSeasons": [
+          {
+            "season": 25,
+            "catalogEpisodes": 15,
+            "datedEpisodes": 13,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 406
     },
     {
       "id": "homicide-hunter-american-detective",
       "name": "Homicide Hunter: American Detective",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 52817,
         "name": "Homicide Hunter: American Detective",
@@ -980,20 +1470,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "6 temporadas completas · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/52817/homicide-hunter-american-detective"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 48,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 48
     },
     {
       "id": "loot",
       "name": "Loot",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 60527,
         "name": "Loot",
@@ -1003,20 +1499,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "3 temporadas completas · sin cuarta temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/60527/loot"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 30,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 30
     },
     {
       "id": "people-magazine-investigates",
       "name": "People Magazine Investigates",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 22247,
         "name": "People Magazine Investigates",
@@ -1026,20 +1528,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "T9 completa · 15/15 disponibles · sin temporada 10 confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/22247/people-magazine-investigates"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 117,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 117
     },
     {
       "id": "a-man-on-the-inside",
       "name": "A Man on the Inside",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 74443,
         "name": "A Man on the Inside",
@@ -1049,7 +1557,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 3 final en producción · fecha pendiente",
       "sources": [
         {
@@ -1057,16 +1565,22 @@
           "url": "https://www.netflix.com/tudum/articles/man-on-the-inside-season-3-cast-release-date-news"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/74443/a-man-on-the-inside"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 16,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 16
     },
     {
       "id": "big-brother-us",
       "name": "Big Brother (US)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1453,
         "name": "Big Brother",
@@ -1076,7 +1590,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 28 completa · 41/41 capítulos disponibles · Temporadas 29 y 30 confirmadas · fechas pendientes",
       "sources": [
         {
@@ -1088,16 +1602,22 @@
           "url": "https://www.cbs.com/shows/video/ALVE01KV9H9F4REX5SESVBX97DSCQA/?p=1"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1453/big-brother"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 1011,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 1011
     },
     {
       "id": "poker-face-2023",
       "name": "Poker Face (2023)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 54128,
         "name": "Poker Face",
@@ -1107,20 +1627,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Cancelada · 2 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/54128/poker-face"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 22,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 22
     },
     {
       "id": "upload",
       "name": "Upload",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 31732,
         "name": "Upload",
@@ -1130,20 +1656,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 4 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/31732/upload"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 29,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 29
     },
     {
       "id": "wednesday",
       "name": "Wednesday",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 53647,
         "name": "Wednesday",
@@ -1153,7 +1685,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 3 rodada · rodaje terminado el 30/09/2026 · fecha de estreno pendiente",
       "sources": [
         {
@@ -1161,16 +1693,22 @@
           "url": "https://www.netflix.com/tudum/articles/wednesday-season-3-release-date"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/53647/wednesday"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 16,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 16
     },
     {
       "id": "malcolm-in-the-middle",
       "name": "Malcolm in the Middle",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 568,
         "name": "Malcolm in the Middle",
@@ -1180,20 +1718,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 7 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/568/malcolm-in-the-middle"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 151,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 151
     },
     {
       "id": "malcolm-lifes-still-unfair",
       "name": "Malcolm in the Middle: Life's Still Unfair",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 90782,
         "name": "Malcolm in the Middle: Life's Still Unfair",
@@ -1203,20 +1747,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Miniserie completa · estrenada el 10/04/2026",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/90782/malcolm-in-the-middle-lifes-still-unfair"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 4,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 4
     },
     {
       "id": "modern-family",
       "name": "Modern Family",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 80,
         "name": "Modern Family",
@@ -1226,20 +1776,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 11 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/80/modern-family"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 250,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 250
     },
     {
       "id": "como-conoci-a-vuestra-madre",
       "name": "Cómo conocí a vuestra madre",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 171,
         "name": "How I Met Your Mother",
@@ -1249,20 +1805,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 9 temporadas",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/171/how-i-met-your-mother"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 208,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 208
     },
     {
       "id": "love-is-blind-us",
       "name": "Love Is Blind (USA)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 46167,
         "name": "Love Is Blind",
@@ -1275,65 +1837,77 @@
         {
           "season": 11,
           "episode": 1,
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 2,
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 3,
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 4,
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 5,
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 6,
-          "date": "2026-10-21"
+          "date": "2026-10-21",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 7,
-          "date": "2026-10-21"
+          "date": "2026-10-21",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 8,
-          "date": "2026-10-21"
+          "date": "2026-10-21",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 9,
-          "date": "2026-10-28"
+          "date": "2026-10-28",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 10,
-          "date": "2026-10-28"
+          "date": "2026-10-28",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 11,
-          "date": "2026-10-28"
+          "date": "2026-10-28",
+          "title": "TBA"
         },
         {
           "season": 11,
           "episode": 12,
-          "date": "2026-11-04"
+          "date": "2026-11-04",
+          "title": "TBA"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 11 pendiente de estreno · 0/12 capítulos disponibles · Estreno 14/10/2026",
       "sources": [
         {
@@ -1341,101 +1915,179 @@
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/46167/love-is-blind"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 1,
           "date": "2026-10-14",
-          "releaseAt": "2026-10-14T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 1 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-14T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 2,
           "date": "2026-10-14",
-          "releaseAt": "2026-10-14T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 2 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-14T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 3,
           "date": "2026-10-14",
-          "releaseAt": "2026-10-14T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 3 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-14T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 4,
           "date": "2026-10-14",
-          "releaseAt": "2026-10-14T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 4 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-14T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 5,
           "date": "2026-10-14",
-          "releaseAt": "2026-10-14T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 5 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-14T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 6,
           "date": "2026-10-21",
-          "releaseAt": "2026-10-21T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 6 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-21T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 7,
           "date": "2026-10-21",
-          "releaseAt": "2026-10-21T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 7 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-21T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 8,
           "date": "2026-10-21",
-          "releaseAt": "2026-10-21T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 8 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-21T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 9,
           "date": "2026-10-28",
-          "releaseAt": "2026-10-28T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 9 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-28T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 10,
           "date": "2026-10-28",
-          "releaseAt": "2026-10-28T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 10 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-28T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 11,
           "date": "2026-10-28",
-          "releaseAt": "2026-10-28T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 11 · Boston",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-28T07:00:00Z"
         },
         {
+          "serieId": "love-is-blind-us",
+          "serie": "Love Is Blind (USA)",
           "season": 11,
           "episode": 12,
           "date": "2026-11-04",
-          "releaseAt": "2026-11-04T08:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 12 · última tanda",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-11-04T08:00:00Z"
         }
-      ]
+      ],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 148,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 136
     },
     {
       "id": "love-is-blind-uk",
       "name": "Love Is Blind: UK",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 66877,
         "name": "Love Is Blind: UK",
@@ -1445,7 +2097,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 3 completa · 11/11 capítulos · temporada 4 confirmada · fecha pendiente",
       "sources": [
         {
@@ -1453,16 +2105,22 @@
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-uk-season-4-release-date-news"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/66877/love-is-blind-uk"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 37,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 37
     },
     {
       "id": "love-is-blind-france",
       "name": "Love Is Blind: France",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 85871,
         "name": "Pour le meilleur et à l'aveugle",
@@ -1472,20 +2130,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "1 temporada · sin fecha nueva confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/85871/pour-le-meilleur-et-a-laveugle"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "the-traitors-us",
       "name": "The Traitors (USA)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 58177,
         "name": "The Traitors",
@@ -1498,41 +2162,48 @@
         {
           "season": 5,
           "episode": 6,
-          "date": "2026-10-15"
+          "date": "2026-10-15",
+          "title": "A Murder of Necessity"
         },
         {
           "season": 5,
           "episode": 7,
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "title": "TBA"
         },
         {
           "season": 5,
           "episode": 8,
-          "date": "2026-10-29"
+          "date": "2026-10-29",
+          "title": "TBA"
         },
         {
           "season": 5,
           "episode": 9,
-          "date": "2026-11-05"
+          "date": "2026-11-05",
+          "title": "TBA"
         },
         {
           "season": 5,
           "episode": 10,
-          "date": "2026-11-12"
+          "date": "2026-11-12",
+          "title": "TBA"
         },
         {
           "season": 5,
           "episode": 11,
-          "date": "2026-11-19"
+          "date": "2026-11-19",
+          "title": "TBA"
         },
         {
           "season": 5,
           "episode": 12,
-          "date": "2026-11-19"
+          "date": "2026-11-19",
+          "title": "TBA"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Temporada 5 en emisión · 4/12 capítulos disponibles · Próximo 09/10/2026 · Edición con famosos prevista para 2027 · fecha pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 5 en emisión · 5/12 capítulos disponibles · Próximo 16/10/2026 · Edición con famosos prevista para 2027 · fecha pendiente",
       "sources": [
         {
           "label": "NBCUniversal · emisión y disponibilidad en Peacock",
@@ -1543,73 +2214,114 @@
           "url": "https://www.tvmaze.com/shows/58177/the-traitors/episodes"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/58177/the-traitors"
         }
       ],
-      "confirmedUpcoming": [
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [
         {
-          "season": 5,
-          "episode": 5,
-          "date": "2026-10-09",
-          "releaseAt": "2026-10-09T00:00:00Z",
-          "platform": "NBC (Estados Unidos)"
-        },
-        {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 6,
           "date": "2026-10-16",
+          "title": "New Blood · A Murder of Necessity",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-10-16T00:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 7,
           "date": "2026-10-23",
+          "title": "New Blood · Episodio 7 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-10-23T00:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 8,
           "date": "2026-10-30",
+          "title": "New Blood · Episodio 8 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-10-30T00:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 9,
           "date": "2026-11-06",
+          "title": "New Blood · Episodio 9 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-11-06T01:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 10,
           "date": "2026-11-13",
+          "title": "New Blood · Episodio 10 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-11-13T01:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 11,
           "date": "2026-11-20",
+          "title": "New Blood · Episodio 11 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-11-20T01:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         },
         {
+          "serieId": "the-traitors-us",
+          "serie": "The Traitors (USA)",
           "season": 5,
           "episode": 12,
           "date": "2026-11-20",
+          "title": "New Blood · Episodio 12 · título pendiente",
+          "platform": "NBC (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/shows/58177/the-traitors/episodes",
           "releaseAt": "2026-11-20T02:00:00Z",
-          "platform": "NBC (Estados Unidos)"
+          "note": "Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"
         }
-      ]
+      ],
+      "calendarCoverage": {
+        "datedEpisodes": 59,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 52
     },
     {
       "id": "the-ultimatum-marry-or-move-on-us",
       "name": "The Ultimatum: Marry or Move On (USA)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 60873,
         "name": "The Ultimatum: Marry or Move On",
@@ -1619,20 +2331,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 4 completa · 10/10 disponibles · sin temporada 5 confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/60873/the-ultimatum-marry-or-move-on"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 40,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 40
     },
     {
       "id": "the-ultimatum-france",
       "name": "The Ultimatum: France",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 66097,
         "name": "Ultimatum: On se marie ou c'est fini",
@@ -1642,20 +2360,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 1 temporada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/66097/ultimatum-on-se-marie-ou-cest-fini"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "perfect-match",
       "name": "Perfect Match",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 66503,
         "name": "Perfect Match",
@@ -1665,20 +2389,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "4 temporadas completas · sin quinta temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/66503/perfect-match"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 40,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 40
     },
     {
       "id": "recale",
       "name": "El profe",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 83620,
         "name": "Recalé",
@@ -1688,20 +2418,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "1 temporada completa · 8 capítulos · estrenada el 23/04/2026 · sin segunda temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/83620/recale"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 8,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 8
     },
     {
       "id": "mean-girl-murders",
       "name": "Chicas malas… y asesinas",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 67016,
         "name": "Mean Girl Murders",
@@ -1711,20 +2447,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "3 temporadas completas · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/67016/mean-girl-murders"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 28,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 28
     },
     {
       "id": "american-monster",
       "name": "American Monster",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 17890,
         "name": "American Monster",
@@ -1734,20 +2476,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "13 temporadas completas · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/17890/american-monster"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 130,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 130
     },
     {
       "id": "criminal-confessions",
       "name": "Criminal Confessions",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 28136,
         "name": "Criminal Confessions",
@@ -1757,20 +2505,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 3 temporadas · 38 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/28136/criminal-confessions"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 38,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 38
     },
     {
       "id": "severance",
       "name": "Severance",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 44933,
         "name": "Severance",
@@ -1780,20 +2534,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 3 en producción · fecha y capítulos pendientes",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/44933/severance"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 19,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 19
     },
     {
       "id": "big-little-lies",
       "name": "Big Little Lies",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 3080,
         "name": "Big Little Lies",
@@ -1803,20 +2563,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 3 en desarrollo · fecha y capítulos pendientes",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/3080/big-little-lies"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 14,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 14
     },
     {
       "id": "josephine-ange-gardien",
       "name": "Joséphine, ange gardien",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 53531,
         "name": "Joséphine: Ange Gardien",
@@ -1826,20 +2592,45 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "26 temporadas · 131 episodios disponibles · sin próximo inédito confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/53531/josephine-ange-gardien"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 127,
+        "unresolvedSeasons": [
+          {
+            "season": 7,
+            "catalogEpisodes": 4,
+            "datedEpisodes": 3,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 20,
+            "catalogEpisodes": 7,
+            "datedEpisodes": 6,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 24,
+            "catalogEpisodes": 6,
+            "datedEpisodes": 4,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 131
     },
     {
       "id": "camping-paradis",
       "name": "Camping Paradis",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 41517,
         "name": "Camping Paradis",
@@ -1849,20 +2640,57 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "20 temporadas · 151 episodios disponibles · sin próximo inédito confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/41517/camping-paradis"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 142,
+        "unresolvedSeasons": [
+          {
+            "season": 8,
+            "catalogEpisodes": 6,
+            "datedEpisodes": 5,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 9,
+            "catalogEpisodes": 8,
+            "datedEpisodes": 7,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 11,
+            "catalogEpisodes": 10,
+            "datedEpisodes": 7,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 12,
+            "catalogEpisodes": 12,
+            "datedEpisodes": 10,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 14,
+            "catalogEpisodes": 12,
+            "datedEpisodes": 10,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 151
     },
     {
       "id": "csi-miami",
       "name": "CSI: Miami",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 576,
         "name": "CSI: Miami",
@@ -1872,20 +2700,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 10 temporadas · 232 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/576/csi-miami"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 232,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 232
     },
     {
       "id": "the-green-glove-gang",
       "name": "The Green Glove Gang",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 64287,
         "name": "Gang Zielonej Rękawiczki",
@@ -1895,20 +2729,26 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · sin próximo estreno confirmado",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/64287/gang-zielonej-rekawiczki"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 16,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 16
     },
     {
       "id": "loki",
       "name": "Loki",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 41007,
         "name": "Loki",
@@ -1918,20 +2758,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 2 temporadas · 12 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/41007/loki"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 12,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 12
     },
     {
       "id": "the-beauty",
       "name": "The Beauty",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 79916,
         "name": "The Beauty",
@@ -1941,7 +2787,7 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · 11 capítulos · sin segunda temporada confirmada",
       "sources": [
         {
@@ -1953,16 +2799,22 @@
           "url": "https://thegww.com/the-beauty-season-2-cast-released/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/79916/the-beauty"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 11,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 11
     },
     {
       "id": "grotesquerie",
       "name": "Grotesquerie",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 74952,
         "name": "Grotesquerie",
@@ -1972,20 +2824,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · 10 capítulos · sin segunda temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/74952/grotesquerie"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "squid-game",
       "name": "Squid Game",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 43687,
         "name": "Squid Game",
@@ -1995,20 +2853,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 3 temporadas · 22 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/43687/squid-game"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 22,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 22
     },
     {
       "id": "squid-game-the-challenge",
       "name": "Squid Game: The Challenge",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 62538,
         "name": "Squid Game: The Challenge",
@@ -2018,7 +2882,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · temporada 3 confirmada como The VIP Challenge · fecha pendiente",
       "sources": [
         {
@@ -2026,16 +2890,22 @@
           "url": "https://www.netflix.com/tudum/articles/squid-game-the-vip-challenge-celebrities-cast"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/62538/squid-game-the-challenge"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 19,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 19
     },
     {
       "id": "lupin",
       "name": "Lupin",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 50701,
         "name": "Lupin",
@@ -2048,10 +2918,11 @@
         {
           "season": 4,
           "episode": 1,
-          "date": "2026-10-23"
+          "date": "2026-10-23",
+          "title": "Chapitre 1"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 4 pendiente de estreno · 0/8 capítulos disponibles · Estreno 23/10/2026",
       "sources": [
         {
@@ -2063,73 +2934,127 @@
           "url": "https://help.netflix.com/es-es/node/118959"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/50701/lupin"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "lupin",
+          "serie": "Lupin",
           "season": 4,
           "episode": 1,
           "date": "2026-10-23",
-          "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "title": "Episodio 1 · título pendiente",
+          "platform": "Netflix",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma",
+          "releaseAt": "2026-10-23T07:00:00Z"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 2,
-          "date": "2026-10-23",
+          "title": "Episodio 2 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 3,
-          "date": "2026-10-23",
+          "title": "Episodio 3 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 4,
-          "date": "2026-10-23",
+          "title": "Episodio 4 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 5,
-          "date": "2026-10-23",
+          "title": "Episodio 5 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 6,
-          "date": "2026-10-23",
+          "title": "Episodio 6 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 7,
-          "date": "2026-10-23",
+          "title": "Episodio 7 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         },
         {
+          "date": "2026-10-23",
+          "serieId": "lupin",
+          "serie": "Lupin",
+          "platform": "Netflix",
           "season": 4,
           "episode": 8,
-          "date": "2026-10-23",
+          "title": "Episodio 8 · título pendiente",
           "releaseAt": "2026-10-23T07:00:00Z",
-          "platform": "Netflix"
+          "sourceKind": "official",
+          "sourceUrl": "https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news",
+          "note": "Fecha anunciada por la plataforma"
         }
-      ]
+      ],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 25,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 17
     },
     {
       "id": "black-mirror",
       "name": "Black Mirror",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 305,
         "name": "Black Mirror",
@@ -2139,7 +3064,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "7 temporadas completas · temporada 8 en producción · fecha pendiente",
       "sources": [
         {
@@ -2147,16 +3072,22 @@
           "url": "https://au.variety.com/2026/tv/global/netflix-black-mirror-season-8-legends-gordon-ramsay-39665/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/305/black-mirror"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 32,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 32
     },
     {
       "id": "westworld",
       "name": "Westworld",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1371,
         "name": "Westworld",
@@ -2166,20 +3097,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Cancelada · 4 temporadas · 36 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1371/westworld"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 36,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 36
     },
     {
       "id": "the-white-lotus",
       "name": "The White Lotus",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 51394,
         "name": "The White Lotus",
@@ -2189,7 +3126,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "3 temporadas completas · temporada 4 en rodaje · estreno en el primer semestre de 2027 · fecha exacta pendiente",
       "sources": [
         {
@@ -2201,16 +3138,22 @@
           "url": "https://www.tvinsider.com/1162885/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/51394/the-white-lotus"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 21,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 21
     },
     {
       "id": "only-murders-in-the-building",
       "name": "Only Murders in the Building",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 48830,
         "name": "Only Murders in the Building",
@@ -2223,79 +3166,210 @@
         {
           "season": 6,
           "episode": 1,
-          "date": "2026-12-08"
+          "date": "2026-12-08",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 2,
-          "date": "2026-12-15"
+          "date": "2026-12-15",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 3,
-          "date": "2026-12-22"
+          "date": "2026-12-22",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 4,
-          "date": "2026-12-29"
+          "date": "2026-12-29",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 5,
-          "date": "2027-01-05"
+          "date": "2027-01-05",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 6,
-          "date": "2027-01-12"
+          "date": "2027-01-12",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 7,
-          "date": "2027-01-19"
+          "date": "2027-01-19",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 8,
-          "date": "2027-01-26"
+          "date": "2027-01-26",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 9,
-          "date": "2027-02-02"
+          "date": "2027-02-02",
+          "title": "TBA"
         },
         {
           "season": 6,
           "episode": 10,
-          "date": "2027-02-09"
+          "date": "2027-02-09",
+          "title": "TBA"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Temporada 6 pendiente de estreno · 0 capítulos disponibles · total pendiente · Estreno 08/12/2026",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 6 pendiente de estreno · 0/10 capítulos disponibles · Estreno 08/12/2026",
       "sources": [
         {
-          "label": "Anuncio de estreno de Hulu y Disney+",
-          "url": "https://www.techradar.com/streaming/hulu/only-murders-in-the-building-season-6-confirms-long-awaited-release-date-but-i-already-think-one-drastic-change-is-going-to-wear-thin-very-quickly"
+          "label": "Disney+ · anuncio oficial del estreno (Reino Unido)",
+          "url": "https://press.disney.co.uk/news/emmy-award-winning-comedy-series-only-murders-in-the-building-returns-for-season-six-on-december-8th-on-disneyplus-"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/48830/only-murders-in-the-building"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
           "season": 6,
           "episode": 1,
           "date": "2026-12-08",
-          "platform": "Disney+ / Hulu"
+          "title": "Episodio 1 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "official",
+          "sourceUrl": "https://press.disney.co.uk/news/emmy-award-winning-comedy-series-only-murders-in-the-building-returns-for-season-six-on-december-8th-on-disneyplus-",
+          "note": "Fecha de estreno anunciada por la plataforma · hora y disponibilidad específica en España pendientes"
         }
-      ]
+      ],
+      "registeredUpcoming": [
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 2,
+          "date": "2026-12-15",
+          "title": "Episodio 2 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714463/only-murders-in-the-building-6x02-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 3,
+          "date": "2026-12-22",
+          "title": "Episodio 3 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714464/only-murders-in-the-building-6x03-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 4,
+          "date": "2026-12-29",
+          "title": "Episodio 4 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714468/only-murders-in-the-building-6x04-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 5,
+          "date": "2027-01-05",
+          "title": "Episodio 5 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714473/only-murders-in-the-building-6x05-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 6,
+          "date": "2027-01-12",
+          "title": "Episodio 6 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714480/only-murders-in-the-building-6x06-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 7,
+          "date": "2027-01-19",
+          "title": "Episodio 7 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714485/only-murders-in-the-building-6x07-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 8,
+          "date": "2027-01-26",
+          "title": "Episodio 8 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714490/only-murders-in-the-building-6x08-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 9,
+          "date": "2027-02-02",
+          "title": "Episodio 9 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714495/only-murders-in-the-building-6x09-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "only-murders-in-the-building",
+          "serie": "Only Murders in the Building",
+          "season": 6,
+          "episode": 10,
+          "date": "2027-02-09",
+          "title": "Episodio 10 · título pendiente",
+          "platform": "Hulu (Estados Unidos)",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3714501/only-murders-in-the-building-6x10-tba",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        }
+      ],
+      "calendarCoverage": {
+        "datedEpisodes": 60,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 50
     },
     {
       "id": "dexter",
       "name": "Dexter",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 161,
         "name": "Dexter",
@@ -2305,20 +3379,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 8 temporadas · 96 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/161/dexter"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 96,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 96
     },
     {
       "id": "dexter-new-blood",
       "name": "Dexter: New Blood",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 58846,
         "name": "Dexter: New Blood",
@@ -2328,20 +3408,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 1 temporada · 10 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/58846/dexter-new-blood"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "dexter-resurrection",
       "name": "Dexter: Resurrection",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 78665,
         "name": "Dexter: Resurrection",
@@ -2354,34 +3440,91 @@
         {
           "season": 2,
           "episode": 1,
-          "date": "2026-10-30"
+          "date": "2026-10-30",
+          "title": "Risky Business"
+        },
+        {
+          "season": 2,
+          "episode": 2,
+          "date": "2026-11-06",
+          "title": "Young Blood"
+        },
+        {
+          "season": 2,
+          "episode": 3,
+          "date": "2026-11-13",
+          "title": "Fallen"
         }
       ],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Temporada 2 pendiente de estreno · 0 capítulos disponibles · total pendiente · Estreno 30/10/2026 · Fecha de SkyShowtime en España pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 2 pendiente de estreno · 0/10 capítulos disponibles · Estreno 30/10/2026 · Fecha de SkyShowtime en España pendiente",
       "sources": [
         {
           "label": "Paramount+ · estreno de la temporada 2",
           "url": "https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/78665/dexter-resurrection"
         }
       ],
       "confirmedUpcoming": [
         {
+          "serieId": "dexter-resurrection",
+          "serie": "Dexter: Resurrection",
           "season": 2,
           "episode": 1,
           "date": "2026-10-30",
-          "platform": "Paramount+"
+          "title": "Risky Business",
+          "platform": "Paramount+",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/",
+          "note": "Fecha de estreno anunciada por la plataforma · hora y disponibilidad específica en España pendientes"
         }
-      ]
+      ],
+      "registeredUpcoming": [
+        {
+          "serieId": "dexter-resurrection",
+          "serie": "Dexter: Resurrection",
+          "season": 2,
+          "episode": 2,
+          "date": "2026-11-06",
+          "title": "Young Blood",
+          "platform": "Paramount+",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3786605/dexter-resurrection-2x02-young-blood",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        },
+        {
+          "serieId": "dexter-resurrection",
+          "serie": "Dexter: Resurrection",
+          "season": 2,
+          "episode": 3,
+          "date": "2026-11-13",
+          "title": "Fallen",
+          "platform": "Paramount+",
+          "sourceKind": "provider",
+          "sourceUrl": "https://www.tvmaze.com/episodes/3786606/dexter-resurrection-2x03-fallen",
+          "note": "Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"
+        }
+      ],
+      "calendarCoverage": {
+        "datedEpisodes": 13,
+        "unresolvedSeasons": [
+          {
+            "season": 2,
+            "catalogEpisodes": 10,
+            "datedEpisodes": 3,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 10
     },
     {
       "id": "scream-queens",
       "name": "Scream Queens",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1862,
         "name": "Scream Queens",
@@ -2391,20 +3534,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Cancelada · 2 temporadas · 23 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1862/scream-queens"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 23,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 23
     },
     {
       "id": "loups-garous-canal-plus",
       "name": "Loups Garous (Canal+)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 80116,
         "name": "Loups Garous",
@@ -2414,7 +3563,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · 18 capítulos · temporada 3 encargada · fecha pendiente",
       "sources": [
         {
@@ -2422,16 +3571,22 @@
           "url": "https://www.leparisien.fr/culture-loisirs/tv/on-a-deja-commence-a-travailler-sur-la-saison-3-la-recette-gagnante-de-loups-garous-sur-canal-12-02-2026-2JNFN7ZKKNBR3ANJG2KXNGQPQE.php"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/80116/loups-garous"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 18,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 18
     },
     {
       "id": "celebrity-hunted-france",
       "name": "Celebrity Hunted: Chasse à l'homme (France)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 58429,
         "name": "Celebrity Hunted : Chasse à l'homme",
@@ -2441,20 +3596,39 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "3 temporadas completas · 18 capítulos · sin temporada 4 confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/58429/celebrity-hunted-chasse-a-lhomme"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 6,
+        "unresolvedSeasons": [
+          {
+            "season": 2,
+            "catalogEpisodes": 6,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          },
+          {
+            "season": 3,
+            "catalogEpisodes": 6,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 18
     },
     {
       "id": "les-traitres-m6",
       "name": "Les Traîtres (M6)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 70731,
         "name": "Les Traîtres : Seront-ils démasqués ?",
@@ -2464,7 +3638,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "6 temporadas completas · temporada 7 confirmada y rodada · fecha pendiente",
       "sources": [
         {
@@ -2472,16 +3646,22 @@
           "url": "https://www.ozap.com/actu/les-traitres-m6-devoile-la-toute-premiere-bande-annonce-de-la-saison-7-qui-sera-a-voir-prochainement/655910"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/70731/les-traitres-seront-ils-demasques"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 46,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 46
     },
     {
       "id": "fargo",
       "name": "Fargo",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 32,
         "name": "Fargo",
@@ -2491,7 +3671,7 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "5 temporadas completas · 51 capítulos · sin próximo estreno confirmado",
       "sources": [
         {
@@ -2499,16 +3679,22 @@
           "url": "https://tvseriesfinale.com/tv-show/fargo-season-six-has-the-fx-anthology-series-been-cancelled-or-renewed/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/32/fargo"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 51,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 51
     },
     {
       "id": "ghosts-us",
       "name": "Ghosts (US)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 46573,
         "name": "Ghosts",
@@ -2518,7 +3704,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 6 pendiente de estreno · 0 capítulos disponibles · total pendiente · Estreno 30/10/2026 · Emisión regular prevista para 2027 · fecha pendiente",
       "sources": [
         {
@@ -2530,45 +3716,75 @@
           "url": "https://www.paramountpressexpress.com/cbs-studios/shows/ghosts/episodes?limit=100&page=1"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/46573/ghosts"
         }
       ],
       "confirmedUpcoming": [
         {
-          "season": 6,
+          "date": "2026-10-30",
           "episode": 1,
-          "date": "2026-10-30",
+          "title": "Halloween 6: The Mirror - Part One",
+          "serieId": "ghosts-us",
+          "serie": "Ghosts (US)",
+          "platform": "CBS (Estados Unidos)",
+          "season": 6,
           "releaseAt": "2026-10-30T01:00:00Z",
-          "platform": "CBS (Estados Unidos)"
+          "note": "Horario de Madrid · fecha de disponibilidad en España pendiente",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"
         },
         {
-          "season": 6,
-          "episode": 2,
           "date": "2026-10-30",
+          "episode": 2,
+          "title": "Halloween 6: The Mirror - Part Two",
+          "serieId": "ghosts-us",
+          "serie": "Ghosts (US)",
+          "platform": "CBS (Estados Unidos)",
+          "season": 6,
           "releaseAt": "2026-10-30T01:30:00Z",
-          "platform": "CBS (Estados Unidos)"
+          "note": "Horario de Madrid · fecha de disponibilidad en España pendiente",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"
         },
         {
-          "season": 6,
+          "date": "2026-12-11",
           "episode": 3,
-          "date": "2026-12-11",
+          "title": "Ghostsmas · primera parte (título pendiente)",
+          "serieId": "ghosts-us",
+          "serie": "Ghosts (US)",
+          "platform": "CBS (Estados Unidos)",
+          "season": 6,
           "releaseAt": "2026-12-11T02:00:00Z",
-          "platform": "CBS (Estados Unidos)"
+          "note": "Horario de Madrid · fecha de disponibilidad en España pendiente",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"
         },
         {
-          "season": 6,
-          "episode": 4,
           "date": "2026-12-11",
+          "episode": 4,
+          "title": "Ghostsmas · segunda parte (título pendiente)",
+          "serieId": "ghosts-us",
+          "serie": "Ghosts (US)",
+          "platform": "CBS (Estados Unidos)",
+          "season": 6,
           "releaseAt": "2026-12-11T02:30:00Z",
-          "platform": "CBS (Estados Unidos)"
+          "note": "Horario de Madrid · fecha de disponibilidad en España pendiente",
+          "sourceKind": "official",
+          "sourceUrl": "https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"
         }
-      ]
+      ],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 98,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 94
     },
     {
       "id": "travelers-2016",
       "name": "Travelers (2016)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 15996,
         "name": "Travelers",
@@ -2578,20 +3794,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 3 temporadas · 34 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/15996/travelers"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 34,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 34
     },
     {
       "id": "space-force",
       "name": "Space Force",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 40445,
         "name": "Space Force",
@@ -2601,20 +3823,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Cancelada · 2 temporadas · 17 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/40445/space-force"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 17,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 17
     },
     {
       "id": "en-place",
       "name": "En place",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 66088,
         "name": "En place",
@@ -2624,20 +3852,26 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · 12 capítulos · sin próxima temporada confirmada",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/66088/en-place"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 12,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 12
     },
     {
       "id": "your-friends-and-neighbors",
       "name": "Your Friends & Neighbors (Vicios ocultos)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 73484,
         "name": "Your Friends & Neighbors",
@@ -2647,7 +3881,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "2 temporadas completas · 19 capítulos · temporada 3 renovada · fecha pendiente",
       "sources": [
         {
@@ -2655,16 +3889,22 @@
           "url": "https://www.apple.com/tv-pr/news/2026/02/apples-hit-drama-your-friends-neighbors-starring-and-executive-produced-by-jon-hamm-lands-early-season-three-renewal/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/73484/your-friends-neighbors"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 19,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 19
     },
     {
       "id": "l-agence-immobilier-de-luxe-en-famille",
       "name": "L'Agence: L'immobilier de luxe en famille",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 55852,
         "name": "L'Agence - L'immobilier de luxe en famille",
@@ -2674,7 +3914,7 @@
         "status": "To Be Determined"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "6 temporadas completas · 46 capítulos · temporada 7 en rodaje · estreno previsto para otoño de 2026 · fecha exacta pendiente",
       "sources": [
         {
@@ -2682,16 +3922,22 @@
           "url": "https://serieously.ouest-france.fr/lagence-tmc-renouvelee-pour-une-saison-7-le-gros-changement-annonce-par-valentin-kretz/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/55852/lagence-limmobilier-de-luxe-en-famille"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 46,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 46
     },
     {
       "id": "schitts-creek",
       "name": "Schitt's Creek",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 1775,
         "name": "Schitt's Creek",
@@ -2701,20 +3947,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 6 temporadas · 80 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/1775/schitts-creek"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 80,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 80
     },
     {
       "id": "the-circle-us",
       "name": "The Circle (US)",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 45419,
         "name": "The Circle",
@@ -2724,7 +3976,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "7 temporadas en Netflix · 90 capítulos · nueva etapa de Hulu en producción · estreno pendiente",
       "sources": [
         {
@@ -2732,16 +3984,22 @@
           "url": "https://www.tvline.com/2191703/the-circle-season-8-hulu-netflix-rule-changes-explained/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/45419/the-circle"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 90,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 90
     },
     {
       "id": "summertime",
       "name": "Summertime",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 46660,
         "name": "Summertime",
@@ -2751,20 +4009,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 3 temporadas · 24 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/46660/summertime"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 24,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 24
     },
     {
       "id": "margos-got-money-troubles",
       "name": "Margo's Got Money Troubles",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 74442,
         "name": "Margo's Got Money Troubles",
@@ -2774,7 +4038,7 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Temporada 1 completa · 8 capítulos · temporada 2 renovada · fecha pendiente",
       "sources": [
         {
@@ -2782,16 +4046,22 @@
           "url": "https://images.apple.com/uk/tv-pr/news/2026/05/apple-tv-renews-globally-acclaimed-comedy-margos-got-money-troubles-from-multiemmy-award-winner-david-e-kelley-and-stars-and-executive-producers-elle-fanning-michelle-pfeiffer-and-nicole-kidman/"
         },
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/74442/margos-got-money-troubles"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 8,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 8
     },
     {
       "id": "what-we-do-in-the-shadows",
       "name": "What We Do in the Shadows",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 34522,
         "name": "What We Do in the Shadows",
@@ -2801,20 +4071,26 @@
         "status": "Ended"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
       "catalogStatus": "Finalizada · 6 temporadas · 61 capítulos",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/34522/what-we-do-in-the-shadows"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 61,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 61
     },
     {
       "id": "rooster",
       "name": "Rooster",
-      "reviewedOn": "2026-10-08",
+      "reviewedOn": "2026-10-11",
       "provider": {
         "id": 88862,
         "name": "Rooster",
@@ -2824,15 +4100,33 @@
         "status": "Running"
       },
       "upcomingInProvider": [],
-      "note": "Se contrastó la identidad, el estado y las emisiones fechadas. La numeración y los especiales de la plataforma prevalecen cuando difieren de TVmaze. Las renovaciones se contrastan con anuncios o declaraciones; las fechas no anunciadas permanecen pendientes.",
-      "catalogStatus": "Temporada 1 completa · temporada 2 en producción · prevista antes del 31/05/2027 · fecha exacta pendiente",
+      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
+      "catalogStatus": "Temporada 1 completa · temporada 2 renovada · fecha de estreno pendiente",
       "sources": [
         {
-          "label": "TVmaze · ficha y emisiones registradas",
+          "label": "HBO · renovación de la segunda temporada",
+          "url": "https://press-spain.max.com/post/hbo-renueva-rooster-la-comedia-mas-vista-en-mas-de-una-decada-pr"
+        },
+        {
+          "label": "TVmaze · ficha y episodios registrados",
           "url": "https://www.tvmaze.com/shows/88862/rooster"
         }
       ],
-      "confirmedUpcoming": []
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 10,
+        "unresolvedSeasons": [
+          {
+            "season": 2,
+            "catalogEpisodes": 10,
+            "datedEpisodes": 0,
+            "reason": "Títulos, recopilatorios, numeración regional o emisiones sin fecha inequívoca; no se inventan fechas."
+          }
+        ]
+      },
+      "availableEpisodes": 10
     }
-  ]
+  ],
+  "calendarEventCount": 6308
 }

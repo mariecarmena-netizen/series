@@ -32,6 +32,36 @@ assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)
 assert.equal(fresh.read('RELEASE_REVIEW.events.every(e => releaseEvents.find(r => r.serieId === e.serieId && r.season === e.season && r.episode === e.episode).serie === getCatalogSerie(e.serieId).name)'), true);
 assert.equal(fresh.read("releaseEvents.filter(e => e.date === '2026-10-23')[0].serieId"), 'the-traitors-us');
 assert.equal(fresh.read('catalog.every(s => RELEASE_REVIEW.providerSources[s.id]?.length > 0)'), true);
+assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-10-11');
+assert.equal(fresh.read("catalog.every(s => RELEASE_REVIEW.series[s.id]?.reviewedOn === '2026-10-11')"), true);
+assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 89);
+assert.ok(fresh.read('releaseEvents.length') > 6000);
+const audit = JSON.parse(fs.readFileSync(path.join(root, 'catalog-review.json'), 'utf8'));
+assert.equal(audit.catalogSize, 89);
+assert.equal(audit.calendarEventCount, fresh.read('releaseEvents.length'));
+assert.equal(audit.series.length, 89);
+assert.ok(audit.series.every(s => s.reviewedOn === audit.reviewedOn && s.sources.length > 0));
+
+// Los anuncios oficiales y las fechas del proveedor se distinguen sin inventar horarios.
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'koh-lanta' && e.season === 34 && e.episode === 10).date"), '2026-10-27');
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'koh-lanta' && e.season === 34 && e.episode === 10).releaseAt"), undefined);
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'koh-lanta' && e.season === 34 && e.episode === 9).sourceUrl"), 'https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1');
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'love-is-blind-us' && e.season === 11 && e.episode === 1).sourceKind"), 'official');
+assert.doesNotMatch(fresh.read("releaseEvents.find(e => e.serieId === 'love-is-blind-us' && e.season === 11 && e.episode === 1).note"), /pendiente de confirmación/);
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'the-traitors-us' && e.season === 5 && e.episode === 6).sourceKind"), 'provider');
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'only-murders-in-the-building' && e.season === 6 && e.episode === 10).date"), '2027-02-09');
+assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'dexter-resurrection' && e.season === 2 && e.episode === 3).date"), '2026-11-13');
+assert.equal(fresh.read("getCatalogSerie('a-good-girls-guide-to-murder').seasons.find(s => s.season === 3).total"), 4);
+assert.equal(fresh.read("getCatalogSerie('brain-games').seasons.find(s => s.season === 9).total"), 20);
+assert.equal(fresh.read("getCatalogSerie('people-magazine-investigates').seasons.find(s => s.season === 9).episodes[13].title"), 'The University of Cosmic Intelligence Cult');
+assert.equal(fresh.read("getCatalogSerie('people-magazine-investigates').seasons.find(s => s.season === 9).episodes[14].title"), 'The Cult of the Soulful Journey');
+assert.equal(fresh.read("releaseEvents.some(e => /Celebrating Champions/.test(e.title))"), false);
+
+const today = app(null, '2026-10-11T10:00:00Z');
+assert.equal(today.read("availableEpisodeLimit(getCatalogSerie('the-traitors-us'), getCatalogSerie('the-traitors-us').seasons.find(s => s.season === 5))"), 5);
+assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 63);
+assert.equal(today.read("undatedUpcomingForFollowedSeries().find(e => e.serieId === 'dexter-resurrection').label"), '7 capítulos sin fecha');
+assert.equal(today.read("ui.calendarScope = 'followed'; calendarUpcomingEvents(Infinity).length"), 0);
 
 function available(app, id, season) {
   return app.read(`availableEpisodeLimit(getCatalogSerie('${id}'), getCatalogSerie('${id}').seasons.find(s => s.season === ${season}))`);
@@ -93,7 +123,8 @@ fresh.at('2026-10-30T10:00:00Z');
 assert.equal(available(fresh, 'dexter-resurrection', 2), 0);
 fresh.at('2026-10-31T00:00:00Z');
 assert.equal(available(fresh, 'dexter-resurrection', 2), 1);
-assert.equal(fresh.read("serieTotals(getCatalogSerie('dexter-resurrection')).upcomingUnknownSeason"), true);
+assert.equal(fresh.read("serieTotals(getCatalogSerie('dexter-resurrection')).upcomingUnknownSeason"), false);
+assert.equal(fresh.read("getCatalogSerie('dexter-resurrection').seasons.find(s => s.season === 2).total"), 10);
 
 // Los dos cambios de horario no alteran las fechas/horas de Madrid.
 assert.equal(fresh.read("releaseEvents.find(e => e.serieId === 'the-traitors-us' && e.season === 5 && e.episode === 8).date"), '2026-10-30');

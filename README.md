@@ -2,19 +2,19 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
-## Ampliación del 11 de octubre de 2026
+## Revisión completa del 11 de octubre de 2026
 
-El catálogo contiene 89 series. Se añadieron Entrepreneurs (España, Disney+), Furia (España), El Billete Dorado de Willy Wonka (reality de Netflix), Friends, El problema final, Perdiendo el juicio, Oasis (España), Nadie quiere esto, Las cuatro estaciones, Errores épicos, Palomas negras, Hechos polvo y El peor compañero de piso imaginable, con temporadas, capítulos, carteles y fuentes. Los próximos estrenos conocidos se incorporaron al calendario; los datos aún sin anunciar quedan pendientes. La revisión de cada ficha conserva su propia fecha.
+Se han vuelto a consultar las 89 series: identidad, estado, temporadas, capítulos y fechas registradas. Las fichas incluyen sus fuentes y la fecha de revisión. `catalog-review.json` conserva el detalle de la revisión y `release-data.js` contiene las actualizaciones del catálogo y el calendario.
 
-## Revisión del 8 de octubre de 2026
+El calendario reúne 6.308 estrenos fechados que se pueden asociar a la numeración de la app, con 63 próximos estrenos conocidos a fecha de la revisión y registros hasta febrero de 2027. Se han ampliado, entre otros, Koh-Lanta, Dexter: Resurrection y Only Murders in the Building; corregido los especiales de People Magazine Investigates y los 20 capítulos de Brain Games: On the Road; y actualizado las temporadas futuras y los estados de emisión.
 
-Se contrastaron las 76 fichas con sus registros de emisiones y los anuncios disponibles. Las fuentes se muestran en cada ficha. `catalog-review.json` conserva la revisión y `release-data.js` contiene las actualizaciones de temporadas y fechas.
+Puedes saltar directamente a cualquier mes, desplegar todos los próximos estrenos y consultar todas las temporadas pendientes de fecha. Cada estreno distingue el anuncio de la plataforma del registro de episodios del proveedor.
 
-El calendario utiliza la hora de Madrid. La plataforma y el país indican dónde se anuncia la emisión; una fecha estadounidense no confirma disponibilidad en España. Los totales de temporada sin anunciar permanecen pendientes y sólo se cuentan los capítulos conocidos. Se conserva la numeración de las plataformas y sus especiales cuando difiere de TVmaze.
+El calendario utiliza la hora de Madrid. La plataforma y el país indican dónde se anuncia la emisión; una fecha estadounidense no confirma disponibilidad en España. Las fechas y los totales sin anunciar permanecen pendientes. Se conserva la numeración de las plataformas y sus especiales cuando difiere de TVmaze. No se asignan fechas a recopilatorios históricos o vídeos que no tengan una correspondencia verificable.
 
 Los capítulos cambian a estrenados al llegar su fecha y hora programadas. Si sólo se conoce el día, se espera a que termine ese día. La pantalla se actualiza cada minuto y al volver a la app. Este cálculo usa el calendario guardado: los cambios posteriores de programación requieren otra revisión de las fuentes.
 
-El progreso, ritmo de visionado e historial se conservan en el almacenamiento local. La app y los datos de estreno quedan en caché para su uso sin conexión después de la primera carga.
+El progreso, ritmo de visionado e historial se conservan en el almacenamiento local. La app y los datos de estreno quedan en caché para su uso sin conexión después de la primera carga. Al activarse una nueva versión de la caché, la pantalla se recarga para mostrar los datos actualizados.
 
 ## Abrir y comprobar
 
