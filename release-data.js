@@ -4,6 +4,19 @@ const RELEASE_REVIEW = {
   reviewedOn: "2026-10-08",
   timeZone: "Europe/Madrid",
   series: {
+    "entrepreneurs": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ España · ficha y diez capítulos de la temporada 1",
+          "url": "https://www.disneyplus.com/es-es/browse/entity-7b7d6af2-b589-401b-b9dc-c166c5fb0a4f"
+        },
+        {
+          "label": "Apple TV · duración orientativa",
+          "url": "https://tv.apple.com/es/show/entrepreneurs/umc.cmc.3b15uum6wqj1l30wmnzj8jp1s"
+        }
+      ]
+    },
     "furia": {
       "reviewedOn": "2026-10-11",
       "sources": [
@@ -240,6 +253,12 @@ const RELEASE_REVIEW = {
 };
 
 RELEASE_REVIEW.providerSources = {
+  "entrepreneurs": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/86886/entrepreneurs"
+    }
+  ],
   "furia": [
     {
       "label": "TVmaze · ficha y capítulos registrados",

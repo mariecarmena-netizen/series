@@ -1,9 +1,40 @@
 {
   "reviewedOn": "2026-10-08",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 88,
-  "scope": "Identidad, estado y calendario de 76 series revisadas el 08/10/2026 y 12 series añadidas el 11/10/2026. No constituye una verificación independiente de todos los títulos históricos ni de su disponibilidad regional. Las fechas registradas sólo en TVmaze se distinguen de los anuncios oficiales.",
+  "catalogSize": 89,
+  "scope": "Identidad, estado y calendario de 76 series revisadas el 08/10/2026 y 13 series añadidas el 11/10/2026. No constituye una verificación independiente de todos los títulos históricos ni de su disponibilidad regional. Las fechas registradas sólo en TVmaze se distinguen de los anuncios oficiales.",
   "series": [
+    {
+      "id": "entrepreneurs",
+      "name": "Entrepreneurs",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 86886,
+        "name": "Entrepreneurs",
+        "language": "Spanish",
+        "network": "Disney+",
+        "url": "https://www.tvmaze.com/shows/86886/entrepreneurs",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Serie española de Pantomima Full. Primera temporada de diez capítulos contrastada con Disney+ España; estreno completo el 23/10/2025. Duración orientativa de 27 minutos según Apple TV. No se encontró anuncio oficial de segunda temporada; el estado Ended de TVmaze no se presenta como cancelación confirmada.",
+      "catalogStatus": "1 temporada completa · 10 capítulos · sin segunda temporada confirmada",
+      "sources": [
+        {
+          "label": "Disney+ España · ficha y diez capítulos de la temporada 1",
+          "url": "https://www.disneyplus.com/es-es/browse/entity-7b7d6af2-b589-401b-b9dc-c166c5fb0a4f"
+        },
+        {
+          "label": "Apple TV · duración orientativa",
+          "url": "https://tv.apple.com/es/show/entrepreneurs/umc.cmc.3b15uum6wqj1l30wmnzj8jp1s"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/86886/entrepreneurs"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
     {
       "id": "furia",
       "name": "Furia",

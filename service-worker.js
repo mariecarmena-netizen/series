@@ -1,4 +1,4 @@
-const CACHE_NAME = "tus-series-v22-2026-10-11",
+const CACHE_NAME = "tus-series-v23-2026-10-11",
   APP_SHELL = ["./index.html", "./release-data.js", "./manifest.webmanifest", "./assets/app-icon-192.png", "./assets/app-icon-512.png", "./assets/app-icon-maskable-512.png", "./assets/apple-touch-icon.png", "./assets/favicon-32.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE_NAME).then(e => e.addAll(APP_SHELL)).then(() => self.skipWaiting()))
