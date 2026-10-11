@@ -2,6 +2,10 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Ampliación del 11 de octubre de 2026
+
+El catálogo contiene 88 series. Se añadieron Furia (España), El Billete Dorado de Willy Wonka (reality de Netflix), Friends, El problema final, Perdiendo el juicio, Oasis (España), Nadie quiere esto, Las cuatro estaciones, Errores épicos, Palomas negras, Hechos polvo y El peor compañero de piso imaginable, con temporadas, capítulos, carteles y fuentes. Los próximos estrenos conocidos se incorporaron al calendario; los datos aún sin anunciar quedan pendientes. La revisión de cada ficha conserva su propia fecha.
+
 ## Revisión del 8 de octubre de 2026
 
 Se contrastaron las 76 fichas con sus registros de emisiones y los anuncios disponibles. Las fuentes se muestran en cada ficha. `catalog-review.json` conserva la revisión y `release-data.js` contiene las actualizaciones de temporadas y fechas.

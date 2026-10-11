@@ -4,6 +4,127 @@ const RELEASE_REVIEW = {
   reviewedOn: "2026-10-08",
   timeZone: "Europe/Madrid",
   series: {
+    "furia": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "HBO Max · segunda temporada: estreno y ocho capítulos",
+          "url": "https://press-spain.max.com/post/la-nueva-temporada-de-furia-se-estrena-el-9-de-octubre-en-hbo-ma"
+        }
+      ],
+      "trackingSeason": 2
+    },
+    "wonkas-the-golden-ticket": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · reality de Willy Wonka y final de temporada",
+          "url": "https://www.netflix.com/tudum/articles/the-golden-ticket-season-1-release-date-news"
+        }
+      ]
+    },
+    "friends": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "JustWatch · disponibilidad en España",
+          "url": "https://www.justwatch.com/es/serie/friends"
+        }
+      ]
+    },
+    "el-problema-final": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · miniserie de cuatro capítulos",
+          "url": "https://about.netflix.com/es_es/news/netflix-reveals-the-trailer-for-the-final-problem"
+        }
+      ]
+    },
+    "perdiendo-el-juicio": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Antena 3 · segunda temporada confirmada",
+          "url": "https://www.antena3.com/series/perdiendo-juicio/cierra-exito-primera-temporada-trabaja-segunda-temporada_2026041569df9cd9097ebe16ad79c59a.html"
+        },
+        {
+          "label": "Boomerang TV · disponibilidad en Netflix",
+          "url": "https://www.grupoboomerangtv.com/es/noticias/perdiendo-el-juicio-triunfa-en-netflix-y-se-mantiene-en-el-top-10-global"
+        }
+      ]
+    },
+    "oasis": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81734907"
+        }
+      ]
+    },
+    "nobody-wants-this": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · diez capítulos de la temporada 3 el 22 de octubre",
+          "url": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date"
+        }
+      ],
+      "trackingSeason": 3
+    },
+    "the-four-seasons": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · temporada 3 en rodaje",
+          "url": "https://www.netflix.com/tudum/articles/the-four-seasons-renewed-season-3"
+        }
+      ]
+    },
+    "big-mistakes": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · temporada 2 en rodaje",
+          "url": "https://www.netflix.com/tudum/articles/big-mistakes-season-2-news-release-date-cast"
+        }
+      ]
+    },
+    "black-doves": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · estreno de la temporada 2 el 5 de noviembre",
+          "url": "https://www.netflix.com/tudum/articles/black-doves-season-2"
+        }
+      ],
+      "trackingSeason": 2,
+      "seasons": [
+        {
+          "season": 2,
+          "totalKnown": false
+        }
+      ]
+    },
+    "obliterated": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81413928"
+        }
+      ]
+    },
+    "worst-roommate-ever": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81031682"
+        }
+      ]
+    },
     "koh-lanta": {
       trackingSeason: 34,
       description: "Reality de supervivencia · TF1 / TF1+ · All Stars en emisión. La numeración incluye las ediciones especiales; el total de esta edición sigue pendiente.",
@@ -81,6 +202,20 @@ const RELEASE_REVIEW = {
     "the-beauty": {sources: [{label: "FX · serie y episodios disponibles", url: "https://www.fxnetworks.com/shows/the-beauty"}, {label: "Estado de una segunda temporada", url: "https://thegww.com/the-beauty-season-2-cast-released/"}]}
   },
   events: [
+    {"serieId":"furia","serie":"Furia","season":2,"episode":1,"date":"2026-10-09","title":"Episodio 1 · título pendiente","platform":"HBO Max","note":"Fecha de estreno anunciada por HBO Max"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":2,"date":"2026-10-16","title":"Episodio 2 · título pendiente","platform":"HBO Max","note":"Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":3,"date":"2026-10-23","title":"Episodio 3 · título pendiente","platform":"HBO Max","note":"Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":1,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 1 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":2,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 2 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":3,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 3 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":4,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 4 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":5,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 5 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":6,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 6 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":7,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 7 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":8,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 8 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":9,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 9 · título pendiente","platform":"Netflix"},
+    {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":10,"date":"2026-10-22","releaseAt":"2026-10-22T07:00:00Z","title":"Episodio 10 · título pendiente","platform":"Netflix"},
+    {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":1,"date":"2026-11-05","releaseAt":"2026-11-05T08:00:00Z","title":"Estreno de la temporada 2 · título pendiente","platform":"Netflix","note":"Total de capítulos pendiente; sólo se cuenta el estreno conocido"},
     ...Array.from({length: 8}, (_, i) => ({serieId: "lupin", serie: "Lupin", season: 4, episode: i + 1, date: "2026-10-23", releaseAt: "2026-10-23T07:00:00Z", title: `Episodio ${i + 1} · título pendiente`, platform: "Netflix"})),
     {serieId: "koh-lanta", serie: "Koh-Lanta", season: 34, episode: 8, date: "2026-10-13", releaseAt: "2026-10-13T21:10:00+02:00", title: "Émission 8", platform: "TF1 / TF1+"},
     {serieId: "koh-lanta", serie: "Koh-Lanta", season: 34, episode: 9, date: "2026-10-20", releaseAt: "2026-10-20T21:10:00+02:00", title: "Émission 9", platform: "TF1 / TF1+"},
@@ -105,6 +240,78 @@ const RELEASE_REVIEW = {
 };
 
 RELEASE_REVIEW.providerSources = {
+  "furia": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/85376/furia"
+    }
+  ],
+  "wonkas-the-golden-ticket": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/92870/wonkas-the-golden-ticket"
+    }
+  ],
+  "friends": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/431/friends"
+    }
+  ],
+  "el-problema-final": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/92984/el-problema-final"
+    }
+  ],
+  "perdiendo-el-juicio": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/84403/perdiendo-el-juicio"
+    }
+  ],
+  "oasis": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/92001/oasis"
+    }
+  ],
+  "nobody-wants-this": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/77060/nobody-wants-this"
+    }
+  ],
+  "the-four-seasons": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/73889/the-four-seasons"
+    }
+  ],
+  "big-mistakes": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/86488/big-mistakes"
+    }
+  ],
+  "black-doves": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/68407/black-doves"
+    }
+  ],
+  "obliterated": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/61892/obliterated"
+    }
+  ],
+  "worst-roommate-ever": [
+    {
+      "label": "TVmaze · ficha y capítulos registrados",
+      "url": "https://www.tvmaze.com/shows/60061/worst-roommate-ever"
+    }
+  ],
   "koh-lanta": [
     {
       "label": "TVmaze · ficha y emisiones registradas",

@@ -24,8 +24,8 @@ function app(seed = null, instant = '2026-10-08T14:00:00Z') {
 }
 
 const fresh = app();
-assert.equal(fresh.read('catalog.length'), 76);
-assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 76);
+assert.equal(fresh.read('catalog.length'), 88);
+assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 88);
 assert.equal(fresh.read('new Set(releaseEvents.map(e => `${e.serieId}:${e.season}:${e.episode}`)).size'), fresh.read('releaseEvents.length'));
 assert.equal(fresh.read('releaseEvents.every(e => /^\u005cd{4}-\u005cd{2}-\u005cd{2}$/.test(e.date) && catalog.some(s => s.id === e.serieId && s.seasons.some(t => t.season === e.season && t.total >= e.episode)))'), true);
 assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)).size === s.seasons.length)'), true);
@@ -131,4 +131,4 @@ assert.equal(migrated.read("getSerie('ghosts-us').seasons.find(s => s.season ===
 assert.equal(migrated.read("getSerie('love-is-blind-uk').seasons.find(s => s.season === 3).watched"), 11);
 assert.equal(migrated.read("ui.calendarScope = 'followed'; calendarSourceEvents().every(e => state.mySeries.some(s => s.id === e.serieId))"), true);
 
-console.log('OK: 76 series, calendario, horarios, estrenos progresivos y conservación del progreso.');
+console.log('OK: 88 series, calendario, horarios, estrenos progresivos y conservación del progreso.');

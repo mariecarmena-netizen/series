@@ -1,9 +1,484 @@
 {
   "reviewedOn": "2026-10-08",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 76,
-  "scope": "Identidad, estado y calendario de las 76 series. No constituye una verificación independiente de todos los títulos históricos ni de su disponibilidad regional. Las previsiones de TVmaze no se importan automáticamente como fechas oficiales.",
+  "catalogSize": 88,
+  "scope": "Identidad, estado y calendario de 76 series revisadas el 08/10/2026 y 12 series añadidas el 11/10/2026. No constituye una verificación independiente de todos los títulos históricos ni de su disponibilidad regional. Las fechas registradas sólo en TVmaze se distinguen de los anuncios oficiales.",
   "series": [
+    {
+      "id": "furia",
+      "name": "Furia",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 85376,
+        "name": "Furia",
+        "language": "Spanish",
+        "network": "HBO Max",
+        "url": "https://www.tvmaze.com/shows/85376/furia",
+        "status": "Running"
+      },
+      "upcomingInProvider": [
+        {
+          "season": 2,
+          "episode": 2,
+          "date": "2026-10-16"
+        },
+        {
+          "season": 2,
+          "episode": 3,
+          "date": "2026-10-23"
+        }
+      ],
+      "note": "Identidad española y total de ocho capítulos de la temporada 2 contrastados con HBO Max. Fechas del 16 y 23 de octubre registradas en TVmaze; el resto queda pendiente.",
+      "catalogStatus": "Temporada 2 en emisión · 1/8 capítulos disponibles · resto del calendario pendiente",
+      "sources": [
+        {
+          "label": "HBO Max · segunda temporada: estreno y ocho capítulos",
+          "url": "https://press-spain.max.com/post/la-nueva-temporada-de-furia-se-estrena-el-9-de-octubre-en-hbo-ma"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/85376/furia"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "wonkas-the-golden-ticket",
+      "name": "El Billete Dorado de Willy Wonka",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 92870,
+        "name": "Wonka's The Golden Ticket",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/92870/wonkas-the-golden-ticket",
+        "status": "To Be Determined"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "1 temporada completa · 9 capítulos · sin segunda temporada confirmada",
+      "sources": [
+        {
+          "label": "Netflix · reality de Willy Wonka y final de temporada",
+          "url": "https://www.netflix.com/tudum/articles/the-golden-ticket-season-1-release-date-news"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/92870/wonkas-the-golden-ticket"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "friends",
+      "name": "Friends",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 431,
+        "name": "Friends",
+        "language": "English",
+        "network": "NBC",
+        "url": "https://www.tvmaze.com/shows/431/friends",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "Finalizada · 10 temporadas · 236 capítulos",
+      "sources": [
+        {
+          "label": "JustWatch · disponibilidad en España",
+          "url": "https://www.justwatch.com/es/serie/friends"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/431/friends"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "el-problema-final",
+      "name": "El problema final",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 92984,
+        "name": "El problema final",
+        "language": "Spanish",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/92984/el-problema-final",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "Miniserie completa · 4 capítulos",
+      "sources": [
+        {
+          "label": "Netflix · miniserie de cuatro capítulos",
+          "url": "https://about.netflix.com/es_es/news/netflix-reveals-the-trailer-for-the-final-problem"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/92984/el-problema-final"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "perdiendo-el-juicio",
+      "name": "Perdiendo el juicio",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 84403,
+        "name": "Perdiendo el juicio",
+        "language": "Spanish",
+        "network": "Antena 3",
+        "url": "https://www.tvmaze.com/shows/84403/perdiendo-el-juicio",
+        "status": "Running"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "Temporada 1 completa · 10 capítulos · temporada 2 confirmada, sin fecha",
+      "sources": [
+        {
+          "label": "Antena 3 · segunda temporada confirmada",
+          "url": "https://www.antena3.com/series/perdiendo-juicio/cierra-exito-primera-temporada-trabaja-segunda-temporada_2026041569df9cd9097ebe16ad79c59a.html"
+        },
+        {
+          "label": "Boomerang TV · disponibilidad en Netflix",
+          "url": "https://www.grupoboomerangtv.com/es/noticias/perdiendo-el-juicio-triunfa-en-netflix-y-se-mantiene-en-el-top-10-global"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/84403/perdiendo-el-juicio"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "oasis",
+      "name": "Oasis",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 92001,
+        "name": "Oasis",
+        "language": "Spanish",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/92001/oasis",
+        "status": "Running"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "1 temporada completa · 8 capítulos · sin segunda temporada confirmada",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81734907"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/92001/oasis"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "nobody-wants-this",
+      "name": "Nadie quiere esto",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 77060,
+        "name": "Nobody Wants This",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/77060/nobody-wants-this",
+        "status": "Running"
+      },
+      "upcomingInProvider": [
+        {
+          "season": 3,
+          "episode": 1,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "date": "2026-10-22"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "date": "2026-10-22"
+        }
+      ],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "2 temporadas completas · temporada 3: 10 capítulos el 22/10/2026",
+      "sources": [
+        {
+          "label": "Netflix · diez capítulos de la temporada 3 el 22 de octubre",
+          "url": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/77060/nobody-wants-this"
+        }
+      ],
+      "confirmedUpcoming": [
+        {
+          "season": 3,
+          "episode": 1,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "date": "2026-10-22",
+          "releaseAt": "2026-10-22T07:00:00Z",
+          "platform": "Netflix"
+        }
+      ]
+    },
+    {
+      "id": "the-four-seasons",
+      "name": "Las cuatro estaciones",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 73889,
+        "name": "The Four Seasons",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/73889/the-four-seasons",
+        "status": "Running"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "2 temporadas completas · 16 capítulos · temporada 3 en rodaje, sin fecha",
+      "sources": [
+        {
+          "label": "Netflix · temporada 3 en rodaje",
+          "url": "https://www.netflix.com/tudum/articles/the-four-seasons-renewed-season-3"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/73889/the-four-seasons"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "big-mistakes",
+      "name": "Errores épicos",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 86488,
+        "name": "Big Mistakes",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/86488/big-mistakes",
+        "status": "Running"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "Temporada 1 completa · 8 capítulos · temporada 2 en rodaje, sin fecha",
+      "sources": [
+        {
+          "label": "Netflix · temporada 2 en rodaje",
+          "url": "https://www.netflix.com/tudum/articles/big-mistakes-season-2-news-release-date-cast"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/86488/big-mistakes"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "black-doves",
+      "name": "Palomas negras",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 68407,
+        "name": "Black Doves",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/68407/black-doves",
+        "status": "Running"
+      },
+      "upcomingInProvider": [
+        {
+          "season": 2,
+          "episode": 1,
+          "date": "2026-11-05"
+        }
+      ],
+      "note": "Fecha de estreno contrastada con Netflix. El total de capítulos de la temporada 2 permanece pendiente; sólo se cuenta el estreno conocido.",
+      "catalogStatus": "Temporada 1 completa · temporada 2: estreno el 05/11/2026 · total de capítulos pendiente",
+      "sources": [
+        {
+          "label": "Netflix · estreno de la temporada 2 el 5 de noviembre",
+          "url": "https://www.netflix.com/tudum/articles/black-doves-season-2"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/68407/black-doves"
+        }
+      ],
+      "confirmedUpcoming": [
+        {
+          "season": 2,
+          "episode": 1,
+          "date": "2026-11-05",
+          "releaseAt": "2026-11-05T08:00:00Z",
+          "platform": "Netflix"
+        }
+      ]
+    },
+    {
+      "id": "obliterated",
+      "name": "Hechos polvo",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 61892,
+        "name": "Obliterated",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/61892/obliterated",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "Finalizada · 1 temporada · 8 capítulos",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81413928"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/61892/obliterated"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
+    {
+      "id": "worst-roommate-ever",
+      "name": "El peor compañero de piso imaginable",
+      "reviewedOn": "2026-10-11",
+      "provider": {
+        "id": 60061,
+        "name": "Worst Roommate Ever",
+        "language": "English",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/60061/worst-roommate-ever",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Identidad, temporadas y capítulos registrados contrastados con TVmaze. Las renovaciones y los estrenos futuros se contrastaron con las fuentes enlazadas; los totales sin anunciar permanecen pendientes.",
+      "catalogStatus": "2 temporadas completas · 9 capítulos",
+      "sources": [
+        {
+          "label": "Netflix · ficha oficial",
+          "url": "https://www.netflix.com/title/81031682"
+        },
+        {
+          "label": "TVmaze · ficha y capítulos registrados",
+          "url": "https://www.tvmaze.com/shows/60061/worst-roommate-ever"
+        }
+      ],
+      "confirmedUpcoming": []
+    },
     {
       "id": "koh-lanta",
       "name": "Koh-Lanta",
