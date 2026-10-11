@@ -4,9 +4,9 @@ Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
 ## Revisión completa del 11 de octubre de 2026
 
-Se han vuelto a consultar las 89 series: identidad, estado, temporadas, capítulos y fechas registradas. Las fichas incluyen sus fuentes y la fecha de revisión. `catalog-review.json` conserva el detalle de la revisión y `release-data.js` contiene las actualizaciones del catálogo y el calendario.
+Se han vuelto a consultar las 97 series: identidad, estado, temporadas, capítulos y fechas registradas. Las fichas incluyen sus fuentes y la fecha de revisión. `catalog-review.json` conserva el detalle de la revisión y `release-data.js` contiene las actualizaciones del catálogo y el calendario.
 
-El calendario reúne 6.308 estrenos fechados que se pueden asociar a la numeración de la app, con 63 próximos estrenos conocidos a fecha de la revisión y registros hasta febrero de 2027. Se han ampliado, entre otros, Koh-Lanta, Dexter: Resurrection y Only Murders in the Building; corregido los especiales de People Magazine Investigates y los 20 capítulos de Brain Games: On the Road; y actualizado las temporadas futuras y los estados de emisión.
+El calendario reúne 6.370 estrenos fechados que se pueden asociar a la numeración de la app, con 71 próximos estrenos conocidos a fecha de la revisión y registros hasta febrero de 2027. Se han ampliado, entre otros, Koh-Lanta, Dexter: Resurrection y Only Murders in the Building; corregido los especiales de People Magazine Investigates y los 20 capítulos de Brain Games: On the Road; y actualizado las temporadas futuras y los estados de emisión.
 
 Puedes saltar directamente a cualquier mes, desplegar todos los próximos estrenos y consultar todas las temporadas pendientes de fecha. Cada estreno distingue el anuncio de la plataforma del registro de episodios del proveedor.
 
@@ -15,6 +15,8 @@ El calendario utiliza la hora de Madrid. La plataforma y el país indican dónde
 Los capítulos cambian a estrenados al llegar su fecha y hora programadas. Si sólo se conoce el día, se espera a que termine ese día. La pantalla se actualiza cada minuto y al volver a la app. Este cálculo usa el calendario guardado: los cambios posteriores de programación requieren otra revisión de las fuentes.
 
 El progreso, ritmo de visionado e historial se conservan en el almacenamiento local. La app y los datos de estreno quedan en caché para su uso sin conexión después de la primera carga. Al activarse una nueva versión de la caché, la pantalla se recarga para mostrar los datos actualizados.
+
+Añadidas Vision Quest, El crimen tiene dos caras, Una fiesta de muerte, Si es martes, es asesinato, Chad Powers, Lección criminal, Cómo atrapé a mi asesino y Bodas de infarto, con fichas, capítulos y fuentes. El documento `lista de series.pages` incluye también los ocho títulos.
 
 ## Abrir y comprobar
 

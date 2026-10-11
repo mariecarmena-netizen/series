@@ -24,8 +24,8 @@ function app(seed = null, instant = '2026-10-08T14:00:00Z') {
 }
 
 const fresh = app();
-assert.equal(fresh.read('catalog.length'), 89);
-assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 89);
+assert.equal(fresh.read('catalog.length'), 97);
+assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 97);
 assert.equal(fresh.read('new Set(releaseEvents.map(e => `${e.serieId}:${e.season}:${e.episode}`)).size'), fresh.read('releaseEvents.length'));
 assert.equal(fresh.read('releaseEvents.every(e => /^\u005cd{4}-\u005cd{2}-\u005cd{2}$/.test(e.date) && catalog.some(s => s.id === e.serieId && s.seasons.some(t => t.season === e.season && t.total >= e.episode)))'), true);
 assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)).size === s.seasons.length)'), true);
@@ -34,12 +34,12 @@ assert.equal(fresh.read("releaseEvents.filter(e => e.date === '2026-10-23')[0].s
 assert.equal(fresh.read('catalog.every(s => RELEASE_REVIEW.providerSources[s.id]?.length > 0)'), true);
 assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-10-11');
 assert.equal(fresh.read("catalog.every(s => RELEASE_REVIEW.series[s.id]?.reviewedOn === '2026-10-11')"), true);
-assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 89);
+assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 97);
 assert.ok(fresh.read('releaseEvents.length') > 6000);
 const audit = JSON.parse(fs.readFileSync(path.join(root, 'catalog-review.json'), 'utf8'));
-assert.equal(audit.catalogSize, 89);
+assert.equal(audit.catalogSize, 97);
 assert.equal(audit.calendarEventCount, fresh.read('releaseEvents.length'));
-assert.equal(audit.series.length, 89);
+assert.equal(audit.series.length, 97);
 assert.ok(audit.series.every(s => s.reviewedOn === audit.reviewedOn && s.sources.length > 0));
 
 // Los anuncios oficiales y las fechas del proveedor se distinguen sin inventar horarios.
@@ -59,13 +59,21 @@ assert.equal(fresh.read("releaseEvents.some(e => /Celebrating Champions/.test(e.
 
 const today = app(null, '2026-10-11T10:00:00Z');
 assert.equal(today.read("availableEpisodeLimit(getCatalogSerie('the-traitors-us'), getCatalogSerie('the-traitors-us').seasons.find(s => s.season === 5))"), 5);
-assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 63);
+assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 71);
 assert.equal(today.read("undatedUpcomingForFollowedSeries().find(e => e.serieId === 'dexter-resurrection').label"), '7 capítulos sin fecha');
 assert.equal(today.read("ui.calendarScope = 'followed'; calendarUpcomingEvents(Infinity).length"), 0);
 
 function available(app, id, season) {
   return app.read(`availableEpisodeLimit(getCatalogSerie('${id}'), getCatalogSerie('${id}').seasons.find(s => s.season === ${season}))`);
 }
+const vision = app(null, '2026-10-14T10:00:00Z');
+assert.equal(available(vision, 'vision-quest', 1), 0);
+vision.at('2026-10-14T22:00:00Z');
+assert.equal(available(vision, 'vision-quest', 1), 2);
+vision.at('2026-10-21T22:00:00Z');
+assert.equal(available(vision, 'vision-quest', 1), 4);
+assert.equal(vision.read("releaseEvents.find(e => e.serieId === 'vision-quest' && e.episode === 1).sourceKind"), 'official');
+assert.equal(vision.read("releaseEvents.find(e => e.serieId === 'vision-quest' && e.episode === 2).sourceKind"), 'provider');
 assert.equal(available(fresh, 'big-brother-us', 28), 41);
 assert.equal(available(fresh, 'koh-lanta', 34), 7);
 assert.equal(available(fresh, 'the-traitors-us', 5), 4);

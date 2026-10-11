@@ -4,6 +4,100 @@ const RELEASE_REVIEW = {
   "reviewedOn": "2026-10-11",
   "timeZone": "Europe/Madrid",
   "series": {
+    "vision-quest": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Marvel · estreno oficial el 14/10/2026",
+          "url": "https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date?pubDate=20260513"
+        }
+      ],
+      "dataNote": "Estreno confirmado por Marvel. Las fechas de los capítulos posteriores y del segundo capítulo del estreno proceden de TVmaze; no se ha confirmado aquí el total oficial. Duración orientativa de 45 minutos, pendiente de publicación.",
+      "trackingSeason": 1,
+      "seasons": [
+        {
+          "season": 1,
+          "totalKnown": false
+        }
+      ]
+    },
+    "el-crimen-tiene-dos-caras": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "JustWatch España · título, plataforma y tres capítulos",
+          "url": "https://www.justwatch.com/es/serie/murder-has-two-faces/temporada-1"
+        }
+      ]
+    },
+    "una-fiesta-de-muerte": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Antena 3 · primera entrega, 25/04/2026 y duración de 90 minutos",
+          "url": "https://www.antena3.com/programas/fiesta-muerte/estaba-tomandome-champagne-repente-ser-sherlock-holmes_2026042569ec90ba20f3155690592a7a.html"
+        },
+        {
+          "label": "Antena 3 · segunda entrega, 05/09/2026",
+          "url": "https://www.antena3.com/programas/fiesta-muerte/hora-empezar-regresa-sabado-puede-hacerte-ganar-3000-euros_202609036a992fd72d7d3022177cc826.html"
+        },
+        {
+          "label": "Antena 3 · formato y duración de las entregas",
+          "url": "https://www.antena3.com/programas/fiesta-muerte/nueva-revelacion-internacional-presenta-espectacular-casting_2026031669b7eee03156ba241d547377.html"
+        }
+      ],
+      "dataNote": "Se agrupan las dos entregas verificadas como temporada 1 para el seguimiento. Antena 3 no anuncia aquí una nueva entrega ni un total cerrado del formato."
+    },
+    "si-es-martes-es-asesinato": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ España · estreno de marzo de 2026",
+          "url": "https://lumiere-a.akamaihd.net/v1/documents/d_newsletter_marzo_2026_v4_comp_80243c66.pdf"
+        }
+      ]
+    },
+    "chad-powers": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ Press · temporada 2 completa en Hulu el 03/09/2026",
+          "url": "https://press.disneyplus.com/news/next-on-disney-plus-september-2026"
+        }
+      ],
+      "dataNote": "La temporada 2 y su fecha corresponden a Hulu en Estados Unidos; no confirman su disponibilidad en Disney+ España."
+    },
+    "leccion-criminal": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ España · título y tres capítulos",
+          "url": "https://www.disneyplus.com/es-es/browse/entity-2a044424-532f-4c67-87cb-d708487581ca"
+        }
+      ]
+    },
+    "como-atrape-a-mi-asesino": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ · título y dos temporadas",
+          "url": "https://www.disneyplus.com/es-co/browse/entity-390e7b76-7ae4-484b-9e4a-7e7802194ee9"
+        },
+        {
+          "label": "Disney+ España · temporada 2 desde el 02/10/2024",
+          "url": "https://lumiere-a.akamaihd.net/v1/documents/newsletter_octubre_2024_97fa69e8.pdf"
+        }
+      ]
+    },
+    "bodas-de-infarto": {
+      "reviewedOn": "2026-10-11",
+      "sources": [
+        {
+          "label": "Disney+ España · estreno completo el 08/09/2022",
+          "url": "https://lumiere-a.akamaihd.net/v1/documents/newsletter_d_septiembre_7e3583ba.pdf"
+        }
+      ]
+    },
     "entrepreneurs": {
       "reviewedOn": "2026-10-11",
       "sources": [
@@ -4201,6 +4295,54 @@ const RELEASE_REVIEW = {
     }
   },
   "providerSources": {
+    "vision-quest": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/64950/visionquest"
+      }
+    ],
+    "el-crimen-tiene-dos-caras": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/84384/murder-has-two-faces"
+      }
+    ],
+    "una-fiesta-de-muerte": [
+      {
+        "label": "Antena 3 · entregas verificadas",
+        "url": "https://www.antena3.com/programas/fiesta-muerte/estaba-tomandome-champagne-repente-ser-sherlock-holmes_2026042569ec90ba20f3155690592a7a.html"
+      }
+    ],
+    "si-es-martes-es-asesinato": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/90233/si-es-martes-es-asesinato"
+      }
+    ],
+    "chad-powers": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/74865/chad-powers"
+      }
+    ],
+    "leccion-criminal": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/67624/the-lesson-is-murder"
+      }
+    ],
+    "como-atrape-a-mi-asesino": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/65801/how-i-caught-my-killer"
+      }
+    ],
+    "bodas-de-infarto": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/56586/wedding-season"
+      }
+    ],
     "entrepreneurs": [
       {
         "label": "TVmaze · ficha y episodios registrados",
@@ -4738,6 +4880,68 @@ const RELEASE_REVIEW = {
   },
   "calendarComplete": true,
   "events": [
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":1,"date":"2026-10-14","title":"Capítulo 1","platform":"Disney+","sourceKind":"official","sourceUrl":"https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date?pubDate=20260513"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":2,"date":"2026-10-14","title":"Capítulo 2","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616305/visionquest-1x02-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":3,"date":"2026-10-21","title":"Capítulo 3","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616306/visionquest-1x03-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":4,"date":"2026-10-21","title":"Capítulo 4","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616307/visionquest-1x04-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":5,"date":"2026-10-28","title":"Capítulo 5","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616308/visionquest-1x05-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":6,"date":"2026-10-28","title":"Capítulo 6","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616309/visionquest-1x06-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":7,"date":"2026-11-04","title":"Capítulo 7","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616310/visionquest-1x07-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":8,"date":"2026-11-11","title":"Capítulo 8","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616311/visionquest-1x08-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":1,"date":"2025-05-06","title":"Maternidad interrumpida","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3219802/murder-has-two-faces-1x01-motherhood-interrupted","releaseAt":"2025-05-06T16:00:00+00:00"},
+    {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":2,"date":"2025-05-06","title":"Asesinato en el Capitolio","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228816/murder-has-two-faces-1x02-capitol-killings","releaseAt":"2025-05-06T16:00:00+00:00"},
+    {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":3,"date":"2025-05-06","title":"Los buenos se pervierten","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228817/murder-has-two-faces-1x03-good-guys-gone-bad","releaseAt":"2025-05-06T16:00:00+00:00"},
+    {"serieId":"una-fiesta-de-muerte","serie":"Una fiesta de muerte","season":1,"episode":1,"date":"2026-04-25","title":"Muerte en el museo","platform":"Antena 3 (España)","sourceKind":"official","sourceUrl":"https://www.antena3.com/programas/fiesta-muerte/estaba-tomandome-champagne-repente-ser-sherlock-holmes_2026042569ec90ba20f3155690592a7a.html","releaseAt":"2026-04-25T20:00:00Z"},
+    {"serieId":"una-fiesta-de-muerte","serie":"Una fiesta de muerte","season":1,"episode":2,"date":"2026-09-05","title":"Asesinato en Canfranc","platform":"Antena 3 (España)","sourceKind":"official","sourceUrl":"https://www.antena3.com/programas/fiesta-muerte/hora-empezar-regresa-sabado-puede-hacerte-ganar-3000-euros_202609036a992fd72d7d3022177cc826.html","releaseAt":"2026-09-05T20:00:00Z"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":1,"date":"2026-03-31","title":"Baixa","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3542657/si-es-martes-es-asesinato-1x01-baixa","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":2,"date":"2026-03-31","title":"Alfama","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583358/si-es-martes-es-asesinato-1x02-alfama","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":3,"date":"2026-03-31","title":"Belém","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583359/si-es-martes-es-asesinato-1x03-belem","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":4,"date":"2026-03-31","title":"Ajuda","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583360/si-es-martes-es-asesinato-1x04-ajuda","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":5,"date":"2026-03-31","title":"Bairro Alto","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583361/si-es-martes-es-asesinato-1x05-bairro-alto","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":6,"date":"2026-03-31","title":"Sintra","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583362/si-es-martes-es-asesinato-1x06-sintra","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"si-es-martes-es-asesinato","serie":"Si es martes, es asesinato","season":1,"episode":7,"date":"2026-03-31","title":"Liberdade","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3583363/si-es-martes-es-asesinato-1x07-liberdade","releaseAt":"2026-03-31T12:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":1,"date":"2025-09-30","title":"1st Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3239900/chad-powers-1x01-1st-quarter","releaseAt":"2025-09-30T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":2,"date":"2025-09-30","title":"2nd Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3239901/chad-powers-1x02-2nd-quarter","releaseAt":"2025-09-30T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":3,"date":"2025-10-07","title":"3rd Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3239902/chad-powers-1x03-3rd-quarter","releaseAt":"2025-10-07T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":4,"date":"2025-10-14","title":"4th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3345048/chad-powers-1x04-4th-quarter","releaseAt":"2025-10-14T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":5,"date":"2025-10-21","title":"5th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3345049/chad-powers-1x05-5th-quarter","releaseAt":"2025-10-21T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":1,"episode":6,"date":"2025-10-28","title":"6th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3345050/chad-powers-1x06-6th-quarter","releaseAt":"2025-10-28T16:00:00+00:00"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":1,"date":"2026-09-03","title":"7th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":2,"date":"2026-09-03","title":"8th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":3,"date":"2026-09-03","title":"9th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":4,"date":"2026-09-03","title":"10th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":5,"date":"2026-09-03","title":"11th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"chad-powers","serie":"Chad Powers","season":2,"episode":6,"date":"2026-09-03","title":"12th Quarter","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disneyplus.com/news/next-on-disney-plus-september-2026"},
+    {"serieId":"leccion-criminal","serie":"Lección criminal","season":1,"episode":1,"date":"2023-03-23","title":"El enfermero asesino","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2509843/the-lesson-is-murder-1x01-the-killer-nurse","releaseAt":"2023-03-23T16:00:00+00:00"},
+    {"serieId":"leccion-criminal","serie":"Lección criminal","season":1,"episode":2,"date":"2023-03-23","title":"Un matrimonio letal","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2509844/the-lesson-is-murder-1x02-a-deadly-marriage","releaseAt":"2023-03-23T16:00:00+00:00"},
+    {"serieId":"leccion-criminal","serie":"Lección criminal","season":1,"episode":3,"date":"2023-03-23","title":"Todas las caras de Ivie","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2509845/the-lesson-is-murder-1x03-the-many-faces-of-ivie","releaseAt":"2023-03-23T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":1,"date":"2023-01-12","title":"\"Social media? Yeah, it was her thing.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2461414/how-i-caught-my-killer-1x01-social-media-yeah-it-was-her-thing","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":2,"date":"2023-01-12","title":"\"I found Candice's Diary…\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465624/how-i-caught-my-killer-1x02-i-found-candices-diary","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":3,"date":"2023-01-12","title":"\"It's just unfathomable…\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465625/how-i-caught-my-killer-1x03-its-just-unfathomable","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":4,"date":"2023-01-12","title":"\"Everybody was always looking at him.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465626/how-i-caught-my-killer-1x04-everybody-was-always-looking-at-him","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":5,"date":"2023-01-12","title":"\"She's only fourteen and she's not home.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465627/how-i-caught-my-killer-1x05-shes-only-fourteen-and-shes-not-home","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":6,"date":"2023-01-12","title":"\"You can see the panic.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465628/how-i-caught-my-killer-1x06-you-can-see-the-panic","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":7,"date":"2023-01-12","title":"\"He was speaking to us from the grave.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465629/how-i-caught-my-killer-1x07-he-was-speaking-to-us-from-the-grave","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":8,"date":"2023-01-12","title":"\"There might be a target on your back.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465630/how-i-caught-my-killer-1x08-there-might-be-a-target-on-your-back","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":1,"episode":9,"date":"2023-01-12","title":"\"There was a monster inside of him.\"","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2465631/how-i-caught-my-killer-1x09-there-was-a-monster-inside-of-him","releaseAt":"2023-01-12T17:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":1,"date":"2024-07-18","title":"It Was a Religious Hate Crime","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915630/how-i-caught-my-killer-2x01-it-was-a-religious-hate-crime","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":2,"date":"2024-07-18","title":"I Know What the Devil Looks Like","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915631/how-i-caught-my-killer-2x02-i-know-what-the-devil-looks-like","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":3,"date":"2024-07-18","title":"She Was Hiding a Secret","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915632/how-i-caught-my-killer-2x03-she-was-hiding-a-secret","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":4,"date":"2024-07-18","title":"There's No Peace in My Family","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915633/how-i-caught-my-killer-2x04-theres-no-peace-in-my-family","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":5,"date":"2024-07-18","title":"She Was a Tough Girl","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915634/how-i-caught-my-killer-2x05-she-was-a-tough-girl","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":6,"date":"2024-07-18","title":"There's More Than One Scumbag Out There","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915635/how-i-caught-my-killer-2x06-theres-more-than-one-scumbag-out-there","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":7,"date":"2024-07-18","title":"Obsessions Oftentimes Lead to Murder","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915636/how-i-caught-my-killer-2x07-obsessions-oftentimes-lead-to-murder","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":8,"date":"2024-07-18","title":"Every Shot He Took, I Felt It","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915637/how-i-caught-my-killer-2x08-every-shot-he-took-i-felt-it","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":9,"date":"2024-07-18","title":"They'd Never Find the Body","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915638/how-i-caught-my-killer-2x09-theyd-never-find-the-body","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"como-atrape-a-mi-asesino","serie":"Cómo atrapé a mi asesino","season":2,"episode":10,"date":"2024-07-18","title":"I Know That There is True Evil Out There","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2915639/how-i-caught-my-killer-2x10-i-know-that-there-is-true-evil-out-there","releaseAt":"2024-07-18T16:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":1,"date":"2022-09-08","title":"Capítulo 1","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366806/wedding-season-1x01-episode-1","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":2,"date":"2022-09-08","title":"Capítulo 2","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366807/wedding-season-1x02-episode-2","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":3,"date":"2022-09-08","title":"Capítulo 3","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366808/wedding-season-1x03-episode-3","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":4,"date":"2022-09-08","title":"Capítulo 4","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366809/wedding-season-1x04-episode-4","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":5,"date":"2022-09-08","title":"Capítulo 5","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366810/wedding-season-1x05-episode-5","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":6,"date":"2022-09-08","title":"Capítulo 6","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366811/wedding-season-1x06-episode-6","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":7,"date":"2022-09-08","title":"Capítulo 7","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366812/wedding-season-1x07-episode-7","releaseAt":"2022-09-08T12:00:00+00:00"},
+    {"serieId":"bodas-de-infarto","serie":"Bodas de infarto","season":1,"episode":8,"date":"2022-09-08","title":"Capítulo 8","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2366813/wedding-season-1x08-episode-8","releaseAt":"2022-09-08T12:00:00+00:00"},
     {"serieId":"friends","serie":"Friends","season":1,"episode":1,"date":"1994-09-23","title":"The One Where Monica Gets a Roommate","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/40646/friends-1x01-the-one-where-monica-gets-a-roommate","releaseAt":"1994-09-23T00:00:00+00:00"},
     {"serieId":"friends","serie":"Friends","season":1,"episode":2,"date":"1994-09-30","title":"The One With the Sonogram at the End","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/40647/friends-1x02-the-one-with-the-sonogram-at-the-end","releaseAt":"1994-09-30T00:00:00+00:00"},
     {"serieId":"friends","serie":"Friends","season":1,"episode":3,"date":"1994-10-07","title":"The One With the Thumb","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/40648/friends-1x03-the-one-with-the-thumb","releaseAt":"1994-10-07T00:00:00+00:00"},
