@@ -1,9 +1,46 @@
 {
   "reviewedOn": "2026-10-11",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 97,
-  "scope": "Revisión de identidad, estado del proveedor, temporadas, capítulos y calendario de las 97 series el 11/10/2026. Incluye todo registro fechado que se puede asociar de forma inequívoca a la numeración de la app y los anuncios oficiales contrastados. Se distinguen las fechas del proveedor, los anuncios oficiales y los datos pendientes. La revisión no confirma disponibilidad regional de todo el catálogo ni asigna fechas a recopilatorios o vídeos sin correspondencia verificable.",
+  "catalogSize": 98,
+  "scope": "Revisión de identidad, estado del proveedor, temporadas, capítulos y calendario de las 97 series el 11/10/2026. Incluye todo registro fechado que se puede asociar de forma inequívoca a la numeración de la app y los anuncios oficiales contrastados. Se distinguen las fechas del proveedor, los anuncios oficiales y los datos pendientes. La revisión no confirma disponibilidad regional de todo el catálogo ni asigna fechas a recopilatorios o vídeos sin correspondencia verificable. Forensic Files añadida y revisada el 13/10/2026: 14 temporadas y 400 episodios regulares; catálogo ampliado a 98 series.",
   "series": [
+    {
+      "id": "forensic-files",
+      "name": "Forensic Files",
+      "reviewedOn": "2026-10-13",
+      "provider": {
+        "id": 3262,
+        "name": "Forensic Files",
+        "language": "English",
+        "network": "TLC",
+        "url": "https://www.tvmaze.com/shows/3262/forensic-files",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Serie original (1996–2011), conocida en España como Crímenes imperfectos. Se conserva la numeración original de sus 14 temporadas y 400 episodios regulares; los especiales de larga duración se catalogan aparte y no se incluyen en este seguimiento. Los títulos y las fechas corresponden a la emisión original; la oferta de capítulos varía según la plataforma y el país.",
+      "catalogStatus": "Finalizada · 14 temporadas · 400 capítulos regulares",
+      "sources": [
+        {
+          "label": "Forensic Files · web oficial de la serie original",
+          "url": "https://forensicfiles.com/about"
+        },
+        {
+          "label": "JustWatch España · Crímenes imperfectos y plataformas",
+          "url": "https://www.justwatch.com/es/serie/forensic-files"
+        },
+        {
+          "label": "TVmaze · ficha y episodios registrados",
+          "url": "https://www.tvmaze.com/shows/3262/forensic-files"
+        }
+      ],
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 400,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 400
+    },
     {
       "id": "vision-quest",
       "name": "Vision Quest",
@@ -4542,5 +4579,5 @@
       "availableEpisodes": 10
     }
   ],
-  "calendarEventCount": 6370
+  "calendarEventCount": 6770
 }
