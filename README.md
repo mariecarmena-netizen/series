@@ -18,7 +18,9 @@ El progreso, ritmo de visionado e historial se conservan en el almacenamiento lo
 
 Añadidas Vision Quest, El crimen tiene dos caras, Una fiesta de muerte, Si es martes, es asesinato, Chad Powers, Lección criminal, Cómo atrapé a mi asesino y Bodas de infarto, con fichas, capítulos y fuentes. El documento `lista de series.pages` incluye también los ocho títulos.
 
-Añadida Forensic Files (Crímenes imperfectos) el 13/10/2026, con 14 temporadas, los títulos y fechas de sus 400 episodios regulares, portada, plataformas y fuentes. El catálogo reúne ahora 98 series y 6.770 estrenos fechados. El título figura también en `lista de series.pages`, entre Fargo y Friends.
+Añadida Forensic Files (Crímenes imperfectos) el 13/10/2026, con 14 temporadas, los títulos y fechas de sus 400 episodios regulares, portada, plataformas y fuentes. Con esta incorporación, el catálogo pasó a reunir 98 series y 6.770 estrenos fechados. El título figura también en `lista de series.pages`, entre Fargo y Friends.
+
+Retirada Margo's Got Money Troubles el 18/10/2026 del catálogo, el calendario y las listas guardadas. El catálogo actual reúne 97 series y 6.762 estrenos fechados.
 
 ## Abrir y comprobar
 

@@ -24,8 +24,8 @@ function app(seed = null, instant = '2026-10-08T14:00:00Z') {
 }
 
 const fresh = app();
-assert.equal(fresh.read('catalog.length'), 98);
-assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 98);
+assert.equal(fresh.read('catalog.length'), 97);
+assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 97);
 assert.equal(fresh.read('new Set(releaseEvents.map(e => `${e.serieId}:${e.season}:${e.episode}`)).size'), fresh.read('releaseEvents.length'));
 assert.equal(fresh.read('releaseEvents.every(e => /^\u005cd{4}-\u005cd{2}-\u005cd{2}$/.test(e.date) && catalog.some(s => s.id === e.serieId && s.seasons.some(t => t.season === e.season && t.total >= e.episode)))'), true);
 assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)).size === s.seasons.length)'), true);
@@ -34,12 +34,12 @@ assert.equal(fresh.read("releaseEvents.filter(e => e.date === '2026-10-23')[0].s
 assert.equal(fresh.read('catalog.every(s => RELEASE_REVIEW.providerSources[s.id]?.length > 0)'), true);
 assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-10-11');
 assert.equal(fresh.read("catalog.every(s => RELEASE_REVIEW.series[s.id]?.reviewedOn === (s.id === 'forensic-files' ? '2026-10-13' : '2026-10-11'))"), true);
-assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 98);
+assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 97);
 assert.ok(fresh.read('releaseEvents.length') > 6000);
 const audit = JSON.parse(fs.readFileSync(path.join(root, 'catalog-review.json'), 'utf8'));
-assert.equal(audit.catalogSize, 98);
+assert.equal(audit.catalogSize, 97);
 assert.equal(audit.calendarEventCount, fresh.read('releaseEvents.length'));
-assert.equal(audit.series.length, 98);
+assert.equal(audit.series.length, 97);
 assert.ok(audit.series.every(s => s.reviewedOn === (s.id === 'forensic-files' ? '2026-10-13' : audit.reviewedOn) && s.sources.length > 0));
 
 assert.equal(fresh.read("getCatalogSerie('forensic-files').seasons.length"), 14);

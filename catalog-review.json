@@ -1,8 +1,8 @@
 {
   "reviewedOn": "2026-10-11",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 98,
-  "scope": "Revisión de identidad, estado del proveedor, temporadas, capítulos y calendario de las 97 series el 11/10/2026. Incluye todo registro fechado que se puede asociar de forma inequívoca a la numeración de la app y los anuncios oficiales contrastados. Se distinguen las fechas del proveedor, los anuncios oficiales y los datos pendientes. La revisión no confirma disponibilidad regional de todo el catálogo ni asigna fechas a recopilatorios o vídeos sin correspondencia verificable. Forensic Files añadida y revisada el 13/10/2026: 14 temporadas y 400 episodios regulares; catálogo ampliado a 98 series.",
+  "catalogSize": 97,
+  "scope": "Revisión de identidad, estado del proveedor, temporadas, capítulos y calendario de las 97 series el 11/10/2026. Incluye todo registro fechado que se puede asociar de forma inequívoca a la numeración de la app y los anuncios oficiales contrastados. Se distinguen las fechas del proveedor, los anuncios oficiales y los datos pendientes. La revisión no confirma disponibilidad regional de todo el catálogo ni asigna fechas a recopilatorios o vídeos sin correspondencia verificable. Forensic Files añadida y revisada el 13/10/2026: 14 temporadas y 400 episodios regulares; catálogo ampliado a 98 series. Tras la retirada de una serie el 18/10/2026, el catálogo actual contiene 97 series y 6.762 estrenos fechados.",
   "series": [
     {
       "id": "forensic-files",
@@ -4477,39 +4477,6 @@
       "availableEpisodes": 24
     },
     {
-      "id": "margos-got-money-troubles",
-      "name": "Margo's Got Money Troubles",
-      "reviewedOn": "2026-10-11",
-      "provider": {
-        "id": 74442,
-        "name": "Margo's Got Money Troubles",
-        "language": "English",
-        "network": "Apple TV",
-        "url": "https://www.tvmaze.com/shows/74442/margos-got-money-troubles",
-        "status": "Running"
-      },
-      "upcomingInProvider": [],
-      "note": "Ficha y episodios consultados de nuevo el 11/10/2026. Los anuncios oficiales prevalecen; las fechas futuras registradas sólo en TVmaze se identifican como tales. Se conserva la numeración y el seguimiento de la app, incluidos sus especiales.",
-      "catalogStatus": "Temporada 1 completa · 8 capítulos · temporada 2 renovada · fecha pendiente",
-      "sources": [
-        {
-          "label": "Apple TV · renovación de la temporada 2",
-          "url": "https://images.apple.com/uk/tv-pr/news/2026/05/apple-tv-renews-globally-acclaimed-comedy-margos-got-money-troubles-from-multiemmy-award-winner-david-e-kelley-and-stars-and-executive-producers-elle-fanning-michelle-pfeiffer-and-nicole-kidman/"
-        },
-        {
-          "label": "TVmaze · ficha y episodios registrados",
-          "url": "https://www.tvmaze.com/shows/74442/margos-got-money-troubles"
-        }
-      ],
-      "confirmedUpcoming": [],
-      "registeredUpcoming": [],
-      "calendarCoverage": {
-        "datedEpisodes": 8,
-        "unresolvedSeasons": []
-      },
-      "availableEpisodes": 8
-    },
-    {
       "id": "what-we-do-in-the-shadows",
       "name": "What We Do in the Shadows",
       "reviewedOn": "2026-10-11",
@@ -4579,5 +4546,5 @@
       "availableEpisodes": 10
     }
   ],
-  "calendarEventCount": 6770
+  "calendarEventCount": 6762
 }

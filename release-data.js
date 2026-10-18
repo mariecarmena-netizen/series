@@ -2875,30 +2875,6 @@ const RELEASE_REVIEW = {
         }
       ]
     },
-    "margos-got-money-troubles": {
-      "sources": [
-        {
-          "label": "Apple TV · renovación de la temporada 2",
-          "url": "https://images.apple.com/uk/tv-pr/news/2026/05/apple-tv-renews-globally-acclaimed-comedy-margos-got-money-troubles-from-multiemmy-award-winner-david-e-kelley-and-stars-and-executive-producers-elle-fanning-michelle-pfeiffer-and-nicole-kidman/"
-        }
-      ],
-      "reviewedOn": "2026-10-11",
-      "seasons": [
-        {
-          "season": 1,
-          "episodes": [
-            "The Hungry Ghost",
-            "Homecoming",
-            "Jinxed",
-            "Buddies",
-            "Flamingoes",
-            "Grudge Match",
-            "Lariat Takedown",
-            "Lock and Load"
-          ]
-        }
-      ]
-    },
     "fargo": {
       "sources": [
         {
@@ -4877,12 +4853,6 @@ const RELEASE_REVIEW = {
       {
         "label": "TVmaze · ficha y episodios registrados",
         "url": "https://www.tvmaze.com/shows/46660/summertime"
-      }
-    ],
-    "margos-got-money-troubles": [
-      {
-        "label": "TVmaze · ficha y episodios registrados",
-        "url": "https://www.tvmaze.com/shows/74442/margos-got-money-troubles"
       }
     ],
     "what-we-do-in-the-shadows": [
@@ -11258,9 +11228,6 @@ const RELEASE_REVIEW = {
     {"serieId":"rooster","serie":"Rooster","season":1,"episode":6,"date":"2026-04-13","title":"Cop Hawk","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3586474/rooster-1x06-cop-hawk","releaseAt":"2026-04-13T02:05:00+00:00"},
     {"serieId":"people-magazine-investigates","serie":"People Magazine Investigates","season":9,"episode":13,"date":"2026-04-14","title":"Where is Judith?","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3472134/people-magazine-investigates-9x13-where-is-judith","releaseAt":"2026-04-14T00:00:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":7,"date":"2026-04-14","title":"Les reliques du destin - Épisode 7 : La réunification","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3599796/koh-lanta-33x07-les-reliques-du-destin-episode-7-la-reunification","releaseAt":"2026-04-14T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":1,"date":"2026-04-15","title":"The Hungry Ghost","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3467919/margos-got-money-troubles-1x01-the-hungry-ghost"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":2,"date":"2026-04-15","title":"Homecoming","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3467920/margos-got-money-troubles-1x02-homecoming"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":3,"date":"2026-04-15","title":"Jinxed","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3467921/margos-got-money-troubles-1x03-jinxed"},
     {"serieId":"hacks","serie":"Hacks","season":5,"episode":2,"date":"2026-04-16","title":"Number One Fan","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3577826/hacks-5x02-number-one-fan"},
     {"serieId":"homicide-hunter-american-detective","serie":"Homicide Hunter: American Detective","season":6,"episode":1,"date":"2026-04-16","title":"Man's Best Friend","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3586797/homicide-hunter-american-detective-6x01-mans-best-friend","releaseAt":"2026-04-16T01:00:00+00:00"},
     {"serieId":"on-the-case-with-paula-zahn","serie":"On the Case with Paula Zahn","season":29,"episode":1,"date":"2026-04-16","title":"Edge of the Abyss","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3586788/on-the-case-with-paula-zahn-29x01-edge-of-the-abyss","releaseAt":"2026-04-16T02:00:00+00:00"},
@@ -11275,7 +11242,6 @@ const RELEASE_REVIEW = {
     {"serieId":"les-traitres-m6","serie":"Les Traîtres (M6)","season":6,"episode":4,"date":"2026-04-18","title":"Épisode 4 - Partie 1","platform":"M6 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3650074/les-traitres-seront-ils-demasques-6x07-episode-4-partie-1"},
     {"serieId":"rooster","serie":"Rooster","season":1,"episode":7,"date":"2026-04-20","title":"All the Dogs' Names","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3589228/rooster-1x07-all-the-dogs-names","releaseAt":"2026-04-20T02:03:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":8,"date":"2026-04-21","title":"Les reliques du destin - Épisode 8","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3599797/koh-lanta-33x08-les-reliques-du-destin-episode-8","releaseAt":"2026-04-21T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":4,"date":"2026-04-22","title":"Buddies","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3594347/margos-got-money-troubles-1x04-buddies"},
     {"serieId":"recale","serie":"El profe","season":1,"episode":1,"date":"2026-04-23","title":"Infiltrado","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3579936/recale-1x01-infiltre"},
     {"serieId":"recale","serie":"El profe","season":1,"episode":2,"date":"2026-04-23","title":"Hackeado","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3602429/recale-1x02-pirate"},
     {"serieId":"recale","serie":"El profe","season":1,"episode":3,"date":"2026-04-23","title":"Desembarcado","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3602430/recale-1x03-debarque"},
@@ -11292,7 +11258,6 @@ const RELEASE_REVIEW = {
     {"serieId":"les-traitres-m6","serie":"Les Traîtres (M6)","season":6,"episode":5,"date":"2026-04-25","title":"Épisode 5 - Partie 1","platform":"M6 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3650076/les-traitres-seront-ils-demasques-6x09-episode-5-partie-1"},
     {"serieId":"rooster","serie":"Rooster","season":1,"episode":8,"date":"2026-04-27","title":"Nobody Spook It","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3589229/rooster-1x08-nobody-spook-it","releaseAt":"2026-04-27T02:05:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":9,"date":"2026-04-28","title":"Les reliques du destin - Épisode 9","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3599798/koh-lanta-33x09-les-reliques-du-destin-episode-9","releaseAt":"2026-04-28T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":5,"date":"2026-04-29","title":"Flamingoes","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3594348/margos-got-money-troubles-1x05-flamingoes"},
     {"serieId":"hacks","serie":"Hacks","season":5,"episode":4,"date":"2026-04-30","title":"Who's Making Dinner?","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3577828/hacks-5x04-whos-making-dinner"},
     {"serieId":"hacks","serie":"Hacks","season":5,"episode":5,"date":"2026-04-30","title":"D'Amazing Race","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3577829/hacks-5x05-damazing-race"},
     {"serieId":"homicide-hunter-american-detective","serie":"Homicide Hunter: American Detective","season":6,"episode":3,"date":"2026-04-30","title":"To Kidnap a Prince","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3597546/homicide-hunter-american-detective-6x03-to-kidnap-a-prince","releaseAt":"2026-04-30T01:00:00+00:00"},
@@ -11302,7 +11267,6 @@ const RELEASE_REVIEW = {
     {"serieId":"les-traitres-m6","serie":"Les Traîtres (M6)","season":6,"episode":6,"date":"2026-05-02","title":"Épisode 6 - Partie 1","platform":"M6 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3650078/les-traitres-seront-ils-demasques-6x11-episode-6-partie-1"},
     {"serieId":"rooster","serie":"Rooster","season":1,"episode":9,"date":"2026-05-04","title":"Ludlow's Fourth Hottest Professor","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3589230/rooster-1x09-ludlows-fourth-hottest-professor","releaseAt":"2026-05-04T02:05:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":10,"date":"2026-05-05","title":"Les reliques du destin - Épisode 10","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3599799/koh-lanta-33x10-les-reliques-du-destin-episode-10","releaseAt":"2026-05-05T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":6,"date":"2026-05-06","title":"Grudge Match","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3594349/margos-got-money-troubles-1x06-grudge-match"},
     {"serieId":"hacks","serie":"Hacks","season":5,"episode":6,"date":"2026-05-07","title":"QuikScribbl","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3577830/hacks-5x06-quikscribbl"},
     {"serieId":"hacks","serie":"Hacks","season":5,"episode":7,"date":"2026-05-07","title":"Montecito","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3577831/hacks-5x07-montecito"},
     {"serieId":"homicide-hunter-american-detective","serie":"Homicide Hunter: American Detective","season":6,"episode":4,"date":"2026-05-07","title":"First To Die","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3605279/homicide-hunter-american-detective-6x04-first-to-die","releaseAt":"2026-05-07T01:00:00+00:00"},
@@ -11312,7 +11276,6 @@ const RELEASE_REVIEW = {
     {"serieId":"les-traitres-m6","serie":"Les Traîtres (M6)","season":6,"episode":7,"date":"2026-05-09","title":"Épisode 7","platform":"M6 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3650088/les-traitres-seront-ils-demasques-6x13-episode-7"},
     {"serieId":"rooster","serie":"Rooster","season":1,"episode":10,"date":"2026-05-11","title":"Songs for Raisa","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3589231/rooster-1x10-songs-for-raisa","releaseAt":"2026-05-11T02:05:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":11,"date":"2026-05-12","title":"Les reliques du destin - Épisode 11","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3599800/koh-lanta-33x11-les-reliques-du-destin-episode-11","releaseAt":"2026-05-12T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":7,"date":"2026-05-13","title":"Lariat Takedown","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3594350/margos-got-money-troubles-1x07-lariat-takedown"},
     {"serieId":"perfect-match","serie":"Perfect Match","season":4,"episode":1,"date":"2026-05-13","title":"Bombshells & Love Bombs","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3596555/perfect-match-4x01-bombshells-love-bombs"},
     {"serieId":"perfect-match","serie":"Perfect Match","season":4,"episode":2,"date":"2026-05-13","title":"A Tale of Two Jimmys","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3596556/perfect-match-4x02-a-tale-of-two-jimmys"},
     {"serieId":"perfect-match","serie":"Perfect Match","season":4,"episode":3,"date":"2026-05-13","title":"Wet and Wild","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3596557/perfect-match-4x03-wet-and-wild"},
@@ -11325,7 +11288,6 @@ const RELEASE_REVIEW = {
     {"serieId":"your-friends-and-neighbors","serie":"Your Friends & Neighbors (Vicios ocultos)","season":2,"episode":7,"date":"2026-05-15","title":"Out East","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3459487/your-friends-neighbors-2x07-out-east"},
     {"serieId":"ghosts-us","serie":"Ghosts (US)","season":5,"episode":20,"date":"2026-05-15","title":"Polar Opposites","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3581461/ghosts-5x20-polar-opposites","releaseAt":"2026-05-15T00:31:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":33,"episode":12,"date":"2026-05-19","title":"Les reliques du destin - Épisode 12","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737747/koh-lanta-33x12-les-reliques-du-destin-episode-12","releaseAt":"2026-05-19T18:45:00+00:00"},
-    {"serieId":"margos-got-money-troubles","serie":"Margo's Got Money Troubles","season":1,"episode":8,"date":"2026-05-20","title":"Lock and Load","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3594351/margos-got-money-troubles-1x08-lock-and-load"},
     {"serieId":"maximum-pleasure-guaranteed","serie":"Maximum Pleasure Guaranteed","season":1,"episode":1,"date":"2026-05-20","title":"Magnets","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3539005/maximum-pleasure-guaranteed-1x01-magnets"},
     {"serieId":"maximum-pleasure-guaranteed","serie":"Maximum Pleasure Guaranteed","season":1,"episode":2,"date":"2026-05-20","title":"YABA","platform":"Apple TV","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3539018/maximum-pleasure-guaranteed-1x02-yaba"},
     {"serieId":"perfect-match","serie":"Perfect Match","season":4,"episode":6,"date":"2026-05-20","title":"Loose Lips Sink Relationships","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3596560/perfect-match-4x06-loose-lips-sink-relationships"},
