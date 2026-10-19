@@ -2,6 +2,16 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Actualización de series activas del 19 de octubre de 2026
+
+Revisados 64 títulos: las 63 series activas o pendientes de continuidad en TVmaze, consultando de nuevo sus fichas, temporadas y episodios, y Una fiesta de muerte mediante Antena 3. El catálogo conserva 97 series y el calendario reúne 6.775 estrenos fechados, con 74 próximos estrenos a mediodía del 19/10/2026. Las series finalizadas mantienen su fecha de revisión individual.
+
+Añadidas 13 fechas: cinco de Furia, siete de Dexter: Resurrection y la reunión de Love Is Blind (USA), anunciada por Netflix para el 09/11 a las 03:00 de Madrid. Actualizados los títulos publicados, el calendario y los horarios de Vision Quest, y la emisión de Koh-Lanta del 27/10 a las 21:10 confirmada por TF1.
+
+Incorporada la renovación oficial de Maximum Pleasure Guaranteed por una segunda temporada. TVmaze registra seis capítulos previstos para Atasco T5, ocho para The Four Seasons T3 y 22 para Ghosts T6; las fechas aún no anunciadas siguen pendientes y los recuentos se atribuyen al proveedor. No se utilizan como horas de estreno las marcas automáticas de mediodía de TVmaze.
+
+La revisión se refleja en las fichas, la app y el calendario. La nueva caché sin conexión permite recibir los datos actualizados al volver a abrir la app; el progreso, ritmo e historial de visionado se conservan.
+
 ## Revisión completa del 11 de octubre de 2026
 
 Se han vuelto a consultar las 97 series: identidad, estado, temporadas, capítulos y fechas registradas. Las fichas incluyen sus fuentes y la fecha de revisión. `catalog-review.json` conserva el detalle de la revisión y `release-data.js` contiene las actualizaciones del catálogo y el calendario.
@@ -20,7 +30,7 @@ Añadidas Vision Quest, El crimen tiene dos caras, Una fiesta de muerte, Si es m
 
 Añadida Forensic Files (Crímenes imperfectos) el 13/10/2026, con 14 temporadas, los títulos y fechas de sus 400 episodios regulares, portada, plataformas y fuentes. Con esta incorporación, el catálogo pasó a reunir 98 series y 6.770 estrenos fechados. El título figura también en `lista de series.pages`, entre Fargo y Friends.
 
-Retirada Margo's Got Money Troubles el 18/10/2026 del catálogo, el calendario y las listas guardadas. El catálogo actual reúne 97 series y 6.762 estrenos fechados.
+Retirada Margo's Got Money Troubles el 18/10/2026 del catálogo, el calendario y las listas guardadas. Tras esa retirada, el catálogo reunía 97 series y 6.762 estrenos fechados.
 
 ## Abrir y comprobar
 

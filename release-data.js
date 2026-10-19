@@ -1,7 +1,7 @@
-// Revisión integral: 11 de octubre de 2026. Horarios de Europe/Madrid.
-// Las fechas de TVmaze se distinguen de los anuncios oficiales; no se extrapolan semanas.
+// Series activas revisadas el 19 de octubre de 2026; revisión general del 11/10/2026.
+// Horarios de Europe/Madrid. Las fechas del proveedor se distinguen de los anuncios oficiales.
 const RELEASE_REVIEW = {
-  "reviewedOn": "2026-10-11",
+  "reviewedOn": "2026-10-19",
   "timeZone": "Europe/Madrid",
   "series": {
     "forensic-files": {
@@ -19,33 +19,55 @@ const RELEASE_REVIEW = {
       "dataNote": "Serie original (1996–2011), conocida en España como Crímenes imperfectos. Se conserva la numeración original de sus 14 temporadas y 400 episodios regulares; los especiales de larga duración se catalogan aparte y no se incluyen en este seguimiento. Los títulos y las fechas corresponden a la emisión original; la oferta de capítulos varía según la plataforma y el país."
     },
     "vision-quest": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
-          "label": "Marvel · estreno oficial el 14/10/2026",
-          "url": "https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date?pubDate=20260513"
+          "label": "Disney · estreno doble el 13/10 en Estados Unidos",
+          "url": "https://thewaltdisneycompany.com/news/marvel-television-visionquest-disney-plus/"
+        },
+        {
+          "label": "Marvel Studios · calendario, ocho capítulos y estreno a las 18:00 del Pacífico",
+          "url": "https://x.com/MarvelStudios/status/2109675504848486495"
         }
       ],
-      "dataNote": "Estreno confirmado por Marvel. Las fechas de los capítulos posteriores y del segundo capítulo del estreno proceden de TVmaze; no se ha confirmado aquí el total oficial. Duración orientativa de 45 minutos, pendiente de publicación.",
+      "dataNote": "Calendario del anuncio de Marvel del 12/10/2026. Los martes a las 18:00 de Los Ángeles corresponden a la madrugada del miércoles en Madrid. Ocho capítulos: dos por semana durante las tres primeras semanas y uno en cada una de las dos últimas. TVmaze aporta los títulos; su marca automática de mediodía no se utiliza como hora de estreno.",
       "trackingSeason": 1,
       "seasons": [
         {
           "season": 1,
-          "totalKnown": false
+          "totalKnown": true,
+          "episodes": [
+            "No Strings",
+            "Theseus",
+            "Reboot",
+            "Malware",
+            "Firewall",
+            "Deadlock",
+            "Immolation",
+            "Forever"
+          ],
+          "total": 8,
+          "note": "8 capítulos · estreno doble disponible · siguientes tandas en la madrugada del miércoles en Madrid, hasta el 11/11/2026",
+          "releasedEpisodes": 2,
+          "available": true
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "el-crimen-tiene-dos-caras": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "JustWatch España · título, plataforma y tres capítulos",
           "url": "https://www.justwatch.com/es/serie/murder-has-two-faces/temporada-1"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "una-fiesta-de-muerte": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Antena 3 · primera entrega, 25/04/2026 y duración de 90 minutos",
@@ -63,35 +85,41 @@ const RELEASE_REVIEW = {
       "dataNote": "Se agrupan las dos entregas verificadas como temporada 1 para el seguimiento. Antena 3 no anuncia aquí una nueva entrega ni un total cerrado del formato."
     },
     "si-es-martes-es-asesinato": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Disney+ España · estreno de marzo de 2026",
           "url": "https://lumiere-a.akamaihd.net/v1/documents/d_newsletter_marzo_2026_v4_comp_80243c66.pdf"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "chad-powers": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Disney+ Press · temporada 2 completa en Hulu el 03/09/2026",
           "url": "https://press.disneyplus.com/news/next-on-disney-plus-september-2026"
         }
       ],
-      "dataNote": "La temporada 2 y su fecha corresponden a Hulu en Estados Unidos; no confirman su disponibilidad en Disney+ España."
+      "dataNote": "La temporada 2 y su fecha corresponden a Hulu en Estados Unidos; no confirman su disponibilidad en Disney+ España.",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "leccion-criminal": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Disney+ España · título y tres capítulos",
           "url": "https://www.disneyplus.com/es-es/browse/entity-2a044424-532f-4c67-87cb-d708487581ca"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "como-atrape-a-mi-asesino": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Disney+ · título y dos temporadas",
@@ -101,7 +129,9 @@ const RELEASE_REVIEW = {
           "label": "Disney+ España · temporada 2 desde el 02/10/2024",
           "url": "https://lumiere-a.akamaihd.net/v1/documents/newsletter_octubre_2024_97fa69e8.pdf"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "bodas-de-infarto": {
       "reviewedOn": "2026-10-11",
@@ -126,23 +156,37 @@ const RELEASE_REVIEW = {
       ]
     },
     "furia": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "HBO Max · segunda temporada: estreno y ocho capítulos",
           "url": "https://press-spain.max.com/post/la-nueva-temporada-de-furia-se-estrena-el-9-de-octubre-en-hbo-ma"
         }
       ],
-      "trackingSeason": 2
+      "trackingSeason": 2,
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running",
+      "seasons": [
+        {
+          "season": 2,
+          "total": 8,
+          "totalKnown": true,
+          "note": "Parte 2 · 8 capítulos confirmados · estreno oficial 09/10/2026; calendario restante registrado en TVmaze hasta el 27/11/2026, sin hora confirmada",
+          "releasedEpisodes": 2,
+          "available": true
+        }
+      ]
     },
     "wonkas-the-golden-ticket": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · reality de Willy Wonka y final de temporada",
           "url": "https://www.netflix.com/tudum/articles/the-golden-ticket-season-1-release-date-news"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "friends": {
       "reviewedOn": "2026-10-11",
@@ -163,7 +207,7 @@ const RELEASE_REVIEW = {
       ]
     },
     "perdiendo-el-juicio": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Antena 3 · segunda temporada confirmada",
@@ -173,44 +217,78 @@ const RELEASE_REVIEW = {
           "label": "Boomerang TV · disponibilidad en Netflix",
           "url": "https://www.grupoboomerangtv.com/es/noticias/perdiendo-el-juicio-triunfa-en-netflix-y-se-mantiene-en-el-top-10-global"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "oasis": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · ficha oficial",
           "url": "https://www.netflix.com/title/81734907"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "nobody-wants-this": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · diez capítulos de la temporada 3 el 22 de octubre",
           "url": "https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date"
         }
       ],
-      "trackingSeason": 3
+      "trackingSeason": 3,
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running",
+      "seasons": [
+        {
+          "season": 3,
+          "releasedEpisodes": 0,
+          "available": false
+        }
+      ]
     },
     "the-four-seasons": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · temporada 3 en rodaje",
           "url": "https://www.netflix.com/tudum/articles/the-four-seasons-renewed-season-3"
+        },
+        {
+          "label": "TVmaze · temporadas y número de capítulos previstos",
+          "url": "https://www.tvmaze.com/shows/73889/the-four-seasons/seasons"
         }
       ],
       "seasons": [
         {
           "season": 3,
-          "note": "En rodaje desde septiembre de 2026 · fecha y capítulos pendientes"
+          "note": "En rodaje desde septiembre de 2026 · 8 capítulos previstos según TVmaze · fecha y títulos pendientes",
+          "total": 8,
+          "totalKnown": true,
+          "available": false,
+          "releasedEpisodes": 0,
+          "episodes": [
+            "Episodio 1 · título pendiente",
+            "Episodio 2 · título pendiente",
+            "Episodio 3 · título pendiente",
+            "Episodio 4 · título pendiente",
+            "Episodio 5 · título pendiente",
+            "Episodio 6 · título pendiente",
+            "Episodio 7 · título pendiente",
+            "Episodio 8 · título pendiente"
+          ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running",
+      "status": "2 temporadas completas · temporada 3 en rodaje · 8 capítulos previstos según TVmaze · fecha pendiente"
     },
     "big-mistakes": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · temporada 2 en rodaje",
@@ -222,10 +300,12 @@ const RELEASE_REVIEW = {
           "season": 2,
           "note": "Segunda temporada en rodaje · fecha y capítulos pendientes"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "black-doves": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "sources": [
         {
           "label": "Netflix · estreno de la temporada 2 el 5 de noviembre",
@@ -236,9 +316,13 @@ const RELEASE_REVIEW = {
       "seasons": [
         {
           "season": 2,
-          "totalKnown": false
+          "totalKnown": false,
+          "releasedEpisodes": 0,
+          "available": false
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "obliterated": {
       "reviewedOn": "2026-10-11",
@@ -266,23 +350,23 @@ const RELEASE_REVIEW = {
           "season": 34,
           "total": 13,
           "totalKnown": false,
-          "releasedEpisodes": 7,
+          "releasedEpisodes": 8,
           "available": true,
-          "note": "Koh-Lanta All Stars · 7 emisiones disponibles · 13 emisiones registradas en TVmaze hasta el 17/11/2026; total oficial pendiente. TF1 confirma los horarios del 13 y 20/10; las fechas posteriores figuran en TVmaze, sin hora oficial confirmada.",
+          "note": "Koh-Lanta All Stars · 13 emisiones registradas hasta el 17/11/2026; total oficial pendiente. TF1 confirma los horarios del 13, 20 y 27/10; las fechas posteriores figuran en TVmaze, sin hora oficial confirmada.",
           "episodes": [
-            "Émission 1",
-            "Émission 2",
-            "Émission 3",
-            "Émission 4",
-            "Émission 5",
-            "Émission 6",
-            "Émission 7",
-            "Émission 8",
-            "Émission 9",
-            "Émission 10",
-            "Émission 11",
-            "Émission 12",
-            "Émission 13"
+            "All Stars - Épisode 1",
+            "All Stars - Épisode 2",
+            "All Stars - Épisode 3",
+            "All Stars - Épisode 4",
+            "All Stars - Épisode 5",
+            "All Stars - Épisode 6",
+            "All Stars - Épisode 7",
+            "All Stars - Épisode 8",
+            "All Stars - Épisode 9",
+            "All Stars - Épisode 10",
+            "All Stars - Épisode 11",
+            "All Stars - Épisode 12",
+            "All Stars - Épisode 13 : La finale"
           ]
         },
         {
@@ -906,9 +990,15 @@ const RELEASE_REVIEW = {
         {
           "label": "TF1 · emisión del 20 de octubre",
           "url": "https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1"
+        },
+        {
+          "label": "TF1 · emisión del 27 de octubre a las 21:10",
+          "url": "https://tf1pro.com/programmes/diffusion/2026-10-27-2110-koh-lanta-emission-10-partie-1"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "big-brother-us": {
       "trackingSeason": 28,
@@ -2051,7 +2141,9 @@ const RELEASE_REVIEW = {
           "url": "https://www.cbs.com/shows/video/ALVE01KV9H9F4REX5SESVBX97DSCQA/?p=1"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "wednesday": {
       "status": "Temporada 3 rodada · rodaje terminado el 30/09/2026 · fecha de estreno pendiente",
@@ -2067,33 +2159,36 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/wednesday-season-3-release-date"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "love-is-blind-us": {
       "trackingSeason": 11,
-      "description": "Reality de citas · Netflix · temporada 11 en Boston. Estreno por tandas: capítulos 1–5 el 14/10, 6–8 el 21/10, 9–11 el 28/10 y capítulo 12 el 04/11/2026.",
+      "description": "Reality de citas · Netflix · temporada 11 en Boston. Capítulos 1–5 el 14/10, 6–8 el 21/10, 9–11 el 28/10, capítulo 12 el 04/11 y reunión el 09/11/2026 a las 03:00 de Madrid.",
       "seasons": [
         {
           "season": 11,
-          "total": 12,
+          "total": 13,
           "totalKnown": true,
-          "available": false,
-          "releasedEpisodes": 0,
+          "available": true,
+          "releasedEpisodes": 5,
           "episodes": [
-            "Episodio 1 · título pendiente",
-            "Episodio 2 · título pendiente",
-            "Episodio 3 · título pendiente",
-            "Episodio 4 · título pendiente",
-            "Episodio 5 · título pendiente",
+            "Enchanted To Meet You",
+            "What a Woman!",
+            "Together at Last",
+            "Sink Or Swim",
+            "Here Comes the Dud",
             "Episodio 6 · título pendiente",
             "Episodio 7 · título pendiente",
             "Episodio 8 · título pendiente",
             "Episodio 9 · título pendiente",
             "Episodio 10 · título pendiente",
             "Episodio 11 · título pendiente",
-            "Episodio 12 · título pendiente"
+            "Episodio 12 · título pendiente",
+            "The Reunion"
           ],
-          "note": "Boston · 12 capítulos confirmados · estreno 14/10/2026 · última tanda 04/11/2026"
+          "note": "Boston · 12 capítulos y reunión · tandas oficiales del 14/10 al 04/11; reunión el 09/11 a las 03:00 de Madrid"
         }
       ],
       "sources": [
@@ -2102,7 +2197,9 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "the-traitors-us": {
       "trackingSeason": 5,
@@ -2113,19 +2210,21 @@ const RELEASE_REVIEW = {
           "season": 5,
           "note": "New Blood · NBC: jueves 20:00 ET; Peacock: viernes · pausa 01/10 · final doble 19/11 en Estados Unidos, madrugada del 20/11 en Madrid",
           "episodes": [
-            "A New Dawn Is Rising",
+            "A New Dawn is Rising",
             "I'm a Sweaty Boy",
-            "The Traitors Are Watching",
+            "The Traitors are Watching",
             "The Death Parade",
             "Wake of the Living Dead",
             "A Murder of Necessity",
-            "Episodio 7 · título pendiente",
-            "Episodio 8 · título pendiente",
+            "It's Like Fighting Two Pigs Under a Blanket",
+            "A Bad Apple Spoils the Whole Bunch",
             "Episodio 9 · título pendiente",
             "Episodio 10 · título pendiente",
             "Episodio 11 · título pendiente",
             "Episodio 12 · título pendiente"
-          ]
+          ],
+          "releasedEpisodes": 6,
+          "available": true
         },
         {
           "season": 1,
@@ -2205,7 +2304,9 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvmaze.com/shows/58177/the-traitors/episodes"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "lupin": {
       "trackingSeason": 4,
@@ -2219,7 +2320,7 @@ const RELEASE_REVIEW = {
           "url": "https://help.netflix.com/es-es/node/118959"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2256,10 +2357,22 @@ const RELEASE_REVIEW = {
         {
           "season": 4,
           "episodes": [
-            "Episodio 1 · título pendiente"
-          ]
+            "Chapitre 1",
+            "Episodio 2 · título pendiente",
+            "Episodio 3 · título pendiente",
+            "Episodio 4 · título pendiente",
+            "Episodio 5 · título pendiente",
+            "Episodio 6 · título pendiente",
+            "Episodio 7 · título pendiente",
+            "Episodio 8 · título pendiente"
+          ],
+          "total": 8,
+          "releasedEpisodes": 0,
+          "available": false
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "dexter-resurrection": {
       "trackingSeason": 2,
@@ -2273,15 +2386,15 @@ const RELEASE_REVIEW = {
             "Risky Business",
             "Young Blood",
             "Fallen",
-            "Episodio 4 · título pendiente",
-            "Episodio 5 · título pendiente",
-            "Episodio 6 · título pendiente",
-            "Episodio 7 · título pendiente",
-            "Episodio 8 · título pendiente",
-            "Episodio 9 · título pendiente",
-            "Episodio 10 · título pendiente"
+            "Live Free and Die",
+            "Panick Attack",
+            "Out of the Past",
+            "Rule Number One",
+            "Game On",
+            "Credit Where Credit Is Due",
+            "Now You See Me"
           ],
-          "note": "10 capítulos previstos según TVmaze. Estreno oficial en Paramount+ (Estados Unidos): 30/10/2026; fechas registradas de E2 y E3: 06 y 13/11. Los demás capítulos y el estreno en SkyShowtime España siguen sin fecha.",
+          "note": "10 capítulos registrados en TVmaze del 30/10/2026 al 01/01/2027. Estreno oficial en Paramount+ (Estados Unidos): 30/10; fechas posteriores del proveedor y horas pendientes. Estreno de SkyShowtime España pendiente.",
           "available": false,
           "releasedEpisodes": 0
         },
@@ -2307,7 +2420,9 @@ const RELEASE_REVIEW = {
           "url": "https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "only-murders-in-the-building": {
       "trackingSeason": 6,
@@ -2414,7 +2529,9 @@ const RELEASE_REVIEW = {
           "url": "https://press.disney.co.uk/news/emmy-award-winning-comedy-series-only-murders-in-the-building-returns-for-season-six-on-december-8th-on-disneyplus-"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "ghosts-us": {
       "trackingSeason": 6,
@@ -2422,15 +2539,35 @@ const RELEASE_REVIEW = {
       "seasons": [
         {
           "season": 6,
-          "total": 4,
-          "totalKnown": false,
+          "total": 22,
+          "totalKnown": true,
           "episodes": [
             "Halloween 6: The Mirror - Part One",
             "Halloween 6: The Mirror - Part Two",
             "Ghostsmas · primera parte (título pendiente)",
-            "Ghostsmas · segunda parte (título pendiente)"
+            "Ghostsmas · segunda parte (título pendiente)",
+            "Episodio 5 · título pendiente",
+            "Episodio 6 · título pendiente",
+            "Episodio 7 · título pendiente",
+            "Episodio 8 · título pendiente",
+            "Episodio 9 · título pendiente",
+            "Episodio 10 · título pendiente",
+            "Episodio 11 · título pendiente",
+            "Episodio 12 · título pendiente",
+            "Episodio 13 · título pendiente",
+            "Episodio 14 · título pendiente",
+            "Episodio 15 · título pendiente",
+            "Episodio 16 · título pendiente",
+            "Episodio 17 · título pendiente",
+            "Episodio 18 · título pendiente",
+            "Episodio 19 · título pendiente",
+            "Episodio 20 · título pendiente",
+            "Episodio 21 · título pendiente",
+            "Episodio 22 · título pendiente"
           ],
-          "note": "CBS (Estados Unidos): Halloween 29/10 y Ghostsmas 10/12 · calendario mostrado en hora de Madrid: 30/10 y 11/12 · resto de la temporada en 2027; total pendiente"
+          "note": "22 capítulos previstos según TVmaze. CBS: Halloween y Ghostsmas, 30/10 y 11/12 en Madrid; el resto de la temporada está previsto para 2027, con fechas pendientes",
+          "available": false,
+          "releasedEpisodes": 0
         },
         {
           "season": 1,
@@ -2560,18 +2697,49 @@ const RELEASE_REVIEW = {
         {
           "label": "CBS · títulos y horarios de Halloween",
           "url": "https://www.paramountpressexpress.com/cbs-studios/shows/ghosts/episodes?limit=100&page=1"
+        },
+        {
+          "label": "TVmaze · temporadas y número de capítulos previstos",
+          "url": "https://www.tvmaze.com/shows/46573/ghosts/seasons"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "atasco": {
       "sources": [
         {
           "label": "Prime Video · quinta temporada confirmada",
           "url": "https://www.aboutamazon.es/noticias/entretenimiento/prime-video-presenta-nuevas-producciones-originales-y-licenciadas"
+        },
+        {
+          "label": "TVmaze · temporadas y número de capítulos previstos",
+          "url": "https://www.tvmaze.com/shows/78649/atasco/seasons"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running",
+      "seasons": [
+        {
+          "season": 5,
+          "total": 6,
+          "totalKnown": true,
+          "available": false,
+          "releasedEpisodes": 0,
+          "episodes": [
+            "Episodio 1 · título pendiente",
+            "Episodio 2 · título pendiente",
+            "Episodio 3 · título pendiente",
+            "Episodio 4 · título pendiente",
+            "Episodio 5 · título pendiente",
+            "Episodio 6 · título pendiente"
+          ],
+          "note": "Temporada 5 confirmada · 6 capítulos previstos según TVmaze · fecha y títulos pendientes"
+        }
+      ],
+      "status": "4 temporadas completas · temporada 5 confirmada · 6 capítulos previstos según TVmaze · fecha pendiente"
     },
     "machos-alfa": {
       "sources": [
@@ -2580,7 +2748,9 @@ const RELEASE_REVIEW = {
           "url": "https://about.netflix.com/es_es/news/alpha-males-films-its-sixth-and-final-season"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "a-good-girls-guide-to-murder": {
       "sources": [
@@ -2589,7 +2759,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/a-good-girls-guide-to-murder-season-3-cast-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 3,
@@ -2628,7 +2798,9 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "status": "Temporada 3 final rodada · 4 capítulos confirmados · estreno en 2027 · fecha exacta pendiente"
+      "status": "Temporada 3 final rodada · 4 capítulos confirmados · estreno en 2027 · fecha exacta pendiente",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "a-man-on-the-inside": {
       "sources": [
@@ -2637,7 +2809,9 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/man-on-the-inside-season-3-cast-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "love-is-blind-uk": {
       "sources": [
@@ -2646,7 +2820,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-uk-season-4-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 3,
@@ -2664,7 +2838,9 @@ const RELEASE_REVIEW = {
             "Reunión"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "squid-game-the-challenge": {
       "sources": [
@@ -2673,7 +2849,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/squid-game-the-vip-challenge-celebrities-cast"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2704,7 +2880,9 @@ const RELEASE_REVIEW = {
             "Red Light Green Light"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "black-mirror": {
       "sources": [
@@ -2713,7 +2891,7 @@ const RELEASE_REVIEW = {
           "url": "https://au.variety.com/2026/tv/global/netflix-black-mirror-season-8-legends-gordon-ramsay-39665/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2782,7 +2960,9 @@ const RELEASE_REVIEW = {
             "USS Callister: Into Infinity"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "the-white-lotus": {
       "sources": [
@@ -2795,7 +2975,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvinsider.com/1162885/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2833,7 +3013,9 @@ const RELEASE_REVIEW = {
             "Amor Fati"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "your-friends-and-neighbors": {
       "sources": [
@@ -2842,7 +3024,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.apple.com/tv-pr/news/2026/02/apples-hit-drama-your-friends-neighbors-starring-and-executive-produced-by-jon-hamm-lands-early-season-three-renewal/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2873,7 +3055,9 @@ const RELEASE_REVIEW = {
             "The Night of the Hunter"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "fargo": {
       "sources": [
@@ -2882,7 +3066,7 @@ const RELEASE_REVIEW = {
           "url": "https://tvseriesfinale.com/tv-show/fargo-season-six-has-the-fx-anthology-series-been-cancelled-or-renewed/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -2960,7 +3144,9 @@ const RELEASE_REVIEW = {
             "Bisquik"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "les-traitres-m6": {
       "sources": [
@@ -2969,7 +3155,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.ozap.com/actu/les-traitres-m6-devoile-la-toute-premiere-bande-annonce-de-la-saison-7-qui-sera-a-voir-prochainement/655910"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3047,7 +3233,9 @@ const RELEASE_REVIEW = {
             "Épisode 8 - La finale"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "l-agence-immobilier-de-luxe-en-famille": {
       "sources": [
@@ -3056,7 +3244,7 @@ const RELEASE_REVIEW = {
           "url": "https://serieously.ouest-france.fr/lagence-tmc-renouvelee-pour-une-saison-7-le-gros-changement-annonce-par-valentin-kretz/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3134,7 +3322,9 @@ const RELEASE_REVIEW = {
             "Épisode 9"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "loups-garous-canal-plus": {
       "sources": [
@@ -3143,7 +3333,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.leparisien.fr/culture-loisirs/tv/on-a-deja-commence-a-travailler-sur-la-saison-3-la-recette-gagnante-de-loups-garous-sur-canal-12-02-2026-2JNFN7ZKKNBR3ANJG2KXNGQPQE.php"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3173,7 +3363,9 @@ const RELEASE_REVIEW = {
             "Loup solitaire"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "the-circle-us": {
       "sources": [
@@ -3182,7 +3374,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvline.com/2191703/the-circle-season-8-hulu-netflix-rule-changes-explained/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3309,7 +3501,9 @@ const RELEASE_REVIEW = {
             "The Grand Finale"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "the-beauty": {
       "sources": [
@@ -3322,7 +3516,7 @@ const RELEASE_REVIEW = {
           "url": "https://thegww.com/the-beauty-season-2-cast-released/"
         }
       ],
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3340,23 +3534,51 @@ const RELEASE_REVIEW = {
             "Beautiful Betrayal"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "secret-story": {
       "reviewedOn": "2026-10-11",
       "dataNote": "Las emisiones históricas cuya fecha o numeración no se pudo contrastar siguen sin fecha en el calendario; se conserva tu seguimiento."
     },
     "muertos-sl": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "maximum-pleasure-guaranteed": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running",
+      "sources": [
+        {
+          "label": "Apple TV · segunda temporada renovada el 14/10/2026",
+          "url": "https://www.apple.com/tv-pr/news/2026/10/apple-tv-renews-maximum-pleasure-guaranteed-for-season-two/"
+        }
+      ],
+      "status": "Temporada 1 completa · temporada 2 renovada · fecha y capítulos pendientes",
+      "description": "Comedia negra y thriller · Apple TV · segunda temporada renovada oficialmente el 14/10/2026; estreno y número de capítulos pendientes.",
+      "seasons": [
+        {
+          "season": 2,
+          "total": 0,
+          "available": false,
+          "releasedEpisodes": 0,
+          "episodes": [],
+          "note": "Renovada por Apple TV el 14/10/2026 · fecha y capítulos pendientes"
+        }
+      ]
     },
     "lethally-blonde": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "deadly-influence": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "dynasty-2017": {
       "reviewedOn": "2026-10-11"
@@ -3419,25 +3641,35 @@ const RELEASE_REVIEW = {
       "dataNote": "Se conservan los recopilatorios históricos ya incluidos en la app; los títulos sin registro suficiente permanecen pendientes. On the Road se identifica expresamente como programa aparte."
     },
     "section-de-recherches": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "lucifer": {
       "reviewedOn": "2026-10-11"
     },
     "see-no-evil": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "on-the-case-with-paula-zahn": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "homicide-hunter-american-detective": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "loot": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "people-magazine-investigates": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 9,
@@ -3464,7 +3696,9 @@ const RELEASE_REVIEW = {
           ],
           "note": "13 capítulos regulares y dos especiales: The University of Cosmic Intelligence Cult (14/07/2026) y The Cult of the Soulful Journey (21/07/2026)."
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "poker-face-2023": {
       "reviewedOn": "2026-10-11"
@@ -3485,10 +3719,12 @@ const RELEASE_REVIEW = {
       "reviewedOn": "2026-10-11"
     },
     "love-is-blind-france": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "the-ultimatum-marry-or-move-on-us": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 4,
@@ -3505,43 +3741,65 @@ const RELEASE_REVIEW = {
             "Reunion"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "the-ultimatum-france": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "perfect-match": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "recale": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "mean-girl-murders": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "american-monster": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "criminal-confessions": {
       "reviewedOn": "2026-10-11"
     },
     "severance": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "big-little-lies": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "josephine-ange-gardien": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "camping-paradis": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "csi-miami": {
       "reviewedOn": "2026-10-11"
     },
     "the-green-glove-gang": {
-      "reviewedOn": "2026-10-11"
+      "reviewedOn": "2026-10-19",
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "loki": {
       "reviewedOn": "2026-10-11"
@@ -3869,7 +4127,7 @@ const RELEASE_REVIEW = {
       ]
     },
     "celebrity-hunted-france": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3882,7 +4140,9 @@ const RELEASE_REVIEW = {
             "L'exfiltration"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "To Be Determined"
     },
     "travelers-2016": {
       "reviewedOn": "2026-10-11",
@@ -3971,7 +4231,7 @@ const RELEASE_REVIEW = {
       ]
     },
     "en-place": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "seasons": [
         {
           "season": 1,
@@ -3995,7 +4255,9 @@ const RELEASE_REVIEW = {
             "En fuite"
           ]
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     },
     "schitts-creek": {
       "reviewedOn": "2026-10-11",
@@ -4253,7 +4515,7 @@ const RELEASE_REVIEW = {
       ]
     },
     "rooster": {
-      "reviewedOn": "2026-10-11",
+      "reviewedOn": "2026-10-19",
       "status": "Temporada 1 completa · temporada 2 renovada · fecha de estreno pendiente",
       "seasons": [
         {
@@ -4281,7 +4543,9 @@ const RELEASE_REVIEW = {
           "label": "HBO · renovación de la segunda temporada",
           "url": "https://press-spain.max.com/post/hbo-renueva-rooster-la-comedia-mas-vista-en-mas-de-una-decada-pr"
         }
-      ]
+      ],
+      "providerReviewedOn": "2026-10-19",
+      "providerStatus": "Running"
     }
   },
   "providerSources": {
@@ -4869,6 +5133,75 @@ const RELEASE_REVIEW = {
     ]
   },
   "calendarComplete": true,
+  "fullReviewedOn": "2026-10-11",
+  "reviewScope": "active",
+  "reviewedSeriesCount": 64,
+  "reviewedSeriesIds": [
+    "vision-quest",
+    "el-crimen-tiene-dos-caras",
+    "una-fiesta-de-muerte",
+    "si-es-martes-es-asesinato",
+    "chad-powers",
+    "leccion-criminal",
+    "como-atrape-a-mi-asesino",
+    "furia",
+    "wonkas-the-golden-ticket",
+    "perdiendo-el-juicio",
+    "oasis",
+    "nobody-wants-this",
+    "the-four-seasons",
+    "big-mistakes",
+    "black-doves",
+    "koh-lanta",
+    "atasco",
+    "muertos-sl",
+    "machos-alfa",
+    "maximum-pleasure-guaranteed",
+    "lethally-blonde",
+    "deadly-influence",
+    "a-good-girls-guide-to-murder",
+    "section-de-recherches",
+    "see-no-evil",
+    "on-the-case-with-paula-zahn",
+    "homicide-hunter-american-detective",
+    "loot",
+    "people-magazine-investigates",
+    "a-man-on-the-inside",
+    "big-brother-us",
+    "wednesday",
+    "love-is-blind-us",
+    "love-is-blind-uk",
+    "love-is-blind-france",
+    "the-traitors-us",
+    "the-ultimatum-marry-or-move-on-us",
+    "the-ultimatum-france",
+    "perfect-match",
+    "recale",
+    "mean-girl-murders",
+    "american-monster",
+    "severance",
+    "big-little-lies",
+    "josephine-ange-gardien",
+    "camping-paradis",
+    "the-green-glove-gang",
+    "the-beauty",
+    "squid-game-the-challenge",
+    "lupin",
+    "black-mirror",
+    "the-white-lotus",
+    "only-murders-in-the-building",
+    "dexter-resurrection",
+    "loups-garous-canal-plus",
+    "celebrity-hunted-france",
+    "les-traitres-m6",
+    "fargo",
+    "ghosts-us",
+    "en-place",
+    "your-friends-and-neighbors",
+    "l-agence-immobilier-de-luxe-en-famille",
+    "the-circle-us",
+    "rooster"
+  ],
   "events": [
     {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":1,"date":"1996-04-21","title":"The Disappearance of Helle Crafts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219784/forensic-files-1x01-the-disappearance-of-helle-crafts"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":2,"date":"1996-10-03","title":"The Magic Bullet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219785/forensic-files-1x02-the-magic-bullet"},
@@ -5270,14 +5603,14 @@ const RELEASE_REVIEW = {
     {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":19,"date":"2011-05-20","title":"Skeleton Key","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238527/forensic-files-14x19-skeleton-key"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":20,"date":"2011-06-03","title":"Funeral Services","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238528/forensic-files-14x20-funeral-services"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":21,"date":"2011-06-17","title":"Expert Witness","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238529/forensic-files-14x21-expert-witness"},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":1,"date":"2026-10-14","title":"Capítulo 1","platform":"Disney+","sourceKind":"official","sourceUrl":"https://www.marvel.com/articles/tv-shows/marvel-television-visionquest-release-date?pubDate=20260513"},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":2,"date":"2026-10-14","title":"Capítulo 2","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616305/visionquest-1x02-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":3,"date":"2026-10-21","title":"Capítulo 3","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616306/visionquest-1x03-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":4,"date":"2026-10-21","title":"Capítulo 4","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616307/visionquest-1x04-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":5,"date":"2026-10-28","title":"Capítulo 5","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616308/visionquest-1x05-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":6,"date":"2026-10-28","title":"Capítulo 6","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616309/visionquest-1x06-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":7,"date":"2026-11-04","title":"Capítulo 7","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616310/visionquest-1x07-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
-    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":8,"date":"2026-11-11","title":"Capítulo 8","platform":"Disney+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3616311/visionquest-1x08-tba","note":"Fecha registrada en TVmaze; pendiente de confirmación oficial."},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":1,"date":"2026-10-14","title":"No Strings","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","releaseAt":"2026-10-14T01:00:00Z","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":2,"date":"2026-10-14","title":"Theseus","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-14T01:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":3,"date":"2026-10-21","title":"Reboot","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-21T01:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":4,"date":"2026-10-21","title":"Malware","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-21T01:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":5,"date":"2026-10-28","title":"Firewall","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-28T01:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":6,"date":"2026-10-28","title":"Deadlock","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-28T01:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":7,"date":"2026-11-04","title":"Immolation","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-11-04T02:00:00Z"},
+    {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":8,"date":"2026-11-11","title":"Forever","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-11-11T02:00:00Z"},
     {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":1,"date":"2025-05-06","title":"Maternidad interrumpida","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3219802/murder-has-two-faces-1x01-motherhood-interrupted","releaseAt":"2025-05-06T16:00:00+00:00"},
     {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":2,"date":"2025-05-06","title":"Asesinato en el Capitolio","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228816/murder-has-two-faces-1x02-capitol-killings","releaseAt":"2025-05-06T16:00:00+00:00"},
     {"serieId":"el-crimen-tiene-dos-caras","serie":"El crimen tiene dos caras","season":1,"episode":3,"date":"2025-05-06","title":"Los buenos se pervierten","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228817/murder-has-two-faces-1x03-good-guys-gone-bad","releaseAt":"2025-05-06T16:00:00+00:00"},
@@ -11520,7 +11853,7 @@ const RELEASE_REVIEW = {
     {"date":"2026-08-24","episode":5,"title":"Pâtisserie au Paradis (Partie 1)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
     {"date":"2026-08-24","episode":6,"title":"Pâtisserie au Paradis (Partie 2)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":23,"date":"2026-08-24","title":"Episode 23","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652964/big-brother-28x20-episode-20","releaseAt":"2026-08-24T01:00:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":1,"date":"2026-08-25","title":"Émission 1","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737752/koh-lanta-34x01-all-stars-episode-1","releaseAt":"2026-08-25T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":1,"date":"2026-08-25","title":"All Stars - Épisode 1","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737752/koh-lanta-34x01-all-stars-episode-1","releaseAt":"2026-08-25T18:45:00+00:00"},
     {"serieId":"love-is-blind-uk","serie":"Love Is Blind: UK","season":3,"episode":9,"date":"2026-08-26","title":"Are You Ready for the Real World?","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714683/love-is-blind-uk-3x09-are-you-ready-for-the-real-world"},
     {"serieId":"love-is-blind-uk","serie":"Love Is Blind: UK","season":3,"episode":10,"date":"2026-08-26","title":"Do I Have Your Blessing?","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714684/love-is-blind-uk-3x10-do-i-have-your-blessing"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":24,"date":"2026-08-27","title":"Episode 24","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652965/big-brother-28x21-episode-21","releaseAt":"2026-08-27T00:00:00+00:00"},
@@ -11529,23 +11862,23 @@ const RELEASE_REVIEW = {
     {"date":"2026-08-31","episode":7,"title":"Coups de coeur au Paradis (Partie 1)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
     {"date":"2026-08-31","episode":8,"title":"Coups de coeur au Paradis (Partie 2)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":26,"date":"2026-08-31","title":"Episode 26","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652967/big-brother-28x23-episode-23","releaseAt":"2026-08-31T01:00:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":2,"date":"2026-09-01","title":"Émission 2","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737753/koh-lanta-34x02-all-stars-episode-2","releaseAt":"2026-09-01T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":2,"date":"2026-09-01","title":"All Stars - Épisode 2","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737753/koh-lanta-34x02-all-stars-episode-2","releaseAt":"2026-09-01T18:45:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":27,"date":"2026-09-03","title":"Episode 27","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652968/big-brother-28x24-episode-24","releaseAt":"2026-09-03T00:00:00+00:00"},
     {"date":"2026-09-04","serieId":"big-brother-us","serie":"Big Brother (US)","platform":"CBS / Paramount+","season":28,"episode":29,"title":"Episode 29 - Big Brother Unlocked 9/4/26","sourceKind":"catalog"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":28,"date":"2026-09-04","title":"Episode 28 - Live Eviction","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652969/big-brother-28x25-episode-25-live-eviction","releaseAt":"2026-09-04T00:00:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":30,"date":"2026-09-07","title":"Episode 30","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652970/big-brother-28x26-episode-26","releaseAt":"2026-09-07T00:00:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":3,"date":"2026-09-08","title":"Émission 3","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737754/koh-lanta-34x03-all-stars-episode-3","releaseAt":"2026-09-08T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":3,"date":"2026-09-08","title":"All Stars - Épisode 3","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737754/koh-lanta-34x03-all-stars-episode-3","releaseAt":"2026-09-08T18:45:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":31,"date":"2026-09-10","title":"Episode 31","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652971/big-brother-28x27-episode-27","releaseAt":"2026-09-10T00:00:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":32,"date":"2026-09-11","title":"Episode 32 - Live Eviction","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652972/big-brother-28x28-episode-28-live-eviction","releaseAt":"2026-09-11T00:00:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":33,"date":"2026-09-14","title":"Episode 33","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652973/big-brother-28x29-episode-29","releaseAt":"2026-09-14T00:30:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":4,"date":"2026-09-15","title":"Émission 4","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737755/koh-lanta-34x04-all-stars-episode-4","releaseAt":"2026-09-15T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":4,"date":"2026-09-15","title":"All Stars - Épisode 4","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737755/koh-lanta-34x04-all-stars-episode-4","releaseAt":"2026-09-15T18:45:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":34,"date":"2026-09-17","title":"Episode 34","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652974/big-brother-28x30-episode-30","releaseAt":"2026-09-17T00:00:00+00:00"},
     {"date":"2026-09-18","serieId":"big-brother-us","serie":"Big Brother (US)","platform":"CBS / Paramount+","season":28,"episode":36,"title":"Episode 36 - Big Brother Unlocked 9/18/26","sourceKind":"catalog"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":35,"date":"2026-09-18","title":"Episode 35 - Live Eviction","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652975/big-brother-28x31-episode-31-live-eviction","releaseAt":"2026-09-18T00:00:00+00:00"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":1,"date":"2026-09-18","title":"A New Dawn Is Rising","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772082/the-traitors-5x01-a-new-dawn-is-rising","releaseAt":"2026-09-18T00:00:00+00:00"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":1,"date":"2026-09-18","title":"A New Dawn is Rising","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772082/the-traitors-5x01-a-new-dawn-is-rising","releaseAt":"2026-09-18T00:00:00+00:00"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":2,"date":"2026-09-18","title":"I'm a Sweaty Boy","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772083/the-traitors-5x02-im-a-sweaty-boy","releaseAt":"2026-09-18T01:00:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":37,"date":"2026-09-21","title":"Episode 37","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652976/big-brother-28x32-episode-32","releaseAt":"2026-09-21T00:00:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":5,"date":"2026-09-22","title":"Émission 5","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737756/koh-lanta-34x05-all-stars-episode-5","releaseAt":"2026-09-22T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":5,"date":"2026-09-22","title":"All Stars - Épisode 5","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737756/koh-lanta-34x05-all-stars-episode-5","releaseAt":"2026-09-22T18:45:00+00:00"},
     {"serieId":"wonkas-the-golden-ticket","serie":"El Billete Dorado de Willy Wonka","season":1,"episode":1,"date":"2026-09-23","title":"No Turning Back Now","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3658860/wonkas-the-golden-ticket-1x01-no-turning-back-now"},
     {"serieId":"wonkas-the-golden-ticket","serie":"El Billete Dorado de Willy Wonka","season":1,"episode":2,"date":"2026-09-23","title":"I Just Got Out Of A Gumball Dude!","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3658862/wonkas-the-golden-ticket-1x02-i-just-got-out-of-a-gumball-dude"},
     {"serieId":"wonkas-the-golden-ticket","serie":"El Billete Dorado de Willy Wonka","season":1,"episode":3,"date":"2026-09-23","title":"Spinning Out","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3658864/wonkas-the-golden-ticket-1x03-spinning-out"},
@@ -11559,25 +11892,25 @@ const RELEASE_REVIEW = {
     {"serieId":"el-problema-final","serie":"El problema final","season":1,"episode":3,"date":"2026-09-25","title":"Episodio 3","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3665736/el-problema-final-1x03-episodio-3"},
     {"serieId":"el-problema-final","serie":"El problema final","season":1,"episode":4,"date":"2026-09-25","title":"Episodio 4","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3665737/el-problema-final-1x04-episodio-4"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":39,"date":"2026-09-25","title":"Episode 39 - Live Eviction","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3684556/big-brother-28x34-episode-34-live-eviction","releaseAt":"2026-09-25T00:00:00+00:00"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":3,"date":"2026-09-25","title":"The Traitors Are Watching","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772084/the-traitors-5x03-the-traitors-are-watching","releaseAt":"2026-09-25T00:00:00+00:00"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":3,"date":"2026-09-25","title":"The Traitors are Watching","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772084/the-traitors-5x03-the-traitors-are-watching","releaseAt":"2026-09-25T00:00:00+00:00"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":4,"date":"2026-09-25","title":"The Death Parade","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772085/the-traitors-5x04-the-death-parade","releaseAt":"2026-09-25T01:00:00+00:00"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":40,"date":"2026-09-28","title":"Episode 40","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3684558/big-brother-28x35-episode-35","releaseAt":"2026-09-28T02:15:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":6,"date":"2026-09-29","title":"Émission 6","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737757/koh-lanta-34x06-all-stars-episode-6","releaseAt":"2026-09-29T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":6,"date":"2026-09-29","title":"All Stars - Épisode 6","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737757/koh-lanta-34x06-all-stars-episode-6","releaseAt":"2026-09-29T18:45:00+00:00"},
     {"serieId":"wonkas-the-golden-ticket","serie":"El Billete Dorado de Willy Wonka","season":1,"episode":8,"date":"2026-09-30","title":"Battle Royale","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3658869/wonkas-the-golden-ticket-1x08-battle-royale"},
     {"serieId":"wonkas-the-golden-ticket","serie":"El Billete Dorado de Willy Wonka","season":1,"episode":9,"date":"2026-09-30","title":"Wonka Loves A Twist","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3658870/wonkas-the-golden-ticket-1x09-wonka-loves-a-twist"},
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":41,"date":"2026-10-02","title":"Episode 41 - Season Finale","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3767837/big-brother-28x36-episode-36-live-finale","releaseAt":"2026-10-02T00:00:00+00:00"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":7,"date":"2026-10-06","title":"Émission 7","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737758/koh-lanta-34x07-all-stars-episode-7","releaseAt":"2026-10-06T18:45:00+00:00"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":7,"date":"2026-10-06","title":"All Stars - Épisode 7","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737758/koh-lanta-34x07-all-stars-episode-7","releaseAt":"2026-10-06T18:45:00+00:00"},
     {"serieId":"furia","serie":"Furia","season":2,"episode":1,"date":"2026-10-09","title":"Episodio 1 · título pendiente","platform":"HBO Max","sourceKind":"official","sourceUrl":"https://press-spain.max.com/post/la-nueva-temporada-de-furia-se-estrena-el-9-de-octubre-en-hbo-ma","note":"Fecha de estreno anunciada por HBO Max"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":5,"date":"2026-10-09","title":"New Blood · Wake of the Living Dead","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-10-09T00:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":8,"date":"2026-10-13","title":"Émission 8","platform":"TF1 / TF1+","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-10-13-2110-koh-lanta-alls-stars-emission-8-partie-1","releaseAt":"2026-10-13T21:10:00+02:00","note":"Fecha y hora anunciadas por TF1 (Francia)"},
-    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":1,"date":"2026-10-14","title":"Episodio 1 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
-    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":2,"date":"2026-10-14","title":"Episodio 2 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
-    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":3,"date":"2026-10-14","title":"Episodio 3 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
-    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":4,"date":"2026-10-14","title":"Episodio 4 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
-    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":5,"date":"2026-10-14","title":"Episodio 5 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
-    {"serieId":"furia","serie":"Furia","season":2,"episode":2,"date":"2026-10-16","title":"Episodio 2 · título pendiente","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3784648/furia-2x02-episode-2","note":"Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":6,"date":"2026-10-16","title":"New Blood · A Murder of Necessity","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-10-16T00:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":9,"date":"2026-10-20","title":"Émission 9","platform":"TF1 / TF1+","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1","releaseAt":"2026-10-20T21:10:00+02:00","note":"Fecha y hora anunciadas por TF1 (Francia)"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":5,"date":"2026-10-09","title":"Wake of the Living Dead","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772240/the-traitors-5x05-wake-of-the-living-dead","releaseAt":"2026-10-09T00:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":8,"date":"2026-10-13","title":"All Stars - Épisode 8","platform":"TF1 / TF1+","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-10-13-2110-koh-lanta-alls-stars-emission-8-partie-1","releaseAt":"2026-10-13T21:10:00+02:00","note":"Fecha y hora anunciadas por TF1 (Francia)"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":1,"date":"2026-10-14","title":"Enchanted To Meet You","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":2,"date":"2026-10-14","title":"What a Woman!","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":3,"date":"2026-10-14","title":"Together at Last","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":4,"date":"2026-10-14","title":"Sink Or Swim","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":5,"date":"2026-10-14","title":"Here Comes the Dud","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-14T07:00:00Z"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":2,"date":"2026-10-16","title":"Episodio 2 · título pendiente","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3784648/furia-2x02-episode-2","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":6,"date":"2026-10-16","title":"A Murder of Necessity","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772247/the-traitors-5x06-a-murder-of-necessity","releaseAt":"2026-10-16T00:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":9,"date":"2026-10-20","title":"All Stars - Épisode 9","platform":"TF1 / TF1+","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-10-20-2110-koh-lanta-emission-9-partie-1","releaseAt":"2026-10-20T21:10:00+02:00","note":"Fecha y hora anunciadas por TF1 (Francia)"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":6,"date":"2026-10-21","title":"Episodio 6 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-21T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":7,"date":"2026-10-21","title":"Episodio 7 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-21T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":8,"date":"2026-10-21","title":"Episodio 8 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-21T07:00:00Z"},
@@ -11591,9 +11924,9 @@ const RELEASE_REVIEW = {
     {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":8,"date":"2026-10-22","title":"Episodio 8 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-22T07:00:00Z"},
     {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":9,"date":"2026-10-22","title":"Episodio 9 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-22T07:00:00Z"},
     {"serieId":"nobody-wants-this","serie":"Nadie quiere esto","season":3,"episode":10,"date":"2026-10-22","title":"Episodio 10 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/nobody-wants-this-season-3-news-cast-release-date","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-22T07:00:00Z"},
-    {"serieId":"furia","serie":"Furia","season":2,"episode":3,"date":"2026-10-23","title":"Episodio 3 · título pendiente","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3784649/furia-2x03-episode-3","note":"Fecha registrada en TVmaze · hora pendiente; resto del calendario sin confirmar"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":7,"date":"2026-10-23","title":"New Blood · Episodio 7 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-10-23T00:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"lupin","serie":"Lupin","season":4,"episode":1,"date":"2026-10-23","title":"Episodio 1 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-23T07:00:00Z"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":3,"date":"2026-10-23","title":"Episodio 3 · título pendiente","platform":"HBO Max","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3784649/furia-2x03-episode-3","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":7,"date":"2026-10-23","title":"It's Like Fighting Two Pigs Under a Blanket","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772248/the-traitors-5x07-its-like-fighting-two-pigs-under-a-blanket","releaseAt":"2026-10-23T00:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"lupin","serie":"Lupin","season":4,"episode":1,"date":"2026-10-23","title":"Chapitre 1","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-23T07:00:00Z"},
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":2,"title":"Episodio 2 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":3,"title":"Episodio 3 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":4,"title":"Episodio 4 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
@@ -11601,36 +11934,49 @@ const RELEASE_REVIEW = {
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":6,"title":"Episodio 6 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":7,"title":"Episodio 7 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
     {"date":"2026-10-23","serieId":"lupin","serie":"Lupin","platform":"Netflix","season":4,"episode":8,"title":"Episodio 8 · título pendiente","releaseAt":"2026-10-23T07:00:00Z","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/lupin-part-4-release-date-photos-news","note":"Fecha anunciada por la plataforma"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":10,"date":"2026-10-27","title":"Émission 10","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737761/koh-lanta-34x10-all-stars-episode-10","note":"Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":10,"date":"2026-10-27","title":"All Stars - Épisode 10","platform":"TF1 (Francia)","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-10-27-2110-koh-lanta-emission-10-partie-1","note":"Horario anunciado por TF1 · Francia y Madrid comparten hora","releaseAt":"2026-10-27T20:10:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":9,"date":"2026-10-28","title":"Episodio 9 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":10,"date":"2026-10-28","title":"Episodio 10 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":11,"date":"2026-10-28","title":"Episodio 11 · Boston","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
     {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":1,"date":"2026-10-30","title":"Risky Business","platform":"Paramount+","sourceKind":"official","sourceUrl":"https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/","note":"Fecha de estreno anunciada por la plataforma · hora y disponibilidad específica en España pendientes"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":8,"date":"2026-10-30","title":"New Blood · Episodio 8 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-10-30T00:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":8,"date":"2026-10-30","title":"A Bad Apple Spoils the Whole Bunch","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772249/the-traitors-5x08-a-bad-apple-spoils-the-whole-bunch","releaseAt":"2026-10-30T00:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
     {"date":"2026-10-30","episode":1,"title":"Halloween 6: The Mirror - Part One","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-10-30T01:00:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
     {"date":"2026-10-30","episode":2,"title":"Halloween 6: The Mirror - Part Two","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-10-30T01:30:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":11,"date":"2026-11-03","title":"Émission 11","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737762/koh-lanta-34x11-all-stars-episode-11","note":"Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":11,"date":"2026-11-03","title":"All Stars - Épisode 11","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737762/koh-lanta-34x11-all-stars-episode-11","note":"Fecha registrada en TVmaze · hora pendiente"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":12,"date":"2026-11-04","title":"Episodio 12 · última tanda","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-11-04T08:00:00Z"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":1,"date":"2026-11-05","title":"Estreno de la temporada 2 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/black-doves-season-2","note":"Total de capítulos pendiente; sólo se cuenta el estreno conocido","releaseAt":"2026-11-05T08:00:00Z"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":2,"date":"2026-11-06","title":"Young Blood","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786605/dexter-resurrection-2x02-young-blood","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":9,"date":"2026-11-06","title":"New Blood · Episodio 9 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-11-06T01:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":12,"date":"2026-11-10","title":"Émission 12","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737763/koh-lanta-34x12-all-stars-episode-12","note":"Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":3,"date":"2026-11-13","title":"Fallen","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786606/dexter-resurrection-2x03-fallen","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":10,"date":"2026-11-13","title":"New Blood · Episodio 10 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-11-13T01:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":13,"date":"2026-11-17","title":"Émission 13","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737764/koh-lanta-34x13-all-stars-episode-13-la-finale","note":"Fecha registrada en TVmaze · hora oficial y total de temporada pendientes"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":11,"date":"2026-11-20","title":"New Blood · Episodio 11 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-11-20T01:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":12,"date":"2026-11-20","title":"New Blood · Episodio 12 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/shows/58177/the-traitors/episodes","releaseAt":"2026-11-20T02:00:00Z","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":2,"date":"2026-11-06","title":"Young Blood","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786605/dexter-resurrection-2x02-young-blood","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":9,"date":"2026-11-06","title":"New Blood · Episodio 9 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772250/the-traitors-5x09-tba","releaseAt":"2026-11-06T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":12,"date":"2026-11-10","title":"All Stars - Épisode 12","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737763/koh-lanta-34x12-all-stars-episode-12","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":3,"date":"2026-11-13","title":"Fallen","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786606/dexter-resurrection-2x03-fallen","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":10,"date":"2026-11-13","title":"New Blood · Episodio 10 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772251/the-traitors-5x10-tba","releaseAt":"2026-11-13T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":13,"date":"2026-11-17","title":"All Stars - Épisode 13 : La finale","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737764/koh-lanta-34x13-all-stars-episode-13-la-finale","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":11,"date":"2026-11-20","title":"New Blood · Episodio 11 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772252/the-traitors-5x11-tba","releaseAt":"2026-11-20T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":12,"date":"2026-11-20","title":"New Blood · Episodio 12 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772253/the-traitors-5x12-tba","releaseAt":"2026-11-20T02:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
     {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":1,"date":"2026-12-08","title":"Episodio 1 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://press.disney.co.uk/news/emmy-award-winning-comedy-series-only-murders-in-the-building-returns-for-season-six-on-december-8th-on-disneyplus-","note":"Fecha de estreno anunciada por la plataforma · hora y disponibilidad específica en España pendientes"},
     {"date":"2026-12-11","episode":3,"title":"Ghostsmas · primera parte (título pendiente)","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-12-11T02:00:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
     {"date":"2026-12-11","episode":4,"title":"Ghostsmas · segunda parte (título pendiente)","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-12-11T02:30:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":2,"date":"2026-12-15","title":"Episodio 2 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714463/only-murders-in-the-building-6x02-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":3,"date":"2026-12-22","title":"Episodio 3 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714464/only-murders-in-the-building-6x03-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":4,"date":"2026-12-29","title":"Episodio 4 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714468/only-murders-in-the-building-6x04-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":5,"date":"2027-01-05","title":"Episodio 5 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714473/only-murders-in-the-building-6x05-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":6,"date":"2027-01-12","title":"Episodio 6 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714480/only-murders-in-the-building-6x06-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":7,"date":"2027-01-19","title":"Episodio 7 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714485/only-murders-in-the-building-6x07-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":8,"date":"2027-01-26","title":"Episodio 8 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714490/only-murders-in-the-building-6x08-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":9,"date":"2027-02-02","title":"Episodio 9 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714495/only-murders-in-the-building-6x09-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"},
-    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":10,"date":"2027-02-09","title":"Episodio 10 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714501/only-murders-in-the-building-6x10-tba","note":"Fecha registrada en TVmaze · pendiente de confirmación de la plataforma"}
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":2,"date":"2026-12-15","title":"Episodio 2 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714463/only-murders-in-the-building-6x02-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":3,"date":"2026-12-22","title":"Episodio 3 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714464/only-murders-in-the-building-6x03-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":4,"date":"2026-12-29","title":"Episodio 4 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714468/only-murders-in-the-building-6x04-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":5,"date":"2027-01-05","title":"Episodio 5 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714473/only-murders-in-the-building-6x05-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":6,"date":"2027-01-12","title":"Episodio 6 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714480/only-murders-in-the-building-6x06-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":7,"date":"2027-01-19","title":"Episodio 7 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714485/only-murders-in-the-building-6x07-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":8,"date":"2027-01-26","title":"Episodio 8 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714490/only-murders-in-the-building-6x08-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":9,"date":"2027-02-02","title":"Episodio 9 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714495/only-murders-in-the-building-6x09-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"only-murders-in-the-building","serie":"Only Murders in the Building","season":6,"episode":10,"date":"2027-02-09","title":"Episodio 10 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714501/only-murders-in-the-building-6x10-tba","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":4,"platform":"HBO Max","date":"2026-10-30","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791999/furia-2x04-episode-4","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":5,"platform":"HBO Max","date":"2026-11-06","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792000/furia-2x05-episode-5","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":6,"platform":"HBO Max","date":"2026-11-13","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792001/furia-2x06-episode-6","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":7,"platform":"HBO Max","date":"2026-11-20","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792002/furia-2x07-episode-7","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"furia","serie":"Furia","season":2,"episode":8,"platform":"HBO Max","date":"2026-11-27","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792003/furia-2x08-episode-8","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":13,"platform":"Netflix","date":"2026-11-09","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Reunión anunciada por Netflix para el 08/11 a las 21:00 de Nueva York · 09/11 a las 03:00 en Madrid","releaseAt":"2026-11-09T02:00:00Z","title":"The Reunion"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":4,"platform":"Paramount+","date":"2026-11-20","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791165/dexter-resurrection-2x04-live-free-and-die","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":5,"platform":"Paramount+","date":"2026-11-27","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791166/dexter-resurrection-2x05-panick-attack","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":6,"platform":"Paramount+","date":"2026-12-04","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791167/dexter-resurrection-2x06-out-of-the-past","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":7,"platform":"Paramount+","date":"2026-12-11","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791168/dexter-resurrection-2x07-rule-number-one","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":8,"platform":"Paramount+","date":"2026-12-18","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791169/dexter-resurrection-2x08-game-on","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":9,"platform":"Paramount+","date":"2026-12-25","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791170/dexter-resurrection-2x09-credit-where-credit-is-due","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":10,"platform":"Paramount+","date":"2027-01-01","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791179/dexter-resurrection-2x10-now-you-see-me","note":"Fecha registrada en TVmaze · hora pendiente"}
   ]
 };

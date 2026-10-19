@@ -2463,7 +2463,7 @@
         <div class=mark aria-hidden=true>TS</div>
         <div class=title>
           <h1 id=homeHeading>Tus series</h1>
-          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>Datos revisados el 11/10/2026 · 97 series.</span>
+          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>64 series activas revisadas el 19/10/2026 · 97 en el catálogo.</span>
         </div>
       </div>
       <div class=header-menu id=homeMenu><button data-action=toggle-menu type=button class="secondary icon-button" aria-label="Abrir menu" aria-controls=homeMenuPopover aria-expanded=false>&#9776;</button>
@@ -2613,7 +2613,7 @@
         <div class=mark aria-hidden=true>CAL</div>
         <div class=title>
           <h1 id=calendarHeading>Calendario</h1>
-          <p>Estrenos, próximos capítulos y fechas pendientes. Revisión general del 11/10/2026 · Forensic Files añadida el 13/10/2026 · 97 series. Horarios de Madrid; se indica la plataforma y el país de emisión.
+          <p>Estrenos, próximos capítulos y fechas pendientes. 64 series activas revisadas el 19/10/2026 · 97 en el catálogo. Horarios de Madrid; se indica la plataforma y el país de emisión.
         </div>
       </div>
     </header>
@@ -7174,6 +7174,12 @@
     return sources.length ? `<p class="calendar-source-note">Revisado el ${formatCatalogDate(RELEASE_REVIEW.series[serie.id]?.reviewedOn || DATA_REVIEWED_ON)} · ${sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join(" · ")}${dataNote ? `<br>${escapeHtml(dataNote)}` : ""}</p>` : "";
   }
 
+  function dataReviewSummary() {
+    return RELEASE_REVIEW.reviewScope === "active"
+      ? `${RELEASE_REVIEW.reviewedSeriesCount} series activas revisadas el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} en el catálogo.`
+      : `Datos revisados el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series.`;
+  }
+
   function normalizeEpisodeList(e) {
     return Array.isArray(e) ? e.map((e, a) => "string" == typeof e ? {
       number: a + 1,
@@ -8304,7 +8310,7 @@
       toggle.textContent = ui.calendarShowAllUpcoming ? "Ver sólo los 10 siguientes" : `Ver los ${allUpcoming.length} próximos estrenos`;
       toggle.setAttribute("aria-expanded", String(ui.calendarShowAllUpcoming));
     }
-    sourceNote.textContent += ` Revisado el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series. Las fechas registradas sólo en TVmaze se indican en cada estreno.`;
+    sourceNote.textContent += ` ${dataReviewSummary()} Las fechas registradas sólo en TVmaze se indican en cada estreno.`;
     dayTitle.textContent = formatCalendarDay(selectedCalendarDate), dayCount.textContent = `${selectedEvents.length} estreno${1===selectedEvents.length?"":"s"}`, dayEvents.innerHTML = selectedEvents.length ? selectedEvents.map(e => calendarEventHtml(e)).join("") : '<div class="calendar-empty">No hay capítulos nuevos este día.</div>', upcomingCount.textContent = `${allUpcoming.length} próximo${1===allUpcoming.length?"":"s"}`, upcomingEvents.innerHTML = upcoming.length ? upcoming.map(e => calendarEventHtml(e, {
       showDate: !0
     })).join("") : '<div class="calendar-empty">No hay próximos estrenos con fecha.</div>', undatedCount.textContent = `${undated.length} pendiente${1===undated.length?"":"s"}`, undatedEvents.innerHTML = visibleUndated.length ? visibleUndated.map(e => `
@@ -8318,7 +8324,7 @@
   }
 
   function render() {
-    document.getElementById("dataReviewNote").textContent = `Datos revisados el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series.`;
+    document.getElementById("dataReviewNote").textContent = dataReviewSummary();
     catalog.forEach(serie => { serie.status = releaseStatusText(serie); }), state.mySeries.forEach(serie => { clampSerie(serie); serie.status = releaseStatusText(serie); }), saveState(), renderHome(), renderWatchedSeries(), renderStatistics(), renderCatalog(), renderDetail(), renderCalendar()
   }
 

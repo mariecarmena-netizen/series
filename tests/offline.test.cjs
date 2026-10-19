@@ -56,7 +56,8 @@ async function offlineRequest(url, mode = 'same-origin') {
   const offlineHtml = await offlineRequest('/series/', 'navigate');
   assert.ok(offlineHtml.toString().includes('./release-data.js'));
   const releaseData = await offlineRequest('./release-data.js');
-  assert.ok(releaseData.toString().includes('2026-10-11'));
+  assert.ok(releaseData.toString().includes('"reviewedOn": "2026-10-19"'));
+  assert.ok(releaseData.toString().includes('2026-11-09T02:00:00Z'));
   assert.ok(releaseData.toString().includes('2027-02-09'));
   assert.ok(await offlineRequest('./manifest.webmanifest'));
   console.log('OK: app y calendario en caché sin conexión; otras aplicaciones conservan su caché.');
