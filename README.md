@@ -2,6 +2,18 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Revisión completa del 29 de octubre de 2026
+
+Revisadas las **97 series** del catálogo: 96 fichas de TVmaze con sus temporadas y episodios, incluidos los especiales, y Una fiesta de muerte mediante su web oficial de Antena 3. También se volvió a consultar Brain Games: On the Road. `catalog-review.json` guarda las fuentes consultadas, sus recuentos, la fecha de revisión de cada serie y las diferencias de numeración conservadas.
+
+La app y el calendario reúnen **6.801 estrenos fechados**, 26 más que en la revisión anterior, con **63 próximos estrenos** a fecha del 29/10/2026. Se incorporan los 16 capítulos registrados de la nueva etapa de The Circle en Hulu (T8 de la app; T1 de Hulu), cinco fechas adicionales de Palomas negras T2, cuatro fechas que faltaban de On the Case with Paula Zahn T25 y La colo au camping. Las fechas futuras sólo registradas en TVmaze se identifican y no se les asignan sus horas automáticas de mediodía o de las 17:00.
+
+Actualizados los títulos publicados de Nadie quiere esto, Love Is Blind (USA), Lupin, The Traitors y Dexter: Resurrection. Nadie quiere esto T3 y Lupin parte 4 ya figuran completas. Incorporados los horarios oficiales de TF1 de Koh-Lanta del 03 y 10/11 y su final del 17/11 a las 21:10 de Madrid. [Netflix](https://www.netflix.com/tudum/articles/black-doves-season-2) confirma el estreno de Palomas negras el 05/11; sus seis capítulos registrados se atribuyen a TVmaze. [Disney+ Press](https://press.disneyplus.com/news/next-on-disney-plus-november-2026) confirma la nueva etapa de The Circle en Hulu en noviembre; el calendario detallado procede de TVmaze y la disponibilidad en España sigue pendiente.
+
+Corregido el desfase de fechas de On the Case with Paula Zahn T25 mediante los títulos: conserva sus 15 capítulos regulares y dos especiales al final, con 17 entregas accesibles. Retirada la reunión promocional de la lista de diez capítulos regulares de Lucifer T4. Se mantienen la numeración regional, los especiales seguidos por el usuario y las fechas históricas que aún no tienen una correspondencia verificable.
+
+Actualizadas la revisión visible y la caché sin conexión. Se conservan el progreso, el ritmo y el historial de visionado. Las pruebas comprueban el calendario, los cambios de horario de Madrid, los estrenos sin hora confirmada, los especiales y la migración del progreso guardado.
+
 ## Actualización de series activas del 19 de octubre de 2026
 
 Revisados 64 títulos: las 63 series activas o pendientes de continuidad en TVmaze, consultando de nuevo sus fichas, temporadas y episodios, y Una fiesta de muerte mediante Antena 3. El catálogo conserva 97 series y el calendario reúne 6.775 estrenos fechados, con 74 próximos estrenos a mediodía del 19/10/2026. Las series finalizadas mantienen su fecha de revisión individual.

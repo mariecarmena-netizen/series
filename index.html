@@ -2463,7 +2463,7 @@
         <div class=mark aria-hidden=true>TS</div>
         <div class=title>
           <h1 id=homeHeading>Tus series</h1>
-          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>64 series activas revisadas el 19/10/2026 · 97 en el catálogo.</span>
+          <p>Controla lo que ves, lo que falta y cuándo terminarías. <span id=dataReviewNote>97 series revisadas el 29/10/2026 · catálogo completo.</span>
         </div>
       </div>
       <div class=header-menu id=homeMenu><button data-action=toggle-menu type=button class="secondary icon-button" aria-label="Abrir menu" aria-controls=homeMenuPopover aria-expanded=false>&#9776;</button>
@@ -2613,7 +2613,7 @@
         <div class=mark aria-hidden=true>CAL</div>
         <div class=title>
           <h1 id=calendarHeading>Calendario</h1>
-          <p>Estrenos, próximos capítulos y fechas pendientes. 64 series activas revisadas el 19/10/2026 · 97 en el catálogo. Horarios de Madrid; se indica la plataforma y el país de emisión.
+          <p>Estrenos, próximos capítulos y fechas pendientes. 97 series revisadas el 29/10/2026 · catálogo completo. Horarios de Madrid; se indica la plataforma y el país de emisión.
         </div>
       </div>
     </header>
@@ -7141,6 +7141,7 @@
       else serie.seasons.push({watched: 0, episodes: [], ...patch});
     });
     if (review.status) serie.status = review.status;
+    if (review.platform) serie.platform = review.platform;
     if (review.description) serie.description = review.description;
     else if (review.reviewedOn) {
       const source = seriesCatalog.find(source => source.id === serie.id);
@@ -7177,7 +7178,7 @@
   function dataReviewSummary() {
     return RELEASE_REVIEW.reviewScope === "active"
       ? `${RELEASE_REVIEW.reviewedSeriesCount} series activas revisadas el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} en el catálogo.`
-      : `Datos revisados el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} series.`;
+      : `${RELEASE_REVIEW.reviewedSeriesCount} series revisadas el ${formatCatalogDate(DATA_REVIEWED_ON)} · catálogo completo.`;
   }
 
   function normalizeEpisodeList(e) {
