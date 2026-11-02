@@ -1,9 +1,65 @@
 {
   "reviewedOn": "2026-10-29",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 97,
-  "scope": "Revisión completa del 29/10/2026 de las 97 series: 96 fichas de TVmaze con sus temporadas y episodios, incluidos especiales, más Una fiesta de muerte en Antena 3. También se consultó Brain Games: On the Road. Contrastados los nuevos anuncios de Netflix, CBS, Disney+ Press y TF1. Se conservan los anuncios oficiales, la numeración regional y el progreso; las fechas sólo registradas en TVmaze se identifican y no se extrapolan. Los horarios se muestran en Madrid y la emisión extranjera no confirma disponibilidad en España.",
+  "catalogSize": 98,
+  "scope": "Revisión completa del 29/10/2026 de las 97 series: 96 fichas de TVmaze con sus temporadas y episodios, incluidos especiales, más Una fiesta de muerte en Antena 3. También se consultó Brain Games: On the Road. Contrastados los nuevos anuncios de Netflix, CBS, Disney+ Press y TF1. Se conservan los anuncios oficiales, la numeración regional y el progreso; las fechas sólo registradas en TVmaze se identifican y no se extrapolan. Los horarios se muestran en Madrid y la emisión extranjera no confirma disponibilidad en España. Incorporación del 02/11/2026: Grande de España, contrastada con Netflix (ficha y anuncio del estreno) y TVmaze; las otras 97 series conservan su fecha de revisión.",
   "series": [
+    {
+      "id": "grande-de-espana",
+      "name": "Grande de España",
+      "reviewedOn": "2026-11-02",
+      "provider": {
+        "id": 94542,
+        "name": "Grande de España",
+        "language": "Spanish",
+        "network": "Netflix",
+        "url": "https://www.tvmaze.com/shows/94542/grande-de-espana",
+        "status": "Running"
+      },
+      "upcomingInProvider": [],
+      "note": "Primera temporada completa en Netflix España desde el 23/10/2026. Títulos y duraciones contrastados con Netflix; duración media de 28 minutos. No se asigna una hora de estreno sin confirmar ni una segunda temporada sin anunciar.",
+      "catalogStatus": "1 temporada completa · 6 capítulos · nuevas temporadas sin anunciar",
+      "sources": [
+        {
+          "label": "Netflix España · ficha, títulos y duración de los seis capítulos",
+          "url": "https://www.netflix.com/es/title/81702550"
+        },
+        {
+          "label": "Netflix · estreno global de los seis capítulos el 23/10/2026",
+          "url": "https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez"
+        },
+        {
+          "label": "TVmaze · ficha y episodios registrados",
+          "url": "https://www.tvmaze.com/shows/94542/grande-de-espana"
+        }
+      ],
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 6,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 6,
+      "providerReviewedOn": "2026-11-02",
+      "verification": {
+        "checkedOn": "2026-11-02",
+        "sources": [
+          "https://www.netflix.com/es/title/81702550",
+          "https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez",
+          "https://www.tvmaze.com/shows/94542/grande-de-espana"
+        ],
+        "method": "Ficha oficial de Netflix: títulos y duraciones de los seis capítulos; anuncio oficial del estreno; ficha de TVmaze para estado y portada.",
+        "regularEpisodes": 6,
+        "seasons": [
+          {
+            "number": 1,
+            "episodeOrder": 6,
+            "premiereDate": "2026-10-23",
+            "endDate": "2026-10-23"
+          }
+        ]
+      }
+    },
     {
       "id": "forensic-files",
       "name": "Forensic Files",
@@ -9351,7 +9407,7 @@
       }
     }
   ],
-  "calendarEventCount": 6801,
+  "calendarEventCount": 6807,
   "fullReviewedOn": "2026-10-29",
   "reviewScope": "full",
   "reviewedSeriesCount": 97,
@@ -9618,5 +9674,6 @@
     "officialOnlySeriesChecked": 1
   },
   "upcomingEventCount": 63,
-  "snapshotAt": "2026-10-29T10:53:00.000Z"
+  "snapshotAt": "2026-10-29T10:53:00.000Z",
+  "catalogUpdatedOn": "2026-11-02"
 }

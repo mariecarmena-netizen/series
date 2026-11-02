@@ -24,8 +24,8 @@ function app(seed = null, instant = '2026-10-08T14:00:00Z') {
 }
 
 const fresh = app();
-assert.equal(fresh.read('catalog.length'), 97);
-assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 97);
+assert.equal(fresh.read('catalog.length'), 98);
+assert.equal(fresh.read('new Set(catalog.map(s => s.id)).size'), 98);
 assert.equal(fresh.read('new Set(releaseEvents.map(e => `${e.serieId}:${e.season}:${e.episode}`)).size'), fresh.read('releaseEvents.length'));
 assert.equal(fresh.read('releaseEvents.every(e => /^\u005cd{4}-\u005cd{2}-\u005cd{2}$/.test(e.date) && catalog.some(s => s.id === e.serieId && s.seasons.some(t => t.season === e.season && t.total >= e.episode)))'), true);
 assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)).size === s.seasons.length)'), true);
@@ -36,18 +36,18 @@ assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-10-29');
 assert.equal(fresh.read('RELEASE_REVIEW.fullReviewedOn'), '2026-10-29');
 assert.equal(fresh.read('RELEASE_REVIEW.reviewScope'), 'full');
 assert.equal(fresh.read('RELEASE_REVIEW.reviewedSeriesCount'), 97);
-assert.equal(fresh.read("catalog.every(s => RELEASE_REVIEW.series[s.id]?.reviewedOn === '2026-10-29' && RELEASE_REVIEW.reviewedSeriesIds.includes(s.id))"), true);
-assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 97);
+assert.equal(fresh.read("RELEASE_REVIEW.reviewedSeriesIds.every(id => RELEASE_REVIEW.series[id]?.reviewedOn === RELEASE_REVIEW.reviewedOn && getCatalogSerie(id))"), true);
+assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 98);
 assert.ok(fresh.read('releaseEvents.length') > 6000);
 const audit = JSON.parse(fs.readFileSync(path.join(root, 'catalog-review.json'), 'utf8'));
-assert.equal(audit.catalogSize, 97);
+assert.equal(audit.catalogSize, 98);
 assert.equal(audit.calendarEventCount, fresh.read('releaseEvents.length'));
-assert.equal(audit.series.length, 97);
+assert.equal(audit.series.length, 98);
 assert.equal(audit.reviewedSeriesCount, 97);
 assert.equal(audit.reviewedSeriesIds.length, 97);
-assert.ok(audit.series.every(s => s.reviewedOn === audit.reviewedOn && s.sources.length > 0 && s.verification.checkedOn === audit.reviewedOn));
+assert.ok(audit.series.every(s => s.reviewedOn <= audit.catalogUpdatedOn && s.sources.length > 0 && s.verification.checkedOn === s.reviewedOn));
 assert.equal(fresh.read("Object.values(RELEASE_REVIEW.series).filter(s => s.providerReviewedOn === '2026-10-29').length"), 96);
-assert.equal(fresh.read('releaseEvents.length'), 6801);
+assert.equal(fresh.read('releaseEvents.length'), 6807);
 assert.equal(fresh.read('catalog.every(s => s.seasons.every(t => t.episodes.every(e => e.number <= t.total)))'), true);
 
 assert.equal(fresh.read("getCatalogSerie('forensic-files').seasons.length"), 14);
@@ -74,7 +74,7 @@ assert.equal(fresh.read("releaseEvents.some(e => /Celebrating Champions/.test(e.
 
 const today = app(null, '2026-10-11T10:00:00Z');
 assert.equal(today.read("availableEpisodeLimit(getCatalogSerie('the-traitors-us'), getCatalogSerie('the-traitors-us').seasons.find(s => s.season === 5))"), 5);
-assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 105);
+assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 111);
 assert.equal(today.read("undatedUpcomingForFollowedSeries().some(e => e.serieId === 'dexter-resurrection')"), false);
 assert.equal(today.read("ui.calendarScope = 'followed'; calendarUpcomingEvents(Infinity).length"), 0);
 
@@ -196,8 +196,8 @@ assert.equal(migrated.read("getSerie('love-is-blind-uk').seasons.find(s => s.sea
 assert.equal(migrated.read("ui.calendarScope = 'followed'; calendarSourceEvents().every(e => state.mySeries.some(s => s.id === e.serieId))"), true);
 
 const reviewed = app(null, '2026-10-19T12:00:00Z');
-assert.equal(reviewed.read('calendarUpcomingEvents(Infinity).length'), 95);
-assert.match(reviewed.read('dataReviewSummary()'), /97 series revisadas el 29\/10\/2026.*catálogo completo/);
+assert.equal(reviewed.read('calendarUpcomingEvents(Infinity).length'), 101);
+assert.match(reviewed.read('dataReviewSummary()'), /Catálogo actualizado el 02\/11\/2026.*98 series.*Revisión completa del 29\/10\/2026/);
 assert.equal(available(reviewed, 'furia', 2), 2);
 assert.equal(available(reviewed, 'koh-lanta', 34), 8);
 assert.equal(available(reviewed, 'the-traitors-us', 5), 6);

@@ -1,9 +1,29 @@
-// Catálogo completo: 97 series revisadas el 29 de octubre de 2026.
+// Revisión completa: 97 series el 29 de octubre de 2026.
+// Grande de España incorporada el 2 de noviembre de 2026: 98 series en el catálogo.
 // Horarios de Europe/Madrid. Las fechas del proveedor se distinguen de los anuncios oficiales.
 const RELEASE_REVIEW = {
   "reviewedOn": "2026-10-29",
+  "catalogUpdatedOn": "2026-11-02",
   "timeZone": "Europe/Madrid",
   "series": {
+    "grande-de-espana": {
+      "reviewedOn": "2026-11-02",
+      "sources": [
+        {
+          "label": "Netflix España · ficha, títulos y duración de los seis capítulos",
+          "url": "https://www.netflix.com/es/title/81702550"
+        },
+        {
+          "label": "Netflix · estreno global de los seis capítulos el 23/10/2026",
+          "url": "https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez"
+        }
+      ],
+      "dataNote": "Primera temporada completa en Netflix España desde el 23/10/2026. Títulos y duraciones contrastados con Netflix; duración media de 28 minutos. No se asigna una hora de estreno sin confirmar ni una segunda temporada sin anunciar.",
+      "trackingSeason": 1,
+      "renewalNote": "Nuevas temporadas sin anunciar",
+      "providerReviewedOn": "2026-11-02",
+      "providerStatus": "Running"
+    },
     "forensic-files": {
       "reviewedOn": "2026-10-29",
       "sources": [
@@ -5065,6 +5085,12 @@ const RELEASE_REVIEW = {
     }
   },
   "providerSources": {
+    "grande-de-espana": [
+      {
+        "label": "TVmaze · ficha y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/94542/grande-de-espana"
+      }
+    ],
     "forensic-files": [
       {
         "label": "TVmaze · ficha y episodios registrados",
@@ -5752,6 +5778,12 @@ const RELEASE_REVIEW = {
     "rooster"
   ],
   "events": [
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":1,"date":"2026-10-23","title":"El marqués","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":2,"date":"2026-10-23","title":"Conchi","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":3,"date":"2026-10-23","title":"Derivas del Mediterráneo","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":4,"date":"2026-10-23","title":"Extrarradio","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":5,"date":"2026-10-23","title":"El funeral","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
+    {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":6,"date":"2026-10-23","title":"Quién es Sofía Carrington","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":1,"date":"1996-04-21","title":"The Disappearance of Helle Crafts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219784/forensic-files-1x01-the-disappearance-of-helle-crafts"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":2,"date":"1996-10-03","title":"The Magic Bullet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219785/forensic-files-1x02-the-magic-bullet"},
     {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":3,"date":"1996-10-10","title":"The House That Roared","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219786/forensic-files-1x03-the-house-that-roared"},

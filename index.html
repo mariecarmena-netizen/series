@@ -5182,6 +5182,31 @@
     }))]),
     seriesCatalog = [
       {
+        "id": "grande-de-espana",
+        "title": "Grande de España",
+        "platform": "Netflix",
+        "status": "1 temporada completa · 6 capítulos · nuevas temporadas sin anunciar",
+        "genre": "Comedia dramática / humor negro",
+        "description": "Un marqués arruinado intenta vender su palacete familiar de Madrid a una empresaria adinerada. La negociación se complica cuando salen a la luz los secretos que ambos ocultan.",
+        "averageEpisodeMinutes": 28,
+        "seasons": [
+          {
+            "season": 1,
+            "episodes": [
+              "El marqués",
+              "Conchi",
+              "Derivas del Mediterráneo",
+              "Extrarradio",
+              "El funeral",
+              "Quién es Sofía Carrington"
+            ],
+            "released": true,
+            "note": "Temporada completa · 6 capítulos · estreno en Netflix el 23/10/2026"
+          }
+        ],
+        "image": "https://static.tvmaze.com/uploads/images/medium_portrait/646/1615504.jpg"
+      },
+      {
         "id": "forensic-files",
         "title": "Forensic Files",
         "platform": "Pluto TV / Prime Video / Plex / Rakuten TV",
@@ -7176,6 +7201,9 @@
   }
 
   function dataReviewSummary() {
+    if (RELEASE_REVIEW.catalogUpdatedOn > DATA_REVIEWED_ON) {
+      return `Catálogo actualizado el ${formatCatalogDate(RELEASE_REVIEW.catalogUpdatedOn)} · ${catalog.length} series. Revisión completa del ${formatCatalogDate(RELEASE_REVIEW.fullReviewedOn)}.`;
+    }
     return RELEASE_REVIEW.reviewScope === "active"
       ? `${RELEASE_REVIEW.reviewedSeriesCount} series activas revisadas el ${formatCatalogDate(DATA_REVIEWED_ON)} · ${catalog.length} en el catálogo.`
       : `${RELEASE_REVIEW.reviewedSeriesCount} series revisadas el ${formatCatalogDate(DATA_REVIEWED_ON)} · catálogo completo.`;

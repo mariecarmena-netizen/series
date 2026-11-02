@@ -2,6 +2,12 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Incorporación del 2 de noviembre de 2026
+
+Añadida **Grande de España** (Netflix) con portada, sinopsis y los títulos de sus seis capítulos, estrenados el 23/10/2026. La ficha y el calendario enlazan a Netflix y a su anuncio oficial; TVmaze aporta la portada y una fuente adicional. La primera temporada está completa y las siguientes siguen sin anunciar. El catálogo reúne ahora 98 series y 6.807 estrenos fechados.
+
+La nueva ficha se revisó el 02/11/2026; las demás conservan la revisión completa del 29/10/2026. Actualizada la caché sin conexión para recibir la incorporación al volver a abrir la app.
+
 ## Revisión completa del 29 de octubre de 2026
 
 Revisadas las **97 series** del catálogo: 96 fichas de TVmaze con sus temporadas y episodios, incluidos los especiales, y Una fiesta de muerte mediante su web oficial de Antena 3. También se volvió a consultar Brain Games: On the Road. `catalog-review.json` guarda las fuentes consultadas, sus recuentos, la fecha de revisión de cada serie y las diferencias de numeración conservadas.
