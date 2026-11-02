@@ -2,6 +2,12 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Incorporación de The Righteous Gemstones del 2 de noviembre de 2026
+
+Añadida **The Righteous Gemstones** (HBO / HBO Max), con portada, sinopsis y los títulos de sus 36 capítulos, repartidos en cuatro temporadas completas. La cuarta es la última, según el anuncio oficial de HBO. El calendario recoge los horarios de emisión original de HBO en Estados Unidos convertidos a Madrid, con TVmaze como fuente de los episodios; no se atribuyen a un estreno en España.
+
+La ficha se revisó el 02/11/2026. El catálogo reúne ahora 99 series y 6.843 estrenos fechados. Actualizada la caché sin conexión para recibir la incorporación al volver a abrir la app.
+
 ## Incorporación del 2 de noviembre de 2026
 
 Añadida **Grande de España** (Netflix) con portada, sinopsis y los títulos de sus seis capítulos, estrenados el 23/10/2026. La ficha y el calendario enlazan a Netflix y a su anuncio oficial; TVmaze aporta la portada y una fuente adicional. La primera temporada está completa y las siguientes siguen sin anunciar. El catálogo reúne ahora 98 series y 6.807 estrenos fechados.

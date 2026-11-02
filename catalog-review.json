@@ -1,9 +1,82 @@
 {
   "reviewedOn": "2026-10-29",
   "timeZone": "Europe/Madrid",
-  "catalogSize": 98,
-  "scope": "Revisión completa del 29/10/2026 de las 97 series: 96 fichas de TVmaze con sus temporadas y episodios, incluidos especiales, más Una fiesta de muerte en Antena 3. También se consultó Brain Games: On the Road. Contrastados los nuevos anuncios de Netflix, CBS, Disney+ Press y TF1. Se conservan los anuncios oficiales, la numeración regional y el progreso; las fechas sólo registradas en TVmaze se identifican y no se extrapolan. Los horarios se muestran en Madrid y la emisión extranjera no confirma disponibilidad en España. Incorporación del 02/11/2026: Grande de España, contrastada con Netflix (ficha y anuncio del estreno) y TVmaze; las otras 97 series conservan su fecha de revisión.",
+  "catalogSize": 99,
+  "scope": "Revisión completa del 29/10/2026 de las 97 series: 96 fichas de TVmaze con sus temporadas y episodios, incluidos especiales, más Una fiesta de muerte en Antena 3. También se consultó Brain Games: On the Road. Contrastados los nuevos anuncios de Netflix, CBS, Disney+ Press y TF1. Se conservan los anuncios oficiales, la numeración regional y el progreso; las fechas sólo registradas en TVmaze se identifican y no se extrapolan. Los horarios se muestran en Madrid y la emisión extranjera no confirma disponibilidad en España. Incorporación del 02/11/2026: Grande de España, contrastada con Netflix (ficha y anuncio del estreno) y TVmaze; las otras 97 series conservan su fecha de revisión. Incorporación adicional del 02/11/2026: The Righteous Gemstones, con cuatro temporadas y 36 capítulos, contrastada con el anuncio oficial de HBO de su última temporada y con la ficha, temporadas y episodios de TVmaze.",
   "series": [
+    {
+      "id": "the-righteous-gemstones",
+      "name": "The Righteous Gemstones",
+      "reviewedOn": "2026-11-02",
+      "provider": {
+        "id": 37387,
+        "name": "The Righteous Gemstones",
+        "language": "English",
+        "network": "HBO",
+        "url": "https://www.tvmaze.com/shows/37387/the-righteous-gemstones",
+        "status": "Ended"
+      },
+      "upcomingInProvider": [],
+      "note": "Serie finalizada: cuatro temporadas completas de nueve capítulos cada una. HBO confirma que la cuarta es la última. Se conservan los títulos originales y la numeración de TVmaze; el calendario convierte los horarios de emisión original de HBO en Estados Unidos a Madrid y no los atribuye a un estreno en España. Duración media orientativa de 39 minutos.",
+      "catalogStatus": "Finalizada · 4 temporadas · 36 capítulos",
+      "sources": [
+        {
+          "label": "HBO · cuarta y última temporada de nueve capítulos",
+          "url": "https://press.wbd.com/us/media-release/season-four-hbo-original-series-righteous-gemstones-debuts-march-9?language_content_entity=en"
+        },
+        {
+          "label": "TVmaze · ficha, temporadas y episodios registrados",
+          "url": "https://www.tvmaze.com/shows/37387/the-righteous-gemstones"
+        }
+      ],
+      "confirmedUpcoming": [],
+      "registeredUpcoming": [],
+      "calendarCoverage": {
+        "datedEpisodes": 36,
+        "unresolvedSeasons": []
+      },
+      "availableEpisodes": 36,
+      "providerReviewedOn": "2026-11-02",
+      "verification": {
+        "checkedOn": "2026-11-02",
+        "sources": [
+          "https://api.tvmaze.com/singlesearch/shows?q=The%20Righteous%20Gemstones&embed%5B%5D=seasons&embed%5B%5D=episodes",
+          "https://press.wbd.com/us/media-release/season-four-hbo-original-series-righteous-gemstones-debuts-march-9?language_content_entity=en"
+        ],
+        "method": "Ficha, temporadas y 36 episodios consultados en TVmaze; estado finalizado contrastado con el anuncio oficial de HBO de la cuarta y última temporada.",
+        "providerUpdatedAt": "2025-05-05T16:28:44+00:00",
+        "regularEpisodes": 36,
+        "seasons": [
+          {
+            "number": 1,
+            "episodeOrder": 9,
+            "premiereDate": "2019-08-18",
+            "endDate": "2019-10-13"
+          },
+          {
+            "number": 2,
+            "episodeOrder": 9,
+            "premiereDate": "2022-01-09",
+            "endDate": "2022-02-27"
+          },
+          {
+            "number": 3,
+            "episodeOrder": 9,
+            "premiereDate": "2023-06-18",
+            "endDate": "2023-07-30"
+          },
+          {
+            "number": 4,
+            "episodeOrder": 9,
+            "premiereDate": "2025-03-09",
+            "endDate": "2025-05-04"
+          }
+        ],
+        "sha256": {
+          "response": "6e0cab8fd247d4d0998b2dbe9425aa41fa9a505fd9e6888c269940c168fe1777"
+        }
+      }
+    },
     {
       "id": "grande-de-espana",
       "name": "Grande de España",
@@ -9407,7 +9480,7 @@
       }
     }
   ],
-  "calendarEventCount": 6807,
+  "calendarEventCount": 6843,
   "fullReviewedOn": "2026-10-29",
   "reviewScope": "full",
   "reviewedSeriesCount": 97,
