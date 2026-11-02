@@ -1,9 +1,7 @@
-// Revisión completa: 97 series el 29 de octubre de 2026.
-// Grande de España incorporada el 2 de noviembre de 2026: 98 series en el catálogo.
-// The Righteous Gemstones incorporada el 2 de noviembre de 2026: 99 series en el catálogo.
+// Revisión completa: 99 series el 2 de noviembre de 2026.
 // Horarios de Europe/Madrid. Las fechas del proveedor se distinguen de los anuncios oficiales.
 const RELEASE_REVIEW = {
-  "reviewedOn": "2026-10-29",
+  "reviewedOn": "2026-11-02",
   "catalogUpdatedOn": "2026-11-02",
   "timeZone": "Europe/Madrid",
   "series": {
@@ -35,10 +33,10 @@ const RELEASE_REVIEW = {
       "trackingSeason": 1,
       "renewalNote": "Nuevas temporadas sin anunciar",
       "providerReviewedOn": "2026-11-02",
-      "providerStatus": "Running"
+      "providerStatus": "To Be Determined"
     },
     "forensic-files": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Forensic Files · web oficial de la serie original",
@@ -49,12 +47,12 @@ const RELEASE_REVIEW = {
           "url": "https://www.justwatch.com/es/serie/forensic-files"
         }
       ],
-      "dataNote": "Serie original (1996–2011), conocida en España como Crímenes imperfectos. Se conserva la numeración original de sus 14 temporadas y 400 episodios regulares; los especiales de larga duración se catalogan aparte y no se incluyen en este seguimiento. Los títulos y las fechas corresponden a la emisión original; la oferta de capítulos varía según la plataforma y el país.",
-      "providerReviewedOn": "2026-10-29",
+      "dataNote": "Serie original (1996–2011), conocida en España como Crímenes imperfectos: 14 temporadas y 400 episodios regulares. Los especiales de larga duración se excluyen del seguimiento. El calendario convierte a Madrid los horarios de emisión original de TLC / Court TV / truTV registrados en TVmaze; las fechas corresponden a la madrugada siguiente en España y no confirman disponibilidad local.",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "vision-quest": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney · estreno doble el 13/10 en Estados Unidos",
@@ -83,26 +81,26 @@ const RELEASE_REVIEW = {
           ],
           "total": 8,
           "note": "8 capítulos · tandas dobles los días 14, 21 y 28/10 en Madrid, seguidas de los capítulos 7 y 8 el 04 y 11/11/2026; horario oficial de Marvel.",
-          "releasedEpisodes": 2,
+          "releasedEpisodes": 6,
           "available": true
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "el-crimen-tiene-dos-caras": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "JustWatch España · título, plataforma y tres capítulos",
           "url": "https://www.justwatch.com/es/serie/murder-has-two-faces/temporada-1"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "una-fiesta-de-muerte": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Antena 3 · primera entrega, 25/04/2026 y duración de 90 minutos",
@@ -120,18 +118,18 @@ const RELEASE_REVIEW = {
       "dataNote": "Se agrupan las dos entregas verificadas como temporada 1 para el seguimiento. Antena 3 no anuncia aquí una nueva entrega ni un total cerrado del formato."
     },
     "si-es-martes-es-asesinato": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ España · estreno de marzo de 2026",
           "url": "https://lumiere-a.akamaihd.net/v1/documents/d_newsletter_marzo_2026_v4_comp_80243c66.pdf"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "chad-powers": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ Press · temporada 2 completa en Hulu el 03/09/2026",
@@ -139,22 +137,22 @@ const RELEASE_REVIEW = {
         }
       ],
       "dataNote": "La temporada 2 y su fecha corresponden a Hulu en Estados Unidos; no confirman su disponibilidad en Disney+ España.",
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "leccion-criminal": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ España · título y tres capítulos",
           "url": "https://www.disneyplus.com/es-es/browse/entity-2a044424-532f-4c67-87cb-d708487581ca"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "como-atrape-a-mi-asesino": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ · título y dos temporadas",
@@ -165,22 +163,22 @@ const RELEASE_REVIEW = {
           "url": "https://lumiere-a.akamaihd.net/v1/documents/newsletter_octubre_2024_97fa69e8.pdf"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "bodas-de-infarto": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ España · estreno completo el 08/09/2022",
           "url": "https://lumiere-a.akamaihd.net/v1/documents/newsletter_d_septiembre_7e3583ba.pdf"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "entrepreneurs": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Disney+ España · ficha y diez capítulos de la temporada 1",
@@ -191,11 +189,11 @@ const RELEASE_REVIEW = {
           "url": "https://tv.apple.com/es/show/entrepreneurs/umc.cmc.3b15uum6wqj1l30wmnzj8jp1s"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "furia": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "HBO Max · segunda temporada: estreno y ocho capítulos",
@@ -203,7 +201,7 @@ const RELEASE_REVIEW = {
         }
       ],
       "trackingSeason": 2,
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "seasons": [
         {
@@ -211,46 +209,46 @@ const RELEASE_REVIEW = {
           "total": 8,
           "totalKnown": true,
           "note": "Parte 2 · 8 capítulos confirmados · estreno oficial 09/10/2026; calendario restante registrado en TVmaze hasta el 27/11/2026, sin hora confirmada",
-          "releasedEpisodes": 2,
+          "releasedEpisodes": 4,
           "available": true
         }
       ]
     },
     "wonkas-the-golden-ticket": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · reality de Willy Wonka y final de temporada",
           "url": "https://www.netflix.com/tudum/articles/the-golden-ticket-season-1-release-date-news"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "friends": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "JustWatch · disponibilidad en España",
           "url": "https://www.justwatch.com/es/serie/friends"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "el-problema-final": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · miniserie de cuatro capítulos",
           "url": "https://about.netflix.com/es_es/news/netflix-reveals-the-trailer-for-the-final-problem"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "perdiendo-el-juicio": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Antena 3 · segunda temporada confirmada",
@@ -261,22 +259,22 @@ const RELEASE_REVIEW = {
           "url": "https://www.grupoboomerangtv.com/es/noticias/perdiendo-el-juicio-triunfa-en-netflix-y-se-mantiene-en-el-top-10-global"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "oasis": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · ficha oficial",
           "url": "https://www.netflix.com/title/81734907"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "nobody-wants-this": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · diez capítulos de la temporada 3 el 22 de octubre",
@@ -284,13 +282,13 @@ const RELEASE_REVIEW = {
         }
       ],
       "trackingSeason": 3,
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined",
       "seasons": [
         {
           "season": 3,
-          "releasedEpisodes": 0,
-          "available": false,
+          "releasedEpisodes": 10,
+          "available": true,
           "episodes": [
             {
               "number": 1,
@@ -339,7 +337,7 @@ const RELEASE_REVIEW = {
       "description": "Comedia romántica · Netflix · las tres temporadas reúnen 30 capítulos. Los diez capítulos de la T3 están disponibles desde el 22/10/2026; nueva temporada sin anunciar."
     },
     "the-four-seasons": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · temporada 3 en rodaje",
@@ -370,12 +368,12 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "status": "2 temporadas completas · temporada 3 en rodaje · 8 capítulos previstos según TVmaze · fecha pendiente"
     },
     "big-mistakes": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · temporada 2 en rodaje",
@@ -388,11 +386,11 @@ const RELEASE_REVIEW = {
           "note": "Segunda temporada en rodaje · fecha y capítulos pendientes"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "black-doves": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · estreno de la temporada 2 el 5 de noviembre",
@@ -436,30 +434,30 @@ const RELEASE_REVIEW = {
           "note": "6 capítulos registrados en TVmaze para el 05/11/2026; Netflix confirma el estreno. Títulos, total oficial y horario de los registros adicionales pendientes."
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "description": "Thriller de espías · Netflix · temporada 2: estreno anunciado para el 05/11/2026. TVmaze registra seis capítulos ese día; títulos y total oficial pendientes."
     },
     "obliterated": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · ficha oficial",
           "url": "https://www.netflix.com/title/81413928"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "worst-roommate-ever": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "sources": [
         {
           "label": "Netflix · ficha oficial",
           "url": "https://www.netflix.com/title/81031682"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "koh-lanta": {
@@ -1128,8 +1126,8 @@ const RELEASE_REVIEW = {
           "url": "https://tf1pro.com/programmes/diffusion/2026-11-17-2110-koh-lanta"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "big-brother-us": {
@@ -2273,8 +2271,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.cbs.com/shows/video/ALVE01KV9H9F4REX5SESVBX97DSCQA/?p=1"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "wednesday": {
@@ -2291,8 +2289,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/wednesday-season-3-release-date"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "love-is-blind-us": {
@@ -2304,7 +2302,7 @@ const RELEASE_REVIEW = {
           "total": 13,
           "totalKnown": true,
           "available": true,
-          "releasedEpisodes": 5,
+          "releasedEpisodes": 11,
           "episodes": [
             {
               "number": 1,
@@ -2368,8 +2366,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "the-traitors-us": {
@@ -2430,7 +2428,7 @@ const RELEASE_REVIEW = {
               "title": "Episodio 12 · título pendiente"
             }
           ],
-          "releasedEpisodes": 6,
+          "releasedEpisodes": 8,
           "available": true
         },
         {
@@ -2511,8 +2509,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvmaze.com/shows/58177/the-traitors/episodes"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "lupin": {
@@ -2525,9 +2523,13 @@ const RELEASE_REVIEW = {
         {
           "label": "Netflix · hora habitual de los estrenos originales",
           "url": "https://help.netflix.com/es-es/node/118959"
+        },
+        {
+          "label": "Netflix Media Center · parte 4 estrenada el 23/10/2026",
+          "url": "https://media.netflix.com/en/only-on-netflix/80994082"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -2649,17 +2651,18 @@ const RELEASE_REVIEW = {
             }
           ],
           "total": 8,
-          "releasedEpisodes": 0,
-          "available": false
+          "releasedEpisodes": 8,
+          "available": true
         }
       ],
-      "providerReviewedOn": "2026-10-29",
-      "providerStatus": "Running",
-      "description": "Thriller de atracos · Netflix · cuatro partes y 25 capítulos. Los ocho capítulos de la parte 4 están disponibles desde el 23/10/2026; nueva parte sin anunciar."
+      "providerReviewedOn": "2026-11-02",
+      "providerStatus": "To Be Determined",
+      "description": "Thriller de atracos · Netflix · cuatro partes y 25 capítulos. Los ocho capítulos de la parte 4 están disponibles desde el 23/10/2026; nueva parte sin anunciar.",
+      "renewalNote": "Nueva parte sin anunciar"
     },
     "dexter-resurrection": {
       "trackingSeason": 2,
-      "renewalNote": "Fecha de SkyShowtime en España pendiente",
+      "renewalNote": "España: T2 en SkyShowtime desde el 31/10/2026 · nuevos capítulos semanales",
       "seasons": [
         {
           "season": 2,
@@ -2678,8 +2681,8 @@ const RELEASE_REVIEW = {
             "Now You See Me"
           ],
           "note": "10 capítulos registrados en TVmaze del 30/10/2026 al 01/01/2027. Estreno oficial en Paramount+ (Estados Unidos): 30/10; fechas posteriores del proveedor y horas pendientes. Estreno de SkyShowtime España pendiente.",
-          "available": false,
-          "releasedEpisodes": 0
+          "available": true,
+          "releasedEpisodes": 1
         },
         {
           "season": 1,
@@ -2701,11 +2704,16 @@ const RELEASE_REVIEW = {
         {
           "label": "Paramount+ · estreno de la temporada 2",
           "url": "https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/"
+        },
+        {
+          "label": "Telecable · T2 en SkyShowtime España desde el 31/10, con nuevos capítulos semanales",
+          "url": "https://blog.telecable.es/contenidos-destacados-television-octubre-2026/"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
-      "providerStatus": "Running"
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
+      "providerStatus": "Running",
+      "dataNote": "Paramount+ confirma la T2 desde el 30/10/2026 y capítulos semanales los viernes; TVmaze aporta las fechas de cada capítulo. Telecable confirma el estreno de SkyShowtime en España el 31/10 con nuevos capítulos semanales. El calendario mantiene las fechas de Paramount+ en Estados Unidos; no se extrapolan las fechas españolas ni una hora sin anunciar."
     },
     "only-murders-in-the-building": {
       "trackingSeason": 6,
@@ -2812,8 +2820,8 @@ const RELEASE_REVIEW = {
           "url": "https://press.disney.co.uk/news/emmy-award-winning-comedy-series-only-murders-in-the-building-returns-for-season-six-on-december-8th-on-disneyplus-"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "ghosts-us": {
@@ -2849,8 +2857,8 @@ const RELEASE_REVIEW = {
             "Episodio 22 · título pendiente"
           ],
           "note": "22 capítulos previstos según TVmaze. CBS: Halloween y Ghostsmas, 30/10 y 11/12 en Madrid; el resto de la temporada está previsto para 2027, con fechas pendientes",
-          "available": false,
-          "releasedEpisodes": 0
+          "available": true,
+          "releasedEpisodes": 2
         },
         {
           "season": 1,
@@ -2984,11 +2992,16 @@ const RELEASE_REVIEW = {
         {
           "label": "TVmaze · temporadas y número de capítulos previstos",
           "url": "https://www.tvmaze.com/shows/46573/ghosts/seasons"
+        },
+        {
+          "label": "CBS / Skydance · dos capítulos de Ghostmas el 10/12 y regreso regular en 2027",
+          "url": "https://www.skydance.com/news/cbs-reveals-its-fall-premiere-lineup-0"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
-      "providerStatus": "Running"
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
+      "providerStatus": "Running",
+      "dataNote": "Se conservan las cuatro posiciones de los especiales: dos de Halloween, ya emitidos, y dos de Ghostmas el 11/12 en Madrid. TVmaze agrupa Ghostmas en una hora; CBS anuncia dos capítulos. No se añade el especial agrupado como capítulo adicional."
     },
     "atasco": {
       "sources": [
@@ -3001,8 +3014,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvmaze.com/shows/78649/atasco/seasons"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "seasons": [
         {
@@ -3031,8 +3044,8 @@ const RELEASE_REVIEW = {
           "url": "https://about.netflix.com/es_es/news/alpha-males-films-its-sixth-and-final-season"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "a-good-girls-guide-to-murder": {
@@ -3042,7 +3055,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/a-good-girls-guide-to-murder-season-3-cast-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 3,
@@ -3082,7 +3095,7 @@ const RELEASE_REVIEW = {
         }
       ],
       "status": "Temporada 3 final rodada · 4 capítulos confirmados · estreno en 2027 · fecha exacta pendiente",
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "a-man-on-the-inside": {
@@ -3092,8 +3105,8 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/man-on-the-inside-season-3-cast-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "love-is-blind-uk": {
@@ -3103,7 +3116,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/love-is-blind-uk-season-4-release-date-news"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 3,
@@ -3122,7 +3135,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "squid-game-the-challenge": {
@@ -3132,7 +3145,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.netflix.com/tudum/articles/squid-game-the-vip-challenge-celebrities-cast"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3164,7 +3177,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "black-mirror": {
@@ -3174,7 +3187,7 @@ const RELEASE_REVIEW = {
           "url": "https://au.variety.com/2026/tv/global/netflix-black-mirror-season-8-legends-gordon-ramsay-39665/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3244,7 +3257,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "the-white-lotus": {
@@ -3258,7 +3271,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.tvinsider.com/1162885/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3297,7 +3310,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "your-friends-and-neighbors": {
@@ -3307,7 +3320,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.apple.com/tv-pr/news/2026/02/apples-hit-drama-your-friends-neighbors-starring-and-executive-produced-by-jon-hamm-lands-early-season-three-renewal/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3339,7 +3352,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "fargo": {
@@ -3349,7 +3362,7 @@ const RELEASE_REVIEW = {
           "url": "https://tvseriesfinale.com/tv-show/fargo-season-six-has-the-fx-anthology-series-been-cancelled-or-renewed/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3428,7 +3441,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "les-traitres-m6": {
@@ -3438,7 +3451,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.ozap.com/actu/les-traitres-m6-devoile-la-toute-premiere-bande-annonce-de-la-saison-7-qui-sera-a-voir-prochainement/655910"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3517,7 +3530,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "l-agence-immobilier-de-luxe-en-famille": {
@@ -3527,7 +3540,7 @@ const RELEASE_REVIEW = {
           "url": "https://serieously.ouest-france.fr/lagence-tmc-renouvelee-pour-une-saison-7-le-gros-changement-annonce-par-valentin-kretz/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3606,7 +3619,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "loups-garous-canal-plus": {
@@ -3616,7 +3629,7 @@ const RELEASE_REVIEW = {
           "url": "https://www.leparisien.fr/culture-loisirs/tv/on-a-deja-commence-a-travailler-sur-la-saison-3-la-recette-gagnante-de-loups-garous-sur-canal-12-02-2026-2JNFN7ZKKNBR3ANJG2KXNGQPQE.php"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3647,7 +3660,7 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "the-circle-us": {
@@ -3659,9 +3672,13 @@ const RELEASE_REVIEW = {
         {
           "label": "TVmaze · calendario de 16 capítulos de la nueva etapa",
           "url": "https://www.tvmaze.com/shows/45419/the-circle/episodes"
+        },
+        {
+          "label": "Disney+ / Hulu · estreno el 17/11 y capítulos los días 18, 19, 24, 25 y 26/11",
+          "url": "https://www.disneyplus.com/explore/articles/new-to-disney-plus"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3860,14 +3877,15 @@ const RELEASE_REVIEW = {
               "title": "Finale"
             }
           ],
-          "note": "Nueva etapa de Hulu (T1 en Hulu; T8 en esta app) · 16 capítulos registrados en TVmaze del 17/11 al 18/12/2026. Hora y disponibilidad en España pendientes."
+          "note": "Nueva etapa de Hulu (T1 en Hulu; T8 en esta app) · 16 capítulos registrados en TVmaze. Disney confirma las seis fechas de noviembre, desde el 17/11; las diez de diciembre siguen atribuidas al proveedor. Hora y disponibilidad en España pendientes."
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "trackingSeason": 8,
       "platform": "Netflix (T1–T7) / Hulu (Estados Unidos)",
-      "description": "Reality de competición social · siete temporadas en Netflix y nueva etapa en Hulu, presentada por Tinx. Se conserva como T8 en esta app (T1 de Hulu); TVmaze registra el estreno el 17/11 y 16 capítulos hasta el 18/12/2026. Disponibilidad en España pendiente."
+      "description": "Reality de competición social · siete temporadas en Netflix y nueva etapa en Hulu, presentada por Tinx. Se conserva como T8 en esta app (T1 de Hulu). Disney confirma el estreno el 17/11 y las seis fechas de noviembre; TVmaze registra diez capítulos más en diciembre. Hora y disponibilidad en España pendientes.",
+      "dataNote": "Seis fechas de noviembre confirmadas por Disney+ / Hulu: 17, 18, 19, 24, 25 y 26. Las diez fechas de diciembre y el total de 16 capítulos proceden de TVmaze. No se asigna hora sin confirmar ni disponibilidad en España."
     },
     "the-beauty": {
       "sources": [
@@ -3880,7 +3898,7 @@ const RELEASE_REVIEW = {
           "url": "https://thegww.com/the-beauty-season-2-cast-released/"
         }
       ],
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -3899,23 +3917,23 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "secret-story": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "dataNote": "Las emisiones históricas cuya fecha o numeración no se pudo contrastar siguen sin fecha en el calendario; se conserva tu seguimiento.",
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "muertos-sl": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "maximum-pleasure-guaranteed": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "sources": [
         {
@@ -3937,32 +3955,32 @@ const RELEASE_REVIEW = {
       ]
     },
     "lethally-blonde": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "deadly-influence": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "dynasty-2017": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "hacks": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "stranger-things": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "brain-games": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 9,
@@ -4011,17 +4029,17 @@ const RELEASE_REVIEW = {
         }
       ],
       "dataNote": "Se conservan los recopilatorios históricos ya incluidos en la app; los títulos sin registro suficiente permanecen pendientes. On the Road se identifica expresamente como programa aparte.",
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "section-de-recherches": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "lucifer": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended",
       "seasons": [
         {
@@ -4077,13 +4095,13 @@ const RELEASE_REVIEW = {
       "dataNote": "La reunión promocional The Lucifer Reunion Show se mantiene fuera de los diez capítulos regulares de la T4 y del calendario de capítulos."
     },
     "see-no-evil": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "on-the-case-with-paula-zahn": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running",
       "seasons": [
         {
@@ -4168,17 +4186,17 @@ const RELEASE_REVIEW = {
       "dataNote": "T25: 15 capítulos regulares y dos especiales al final (17 entregas). Se conserva la numeración guardada y se asocian las fechas por título para evitar desplazamientos."
     },
     "homicide-hunter-american-detective": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "loot": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "people-magazine-investigates": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 9,
@@ -4206,46 +4224,46 @@ const RELEASE_REVIEW = {
           "note": "13 capítulos regulares y dos especiales: The University of Cosmic Intelligence Cult (14/07/2026) y The Cult of the Soulful Journey (21/07/2026)."
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "poker-face-2023": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "upload": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "malcolm-in-the-middle": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "malcolm-lifes-still-unfair": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "modern-family": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "como-conoci-a-vuestra-madre": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "love-is-blind-france": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "the-ultimatum-marry-or-move-on-us": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 4,
@@ -4263,76 +4281,76 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "the-ultimatum-france": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "perfect-match": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "recale": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "mean-girl-murders": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "american-monster": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "criminal-confessions": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "severance": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "big-little-lies": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "josephine-ange-gardien": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "camping-paradis": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "csi-miami": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "the-green-glove-gang": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "loki": {
-      "reviewedOn": "2026-10-29",
-      "providerReviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "grotesquerie": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4350,11 +4368,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "squid-game": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4394,11 +4412,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "westworld": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4457,11 +4475,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "dexter": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4600,11 +4618,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "dexter-new-blood": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4622,11 +4640,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "scream-queens": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4662,11 +4680,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "celebrity-hunted-france": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4680,11 +4698,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "To Be Determined"
     },
     "travelers-2016": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4736,11 +4754,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "space-force": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4770,11 +4788,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "en-place": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4799,11 +4817,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     },
     "schitts-creek": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4916,11 +4934,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "summertime": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -4962,11 +4980,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "what-we-do-in-the-shadows": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "seasons": [
         {
           "season": 1,
@@ -5060,11 +5078,11 @@ const RELEASE_REVIEW = {
           ]
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Ended"
     },
     "rooster": {
-      "reviewedOn": "2026-10-29",
+      "reviewedOn": "2026-11-02",
       "status": "Temporada 1 completa · temporada 2 renovada · fecha de estreno pendiente",
       "seasons": [
         {
@@ -5093,7 +5111,7 @@ const RELEASE_REVIEW = {
           "url": "https://press-spain.max.com/post/hbo-renueva-rooster-la-comedia-mas-vista-en-mas-de-una-decada-pr"
         }
       ],
-      "providerReviewedOn": "2026-10-29",
+      "providerReviewedOn": "2026-11-02",
       "providerStatus": "Running"
     }
   },
@@ -5694,12 +5712,14 @@ const RELEASE_REVIEW = {
     ]
   },
   "calendarComplete": true,
-  "fullReviewedOn": "2026-10-29",
+  "fullReviewedOn": "2026-11-02",
   "reviewScope": "full",
-  "reviewedSeriesCount": 97,
+  "reviewedSeriesCount": 99,
   "reviewedSeriesIds": [
     "koh-lanta",
     "secret-story",
+    "the-righteous-gemstones",
+    "grande-de-espana",
     "forensic-files",
     "vision-quest",
     "el-crimen-tiene-dos-caras",
@@ -5839,406 +5859,406 @@ const RELEASE_REVIEW = {
     {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":4,"date":"2026-10-23","title":"Extrarradio","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
     {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":5,"date":"2026-10-23","title":"El funeral","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
     {"serieId":"grande-de-espana","serie":"Grande de España","season":1,"episode":6,"date":"2026-10-23","title":"Quién es Sofía Carrington","platform":"Netflix (España)","sourceKind":"official","sourceUrl":"https://about.netflix.com/es_es/news/fading-grandeur-premieres-on-netflix-on-23-october-starring-antonio-de-la-torre-and-alexandra-jimenez","note":"Temporada completa · seis capítulos · fecha anunciada por Netflix"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":1,"date":"1996-04-21","title":"The Disappearance of Helle Crafts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219784/forensic-files-1x01-the-disappearance-of-helle-crafts"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":2,"date":"1996-10-03","title":"The Magic Bullet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219785/forensic-files-1x02-the-magic-bullet"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":3,"date":"1996-10-10","title":"The House That Roared","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219786/forensic-files-1x03-the-house-that-roared"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":4,"date":"1996-10-17","title":"The Footpath Murders","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219787/forensic-files-1x04-the-footpath-murders"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":5,"date":"1996-10-23","title":"Planted Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219788/forensic-files-1x05-planted-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":6,"date":"1996-10-31","title":"Southside Strangler","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219789/forensic-files-1x06-southside-strangler"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":7,"date":"1996-11-07","title":"Legionnaires' Disease","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219790/forensic-files-1x07-legionnaires-disease"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":8,"date":"1996-11-14","title":"The Wilson Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219791/forensic-files-1x08-the-wilson-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":9,"date":"1996-11-21","title":"Deadly Neighborhoods","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219792/forensic-files-1x09-deadly-neighborhoods"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":10,"date":"1996-11-28","title":"Insect Clues","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219793/forensic-files-1x10-insect-clues"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":11,"date":"1996-12-05","title":"Outbreak","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219794/forensic-files-1x11-outbreak"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":12,"date":"1996-12-12","title":"The List Murders","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219795/forensic-files-1x12-the-list-murders"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":13,"date":"1996-12-19","title":"Raw Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219796/forensic-files-1x13-raw-terror"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":1,"date":"1997-10-02","title":"The Common Thread","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219797/forensic-files-2x01-the-common-thread"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":2,"date":"1997-10-09","title":"The Dirty Deed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219798/forensic-files-2x02-the-dirty-deed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":3,"date":"1997-10-16","title":"Killer Fog","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219799/forensic-files-2x03-killer-fog"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":4,"date":"1997-10-23","title":"Sex, Lies & DNA","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219800/forensic-files-2x04-sex-lies-dna"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":5,"date":"1997-10-30","title":"Bitter Potion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219801/forensic-files-2x05-bitter-potion"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":6,"date":"1997-11-06","title":"The Blood Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219802/forensic-files-2x06-the-blood-trail"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":7,"date":"1997-11-20","title":"Fatal Fungus","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219803/forensic-files-2x07-fatal-fungus"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":8,"date":"1997-11-13","title":"Charred Remains","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219804/forensic-files-2x08-charred-remains"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":9,"date":"1997-12-04","title":"Something's Fishy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219805/forensic-files-2x09-somethings-fishy"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":10,"date":"1997-12-18","title":"Sealed with a Kiss","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219806/forensic-files-2x10-sealed-with-a-kiss"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":11,"date":"1998-01-15","title":"Postal Mortem","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219807/forensic-files-2x11-postal-mortem"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":12,"date":"1998-02-05","title":"Micro-Clues","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219808/forensic-files-2x12-micro-clues"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":13,"date":"1998-03-05","title":"Deadly Parasites","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219809/forensic-files-2x13-deadly-parasites"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":1,"date":"1998-10-01","title":"Without a Trace","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219810/forensic-files-3x01-without-a-trace"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":2,"date":"1998-10-08","title":"Knot for Everyone","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219811/forensic-files-3x02-knot-for-everyone"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":3,"date":"1998-10-15","title":"The Talking Skull","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219812/forensic-files-3x03-the-talking-skull"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":4,"date":"1998-10-22","title":"Foreign Body","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219813/forensic-files-3x04-foreign-body"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":5,"date":"1998-10-29","title":"Deadly Delivery","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219814/forensic-files-3x05-deadly-delivery"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":6,"date":"1998-11-05","title":"Similar Circumstances","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219815/forensic-files-3x06-similar-circumstances"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":7,"date":"1998-11-12","title":"Grave Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219816/forensic-files-3x07-grave-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":8,"date":"1998-11-19","title":"Deadly Formula","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219817/forensic-files-3x08-deadly-formula"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":9,"date":"1998-12-03","title":"Beaten by a Hair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219818/forensic-files-3x09-beaten-by-a-hair"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":10,"date":"1998-12-03","title":"Crime Seen","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219819/forensic-files-3x10-crime-seen"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":11,"date":"1999-01-07","title":"Speck of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219820/forensic-files-3x11-speck-of-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":12,"date":"1999-01-14","title":"Broken Bond","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219821/forensic-files-3x12-broken-bond"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":13,"date":"1999-01-21","title":"Out of the Ashes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219822/forensic-files-3x13-out-of-the-ashes"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":1,"date":"1999-10-06","title":"Invisible Intruder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219824/forensic-files-4x01-invisible-intruder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":2,"date":"1999-10-13","title":"The Killing Room","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219825/forensic-files-4x02-the-killing-room"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":3,"date":"1999-10-20","title":"Ultimate Betrayal","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219826/forensic-files-4x03-ultimate-betrayal"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":4,"date":"1999-10-27","title":"Cement the Case","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219827/forensic-files-4x04-cement-the-case"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":5,"date":"1999-11-03","title":"Innocence Lost","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219828/forensic-files-4x05-innocence-lost"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":6,"date":"1999-11-10","title":"'Til Death Do Us Part","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219829/forensic-files-4x06-til-death-do-us-part"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":7,"date":"1999-11-17","title":"Ties That Bind","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219830/forensic-files-4x07-ties-that-bind"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":8,"date":"1999-11-24","title":"Body of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219831/forensic-files-4x08-body-of-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":9,"date":"1999-12-01","title":"Accident or Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219832/forensic-files-4x09-accident-or-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":10,"date":"1999-12-08","title":"Core Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219833/forensic-files-4x10-core-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":11,"date":"1999-12-15","title":"Haunting Vision","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219834/forensic-files-4x11-haunting-vision"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":12,"date":"1999-12-22","title":"With Every Breath","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219835/forensic-files-4x12-with-every-breath"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":13,"date":"1999-12-29","title":"Slippery Motives","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219836/forensic-files-4x13-slippery-motives"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":1,"date":"2000-09-12","title":"Badge of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219837/forensic-files-5x01-badge-of-deceit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":2,"date":"2000-09-19","title":"Dew Process","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219838/forensic-files-5x02-dew-process"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":3,"date":"2000-09-26","title":"A Woman Scorned","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219839/forensic-files-5x03-a-woman-scorned"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":4,"date":"2000-10-03","title":"A Voice from Beyond","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219840/forensic-files-5x04-a-voice-from-beyond"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":5,"date":"2000-10-10","title":"Burning Ambition","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219841/forensic-files-5x05-burning-ambition"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":6,"date":"2000-10-17","title":"Memories","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219842/forensic-files-5x06-memories"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":7,"date":"2000-10-24","title":"Trail of Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219843/forensic-files-5x07-trail-of-truth"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":8,"date":"2000-10-31","title":"Material Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219844/forensic-files-5x08-material-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":9,"date":"2000-11-07","title":"Killigraphy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219845/forensic-files-5x09-killigraphy"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":10,"date":"2000-11-14","title":"Nursery Crimes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219846/forensic-files-5x10-nursery-crimes"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":11,"date":"2000-11-21","title":"Lasting Impression","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219847/forensic-files-5x11-lasting-impression"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":12,"date":"2000-11-28","title":"Foundation of Lies","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219848/forensic-files-5x12-foundation-of-lies"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":13,"date":"2000-12-05","title":"Unholy Vows","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219849/forensic-files-5x13-unholy-vows"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":14,"date":"2000-12-12","title":"Broken Promises","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219850/forensic-files-5x14-broken-promises"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":15,"date":"2000-12-19","title":"Time Will Tell","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219851/forensic-files-5x15-time-will-tell"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":16,"date":"2000-12-26","title":"Second Shot at Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219852/forensic-files-5x16-second-shot-at-love"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":17,"date":"2001-01-02","title":"Journey to Justice","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219853/forensic-files-5x17-journey-to-justice"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":18,"date":"2001-01-09","title":"Video Diary","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219854/forensic-files-5x18-video-diary"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":19,"date":"2001-01-16","title":"Deadly Knowledge","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219855/forensic-files-5x19-deadly-knowledge"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":1,"date":"2001-05-07","title":"Missing in Time","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219856/forensic-files-6x01-missing-in-time"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":2,"date":"2001-05-21","title":"Missing Pearl","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219857/forensic-files-6x02-missing-pearl"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":3,"date":"2001-06-04","title":"Man's Best Friend?","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219858/forensic-files-6x03-mans-best-friend"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":4,"date":"2001-06-11","title":"Hand Delivered","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219859/forensic-files-6x04-hand-delivered"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":5,"date":"2001-06-18","title":"Death Play","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219860/forensic-files-6x05-death-play"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":6,"date":"2001-06-25","title":"Fire Dot Com","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219861/forensic-files-6x06-fire-dot-com"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":7,"date":"2001-07-02","title":"Mistaken for Dead","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219862/forensic-files-6x07-mistaken-for-dead"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":8,"date":"2001-07-09","title":"Frozen Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219863/forensic-files-6x08-frozen-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":9,"date":"2001-07-16","title":"Soft Touch","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219864/forensic-files-6x09-soft-touch"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":10,"date":"2001-07-23","title":"Church Disappearance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219865/forensic-files-6x10-church-disappearance"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":11,"date":"2001-07-30","title":"Photo Finish","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219866/forensic-files-6x11-photo-finish"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":12,"date":"2001-08-05","title":"Whodunit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219867/forensic-files-6x12-whodunit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":13,"date":"2001-08-12","title":"Horse Play","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219868/forensic-files-6x13-horse-play"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":14,"date":"2001-08-19","title":"Treads and Threads","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219869/forensic-files-6x14-treads-and-threads"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":15,"date":"2001-08-26","title":"Killer's Cattle-Log","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219870/forensic-files-6x15-killers-cattle-log"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":16,"date":"2001-09-03","title":"Skin of Her Teeth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219871/forensic-files-6x16-skin-of-her-teeth"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":17,"date":"2001-09-10","title":"Line of Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219872/forensic-files-6x17-line-of-fire"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":18,"date":"2001-09-17","title":"Bad Blood","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219873/forensic-files-6x18-bad-blood"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":19,"date":"2001-09-24","title":"Pure Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219874/forensic-files-6x19-pure-evil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":20,"date":"2001-10-01","title":"Root of All Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219875/forensic-files-6x20-root-of-all-evil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":21,"date":"2001-10-08","title":"Where the Blood Drops","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219876/forensic-files-6x21-where-the-blood-drops"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":22,"date":"2001-10-15","title":"Punch Line","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219877/forensic-files-6x22-punch-line"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":23,"date":"2001-10-22","title":"Sibling Rivalry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219878/forensic-files-6x23-sibling-rivalry"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":24,"date":"2001-10-29","title":"Pastoral Care","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219879/forensic-files-6x24-pastoral-care"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":25,"date":"2001-11-05","title":"Bagging a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219880/forensic-files-6x25-bagging-a-killer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":26,"date":"2001-11-12","title":"Double Trouble","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219881/forensic-files-6x26-double-trouble"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":27,"date":"2001-11-19","title":"Cats, Flies and Snapshots","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219882/forensic-files-6x27-cats-flies-and-snapshots"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":28,"date":"2001-11-26","title":"Naked Justice","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219883/forensic-files-6x28-naked-justice"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":29,"date":"2001-12-03","title":"Treading Not So Lightly","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219884/forensic-files-6x29-treading-not-so-lightly"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":30,"date":"2001-12-10","title":"Shopping Spree","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219885/forensic-files-6x30-shopping-spree"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":1,"date":"2002-01-01","title":"The Cheater","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219886/forensic-files-7x01-the-cheater"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":2,"date":"2002-01-08","title":"Forever Hold Your Peace","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219887/forensic-files-7x02-forever-hold-your-peace"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":3,"date":"2002-01-15","title":"Reel Danger","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219888/forensic-files-7x03-reel-danger"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":4,"date":"2002-01-22","title":"Who's Your Daddy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219889/forensic-files-7x04-whos-your-daddy"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":5,"date":"2002-01-29","title":"The Alibi","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219890/forensic-files-7x05-the-alibi"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":6,"date":"2002-02-05","title":"A Bite Out of Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219891/forensic-files-7x06-a-bite-out-of-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":7,"date":"2002-02-12","title":"Purr-fect Match","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219892/forensic-files-7x07-purr-fect-match"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":8,"date":"2002-02-19","title":"Bio-Attack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219893/forensic-files-7x08-bio-attack"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":9,"date":"2002-02-26","title":"A Shot in the Dark","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219894/forensic-files-7x09-a-shot-in-the-dark"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":10,"date":"2002-03-05","title":"Without a Prayer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219895/forensic-files-7x10-without-a-prayer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":11,"date":"2002-03-12","title":"A Clutch of Witnesses","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219896/forensic-files-7x11-a-clutch-of-witnesses"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":12,"date":"2002-03-19","title":"Scout's Honor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219897/forensic-files-7x12-scouts-honor"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":13,"date":"2002-03-26","title":"A Touching Recollection","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219898/forensic-files-7x13-a-touching-recollection"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":14,"date":"2002-04-02","title":"A Leg to Stand On","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219899/forensic-files-7x14-a-leg-to-stand-on"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":15,"date":"2002-04-09","title":"Partners in Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219900/forensic-files-7x15-partners-in-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":16,"date":"2002-04-16","title":"Within a Hair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219901/forensic-files-7x16-within-a-hair"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":17,"date":"2002-04-23","title":"Chief Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219902/forensic-files-7x17-chief-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":18,"date":"2002-04-30","title":"A Bitter Pill to Swallow","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219903/forensic-files-7x18-a-bitter-pill-to-swallow"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":19,"date":"2002-05-07","title":"Sip of Sins","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219904/forensic-files-7x19-sip-of-sins"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":20,"date":"2002-05-14","title":"Telltale Tracks","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219905/forensic-files-7x20-telltale-tracks"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":21,"date":"2002-05-21","title":"Ghost in the Machine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219906/forensic-files-7x21-ghost-in-the-machine"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":22,"date":"2002-05-28","title":"Frozen in Time","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219907/forensic-files-7x22-frozen-in-time"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":23,"date":"2002-06-04","title":"Cold Storage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219908/forensic-files-7x23-cold-storage"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":24,"date":"2002-06-11","title":"The Metal Business","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219909/forensic-files-7x24-the-metal-business"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":25,"date":"2002-06-18","title":"Dressed to Kill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219910/forensic-files-7x25-dressed-to-kill"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":26,"date":"2002-06-25","title":"Palm Print Conviction","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219911/forensic-files-7x26-palm-print-conviction"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":27,"date":"2002-07-02","title":"A Vow of Silence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219912/forensic-files-7x27-a-vow-of-silence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":28,"date":"2002-07-09","title":"Elephant Tracks","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219913/forensic-files-7x28-elephant-tracks"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":29,"date":"2002-07-16","title":"A Bag of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219914/forensic-files-7x29-a-bag-of-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":30,"date":"2002-07-23","title":"Tooth or Consequences","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219915/forensic-files-7x30-tooth-or-consequences"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":31,"date":"2002-07-30","title":"Sniffing Revenge","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219916/forensic-files-7x31-sniffing-revenge"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":32,"date":"2002-08-06","title":"Sleight of Hand","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219917/forensic-files-7x32-sleight-of-hand"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":33,"date":"2002-08-13","title":"Scratching the Surface","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219918/forensic-files-7x33-scratching-the-surface"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":34,"date":"2002-08-20","title":"Fire Proof","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219919/forensic-files-7x34-fire-proof"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":35,"date":"2002-08-27","title":"X Marks the Spot","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219920/forensic-files-7x35-x-marks-the-spot"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":36,"date":"2002-09-03","title":"All Charged Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219921/forensic-files-7x36-all-charged-up"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":37,"date":"2002-09-10","title":"Breaking the Mold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219922/forensic-files-7x37-breaking-the-mold"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":38,"date":"2002-09-17","title":"House Call","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219923/forensic-files-7x38-house-call"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":39,"date":"2002-09-24","title":"Marathon Man","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219924/forensic-files-7x39-marathon-man"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":40,"date":"2002-10-01","title":"The Sniper's Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219925/forensic-files-7x40-the-snipers-trail"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":41,"date":"2002-10-08","title":"Plastic Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219926/forensic-files-7x41-plastic-fire"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":42,"date":"2002-10-15","title":"Last Will","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219927/forensic-files-7x42-last-will"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":1,"date":"2003-01-01","title":"Dessert Served Cold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219928/forensic-files-8x01-dessert-served-cold"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":2,"date":"2003-01-15","title":"The Music Case","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219929/forensic-files-8x02-the-music-case"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":3,"date":"2003-01-22","title":"Paintball","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219930/forensic-files-8x03-paintball"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":4,"date":"2003-01-29","title":"Sign Here","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219931/forensic-files-8x04-sign-here"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":5,"date":"2003-02-05","title":"Shadow of a Doubt","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219932/forensic-files-8x05-shadow-of-a-doubt"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":6,"date":"2003-02-12","title":"Tourist Trap","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219933/forensic-files-8x06-tourist-trap"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":7,"date":"2003-02-19","title":"Once Bitten","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219934/forensic-files-8x07-once-bitten"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":8,"date":"2003-02-26","title":"All Wet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219935/forensic-files-8x08-all-wet"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":9,"date":"2003-03-05","title":"Shot of Vengeance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219936/forensic-files-8x09-shot-of-vengeance"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":10,"date":"2003-03-12","title":"Dinner and a Movie","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219937/forensic-files-8x10-dinner-and-a-movie"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":11,"date":"2003-03-19","title":"A Wrong Foot","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219938/forensic-files-8x11-a-wrong-foot"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":12,"date":"2003-03-26","title":"Order Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219939/forensic-files-8x12-order-up"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":13,"date":"2003-04-02","title":"When the Dust Settled","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219940/forensic-files-8x13-when-the-dust-settled"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":14,"date":"2003-04-09","title":"A Welcome Intrusion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219941/forensic-files-8x14-a-welcome-intrusion"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":15,"date":"2003-04-16","title":"Within Arm's Reach","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219942/forensic-files-8x15-within-arms-reach"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":16,"date":"2003-04-23","title":"Private Thoughts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219943/forensic-files-8x16-private-thoughts"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":17,"date":"2003-04-30","title":"Brotherhoods","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219944/forensic-files-8x17-brotherhoods"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":18,"date":"2003-05-07","title":"Hair of the Dog","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219945/forensic-files-8x18-hair-of-the-dog"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":19,"date":"2003-05-14","title":"Breaking News","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219946/forensic-files-8x19-breaking-news"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":20,"date":"2003-05-21","title":"All the World's a Stage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219947/forensic-files-8x20-all-the-worlds-a-stage"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":21,"date":"2003-05-28","title":"The Big Chill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219948/forensic-files-8x21-the-big-chill"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":22,"date":"2003-06-04","title":"Bound for Jail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219949/forensic-files-8x22-bound-for-jail"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":23,"date":"2003-06-11","title":"Sphere of Influence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219950/forensic-files-8x23-sphere-of-influence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":24,"date":"2003-06-18","title":"Nailed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219951/forensic-files-8x24-nailed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":25,"date":"2003-06-25","title":"Sign of the Zodiac","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219952/forensic-files-8x25-sign-of-the-zodiac"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":26,"date":"2003-07-01","title":"Letter Perfect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219953/forensic-files-8x26-letter-perfect"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":27,"date":"2003-07-08","title":"True Lies","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219954/forensic-files-8x27-true-lies"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":28,"date":"2003-07-15","title":"Bed of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219955/forensic-files-8x28-bed-of-deceit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":29,"date":"2003-07-22","title":"Smoke in Your Eyes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219956/forensic-files-8x29-smoke-in-your-eyes"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":30,"date":"2003-07-29","title":"Flower Power","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219957/forensic-files-8x30-flower-power"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":31,"date":"2003-08-05","title":"Past Lives","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219958/forensic-files-8x31-past-lives"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":32,"date":"2003-08-12","title":"Over and Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219959/forensic-files-8x32-over-and-out"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":33,"date":"2003-08-12","title":"Death by a Salesman","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219960/forensic-files-8x33-death-by-a-salesman"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":34,"date":"2003-08-26","title":"Web of Seduction","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219961/forensic-files-8x34-web-of-seduction"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":35,"date":"2003-09-02","title":"Grounds for Indictment","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219962/forensic-files-8x35-grounds-for-indictment"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":36,"date":"2003-09-09","title":"Dueling Confessions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219963/forensic-files-8x36-dueling-confessions"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":37,"date":"2003-09-16","title":"Traces of Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219964/forensic-files-8x37-traces-of-truth"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":38,"date":"2003-09-23","title":"Honor Thy Father","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219965/forensic-files-8x38-honor-thy-father"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":39,"date":"2003-09-30","title":"Hack Attack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219966/forensic-files-8x39-hack-attack"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":40,"date":"2003-10-07","title":"Deadly Curve","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219967/forensic-files-8x40-deadly-curve"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":41,"date":"2003-10-14","title":"Visibility Zero","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219968/forensic-files-8x41-visibility-zero"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":42,"date":"2003-10-21","title":"Flashover","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219969/forensic-files-8x42-flashover"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":1,"date":"2004-06-02","title":"Road Rage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219970/forensic-files-9x01-road-rage"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":2,"date":"2004-06-09","title":"Hunter or Hunted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219971/forensic-files-9x02-hunter-or-hunted"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":3,"date":"2004-06-16","title":"In Harm's Way","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219972/forensic-files-9x03-in-harms-way"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":4,"date":"2004-06-23","title":"No Corpus Delicti","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219973/forensic-files-9x04-no-corpus-delicti"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":5,"date":"2004-06-27","title":"News at 11","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219974/forensic-files-9x05-news-at-11"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":6,"date":"2004-07-07","title":"Burning Desire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219975/forensic-files-9x06-burning-desire"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":7,"date":"2004-07-08","title":"Cloak of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219976/forensic-files-9x07-cloak-of-deceit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":8,"date":"2004-07-08","title":"Bad Medicine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219977/forensic-files-9x08-bad-medicine"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":9,"date":"2004-07-15","title":"Stick 'em Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219978/forensic-files-9x09-stick-em-up"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":10,"date":"2004-07-22","title":"Head Games","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219979/forensic-files-9x10-head-games"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":11,"date":"2004-08-11","title":"Making the Collar","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219980/forensic-files-9x11-making-the-collar"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":12,"date":"2004-08-11","title":"Financial Downfall","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219981/forensic-files-9x12-financial-downfall"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":13,"date":"2004-08-23","title":"A Daughter's Journey","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219982/forensic-files-9x13-a-daughters-journey"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":14,"date":"2004-08-24","title":"Over a Barrel","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219983/forensic-files-9x14-over-a-barrel"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":15,"date":"2004-08-25","title":"Pinned by the Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219984/forensic-files-9x15-pinned-by-the-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":16,"date":"2004-08-26","title":"Cries Unheard","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219985/forensic-files-9x16-cries-unheard"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":17,"date":"2004-08-27","title":"Buried Treasure","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219986/forensic-files-9x17-buried-treasure"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":18,"date":"2004-09-08","title":"Badge of Betrayal","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219987/forensic-files-9x18-badge-of-betrayal"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":19,"date":"2004-09-15","title":"Deadly Matrimony","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219988/forensic-files-9x19-deadly-matrimony"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":20,"date":"2004-09-22","title":"Muddy Waters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219989/forensic-files-9x20-muddy-waters"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":21,"date":"2004-09-29","title":"Point of Origin","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219990/forensic-files-9x21-point-of-origin"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":22,"date":"2004-10-06","title":"Seeds for Doubt","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219991/forensic-files-9x22-seeds-for-doubt"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":23,"date":"2004-10-13","title":"Saving Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219992/forensic-files-9x23-saving-face"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":24,"date":"2004-12-08","title":"Northern Exposure","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219993/forensic-files-9x24-northern-exposure"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":25,"date":"2004-12-29","title":"Silk Stalkings","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219994/forensic-files-9x25-silk-stalkings"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":26,"date":"2005-01-05","title":"Fishing for the Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219995/forensic-files-9x26-fishing-for-the-truth"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":27,"date":"2005-01-19","title":"For Love or Money","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219996/forensic-files-9x27-for-love-or-money"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":28,"date":"2005-02-02","title":"South of the Border","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219997/forensic-files-9x28-south-of-the-border"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":29,"date":"2005-02-09","title":"The Stake-Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219998/forensic-files-9x29-the-stake-out"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":30,"date":"2005-03-02","title":"Walking Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219999/forensic-files-9x30-walking-terror"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":1,"date":"2005-04-27","title":"Trial by Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220000/forensic-files-10x01-trial-by-fire"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":2,"date":"2005-05-18","title":"Marked for Life","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220001/forensic-files-10x02-marked-for-life"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":3,"date":"2005-06-01","title":"Plastic Puzzle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220002/forensic-files-10x03-plastic-puzzle"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":4,"date":"2005-06-29","title":"Up in Smoke","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220003/forensic-files-10x04-up-in-smoke"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":5,"date":"2005-07-06","title":"Soiled Plan","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220004/forensic-files-10x05-soiled-plan"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":6,"date":"2005-07-13","title":"Headquarters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220005/forensic-files-10x06-headquarters"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":7,"date":"2005-07-20","title":"One for the Road","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220006/forensic-files-10x07-one-for-the-road"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":8,"date":"2005-07-27","title":"Army of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220007/forensic-files-10x08-army-of-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":9,"date":"2005-08-03","title":"Shear Luck","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220008/forensic-files-10x09-shear-luck"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":10,"date":"2005-08-10","title":"Tagging a Suspect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220009/forensic-files-10x10-tagging-a-suspect"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":11,"date":"2005-08-17","title":"Strong Impressions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220010/forensic-files-10x11-strong-impressions"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":12,"date":"2005-08-24","title":"Cereal Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220011/forensic-files-10x12-cereal-killer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":13,"date":"2005-08-31","title":"Crash Course","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220012/forensic-files-10x13-crash-course"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":14,"date":"2005-09-07","title":"A Leg Up on Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220013/forensic-files-10x14-a-leg-up-on-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":15,"date":"2005-09-14","title":"TIght-Fitting Genes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220014/forensic-files-10x15-tight-fitting-genes"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":16,"date":"2005-09-21","title":"Deadly Valentine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220015/forensic-files-10x16-deadly-valentine"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":17,"date":"2005-09-28","title":"Picture This","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220016/forensic-files-10x17-picture-this"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":18,"date":"2005-10-17","title":"Oily in the Morning","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220017/forensic-files-10x18-oily-in-the-morning"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":19,"date":"2005-10-18","title":"Gold Rush","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220018/forensic-files-10x19-gold-rush"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":20,"date":"2005-10-19","title":"Four on the Floor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220019/forensic-files-10x20-four-on-the-floor"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":21,"date":"2005-10-20","title":"Writers Block","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220020/forensic-files-10x21-writers-block"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":22,"date":"2005-10-21","title":"A Clean Getaway","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220021/forensic-files-10x22-a-clean-getaway"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":23,"date":"2005-11-02","title":"Prints Among Thieves","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220022/forensic-files-10x23-prints-among-thieves"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":24,"date":"2005-11-09","title":"Unholy Alliance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220023/forensic-files-10x24-unholy-alliance"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":25,"date":"2005-11-16","title":"Signed, Sealed, Delivered","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220024/forensic-files-10x25-signed-sealed-delivered"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":26,"date":"2005-11-30","title":"Cop Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220025/forensic-files-10x26-cop-out"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":27,"date":"2005-12-07","title":"Summer Obsession","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220026/forensic-files-10x27-summer-obsession"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":28,"date":"2005-12-07","title":"Enemy Within","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238386/forensic-files-10x28-enemy-within"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":29,"date":"2005-12-14","title":"Elemental Clue","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220027/forensic-files-10x29-elemental-clue"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":30,"date":"2005-12-21","title":"Moss, Not Grass","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220028/forensic-files-10x30-moss-not-grass"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":31,"date":"2005-12-28","title":"Material Witness","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220029/forensic-files-10x31-material-witness"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":32,"date":"2006-01-04","title":"Garden of Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220030/forensic-files-10x32-garden-of-evil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":33,"date":"2006-01-11","title":"Sunday School Ambush","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220031/forensic-files-10x33-sunday-school-ambush"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":34,"date":"2006-01-18","title":"Penchant for Poison","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220032/forensic-files-10x34-penchant-for-poison"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":35,"date":"2006-01-25","title":"Bump in the Night","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220033/forensic-files-10x35-bump-in-the-night"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":36,"date":"2006-02-01","title":"Sole Searching","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220034/forensic-files-10x36-sole-searching"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":37,"date":"2006-02-08","title":"Murder on the Menu","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238380/forensic-files-10x37-murder-on-the-menu"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":38,"date":"2006-02-15","title":"Hot on the Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238381/forensic-files-10x38-hot-on-the-trail"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":39,"date":"2006-02-22","title":"High 'n' Dry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238382/forensic-files-10x39-high-n-dry"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":40,"date":"2006-03-01","title":"To the Viktor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238383/forensic-files-10x40-to-the-viktor"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":41,"date":"2006-03-08","title":"Wired for Disaster","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238384/forensic-files-10x41-wired-for-disaster"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":42,"date":"2006-03-15","title":"Wood-be Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238385/forensic-files-10x42-wood-be-killer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":1,"date":"2006-07-19","title":"Naughty or Nyce","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238387/forensic-files-11x01-naughty-or-nyce"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":2,"date":"2006-07-26","title":"Going for Broke","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238388/forensic-files-11x02-going-for-broke"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":3,"date":"2006-08-09","title":"Just Desserts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238389/forensic-files-11x03-just-desserts"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":4,"date":"2006-08-16","title":"Sunday's Wake","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238390/forensic-files-11x04-sundays-wake"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":5,"date":"2006-08-23","title":"Shattered Dreams","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238391/forensic-files-11x05-shattered-dreams"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":6,"date":"2006-08-23","title":"Dockter Visit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238392/forensic-files-11x06-dockter-visit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":7,"date":"2006-08-30","title":"Murder, She Wrote","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238393/forensic-files-11x07-murder-she-wrote"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":8,"date":"2006-09-06","title":"Concrete Alibi","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238394/forensic-files-11x08-concrete-alibi"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":9,"date":"2006-09-13","title":"Key Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238395/forensic-files-11x09-key-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":10,"date":"2006-09-20","title":"The Gambler","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238396/forensic-files-11x10-the-gambler"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":11,"date":"2006-09-27","title":"Weakest Link","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238397/forensic-files-11x11-weakest-link"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":12,"date":"2006-10-04","title":"Capitol Crimes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238398/forensic-files-11x12-capitol-crimes"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":13,"date":"2006-10-11","title":"Undertaken","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238399/forensic-files-11x13-undertaken"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":14,"date":"2006-10-18","title":"Dark Waters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238400/forensic-files-11x14-dark-waters"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":15,"date":"2006-10-25","title":"Nice Threads","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238401/forensic-files-11x15-nice-threads"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":16,"date":"2006-11-01","title":"Grave Danger","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238402/forensic-files-11x16-grave-danger"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":17,"date":"2006-11-08","title":"Internal Affair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238403/forensic-files-11x17-internal-affair"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":18,"date":"2006-11-15","title":"A Case of the Flue","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238404/forensic-files-11x18-a-case-of-the-flue"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":19,"date":"2006-11-22","title":"No Safe Place","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238405/forensic-files-11x19-no-safe-place"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":20,"date":"2006-11-29","title":"Live Wire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238406/forensic-files-11x20-live-wire"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":21,"date":"2006-12-06","title":"Van-ished","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238407/forensic-files-11x21-van-ished"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":22,"date":"2006-12-13","title":"A Novel Idea","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238408/forensic-files-11x22-a-novel-idea"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":23,"date":"2006-12-20","title":"Chief Suspect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238409/forensic-files-11x23-chief-suspect"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":24,"date":"2006-12-27","title":"Water Hazard","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238410/forensic-files-11x24-water-hazard"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":25,"date":"2007-01-03","title":"Shell Game","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238411/forensic-files-11x25-shell-game"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":26,"date":"2007-01-10","title":"Ring Him Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238412/forensic-files-11x26-ring-him-up"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":27,"date":"2007-01-17","title":"Killer Impression","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238413/forensic-files-11x27-killer-impression"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":28,"date":"2007-01-24","title":"If I Were You","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238414/forensic-files-11x28-if-i-were-you"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":29,"date":"2007-01-31","title":"As the Tide Turns","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238415/forensic-files-11x29-as-the-tide-turns"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":30,"date":"2007-02-07","title":"A Tight Leash","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238416/forensic-files-11x30-a-tight-leash"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":31,"date":"2007-02-14","title":"Muffled Cries","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238417/forensic-files-11x31-muffled-cries"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":32,"date":"2007-02-21","title":"Critical Maneuver","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238418/forensic-files-11x32-critical-maneuver"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":33,"date":"2007-02-28","title":"Skirting the Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238419/forensic-files-11x33-skirting-the-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":34,"date":"2007-03-07","title":"Small Town Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238420/forensic-files-11x34-small-town-terror"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":35,"date":"2007-03-14","title":"Fresh Heir","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238421/forensic-files-11x35-fresh-heir"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":36,"date":"2007-03-21","title":"Ticker Tape","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238422/forensic-files-11x36-ticker-tape"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":37,"date":"2007-03-28","title":"Step By Step","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238423/forensic-files-11x37-step-by-step"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":38,"date":"2007-04-04","title":"Blanket of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238424/forensic-files-11x38-blanket-of-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":39,"date":"2007-04-11","title":"Fired-Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238425/forensic-files-11x39-fired-up"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":40,"date":"2007-04-18","title":"Two in a Million","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238426/forensic-files-11x40-two-in-a-million"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":41,"date":"2007-04-25","title":"Bitter Brew","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238427/forensic-files-11x41-bitter-brew"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":42,"date":"2007-05-02","title":"Message in a Bottle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238428/forensic-files-11x42-message-in-a-bottle"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":1,"date":"2007-09-26","title":"Sharper Image","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238429/forensic-files-12x01-sharper-image"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":2,"date":"2007-10-03","title":"Insulated Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238430/forensic-files-12x02-insulated-evidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":3,"date":"2007-10-10","title":"Cold Hearted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238431/forensic-files-12x03-cold-hearted"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":4,"date":"2007-10-17","title":"Wheel of Misfortune","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238432/forensic-files-12x04-wheel-of-misfortune"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":5,"date":"2007-10-24","title":"Quite a Spectacle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238433/forensic-files-12x05-quite-a-spectacle"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":6,"date":"2007-10-31","title":"Transaction Failed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238434/forensic-files-12x06-transaction-failed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":7,"date":"2007-11-07","title":"The Day the Music Died","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238435/forensic-files-12x07-the-day-the-music-died"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":8,"date":"2007-11-14","title":"Sole Survivor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238436/forensic-files-12x08-sole-survivor"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":9,"date":"2007-11-21","title":"Insignificant Others","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238437/forensic-files-12x09-insignificant-others"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":10,"date":"2007-11-28","title":"Catch 22","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238438/forensic-files-12x10-catch-22"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":11,"date":"2007-12-17","title":"A Cinderella Story","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238439/forensic-files-12x11-a-cinderella-story"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":12,"date":"2008-01-07","title":"Screen Pass","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238440/forensic-files-12x12-screen-pass"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":13,"date":"2008-01-14","title":"Pressed for Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238441/forensic-files-12x13-pressed-for-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":14,"date":"2008-01-21","title":"Finger Pane","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238442/forensic-files-12x14-finger-pane"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":15,"date":"2008-01-28","title":"Good as Gold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238443/forensic-files-12x15-good-as-gold"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":16,"date":"2008-02-06","title":"Freedom Fighter","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238444/forensic-files-12x16-freedom-fighter"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":17,"date":"2008-02-25","title":"Dog Day Afternoon","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238445/forensic-files-12x17-dog-day-afternoon"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":18,"date":"2008-03-07","title":"Shattered Innocence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238446/forensic-files-12x18-shattered-innocence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":19,"date":"2008-03-14","title":"All Butt Certain","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238447/forensic-files-12x19-all-butt-certain"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":20,"date":"2008-04-18","title":"Jean Pool","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238448/forensic-files-12x20-jean-pool"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":21,"date":"2008-05-09","title":"Traffic Violations","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238449/forensic-files-12x21-traffic-violations"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":22,"date":"2008-05-23","title":"Brotherly Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238450/forensic-files-12x22-brotherly-love"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":23,"date":"2008-06-06","title":"Disrobed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238451/forensic-files-12x23-disrobed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":24,"date":"2008-06-20","title":"Driven to Silence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238452/forensic-files-12x24-driven-to-silence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":25,"date":"2008-06-28","title":"Printed Proof","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238453/forensic-files-12x25-printed-proof"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":26,"date":"2008-07-18","title":"About Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238454/forensic-files-12x26-about-face"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":27,"date":"2008-07-25","title":"In the Bag","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238455/forensic-files-12x27-in-the-bag"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":28,"date":"2008-08-08","title":"Yes, In Deed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238456/forensic-files-12x28-yes-in-deed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":29,"date":"2008-08-22","title":"Guarded Secrets","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238457/forensic-files-12x29-guarded-secrets"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":30,"date":"2008-08-29","title":"Smoking Out a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238458/forensic-files-12x30-smoking-out-a-killer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":1,"date":"2008-09-12","title":"Frozen Assets","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238459/forensic-files-13x01-frozen-assets"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":2,"date":"2008-09-19","title":"House Hunting","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238460/forensic-files-13x02-house-hunting"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":3,"date":"2008-10-03","title":"Shoot to Thrill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238461/forensic-files-13x03-shoot-to-thrill"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":4,"date":"2008-10-10","title":"Political Thriller","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238462/forensic-files-13x04-political-thriller"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":5,"date":"2008-10-24","title":"Double Cross","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238463/forensic-files-13x05-double-cross"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":6,"date":"2008-10-31","title":"Dancing with the Devil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238464/forensic-files-13x06-dancing-with-the-devil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":7,"date":"2008-11-14","title":"Last Dance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238465/forensic-files-13x07-last-dance"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":8,"date":"2008-11-21","title":"Constructive Criticism","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238466/forensic-files-13x08-constructive-criticism"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":9,"date":"2008-12-05","title":"Home Evasion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238467/forensic-files-13x09-home-evasion"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":10,"date":"2008-12-12","title":"Window Watcher","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238468/forensic-files-13x10-window-watcher"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":11,"date":"2008-12-19","title":"Stranger in the Night","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238469/forensic-files-13x11-stranger-in-the-night"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":12,"date":"2009-01-09","title":"Kidnapping (The Ginger Hayes Murder)","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238470/forensic-files-13x12-kidnapping-the-ginger-hayes-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":13,"date":"2009-01-16","title":"Sands of Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238471/forensic-files-13x13-sands-of-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":14,"date":"2009-01-23","title":"Calculated Coincidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238472/forensic-files-13x14-calculated-coincidence"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":15,"date":"2009-01-30","title":"Sworded Scheme","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238473/forensic-files-13x15-sworded-scheme"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":16,"date":"2009-02-20","title":"Unmasked (The Stevie Green Case)","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238474/forensic-files-13x16-unmasked-the-stevie-green-case"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":17,"date":"2009-03-13","title":"Fashion Police","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238475/forensic-files-13x17-fashion-police"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":18,"date":"2009-04-03","title":"Church Dis-service","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238476/forensic-files-13x18-church-dis-service"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":19,"date":"2009-04-17","title":"Seedy Intentions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238477/forensic-files-13x19-seedy-intentions"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":20,"date":"2009-05-15","title":"DNA Dragnet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238478/forensic-files-13x20-dna-dragnet"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":21,"date":"2009-05-22","title":"Smiley Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238479/forensic-files-13x21-smiley-face"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":22,"date":"2009-06-05","title":"Dirty Laundry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238480/forensic-files-13x22-dirty-laundry"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":23,"date":"2009-06-12","title":"Drowning Sorrows","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238481/forensic-files-13x23-drowning-sorrows"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":24,"date":"2009-06-19","title":"As Fault","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238482/forensic-files-13x24-as-fault"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":25,"date":"2009-07-17","title":"Family Ties","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238483/forensic-files-13x25-family-ties"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":26,"date":"2009-07-24","title":"Trouble Brewing","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238484/forensic-files-13x26-trouble-brewing"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":27,"date":"2009-08-14","title":"Holy Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238485/forensic-files-13x27-holy-terror"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":28,"date":"2009-09-04","title":"Needle in a Haystack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238486/forensic-files-13x28-needle-in-a-haystack"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":29,"date":"2009-09-11","title":"Room with a View","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238487/forensic-files-13x29-room-with-a-view"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":30,"date":"2009-09-25","title":"Dollars and Sense","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238488/forensic-files-13x30-dollars-and-sense"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":31,"date":"2009-10-02","title":"Hair Line","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238489/forensic-files-13x31-hair-line"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":32,"date":"2009-10-16","title":"All That Glitters is Gold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238490/forensic-files-13x32-all-that-glitters-is-gold"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":33,"date":"2009-10-30","title":"Deadly Rebellion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238491/forensic-files-13x33-deadly-rebellion"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":34,"date":"2009-11-13","title":"Sign of the Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238492/forensic-files-13x34-sign-of-the-crime"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":35,"date":"2009-11-20","title":"Covet Thy Neighbor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238493/forensic-files-13x35-covet-thy-neighbor"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":36,"date":"2009-12-11","title":"Writing on the Wall","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238494/forensic-files-13x36-writing-on-the-wall"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":37,"date":"2010-01-08","title":"Hundreds of Reasons","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238495/forensic-files-13x37-hundreds-of-reasons"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":38,"date":"2010-02-05","title":"Cold Feet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238496/forensic-files-13x38-cold-feet"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":39,"date":"2010-02-19","title":"Separation Anxiety","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238497/forensic-files-13x39-separation-anxiety"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":40,"date":"2010-03-05","title":"Office Visit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238498/forensic-files-13x40-office-visit"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":41,"date":"2010-03-12","title":"Palm Saturday","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238499/forensic-files-13x41-palm-saturday"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":42,"date":"2010-03-19","title":"Shoe-In for Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238500/forensic-files-13x42-shoe-in-for-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":43,"date":"2010-04-02","title":"Family Interrupted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238501/forensic-files-13x43-family-interrupted"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":44,"date":"2010-04-16","title":"Runaway Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238502/forensic-files-13x44-runaway-love"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":45,"date":"2010-04-30","title":"Watchful Eye","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238503/forensic-files-13x45-watchful-eye"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":46,"date":"2010-05-14","title":"Waste Mis-Management","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238504/forensic-files-13x46-waste-mis-management"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":47,"date":"2010-05-28","title":"Dirty Little Seacret","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238505/forensic-files-13x47-dirty-little-seacret"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":48,"date":"2010-06-11","title":"Lights Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238506/forensic-files-13x48-lights-out"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":49,"date":"2010-06-18","title":"Pet Rock","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238507/forensic-files-13x49-pet-rock"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":50,"date":"2010-07-09","title":"Best Foot Forward","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238508/forensic-files-13x50-best-foot-forward"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":1,"date":"2010-09-10","title":"Purebread Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238509/forensic-files-14x01-purebread-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":2,"date":"2010-09-24","title":"Hear No Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238510/forensic-files-14x02-hear-no-evil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":3,"date":"2010-10-08","title":"Hell's Kitchen","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238511/forensic-files-14x03-hells-kitchen"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":4,"date":"2010-10-22","title":"Three's a Crowd","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238512/forensic-files-14x04-threes-a-crowd"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":5,"date":"2010-11-05","title":"A Squire's Riches","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238513/forensic-files-14x05-a-squires-riches"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":6,"date":"2010-11-19","title":"Home of the Brave","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238514/forensic-files-14x06-home-of-the-brave"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":7,"date":"2010-12-03","title":"Freeze Framed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238515/forensic-files-14x07-freeze-framed"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":8,"date":"2010-12-17","title":"Touch of Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238516/forensic-files-14x08-touch-of-evil"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":9,"date":"2010-12-31","title":"Textbook Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238517/forensic-files-14x09-textbook-murder"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":10,"date":"2011-01-14","title":"Filtered Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238518/forensic-files-14x10-filtered-out"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":11,"date":"2011-01-28","title":"Water Logged","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238519/forensic-files-14x11-water-logged"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":12,"date":"2011-02-11","title":"Social Circle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238520/forensic-files-14x12-social-circle"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":13,"date":"2011-02-25","title":"Low Maintenance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238521/forensic-files-14x13-low-maintenance"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":14,"date":"2011-03-11","title":"Fate Date","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238522/forensic-files-14x14-fate-date"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":15,"date":"2011-03-25","title":"Trail of a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238523/forensic-files-14x15-trail-of-a-killer"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":16,"date":"2011-04-08","title":"Gone Ballistic","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238524/forensic-files-14x16-gone-ballistic"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":17,"date":"2011-04-22","title":"Seeing Red","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238525/forensic-files-14x17-seeing-red"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":18,"date":"2011-05-06","title":"Auto-Motive","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238526/forensic-files-14x18-auto-motive"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":19,"date":"2011-05-20","title":"Skeleton Key","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238527/forensic-files-14x19-skeleton-key"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":20,"date":"2011-06-03","title":"Funeral Services","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238528/forensic-files-14x20-funeral-services"},
-    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":21,"date":"2011-06-17","title":"Expert Witness","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238529/forensic-files-14x21-expert-witness"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":1,"date":"1996-04-22","title":"The Disappearance of Helle Crafts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219784/forensic-files-1x01-the-disappearance-of-helle-crafts","releaseAt":"1996-04-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":2,"date":"1996-10-04","title":"The Magic Bullet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219785/forensic-files-1x02-the-magic-bullet","releaseAt":"1996-10-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":3,"date":"1996-10-11","title":"The House That Roared","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219786/forensic-files-1x03-the-house-that-roared","releaseAt":"1996-10-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":4,"date":"1996-10-18","title":"The Footpath Murders","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219787/forensic-files-1x04-the-footpath-murders","releaseAt":"1996-10-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":5,"date":"1996-10-24","title":"Planted Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219788/forensic-files-1x05-planted-evidence","releaseAt":"1996-10-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":6,"date":"1996-11-01","title":"Southside Strangler","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219789/forensic-files-1x06-southside-strangler","releaseAt":"1996-11-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":7,"date":"1996-11-08","title":"Legionnaires' Disease","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219790/forensic-files-1x07-legionnaires-disease","releaseAt":"1996-11-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":8,"date":"1996-11-15","title":"The Wilson Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219791/forensic-files-1x08-the-wilson-murder","releaseAt":"1996-11-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":9,"date":"1996-11-22","title":"Deadly Neighborhoods","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219792/forensic-files-1x09-deadly-neighborhoods","releaseAt":"1996-11-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":10,"date":"1996-11-29","title":"Insect Clues","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219793/forensic-files-1x10-insect-clues","releaseAt":"1996-11-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":11,"date":"1996-12-06","title":"Outbreak","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219794/forensic-files-1x11-outbreak","releaseAt":"1996-12-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":12,"date":"1996-12-13","title":"The List Murders","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219795/forensic-files-1x12-the-list-murders","releaseAt":"1996-12-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":1,"episode":13,"date":"1996-12-20","title":"Raw Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219796/forensic-files-1x13-raw-terror","releaseAt":"1996-12-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":1,"date":"1997-10-03","title":"The Common Thread","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219797/forensic-files-2x01-the-common-thread","releaseAt":"1997-10-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":2,"date":"1997-10-10","title":"The Dirty Deed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219798/forensic-files-2x02-the-dirty-deed","releaseAt":"1997-10-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":3,"date":"1997-10-17","title":"Killer Fog","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219799/forensic-files-2x03-killer-fog","releaseAt":"1997-10-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":4,"date":"1997-10-24","title":"Sex, Lies & DNA","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219800/forensic-files-2x04-sex-lies-dna","releaseAt":"1997-10-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":5,"date":"1997-10-31","title":"Bitter Potion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219801/forensic-files-2x05-bitter-potion","releaseAt":"1997-10-31T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":6,"date":"1997-11-07","title":"The Blood Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219802/forensic-files-2x06-the-blood-trail","releaseAt":"1997-11-07T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":7,"date":"1997-11-21","title":"Fatal Fungus","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219803/forensic-files-2x07-fatal-fungus","releaseAt":"1997-11-21T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":8,"date":"1997-11-14","title":"Charred Remains","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219804/forensic-files-2x08-charred-remains","releaseAt":"1997-11-14T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":9,"date":"1997-12-05","title":"Something's Fishy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219805/forensic-files-2x09-somethings-fishy","releaseAt":"1997-12-05T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":10,"date":"1997-12-19","title":"Sealed with a Kiss","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219806/forensic-files-2x10-sealed-with-a-kiss","releaseAt":"1997-12-19T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":11,"date":"1998-01-16","title":"Postal Mortem","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219807/forensic-files-2x11-postal-mortem","releaseAt":"1998-01-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":12,"date":"1998-02-06","title":"Micro-Clues","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219808/forensic-files-2x12-micro-clues","releaseAt":"1998-02-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":2,"episode":13,"date":"1998-03-06","title":"Deadly Parasites","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219809/forensic-files-2x13-deadly-parasites","releaseAt":"1998-03-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":1,"date":"1998-10-02","title":"Without a Trace","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219810/forensic-files-3x01-without-a-trace","releaseAt":"1998-10-02T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":2,"date":"1998-10-09","title":"Knot for Everyone","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219811/forensic-files-3x02-knot-for-everyone","releaseAt":"1998-10-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":3,"date":"1998-10-16","title":"The Talking Skull","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219812/forensic-files-3x03-the-talking-skull","releaseAt":"1998-10-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":4,"date":"1998-10-23","title":"Foreign Body","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219813/forensic-files-3x04-foreign-body","releaseAt":"1998-10-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":5,"date":"1998-10-30","title":"Deadly Delivery","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219814/forensic-files-3x05-deadly-delivery","releaseAt":"1998-10-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":6,"date":"1998-11-06","title":"Similar Circumstances","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219815/forensic-files-3x06-similar-circumstances","releaseAt":"1998-11-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":7,"date":"1998-11-13","title":"Grave Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219816/forensic-files-3x07-grave-evidence","releaseAt":"1998-11-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":8,"date":"1998-11-20","title":"Deadly Formula","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219817/forensic-files-3x08-deadly-formula","releaseAt":"1998-11-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":9,"date":"1998-12-04","title":"Beaten by a Hair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219818/forensic-files-3x09-beaten-by-a-hair","releaseAt":"1998-12-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":10,"date":"1998-12-04","title":"Crime Seen","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219819/forensic-files-3x10-crime-seen","releaseAt":"1998-12-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":11,"date":"1999-01-08","title":"Speck of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219820/forensic-files-3x11-speck-of-evidence","releaseAt":"1999-01-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":12,"date":"1999-01-15","title":"Broken Bond","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219821/forensic-files-3x12-broken-bond","releaseAt":"1999-01-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":3,"episode":13,"date":"1999-01-22","title":"Out of the Ashes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219822/forensic-files-3x13-out-of-the-ashes","releaseAt":"1999-01-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":1,"date":"1999-10-07","title":"Invisible Intruder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219824/forensic-files-4x01-invisible-intruder","releaseAt":"1999-10-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":2,"date":"1999-10-14","title":"The Killing Room","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219825/forensic-files-4x02-the-killing-room","releaseAt":"1999-10-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":3,"date":"1999-10-21","title":"Ultimate Betrayal","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219826/forensic-files-4x03-ultimate-betrayal","releaseAt":"1999-10-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":4,"date":"1999-10-28","title":"Cement the Case","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219827/forensic-files-4x04-cement-the-case","releaseAt":"1999-10-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":5,"date":"1999-11-04","title":"Innocence Lost","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219828/forensic-files-4x05-innocence-lost","releaseAt":"1999-11-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":6,"date":"1999-11-11","title":"'Til Death Do Us Part","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219829/forensic-files-4x06-til-death-do-us-part","releaseAt":"1999-11-11T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":7,"date":"1999-11-18","title":"Ties That Bind","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219830/forensic-files-4x07-ties-that-bind","releaseAt":"1999-11-18T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":8,"date":"1999-11-25","title":"Body of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219831/forensic-files-4x08-body-of-evidence","releaseAt":"1999-11-25T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":9,"date":"1999-12-02","title":"Accident or Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219832/forensic-files-4x09-accident-or-murder","releaseAt":"1999-12-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":10,"date":"1999-12-09","title":"Core Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219833/forensic-files-4x10-core-evidence","releaseAt":"1999-12-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":11,"date":"1999-12-16","title":"Haunting Vision","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219834/forensic-files-4x11-haunting-vision","releaseAt":"1999-12-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":12,"date":"1999-12-23","title":"With Every Breath","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219835/forensic-files-4x12-with-every-breath","releaseAt":"1999-12-23T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":4,"episode":13,"date":"1999-12-30","title":"Slippery Motives","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219836/forensic-files-4x13-slippery-motives","releaseAt":"1999-12-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":1,"date":"2000-09-13","title":"Badge of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219837/forensic-files-5x01-badge-of-deceit","releaseAt":"2000-09-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":2,"date":"2000-09-20","title":"Dew Process","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219838/forensic-files-5x02-dew-process","releaseAt":"2000-09-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":3,"date":"2000-09-27","title":"A Woman Scorned","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219839/forensic-files-5x03-a-woman-scorned","releaseAt":"2000-09-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":4,"date":"2000-10-04","title":"A Voice from Beyond","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219840/forensic-files-5x04-a-voice-from-beyond","releaseAt":"2000-10-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":5,"date":"2000-10-11","title":"Burning Ambition","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219841/forensic-files-5x05-burning-ambition","releaseAt":"2000-10-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":6,"date":"2000-10-18","title":"Memories","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219842/forensic-files-5x06-memories","releaseAt":"2000-10-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":7,"date":"2000-10-25","title":"Trail of Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219843/forensic-files-5x07-trail-of-truth","releaseAt":"2000-10-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":8,"date":"2000-11-01","title":"Material Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219844/forensic-files-5x08-material-evidence","releaseAt":"2000-11-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":9,"date":"2000-11-08","title":"Killigraphy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219845/forensic-files-5x09-killigraphy","releaseAt":"2000-11-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":10,"date":"2000-11-15","title":"Nursery Crimes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219846/forensic-files-5x10-nursery-crimes","releaseAt":"2000-11-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":11,"date":"2000-11-22","title":"Lasting Impression","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219847/forensic-files-5x11-lasting-impression","releaseAt":"2000-11-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":12,"date":"2000-11-29","title":"Foundation of Lies","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219848/forensic-files-5x12-foundation-of-lies","releaseAt":"2000-11-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":13,"date":"2000-12-06","title":"Unholy Vows","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219849/forensic-files-5x13-unholy-vows","releaseAt":"2000-12-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":14,"date":"2000-12-13","title":"Broken Promises","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219850/forensic-files-5x14-broken-promises","releaseAt":"2000-12-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":15,"date":"2000-12-20","title":"Time Will Tell","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219851/forensic-files-5x15-time-will-tell","releaseAt":"2000-12-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":16,"date":"2000-12-27","title":"Second Shot at Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219852/forensic-files-5x16-second-shot-at-love","releaseAt":"2000-12-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":17,"date":"2001-01-03","title":"Journey to Justice","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219853/forensic-files-5x17-journey-to-justice","releaseAt":"2001-01-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":18,"date":"2001-01-10","title":"Video Diary","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219854/forensic-files-5x18-video-diary","releaseAt":"2001-01-10T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":5,"episode":19,"date":"2001-01-17","title":"Deadly Knowledge","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219855/forensic-files-5x19-deadly-knowledge","releaseAt":"2001-01-17T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":1,"date":"2001-05-08","title":"Missing in Time","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219856/forensic-files-6x01-missing-in-time","releaseAt":"2001-05-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":2,"date":"2001-05-22","title":"Missing Pearl","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219857/forensic-files-6x02-missing-pearl","releaseAt":"2001-05-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":3,"date":"2001-06-05","title":"Man's Best Friend?","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219858/forensic-files-6x03-mans-best-friend","releaseAt":"2001-06-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":4,"date":"2001-06-12","title":"Hand Delivered","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219859/forensic-files-6x04-hand-delivered","releaseAt":"2001-06-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":5,"date":"2001-06-19","title":"Death Play","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219860/forensic-files-6x05-death-play","releaseAt":"2001-06-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":6,"date":"2001-06-26","title":"Fire Dot Com","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219861/forensic-files-6x06-fire-dot-com","releaseAt":"2001-06-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":7,"date":"2001-07-03","title":"Mistaken for Dead","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219862/forensic-files-6x07-mistaken-for-dead","releaseAt":"2001-07-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":8,"date":"2001-07-10","title":"Frozen Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219863/forensic-files-6x08-frozen-evidence","releaseAt":"2001-07-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":9,"date":"2001-07-17","title":"Soft Touch","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219864/forensic-files-6x09-soft-touch","releaseAt":"2001-07-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":10,"date":"2001-07-24","title":"Church Disappearance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219865/forensic-files-6x10-church-disappearance","releaseAt":"2001-07-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":11,"date":"2001-07-31","title":"Photo Finish","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219866/forensic-files-6x11-photo-finish","releaseAt":"2001-07-31T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":12,"date":"2001-08-06","title":"Whodunit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219867/forensic-files-6x12-whodunit","releaseAt":"2001-08-06T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":13,"date":"2001-08-13","title":"Horse Play","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219868/forensic-files-6x13-horse-play","releaseAt":"2001-08-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":14,"date":"2001-08-20","title":"Treads and Threads","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219869/forensic-files-6x14-treads-and-threads","releaseAt":"2001-08-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":15,"date":"2001-08-27","title":"Killer's Cattle-Log","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219870/forensic-files-6x15-killers-cattle-log","releaseAt":"2001-08-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":16,"date":"2001-09-04","title":"Skin of Her Teeth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219871/forensic-files-6x16-skin-of-her-teeth","releaseAt":"2001-09-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":17,"date":"2001-09-11","title":"Line of Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219872/forensic-files-6x17-line-of-fire","releaseAt":"2001-09-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":18,"date":"2001-09-18","title":"Bad Blood","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219873/forensic-files-6x18-bad-blood","releaseAt":"2001-09-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":19,"date":"2001-09-25","title":"Pure Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219874/forensic-files-6x19-pure-evil","releaseAt":"2001-09-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":20,"date":"2001-10-02","title":"Root of All Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219875/forensic-files-6x20-root-of-all-evil","releaseAt":"2001-10-02T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":21,"date":"2001-10-09","title":"Where the Blood Drops","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219876/forensic-files-6x21-where-the-blood-drops","releaseAt":"2001-10-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":22,"date":"2001-10-16","title":"Punch Line","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219877/forensic-files-6x22-punch-line","releaseAt":"2001-10-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":23,"date":"2001-10-23","title":"Sibling Rivalry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219878/forensic-files-6x23-sibling-rivalry","releaseAt":"2001-10-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":24,"date":"2001-10-30","title":"Pastoral Care","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219879/forensic-files-6x24-pastoral-care","releaseAt":"2001-10-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":25,"date":"2001-11-06","title":"Bagging a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219880/forensic-files-6x25-bagging-a-killer","releaseAt":"2001-11-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":26,"date":"2001-11-13","title":"Double Trouble","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219881/forensic-files-6x26-double-trouble","releaseAt":"2001-11-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":27,"date":"2001-11-20","title":"Cats, Flies and Snapshots","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219882/forensic-files-6x27-cats-flies-and-snapshots","releaseAt":"2001-11-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":28,"date":"2001-11-27","title":"Naked Justice","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219883/forensic-files-6x28-naked-justice","releaseAt":"2001-11-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":29,"date":"2001-12-04","title":"Treading Not So Lightly","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219884/forensic-files-6x29-treading-not-so-lightly","releaseAt":"2001-12-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":6,"episode":30,"date":"2001-12-11","title":"Shopping Spree","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219885/forensic-files-6x30-shopping-spree","releaseAt":"2001-12-11T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":1,"date":"2002-01-02","title":"The Cheater","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219886/forensic-files-7x01-the-cheater","releaseAt":"2002-01-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":2,"date":"2002-01-09","title":"Forever Hold Your Peace","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219887/forensic-files-7x02-forever-hold-your-peace","releaseAt":"2002-01-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":3,"date":"2002-01-16","title":"Reel Danger","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219888/forensic-files-7x03-reel-danger","releaseAt":"2002-01-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":4,"date":"2002-01-23","title":"Who's Your Daddy","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219889/forensic-files-7x04-whos-your-daddy","releaseAt":"2002-01-23T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":5,"date":"2002-01-30","title":"The Alibi","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219890/forensic-files-7x05-the-alibi","releaseAt":"2002-01-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":6,"date":"2002-02-06","title":"A Bite Out of Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219891/forensic-files-7x06-a-bite-out-of-crime","releaseAt":"2002-02-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":7,"date":"2002-02-13","title":"Purr-fect Match","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219892/forensic-files-7x07-purr-fect-match","releaseAt":"2002-02-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":8,"date":"2002-02-20","title":"Bio-Attack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219893/forensic-files-7x08-bio-attack","releaseAt":"2002-02-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":9,"date":"2002-02-27","title":"A Shot in the Dark","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219894/forensic-files-7x09-a-shot-in-the-dark","releaseAt":"2002-02-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":10,"date":"2002-03-06","title":"Without a Prayer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219895/forensic-files-7x10-without-a-prayer","releaseAt":"2002-03-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":11,"date":"2002-03-13","title":"A Clutch of Witnesses","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219896/forensic-files-7x11-a-clutch-of-witnesses","releaseAt":"2002-03-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":12,"date":"2002-03-20","title":"Scout's Honor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219897/forensic-files-7x12-scouts-honor","releaseAt":"2002-03-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":13,"date":"2002-03-27","title":"A Touching Recollection","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219898/forensic-files-7x13-a-touching-recollection","releaseAt":"2002-03-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":14,"date":"2002-04-03","title":"A Leg to Stand On","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219899/forensic-files-7x14-a-leg-to-stand-on","releaseAt":"2002-04-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":15,"date":"2002-04-10","title":"Partners in Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219900/forensic-files-7x15-partners-in-crime","releaseAt":"2002-04-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":16,"date":"2002-04-17","title":"Within a Hair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219901/forensic-files-7x16-within-a-hair","releaseAt":"2002-04-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":17,"date":"2002-04-24","title":"Chief Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219902/forensic-files-7x17-chief-evidence","releaseAt":"2002-04-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":18,"date":"2002-05-01","title":"A Bitter Pill to Swallow","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219903/forensic-files-7x18-a-bitter-pill-to-swallow","releaseAt":"2002-05-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":19,"date":"2002-05-08","title":"Sip of Sins","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219904/forensic-files-7x19-sip-of-sins","releaseAt":"2002-05-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":20,"date":"2002-05-15","title":"Telltale Tracks","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219905/forensic-files-7x20-telltale-tracks","releaseAt":"2002-05-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":21,"date":"2002-05-22","title":"Ghost in the Machine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219906/forensic-files-7x21-ghost-in-the-machine","releaseAt":"2002-05-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":22,"date":"2002-05-29","title":"Frozen in Time","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219907/forensic-files-7x22-frozen-in-time","releaseAt":"2002-05-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":23,"date":"2002-06-05","title":"Cold Storage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219908/forensic-files-7x23-cold-storage","releaseAt":"2002-06-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":24,"date":"2002-06-12","title":"The Metal Business","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219909/forensic-files-7x24-the-metal-business","releaseAt":"2002-06-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":25,"date":"2002-06-19","title":"Dressed to Kill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219910/forensic-files-7x25-dressed-to-kill","releaseAt":"2002-06-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":26,"date":"2002-06-26","title":"Palm Print Conviction","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219911/forensic-files-7x26-palm-print-conviction","releaseAt":"2002-06-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":27,"date":"2002-07-03","title":"A Vow of Silence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219912/forensic-files-7x27-a-vow-of-silence","releaseAt":"2002-07-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":28,"date":"2002-07-10","title":"Elephant Tracks","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219913/forensic-files-7x28-elephant-tracks","releaseAt":"2002-07-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":29,"date":"2002-07-17","title":"A Bag of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219914/forensic-files-7x29-a-bag-of-evidence","releaseAt":"2002-07-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":30,"date":"2002-07-24","title":"Tooth or Consequences","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219915/forensic-files-7x30-tooth-or-consequences","releaseAt":"2002-07-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":31,"date":"2002-07-31","title":"Sniffing Revenge","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219916/forensic-files-7x31-sniffing-revenge","releaseAt":"2002-07-31T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":32,"date":"2002-08-07","title":"Sleight of Hand","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219917/forensic-files-7x32-sleight-of-hand","releaseAt":"2002-08-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":33,"date":"2002-08-14","title":"Scratching the Surface","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219918/forensic-files-7x33-scratching-the-surface","releaseAt":"2002-08-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":34,"date":"2002-08-21","title":"Fire Proof","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219919/forensic-files-7x34-fire-proof","releaseAt":"2002-08-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":35,"date":"2002-08-28","title":"X Marks the Spot","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219920/forensic-files-7x35-x-marks-the-spot","releaseAt":"2002-08-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":36,"date":"2002-09-04","title":"All Charged Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219921/forensic-files-7x36-all-charged-up","releaseAt":"2002-09-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":37,"date":"2002-09-11","title":"Breaking the Mold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219922/forensic-files-7x37-breaking-the-mold","releaseAt":"2002-09-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":38,"date":"2002-09-18","title":"House Call","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219923/forensic-files-7x38-house-call","releaseAt":"2002-09-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":39,"date":"2002-09-25","title":"Marathon Man","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219924/forensic-files-7x39-marathon-man","releaseAt":"2002-09-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":40,"date":"2002-10-02","title":"The Sniper's Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219925/forensic-files-7x40-the-snipers-trail","releaseAt":"2002-10-02T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":41,"date":"2002-10-09","title":"Plastic Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219926/forensic-files-7x41-plastic-fire","releaseAt":"2002-10-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":7,"episode":42,"date":"2002-10-16","title":"Last Will","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219927/forensic-files-7x42-last-will","releaseAt":"2002-10-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":1,"date":"2003-01-02","title":"Dessert Served Cold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219928/forensic-files-8x01-dessert-served-cold","releaseAt":"2003-01-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":2,"date":"2003-01-16","title":"The Music Case","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219929/forensic-files-8x02-the-music-case","releaseAt":"2003-01-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":3,"date":"2003-01-23","title":"Paintball","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219930/forensic-files-8x03-paintball","releaseAt":"2003-01-23T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":4,"date":"2003-01-30","title":"Sign Here","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219931/forensic-files-8x04-sign-here","releaseAt":"2003-01-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":5,"date":"2003-02-06","title":"Shadow of a Doubt","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219932/forensic-files-8x05-shadow-of-a-doubt","releaseAt":"2003-02-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":6,"date":"2003-02-13","title":"Tourist Trap","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219933/forensic-files-8x06-tourist-trap","releaseAt":"2003-02-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":7,"date":"2003-02-20","title":"Once Bitten","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219934/forensic-files-8x07-once-bitten","releaseAt":"2003-02-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":8,"date":"2003-02-27","title":"All Wet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219935/forensic-files-8x08-all-wet","releaseAt":"2003-02-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":9,"date":"2003-03-06","title":"Shot of Vengeance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219936/forensic-files-8x09-shot-of-vengeance","releaseAt":"2003-03-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":10,"date":"2003-03-13","title":"Dinner and a Movie","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219937/forensic-files-8x10-dinner-and-a-movie","releaseAt":"2003-03-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":11,"date":"2003-03-20","title":"A Wrong Foot","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219938/forensic-files-8x11-a-wrong-foot","releaseAt":"2003-03-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":12,"date":"2003-03-27","title":"Order Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219939/forensic-files-8x12-order-up","releaseAt":"2003-03-27T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":13,"date":"2003-04-03","title":"When the Dust Settled","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219940/forensic-files-8x13-when-the-dust-settled","releaseAt":"2003-04-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":14,"date":"2003-04-10","title":"A Welcome Intrusion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219941/forensic-files-8x14-a-welcome-intrusion","releaseAt":"2003-04-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":15,"date":"2003-04-17","title":"Within Arm's Reach","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219942/forensic-files-8x15-within-arms-reach","releaseAt":"2003-04-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":16,"date":"2003-04-24","title":"Private Thoughts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219943/forensic-files-8x16-private-thoughts","releaseAt":"2003-04-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":17,"date":"2003-05-01","title":"Brotherhoods","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219944/forensic-files-8x17-brotherhoods","releaseAt":"2003-05-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":18,"date":"2003-05-08","title":"Hair of the Dog","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219945/forensic-files-8x18-hair-of-the-dog","releaseAt":"2003-05-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":19,"date":"2003-05-15","title":"Breaking News","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219946/forensic-files-8x19-breaking-news","releaseAt":"2003-05-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":20,"date":"2003-05-22","title":"All the World's a Stage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219947/forensic-files-8x20-all-the-worlds-a-stage","releaseAt":"2003-05-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":21,"date":"2003-05-29","title":"The Big Chill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219948/forensic-files-8x21-the-big-chill","releaseAt":"2003-05-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":22,"date":"2003-06-05","title":"Bound for Jail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219949/forensic-files-8x22-bound-for-jail","releaseAt":"2003-06-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":23,"date":"2003-06-12","title":"Sphere of Influence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219950/forensic-files-8x23-sphere-of-influence","releaseAt":"2003-06-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":24,"date":"2003-06-19","title":"Nailed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219951/forensic-files-8x24-nailed","releaseAt":"2003-06-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":25,"date":"2003-06-26","title":"Sign of the Zodiac","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219952/forensic-files-8x25-sign-of-the-zodiac","releaseAt":"2003-06-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":26,"date":"2003-07-02","title":"Letter Perfect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219953/forensic-files-8x26-letter-perfect","releaseAt":"2003-07-02T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":27,"date":"2003-07-09","title":"True Lies","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219954/forensic-files-8x27-true-lies","releaseAt":"2003-07-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":28,"date":"2003-07-16","title":"Bed of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219955/forensic-files-8x28-bed-of-deceit","releaseAt":"2003-07-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":29,"date":"2003-07-23","title":"Smoke in Your Eyes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219956/forensic-files-8x29-smoke-in-your-eyes","releaseAt":"2003-07-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":30,"date":"2003-07-30","title":"Flower Power","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219957/forensic-files-8x30-flower-power","releaseAt":"2003-07-30T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":31,"date":"2003-08-06","title":"Past Lives","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219958/forensic-files-8x31-past-lives","releaseAt":"2003-08-06T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":32,"date":"2003-08-13","title":"Over and Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219959/forensic-files-8x32-over-and-out","releaseAt":"2003-08-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":33,"date":"2003-08-13","title":"Death by a Salesman","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219960/forensic-files-8x33-death-by-a-salesman","releaseAt":"2003-08-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":34,"date":"2003-08-27","title":"Web of Seduction","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219961/forensic-files-8x34-web-of-seduction","releaseAt":"2003-08-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":35,"date":"2003-09-03","title":"Grounds for Indictment","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219962/forensic-files-8x35-grounds-for-indictment","releaseAt":"2003-09-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":36,"date":"2003-09-10","title":"Dueling Confessions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219963/forensic-files-8x36-dueling-confessions","releaseAt":"2003-09-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":37,"date":"2003-09-17","title":"Traces of Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219964/forensic-files-8x37-traces-of-truth","releaseAt":"2003-09-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":38,"date":"2003-09-24","title":"Honor Thy Father","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219965/forensic-files-8x38-honor-thy-father","releaseAt":"2003-09-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":39,"date":"2003-10-01","title":"Hack Attack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219966/forensic-files-8x39-hack-attack","releaseAt":"2003-10-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":40,"date":"2003-10-08","title":"Deadly Curve","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219967/forensic-files-8x40-deadly-curve","releaseAt":"2003-10-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":41,"date":"2003-10-15","title":"Visibility Zero","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219968/forensic-files-8x41-visibility-zero","releaseAt":"2003-10-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":8,"episode":42,"date":"2003-10-22","title":"Flashover","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219969/forensic-files-8x42-flashover","releaseAt":"2003-10-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":1,"date":"2004-06-03","title":"Road Rage","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219970/forensic-files-9x01-road-rage","releaseAt":"2004-06-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":2,"date":"2004-06-10","title":"Hunter or Hunted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219971/forensic-files-9x02-hunter-or-hunted","releaseAt":"2004-06-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":3,"date":"2004-06-17","title":"In Harm's Way","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219972/forensic-files-9x03-in-harms-way","releaseAt":"2004-06-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":4,"date":"2004-06-24","title":"No Corpus Delicti","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219973/forensic-files-9x04-no-corpus-delicti","releaseAt":"2004-06-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":5,"date":"2004-06-28","title":"News at 11","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219974/forensic-files-9x05-news-at-11","releaseAt":"2004-06-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":6,"date":"2004-07-08","title":"Burning Desire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219975/forensic-files-9x06-burning-desire","releaseAt":"2004-07-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":7,"date":"2004-07-09","title":"Cloak of Deceit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219976/forensic-files-9x07-cloak-of-deceit","releaseAt":"2004-07-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":8,"date":"2004-07-09","title":"Bad Medicine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219977/forensic-files-9x08-bad-medicine","releaseAt":"2004-07-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":9,"date":"2004-07-16","title":"Stick 'em Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219978/forensic-files-9x09-stick-em-up","releaseAt":"2004-07-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":10,"date":"2004-07-23","title":"Head Games","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219979/forensic-files-9x10-head-games","releaseAt":"2004-07-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":11,"date":"2004-08-12","title":"Making the Collar","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219980/forensic-files-9x11-making-the-collar","releaseAt":"2004-08-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":12,"date":"2004-08-12","title":"Financial Downfall","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219981/forensic-files-9x12-financial-downfall","releaseAt":"2004-08-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":13,"date":"2004-08-24","title":"A Daughter's Journey","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219982/forensic-files-9x13-a-daughters-journey","releaseAt":"2004-08-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":14,"date":"2004-08-25","title":"Over a Barrel","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219983/forensic-files-9x14-over-a-barrel","releaseAt":"2004-08-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":15,"date":"2004-08-26","title":"Pinned by the Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219984/forensic-files-9x15-pinned-by-the-evidence","releaseAt":"2004-08-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":16,"date":"2004-08-27","title":"Cries Unheard","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219985/forensic-files-9x16-cries-unheard","releaseAt":"2004-08-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":17,"date":"2004-08-28","title":"Buried Treasure","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219986/forensic-files-9x17-buried-treasure","releaseAt":"2004-08-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":18,"date":"2004-09-09","title":"Badge of Betrayal","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219987/forensic-files-9x18-badge-of-betrayal","releaseAt":"2004-09-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":19,"date":"2004-09-16","title":"Deadly Matrimony","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219988/forensic-files-9x19-deadly-matrimony","releaseAt":"2004-09-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":20,"date":"2004-09-23","title":"Muddy Waters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219989/forensic-files-9x20-muddy-waters","releaseAt":"2004-09-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":21,"date":"2004-09-30","title":"Point of Origin","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219990/forensic-files-9x21-point-of-origin","releaseAt":"2004-09-30T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":22,"date":"2004-10-07","title":"Seeds for Doubt","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219991/forensic-files-9x22-seeds-for-doubt","releaseAt":"2004-10-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":23,"date":"2004-10-14","title":"Saving Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219992/forensic-files-9x23-saving-face","releaseAt":"2004-10-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":24,"date":"2004-12-09","title":"Northern Exposure","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219993/forensic-files-9x24-northern-exposure","releaseAt":"2004-12-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":25,"date":"2004-12-30","title":"Silk Stalkings","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219994/forensic-files-9x25-silk-stalkings","releaseAt":"2004-12-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":26,"date":"2005-01-06","title":"Fishing for the Truth","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219995/forensic-files-9x26-fishing-for-the-truth","releaseAt":"2005-01-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":27,"date":"2005-01-20","title":"For Love or Money","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219996/forensic-files-9x27-for-love-or-money","releaseAt":"2005-01-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":28,"date":"2005-02-03","title":"South of the Border","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219997/forensic-files-9x28-south-of-the-border","releaseAt":"2005-02-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":29,"date":"2005-02-10","title":"The Stake-Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219998/forensic-files-9x29-the-stake-out","releaseAt":"2005-02-10T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":9,"episode":30,"date":"2005-03-03","title":"Walking Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/219999/forensic-files-9x30-walking-terror","releaseAt":"2005-03-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":1,"date":"2005-04-28","title":"Trial by Fire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220000/forensic-files-10x01-trial-by-fire","releaseAt":"2005-04-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":2,"date":"2005-05-19","title":"Marked for Life","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220001/forensic-files-10x02-marked-for-life","releaseAt":"2005-05-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":3,"date":"2005-06-02","title":"Plastic Puzzle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220002/forensic-files-10x03-plastic-puzzle","releaseAt":"2005-06-02T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":4,"date":"2005-06-30","title":"Up in Smoke","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220003/forensic-files-10x04-up-in-smoke","releaseAt":"2005-06-30T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":5,"date":"2005-07-07","title":"Soiled Plan","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220004/forensic-files-10x05-soiled-plan","releaseAt":"2005-07-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":6,"date":"2005-07-14","title":"Headquarters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220005/forensic-files-10x06-headquarters","releaseAt":"2005-07-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":7,"date":"2005-07-21","title":"One for the Road","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220006/forensic-files-10x07-one-for-the-road","releaseAt":"2005-07-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":8,"date":"2005-07-28","title":"Army of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220007/forensic-files-10x08-army-of-evidence","releaseAt":"2005-07-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":9,"date":"2005-08-04","title":"Shear Luck","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220008/forensic-files-10x09-shear-luck","releaseAt":"2005-08-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":10,"date":"2005-08-11","title":"Tagging a Suspect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220009/forensic-files-10x10-tagging-a-suspect","releaseAt":"2005-08-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":11,"date":"2005-08-18","title":"Strong Impressions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220010/forensic-files-10x11-strong-impressions","releaseAt":"2005-08-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":12,"date":"2005-08-25","title":"Cereal Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220011/forensic-files-10x12-cereal-killer","releaseAt":"2005-08-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":13,"date":"2005-09-01","title":"Crash Course","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220012/forensic-files-10x13-crash-course","releaseAt":"2005-09-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":14,"date":"2005-09-08","title":"A Leg Up on Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220013/forensic-files-10x14-a-leg-up-on-crime","releaseAt":"2005-09-08T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":15,"date":"2005-09-15","title":"TIght-Fitting Genes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220014/forensic-files-10x15-tight-fitting-genes","releaseAt":"2005-09-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":16,"date":"2005-09-22","title":"Deadly Valentine","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220015/forensic-files-10x16-deadly-valentine","releaseAt":"2005-09-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":17,"date":"2005-09-29","title":"Picture This","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220016/forensic-files-10x17-picture-this","releaseAt":"2005-09-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":18,"date":"2005-10-18","title":"Oily in the Morning","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220017/forensic-files-10x18-oily-in-the-morning","releaseAt":"2005-10-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":19,"date":"2005-10-19","title":"Gold Rush","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220018/forensic-files-10x19-gold-rush","releaseAt":"2005-10-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":20,"date":"2005-10-20","title":"Four on the Floor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220019/forensic-files-10x20-four-on-the-floor","releaseAt":"2005-10-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":21,"date":"2005-10-21","title":"Writers Block","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220020/forensic-files-10x21-writers-block","releaseAt":"2005-10-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":22,"date":"2005-10-22","title":"A Clean Getaway","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220021/forensic-files-10x22-a-clean-getaway","releaseAt":"2005-10-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":23,"date":"2005-11-03","title":"Prints Among Thieves","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220022/forensic-files-10x23-prints-among-thieves","releaseAt":"2005-11-03T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":24,"date":"2005-11-10","title":"Unholy Alliance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220023/forensic-files-10x24-unholy-alliance","releaseAt":"2005-11-10T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":25,"date":"2005-11-17","title":"Signed, Sealed, Delivered","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220024/forensic-files-10x25-signed-sealed-delivered","releaseAt":"2005-11-17T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":26,"date":"2005-12-01","title":"Cop Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220025/forensic-files-10x26-cop-out","releaseAt":"2005-12-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":27,"date":"2005-12-08","title":"Summer Obsession","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220026/forensic-files-10x27-summer-obsession","releaseAt":"2005-12-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":28,"date":"2005-12-08","title":"Enemy Within","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238386/forensic-files-10x28-enemy-within","releaseAt":"2005-12-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":29,"date":"2005-12-15","title":"Elemental Clue","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220027/forensic-files-10x29-elemental-clue","releaseAt":"2005-12-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":30,"date":"2005-12-22","title":"Moss, Not Grass","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220028/forensic-files-10x30-moss-not-grass","releaseAt":"2005-12-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":31,"date":"2005-12-29","title":"Material Witness","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220029/forensic-files-10x31-material-witness","releaseAt":"2005-12-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":32,"date":"2006-01-05","title":"Garden of Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220030/forensic-files-10x32-garden-of-evil","releaseAt":"2006-01-05T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":33,"date":"2006-01-12","title":"Sunday School Ambush","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220031/forensic-files-10x33-sunday-school-ambush","releaseAt":"2006-01-12T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":34,"date":"2006-01-19","title":"Penchant for Poison","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220032/forensic-files-10x34-penchant-for-poison","releaseAt":"2006-01-19T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":35,"date":"2006-01-26","title":"Bump in the Night","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220033/forensic-files-10x35-bump-in-the-night","releaseAt":"2006-01-26T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":36,"date":"2006-02-02","title":"Sole Searching","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/220034/forensic-files-10x36-sole-searching","releaseAt":"2006-02-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":37,"date":"2006-02-09","title":"Murder on the Menu","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238380/forensic-files-10x37-murder-on-the-menu","releaseAt":"2006-02-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":38,"date":"2006-02-16","title":"Hot on the Trail","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238381/forensic-files-10x38-hot-on-the-trail","releaseAt":"2006-02-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":39,"date":"2006-02-23","title":"High 'n' Dry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238382/forensic-files-10x39-high-n-dry","releaseAt":"2006-02-23T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":40,"date":"2006-03-02","title":"To the Viktor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238383/forensic-files-10x40-to-the-viktor","releaseAt":"2006-03-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":41,"date":"2006-03-09","title":"Wired for Disaster","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238384/forensic-files-10x41-wired-for-disaster","releaseAt":"2006-03-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":10,"episode":42,"date":"2006-03-16","title":"Wood-be Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238385/forensic-files-10x42-wood-be-killer","releaseAt":"2006-03-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":1,"date":"2006-07-20","title":"Naughty or Nyce","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238387/forensic-files-11x01-naughty-or-nyce","releaseAt":"2006-07-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":2,"date":"2006-07-27","title":"Going for Broke","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238388/forensic-files-11x02-going-for-broke","releaseAt":"2006-07-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":3,"date":"2006-08-10","title":"Just Desserts","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238389/forensic-files-11x03-just-desserts","releaseAt":"2006-08-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":4,"date":"2006-08-17","title":"Sunday's Wake","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238390/forensic-files-11x04-sundays-wake","releaseAt":"2006-08-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":5,"date":"2006-08-24","title":"Shattered Dreams","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238391/forensic-files-11x05-shattered-dreams","releaseAt":"2006-08-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":6,"date":"2006-08-24","title":"Dockter Visit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238392/forensic-files-11x06-dockter-visit","releaseAt":"2006-08-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":7,"date":"2006-08-31","title":"Murder, She Wrote","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238393/forensic-files-11x07-murder-she-wrote","releaseAt":"2006-08-31T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":8,"date":"2006-09-07","title":"Concrete Alibi","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238394/forensic-files-11x08-concrete-alibi","releaseAt":"2006-09-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":9,"date":"2006-09-14","title":"Key Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238395/forensic-files-11x09-key-evidence","releaseAt":"2006-09-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":10,"date":"2006-09-21","title":"The Gambler","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238396/forensic-files-11x10-the-gambler","releaseAt":"2006-09-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":11,"date":"2006-09-28","title":"Weakest Link","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238397/forensic-files-11x11-weakest-link","releaseAt":"2006-09-28T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":12,"date":"2006-10-05","title":"Capitol Crimes","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238398/forensic-files-11x12-capitol-crimes","releaseAt":"2006-10-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":13,"date":"2006-10-12","title":"Undertaken","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238399/forensic-files-11x13-undertaken","releaseAt":"2006-10-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":14,"date":"2006-10-19","title":"Dark Waters","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238400/forensic-files-11x14-dark-waters","releaseAt":"2006-10-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":15,"date":"2006-10-26","title":"Nice Threads","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238401/forensic-files-11x15-nice-threads","releaseAt":"2006-10-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":16,"date":"2006-11-02","title":"Grave Danger","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238402/forensic-files-11x16-grave-danger","releaseAt":"2006-11-02T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":17,"date":"2006-11-09","title":"Internal Affair","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238403/forensic-files-11x17-internal-affair","releaseAt":"2006-11-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":18,"date":"2006-11-16","title":"A Case of the Flue","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238404/forensic-files-11x18-a-case-of-the-flue","releaseAt":"2006-11-16T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":19,"date":"2006-11-23","title":"No Safe Place","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238405/forensic-files-11x19-no-safe-place","releaseAt":"2006-11-23T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":20,"date":"2006-11-30","title":"Live Wire","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238406/forensic-files-11x20-live-wire","releaseAt":"2006-11-30T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":21,"date":"2006-12-07","title":"Van-ished","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238407/forensic-files-11x21-van-ished","releaseAt":"2006-12-07T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":22,"date":"2006-12-14","title":"A Novel Idea","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238408/forensic-files-11x22-a-novel-idea","releaseAt":"2006-12-14T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":23,"date":"2006-12-21","title":"Chief Suspect","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238409/forensic-files-11x23-chief-suspect","releaseAt":"2006-12-21T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":24,"date":"2006-12-28","title":"Water Hazard","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238410/forensic-files-11x24-water-hazard","releaseAt":"2006-12-28T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":25,"date":"2007-01-04","title":"Shell Game","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238411/forensic-files-11x25-shell-game","releaseAt":"2007-01-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":26,"date":"2007-01-11","title":"Ring Him Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238412/forensic-files-11x26-ring-him-up","releaseAt":"2007-01-11T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":27,"date":"2007-01-18","title":"Killer Impression","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238413/forensic-files-11x27-killer-impression","releaseAt":"2007-01-18T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":28,"date":"2007-01-25","title":"If I Were You","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238414/forensic-files-11x28-if-i-were-you","releaseAt":"2007-01-25T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":29,"date":"2007-02-01","title":"As the Tide Turns","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238415/forensic-files-11x29-as-the-tide-turns","releaseAt":"2007-02-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":30,"date":"2007-02-08","title":"A Tight Leash","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238416/forensic-files-11x30-a-tight-leash","releaseAt":"2007-02-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":31,"date":"2007-02-15","title":"Muffled Cries","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238417/forensic-files-11x31-muffled-cries","releaseAt":"2007-02-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":32,"date":"2007-02-22","title":"Critical Maneuver","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238418/forensic-files-11x32-critical-maneuver","releaseAt":"2007-02-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":33,"date":"2007-03-01","title":"Skirting the Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238419/forensic-files-11x33-skirting-the-evidence","releaseAt":"2007-03-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":34,"date":"2007-03-08","title":"Small Town Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238420/forensic-files-11x34-small-town-terror","releaseAt":"2007-03-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":35,"date":"2007-03-15","title":"Fresh Heir","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238421/forensic-files-11x35-fresh-heir","releaseAt":"2007-03-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":36,"date":"2007-03-22","title":"Ticker Tape","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238422/forensic-files-11x36-ticker-tape","releaseAt":"2007-03-22T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":37,"date":"2007-03-29","title":"Step By Step","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238423/forensic-files-11x37-step-by-step","releaseAt":"2007-03-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":38,"date":"2007-04-05","title":"Blanket of Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238424/forensic-files-11x38-blanket-of-evidence","releaseAt":"2007-04-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":39,"date":"2007-04-12","title":"Fired-Up","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238425/forensic-files-11x39-fired-up","releaseAt":"2007-04-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":40,"date":"2007-04-19","title":"Two in a Million","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238426/forensic-files-11x40-two-in-a-million","releaseAt":"2007-04-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":41,"date":"2007-04-26","title":"Bitter Brew","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238427/forensic-files-11x41-bitter-brew","releaseAt":"2007-04-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":11,"episode":42,"date":"2007-05-03","title":"Message in a Bottle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238428/forensic-files-11x42-message-in-a-bottle","releaseAt":"2007-05-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":1,"date":"2007-09-27","title":"Sharper Image","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238429/forensic-files-12x01-sharper-image","releaseAt":"2007-09-27T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":2,"date":"2007-10-04","title":"Insulated Evidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238430/forensic-files-12x02-insulated-evidence","releaseAt":"2007-10-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":3,"date":"2007-10-11","title":"Cold Hearted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238431/forensic-files-12x03-cold-hearted","releaseAt":"2007-10-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":4,"date":"2007-10-18","title":"Wheel of Misfortune","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238432/forensic-files-12x04-wheel-of-misfortune","releaseAt":"2007-10-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":5,"date":"2007-10-25","title":"Quite a Spectacle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238433/forensic-files-12x05-quite-a-spectacle","releaseAt":"2007-10-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":6,"date":"2007-11-01","title":"Transaction Failed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238434/forensic-files-12x06-transaction-failed","releaseAt":"2007-11-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":7,"date":"2007-11-08","title":"The Day the Music Died","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238435/forensic-files-12x07-the-day-the-music-died","releaseAt":"2007-11-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":8,"date":"2007-11-15","title":"Sole Survivor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238436/forensic-files-12x08-sole-survivor","releaseAt":"2007-11-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":9,"date":"2007-11-22","title":"Insignificant Others","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238437/forensic-files-12x09-insignificant-others","releaseAt":"2007-11-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":10,"date":"2007-11-29","title":"Catch 22","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238438/forensic-files-12x10-catch-22","releaseAt":"2007-11-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":11,"date":"2007-12-18","title":"A Cinderella Story","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238439/forensic-files-12x11-a-cinderella-story","releaseAt":"2007-12-18T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":12,"date":"2008-01-08","title":"Screen Pass","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238440/forensic-files-12x12-screen-pass","releaseAt":"2008-01-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":13,"date":"2008-01-15","title":"Pressed for Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238441/forensic-files-12x13-pressed-for-crime","releaseAt":"2008-01-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":14,"date":"2008-01-22","title":"Finger Pane","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238442/forensic-files-12x14-finger-pane","releaseAt":"2008-01-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":15,"date":"2008-01-29","title":"Good as Gold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238443/forensic-files-12x15-good-as-gold","releaseAt":"2008-01-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":16,"date":"2008-02-07","title":"Freedom Fighter","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238444/forensic-files-12x16-freedom-fighter","releaseAt":"2008-02-07T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":17,"date":"2008-02-26","title":"Dog Day Afternoon","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238445/forensic-files-12x17-dog-day-afternoon","releaseAt":"2008-02-26T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":18,"date":"2008-03-08","title":"Shattered Innocence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238446/forensic-files-12x18-shattered-innocence","releaseAt":"2008-03-08T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":19,"date":"2008-03-15","title":"All Butt Certain","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238447/forensic-files-12x19-all-butt-certain","releaseAt":"2008-03-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":20,"date":"2008-04-19","title":"Jean Pool","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238448/forensic-files-12x20-jean-pool","releaseAt":"2008-04-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":21,"date":"2008-05-10","title":"Traffic Violations","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238449/forensic-files-12x21-traffic-violations","releaseAt":"2008-05-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":22,"date":"2008-05-24","title":"Brotherly Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238450/forensic-files-12x22-brotherly-love","releaseAt":"2008-05-24T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":23,"date":"2008-06-07","title":"Disrobed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238451/forensic-files-12x23-disrobed","releaseAt":"2008-06-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":24,"date":"2008-06-21","title":"Driven to Silence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238452/forensic-files-12x24-driven-to-silence","releaseAt":"2008-06-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":25,"date":"2008-06-29","title":"Printed Proof","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238453/forensic-files-12x25-printed-proof","releaseAt":"2008-06-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":26,"date":"2008-07-19","title":"About Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238454/forensic-files-12x26-about-face","releaseAt":"2008-07-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":27,"date":"2008-07-26","title":"In the Bag","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238455/forensic-files-12x27-in-the-bag","releaseAt":"2008-07-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":28,"date":"2008-08-09","title":"Yes, In Deed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238456/forensic-files-12x28-yes-in-deed","releaseAt":"2008-08-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":29,"date":"2008-08-23","title":"Guarded Secrets","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238457/forensic-files-12x29-guarded-secrets","releaseAt":"2008-08-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":12,"episode":30,"date":"2008-08-30","title":"Smoking Out a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238458/forensic-files-12x30-smoking-out-a-killer","releaseAt":"2008-08-30T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":1,"date":"2008-09-13","title":"Frozen Assets","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238459/forensic-files-13x01-frozen-assets","releaseAt":"2008-09-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":2,"date":"2008-09-20","title":"House Hunting","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238460/forensic-files-13x02-house-hunting","releaseAt":"2008-09-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":3,"date":"2008-10-04","title":"Shoot to Thrill","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238461/forensic-files-13x03-shoot-to-thrill","releaseAt":"2008-10-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":4,"date":"2008-10-11","title":"Political Thriller","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238462/forensic-files-13x04-political-thriller","releaseAt":"2008-10-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":5,"date":"2008-10-25","title":"Double Cross","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238463/forensic-files-13x05-double-cross","releaseAt":"2008-10-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":6,"date":"2008-11-01","title":"Dancing with the Devil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238464/forensic-files-13x06-dancing-with-the-devil","releaseAt":"2008-11-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":7,"date":"2008-11-15","title":"Last Dance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238465/forensic-files-13x07-last-dance","releaseAt":"2008-11-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":8,"date":"2008-11-22","title":"Constructive Criticism","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238466/forensic-files-13x08-constructive-criticism","releaseAt":"2008-11-22T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":9,"date":"2008-12-06","title":"Home Evasion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238467/forensic-files-13x09-home-evasion","releaseAt":"2008-12-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":10,"date":"2008-12-13","title":"Window Watcher","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238468/forensic-files-13x10-window-watcher","releaseAt":"2008-12-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":11,"date":"2008-12-20","title":"Stranger in the Night","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238469/forensic-files-13x11-stranger-in-the-night","releaseAt":"2008-12-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":12,"date":"2009-01-10","title":"Kidnapping (The Ginger Hayes Murder)","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238470/forensic-files-13x12-kidnapping-the-ginger-hayes-murder","releaseAt":"2009-01-10T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":13,"date":"2009-01-17","title":"Sands of Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238471/forensic-files-13x13-sands-of-crime","releaseAt":"2009-01-17T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":14,"date":"2009-01-24","title":"Calculated Coincidence","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238472/forensic-files-13x14-calculated-coincidence","releaseAt":"2009-01-24T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":15,"date":"2009-01-31","title":"Sworded Scheme","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238473/forensic-files-13x15-sworded-scheme","releaseAt":"2009-01-31T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":16,"date":"2009-02-21","title":"Unmasked (The Stevie Green Case)","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238474/forensic-files-13x16-unmasked-the-stevie-green-case","releaseAt":"2009-02-21T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":17,"date":"2009-03-14","title":"Fashion Police","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238475/forensic-files-13x17-fashion-police","releaseAt":"2009-03-14T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":18,"date":"2009-04-04","title":"Church Dis-service","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238476/forensic-files-13x18-church-dis-service","releaseAt":"2009-04-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":19,"date":"2009-04-18","title":"Seedy Intentions","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238477/forensic-files-13x19-seedy-intentions","releaseAt":"2009-04-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":20,"date":"2009-05-16","title":"DNA Dragnet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238478/forensic-files-13x20-dna-dragnet","releaseAt":"2009-05-16T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":21,"date":"2009-05-23","title":"Smiley Face","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238479/forensic-files-13x21-smiley-face","releaseAt":"2009-05-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":22,"date":"2009-06-06","title":"Dirty Laundry","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238480/forensic-files-13x22-dirty-laundry","releaseAt":"2009-06-06T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":23,"date":"2009-06-13","title":"Drowning Sorrows","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238481/forensic-files-13x23-drowning-sorrows","releaseAt":"2009-06-13T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":24,"date":"2009-06-20","title":"As Fault","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238482/forensic-files-13x24-as-fault","releaseAt":"2009-06-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":25,"date":"2009-07-18","title":"Family Ties","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238483/forensic-files-13x25-family-ties","releaseAt":"2009-07-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":26,"date":"2009-07-25","title":"Trouble Brewing","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238484/forensic-files-13x26-trouble-brewing","releaseAt":"2009-07-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":27,"date":"2009-08-15","title":"Holy Terror","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238485/forensic-files-13x27-holy-terror","releaseAt":"2009-08-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":28,"date":"2009-09-05","title":"Needle in a Haystack","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238486/forensic-files-13x28-needle-in-a-haystack","releaseAt":"2009-09-05T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":29,"date":"2009-09-12","title":"Room with a View","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238487/forensic-files-13x29-room-with-a-view","releaseAt":"2009-09-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":30,"date":"2009-09-26","title":"Dollars and Sense","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238488/forensic-files-13x30-dollars-and-sense","releaseAt":"2009-09-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":31,"date":"2009-10-03","title":"Hair Line","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238489/forensic-files-13x31-hair-line","releaseAt":"2009-10-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":32,"date":"2009-10-17","title":"All That Glitters is Gold","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238490/forensic-files-13x32-all-that-glitters-is-gold","releaseAt":"2009-10-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":33,"date":"2009-10-31","title":"Deadly Rebellion","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238491/forensic-files-13x33-deadly-rebellion","releaseAt":"2009-10-31T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":34,"date":"2009-11-14","title":"Sign of the Crime","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238492/forensic-files-13x34-sign-of-the-crime","releaseAt":"2009-11-14T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":35,"date":"2009-11-21","title":"Covet Thy Neighbor","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238493/forensic-files-13x35-covet-thy-neighbor","releaseAt":"2009-11-21T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":36,"date":"2009-12-12","title":"Writing on the Wall","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238494/forensic-files-13x36-writing-on-the-wall","releaseAt":"2009-12-12T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":37,"date":"2010-01-09","title":"Hundreds of Reasons","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238495/forensic-files-13x37-hundreds-of-reasons","releaseAt":"2010-01-09T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":38,"date":"2010-02-06","title":"Cold Feet","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238496/forensic-files-13x38-cold-feet","releaseAt":"2010-02-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":39,"date":"2010-02-20","title":"Separation Anxiety","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238497/forensic-files-13x39-separation-anxiety","releaseAt":"2010-02-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":40,"date":"2010-03-06","title":"Office Visit","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238498/forensic-files-13x40-office-visit","releaseAt":"2010-03-06T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":41,"date":"2010-03-13","title":"Palm Saturday","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238499/forensic-files-13x41-palm-saturday","releaseAt":"2010-03-13T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":42,"date":"2010-03-20","title":"Shoe-In for Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238500/forensic-files-13x42-shoe-in-for-murder","releaseAt":"2010-03-20T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":43,"date":"2010-04-03","title":"Family Interrupted","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238501/forensic-files-13x43-family-interrupted","releaseAt":"2010-04-03T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":44,"date":"2010-04-17","title":"Runaway Love","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238502/forensic-files-13x44-runaway-love","releaseAt":"2010-04-17T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":45,"date":"2010-05-01","title":"Watchful Eye","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238503/forensic-files-13x45-watchful-eye","releaseAt":"2010-05-01T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":46,"date":"2010-05-15","title":"Waste Mis-Management","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238504/forensic-files-13x46-waste-mis-management","releaseAt":"2010-05-15T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":47,"date":"2010-05-29","title":"Dirty Little Seacret","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238505/forensic-files-13x47-dirty-little-seacret","releaseAt":"2010-05-29T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":48,"date":"2010-06-12","title":"Lights Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238506/forensic-files-13x48-lights-out","releaseAt":"2010-06-12T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":49,"date":"2010-06-19","title":"Pet Rock","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238507/forensic-files-13x49-pet-rock","releaseAt":"2010-06-19T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":13,"episode":50,"date":"2010-07-10","title":"Best Foot Forward","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238508/forensic-files-13x50-best-foot-forward","releaseAt":"2010-07-10T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":1,"date":"2010-09-11","title":"Purebread Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238509/forensic-files-14x01-purebread-murder","releaseAt":"2010-09-11T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":2,"date":"2010-09-25","title":"Hear No Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238510/forensic-files-14x02-hear-no-evil","releaseAt":"2010-09-25T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":3,"date":"2010-10-09","title":"Hell's Kitchen","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238511/forensic-files-14x03-hells-kitchen","releaseAt":"2010-10-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":4,"date":"2010-10-23","title":"Three's a Crowd","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238512/forensic-files-14x04-threes-a-crowd","releaseAt":"2010-10-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":5,"date":"2010-11-06","title":"A Squire's Riches","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238513/forensic-files-14x05-a-squires-riches","releaseAt":"2010-11-06T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":6,"date":"2010-11-20","title":"Home of the Brave","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238514/forensic-files-14x06-home-of-the-brave","releaseAt":"2010-11-20T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":7,"date":"2010-12-04","title":"Freeze Framed","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238515/forensic-files-14x07-freeze-framed","releaseAt":"2010-12-04T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":8,"date":"2010-12-18","title":"Touch of Evil","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238516/forensic-files-14x08-touch-of-evil","releaseAt":"2010-12-18T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":9,"date":"2011-01-01","title":"Textbook Murder","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238517/forensic-files-14x09-textbook-murder","releaseAt":"2011-01-01T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":10,"date":"2011-01-15","title":"Filtered Out","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238518/forensic-files-14x10-filtered-out","releaseAt":"2011-01-15T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":11,"date":"2011-01-29","title":"Water Logged","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238519/forensic-files-14x11-water-logged","releaseAt":"2011-01-29T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":12,"date":"2011-02-12","title":"Social Circle","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238520/forensic-files-14x12-social-circle","releaseAt":"2011-02-12T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":13,"date":"2011-02-26","title":"Low Maintenance","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238521/forensic-files-14x13-low-maintenance","releaseAt":"2011-02-26T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":14,"date":"2011-03-12","title":"Fate Date","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238522/forensic-files-14x14-fate-date","releaseAt":"2011-03-12T02:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":15,"date":"2011-03-26","title":"Trail of a Killer","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238523/forensic-files-14x15-trail-of-a-killer","releaseAt":"2011-03-26T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":16,"date":"2011-04-09","title":"Gone Ballistic","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238524/forensic-files-14x16-gone-ballistic","releaseAt":"2011-04-09T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":17,"date":"2011-04-23","title":"Seeing Red","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238525/forensic-files-14x17-seeing-red","releaseAt":"2011-04-23T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":18,"date":"2011-05-07","title":"Auto-Motive","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238526/forensic-files-14x18-auto-motive","releaseAt":"2011-05-07T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":19,"date":"2011-05-21","title":"Skeleton Key","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238527/forensic-files-14x19-skeleton-key","releaseAt":"2011-05-21T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":20,"date":"2011-06-04","title":"Funeral Services","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238528/forensic-files-14x20-funeral-services","releaseAt":"2011-06-04T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
+    {"serieId":"forensic-files","serie":"Forensic Files","season":14,"episode":21,"date":"2011-06-18","title":"Expert Witness","platform":"TLC / Court TV / truTV (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/238529/forensic-files-14x21-expert-witness","releaseAt":"2011-06-18T01:00:00+00:00","note":"Emisión original de Estados Unidos registrada en TVmaze, convertida a Madrid; disponibilidad en España según plataforma"},
     {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":1,"date":"2026-10-14","title":"No Strings","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","releaseAt":"2026-10-14T01:00:00Z","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid"},
     {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":2,"date":"2026-10-14","title":"Theseus","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-14T01:00:00Z"},
     {"serieId":"vision-quest","serie":"Vision Quest","season":1,"episode":3,"date":"2026-10-21","title":"Reboot","platform":"Disney+","sourceKind":"official","sourceUrl":"https://x.com/MarvelStudios/status/2109675504848486495","note":"Calendario anunciado por Marvel · 18:00 de Los Ángeles, madrugada del día siguiente en Madrid","releaseAt":"2026-10-21T01:00:00Z"},
@@ -12488,7 +12508,7 @@ const RELEASE_REVIEW = {
     {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":22,"date":"2026-08-21","title":"Episode 22 - Live Eviction","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652963/big-brother-28x19-episode-19-live-eviction","releaseAt":"2026-08-21T00:00:00+00:00"},
     {"date":"2026-08-24","episode":5,"title":"Pâtisserie au Paradis (Partie 1)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
     {"date":"2026-08-24","episode":6,"title":"Pâtisserie au Paradis (Partie 2)","serieId":"camping-paradis","serie":"Camping Paradis","platform":"TF1 / TF1+","season":20,"sourceKind":"catalog"},
-    {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":23,"date":"2026-08-24","title":"Episode 23","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652964/big-brother-28x20-episode-20","releaseAt":"2026-08-24T01:00:00+00:00"},
+    {"serieId":"big-brother-us","serie":"Big Brother (US)","season":28,"episode":23,"date":"2026-08-24","title":"Episode 23","platform":"CBS (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3652964/big-brother-28x20-episode-20","releaseAt":"2026-08-24T00:00:00+00:00"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":1,"date":"2026-08-25","title":"All Stars - Épisode 1","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3737752/koh-lanta-34x01-all-stars-episode-1","releaseAt":"2026-08-25T18:45:00+00:00"},
     {"serieId":"love-is-blind-uk","serie":"Love Is Blind: UK","season":3,"episode":9,"date":"2026-08-26","title":"Are You Ready for the Real World?","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714683/love-is-blind-uk-3x09-are-you-ready-for-the-real-world"},
     {"serieId":"love-is-blind-uk","serie":"Love Is Blind: UK","season":3,"episode":10,"date":"2026-08-26","title":"Do I Have Your Blessing?","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3714684/love-is-blind-uk-3x10-do-i-have-your-blessing"},
@@ -12574,17 +12594,17 @@ const RELEASE_REVIEW = {
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":9,"date":"2026-10-28","title":"Buzz Kill","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":10,"date":"2026-10-28","title":"Where There's a Will, There's a Way","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":11,"date":"2026-10-28","title":"If Not Now, When?","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-10-28T07:00:00Z"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":1,"date":"2026-10-30","title":"Risky Business","platform":"Paramount+","sourceKind":"official","sourceUrl":"https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/","note":"Fecha de estreno anunciada por la plataforma · hora y disponibilidad específica en España pendientes"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":1,"date":"2026-10-30","title":"Risky Business","platform":"Paramount+ (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":8,"date":"2026-10-30","title":"A Bad Apple Spoils the Whole Bunch","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772249/the-traitors-5x08-a-bad-apple-spoils-the-whole-bunch","releaseAt":"2026-10-30T00:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
     {"date":"2026-10-30","episode":1,"title":"Halloween 6: The Mirror - Part One","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-10-30T01:00:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
     {"date":"2026-10-30","episode":2,"title":"Halloween 6: The Mirror - Part Two","serieId":"ghosts-us","serie":"Ghosts (US)","platform":"CBS (Estados Unidos)","season":6,"releaseAt":"2026-10-30T01:30:00Z","note":"Horario de Madrid · fecha de disponibilidad en España pendiente","sourceKind":"official","sourceUrl":"https://www.paramountpressexpress.com/cbs-entertainment/shows/ghosts/"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":11,"date":"2026-11-03","title":"All Stars - Épisode 11","platform":"TF1 (Francia)","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-11-03-2110-koh-lanta-emission-11-partie-1","note":"TF1 · emisión a las 21:10 de París y Madrid","releaseAt":"2026-11-03T20:10:00Z"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":12,"date":"2026-11-04","title":"Episodio 12 · última tanda","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Fecha anunciada por la plataforma","releaseAt":"2026-11-04T08:00:00Z"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":1,"date":"2026-11-05","title":"Estreno de la temporada 2 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/black-doves-season-2","note":"Estreno de temporada anunciado por Netflix · seis capítulos registrados en TVmaze; total oficial pendiente","releaseAt":"2026-11-05T08:00:00Z"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":2,"date":"2026-11-06","title":"Young Blood","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786605/dexter-resurrection-2x02-young-blood","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":2,"date":"2026-11-06","title":"Young Blood","platform":"Paramount+ (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786605/dexter-resurrection-2x02-young-blood","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":9,"date":"2026-11-06","title":"Playing Chess","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772250/the-traitors-5x09-tba","releaseAt":"2026-11-06T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":12,"date":"2026-11-10","title":"All Stars - Épisode 12","platform":"TF1 (Francia)","sourceKind":"official","sourceUrl":"https://tf1pro.com/grilles-tv/TF1/jour/2026-11-10","note":"TF1 · emisión a las 21:10 de París y Madrid","releaseAt":"2026-11-10T20:10:00Z"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":3,"date":"2026-11-13","title":"Fallen","platform":"Paramount+","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786606/dexter-resurrection-2x03-fallen","note":"Fecha registrada en TVmaze · hora pendiente"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":3,"date":"2026-11-13","title":"Fallen","platform":"Paramount+ (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3786606/dexter-resurrection-2x03-fallen","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":10,"date":"2026-11-13","title":"The Sun, the Moon and the Truth","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772251/the-traitors-5x10-tba","releaseAt":"2026-11-13T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
     {"serieId":"koh-lanta","serie":"Koh-Lanta","season":34,"episode":13,"date":"2026-11-17","title":"All Stars - Épisode 13 : La finale","platform":"TF1 (Francia)","sourceKind":"official","sourceUrl":"https://tf1pro.com/programmes/diffusion/2026-11-17-2110-koh-lanta","note":"TF1 · emisión a las 21:10 de París y Madrid · final anunciada oficialmente","releaseAt":"2026-11-17T20:10:00Z"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":5,"episode":11,"date":"2026-11-20","title":"New Blood · Episodio 11 · título pendiente","platform":"NBC (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3772252/the-traitors-5x11-tba","releaseAt":"2026-11-20T01:00:00+00:00","note":"Fecha y hora registradas en TVmaze · NBC (Estados Unidos); Peacock al día siguiente de la emisión estadounidense"},
@@ -12607,24 +12627,24 @@ const RELEASE_REVIEW = {
     {"serieId":"furia","serie":"Furia","season":2,"episode":7,"platform":"HBO Max","date":"2026-11-20","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792002/furia-2x07-episode-7","note":"Fecha registrada en TVmaze · hora pendiente"},
     {"serieId":"furia","serie":"Furia","season":2,"episode":8,"platform":"HBO Max","date":"2026-11-27","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3792003/furia-2x08-episode-8","note":"Fecha registrada en TVmaze · hora pendiente"},
     {"serieId":"love-is-blind-us","serie":"Love Is Blind (USA)","season":11,"episode":13,"platform":"Netflix","date":"2026-11-09","sourceKind":"official","sourceUrl":"https://www.netflix.com/tudum/articles/love-is-blind-season-11-release-date-news","note":"Reunión anunciada por Netflix para el 08/11 a las 21:00 de Nueva York · 09/11 a las 03:00 en Madrid","releaseAt":"2026-11-09T02:00:00Z","title":"The Reunion"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":4,"platform":"Paramount+","date":"2026-11-20","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791165/dexter-resurrection-2x04-live-free-and-die","note":"Fecha registrada en TVmaze · hora pendiente","title":"Live Free and Die"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":5,"platform":"Paramount+","date":"2026-11-27","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791166/dexter-resurrection-2x05-panick-attack","note":"Fecha registrada en TVmaze · hora pendiente","title":"Panick Attack"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":6,"platform":"Paramount+","date":"2026-12-04","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791167/dexter-resurrection-2x06-out-of-the-past","note":"Fecha registrada en TVmaze · hora pendiente","title":"Out of the Past"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":7,"platform":"Paramount+","date":"2026-12-11","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791168/dexter-resurrection-2x07-rule-number-one","note":"Fecha registrada en TVmaze · hora pendiente","title":"Rule Number One"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":8,"platform":"Paramount+","date":"2026-12-18","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791169/dexter-resurrection-2x08-game-on","note":"Fecha registrada en TVmaze · hora pendiente","title":"Game On"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":9,"platform":"Paramount+","date":"2026-12-25","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791170/dexter-resurrection-2x09-credit-where-credit-is-due","note":"Fecha registrada en TVmaze · hora pendiente","title":"Credit Where Credit Is Due"},
-    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":10,"platform":"Paramount+","date":"2027-01-01","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791179/dexter-resurrection-2x10-now-you-see-me","note":"Fecha registrada en TVmaze · hora pendiente","title":"Now You See Me"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":4,"platform":"Paramount+ (Estados Unidos)","date":"2026-11-20","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791165/dexter-resurrection-2x04-live-free-and-die","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Live Free and Die"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":5,"platform":"Paramount+ (Estados Unidos)","date":"2026-11-27","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791166/dexter-resurrection-2x05-panick-attack","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Panick Attack"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":6,"platform":"Paramount+ (Estados Unidos)","date":"2026-12-04","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791167/dexter-resurrection-2x06-out-of-the-past","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Out of the Past"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":7,"platform":"Paramount+ (Estados Unidos)","date":"2026-12-11","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791168/dexter-resurrection-2x07-rule-number-one","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Rule Number One"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":8,"platform":"Paramount+ (Estados Unidos)","date":"2026-12-18","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791169/dexter-resurrection-2x08-game-on","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Game On"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":9,"platform":"Paramount+ (Estados Unidos)","date":"2026-12-25","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791170/dexter-resurrection-2x09-credit-where-credit-is-due","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Credit Where Credit Is Due"},
+    {"serieId":"dexter-resurrection","serie":"Dexter: Resurrection","season":2,"episode":10,"platform":"Paramount+ (Estados Unidos)","date":"2027-01-01","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3791179/dexter-resurrection-2x10-now-you-see-me","note":"Fecha de Paramount+ en Estados Unidos registrada en TVmaze · hora sin confirmar · SkyShowtime España estrenó la T2 el 31/10; calendario español por capítulo pendiente de contraste","title":"Now You See Me"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":2,"date":"2026-11-05","title":"Episodio 2 · título pendiente","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3798422/black-doves-2x02-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · Netflix confirma el estreno de la temporada, no el recuento"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":3,"date":"2026-11-05","title":"Episodio 3 · título pendiente","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3798423/black-doves-2x03-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · Netflix confirma el estreno de la temporada, no el recuento"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":4,"date":"2026-11-05","title":"Episodio 4 · título pendiente","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3798424/black-doves-2x04-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · Netflix confirma el estreno de la temporada, no el recuento"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":5,"date":"2026-11-05","title":"Episodio 5 · título pendiente","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3798425/black-doves-2x05-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · Netflix confirma el estreno de la temporada, no el recuento"},
     {"serieId":"black-doves","serie":"Palomas negras","season":2,"episode":6,"date":"2026-11-05","title":"Episodio 6 · título pendiente","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3798426/black-doves-2x06-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · Netflix confirma el estreno de la temporada, no el recuento"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":1,"date":"2026-11-17","title":"Episodio 1 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794031/the-circle-8x01-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":2,"date":"2026-11-18","title":"Episodio 2 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794032/the-circle-8x02-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":3,"date":"2026-11-19","title":"Episodio 3 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794033/the-circle-8x03-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":4,"date":"2026-11-24","title":"Episodio 4 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794034/the-circle-8x04-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":5,"date":"2026-11-25","title":"Episodio 5 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794035/the-circle-8x05-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
-    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":6,"date":"2026-11-26","title":"Episodio 6 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794036/the-circle-8x06-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":1,"date":"2026-11-17","title":"Episodio 1 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":2,"date":"2026-11-18","title":"Episodio 2 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":3,"date":"2026-11-19","title":"Episodio 3 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":4,"date":"2026-11-24","title":"Episodio 4 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":5,"date":"2026-11-25","title":"Episodio 5 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
+    {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":6,"date":"2026-11-26","title":"Episodio 6 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.disneyplus.com/explore/articles/new-to-disney-plus","note":"Fecha de Hulu en Estados Unidos confirmada por Disney · hora sin confirmar · disponibilidad en España sin anunciar"},
     {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":7,"date":"2026-12-01","title":"Episodio 7 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794037/the-circle-8x07-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
     {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":8,"date":"2026-12-02","title":"Episodio 8 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794038/the-circle-8x08-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},
     {"serieId":"the-circle-us","serie":"The Circle (US)","season":8,"episode":9,"date":"2026-12-03","title":"Episodio 9 · título pendiente","platform":"Hulu (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3794039/the-circle-8x09-tba","note":"Fecha registrada en TVmaze · hora sin confirmar · disponibilidad en España sin anunciar"},

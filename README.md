@@ -2,6 +2,18 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Revisión completa del 2 de noviembre de 2026
+
+Revisadas las **99 series** del catálogo: se volvieron a consultar las fichas, todas las temporadas y las listas completas de episodios, incluidos especiales, de 98 series en TVmaze; Una fiesta de muerte se comprobó en su web oficial de Antena 3. También se consultó Brain Games: On the Road, conservado como T9 en la app. `catalog-review.json` guarda la revisión individual, los recuentos, las fuentes, las huellas de las respuestas y las diferencias de numeración.
+
+El calendario conserva **6.843 estrenos fechados**, con **58 próximos estrenos** en el momento de la revisión del 02/11/2026. No se han registrado capítulos adicionales con fecha contrastable. Corregidas las 400 fechas históricas de Forensic Files al convertir a Madrid los horarios de emisión original que registra TVmaze, y una hora de Big Brother T28. Se mantienen las 14 temporadas y los 400 capítulos regulares de Forensic Files, sin incorporar sus especiales de larga duración.
+
+[Disney+ / Hulu](https://www.disneyplus.com/explore/articles/new-to-disney-plus) confirma las seis primeras fechas de la nueva etapa de The Circle: 17, 18, 19, 24, 25 y 26 de noviembre. El calendario identifica esas seis fechas como oficiales; los diez registros de diciembre y el total de 16 capítulos se siguen atribuyendo a TVmaze. La hora y la disponibilidad en España siguen sin anunciar. Se conserva la T8 de la app, equivalente a la T1 de Hulu.
+
+Actualizados los estados del proveedor de Grande de España y Lupin a continuidad pendiente. La ficha de Dexter: Resurrection recoge el estreno de su T2 en SkyShowtime España el 31/10 y la emisión semanal, confirmados por [Telecable](https://blog.telecable.es/contenidos-destacados-television-octubre-2026/); el calendario mantiene las fechas de Paramount+ en Estados Unidos, con el país indicado, sin extrapolar las fechas españolas. Se comprobaron de nuevo los especiales y el regreso regular de Ghosts, las próximas emisiones de Koh-Lanta y los anuncios de Netflix. Se conserva el especial de Ghostmas dividido en dos capítulos según CBS, aunque TVmaze lo agrupe en una hora.
+
+Las fichas y el informe reflejan los capítulos ya estrenados: Furia T2, 4/8; The Traitors T5, 8/12; Dexter: Resurrection T2, 1/10; Ghosts T6, dos especiales disponibles. Actualizadas la fecha de revisión visible y la caché sin conexión. Se conservan el progreso, el ritmo y el historial de visionado. Las pruebas de calendario y funcionamiento sin conexión pasan e incluyen las correcciones de horarios, la cobertura de las 99 series y las fechas oficiales de Hulu.
+
 ## Incorporación de The Righteous Gemstones del 2 de noviembre de 2026
 
 Añadida **The Righteous Gemstones** (HBO / HBO Max), con portada, sinopsis y los títulos de sus 36 capítulos, repartidos en cuatro temporadas completas. La cuarta es la última, según el anuncio oficial de HBO. El calendario recoge los horarios de emisión original de HBO en Estados Unidos convertidos a Madrid, con TVmaze como fuente de los episodios; no se atribuyen a un estreno en España.
