@@ -7301,10 +7301,8 @@
     return [`Temporada ${season.season} ${stage}`, count, next ? `${available ? "Próximo" : "Estreno"} ${formatCatalogDate(next.date)}` : season.totalKnown === false ? "Próximas fechas pendientes" : "", review.renewalNote || ""].filter(Boolean).join(" · ");
   }
 
-  function releaseSourcesHtml(serie) {
-    const sources = [...(RELEASE_REVIEW.series[serie.id]?.sources || []), ...(RELEASE_REVIEW.providerSources?.[serie.id] || [])];
-    const dataNote = RELEASE_REVIEW.series[serie.id]?.dataNote;
-    return sources.length ? `<p class="calendar-source-note">Revisado el ${formatCatalogDate(RELEASE_REVIEW.series[serie.id]?.reviewedOn || DATA_REVIEWED_ON)} · ${sources.map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join(" · ")}${dataNote ? `<br>${escapeHtml(dataNote)}` : ""}</p>` : "";
+  function releaseReviewHtml(serie) {
+    return `<p class="calendar-source-note">Revisado el ${formatCatalogDate(RELEASE_REVIEW.series[serie.id]?.reviewedOn || DATA_REVIEWED_ON)}</p>`;
   }
 
   function dataReviewSummary() {
@@ -8311,7 +8309,7 @@
     const e = getSerie(activeSerieId);
     if (!e) return;
     const a = serieTotals(e);
-    document.getElementById("detailSources").innerHTML = releaseSourcesHtml(e);
+    document.getElementById("detailSources").innerHTML = releaseReviewHtml(e);
     applyPalette(document.querySelector(".detail-hero"), e.id), document.getElementById("detailBadge").textContent = releaseStatusText(e), document.getElementById("detailTitle").textContent = e.name, document.getElementById("detailDescription").textContent = e.description || "Progreso y temporadas.", document.getElementById("detailPendingEpisodes").textContent = a.pendingEpisodes, document.getElementById("detailPendingTime").textContent = formatHours(a.pendingMinutes), document.getElementById("detailDaysLeft").textContent = Math.ceil(a.daysLeft || 0), document.getElementById("detailFinishDate").textContent = formatFinishDate(a.daysLeft), document.getElementById("detailProgress").style.width = `${Math.min(100,a.progress)}%`, document.getElementById("detailPercent").textContent = `${Math.round(a.progress)}% · ${a.watchedEpisodes}/${a.totalEpisodes} capítulos`, document.getElementById("seasonCount").textContent = `${e.seasons.length} temporada${1===e.seasons.length?"":"s"}`;
     const t = document.getElementById("seasons");
     t.innerHTML = "", e.seasons.forEach((a, s) => {
