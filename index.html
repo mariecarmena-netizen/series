@@ -2630,7 +2630,7 @@
         <div class=calendar-kpi><small>Próximo estreno</small><strong id=calendarNextRelease>Sin fecha</strong></div>
         <div class=calendar-kpi><small>Series con fechas</small><strong id=calendarSeriesCount>0 series</strong></div>
       </div>
-      <p class=calendar-source-note id=calendarSourceNote>Mostrando todos los estrenos fechados del catálogo.</p>
+      <p class=calendar-source-note id=calendarSourceNote>Fecha de última revisión del catálogo: 02/11/2026</p>
     </section>
     <div class=calendar-main-grid>
       <section class=calendar-shell aria-label="Calendario mensual">
@@ -8410,7 +8410,7 @@
     document.querySelectorAll("[data-action='set-calendar-scope']").forEach(e => {
       const a = e.dataset.scope === ui.calendarScope;
       e.classList.toggle("active", a), e.setAttribute("aria-pressed", String(a))
-    }), monthCount.textContent = `${monthEvents.length} estreno${1===monthEvents.length?"":"s"}`, nextRelease.textContent = nextEvent ? `${formatCalendarEventDate(nextEvent.date)} · ${nextEvent.serie}` : "Sin próximos estrenos", seriesCount.textContent = `${new Set(sourceEvents.map(e=>e.serieId)).size} serie${1===new Set(sourceEvents.map(e=>e.serieId)).size?"":"s"}`, sourceNote.textContent = ("all" === ui.calendarScope ? "Mostrando todos los estrenos fechados del catálogo." : "Mostrando únicamente las series que sigues.") + " Fechas y horas de Madrid. Los estrenos de Estados Unidos o Francia no confirman disponibilidad en España.";
+    }), monthCount.textContent = `${monthEvents.length} estreno${1===monthEvents.length?"":"s"}`, nextRelease.textContent = nextEvent ? `${formatCalendarEventDate(nextEvent.date)} · ${nextEvent.serie}` : "Sin próximos estrenos", seriesCount.textContent = `${new Set(sourceEvents.map(e=>e.serieId)).size} serie${1===new Set(sourceEvents.map(e=>e.serieId)).size?"":"s"}`, sourceNote.textContent = `Fecha de última revisión del catálogo: ${formatCatalogDate(DATA_REVIEWED_ON)}`;
     const year = calendarCursor.getFullYear(),
       month = calendarCursor.getMonth(),
       leadingDays = (new Date(year, month, 1).getDay() + 6) % 7,
@@ -8446,7 +8446,6 @@
       toggle.textContent = ui.calendarShowAllUpcoming ? "Ver sólo los 10 siguientes" : `Ver los ${allUpcoming.length} próximos estrenos`;
       toggle.setAttribute("aria-expanded", String(ui.calendarShowAllUpcoming));
     }
-    sourceNote.textContent += ` ${dataReviewSummary()} Las fechas registradas sólo en TVmaze se indican en cada estreno.`;
     dayTitle.textContent = formatCalendarDay(selectedCalendarDate), dayCount.textContent = `${selectedEvents.length} estreno${1===selectedEvents.length?"":"s"}`, dayEvents.innerHTML = selectedEvents.length ? selectedEvents.map(e => calendarEventHtml(e)).join("") : '<div class="calendar-empty">No hay capítulos nuevos este día.</div>', upcomingCount.textContent = `${allUpcoming.length} próximo${1===allUpcoming.length?"":"s"}`, upcomingEvents.innerHTML = upcoming.length ? upcoming.map(e => calendarEventHtml(e, {
       showDate: !0
     })).join("") : '<div class="calendar-empty">No hay próximos estrenos con fecha.</div>', undatedCount.textContent = `${undated.length} pendiente${1===undated.length?"":"s"}`, undatedEvents.innerHTML = visibleUndated.length ? visibleUndated.map(e => `
