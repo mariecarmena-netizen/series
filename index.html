@@ -7710,8 +7710,7 @@
   }
 
   function completedWatchLabel(id) {
-    const count = completedWatchCount(id);
-    return `${count} ${count === 1 ? "vez" : "veces"}`
+    return `x${completedWatchCount(id)}`
   }
 
   function serieDisplayName(serie) {

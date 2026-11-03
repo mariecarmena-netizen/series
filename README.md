@@ -6,7 +6,7 @@ Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
 Al final de **Añadir serie** aparece el apartado **Volver a ver**, con las series que ya has terminado. Su botón reinicia todas las temporadas desde el primer capítulo y devuelve la serie a la lista de pendientes. Se conservan el historial de actividad y los visionados completos, sin duplicar la serie. Si ya estás repitiéndola, el botón permite continuar con su progreso actual.
 
-El nombre muestra el contador, por ejemplo **The Righteous Gemstones (2 veces)**. Cada repetición completa suma una vez; desmarcar un capítulo de ese visionado corrige el contador. Las series que ya estaban guardadas como terminadas cuentan como un primer visionado. Estar al día en una temporada que todavía tiene capítulos por estrenar no cuenta como haber visto la serie completa.
+El nombre muestra el contador, por ejemplo **The Righteous Gemstones (x2)**. Cada repetición completa suma una vez; desmarcar un capítulo de ese visionado corrige el contador. Las series que ya estaban guardadas como terminadas cuentan como un primer visionado. Estar al día en una temporada que todavía tiene capítulos por estrenar no cuenta como haber visto la serie completa.
 
 El contador se guarda en el mismo almacenamiento local que el progreso y se conserva aunque retires una serie de tu lista. La búsqueda y los filtros del catálogo también se aplican a «Volver a ver». Actualizada la caché sin conexión para recibir esta función.
 
