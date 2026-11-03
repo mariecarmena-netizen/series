@@ -2,6 +2,12 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Incorporación de El plan del diablo del 3 de noviembre de 2026
+
+Añadida **El plan del diablo** (Netflix), también conocida como The Devil's Plan, con portada, sinopsis y sus dos temporadas completas de 12 capítulos cada una. [Netflix](https://about.netflix.com/ko/news/the-devils-plan-dead-again-teaser) anuncia la tercera, Dead Again, para el 10/11/2026: 14 capítulos durante tres semanas. Sólo se fecha el estreno; las tandas restantes, sus títulos y la hora quedan pendientes de confirmar. TVmaze aporta los títulos genéricos originales y las fechas históricas, sin utilizar sus marcas automáticas de mediodía como horarios.
+
+El catálogo reúne ahora 100 series y 6.868 estrenos fechados. La nueva ficha se revisó el 03/11/2026 y se conserva la revisión completa del 02/11/2026 para las otras 99 series. Actualizada la caché sin conexión para recibir la incorporación al volver a abrir la app. Se conserva el progreso guardado.
+
 ## Revisión completa del 2 de noviembre de 2026
 
 Revisadas las **99 series** del catálogo: se volvieron a consultar las fichas, todas las temporadas y las listas completas de episodios, incluidos especiales, de 98 series en TVmaze; Una fiesta de muerte se comprobó en su web oficial de Antena 3. También se consultó Brain Games: On the Road, conservado como T9 en la app. `catalog-review.json` guarda la revisión individual, los recuentos, las fuentes, las huellas de las respuestas y las diferencias de numeración.

@@ -1,10 +1,28 @@
 // Revisión completa: 99 series el 2 de noviembre de 2026.
+// Incorporada El plan del diablo el 3 de noviembre de 2026; catálogo de 100 series.
 // Horarios de Europe/Madrid. Las fechas del proveedor se distinguen de los anuncios oficiales.
 const RELEASE_REVIEW = {
   "reviewedOn": "2026-11-02",
-  "catalogUpdatedOn": "2026-11-02",
+  "catalogUpdatedOn": "2026-11-03",
   "timeZone": "Europe/Madrid",
   "series": {
+    "el-plan-del-diablo": {
+      "reviewedOn": "2026-11-03",
+      "sources": [
+        {
+          "label": "Netflix España · ficha y disponibilidad",
+          "url": "https://www.netflix.com/es/title/81653386"
+        },
+        {
+          "label": "Netflix · T3 Dead Again: estreno global el 10/11/2026, 14 capítulos en tres semanas",
+          "url": "https://about.netflix.com/ko/news/the-devils-plan-dead-again-teaser"
+        }
+      ],
+      "dataNote": "Dos temporadas completas de 12 capítulos cada una en Netflix. La T3, Dead Again, tiene 14 capítulos y un estreno global el 10/11/2026, anunciados por Netflix para tres semanas. Sólo se fecha el primer capítulo: el reparto por tandas, los títulos y la hora siguen pendientes. Se conservan los títulos genéricos originales de TVmaze para T1 y T2. Sus marcas automáticas de mediodía no se usan como horas de estreno. Duración media orientativa de 78 minutos.",
+      "trackingSeason": 3,
+      "providerReviewedOn": "2026-11-03",
+      "providerStatus": "Running"
+    },
     "the-righteous-gemstones": {
       "reviewedOn": "2026-11-02",
       "sources": [
@@ -5116,6 +5134,12 @@ const RELEASE_REVIEW = {
     }
   },
   "providerSources": {
+    "el-plan-del-diablo": [
+      {
+        "label": "TVmaze · ficha, temporadas y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/70927/the-devils-plan"
+      }
+    ],
     "the-righteous-gemstones": [
       {
         "label": "TVmaze · ficha, temporadas y episodios registrados",
@@ -12659,6 +12683,31 @@ const RELEASE_REVIEW = {
     {"serieId":"on-the-case-with-paula-zahn","serie":"On the Case with Paula Zahn","season":25,"episode":7,"date":"2022-11-07","title":"The Mother She Never Knew","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2416515/on-the-case-with-paula-zahn-25x09-the-mother-she-never-knew","releaseAt":"2022-11-07T03:00:00+00:00","note":"Numeración de la app: 15 capítulos regulares y dos especiales al final; fecha asociada por título"},
     {"serieId":"on-the-case-with-paula-zahn","serie":"On the Case with Paula Zahn","season":25,"episode":16,"date":"2022-09-26","title":"Mystery in Coachella Valley","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2551420/on-the-case-with-paula-zahn-s25-special-mystery-in-coachella-valley","releaseAt":"2022-09-26T02:00:00+00:00","note":"Numeración de la app: 15 capítulos regulares y dos especiales al final; fecha asociada por título"},
     {"serieId":"on-the-case-with-paula-zahn","serie":"On the Case with Paula Zahn","season":25,"episode":17,"date":"2022-10-17","title":"The Year of Fear","platform":"Investigation Discovery (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2395445/on-the-case-with-paula-zahn-s25-special-the-year-of-fear","releaseAt":"2022-10-17T02:00:00+00:00","note":"Numeración de la app: 15 capítulos regulares y dos especiales al final; fecha asociada por título"},
-    {"serieId":"camping-paradis","serie":"Camping Paradis","season":11,"episode":1,"date":"2016-07-05","title":"La colo au camping","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/1899581/camping-paradis-8x01-la-colo-au-camping","releaseAt":"2016-07-05T19:00:00+00:00","note":"T11 en la app y T8 en TVmaze · fecha de emisión original asociada por título"}
+    {"serieId":"camping-paradis","serie":"Camping Paradis","season":11,"episode":1,"date":"2016-07-05","title":"La colo au camping","platform":"TF1 (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/1899581/camping-paradis-8x01-la-colo-au-camping","releaseAt":"2016-07-05T19:00:00+00:00","note":"T11 en la app y T8 en TVmaze · fecha de emisión original asociada por título"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":1,"date":"2023-09-26","title":"Episode 1","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2634349/the-devils-plan-1x01-episode-1"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":2,"date":"2023-09-26","title":"Episode 2","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652876/the-devils-plan-1x02-episode-2"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":3,"date":"2023-09-26","title":"Episode 3","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652877/the-devils-plan-1x03-episode-3"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":4,"date":"2023-09-26","title":"Episode 4","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652878/the-devils-plan-1x04-episode-4"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":5,"date":"2023-10-03","title":"Episode 5","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652879/the-devils-plan-1x05-episode-5"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":6,"date":"2023-10-03","title":"Episode 6","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652880/the-devils-plan-1x06-episode-6"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":7,"date":"2023-10-03","title":"Episode 7","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652881/the-devils-plan-1x07-episode-7"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":8,"date":"2023-10-03","title":"Episode 8","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652882/the-devils-plan-1x08-episode-8"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":9,"date":"2023-10-03","title":"Episode 9","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652883/the-devils-plan-1x09-episode-9"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":10,"date":"2023-10-10","title":"Episode 10","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652884/the-devils-plan-1x10-episode-10"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":11,"date":"2023-10-10","title":"Episode 11","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652885/the-devils-plan-1x11-episode-11"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":1,"episode":12,"date":"2023-10-10","title":"Episode 12","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2652886/the-devils-plan-1x12-episode-12"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":1,"date":"2025-05-06","title":"Episode 1","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228819/the-devils-plan-2x01-episode-1"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":2,"date":"2025-05-06","title":"Episode 2","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228820/the-devils-plan-2x02-episode-2"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":3,"date":"2025-05-06","title":"Episode 3","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228821/the-devils-plan-2x03-episode-3"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":4,"date":"2025-05-06","title":"Episode 4","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228823/the-devils-plan-2x04-episode-4"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":5,"date":"2025-05-13","title":"Episode 5","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228824/the-devils-plan-2x05-episode-5"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":6,"date":"2025-05-13","title":"Episode 6","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228825/the-devils-plan-2x06-episode-6"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":7,"date":"2025-05-13","title":"Episode 7","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228826/the-devils-plan-2x07-episode-7"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":8,"date":"2025-05-13","title":"Episode 8","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228827/the-devils-plan-2x08-episode-8"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":9,"date":"2025-05-13","title":"Episode 9","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228828/the-devils-plan-2x09-episode-9"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":10,"date":"2025-05-20","title":"Episode 10","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228829/the-devils-plan-2x10-episode-10"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":11,"date":"2025-05-20","title":"Episode 11","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228830/the-devils-plan-2x11-episode-11"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":2,"episode":12,"date":"2025-05-20","title":"Episode 12","platform":"Netflix","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3228831/the-devils-plan-2x12-episode-12"},
+    {"serieId":"el-plan-del-diablo","serie":"El plan del diablo","season":3,"episode":1,"date":"2026-11-10","title":"Episodio 1 · título pendiente","platform":"Netflix","sourceKind":"official","sourceUrl":"https://about.netflix.com/ko/news/the-devils-plan-dead-again-teaser","note":"Estreno global anunciado por Netflix · 14 capítulos en tres semanas; reparto por tandas, títulos y hora sin confirmar"}
   ]
 };

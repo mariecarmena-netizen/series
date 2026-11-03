@@ -57,6 +57,9 @@ async function offlineRequest(url, mode = 'same-origin') {
   assert.ok(offlineHtml.toString().includes('./release-data.js'));
   const releaseData = await offlineRequest('./release-data.js');
   assert.ok(releaseData.toString().includes('"reviewedOn": "2026-11-02"'));
+  assert.ok(releaseData.toString().includes('"catalogUpdatedOn": "2026-11-03"'));
+  assert.ok(offlineHtml.toString().includes('"id": "el-plan-del-diablo"'));
+  assert.ok(releaseData.toString().includes('"serieId":"el-plan-del-diablo"'));
   assert.ok(releaseData.toString().includes('2026-11-09T02:00:00Z'));
   assert.ok(releaseData.toString().includes('2027-02-09'));
   assert.ok(await offlineRequest('./manifest.webmanifest'));
