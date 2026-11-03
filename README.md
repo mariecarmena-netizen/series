@@ -2,6 +2,14 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Volver a ver
+
+Al final de **Añadir serie** aparece el apartado **Volver a ver**, con las series que ya has terminado. Su botón reinicia todas las temporadas desde el primer capítulo y devuelve la serie a la lista de pendientes. Se conservan el historial de actividad y los visionados completos, sin duplicar la serie. Si ya estás repitiéndola, el botón permite continuar con su progreso actual.
+
+El nombre muestra el contador, por ejemplo **The Righteous Gemstones (2 veces)**. Cada repetición completa suma una vez; desmarcar un capítulo de ese visionado corrige el contador. Las series que ya estaban guardadas como terminadas cuentan como un primer visionado. Estar al día en una temporada que todavía tiene capítulos por estrenar no cuenta como haber visto la serie completa.
+
+El contador se guarda en el mismo almacenamiento local que el progreso y se conserva aunque retires una serie de tu lista. La búsqueda y los filtros del catálogo también se aplican a «Volver a ver». Actualizada la caché sin conexión para recibir esta función.
+
 ## Incorporación de El plan del diablo del 3 de noviembre de 2026
 
 Añadida **El plan del diablo** (Netflix), también conocida como The Devil's Plan, con portada, sinopsis y sus dos temporadas completas de 12 capítulos cada una. [Netflix](https://about.netflix.com/ko/news/the-devils-plan-dead-again-teaser) anuncia la tercera, Dead Again, para el 10/11/2026: 14 capítulos durante tres semanas. Sólo se fecha el estreno; las tandas restantes, sus títulos y la hora quedan pendientes de confirmar. TVmaze aporta los títulos genéricos originales y las fechas históricas, sin utilizar sus marcas automáticas de mediodía como horarios.
@@ -87,4 +95,5 @@ Abre `http://127.0.0.1:8765/`. Las pruebas no requieren paquetes adicionales:
 ```sh
 node tests/releases.test.cjs
 node tests/offline.test.cjs
+node tests/rewatch.test.cjs
 ```

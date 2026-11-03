@@ -2578,6 +2578,13 @@
           <h3>Catálogo</h3><span id=catalogCount>3 disponibles</span>
         </div>
         <section class=catalog-grid id=catalogList></section>
+        <section aria-labelledby=rewatchHeading>
+          <div class=section-title>
+            <h3 id=rewatchHeading>Volver a ver</h3><span id=rewatchCount>0 series</span>
+          </div>
+          <p>Series que ya has visto por completo. Empieza de nuevo desde el primer capítulo y conserva tus visionados completos.</p>
+          <section class=catalog-grid id=rewatchList aria-live=polite></section>
+        </section>
       </div>
     </section>
   </section>
@@ -7235,7 +7242,7 @@
       ["#0077b6", "#ef476f", "#f9c74f"],
       ["#355070", "#e56b6f", "#b7e4c7"]
     ],
-    state = syncKnownCatalogData(loadState());
+    state = initializeViewingHistory(syncKnownCatalogData(loadState()));
   let activeSerieId = state.mySeries[0]?.id || null,
     selectedCalendarDate = initialCalendarDate(),
     calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate));
@@ -7565,6 +7572,10 @@
           minutesPerEpisode: Number(e.minutesPerEpisode) || 45,
           episodesPerDay: Number(e.episodesPerDay) || 2,
           lastWatchedAt: normalizeWatchTimestamp(e.lastWatchedAt),
+          watchCompletion: Array.isArray(e.watchCompletion) ? e.watchCompletion.map(season => ({
+            season: Math.max(1, Math.floor(Number(season?.season) || 1)),
+            total: Math.max(0, Math.floor(Number(season?.total) || 0))
+          })).filter(season => season.total > 0) : null,
           seasons: Array.isArray(e.seasons) && e.seasons.length ? e.seasons : [{
             season: 1,
             total: 0,
@@ -7577,6 +7588,9 @@
       s = new Set(t.map(e => e.id));
     return {
       mySeries: t,
+      viewingHistory: Object.fromEntries(Object.entries(a.viewingHistory && typeof a.viewingHistory === "object" ? a.viewingHistory : {})
+        .filter(([id, count]) => !REMOVED_SERIES_IDS.includes(id) && Number.isFinite(Number(count)) && Number(count) > 0)
+        .map(([id, count]) => [id, Math.floor(Number(count))])),
       watchHistory: (Array.isArray(a.watchHistory) ? a.watchHistory : []).map(e => ({
         serieId: String(e?.serieId || ""),
         season: Math.max(0, Math.floor(Number(e?.season) || 0)),
@@ -7653,9 +7667,7 @@
         mySeries: []
       })
     } catch (e) {
-      return {
-        mySeries: []
-      }
+      return normalizeState({mySeries: []})
     }
   }
 
@@ -7669,6 +7681,58 @@
 
   function getCatalogSerie(e) {
     return catalog.find(a => a.id === e)
+  }
+
+  function isFullWatchComplete(serie) {
+    return serie.seasons.some(season => season.total > 0) && serie.seasons.every(season =>
+      season.total > 0
+        ? season.totalKnown !== false && availableEpisodeLimit(serie, season) >= season.total && season.watched >= season.total
+        : season.available === false
+    )
+  }
+
+  function watchCompletionSnapshot(serie) {
+    return serie.seasons.filter(season => season.total > 0).map(season => ({season: season.season, total: season.total}))
+  }
+
+  function initializeViewingHistory(saved) {
+    saved.mySeries.forEach(serie => {
+      if (serie.watchCompletion?.length || isFullWatchComplete(serie)) {
+        saved.viewingHistory[serie.id] = Math.max(1, Number(saved.viewingHistory[serie.id]) || 0);
+        if (!serie.watchCompletion?.length) serie.watchCompletion = watchCompletionSnapshot(serie);
+      }
+    });
+    return saved
+  }
+
+  function completedWatchCount(id) {
+    return Math.max(0, Number(state.viewingHistory[id]) || 0)
+  }
+
+  function completedWatchLabel(id) {
+    const count = completedWatchCount(id);
+    return `${count} ${count === 1 ? "vez" : "veces"}`
+  }
+
+  function serieDisplayName(serie) {
+    return `${serie.name} (${completedWatchLabel(serie.id)})`
+  }
+
+  function recordFullWatch(serie) {
+    if (!serie.watchCompletion?.length && isFullWatchComplete(serie)) {
+      state.viewingHistory[serie.id] = completedWatchCount(serie.id) + 1;
+      serie.watchCompletion = watchCompletionSnapshot(serie);
+    }
+  }
+
+  function undoFullWatch(serie) {
+    if (serie.watchCompletion?.some(completed => {
+      const season = serie.seasons.find(season => season.season === completed.season);
+      return season && season.watched < completed.total;
+    })) {
+      state.viewingHistory[serie.id] = Math.max(0, completedWatchCount(serie.id) - 1);
+      serie.watchCompletion = null;
+    }
   }
 
   function clampSerie(e) {
@@ -8181,15 +8245,20 @@
     }))
   }
 
-  function filteredCatalog() {
+  function matchesCatalogFilters(serie) {
     const e = ui.catalogSearch.trim().toLowerCase(),
       a = ui.catalogFilter || "all";
-    return catalog.filter(t => {
-      if (getSerie(t.id)) return !1;
-      const s = [t.name, t.status, t.description, t.emoji, t.platform, ...t.seasons.flatMap(e => [e.note, ...normalizeEpisodeList(e.episodes).map(e => e.title)])].join(" ").toLowerCase(),
-        i = catalogFilterKind(t);
-      return (!e || s.includes(e)) && ("all" === a || i === a)
-    }).sort((e, a) => {
+    const text = [serie.name, serie.status, serie.description, serie.emoji, serie.platform, ...serie.seasons.flatMap(season => [season.note, ...normalizeEpisodeList(season.episodes).map(episode => episode.title)])].join(" ").toLowerCase();
+    return (!e || text.includes(e)) && (a === "all" || catalogFilterKind(serie) === a)
+  }
+
+  function filteredRewatchCatalog() {
+    return catalog.filter(serie => completedWatchCount(serie.id) > 0 && matchesCatalogFilters(serie))
+      .sort((a, b) => a.name.localeCompare(b.name, "es", {sensitivity: "base"}))
+  }
+
+  function filteredCatalog() {
+    return catalog.filter(serie => !getSerie(serie.id) && !completedWatchCount(serie.id) && matchesCatalogFilters(serie)).sort((e, a) => {
       if ("upcoming" !== ui.catalogFilter && "airing" !== ui.catalogFilter) return 0;
       const t = nextCatalogRelease(e)?.date || "9999-12-31",
         s = nextCatalogRelease(a)?.date || "9999-12-31";
@@ -8250,7 +8319,7 @@
       r = a.nextCaption || "Por ver",
       l = !i.canWatch || 0 === t.pendingEpisodes,
       d = document.createElement("article");
-    return d.className = o ? "serie-card has-quick-watch" : "serie-card", applyPalette(d, e.id), d.innerHTML = `\n        <div class="serie-row">\n          <div class="avatar${e.image?" with-image":""}" aria-hidden="true">${serieImageContent(e)}</div>\n          <div class="serie-main">\n            <div class="serie-meta">\n              <div class="serie-labels">\n                <span class="pill ${s.className}">${escapeHtml(s.text)}</span>\n                ${platformIconsHtml(e)}\n              </div>\n              <h2>\n                <button class="serie-title-button" type="button" data-action="open-detail" data-id="${escapeHtml(e.id)}" aria-label="Abrir ficha de ${escapeHtml(e.name)}">${escapeHtml(e.name)}</button>\n              </h2>\n              <p>${escapeHtml(e.description||e.status)}</p>\n            </div>\n            <div class="progress-wrap"><div class="progress" style="width:${Math.min(100,t.progress)}%"></div></div>\n            <p class="progress-text">${Math.round(t.progress)}% · ${t.watchedEpisodes}/${t.totalEpisodes} capítulos</p>\n          </div>\n          ${o?`\n            <button class="secondary serie-quick-watch" type="button" data-action="quick-watch" data-id="${escapeHtml(e.id)}" aria-label="Marcar como visto ${escapeHtml(n)} de ${escapeHtml(e.name)}" ${l?"disabled":""}>+1</button>\n          `:""}\n        </div>\n        <div class="next-watch">\n          <small>${escapeHtml(r)}</small>\n          <span class="next-copy">\n            <b>${escapeHtml(n)}</b>\n            ${i.releaseText?`<em>${escapeHtml(i.releaseText)}</em>`:""}\n          </span>\n        </div>\n        <div class="mini-stats">\n          <span>Pend. <b>${t.pendingEpisodes}</b></span>\n          <span>Tiempo <b>${formatHours(t.pendingMinutes)}</b></span>\n        </div>\n      `, d
+    return d.className = o ? "serie-card has-quick-watch" : "serie-card", applyPalette(d, e.id), d.innerHTML = `\n        <div class="serie-row">\n          <div class="avatar${e.image?" with-image":""}" aria-hidden="true">${serieImageContent(e)}</div>\n          <div class="serie-main">\n            <div class="serie-meta">\n              <div class="serie-labels">\n                <span class="pill ${s.className}">${escapeHtml(s.text)}</span>\n                ${platformIconsHtml(e)}\n              </div>\n              <h2>\n                <button class="serie-title-button" type="button" data-action="open-detail" data-id="${escapeHtml(e.id)}" aria-label="Abrir ficha de ${escapeHtml(serieDisplayName(e))}">${escapeHtml(serieDisplayName(e))}</button>\n              </h2>\n              <p>${escapeHtml(e.description||e.status)}</p>\n            </div>\n            <div class="progress-wrap"><div class="progress" style="width:${Math.min(100,t.progress)}%"></div></div>\n            <p class="progress-text">${Math.round(t.progress)}% · ${t.watchedEpisodes}/${t.totalEpisodes} capítulos</p>\n          </div>\n          ${o?`\n            <button class="secondary serie-quick-watch" type="button" data-action="quick-watch" data-id="${escapeHtml(e.id)}" aria-label="Marcar como visto ${escapeHtml(n)} de ${escapeHtml(e.name)}" ${l?"disabled":""}>+1</button>\n          `:""}\n        </div>\n        <div class="next-watch">\n          <small>${escapeHtml(r)}</small>\n          <span class="next-copy">\n            <b>${escapeHtml(n)}</b>\n            ${i.releaseText?`<em>${escapeHtml(i.releaseText)}</em>`:""}\n          </span>\n        </div>\n        <div class="mini-stats">\n          <span>Pend. <b>${t.pendingEpisodes}</b></span>\n          <span>Tiempo <b>${formatHours(t.pendingMinutes)}</b></span>\n        </div>\n      `, d
   }
 
   function renderHome() {
@@ -8289,19 +8358,64 @@
     }) : e.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Vacío</span>\n            <h2>Aún no hay series al día</h2>\n            <p>Cuando termines todos los capítulos disponibles, aparecerán aquí.</p>\n          </article>\n        '
   }
 
+  function createCatalogCard(serie, rewatch = false) {
+    const card = document.createElement("article"),
+      followed = getSerie(serie.id),
+      inProgress = followed && !isFullWatchComplete(followed);
+    card.className = "catalog-card";
+    applyPalette(card, serie.id);
+    card.innerHTML = `
+      <div class="catalog-top">
+        <div class="poster${serie.image ? " with-image" : ""}" aria-hidden="true">${serieImageContent(serie)}</div>
+        <div class="catalog-meta">
+          ${platformIconsHtml(serie)}
+          <h3>${escapeHtml(rewatch ? serieDisplayName(serie) : serie.name)}</h3>
+          <p>${escapeHtml(serie.description)}</p>
+          <span class="catalog-status">${escapeHtml(serie.status)}</span>
+        </div>
+      </div>
+      <div class="card-actions">
+        <button type="button" data-action="${rewatch ? inProgress ? "open-detail" : "rewatch-serie" : "add-serie"}" data-id="${escapeHtml(serie.id)}">${rewatch ? inProgress ? "Continuar en tu lista" : "Volver a ver" : "Añadir a Mis series"}</button>
+      </div>
+    `;
+    return card
+  }
+
   function renderCatalog() {
-    const e = filteredCatalog(),
-      a = catalog.filter(e => !getSerie(e.id)),
-      t = document.getElementById("searchCatalog");
-    document.activeElement !== t && (t.value = ui.catalogSearch), document.querySelectorAll("[data-action='set-catalog-filter']").forEach(e => {
-      const a = e.dataset.filter === ui.catalogFilter;
-      e.classList.toggle("active", a), e.setAttribute("aria-pressed", String(a))
-    }), document.getElementById("catalogCount").textContent = ui.catalogSearch || "all" !== ui.catalogFilter ? `${e.length} de ${a.length}` : `${a.length} disponible${1===a.length?"":"s"}`;
-    const s = document.getElementById("catalogList");
-    s.innerHTML = "", 0 !== e.length ? e.forEach(e => {
-      const a = document.createElement("article");
-      a.className = "catalog-card", applyPalette(a, e.id), a.innerHTML = `\n          <div class="catalog-top">\n            <div class="poster${e.image?" with-image":""}" aria-hidden="true">${serieImageContent(e)}</div>\n            <div class="catalog-meta">\n              ${platformIconsHtml(e)}\n              <h3>${escapeHtml(e.name)}</h3>\n              <p>${escapeHtml(e.description)}</p>\n              <span class="catalog-status">${escapeHtml(e.status)}</span>\n            </div>\n          </div>\n          <div class="card-actions">\n            <button type="button" data-action="add-serie" data-id="${escapeHtml(e.id)}">Añadir a Mis series</button>\n          </div>\n        `, s.appendChild(a)
-    }) : s.innerHTML = '\n          <article class="empty-card">\n            <span class="kicker">Sin resultados</span>\n            <h2>No encuentro esa serie</h2>\n            <p>Prueba con otro nombre, plataforma o estado.</p>\n          </article>\n        '
+    const series = filteredCatalog(),
+      available = catalog.filter(serie => !getSerie(serie.id) && !completedWatchCount(serie.id)),
+      search = document.getElementById("searchCatalog");
+    if (document.activeElement !== search) search.value = ui.catalogSearch;
+    document.querySelectorAll("[data-action='set-catalog-filter']").forEach(button => {
+      const active = button.dataset.filter === ui.catalogFilter;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+    document.getElementById("catalogCount").textContent = ui.catalogSearch || ui.catalogFilter !== "all"
+      ? `${series.length} de ${available.length}` : `${available.length} disponible${available.length === 1 ? "" : "s"}`;
+    const list = document.getElementById("catalogList");
+    list.innerHTML = "";
+    series.forEach(serie => list.appendChild(createCatalogCard(serie)));
+    if (!series.length) list.innerHTML = `
+      <article class="empty-card">
+        <span class="kicker">Sin resultados</span>
+        <h2>No hay series disponibles con esos filtros</h2>
+        <p>Prueba con otro nombre, plataforma o estado, o consulta «Volver a ver» al final.</p>
+      </article>
+    `;
+    const rewatches = filteredRewatchCatalog(),
+      rewatchTotal = catalog.filter(serie => completedWatchCount(serie.id) > 0).length,
+      rewatchList = document.getElementById("rewatchList");
+    document.getElementById("rewatchCount").textContent = ui.catalogSearch || ui.catalogFilter !== "all"
+      ? `${rewatches.length} de ${rewatchTotal}` : `${rewatchTotal} serie${rewatchTotal === 1 ? "" : "s"}`;
+    rewatchList.innerHTML = "";
+    rewatches.forEach(serie => rewatchList.appendChild(createCatalogCard(serie, true)));
+    if (!rewatches.length) rewatchList.innerHTML = `
+      <article class="empty-card">
+        <h3>${rewatchTotal ? "No hay series vistas con esos filtros" : "Aún no has completado ninguna serie"}</h3>
+        <p>${rewatchTotal ? "Prueba con otro nombre, plataforma o estado." : "Cuando veas todos los capítulos de una serie, podrás empezarla de nuevo aquí."}</p>
+      </article>
+    `
   }
 
   function renderDetail() {
@@ -8310,7 +8424,7 @@
     if (!e) return;
     const a = serieTotals(e);
     document.getElementById("detailSources").innerHTML = releaseReviewHtml(e);
-    applyPalette(document.querySelector(".detail-hero"), e.id), document.getElementById("detailBadge").textContent = releaseStatusText(e), document.getElementById("detailTitle").textContent = e.name, document.getElementById("detailDescription").textContent = e.description || "Progreso y temporadas.", document.getElementById("detailPendingEpisodes").textContent = a.pendingEpisodes, document.getElementById("detailPendingTime").textContent = formatHours(a.pendingMinutes), document.getElementById("detailDaysLeft").textContent = Math.ceil(a.daysLeft || 0), document.getElementById("detailFinishDate").textContent = formatFinishDate(a.daysLeft), document.getElementById("detailProgress").style.width = `${Math.min(100,a.progress)}%`, document.getElementById("detailPercent").textContent = `${Math.round(a.progress)}% · ${a.watchedEpisodes}/${a.totalEpisodes} capítulos`, document.getElementById("seasonCount").textContent = `${e.seasons.length} temporada${1===e.seasons.length?"":"s"}`;
+    applyPalette(document.querySelector(".detail-hero"), e.id), document.getElementById("detailBadge").textContent = releaseStatusText(e), document.getElementById("detailTitle").textContent = serieDisplayName(e), document.getElementById("detailDescription").textContent = e.description || "Progreso y temporadas.", document.getElementById("detailPendingEpisodes").textContent = a.pendingEpisodes, document.getElementById("detailPendingTime").textContent = formatHours(a.pendingMinutes), document.getElementById("detailDaysLeft").textContent = Math.ceil(a.daysLeft || 0), document.getElementById("detailFinishDate").textContent = formatFinishDate(a.daysLeft), document.getElementById("detailProgress").style.width = `${Math.min(100,a.progress)}%`, document.getElementById("detailPercent").textContent = `${Math.round(a.progress)}% · ${a.watchedEpisodes}/${a.totalEpisodes} capítulos`, document.getElementById("seasonCount").textContent = `${e.seasons.length} temporada${1===e.seasons.length?"":"s"}`;
     const t = document.getElementById("seasons");
     t.innerHTML = "", e.seasons.forEach((a, s) => {
       const i = availableEpisodeLimit(e, a),
@@ -8464,11 +8578,26 @@
   }
 
   function addSerie(e) {
+    if (!getCatalogSerie(e)) return;
     if (!getSerie(e)) {
       const a = clone(getCatalogSerie(e));
       state.mySeries.push(a)
     }
     activeSerieId = e, showScreen("detail")
+  }
+
+  function rewatchSerie(id) {
+    const source = getCatalogSerie(id), current = getSerie(id);
+    if (!source || !completedWatchCount(id)) return;
+    if (current && !isFullWatchComplete(current)) return openDetail(id);
+    const fresh = clone(source);
+    fresh.seasons.forEach(season => {season.watched = 0;});
+    fresh.lastWatchedAt = "";
+    fresh.watchCompletion = null;
+    if (current) state.mySeries[state.mySeries.indexOf(current)] = fresh;
+    else state.mySeries.push(fresh);
+    activeSerieId = id;
+    showScreen("detail")
   }
 
   function openDetail(e) {
@@ -8478,19 +8607,19 @@
   function watchNextEpisode(e = getSerie(activeSerieId)) {
     if (!e) return !1;
     const a = nextWatchableSeason(e);
-    return !!a && (a.watched += 1, markSerieWatched(e), recordWatchActivity(e, a.season), !0)
+    return !!a && (a.watched += 1, markSerieWatched(e), recordWatchActivity(e, a.season), recordFullWatch(e), !0)
   }
 
   function incrementSeason(e) {
     const a = getSerie(activeSerieId),
       t = a?.seasons[e];
-    t && (availableEpisodeLimit(a, t) > t.watched && (t.watched += 1, markSerieWatched(a), recordWatchActivity(a, t.season)), render())
+    t && (availableEpisodeLimit(a, t) > t.watched && (t.watched += 1, markSerieWatched(a), recordWatchActivity(a, t.season), recordFullWatch(a)), render())
   }
 
   function decrementSeason(e) {
     const a = getSerie(activeSerieId),
       t = a?.seasons[e];
-    t && (t.watched > 0 && (t.watched -= 1, removeLatestWatchActivity(a, t.season)), clearWatchDateIfNotStarted(a), render())
+    t && (t.watched > 0 && (t.watched -= 1, removeLatestWatchActivity(a, t.season), undoFullWatch(a)), clearWatchDateIfNotStarted(a), render())
   }
 
   function completeSeason(e) {
@@ -8499,7 +8628,7 @@
     if (!t) return;
     const s = availableEpisodeLimit(a, t),
       i = Math.max(0, s - t.watched);
-    i > 0 && (markSerieWatched(a), recordWatchActivity(a, t.season, i)), t.watched = s, render()
+    i > 0 && (markSerieWatched(a), recordWatchActivity(a, t.season, i)), t.watched = s, recordFullWatch(a), render()
   }
 
   function removeActiveSerie() {
@@ -8529,7 +8658,7 @@
       renderCalendar();
       return;
     }
-    "toggle-menu" !== t ? ("show-screen" === t && showScreen(a.dataset.screen), "add-serie" === t && addSerie(s), "open-detail" === t && openDetail(s), "quick-watch" === t && (watchNextEpisode(getSerie(s)), render()), "increment-season" === t && incrementSeason(i), "complete-season" === t && completeSeason(i), "decrement-season" === t && decrementSeason(i), "set-catalog-filter" === t && (ui.catalogFilter = a.dataset.filter || "all", renderCatalog()), "set-calendar-scope" === t && (ui.calendarScope = a.dataset.scope || "followed", selectedCalendarDate = initialCalendarDate(), calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate)), renderCalendar()), "go-calendar-today" === t && (selectedCalendarDate = dateKeyFromDate(new Date), calendarCursor = monthStartFromDate(new Date), renderCalendar()), "change-month" === t && (calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + Number(a.dataset.direction || 0), 1), selectedCalendarDate = calendarEventsForMonth(calendarCursor)[0]?.date || dateKeyFromDate(calendarCursor), renderCalendar()), "select-calendar-day" === t && (selectedCalendarDate = a.dataset.date, renderCalendar()), "remove-serie" === t && removeActiveSerie()) : toggleHomeMenu()
+    "toggle-menu" !== t ? ("show-screen" === t && showScreen(a.dataset.screen), "add-serie" === t && addSerie(s), "rewatch-serie" === t && rewatchSerie(s), "open-detail" === t && openDetail(s), "quick-watch" === t && (watchNextEpisode(getSerie(s)), render()), "increment-season" === t && incrementSeason(i), "complete-season" === t && completeSeason(i), "decrement-season" === t && decrementSeason(i), "set-catalog-filter" === t && (ui.catalogFilter = a.dataset.filter || "all", renderCatalog()), "set-calendar-scope" === t && (ui.calendarScope = a.dataset.scope || "followed", selectedCalendarDate = initialCalendarDate(), calendarCursor = monthStartFromDate(dateFromKey(selectedCalendarDate)), renderCalendar()), "go-calendar-today" === t && (selectedCalendarDate = dateKeyFromDate(new Date), calendarCursor = monthStartFromDate(new Date), renderCalendar()), "change-month" === t && (calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + Number(a.dataset.direction || 0), 1), selectedCalendarDate = calendarEventsForMonth(calendarCursor)[0]?.date || dateKeyFromDate(calendarCursor), renderCalendar()), "select-calendar-day" === t && (selectedCalendarDate = a.dataset.date, renderCalendar()), "remove-serie" === t && removeActiveSerie()) : toggleHomeMenu()
   }), document.addEventListener("keydown", e => {
     "Escape" === e.key && closeHomeMenu()
   }), document.getElementById("searchCatalog").addEventListener("input", e => {
