@@ -32,28 +32,29 @@ assert.equal(fresh.read('catalog.every(s => new Set(s.seasons.map(t => t.season)
 assert.equal(fresh.read('RELEASE_REVIEW.events.every(e => releaseEvents.find(r => r.serieId === e.serieId && r.season === e.season && r.episode === e.episode).serie === getCatalogSerie(e.serieId).name)'), true);
 assert.equal(fresh.read("releaseEvents.filter(e => e.date === '2026-10-23')[0].serieId"), 'the-traitors-us');
 assert.equal(fresh.read('catalog.every(s => RELEASE_REVIEW.providerSources[s.id]?.length > 0)'), true);
-assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-11-02');
-assert.equal(fresh.read('RELEASE_REVIEW.fullReviewedOn'), '2026-11-02');
+assert.equal(fresh.read('RELEASE_REVIEW.reviewedOn'), '2026-11-15');
+assert.equal(fresh.read('RELEASE_REVIEW.fullReviewedOn'), '2026-11-15');
 assert.equal(fresh.read('RELEASE_REVIEW.reviewScope'), 'full');
-assert.equal(fresh.read('RELEASE_REVIEW.reviewedSeriesCount'), 99);
+assert.equal(fresh.read('RELEASE_REVIEW.reviewedSeriesCount'), 100);
 assert.equal(fresh.read('new Set(RELEASE_REVIEW.reviewedSeriesIds).size'), fresh.read('RELEASE_REVIEW.reviewedSeriesCount'));
 assert.equal(fresh.read("RELEASE_REVIEW.reviewedSeriesIds.every(id => RELEASE_REVIEW.series[id]?.reviewedOn === RELEASE_REVIEW.reviewedOn && getCatalogSerie(id))"), true);
-assert.equal(fresh.read('RELEASE_REVIEW.catalogUpdatedOn'), '2026-11-03');
+assert.equal(fresh.read('RELEASE_REVIEW.catalogUpdatedOn'), '2026-11-15');
 assert.equal(fresh.read('new Set(releaseEvents.map(e => e.serieId)).size'), 100);
 assert.ok(fresh.read('releaseEvents.length') > 6000);
 const audit = JSON.parse(fs.readFileSync(path.join(root, 'catalog-review.json'), 'utf8'));
 assert.equal(audit.catalogSize, 100);
 assert.equal(audit.calendarEventCount, fresh.read('releaseEvents.length'));
 assert.equal(audit.series.length, 100);
-assert.equal(audit.reviewedSeriesCount, 99);
-assert.equal(audit.reviewedSeriesIds.length, 99);
+assert.equal(audit.reviewedSeriesCount, 100);
+assert.equal(audit.reviewedSeriesIds.length, 100);
 assert.ok(audit.series.filter(s => audit.reviewedSeriesIds.includes(s.id)).every(s => s.reviewedOn === audit.reviewedOn));
 assert.ok(audit.series.every(s => fresh.read(`RELEASE_REVIEW.series[${JSON.stringify(s.id)}].reviewedOn`) === s.reviewedOn));
 assert.ok(audit.series.every(s => s.reviewedOn <= audit.catalogUpdatedOn && s.sources.length > 0 && s.verification.checkedOn === s.reviewedOn));
-assert.equal(fresh.read("Object.values(RELEASE_REVIEW.series).filter(s => s.providerReviewedOn === '2026-11-02').length"), 98);
+assert.equal(fresh.read("Object.values(RELEASE_REVIEW.series).filter(s => s.providerReviewedOn === '2026-11-15').length"), 99);
 assert.equal(audit.changes.providerSeriesChecked + audit.changes.officialOnlySeriesChecked, audit.reviewedSeriesCount);
 assert.ok(audit.series.filter(s => s.provider?.id).every(s => s.verification.regularEpisodes > 0 && /^[a-f0-9]{64}$/.test(s.verification.sha256.show) && /^[a-f0-9]{64}$/.test(s.verification.sha256.episodes)));
-assert.equal(fresh.read('releaseEvents.length'), 6868);
+assert.equal(fresh.read('releaseEvents.length'), 6881);
+assert.equal(fresh.read('releaseEvents.every(e => typeof e.title === "string" && e.title.trim().length > 0)'), true);
 assert.equal(fresh.read('catalog.every(s => s.seasons.every(t => t.episodes.every(e => e.number <= t.total)))'), true);
 
 assert.equal(fresh.read("getCatalogSerie('forensic-files').seasons.length"), 14);
@@ -83,7 +84,7 @@ assert.equal(fresh.read("releaseEvents.some(e => /Celebrating Champions/.test(e.
 
 const today = app(null, '2026-10-11T10:00:00Z');
 assert.equal(today.read("availableEpisodeLimit(getCatalogSerie('the-traitors-us'), getCatalogSerie('the-traitors-us').seasons.find(s => s.season === 5))"), 5);
-assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 112);
+assert.equal(today.read('calendarUpcomingEvents(Infinity).length'), 125);
 assert.equal(today.read("undatedUpcomingForFollowedSeries().some(e => e.serieId === 'dexter-resurrection')"), false);
 assert.equal(today.read("ui.calendarScope = 'followed'; calendarUpcomingEvents(Infinity).length"), 0);
 
@@ -91,20 +92,26 @@ function available(app, id, season) {
   return app.read(`availableEpisodeLimit(getCatalogSerie('${id}'), getCatalogSerie('${id}').seasons.find(s => s.season === ${season}))`);
 }
 
-// La incorporación conserva los 24 capítulos disponibles y fecha sólo el estreno de T3.
+// La revisión conserva los 24 capítulos históricos y fecha las tres tandas de T3.
 const devilsPlan = app(null, '2026-11-03T12:00:00Z');
 assert.equal(devilsPlan.read("getCatalogSerie('el-plan-del-diablo').platform"), 'Netflix');
 assert.equal(devilsPlan.read("serieTotals(clone(getCatalogSerie('el-plan-del-diablo'))).availableEpisodes"), 24);
 assert.equal(devilsPlan.read("getCatalogSerie('el-plan-del-diablo').seasons.find(s => s.season === 3).total"), 14);
-assert.equal(devilsPlan.read("releaseEvents.filter(e => e.serieId === 'el-plan-del-diablo').length"), 25);
+assert.equal(devilsPlan.read("releaseEvents.filter(e => e.serieId === 'el-plan-del-diablo').length"), 38);
 assert.equal(devilsPlan.read("releaseEvents.filter(e => e.serieId === 'el-plan-del-diablo').every(e => !e.releaseAt)"), true);
 assert.equal(devilsPlan.read("releaseEvents.find(e => e.serieId === 'el-plan-del-diablo' && e.season === 3).sourceKind"), 'official');
 assert.match(devilsPlan.read("releaseStatusText(getCatalogSerie('el-plan-del-diablo'))"), /pendiente de estreno.*0\/14.*10\/11\/2026/);
-assert.equal(devilsPlan.read("undatedUpcomingForFollowedSeries().find(e => e.serieId === 'el-plan-del-diablo').pendingKind"), 'fecha pendiente');
+assert.equal(devilsPlan.read("undatedUpcomingForFollowedSeries().some(e => e.serieId === 'el-plan-del-diablo')"), false);
 devilsPlan.at('2026-11-10T22:59:59Z');
 assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 0);
 devilsPlan.at('2026-11-10T23:00:00Z');
-assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 1);
+assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 5);
+devilsPlan.at('2026-11-17T22:59:59Z');
+assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 5);
+devilsPlan.at('2026-11-17T23:00:00Z');
+assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 10);
+devilsPlan.at('2026-11-24T23:00:00Z');
+assert.equal(available(devilsPlan, 'el-plan-del-diablo', 3), 14);
 
 const vision = app(null, '2026-10-14T00:59:59Z');
 assert.equal(available(vision, 'vision-quest', 1), 0);
@@ -221,8 +228,8 @@ assert.equal(migrated.read("getSerie('love-is-blind-uk').seasons.find(s => s.sea
 assert.equal(migrated.read("ui.calendarScope = 'followed'; calendarSourceEvents().every(e => state.mySeries.some(s => s.id === e.serieId))"), true);
 
 const reviewed = app(null, '2026-10-19T12:00:00Z');
-assert.equal(reviewed.read('calendarUpcomingEvents(Infinity).length'), 102);
-assert.match(reviewed.read('dataReviewSummary()'), /Catálogo actualizado el 03\/11\/2026.*100 series.*Revisión completa del 02\/11\/2026/);
+assert.equal(reviewed.read('calendarUpcomingEvents(Infinity).length'), 115);
+assert.match(reviewed.read('dataReviewSummary()'), /100 series revisadas el 15\/11\/2026.*catálogo completo/);
 assert.equal(available(reviewed, 'furia', 2), 2);
 assert.equal(available(reviewed, 'koh-lanta', 34), 8);
 assert.equal(available(reviewed, 'the-traitors-us', 5), 6);
@@ -238,15 +245,17 @@ assert.equal(reviewed.read("releaseEvents.filter(e => ['furia','dexter-resurrect
 // La revisión completa incluye estrenos recientes, nuevos calendarios y sus límites de certeza.
 const current = app(null, audit.snapshotAt);
 assert.equal(current.read('calendarUpcomingEvents(Infinity).length'), audit.upcomingEventCount);
-assert.equal(audit.upcomingEventCount, 59);
-assert.equal(available(current, 'vision-quest', 1), 6);
+assert.equal(audit.upcomingEventCount, 49);
+assert.equal(available(current, 'vision-quest', 1), 8);
 assert.equal(available(current, 'nobody-wants-this', 3), 10);
 assert.equal(available(current, 'lupin', 4), 8);
-assert.equal(available(current, 'koh-lanta', 34), 10);
-assert.equal(available(current, 'love-is-blind-us', 11), 11);
-assert.equal(available(current, 'furia', 2), 4);
-assert.equal(available(current, 'the-traitors-us', 5), 8);
-assert.equal(available(current, 'dexter-resurrection', 2), 1);
+assert.equal(available(current, 'koh-lanta', 34), 12);
+assert.equal(available(current, 'love-is-blind-us', 11), 13);
+assert.equal(available(current, 'furia', 2), 6);
+assert.equal(available(current, 'the-traitors-us', 5), 10);
+assert.equal(available(current, 'dexter-resurrection', 2), 3);
+assert.equal(available(current, 'el-plan-del-diablo', 3), 5);
+assert.equal(available(current, 'black-doves', 2), 6);
 assert.equal(available(current, 'ghosts-us', 6), 2);
 assert.equal(current.read("RELEASE_REVIEW.series['grande-de-espana'].providerStatus"), 'To Be Determined');
 assert.equal(current.read("RELEASE_REVIEW.series.lupin.providerStatus"), 'To Be Determined');
@@ -259,14 +268,55 @@ assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'black-doves'
 assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'black-doves' && e.season === 2 && e.episode > 1).every(e => e.sourceKind === 'provider' && !e.releaseAt)"), true);
 assert.equal(current.read("getCatalogSerie('the-circle-us').seasons.find(s => s.season === 8).total"), 16);
 assert.match(current.read("getCatalogSerie('the-circle-us').platform"), /Hulu/);
-assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'the-circle-us' && e.season === 8).every(e => e.sourceKind === (e.episode <= 6 ? 'official' : 'provider') && !e.releaseAt && /Hulu/.test(e.platform))"), true);
+assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'the-circle-us' && e.season === 8).every(e => e.sourceKind === (e.episode <= 15 ? 'official' : 'provider') && Boolean(e.releaseAt) === (e.episode <= 15) && /Hulu/.test(e.platform))"), true);
 assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'ghosts-us' && e.season === 6).length"), 4);
 current.at('2026-11-17T12:00:00Z');
 assert.equal(available(current, 'the-circle-us', 8), 0);
-current.at('2026-11-17T23:00:00Z');
+current.at('2026-11-18T01:59:59Z');
+assert.equal(available(current, 'the-circle-us', 8), 0);
+current.at('2026-11-18T02:00:00Z');
 assert.equal(available(current, 'the-circle-us', 8), 1);
+assert.equal(current.read("releaseEvents.find(e => e.serieId === 'the-circle-us' && e.season === 8 && e.episode === 1).date"), '2026-11-18');
+assert.equal(current.read("releaseEvents.find(e => e.serieId === 'the-circle-us' && e.season === 8 && e.episode === 15).releaseAt"), '2026-12-18T02:00:00Z');
+assert.equal(current.read("releaseEvents.find(e => e.serieId === 'the-circle-us' && e.season === 8 && e.episode === 16).releaseAt"), undefined);
 current.at('2026-12-18T23:00:00Z');
 assert.equal(available(current, 'the-circle-us', 8), 16);
+
+// Renovación oficial sin inventar capítulos ni fechas; títulos nuevos en ficha y calendario.
+assert.equal(current.read("getCatalogSerie('nobody-wants-this').seasons.find(s => s.season === 4).total"), 0);
+assert.equal(current.read("getCatalogSerie('nobody-wants-this').seasons.find(s => s.season === 4).totalKnown"), false);
+assert.equal(current.read("undatedUpcomingForFollowedSeries().some(e => e.serieId === 'nobody-wants-this' && e.season === 4)"), true);
+assert.equal(current.read("releaseEvents.some(e => e.serieId === 'nobody-wants-this' && e.season === 4)"), false);
+assert.equal(current.read("getCatalogSerie('black-doves').seasons.find(s => s.season === 2).episodes[0].title"), 'Black Door');
+assert.equal(current.read("getCatalogSerie('only-murders-in-the-building').seasons.find(s => s.season === 6).episodes[9].title"), 'A Knight to Remember');
+assert.equal(current.read("getCatalogSerie('love-is-blind-us').seasons.find(s => s.season === 11).episodes[11].title"), 'Everything Is Better with You');
+assert.equal(current.read("getCatalogSerie('dexter-resurrection').seasons.find(s => s.season === 2).episodes[1].title"), 'Fallen');
+assert.equal(current.read("releaseEvents.find(e => e.serieId === 'dexter-resurrection' && e.season === 2 && e.episode === 3).title"), 'Live Free and Die');
+assert.equal(current.read("releaseEvents.filter(e => e.serieId === 'dexter-resurrection' && e.season === 2 && e.episode <= 4).every(e => e.sourceKind === 'official' && !e.releaseAt)"), true);
+assert.equal(current.read("getCatalogSerie('ghosts-us').seasons.find(s => s.season === 6).episodes[2].title"), 'Died Hard: A Ghosts Christmas Special - Part One');
+assert.equal(audit.series.find(s => s.id === 'ghosts-us').verification.specials, 4);
+
+// Las ampliaciones conservan el seguimiento guardado de las temporadas existentes.
+const previousSnapshot = JSON.parse(current.read(`JSON.stringify({
+  mySeries: ['el-plan-del-diablo', 'nobody-wants-this', 'ghosts-us', 'dexter-resurrection'].map(id => clone(getCatalogSerie(id))),
+  watchHistory: [{serieId:'el-plan-del-diablo', season:3, watchedAt:'2026-11-10T20:00:00'}],
+  viewingHistory: {'nobody-wants-this': 1}
+})`));
+previousSnapshot.mySeries.forEach(s => {
+  s.episodesPerDay = 3;
+  s.lastWatchedAt = '2026-11-10T20:00:00';
+  s.seasons.forEach(t => {t.watched = Math.min(t.total, 2);});
+});
+previousSnapshot.mySeries.find(s => s.id === 'nobody-wants-this').seasons = previousSnapshot.mySeries.find(s => s.id === 'nobody-wants-this').seasons.filter(t => t.season < 4);
+const newReview = app(previousSnapshot, audit.snapshotAt);
+assert.equal(newReview.read("getSerie('nobody-wants-this').seasons.find(t => t.season === 4).totalKnown"), false);
+assert.equal(newReview.read("getSerie('nobody-wants-this').seasons.find(t => t.season === 3).watched"), 2);
+assert.equal(newReview.read("getSerie('el-plan-del-diablo').seasons.find(t => t.season === 3).watched"), 2);
+assert.equal(newReview.read("getSerie('ghosts-us').seasons.find(t => t.season === 6).watched"), 2);
+assert.equal(newReview.read("getSerie('dexter-resurrection').seasons.find(t => t.season === 2).watched"), 2);
+assert.equal(newReview.read("state.mySeries.every(s => s.episodesPerDay === 3 && s.lastWatchedAt === '2026-11-10T20:00:00.000')"), true);
+assert.equal(newReview.read('state.watchHistory.length'), 1);
+assert.equal(newReview.read("completedWatchCount('nobody-wants-this')"), 1);
 
 // Los especiales conservan su posición guardada; las fechas se asocian por título.
 assert.equal(available(current, 'on-the-case-with-paula-zahn', 25), 17);

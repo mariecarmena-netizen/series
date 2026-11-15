@@ -2,6 +2,20 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Revisión completa del 15 de noviembre de 2026
+
+Revisadas las **100 series** del catálogo: 99 fichas de TVmaze con todas sus temporadas y episodios, incluidos especiales, y Una fiesta de muerte mediante su web oficial de Antena 3. Comprobado también Brain Games: On the Road, conservado como T9 de Brain Games. El informe `catalog-review.json` recoge la revisión individual, las fuentes, los recuentos, las huellas de las 200 respuestas del proveedor y las diferencias de numeración.
+
+El calendario reúne **6.881 estrenos fechados**, con **49 próximos estrenos** en el momento de la revisión. Añadidas las 13 fechas que faltaban de El plan del diablo T3: TVmaze registra las tandas 1–5 el 10/11, 6–10 el 17/11 y 11–14 el 24/11. Netflix confirma el estreno y los 14 capítulos en tres semanas; las tandas individuales se identifican como datos del proveedor y no se inventa una hora.
+
+[Netflix](https://www.netflix.com/tudum/articles/nobody-wants-this-season-4-release-date-plot-news) confirma la cuarta temporada de Nadie quiere esto. Se añade al apartado de temporadas pendientes, sin asignarle fecha ni número de capítulos. Vision Quest y Palomas negras pasan a continuidad pendiente según TVmaze; sus temporadas recientes están completas.
+
+[Banijay / Hulu](https://www.banijay.com/blog/2026/11/11/hulu-debuts-trailer-key-art-for-the-circle/) confirma la pauta de The Circle: una entrega cada martes, miércoles y jueves durante cinco semanas a las 21:00 de Nueva York. Las 15 fechas se calculan a partir de ese anuncio y se convierten a Madrid: desde el **18/11 a las 03:00**, del miércoles al viernes. La final adicional del 18/12 y el total de 16 capítulos siguen atribuidos a TVmaze; no se extrapola el horario de la final ni la disponibilidad en España.
+
+Actualizados los títulos publicados de Palomas negras, Love Is Blind (USA), The Traitors, Only Murders in the Building y los especiales navideños de Ghosts. Corregidos los títulos de Dexter: Resurrection T2 por número de capítulo: Fallen, Live Free and Die y Young Blood. [Paramount+](https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/) confirma las primeras cuatro fechas individuales; las posteriores mantienen su atribución al proveedor. Ghosts conserva cuatro especiales en T6 y sus horarios, sin duplicados. Los cinco registros de Furia que carecían de título muestran ahora una etiqueta de capítulo pendiente.
+
+La revisión refleja los capítulos disponibles: El plan del diablo T3, 5/14; Furia T2, 6/8; The Traitors T5, 10/12; Dexter: Resurrection T2, 3/10; Koh-Lanta T34, 12/13. Vision Quest, Palomas negras T2 y Love Is Blind (USA) T11 están completas. Se mantienen la numeración regional, el progreso, el ritmo y el historial guardados. Actualizadas la fecha visible y la caché sin conexión. Las pruebas cubren las tres tandas de El plan del diablo, el estreno de The Circle a las 03:00 de Madrid, las temporadas sin fecha y la conservación del seguimiento.
+
 ## Volver a ver
 
 Al final de **Añadir serie** aparece el apartado **Volver a ver**, con las series que ya has terminado. Su botón reinicia todas las temporadas desde el primer capítulo y devuelve la serie a la lista de pendientes. Se conservan el historial de actividad y los visionados completos, sin duplicar la serie. Si ya estás repitiéndola, el botón permite continuar con su progreso actual.
