@@ -2,6 +2,14 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Incorporación de LOL Francia del 26 de noviembre de 2026
+
+Añadida **LOL : qui rit, sort ! (Francia)** (Prime Video), con portada, sinopsis y los títulos originales de sus **39 capítulos**, repartidos en seis temporadas completas: 6, 6, 7, 7, 7 y 6. TVmaze aporta la ficha, las temporadas y las fechas históricas; [Prime Video Francia](https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK) confirma los seis títulos y las tandas del 24/04 y 01/05/2026 de T6. Las fechas identifican su emisión francesa, sin atribuir disponibilidad en España ni usar horas automáticas del proveedor.
+
+La séptima temporada figura pendiente, en rodaje y prevista para 2027, según el anuncio de Prime Video recogido por [20 Minutes el 23/11/2026](https://www.20minutes.fr/arts-stars/television/4265160-20261123-lena-situations-bigflo-oli-gad-elmaleh-lol-rit-sort-devoile-casting-saison-7). La fecha exacta y el total de capítulos permanecen sin confirmar. Los programas derivados conservan su identidad independiente.
+
+El catálogo reúne ahora **101 series** y **6.945 estrenos fechados**. La nueva ficha se revisó el mismo día que las otras 100 series; `catalog-review.json` recoge las fuentes y las huellas de ambas respuestas de TVmaze. En `lista de series.pages` se precisa el título que ya figuraba como LOL, identificando la edición francesa. Actualizada la caché sin conexión para recibir la incorporación al volver a abrir la app. Se conserva el progreso guardado.
+
 ## Revisión completa del 26 de noviembre de 2026
 
 Revisadas las **100 series**: 99 fichas de TVmaze con todas sus temporadas y episodios, incluidos especiales, y Una fiesta de muerte en su web oficial de Antena 3. Consultado también Brain Games: On the Road. Se han comprobado los **6.911 títulos existentes**, conservando sus traducciones y la numeración del seguimiento. `catalog-review.json` recoge la revisión individual, las fuentes, las huellas de las 200 respuestas de TVmaze, los títulos actualizados y las correspondencias de numeración.

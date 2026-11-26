@@ -1,10 +1,43 @@
-// Revisión completa: 100 series el 26 de noviembre de 2026.
+// Revisión completa: 101 series el 26 de noviembre de 2026.
 // Horarios de Europe/Madrid. Las fechas del proveedor se distinguen de los anuncios oficiales.
 const RELEASE_REVIEW = {
   "reviewedOn": "2026-11-26",
   "catalogUpdatedOn": "2026-11-26",
   "timeZone": "Europe/Madrid",
   "series": {
+    "lol-qui-rit-sort-france": {
+      "reviewedOn": "2026-11-26",
+      "sources": [
+        {
+          "label": "Prime Video Francia · ficha y temporadas publicadas",
+          "url": "https://www.primevideo.com/detail/0OBE60IZD9EZIEWDFWNOGK90MD/"
+        },
+        {
+          "label": "Prime Video Francia · T6: títulos, seis capítulos y fechas del 24/04 y 01/05/2026",
+          "url": "https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK"
+        },
+        {
+          "label": "20 Minutes · anuncio de Prime Video: T7 en rodaje, prevista para 2027 (23/11/2026)",
+          "url": "https://www.20minutes.fr/arts-stars/television/4265160-20261123-lena-situations-bigflo-oli-gad-elmaleh-lol-rit-sort-devoile-casting-saison-7"
+        }
+      ],
+      "dataNote": "Edición francesa de LOL: Last One Laughing, presentada por Philippe Lacheau. Seis temporadas completas: 6, 6, 7, 7, 7 y 6 capítulos (39 en total). Títulos y fechas históricos de TVmaze; la ficha oficial de Prime Video confirma los títulos y las dos tandas de T6. Las fechas corresponden a Prime Video Francia; la disponibilidad en España no se da por confirmada. No se utilizan las marcas automáticas de mediodía como horarios. T7 en rodaje y prevista para 2027 según el anuncio de Prime Video recogido por 20 Minutes el 23/11/2026; fecha exacta y total pendientes. LOL: Qui crie, sort! y LOL : IRL son programas independientes.",
+      "trackingSeason": 6,
+      "renewalNote": "T7 en rodaje para 2027 · fecha exacta y capítulos pendientes",
+      "providerReviewedOn": "2026-11-26",
+      "providerStatus": "Running",
+      "seasons": [
+        {
+          "season": 7,
+          "total": 0,
+          "totalKnown": false,
+          "available": false,
+          "releasedEpisodes": 0,
+          "episodes": [],
+          "note": "Temporada 7 en rodaje desde el 23/11/2026; prevista para 2027 según el anuncio de Prime Video recogido por 20 Minutes. Fecha exacta y número de capítulos pendientes."
+        }
+      ]
+    },
     "el-plan-del-diablo": {
       "reviewedOn": "2026-11-26",
       "sources": [
@@ -5538,6 +5571,12 @@ const RELEASE_REVIEW = {
     }
   },
   "providerSources": {
+    "lol-qui-rit-sort-france": [
+      {
+        "label": "TVmaze · ficha, temporadas y episodios registrados",
+        "url": "https://www.tvmaze.com/shows/54910/lol-qui-rit-sort"
+      }
+    ],
     "el-plan-del-diablo": [
       {
         "label": "TVmaze · ficha, temporadas y episodios registrados",
@@ -6142,7 +6181,7 @@ const RELEASE_REVIEW = {
   "calendarComplete": true,
   "fullReviewedOn": "2026-11-26",
   "reviewScope": "full",
-  "reviewedSeriesCount": 100,
+  "reviewedSeriesCount": 101,
   "reviewedSeriesIds": [
     "koh-lanta",
     "secret-story",
@@ -6243,7 +6282,8 @@ const RELEASE_REVIEW = {
     "the-circle-us",
     "summertime",
     "what-we-do-in-the-shadows",
-    "rooster"
+    "rooster",
+    "lol-qui-rit-sort-france"
   ],
   "events": [
     {"serieId":"the-righteous-gemstones","serie":"The Righteous Gemstones","season":1,"episode":1,"date":"2019-08-19","title":"The Righteous Gemstones","platform":"HBO (Estados Unidos)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/1677253/the-righteous-gemstones-1x01-the-righteous-gemstones","releaseAt":"2019-08-19T02:00:00+00:00"},
@@ -13151,6 +13191,45 @@ const RELEASE_REVIEW = {
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":6,"episode":9,"date":"2027-03-05","title":"Episodio 9 · título pendiente","platform":"Peacock (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time","note":"T5 oficial de Peacock, T6 en la app · horario de Nueva York convertido a Madrid; disponibilidad en España pendiente","releaseAt":"2027-03-05T02:00:00Z"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":6,"episode":10,"date":"2027-03-12","title":"Episodio 10 · título pendiente","platform":"Peacock (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time","note":"T5 oficial de Peacock, T6 en la app · horario de Nueva York convertido a Madrid; disponibilidad en España pendiente","releaseAt":"2027-03-12T02:00:00Z"},
     {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":6,"episode":11,"date":"2027-03-19","title":"Episodio 11 · título pendiente","platform":"Peacock (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time","note":"T5 oficial de Peacock, T6 en la app · horario de Nueva York convertido a Madrid; disponibilidad en España pendiente","releaseAt":"2027-03-19T01:00:00Z"},
-    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":6,"episode":12,"date":"2027-03-19","title":"Reunión","platform":"Peacock (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time","note":"Reunión tras la final del 18/03 en Estados Unidos, madrugada del 19/03 en Madrid · hora exacta pendiente"}
+    {"serieId":"the-traitors-us","serie":"The Traitors (USA)","season":6,"episode":12,"date":"2027-03-19","title":"Reunión","platform":"Peacock (Estados Unidos)","sourceKind":"official","sourceUrl":"https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time","note":"Reunión tras la final del 18/03 en Estados Unidos, madrugada del 19/03 en Madrid · hora exacta pendiente"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":1,"date":"2021-04-23","title":"Une soirée entre amis","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076432/lol-qui-rit-sort-1x01-une-soiree-entre-amis","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":2,"date":"2021-04-23","title":"Yoga dans le vent","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076433/lol-qui-rit-sort-1x02-yoga-dans-le-vent","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":3,"date":"2021-04-23","title":"Le ballet d'Ines","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076434/lol-qui-rit-sort-1x03-le-ballet-dines","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":4,"date":"2021-04-23","title":"Je peux m'épiler","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076435/lol-qui-rit-sort-1x04-je-peux-mepiler","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":5,"date":"2021-04-23","title":"Est-ce que vous êtes chaud chaud chaud ?","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076436/lol-qui-rit-sort-1x05-est-ce-que-vous-etes-chaud-chaud-chaud","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":1,"episode":6,"date":"2021-04-28","title":"Le dernier combat","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2076438/lol-qui-rit-sort-1x06-le-dernier-combat","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":1,"date":"2022-03-31","title":"Ouverture des hostilités","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507259/lol-qui-rit-sort-2x01-ouverture-des-hostilites","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":2,"date":"2022-03-31","title":"Carton plein pour Ahmed","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507260/lol-qui-rit-sort-2x02-carton-plein-pour-ahmed","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":3,"date":"2022-03-31","title":"La fashion week de Gérard Darmon","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507261/lol-qui-rit-sort-2x03-la-fashion-week-de-gerard-darmon","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":4,"date":"2022-04-07","title":"L'arme fatale : Kyan Khojandi","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507262/lol-qui-rit-sort-2x04-larme-fatale-kyan-khojandi","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":5,"date":"2022-04-07","title":"Un sourire et tu sors !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507263/lol-qui-rit-sort-2x05-un-sourire-et-tu-sors","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":2,"episode":6,"date":"2022-04-07","title":"Le duel final !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507264/lol-qui-rit-sort-2x06-le-duel-final","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":1,"date":"2023-03-09","title":"Dans 20 minutes tout le monde a perdu !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507265/lol-qui-rit-sort-3x01-dans-20-minutes-tout-le-monde-a-perdu","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":2,"date":"2023-03-09","title":"No friends, no life","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507266/lol-qui-rit-sort-3x02-no-friends-no-life","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":3,"date":"2023-03-09","title":"La carte gold","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507267/lol-qui-rit-sort-3x03-la-carte-gold","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":4,"date":"2023-03-09","title":"La vengeance des éliminés","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507268/lol-qui-rit-sort-3x04-la-vengeance-des-elimines","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":5,"date":"2023-03-16","title":"Pierre Niney dans Thomas Pesquet","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507269/lol-qui-rit-sort-3x05-pierre-niney-dans-thomas-pesquet","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":6,"date":"2023-03-16","title":"Le mariage de Virginie et François","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507270/lol-qui-rit-sort-3x06-le-mariage-de-virginie-et-francois","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":3,"episode":7,"date":"2023-03-16","title":"L’ultime duel","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2507271/lol-qui-rit-sort-3x07-lultime-duel","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":1,"date":"2024-02-16","title":"Je ris, je ris, je ris","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2773938/lol-qui-rit-sort-4x01-je-ris-je-ris-je-ris","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":2,"date":"2024-02-16","title":"Les branles song","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2773939/lol-qui-rit-sort-4x02-les-branles-song","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":3,"date":"2024-02-16","title":"Les filles prennent le pouvoir","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2773940/lol-qui-rit-sort-4x03-les-filles-prennent-le-pouvoir","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":4,"date":"2024-02-16","title":"Strike complet ?","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2773941/lol-qui-rit-sort-4x04-strike-complet","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":5,"date":"2024-02-23","title":"Un sourire, c'est un carton !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2774520/lol-qui-rit-sort-4x05-un-sourire-cest-un-carton","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":6,"date":"2024-02-23","title":"Le retour de flamme","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2774521/lol-qui-rit-sort-4x06-le-retour-de-flamme","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":4,"episode":7,"date":"2024-02-23","title":"Afida est dans la place","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/2781077/lol-qui-rit-sort-4x07-afida-est-dans-la-place","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":1,"date":"2025-04-18","title":"Je me drogue à la vie !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3215076/lol-qui-rit-sort-5x01-je-me-drogue-a-la-vie","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":2,"date":"2025-04-18","title":"Ni lapin, ni moutarde","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3215077/lol-qui-rit-sort-5x02-ni-lapin-ni-moutarde","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":3,"date":"2025-04-18","title":"Méfiez-vous du Gland qui dort","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3215078/lol-qui-rit-sort-5x03-mefiez-vous-du-gland-qui-dort","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":4,"date":"2025-04-18","title":"Les destins liés","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3215079/lol-qui-rit-sort-5x04-les-destins-lies","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":5,"date":"2025-04-25","title":"Jojo Fantaisie président","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3217261/lol-qui-rit-sort-5x05-jojo-fantaisie-president","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":6,"date":"2025-04-25","title":"Sourire ravageur","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3217262/lol-qui-rit-sort-5x06-sourire-ravageur","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":5,"episode":7,"date":"2025-04-25","title":"Du jamais vu pour une finale !","platform":"Prime Video (Francia)","sourceKind":"provider","sourceUrl":"https://www.tvmaze.com/episodes/3217263/lol-qui-rit-sort-5x07-du-jamais-vu-pour-une-finale","note":"Fecha registrada en TVmaze · Prime Video Francia; hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":1,"date":"2026-04-24","title":"L'union fait-elle vraiment la force ?","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":2,"date":"2026-04-24","title":"Sosie or not sosie","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":3,"date":"2026-04-24","title":"Monsieur Jingle Bells","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":4,"date":"2026-05-01","title":"Et c'est… OK !","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":5,"date":"2026-05-01","title":"La règle qui change tout…","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"},
+    {"serieId":"lol-qui-rit-sort-france","serie":"LOL : qui rit, sort ! (Francia)","season":6,"episode":6,"date":"2026-05-01","title":"Saison inédite, Finale historique !","platform":"Prime Video (Francia)","sourceKind":"official","sourceUrl":"https://www.primevideo.com/-/fr/detail/0MYWE54LWA5FGGD71GE967W1YK","note":"Fecha oficial de Prime Video Francia · hora y disponibilidad en España sin confirmar"}
   ]
 };
