@@ -2,6 +2,20 @@
 
 Aplicación estática para seguir capítulos, progreso y próximos estrenos.
 
+## Revisión completa del 26 de noviembre de 2026
+
+Revisadas las **100 series**: 99 fichas de TVmaze con todas sus temporadas y episodios, incluidos especiales, y Una fiesta de muerte en su web oficial de Antena 3. Consultado también Brain Games: On the Road. Se han comprobado los **6.911 títulos existentes**, conservando sus traducciones y la numeración del seguimiento. `catalog-review.json` recoge la revisión individual, las fuentes, las huellas de las 200 respuestas de TVmaze, los títulos actualizados y las correspondencias de numeración.
+
+El calendario contiene **6.906 estrenos fechados**, 25 más, con **55 próximos estrenos** en el momento de la revisión. [Paramount+ / CBS](https://www.paramountplus.com/sneak-peak/ghosts-season-6-everything-you-need-to-know/) confirma el regreso regular de Ghosts: **22/01/2027 a las 02:30** y **26/01 a las 02:00** en Madrid. Añadidas también las once fechas posteriores registradas en TVmaze, hasta el 05/03 de Madrid, identificadas como datos del proveedor. Los cuatro especiales mantienen sus posiciones 1–4; los capítulos regulares ocupan las posiciones 5–17, sin duplicados.
+
+[Peacock](https://www.peacocktv.com/blog/the-traitors-season-5-schedule-episode-time) publica el calendario completo de la edición con famosos de The Traitors: doce entregas, incluida la reunión, entre el **15/01 y el 19/03/2027 en Madrid**. Se conserva como T6 de la app, equivalente a la T5 oficial de Peacock, porque New Blood ocupa la T5 del seguimiento. El estreno doble llega a las 03:00 de Madrid; la final, a las 02:00 tras el cambio de hora estadounidense. La reunión mantiene el día, con su hora exacta pendiente. La siguiente temporada registrada por TVmaze queda sin fecha ni total. [NBC](https://www.nbc.com/nbc-insider/the-traitors-new-blood-season-2-on-nbc) confirma además New Blood T2 para 2027; se recoge en la nota de renovación, sin asignarle una temporada numérica del seguimiento.
+
+Incorporados los cinco títulos publicados de The Circle T8: Welcome to the Circle, Y2 Chaotic, Circle Crimes, Double Trouble e Identity Showdown. Corregidos por número de capítulo los títulos 5–8 de Dexter: Resurrection T2: Out of the Past, Panic Attack, Game On y Rule Number One. Los nombres proceden de TVmaze; las fechas conservan su fuente individual. [Paramount+](https://www.paramountplus.com/sneak-peak/dexter-resurrection-season-2-everything-you-need-to-know/) confirma ahora también el estreno del quinto capítulo el 27/11.
+
+[HBO Max España](https://press-spain.max.com/post/la-bso-de-la-serie-original-de-hbo-furia-parte-2-ya-esta-disponi) confirma los ocho capítulos de Furia T2 disponibles el 27/11; la última fecha pasa a confirmación oficial. El plan del diablo T3 y The Traitors: New Blood están completas; Furia T2 tiene 7/8 disponibles, Dexter: Resurrection T2, 4/10, y The Circle T8, 5/16. Las fechas estadounidenses se convierten a Madrid y se distinguen de la disponibilidad española. Los títulos específicos que aún no publica el proveedor siguen pendientes.
+
+Actualizadas las fechas visibles y la caché sin conexión. Se conservan el progreso, el ritmo, los visionados completos y el historial. Las pruebas comprueban las nuevas fechas, los títulos en ficha y calendario, las diferencias de numeración, el cambio de hora de marzo y la conservación del seguimiento guardado.
+
 ## Revisión completa del 15 de noviembre de 2026
 
 Revisadas las **100 series** del catálogo: 99 fichas de TVmaze con todas sus temporadas y episodios, incluidos especiales, y Una fiesta de muerte mediante su web oficial de Antena 3. Comprobado también Brain Games: On the Road, conservado como T9 de Brain Games. El informe `catalog-review.json` recoge la revisión individual, las fuentes, los recuentos, las huellas de las 200 respuestas del proveedor y las diferencias de numeración.

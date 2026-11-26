@@ -56,12 +56,15 @@ async function offlineRequest(url, mode = 'same-origin') {
   const offlineHtml = await offlineRequest('/series/', 'navigate');
   assert.ok(offlineHtml.toString().includes('./release-data.js'));
   const releaseData = await offlineRequest('./release-data.js');
-  assert.ok(releaseData.toString().includes('"reviewedOn": "2026-11-15"'));
-  assert.ok(releaseData.toString().includes('"catalogUpdatedOn": "2026-11-15"'));
+  assert.ok(releaseData.toString().includes('"reviewedOn": "2026-11-26"'));
+  assert.ok(releaseData.toString().includes('"catalogUpdatedOn": "2026-11-26"'));
   assert.ok(offlineHtml.toString().includes('"id": "el-plan-del-diablo"'));
   assert.ok(releaseData.toString().includes('"serieId":"el-plan-del-diablo"'));
   assert.ok(releaseData.toString().includes('2026-11-09T02:00:00Z'));
   assert.ok(releaseData.toString().includes('2027-02-09'));
+  assert.ok(releaseData.toString().includes('2027-03-19T01:00:00Z'));
+  assert.ok(releaseData.toString().includes('Identity Showdown'));
+  assert.ok(releaseData.toString().includes('Panic Attack'));
   assert.ok(await offlineRequest('./manifest.webmanifest'));
   console.log('OK: app y calendario en caché sin conexión; otras aplicaciones conservan su caché.');
 })().catch(error => {console.error(error); process.exitCode = 1;});
